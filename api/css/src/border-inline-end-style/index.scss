@@ -1,0 +1,14 @@
+.con {
+  display: flex;
+  width: max-content;
+  background-color: blue;
+}
+
+.intro {
+  width: 100px;
+  height: 300px;
+  border-inline-start-width: 10px;
+  border-inline-end-width: 10px;
+  background-color: red;
+  border-color: yellow;
+}

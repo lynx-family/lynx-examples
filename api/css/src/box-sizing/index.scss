@@ -1,0 +1,38 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 5px solid blue;
+  box-sizing: content-box;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid red;
+  box-sizing: content-box;
+}
+
+.div3 {
+  width: 300px;
+  height: 100px;
+  border: 5px solid blue;
+  box-sizing: border-box;
+}
+
+.div4 {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid red;
+  box-sizing: border-box;
+}

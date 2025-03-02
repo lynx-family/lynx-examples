@@ -1,0 +1,30 @@
+.amount-wrapper {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amount-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffffa6;
+  margin-bottom: 8px;
+}
+
+.amount-value {
+  display: flex;
+  align-items: flex-end;
+}
+
+.amount-currency {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ff6740;
+}
+
+.amount-number {
+  font-size: 38px;
+  font-weight: 500;
+  color: #ff6740;
+}

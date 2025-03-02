@@ -1,0 +1,24 @@
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  margin: 5px;
+  text-align: center;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+  width: 50%;
+  height: 100px;
+}
+
+.image1 {
+  background-image: url("../../resource/bg_flower.gif");
+}
+
+.image2 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    url("../../resource/lynx.png");
+}

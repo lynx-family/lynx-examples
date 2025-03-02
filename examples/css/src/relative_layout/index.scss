@@ -1,0 +1,86 @@
+.header__title {
+  font-size: 68rpx;
+  font-weight: 900;
+  text-align: center;
+  color: linear-gradient(120deg, #0095ff 30%, #42d392 100%);
+}
+
+.colorWidth {
+  border-width: 5px;
+  border-color: green red;
+}
+
+.container {
+  display: relative;
+  width: 100%;
+  background-color: #00000008;
+  padding: 10px;
+}
+
+.container > * {
+  text-align: center;
+}
+
+.avatar {
+  relative-id: 1;
+  relative-align-left: parent;
+  relative-center: vertical;
+  background-image: url("../../resource/bg_flower.gif");
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: lightblue;
+}
+
+.user_name {
+  relative-id: 2;
+  relative-right-of: 1;
+  width: 100px;
+  font-size: 60rpx;
+  height: 50px;
+  border-radius: 20px;
+  background-color: lightgreen;
+  color: linear-gradient(120deg, #0095ff 30%, #42d392 100%);
+}
+
+.user_description {
+  relative-id: 3;
+  relative-right-of: 1;
+  relative-bottom-of: 2;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: pink;
+}
+
+.user_lv {
+  relative-id: 4;
+  relative-align-top: 3;
+  width: 80px;
+  height: 30px;
+  font-size: 34rpx;
+  relative-align-right: parent;
+  border-radius: 20px;
+  background-color: yellow;
+}
+
+.close {
+  relative-id: 5;
+  relative-align-top: parent;
+  relative-align-right: parent;
+  width: 20px;
+  height: 18px;
+  background-color: pink;
+}
+
+.follow {
+  relative-id: 6;
+  relative-left-of: 5;
+  relative-align-top: parent;
+  width: 60px;
+  height: 30px;
+  font-size: 34rpx;
+  border-radius: 10px;
+  background-color: lightyellow;
+  margin-right: 10px;
+}

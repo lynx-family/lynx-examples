@@ -1,0 +1,28 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  border-color: red;
+  border-width: 5px;
+  padding: 5px;
+  border-style: solid;
+  width: 50%;
+  height: 100px;
+}
+
+.image1 {
+  background-image: url("../../resource/bg_flower.gif");
+}
+
+.image2 {
+  background-image:
+    url("../../resource/lynx.png"),
+    url("../../resource/bg_flower.gif");
+}

@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  width: 95%;
+  align-self: center;
+  height: 200px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.title {
+  font-size: 45rpx;
+  font-weight: bold;
+  align-self: center;
+  color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
+}
+.text {
+  color: white;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.item {
+  border: 1px solid black;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 53, 26);
+}

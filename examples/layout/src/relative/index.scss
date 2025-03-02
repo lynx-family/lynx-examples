@@ -1,0 +1,63 @@
+.container {
+  display: relative;
+  width: 350px;
+  background-color: #00000008;
+}
+
+.avatar {
+  relative-id: 1;
+  relative-align-left: parent;
+  relative-center: vertical;
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgb(255, 53, 26);
+}
+
+.user_name {
+  relative-id: 2;
+  relative-right-of: 1;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgb(0, 235, 235);
+}
+
+.user_description {
+  relative-id: 3;
+  relative-right-of: 1;
+  relative-bottom-of: 2;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: pink;
+}
+
+.user_lv {
+  relative-id: 4;
+  relative-align-top: 3;
+  width: 50px;
+  height: 40px;
+  relative-align-right: parent;
+  border-radius: 20px;
+  background-color: rgb(255, 53, 26);
+}
+
+.close {
+  relative-id: 5;
+  relative-align-top: parent;
+  relative-align-right: parent;
+  width: 20px;
+  height: 30px;
+  background-color: pink;
+}
+
+.follow {
+  relative-left-of: 5;
+  relative-align-top: parent;
+  relative-id: 6;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(0, 235, 235);
+}

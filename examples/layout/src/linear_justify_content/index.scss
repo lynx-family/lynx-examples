@@ -1,0 +1,40 @@
+.container {
+  display: linear;
+  justify-content: start;
+  linear-direction: column;
+  height: 130px;
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+  align-self: center;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.item1 {
+  margin: 2px;
+  height: 20px;
+  background-color: rgb(255, 53, 26);
+  border-radius: 6px;
+}
+
+.item2 {
+  margin: 2px;
+  height: 20px;
+  background-color: rgb(0, 235, 235);
+  border-radius: 6px;
+}
+
+.item3 {
+  margin: 2px;
+  height: 20px;
+  background-color: rgb(255, 53, 26);
+  border-radius: 6px;
+}
+
+.title_style {
+  font-size: 45rpx;
+  font-weight: bold;
+  align-self: center;
+  color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
+}

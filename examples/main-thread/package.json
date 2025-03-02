@@ -1,0 +1,36 @@
+{
+  "name": "@lynx-example/main-thread",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Lynx main thread demo",
+  "license": "Apache-2.0",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/main-thread"
+  },
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "^3.2.0",
+    "@types/react": "^18.3.18",
+    "typescript": "~5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

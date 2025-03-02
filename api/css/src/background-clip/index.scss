@@ -1,0 +1,54 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 580px;
+  flex-direction: column;
+}
+
+.shared {
+  border: 5px;
+  border-style: dotted double;
+  margin: 2px 0;
+  padding: 5px;
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(60deg, red, yellow, red, yellow, red);
+  background-size: 35px;
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+.border-box {
+  background-clip: border-box;
+}
+
+.padding-box {
+  background-clip: padding-box;
+}
+
+.content-box {
+  background-clip: content-box;
+}
+
+.radius {
+  border-radius: 15px 50px;
+}
+
+.radius2 {
+  border-radius: 100px;
+}
+
+.container {
+  width: 300px;
+  height: 200px;
+  border: 20px solid transparent;
+  padding: 20px;
+
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image:
+    linear-gradient(to right, #222, #222),
+    linear-gradient(90deg, #8f41e9, #578aef);
+}

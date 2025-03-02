@@ -1,0 +1,33 @@
+.logic-padding {
+  padding-inline-start: 40px;
+  padding-inline-end: 10px;
+}
+
+.box {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(
+    circle at top left,
+    rgb(255, 53, 26),
+    rgb(0, 235, 235)
+  );
+  align-items: center;
+  linear-gravity: center;
+}
+.column {
+  linear-direction: column;
+  width: fit-content;
+}
+
+.row {
+  linear-direction: row;
+  margin: 10px;
+  border: 2px rgb(255, 53, 26);
+}
+
+text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

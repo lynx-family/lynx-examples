@@ -1,0 +1,8 @@
+.container {
+  background: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}

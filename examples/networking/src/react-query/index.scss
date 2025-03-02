@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  height: 100vh;
+
+  &__loading {
+    font-size: 50px;
+  }
+
+  &__error {
+    font-size: 20px;
+    color: red;
+  }
+
+  &__post {
+    margin-bottom: 5px;
+    min-height: 20px;
+    width: 100%;
+
+    &-text {
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    padding: 10px;
+    background: linear-gradient(to right, #4c8caf, #e34d36);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+      color: white;
+      font-size: 50px;
+    }
+  }
+}

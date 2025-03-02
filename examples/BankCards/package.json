@@ -1,0 +1,32 @@
+{
+  "name": "@lynx-example/bankcards",
+  "description": "An demo implements bankcards",
+  "version": "0.3.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@rsbuild/plugin-sass": "^1.2.1",
+    "@types/react": "^18.3.18",
+    "prettier": "3.4.2"
+  },
+  "repository": {
+    "directory": "examples/BankCards",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "type": "git"
+  }
+}

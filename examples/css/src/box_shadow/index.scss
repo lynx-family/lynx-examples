@@ -1,0 +1,126 @@
+.example {
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.shadow-a {
+  box-shadow: 6px -6px teal;
+}
+
+.shadow-b {
+  box-shadow: 10px 5px 5px black;
+}
+
+.shadow-c {
+  box-shadow: 5px 5px 10px 10px rgba(255, 0, 255, 0.5);
+}
+
+.shadow-d {
+  box-shadow: 0.5em 1em gold;
+}
+
+.shadow-e {
+  box-shadow: 3px 3px red, 6px 6px olive;
+}
+
+.shadow-f {
+  box-shadow: 3px 3px red, -1em 0 0.4em blue;
+}
+
+.shadow-ai {
+  box-shadow: inset 6px -6px teal;
+}
+
+.shadow-bi {
+  box-shadow: inset 10px 5px 5px black;
+}
+
+.shadow-ci {
+  box-shadow: 5px 5px 10px 10px rgba(255, 0, 255, 0.5) inset;
+}
+
+.shadow-di {
+  box-shadow: 0.5em 1em gold inset;
+}
+
+.shadow-ei {
+  box-shadow: inset 3px 3px red, 6px 6px olive inset;
+}
+
+.shadow-fi {
+  box-shadow: 3px 3px red inset, -1em 0 0.4em blue inset;
+}
+
+.box2 {
+  width: 200px;
+  height: 80px;
+  margin: 10px;
+  border: 1px solid red;
+  box-shadow:
+    20px 20px 20px 10px rgba(255, 0, 255, 0.5),
+    inset 5px 15px 20px 10px rgba(0, 255, 255, 0.5);
+  border-radius: 60px;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 4px dashed rgba(255, 255, 0, 0.5);
+  box-shadow:
+    20px -10px 20px 10px rgba(0, 255, 255, 0.5),
+    inset 5px 15px 20px 10px rgba(255, 0, 255, 0.5);
+  border-radius: 60px;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid red;
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 0, 255, 0.5) 30%,
+    rgba(255, 0, 0, 0.5) 50%,
+    rgba(0, 255, 0, 0.5) 60%,
+    rgba(255, 255, 0, 0.5) 80%
+  );
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.radius2 {
+  border-radius: 10px 20px 3px;
+}
+
+.button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  position: relative;
+  text-decoration: none;
+  height: 44px;
+  background-color: #2d8cf0;
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+}
+
+.button-shadow {
+  box-shadow:
+    inset 10px 10px 30px 10px rgba(0, 0, 0, 0.5),
+    10px 10px 300px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-text {
+  color: #fff;
+}

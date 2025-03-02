@@ -1,0 +1,22 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  border-width: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

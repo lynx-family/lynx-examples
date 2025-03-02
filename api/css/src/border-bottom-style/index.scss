@@ -1,0 +1,50 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.head {
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.text {
+  font-size: 0.8em;
+}
+
+.row {
+  justify-content: space-around;
+  margin-top: 3px;
+}
+
+.box {
+  width: 110px;
+  height: 35px;
+  margin: 0px 5px;
+  background: yellow;
+}
+
+.colorWidth1 {
+  border-bottom-width: 10px;
+  border-color: red;
+}
+
+.colorWidth2 {
+  border-bottom-width: 15px;
+  border-color: blue;
+}
+
+.radiusSame {
+  border-radius: 15px;
+}
+
+.radiusDiff {
+  border-top-right-radius: 10px 30px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 5px;
+}

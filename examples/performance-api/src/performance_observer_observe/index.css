@@ -1,0 +1,24 @@
+.section-title {
+  display: block;
+  font-size: 34rpx;
+  color: #4a5568;
+  margin-bottom: 20rpx;
+}
+
+.entries-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx 24rpx;
+  align-items: center;
+}
+
+.entry-item {
+  font-size: 32rpx;
+  padding: 8rpx 16rpx;
+  border-radius: 12rpx;
+  background: #f5fbff;
+  border: 2rpx solid #0095ff30;
+  color: #2d3748;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}

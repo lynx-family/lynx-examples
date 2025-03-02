@@ -1,0 +1,39 @@
+.no-width {
+  height: 50px;
+  flex-shrink: 0;
+}
+.no-height {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.linear {
+  display: linear;
+  padding: 5px;
+}
+
+.mode-image {
+  width: 150px;
+  height: 100px;
+  background: linear-gradient(to top, #ccc, #eee);
+  border: 5px solid #ff5722;
+  margin: 2px;
+}
+
+.filter-image {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border-color: grey;
+  border-width: 3px;
+}
+
+.sub-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}

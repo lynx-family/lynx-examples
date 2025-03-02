@@ -1,0 +1,59 @@
+.box {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  transform: translate(0px) rotate(0deg) scale(0.8);
+}
+
+.layout-box {
+  background-color: #3498db;
+  border-radius: 8px;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.box-color {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.border-margin-padding-box {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid purple;
+}
+
+.active1 {
+  transform: translate(100px) rotate(360deg) scale(1);
+}
+
+.active2 {
+  color: orange;
+}
+
+.active3 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: goldenrod;
+  opacity: 0.2;
+}
+
+.active4 {
+  width: 100px;
+  height: 100px;
+}
+
+.active5 {
+  border-width: 5px;
+  border-color: pink;
+}

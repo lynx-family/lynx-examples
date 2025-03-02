@@ -1,0 +1,49 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  line-height: 150%;
+  font-size: 30px;
+}
+
+.text1 {
+  background-color: rgb(201, 76, 76);
+}
+
+.text2 {
+  background-color: rgba(201, 76, 76, 0.6);
+}
+
+.text3 {
+  background-color: hsl(89, 43%, 51%);
+}
+
+.text4 {
+  background-color: hsla(89, 43%, 51%, 0.6);
+}
+
+.text5 {
+  background-color: #ff0;
+}
+
+.text6 {
+  background-color: #ff0000;
+}
+
+.text7 {
+  background-color: #00ff00ff;
+}
+
+.text8 {
+  background-color: orange;
+}
+
+.text9 {
+  background-color: transparent;
+}

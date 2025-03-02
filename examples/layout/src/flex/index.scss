@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  border: 2px rgb(255, 53, 26);
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.item {
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at top left,
+    rgb(255, 53, 26),
+    rgb(0, 235, 235)
+  );
+}
+
+text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

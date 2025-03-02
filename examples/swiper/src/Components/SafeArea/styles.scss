@@ -1,0 +1,12 @@
+.safe-area {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.android {
+  padding-bottom: 0;
+}

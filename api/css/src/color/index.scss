@@ -1,0 +1,53 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  line-height: 150%;
+  font-size: 20px;
+}
+
+.text1 {
+  color: rgb(201, 76, 76);
+}
+
+.text2 {
+  color: rgba(201, 76, 76, 0.6);
+}
+
+.text3 {
+  color: hsl(89, 43%, 51%);
+}
+
+.text4 {
+  color: hsla(89, 43%, 51%, 0.6);
+}
+
+.text5 {
+  color: #ff0;
+}
+
+.text6 {
+  color: #ff0000;
+}
+
+.text7 {
+  color: #00ff00ff;
+}
+
+.text8 {
+  color: orange;
+}
+
+.text9 {
+  color: linear-gradient(blue, red);
+}
+
+.font_style {
+  font-size: 30px;
+}

@@ -1,0 +1,28 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container1 {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.container2 {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}

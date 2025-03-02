@@ -1,0 +1,18 @@
+import { defineConfig } from "@lynx-js/rspeedy";
+
+import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
+import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+
+export default defineConfig({
+  plugins: [
+    pluginQRCode(),
+    pluginReactLynx(),
+  ],
+  environments: {
+    web: {},
+    lynx: {},
+  },
+  output: {
+    assetPrefix: "https://lynxjs.org/lynx-examples/image/dist",
+  },
+});

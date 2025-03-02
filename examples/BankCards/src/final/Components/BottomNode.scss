@@ -1,0 +1,23 @@
+.bottom-node {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  padding: 12px 20px;
+  background-color: black;
+}
+
+.bottom-continue-button {
+  background: #ff6740;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-continue-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -1,0 +1,40 @@
+.fixed_area {
+  flex-direction: column;
+}
+
+.image {
+  width: 325px;
+  height: 90px;
+}
+
+.inline_image {
+  width: 100px;
+  height: 30px;
+}
+
+.intro {
+  flex-direction: column;
+}
+
+.max_line_text {
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 14px;
+  width: 200px;
+}
+
+.test-item {
+  margin: 5rpx 15rpx;
+  border: 2px #eee dashed;
+  border-radius: 10rpx;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 16px;
+  color: red;
+}
+
+.expection {
+  font-size: 20px;
+}

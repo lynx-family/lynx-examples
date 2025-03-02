@@ -1,0 +1,20 @@
+.root {
+  height: 100%;
+}
+
+.linear_container {
+  background-color: white;
+  margin-top: 10px;
+  width: 50%;
+  border: 1px solid black;
+  align-self: center;
+  height: 120px;
+  display: linear;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 30rpx;
+  margin-top: 10px;
+  margin-left: 4px;
+}

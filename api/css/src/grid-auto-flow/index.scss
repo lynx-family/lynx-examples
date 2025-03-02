@@ -1,0 +1,21 @@
+.item {
+  font-size: 40rpx;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: rgb(0, 235, 235);
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 80px 80px 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  height: 300px;
+}

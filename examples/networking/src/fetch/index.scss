@@ -1,0 +1,16 @@
+.scroll-view {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  height: 100vh;
+
+  &__loading {
+    font-size: 50px;
+  }
+
+  &__post {
+    margin-bottom: 5px;
+    min-height: 20px;
+    width: 100%;
+  }
+}

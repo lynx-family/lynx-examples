@@ -1,0 +1,52 @@
+.header__title {
+  font-size: 68rpx;
+  font-weight: 900;
+  text-align: center;
+  color: linear-gradient(120deg, #0095ff 30%, #42d392 100%);
+}
+
+.colorWidth {
+  border-width: 5px;
+  border-color: green red;
+}
+
+.wrapper {
+  display: flex;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.wrapper > * {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+  flex: 1 100%;
+}
+
+.main {
+  background: deepskyblue;
+  flex: 1 100%;
+}
+
+.aside-1 {
+  background: gold;
+  flex: 1 0 0;
+}
+
+.aside-2 {
+  background: hotpink;
+  flex: 2 0 0;
+}

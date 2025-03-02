@@ -1,0 +1,38 @@
+{
+  "name": "@lynx-example/local-storage",
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "build": "rspeedy build",
+    "check": "biome check --write",
+    "dev": "rspeedy dev",
+    "format": "prettier --write .",
+    "preview": "rspeedy preview"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/local-storage"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "^3.2.0",
+    "@types/react": "^18.3.18",
+    "prettier": "^3.4.2",
+    "typescript": "~5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

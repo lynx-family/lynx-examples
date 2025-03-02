@@ -1,0 +1,11 @@
+.bg-gradient {
+  background: radial-gradient(
+    circle at top left,
+    rgb(255, 53, 26),
+    rgb(0, 235, 235)
+  );
+}
+
+.bg-color {
+  background: rgb(255, 53, 26);
+}

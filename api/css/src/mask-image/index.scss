@@ -1,0 +1,81 @@
+.root {
+  width: 100%;
+  height: 100%;
+  display: linear;
+  linear-direction: column;
+}
+
+.page {
+  width: 100%;
+  height: 220px;
+  display: linear;
+  linear-direction: row;
+}
+
+.gradient {
+  width: 120px;
+  height: 220px;
+}
+
+.square {
+  width: 220px;
+  height: 220px;
+}
+
+.mask {
+  background-color: purple;
+  width: 100px;
+  top: 10px;
+  height: 100px;
+}
+
+.back {
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 60px solid green;
+  background: blue;
+}
+
+.front {
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 40px solid blue;
+  background: green;
+}
+
+.redback {
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 60px solid green;
+  background: red;
+}
+
+.greenMaskfront {
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 40px solid red;
+  background: green;
+}
+
+.shape {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.star {
+  width: 120px;
+  height: 120px;
+  background-color: #8cffa0;
+}

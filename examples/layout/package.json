@@ -1,0 +1,34 @@
+{
+  "name": "@lynx-example/layout",
+  "description": "Examples of the layout related styling",
+  "type": "module",
+  "version": "0.3.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/layout"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "^3.2.0",
+    "@rsbuild/plugin-sass": "^1.2.1",
+    "@types/react": "^18.3.18",
+    "typescript": "~5.7.3"
+  }
+}

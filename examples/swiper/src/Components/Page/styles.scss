@@ -1,0 +1,82 @@
+.page-container {
+  flex: 1;
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+
+.title-bar {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-detail-container {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 19, 0.00) 29.47%,
+    #111113 99.97%
+  );
+  bottom: 75px;
+}
+
+.card-detail {
+  background-color: #282e38;
+  border-radius: 12px;
+  width: calc(100% - 40px);
+  margin: 0 20px 18px 20px;
+  padding: 21px;
+  box-sizing: border-box;
+}
+
+.card-detail-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-detail-title-price {
+  font-size: 24px;
+  color: #ff6740;
+}
+
+.card-detail-amount {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: right;
+  font-size: 12px;
+}
+
+.card-detail-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-detail-desc-text {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.order-button {
+  background-color: #ff6740;
+  border-radius: 8px;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 13px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-text {
+  font-size: 17px;
+  color: #fff;
+}

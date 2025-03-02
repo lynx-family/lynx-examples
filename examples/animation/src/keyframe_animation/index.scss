@@ -1,0 +1,77 @@
+.box {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border-radius: 10px;
+}
+
+.layout-box {
+  background-color: #3498db;
+  border-radius: 8px;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+.border-margin-padding-box {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid purple;
+}
+
+@keyframes transform-ani {
+  0% {
+    transform: translate(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(0px) rotate(0deg) scale(0.8);
+  }
+  100% {
+    transform: translate(100px) rotate(360deg) scale(1);
+  }
+}
+
+@keyframes opa-color-ani {
+  0% {
+    background-color: #4caf50;
+    opacity: 0.2;
+  }
+  100% {
+    background-color: red;
+    opacity: 1;
+  }
+}
+
+@keyframes text-color-ani {
+  0% {
+    color: black;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes layout {
+  from {
+    width: 25px;
+    height: 25px;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes b-m-p-ani {
+  from {
+    border-width: 1px;
+    border-color: purple;
+  }
+  to {
+    border-width: 5px;
+    border-color: pink;
+  }
+}

@@ -1,0 +1,10 @@
+packages:
+  - api/*
+  - examples/*
+  - examples/web-platform/packages/*
+
+catalog:
+  "@lynx-js/qrcode-rsbuild-plugin": "0.3.3"
+  "@lynx-js/rspeedy": "0.8.2"
+  "@lynx-js/react": "0.105.0"
+  "@lynx-js/react-rsbuild-plugin": "0.9.0"

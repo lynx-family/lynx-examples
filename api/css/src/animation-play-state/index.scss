@@ -1,0 +1,217 @@
+.fd-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 750rpx;
+  height: 2000px;
+  padding: 5px;
+  background-color: grey;
+}
+
+.button {
+  background-color: burlywood;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px;
+  text-align: center;
+}
+
+.group {
+  width: 100%;
+  background-color: white;
+}
+
+.h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: lawngreen;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 16px;
+}
+
+.h3 {
+  font-size: 14px;
+}
+
+.h4 {
+  font-size: 12px;
+}
+
+.pd5 {
+  padding: 5px;
+}
+
+.mg5 {
+  margin: 5px;
+}
+
+.mgl15 {
+  margin-left: 15px;
+}
+
+.mgt15 {
+  margin-top: 15px;
+}
+
+.sep {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.ani-size {
+  width: 75rpx;
+  height: 75rpx;
+  background-color: red;
+}
+
+.click-button {
+  width: 750rpx;
+  height: 60px;
+  background-color: blue;
+}
+
+@keyframes deg-0 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(45deg);
+  }
+}
+
+@keyframes deg-1 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+
+@keyframes deg-2 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes deg-3 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes deg-4 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(720deg);
+  }
+}
+
+@keyframes rad-0 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(0.5rad);
+  }
+}
+
+@keyframes rad-1 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(1rad);
+  }
+}
+
+@keyframes rad-2 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(2rad);
+  }
+}
+
+@keyframes rad-3 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(3.1415rad);
+  }
+}
+
+@keyframes rad-4 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(6.28rad);
+  }
+}
+
+@keyframes turn-0 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(0.125rad);
+  }
+}
+
+@keyframes turn-1 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(0.25rad);
+  }
+}
+
+@keyframes turn-2 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(0.5rad);
+  }
+}
+
+@keyframes turn-3 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(1rad);
+  }
+}
+
+@keyframes turn-4 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(2rad);
+  }
+}

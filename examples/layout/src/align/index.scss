@@ -1,0 +1,43 @@
+.linear {
+  display: linear;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 300px;
+
+  &-row-span {
+    grid-row-end: span 2;
+  }
+}
+
+.box {
+  border: 2px rgb(255, 53, 26);
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+}
+
+text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: radial-gradient(
+    circle at top left,
+    rgb(255, 53, 26),
+    rgb(0, 235, 235)
+  );
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container {
+  align-items: center;
+}

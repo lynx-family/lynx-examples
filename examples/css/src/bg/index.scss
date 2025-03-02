@@ -1,0 +1,183 @@
+.container {
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.background-gradient {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red linear-gradient(red, blue);
+}
+
+.background-gradient-hex {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red linear-gradient(#ff0000, #0000ff);
+}
+
+.background-gradient-to-top {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red linear-gradient(to top, red, blue);
+}
+
+.background-gradient-to-bottom {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 0, 0, 0.5) linear-gradient(to bottom, red, blue);
+}
+
+.background-gradient-to-left {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 0, 0, 0.5) linear-gradient(to left, red, blue);
+}
+
+.background-gradient-to-right {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 0, 0, 0.5) linear-gradient(to right, red, blue);
+}
+
+.background-gradient-to-top-left {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red
+    linear-gradient(to top left, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+}
+
+.background-gradient-to-top-right {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red
+    linear-gradient(to top right, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+}
+
+.background-gradient-to-bottom-right {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red
+    linear-gradient(
+      to bottom right,
+      rgba(255, 0, 0, 0.8),
+      rgba(0, 0, 255, 0.8)
+    );
+}
+
+.background-gradient-to-bottom-left {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  background: red
+    linear-gradient(to bottom left, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+}
+
+.background-gradient-mix {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.background-gradient-grad1 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to bottom left, red, yellow, blue);
+  background-size: 50px auto;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad2 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to top left, red, yellow, blue);
+  background-size: auto 50px;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad3 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to top right, red, yellow, blue);
+  background-size: 50px 50px;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad4 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to bottom right, red, yellow, blue);
+  background-size: 50px auto;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad5 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to left, red, yellow, blue);
+  background-size: contain, 150px;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad6 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(to bottom, green, pink),
+    linear-gradient(to left, red, yellow, blue);
+  background-size: 150px, 100px, 100px;
+  background-repeat: repeat, no-repeat;
+}
+
+.background-gradient-grad7 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(30deg, red, yellow, blue),
+    linear-gradient(60deg, red, yellow, blue);
+  background-size: 150px, 100px, 100px;
+  background-repeat: repeat, no-repeat, repeat;
+}
+
+.background-gradient-grad8 {
+  background-image:
+    url("../../resource/bg_flower.gif"),
+    linear-gradient(-0.9rad, red, yellow, blue),
+    linear-gradient(-0.4rad, red, yellow, blue);
+  background-size: 50px, 100px, 100px;
+  background-repeat: repeat, no-repeat, repeat;
+}

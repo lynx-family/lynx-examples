@@ -1,0 +1,37 @@
+{
+  "name": "@lynx-example/css-api",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "CSS properties API demo",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "rspeedy dev",
+    "build": "rspeedy build",
+    "preview": "rspeedy preview"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "repository": {
+    "directory": "api/css",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "type": "git"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "^3.2.0",
+    "@rsbuild/plugin-sass": "^1.2.1",
+    "@types/react": "^18.3.18",
+    "typescript": "~5.7.3"
+  }
+}

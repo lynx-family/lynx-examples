@@ -1,0 +1,25 @@
+.intro {
+  margin: 30px;
+  display: relative;
+  width: 300px;
+  height: 600px;
+  border-width: 1ppx;
+  overflow: visible;
+  relative-layout-once: false;
+}
+
+.t1 {
+  relative-id: 1;
+  relative-right-of: 2;
+  relative-align-right: parent;
+  relative-align-top: parent;
+  background: aqua;
+}
+
+.t2 {
+  relative-id: 2;
+  relative-bottom-of: 1;
+  relative-align-left: parent;
+  relative-align-bottom: parent;
+  background: pink;
+}

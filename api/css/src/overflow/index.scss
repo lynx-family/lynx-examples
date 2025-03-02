@@ -1,0 +1,14 @@
+.outer-box {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  flex-shrink: 0;
+  border: 3px dashed black;
+}
+
+.inner-box {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: red;
+}

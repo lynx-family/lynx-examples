@@ -1,0 +1,21 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.bgColor {
+  background-color: #ccc;
+}
+
+.divider {
+  margin-top: 10px;
+}
+
+.relative_image {
+  width: 100px;
+  height: 100px;
+}

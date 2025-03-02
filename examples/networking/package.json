@@ -1,0 +1,36 @@
+{
+  "name": "@lynx-example/networking",
+  "description": "An example shows Lynx networking abilities",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/networking"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:",
+    "@tanstack/react-query": "5.66.9"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "^3.2.0",
+    "@rsbuild/plugin-sass": "^1.2.1",
+    "@types/react": "^18.3.18",
+    "typescript": "~5.7.3",
+    "prettier": "3.4.2"
+  }
+}

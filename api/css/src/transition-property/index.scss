@@ -1,0 +1,56 @@
+.scroll {
+  width: 750rpx;
+  height: 900px;
+}
+
+.container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.base {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.opacityTransition {
+  transition: opacity 2s;
+}
+
+.widthTransition {
+  transition: width 2s;
+}
+
+.heightTransition {
+  transition: height 2s;
+}
+
+.bgColorTransition {
+  transition: background-color 2s;
+}
+
+.visibilityTransition {
+  transition: visibility 2s;
+}
+
+.topTransition {
+  transition: top 2s;
+}
+
+.rightTransition {
+  transition: right 2s;
+}
+
+.leftTransition {
+  transition: left 2s;
+}
+
+.transformTransition {
+  transition: transform 2s;
+}
+
+.allTransition {
+  transition: all 2s;
+}

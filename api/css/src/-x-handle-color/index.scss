@@ -1,0 +1,16 @@
+text {
+  font-size: 25px;
+}
+
+.container {
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.text1::selection {
+  -x-handle-color: blue;
+}
+
+.text2::selection {
+  -x-handle-color: red;
+}

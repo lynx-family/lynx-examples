@@ -1,0 +1,26 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container0 {
+  width: 100px;
+  height: 100px;
+  border-width: 1ppx;
+}
+
+.container1 {
+  border-width: 5ppx;
+  padding: 5ppx;
+  border-style: solid;
+  width: 100ppx;
+  height: 200ppx;
+}
+
+.image1 {
+  background-image: url("../../resource/bg_flower.gif");
+}

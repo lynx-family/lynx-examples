@@ -1,0 +1,15 @@
+.root {
+  height: 100%;
+}
+
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+}

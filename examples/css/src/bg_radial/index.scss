@@ -1,0 +1,54 @@
+.fixed_area {
+  height: 480px;
+  flex-direction: column;
+}
+
+.container {
+  margin: 5px;
+  text-align: center;
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+  width: 50%;
+  height: 100px;
+}
+
+.radial-gradient-1 {
+  background: radial-gradient(#e66465, #9198e5);
+}
+
+.radial-gradient-2 {
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.radial-gradient-3 {
+  background: radial-gradient(
+    circle at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+}
+
+.radial-gradient-4 {
+  background:
+    radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+
+.radial-gradient-5 {
+  background-image: radial-gradient(
+    ellipse farthest-side at center,
+    rgba(63, 94, 251, 1) 0%,
+    green
+  );
+}
+
+.radial-gradient-6 {
+  background: radial-gradient(ellipse farthest-corner at top left, red, green);
+}
+
+.radial-gradient-7 {
+  background: radial-gradient(100px 50px at center, red, green);
+}

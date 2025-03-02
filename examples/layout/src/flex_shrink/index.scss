@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  align-self: center;
+  height: 500px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+.title {
+  font-size: 60rpx;
+  font-weight: bold;
+  align-self: center;
+  color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
+}
+.item1 {
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(255, 53, 26);
+  align-items: center;
+  justify-content: center;
+}
+.item2 {
+  flex-shrink: 1;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: rgb(0, 235, 235);
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  color: white;
+  font-size: 50rpx;
+  font-weight: bold;
+}
