@@ -8,4 +8,8 @@ export default defineConfig({
     pluginQRCode(),
     pluginReactLynx(),
   ],
+  environments: {
+    web: {},
+    lynx: {},
+  },
 });
