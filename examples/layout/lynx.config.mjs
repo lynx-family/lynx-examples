@@ -39,8 +39,4 @@ export default defineConfig({
     pluginSass(),
     pluginQRCode(),
   ],
-  environments: {
-    web: {},
-    lynx: {},
-  },
 });
