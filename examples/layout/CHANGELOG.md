@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.3.2
+
+### Patch Changes
+
+- c9d7171: Remove `dist/relative.web.bundle`.
+
 ## 0.3.1
 
 ### Patch Changes
