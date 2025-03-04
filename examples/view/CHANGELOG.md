@@ -1,5 +1,11 @@
 # @lynx-example/view
 
+## 0.3.1
+
+### Patch Changes
+
+- 04d2a45: feat: add web output
+
 ## 0.3.0
 
 ### Minor Changes

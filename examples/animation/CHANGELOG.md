@@ -1,5 +1,11 @@
 # @lynx-example/animation
 
+## 0.3.1
+
+### Patch Changes
+
+- 04d2a45: fix: split out lynx.web.config and remove entry: `animation`, because it uses `getElementById` which is not supported by the web platform.
+
 ## 0.3.0
 
 ### Minor Changes
