@@ -48,9 +48,9 @@ This repository is intended to showcase examples of Lynx.
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility
 [`performance-apis`]: ./examples/performance-api
-[`tutorial-gallery`]: ./examples/gallery
-[`tutorial-bankcards`]: ./examples/tutorial/bankcards
-[`composing-elements`]: ./examples/tutorial/composing-elements
+[`tutorial-gallery`]: ./examples/Gallery
+[`tutorial-bankcards`]: ./examples/BankCards
+[`composing-elements`]: ./examples/composing-elements
 [`i18n`]: ./examples/i18n
 
 ## How to use
