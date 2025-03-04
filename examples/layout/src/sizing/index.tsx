@@ -4,7 +4,7 @@ import "./index.scss";
 
 const SizingExample = () => {
   return (
-    <view>
+    <scroll-view>
       <text className="box">Auto Sized Element</text>
       <text className="box" style={{ width: "fit-content" }}>
         Size Decided by Content
@@ -21,7 +21,7 @@ const SizingExample = () => {
       <text className="box" style={{ minHeight: "100px" }}>
         Expanded By Min Size
       </text>
-    </view>
+    </scroll-view>
   );
 };
 

@@ -4,7 +4,8 @@
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr 1fr;
   width: 95%;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   height: 400px;
   border: 1px solid #000;
   padding: 10px;

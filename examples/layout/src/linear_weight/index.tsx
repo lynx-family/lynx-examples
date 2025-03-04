@@ -2,12 +2,13 @@ import { root } from "@lynx-js/react";
 
 const LinearAlginItemsExample = () => {
   return (
-    <>
+    <scroll-view>
       <text
         style={{
           fontSize: "45rpx",
           fontWeight: "bold",
-          margin: "auto",
+          marginLeft: "auto",
+          marginRight: "auto",
           textAlign: "center",
           color: "linear-gradient(to right, rgb(255,53,26), rgb(0,235,235))",
         }}
@@ -19,7 +20,7 @@ const LinearAlginItemsExample = () => {
           display: "linear",
           linearDirection: "column",
           height: "300px",
-          width: "300px",
+          width: "90%",
           padding: "5px",
           margin: "10px",
           marginLeft: "auto",
@@ -56,7 +57,7 @@ const LinearAlginItemsExample = () => {
         >
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

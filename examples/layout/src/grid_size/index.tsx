@@ -4,7 +4,7 @@ import "./index.scss";
 
 const GridSize = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">grid-template-columns: 1fr 100px;</text>
       <text className="title">grid-template-rows: repeat(3, 1fr);</text>
       <view className="container">
@@ -24,7 +24,7 @@ const GridSize = () => {
           <text className="text">FIVE</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

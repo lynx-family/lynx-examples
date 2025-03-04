@@ -1,8 +1,9 @@
 .container {
   display: flex;
   flex-direction: row;
-  width: 65%;
-  margin: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   height: 250px;
   border: 1px solid #000;
   padding: 10px;
@@ -14,12 +15,13 @@
   font-size: 60rpx;
   font-weight: bold;
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
 }
 .item {
   flex-shrink: 0;
-  width: 45%;
+  width: 40%;
   margin: 5px;
   height: 100px;
   display: flex;

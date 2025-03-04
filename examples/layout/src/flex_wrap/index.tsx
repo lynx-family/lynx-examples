@@ -4,7 +4,7 @@ import "./index.scss";
 
 const FlexWrapExample = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">
         flex-direction: row;
       </text>
@@ -40,7 +40,7 @@ const FlexWrapExample = () => {
           <text className="text">Item 3</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

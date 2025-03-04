@@ -4,7 +4,7 @@ import "./index.scss";
 
 const GridAxisAlignment = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">align-items: center;</text>
       <text className="title">justify-items: center;</text>
       <view className="container" style={{ alignItems: "center", justifyItems: "center" }}>
@@ -34,7 +34,7 @@ const GridAxisAlignment = () => {
           <text className="text">justify-self: stretch;</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 
