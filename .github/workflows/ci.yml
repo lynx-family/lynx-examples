@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   test:
-    runs-on: lynx-ubuntu-22.04-medium
+    runs-on: lynx-ubuntu-24.04-xlarge
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

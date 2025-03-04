@@ -2,19 +2,12 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { entry } from "./lynx.config.mjs";
 
-export const entry = {
-  keyframe_animation: "./src/keyframe_animation/index.tsx",
-  transition_animation: "./src/transition_animation/index.tsx",
-  toggle_transition_demo: "./src/transition_toggle/index.tsx",
-  keyframe_spring: "./src/keyframe_spring/index.tsx",
-  keyframe_rotate: "./src/keyframe_rotate/index.tsx",
-  animate: "./src/animate/index.tsx",
-};
+delete entry.animate;
 
 export default defineConfig({
   source: {
@@ -23,6 +16,11 @@ export default defineConfig({
   plugins: [
     pluginReactLynx(),
     pluginSass(),
-    pluginQRCode(),
   ],
+  environments: {
+    web: {},
+  },
+  output: {
+    cleanDistPath: false,
+  },
 });
