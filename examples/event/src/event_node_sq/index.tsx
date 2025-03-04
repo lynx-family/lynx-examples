@@ -1,5 +1,5 @@
 import { root } from "@lynx-js/react";
-import type { NodesRef, SelectorQuery, Target, TouchEvent } from "@lynx-js/types";
+import type { NodesRef, SelectorQuery, TouchEvent } from "@lynx-js/types";
 
 export default function App() {
   function handleTap(e: TouchEvent) {
@@ -8,7 +8,7 @@ export default function App() {
     })`;
     (lynx
       .createSelectorQuery() as { selectUniqueID(uid: number): NodesRef } & SelectorQuery)
-      .selectUniqueID((e.currentTarget as { uid: number } & Target).uid)
+      .selectUniqueID(e.currentTarget.uid)
       .setNativeProps({
         "background-color": rndCol,
       })
