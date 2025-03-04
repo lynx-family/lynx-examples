@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "npm run build && pnpm changeset publish"
   },
   "nano-staged": {
     "*.{css,scss,js,jsx,ts,tsx,mjs,cjs,json,jsonc,md}": [
