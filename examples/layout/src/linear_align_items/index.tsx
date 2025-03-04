@@ -7,7 +7,8 @@ const LinearAlignItemsExample = () => {
         style={{
           fontSize: "45rpx",
           fontWeight: "bold",
-          alignSelf: "center",
+          margin: "auto",
+          textAlign: "center",
           color: "linear-gradient(to right, rgb(255,53,26), rgb(0,235,235))",
         }}
       >

@@ -28,7 +28,6 @@ export default defineConfig({
       linear_align_items: "./src/linear_align_items/index.tsx",
       linear_align_self: "./src/linear_align_self/index.tsx",
       linear_weight: "./src/linear_weight/index.tsx",
-      relative: "./src/relative/index.tsx",
       sizing: "./src/sizing/index.tsx",
     },
   },

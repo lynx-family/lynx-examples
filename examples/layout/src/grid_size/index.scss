@@ -14,7 +14,8 @@
 .title {
   font-size: 45rpx;
   font-weight: bold;
-  align-self: center;
+  text-align: center;
+  margin: auto;
   color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
 }
 .text {
@@ -26,6 +27,8 @@
 .item {
   border: 1px solid black;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 53, 26);
