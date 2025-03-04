@@ -5,8 +5,10 @@
   height: 130px;
   width: 150px;
   padding: 5px;
-  margin: 5px;
-  align-self: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #000;
   border-radius: 6px;
 }
@@ -35,6 +37,7 @@
 .title_style {
   font-size: 45rpx;
   font-weight: bold;
-  align-self: center;
+  margin: auto;
+  text-align: center;
   color: linear-gradient(to right, rgb(255, 53, 26), rgb(0, 235, 235));
 }

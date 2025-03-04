@@ -26,6 +26,8 @@
 }
 .item {
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
   border-radius: 4px;
   align-items: center;
   justify-content: center;

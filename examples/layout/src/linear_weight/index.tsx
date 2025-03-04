@@ -7,14 +7,14 @@ const LinearAlginItemsExample = () => {
         style={{
           fontSize: "45rpx",
           fontWeight: "bold",
-          alignSelf: "center",
+          margin: "auto",
+          textAlign: "center",
           color: "linear-gradient(to right, rgb(255,53,26), rgb(0,235,235))",
         }}
       >
         linear-weight: 0.5 : 2 : 0.5
       </text>
       <view
-        className="container"
         style={{
           display: "linear",
           linearDirection: "column",
@@ -22,7 +22,8 @@ const LinearAlginItemsExample = () => {
           width: "300px",
           padding: "5px",
           margin: "10px",
-          alignSelf: "center",
+          marginLeft: "auto",
+          marginRight: "auto",
           border: "1px solid #000",
           borderRadius: "6px",
         }}

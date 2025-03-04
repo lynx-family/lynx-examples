@@ -5,13 +5,14 @@
   "version": "0.3.0",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rspeedy build",
+    "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
   "files": [
     "dist/",
     "src/",
+    "lynx.web.config.mjs",
     "lynx.config.mjs"
   ],
   "repository": {

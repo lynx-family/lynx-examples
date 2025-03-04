@@ -1,13 +1,13 @@
 .column {
   display: linear;
-  border: 2px rgb(255, 53, 26);
+  border: 2px rgb(255, 53, 26) solid;
   padding: 5px;
 }
 
 .row {
   display: linear;
   linear-direction: row;
-  border: 2px rgb(255, 53, 26);
+  border: 2px rgb(255, 53, 26) solid;
 }
 
 .item {

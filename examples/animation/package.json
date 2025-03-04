@@ -15,6 +15,7 @@
   "files": [
     "dist/",
     "src/",
+    "lynx.web.config.mjs",
     "lynx.config.mjs"
   ],
   "repository": {
