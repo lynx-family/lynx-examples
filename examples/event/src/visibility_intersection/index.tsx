@@ -13,7 +13,7 @@ export default function App() {
       observer.relativeTo("#container");
       for (let i = 1; i <= 7; i++) {
         observer.observe("#view-item-" + i, (res: ObserveCallbackResult) => {
-          if ((res as { isIntersecting: boolean } & ObserveCallbackResult).isIntersecting) {
+          if (res.isIntersecting) {
             let rect = res.intersectionRect;
             let rect_str = ", location: [" + rect.left + ", " + rect.top + ", " + rect.right + ", " + rect.bottom + "]";
             setEventLog((log) => log + (log === "" ? "node: " : "\nnode: ") + res.observerId + rect_str);

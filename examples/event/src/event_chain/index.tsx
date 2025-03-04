@@ -48,7 +48,7 @@ export default function App() {
         alignItems: "center",
       }}
       bindtap={handleTap}
-      capture-touchstart={handletouchstart}
+      capture-bindtouchstart={handletouchstart}
     >
       <view
         id="tap1"

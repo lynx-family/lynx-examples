@@ -1,14 +1,14 @@
 import { root, useState } from "@lynx-js/react";
-import type { BaseEventOrig } from "@lynx-js/types";
+import type { Target, UIAppearanceDetailEvent } from "@lynx-js/types";
 
 export default function App() {
   const [eventLog, setEventLog] = useState<string>("");
 
-  function handleUIAppear(e: BaseEventOrig<{ dataset: { [key: string]: any } }>) {
+  function handleUIAppear(e: UIAppearanceDetailEvent<Target>) {
     setEventLog((log) => log + (log === "" ? "" : ", ") + e.detail.dataset.item);
   }
 
-  function handleUIDisappear(e: BaseEventOrig<{ dataset: { [key: string]: any } }>) {
+  function handleUIDisappear(e: UIAppearanceDetailEvent<Target>) {
     let log = eventLog.split(", ");
     log = log.filter(item => item !== e.detail.dataset.item);
     log.sort();
