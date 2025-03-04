@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.3.1
+
+### Patch Changes
+
+- 10b2c94: Disable relative layout for Web.
+
 ## 0.3.0
 
 ### Minor Changes

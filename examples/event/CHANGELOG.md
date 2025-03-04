@@ -1,5 +1,11 @@
 # @lynx-example/event
 
+## 0.3.1
+
+### Patch Changes
+
+- e198e3f: fix: correct events' name and typing.
+
 ## 0.3.0
 
 ### Minor Changes
