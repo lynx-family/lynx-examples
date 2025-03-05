@@ -7,7 +7,7 @@ import { useUpdateSwiperStyle } from "./useUpdateSwiperStyle";
 
 export function Swiper({
   data,
-  itemWidth = lynx.__globalProps.screenWidth,
+  itemWidth = SystemInfo.pixelWidth / SystemInfo.pixelRatio,
   duration,
   "main-thread:easing": MTEasing,
 }: {
