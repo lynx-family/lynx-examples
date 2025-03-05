@@ -1,5 +1,11 @@
 # @lynx-example/css
 
+## 0.3.1
+
+### Patch Changes
+
+- 2a9489f: Fix `mask-image` not working on iOS
+
 ## 0.3.0
 
 ### Minor Changes
