@@ -26,6 +26,7 @@ export function ButtonWithTooltip({ tooltipContent, children, ...rest }) {
         bindtouchend={() => {
           setTargetRect(null);
         }}
+        style={{ margin: "20px" }}
       >
         {children}
       </view>
