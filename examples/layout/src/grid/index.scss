@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 100px 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  width: 100%;
+  width: 280px;
+  align-self: center;
   height: 300px;
   gap: 10px;
 }

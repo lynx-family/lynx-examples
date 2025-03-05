@@ -4,7 +4,7 @@ import "./index.scss";
 
 const GridGap = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">gap: 20px;</text>
       <view className="container" style={{ gap: "20px" }}>
         <view className="item">
@@ -61,7 +61,7 @@ const GridGap = () => {
           <text className="text">FIVE</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

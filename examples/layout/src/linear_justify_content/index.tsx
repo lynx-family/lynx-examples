@@ -4,7 +4,7 @@ import "./index.scss";
 
 const LinearJustifyContentExample = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title_style">justify-content: start</text>
       <view className="container" style={{ justifyContent: "start" }}>
         <view className="item1"></view>
@@ -32,7 +32,7 @@ const LinearJustifyContentExample = () => {
         <view className="item2"></view>
         <view className="item3"></view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

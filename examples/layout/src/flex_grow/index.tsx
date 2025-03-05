@@ -4,7 +4,7 @@ import "./index.scss";
 
 const FlexGrowExample = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">
         flex-direction: column
       </text>
@@ -19,7 +19,7 @@ const FlexGrowExample = () => {
           <text className="text">100px</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 

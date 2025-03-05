@@ -11,7 +11,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 300px;
 
   &-row-span {
     grid-row-end: span 2;
@@ -19,10 +18,10 @@
 }
 
 .box {
-  border: 2px rgb(255, 53, 26) solid;
-  margin: 10px;
-  height: 200px;
-  width: 300px;
+  border: 1px rgb(255, 53, 26) solid;
+  margin-bottom: 7px;
+  height: 150px;
+  width: 90%;
 }
 
 text {

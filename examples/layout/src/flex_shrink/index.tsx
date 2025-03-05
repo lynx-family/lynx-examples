@@ -4,7 +4,7 @@ import "./index.scss";
 
 const FlexShrinkExample = () => {
   return (
-    <>
+    <scroll-view>
       <text className="title">
         flex-direction: column
       </text>
@@ -18,7 +18,7 @@ const FlexShrinkExample = () => {
           <text className="text">height shrinks from 300px to fit container</text>
         </view>
       </view>
-    </>
+    </scroll-view>
   );
 };
 
