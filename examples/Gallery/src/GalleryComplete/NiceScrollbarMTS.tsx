@@ -4,7 +4,7 @@ import { MainThread } from "@lynx-js/types";
 
 export const adjustScrollbarMTS = (scrollTop: number, scrollHeight: number, ref: RefObject<MainThread.Element>) => {
   "main thread";
-  const listHeight = lynx.__globalProps.screenHeight - 48;
+  const listHeight = SystemInfo.pixelHeight / SystemInfo.pixelRatio - 48;
   const scrollbarHeight = listHeight * (listHeight / scrollHeight);
   const scrollbarTop = listHeight * (scrollTop / scrollHeight);
   ref.current?.setStyleProperties({
