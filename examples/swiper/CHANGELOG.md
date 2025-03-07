@@ -1,5 +1,11 @@
 # @lynx-example/swiper
 
+## 0.2.1
+
+### Patch Changes
+
+- 073a75f: Use `SystemInfo` instead of `globalProps`
+
 ## 0.2.0
 
 ### Minor Changes
