@@ -3,7 +3,7 @@ export const calculateEstimatedSize = (pictureWidth: number, pictureHeight: numb
   const galleryPadding = 20;
   const galleryMainAxisGap = 10;
   const gallerySpanCount = 2;
-  const galleryWidth = lynx.__globalProps.screenWidth;
+  const galleryWidth = SystemInfo.pixelWidth / SystemInfo.pixelRatio;
   // Calculate the width of each ImageCard and return the relative height of the it.
   const itemWidth = (galleryWidth - galleryPadding * 2 - galleryMainAxisGap) / gallerySpanCount;
   return itemWidth / pictureWidth * pictureHeight;
