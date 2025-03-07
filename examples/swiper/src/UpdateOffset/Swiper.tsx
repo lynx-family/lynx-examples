@@ -5,7 +5,7 @@ import { SwiperItem } from "./SwiperItem";
 
 export function Swiper({
   data,
-  itemWidth = lynx.__globalProps.screenWidth,
+  itemWidth = SystemInfo.pixelWidth / SystemInfo.pixelRatio,
 }: {
   data: string[];
   itemWidth?: number;
