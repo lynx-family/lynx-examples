@@ -1,5 +1,11 @@
 # @lynx-example/discover-page
 
+## 0.3.1
+
+### Patch Changes
+
+- b0679a6: feat: Change the usage of lynx.\_\_globalProps to SystemInfo in Gallery
+
 ## 0.3.0
 
 ### Minor Changes

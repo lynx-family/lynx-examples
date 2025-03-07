@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.3.3
+
+### Patch Changes
+
+- 850812d: Better Web example
+
 ## 0.3.2
 
 ### Patch Changes
