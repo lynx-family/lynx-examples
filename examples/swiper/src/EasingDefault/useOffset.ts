@@ -19,7 +19,7 @@ export function useOffset({
   const currentIndexRef = useMainThreadRef<number>(0);
   const { animate, cancel: cancelAnimate } = useAnimate();
   function updateIndex(index: number) {
-    const offset = index * itemWidth;
+    const offset = -index * itemWidth;
     runOnMainThread(updateOffset)(offset);
   }
 
