@@ -6,7 +6,7 @@ export default function SafeArea({ children, style }: { children: ReactNode; sty
   const isIOS = SystemInfo.platform === "iOS";
 
   return (
-    <view class={`safe-area ${isIOS ? "ios" : "android"}`} style={style}>
+    <view className={`safe-area ${isIOS ? "ios" : "android"}`} style={style}>
       {children}
     </view>
   );

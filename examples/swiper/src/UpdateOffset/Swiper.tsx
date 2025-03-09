@@ -40,9 +40,9 @@ export function Swiper({
   }
 
   return (
-    <view class="swiper-wrapper">
+    <view className="swiper-wrapper">
       <view
-        class="swiper-container"
+        className="swiper-container"
         ref={containerRef}
         bindtouchstart={handleTouchStart}
         bindtouchmove={handleTouchMove}

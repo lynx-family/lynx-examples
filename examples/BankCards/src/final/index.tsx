@@ -33,7 +33,7 @@ function BankCards() {
   };
 
   return (
-    <view class="page">
+    <view className="page">
       <Amount amount="1314" />
       <Card
         selectedCard={selectedCard}

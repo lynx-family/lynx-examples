@@ -13,7 +13,7 @@ function BankCards() {
   };
 
   return (
-    <view class="page">
+    <view className="page">
       <BankCardScrollView />
     </view>
   );

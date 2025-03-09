@@ -10,7 +10,7 @@ export function Indicator({
   onItemClick?: (index: number) => void;
 }) {
   return (
-    <view class="indicator">
+    <view className="indicator">
       {Array.from({ length: total }).map((_, index) => (
         <IndicatorItem key={index} active={index === current} onClick={onItemClick} index={index} />
       ))}
@@ -23,7 +23,7 @@ function IndicatorItem(
 ) {
   return (
     <view
-      class={`indicator-item ${active ? "active" : ""}`}
+      className={`indicator-item ${active ? "active" : ""}`}
       bindtap={() => onClick(index)}
     >
     </view>

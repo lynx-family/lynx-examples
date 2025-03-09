@@ -36,7 +36,7 @@ function BankCards() {
   };
 
   return (
-    <view class="page">
+    <view className="page">
       <Card
         selectedCard={selectedCard}
         isFront={isFront}
