@@ -79,6 +79,7 @@ pnpm run dev
 4. You can fork the current project or copy the code from the current project to use it.
 
 ## How to use examples on the lynx-website
+
 1. Publish your example to the npm registry.
 
 2. Go to the project "packages/lynx-example-packages" directory on the lynx-website.
@@ -92,11 +93,11 @@ pnpm run dev
 ```
 
 4. Install dependencies in the lynx-website root directory, then start the project:
-   
+
 ```bash
 pnpm i
 pnpm run dev
-```   
+```
 
 5. Use it in your MDX files:
 
@@ -107,9 +108,7 @@ import { Go } from "@lynx";
   example="xxx"
   defaultFile="src/App.tsx"
   img="xxx-example-preview.png"
-/>
-
+/>;
 ```
+
 For more details please see [`<Go/>`](https://github.com/lynx-family/lynx-website/blob/main/src/components/go/README.md)
-
-
