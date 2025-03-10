@@ -5,7 +5,7 @@ import "../common.css";
 function App() {
   return (
     <view
-      class="container"
+      className="container"
       style={{
         background: "linear-gradient(to bottom right, rgb(255,53,26), rgb(0,235,235) 50%)",
         clipPath: "ellipse(50px 60px at 10% 20%)",

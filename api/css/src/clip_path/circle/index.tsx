@@ -5,7 +5,7 @@ import "../common.css";
 function App() {
   return (
     <view
-      class="container"
+      className="container"
       style={{
         clipPath: "circle(50% at 50% top)",
       }}

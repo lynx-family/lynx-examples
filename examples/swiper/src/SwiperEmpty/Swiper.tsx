@@ -9,8 +9,8 @@ export function Swiper({
   itemWidth?: number;
 }) {
   return (
-    <view class="swiper-wrapper">
-      <view class="swiper-container">
+    <view className="swiper-wrapper">
+      <view className="swiper-container">
         {data.map((pic) => <SwiperItem pic={pic} itemWidth={itemWidth} />)}
       </view>
     </view>

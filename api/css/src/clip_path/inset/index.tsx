@@ -5,7 +5,7 @@ import "../common.css";
 function App() {
   return (
     <view
-      class="container"
+      className="container"
       style={{
         clipPath: "inset(30px super-ellipse 3 3 50px/50px)",
       }}

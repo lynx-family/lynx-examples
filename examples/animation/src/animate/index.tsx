@@ -7,7 +7,7 @@ const AnimateAnimationExample = () => {
     <view style={{ width: "100%", height: "100%" }}>
       <view
         id="view1"
-        class="box"
+        className="box"
         bindtap={() => {
           const ani = lynx.getElementById("view1").animate(
             [
