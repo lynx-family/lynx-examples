@@ -10,7 +10,7 @@ export default function SimpleObserveExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       // 3. process "metric.fcp" and "pipeline"
       let entryType: string | undefined;
       if (entry.entryType == "metric" && entry.name == "fcp") {

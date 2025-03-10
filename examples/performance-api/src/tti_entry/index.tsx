@@ -9,10 +9,10 @@ export default function MetricTtiEntryExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       if (entry.entryType == "metric" && entry.name == "tti") {
         // 3. Received "metric.tti" event.
-        let ttiEntry = entry as MetricTtiEntry;
+        const ttiEntry = entry as MetricTtiEntry;
         setTtiEntry(JSON.stringify(ttiEntry, null, 4));
       }
     });

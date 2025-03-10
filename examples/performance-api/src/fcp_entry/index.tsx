@@ -9,10 +9,10 @@ export default function MetricFcpEntryExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       if (entry.entryType == "metric" && entry.name == "fcp") {
         // 3. Received "metric.fcp" event.
-        let fcpEntry = entry as MetricFcpEntry;
+        const fcpEntry = entry as MetricFcpEntry;
         setFcpEntry(JSON.stringify(fcpEntry, null, 4));
       }
     });

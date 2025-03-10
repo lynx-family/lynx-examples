@@ -10,7 +10,7 @@ export default function InitLynxviewEntryExample(this: any) {
   function observePerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       // 3. process performance entries
       setHasReceivedEntries(true);
       console.log(JSON.stringify(entry));
