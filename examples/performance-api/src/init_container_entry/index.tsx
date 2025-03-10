@@ -9,11 +9,11 @@ export default function InitContainerEntryExample(this: any) {
   function observerPerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       console.log(JSON.stringify(entry));
       if (entry.entryType == "init" && entry.name == "container") {
         // 3. Received "init.container" event.
-        let initContainerEntry = entry as InitContainerEntry;
+        const initContainerEntry = entry as InitContainerEntry;
         setInitContainerEntry(JSON.stringify(initContainerEntry, null, 4));
         observer.disconnect();
       }

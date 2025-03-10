@@ -9,10 +9,10 @@ export default function LoadBundleEntryExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       if (entry.entryType == "pipeline" && entry.name == "loadBundle") {
         // 3. Received "pipeline.loadBundle" event.
-        let loadBundleEntry = entry as LoadBundleEntry;
+        const loadBundleEntry = entry as LoadBundleEntry;
         setLoadBundleEntry(JSON.stringify(loadBundleEntry, null, 4));
       }
     });
