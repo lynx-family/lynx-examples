@@ -1,5 +1,12 @@
 # @lynx-example/swiper
 
+## 0.2.2
+
+### Patch Changes
+
+- b7c78f3: Fix swiper indicator invalid click
+- 4b435a4: Changed `class` to `className` for all Examples
+
 ## 0.2.1
 
 ### Patch Changes
