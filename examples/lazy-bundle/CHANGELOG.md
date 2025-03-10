@@ -1,5 +1,11 @@
 # @lynx-example/lazy-bundle
 
+## 0.3.1
+
+### Patch Changes
+
+- a728930: Fixed typo.
+
 ## 0.3.0
 
 ### Minor Changes

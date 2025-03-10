@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.3.1
+
+### Patch Changes
+
+- a444bf2: Optimize performance monitoring code conventions
+
 ## 0.3.0
 
 ### Minor Changes
