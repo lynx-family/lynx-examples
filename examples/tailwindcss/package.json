@@ -25,7 +25,7 @@
     "node": ">=18"
   },
   "repository": {
-    "directory": "examples/hello-world",
+    "directory": "examples/tailwindcss",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "type": "git"
   }
