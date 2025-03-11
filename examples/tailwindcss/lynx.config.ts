@@ -5,4 +5,8 @@ import { pluginTailwindCSS } from "rsbuild-plugin-tailwindcss";
 
 export default defineConfig({
   plugins: [pluginReactLynx(), pluginQRCode(), pluginTailwindCSS()],
+  environments: {
+    web: {},
+    lynx: {},
+  },
 });

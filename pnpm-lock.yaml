@@ -771,6 +771,9 @@ importers:
         specifier: 'catalog:'
         version: 0.105.0(@lynx-js/types@3.2.0)(@types/react@18.3.18)
     devDependencies:
+      '@lynx-contrib/tailwind-preset':
+        specifier: 0.0.2
+        version: 0.0.2
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.3.3
@@ -780,9 +783,6 @@ importers:
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.8.2(@rspack/core@1.2.7(@swc/helpers@0.5.15))(@samchon/openapi@2.5.3)(@types/node@22.13.9)(typescript@5.7.3)(webpack@5.98.0)
-      '@lynx-js/tailwind-preset':
-        specifier: ^0.0.1
-        version: 0.0.1
       '@lynx-js/types':
         specifier: ^3.2.0
         version: 3.2.0
@@ -1159,6 +1159,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@lynx-contrib/tailwind-preset@0.0.2':
+    resolution: {integrity: sha512-lVLCvsiM/V6SpoAdH3EP3v8P0lA1wgznPRFGoRxqI+YK7yRfrlOpgQxM3eMnKwCl8Nl2TIyd8/PDtJQCiLDojA==}
+
   '@lynx-js/chunk-loading-webpack-plugin@0.1.6':
     resolution: {integrity: sha512-ippFA0GWxYm1/5C4n6l0MgCmhvbvJG9a618+xdoeP8yMPryUEd6Qc7JBwXuHJ/AZ9zFgUaOmbxNAaopcBgoHrA==}
     engines: {node: '>=18'}
@@ -1227,9 +1230,6 @@ packages:
   '@lynx-js/runtime-wrapper-webpack-plugin@0.0.7':
     resolution: {integrity: sha512-se8l/Qt1WzXdT32756py/fOJL9BaQY89tTIDk1Lwgq6IPuf3MQ7XVAwb+ukniCY0oablkjVTpGTXFCCjqM8ISw==}
     engines: {node: '>=18'}
-
-  '@lynx-js/tailwind-preset@0.0.1':
-    resolution: {integrity: sha512-qTqbx/dEYym5zboQVWU+HiIMr2djcNRxKLL2THTQV5SakC1IHKyM3FPOoyQJbu3+buufpA1x0viAfhXokrgKng==}
 
   '@lynx-js/tasm@0.0.5':
     resolution: {integrity: sha512-E5ZTtNQslv0zGMqtEo/GULHM0XiyvkuL4K8SxP8R9n0WnInppIiekIP5Rzvt+oex7Sg8ngtm/ToUDiZ0NQ9+Qg==}
@@ -4391,6 +4391,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@lynx-contrib/tailwind-preset@0.0.2': {}
+
   '@lynx-js/chunk-loading-webpack-plugin@0.1.6(@rspack/core@1.2.7(@swc/helpers@0.5.15))':
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.4
@@ -4492,8 +4494,6 @@ snapshots:
   '@lynx-js/runtime-wrapper-webpack-plugin@0.0.7':
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.4
-
-  '@lynx-js/tailwind-preset@0.0.1': {}
 
   '@lynx-js/tasm@0.0.5': {}
 

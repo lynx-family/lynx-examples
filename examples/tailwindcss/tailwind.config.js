@@ -1,4 +1,4 @@
-import preset from "@lynx-js/tailwind-preset";
+import preset from "@lynx-contrib/tailwind-preset";
 
 export default {
   presets: [
