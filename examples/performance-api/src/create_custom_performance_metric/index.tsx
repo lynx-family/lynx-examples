@@ -18,15 +18,15 @@ export default function CreateCustomPerformanceMetricExample(this: any) {
   function observerPerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       console.log(JSON.stringify(entry));
       if (entry.entryType == "pipeline" && entry.name == "loadBundle") {
         // 3. Received "pipeline.loadBundle" event.
-        let LoadBundleEntry = entry as LoadBundleEntry;
+        const LoadBundleEntry = entry as LoadBundleEntry;
         setLoadBundleEnd(LoadBundleEntry.loadBundleEnd);
       } else if (entry.entryType == "pipeline") {
         // 4. calculate waitingDuration
-        let pipelineEntry = entry as PipelineEntry;
+        const pipelineEntry = entry as PipelineEntry;
         if (pipelineEntry.identifier == "important-update") {
           setPipelineStart(pipelineEntry.pipelineStart);
           setWaitingDuration(pipelineEntry.pipelineStart - loadBundleEndRef.current);

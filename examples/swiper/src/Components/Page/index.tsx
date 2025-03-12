@@ -8,27 +8,27 @@ import SafeArea from "../SafeArea";
 export function Page({ children, title, style }: { children: ReactNode; title?: string; style?: CSSProperties }) {
   return (
     <SafeArea style={style}>
-      <view class="page-container">
+      <view className="page-container">
         {children}
-        <view class="card-detail-container">
-          <view class="card-detail">
-            <view class="card-detail-title">
-              <text class="card-detail-title-price">￥1314</text>
-              <text class="card-detail-amount">Sold 1000+</text>
+        <view className="card-detail-container">
+          <view className="card-detail">
+            <view className="card-detail-title">
+              <text className="card-detail-title-price">￥1314</text>
+              <text className="card-detail-amount">Sold 1000+</text>
             </view>
-            <view class="card-detail-desc">
-              <text class="card-detail-desc-text">Single leather seat</text>
+            <view className="card-detail-desc">
+              <text className="card-detail-desc-text">Single leather seat</text>
               <image
                 mode="aspectFill"
-                class="favorite-icon"
+                className="favorite-icon"
                 src={favoriteIcon}
                 style={{ width: "20px", height: "20px" }}
               />
             </view>
           </view>
         </view>
-        <view class="order-button">
-          <text class="order-text">Order Now</text>
+        <view className="order-button">
+          <text className="order-text">Order Now</text>
         </view>
       </view>
     </SafeArea>

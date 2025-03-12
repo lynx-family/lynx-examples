@@ -10,11 +10,14 @@ export default function PipelineEntryExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
-      if (entry.entryType == "pipeline" && entry.identifier == "myNamePipeline") {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+      if (entry.entryType == "pipeline") {
         // 3. Received "pipeline" event of "myPipeline".
-        let pipelineEntry = entry as PipelineEntry;
-        setPipelineEntry(JSON.stringify(pipelineEntry, null, 4));
+        const pipelineEntry = entry as PipelineEntry;
+        // `PerformanceEntry.identifier` is equal to `view.__lynx_timing_flag`.
+        if (pipelineEntry.identifier == "myNamePipeline") {
+          setPipelineEntry(JSON.stringify(pipelineEntry, null, 4));
+        }
       }
     });
     // 2. Register to listen to the "pipeline" event.

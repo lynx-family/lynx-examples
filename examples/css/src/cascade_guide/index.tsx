@@ -13,7 +13,7 @@ function App() {
         width: "150px",
         height: "150px",
       }}
-      class="bg-color bg-gradient"
+      className="bg-color bg-gradient"
     >
     </view>
   );

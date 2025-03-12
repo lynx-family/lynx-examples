@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <view class="container">
+    <view className="container">
       <view className="header">
         <image src={left} className="nav-icon left" />
         <text className="title">Load More Data</text>

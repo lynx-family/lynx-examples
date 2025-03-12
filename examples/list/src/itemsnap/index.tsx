@@ -10,7 +10,7 @@ import "./index.scss";
 
 function App() {
   return (
-    <view class="container">
+    <view className="container">
       <list
         className="list-wrapper"
         list-type="single"

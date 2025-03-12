@@ -1,5 +1,11 @@
 # @lynx-example/react-lifecycle
 
+## 0.2.1
+
+### Patch Changes
+
+- 7e654d0: Add margin for better experience.
+
 ## 0.2.0
 
 ### Minor Changes

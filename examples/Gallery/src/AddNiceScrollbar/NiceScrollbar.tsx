@@ -10,7 +10,7 @@ export const NiceScrollbar = forwardRef((_, ref) => {
   const [scrollbarTop, setScrollbarTop] = useState(0);
 
   const adjustScrollbar = (scrollTop: number, scrollHeight: number) => {
-    const listHeight = lynx.__globalProps.screenHeight - 48;
+    const listHeight = SystemInfo.pixelHeight / SystemInfo.pixelRatio - 48;
     const scrollbarHeight = listHeight * (listHeight / scrollHeight);
     const scrollbarTop = listHeight * (scrollTop / scrollHeight);
     setScrollbarHeight(scrollbarHeight);

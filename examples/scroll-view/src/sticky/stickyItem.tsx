@@ -11,7 +11,7 @@ export const StickyItem = (props: { index: number; height: number; sticky: boole
         top: "0px",
       }}
     >
-      <text class="sub-title">{`Scroll-Item-${props.index}-sticky-${props.sticky}`}</text>
+      <text className="sub-title">{`Scroll-Item-${props.index}-sticky-${props.sticky}`}</text>
     </view>
   );
 };

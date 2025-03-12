@@ -25,7 +25,7 @@ function BankCards() {
   };
 
   return (
-    <view class="page">
+    <view className="page">
       <Card
         isFirstRender={isFirstRender}
         isFront={isFront}

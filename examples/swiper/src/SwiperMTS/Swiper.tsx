@@ -5,7 +5,7 @@ import { useUpdateSwiperStyle } from "./useUpdateSwiperStyle";
 
 export function Swiper({
   data,
-  itemWidth = lynx.__globalProps.screenWidth,
+  itemWidth = SystemInfo.pixelWidth / SystemInfo.pixelRatio,
 }: {
   data: string[];
   itemWidth?: number;
@@ -16,9 +16,9 @@ export function Swiper({
   });
 
   return (
-    <view class="swiper-wrapper">
+    <view className="swiper-wrapper">
       <view
-        class="swiper-container"
+        className="swiper-container"
         main-thread:ref={containerRef}
         main-thread:bindtouchstart={handleTouchStart}
         main-thread:bindtouchmove={handleTouchMove}

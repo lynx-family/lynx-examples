@@ -10,11 +10,11 @@ export default function InitBackgroundRuntimeEntryExample(this: any) {
   function observerPerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       console.log(JSON.stringify(entry));
       if (entry.entryType == "init" && entry.name == "backgroundRuntime") {
         // 3. Received "init.backgroundRuntime" event.
-        let initBackgroundRuntimeEntry = entry as InitBackgroundRuntimeEntry;
+        const initBackgroundRuntimeEntry = entry as InitBackgroundRuntimeEntry;
         setInitBackgroundRuntimeEntry(JSON.stringify(initBackgroundRuntimeEntry, null, 4));
         observer.disconnect();
       }

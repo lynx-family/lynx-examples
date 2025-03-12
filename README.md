@@ -80,23 +80,35 @@ pnpm run dev
 
 ## How to use examples on the lynx-website
 
-1. Go to the project root directory on the lynx-website.
+1. Publish your example to the npm registry.
 
-2. Init `Submodule` or Update `Submodule`
+2. Go to the project "packages/lynx-example-packages" directory on the lynx-website.
+
+3. Update packages/lynx-example-packages/package.json dependencies
+
+```json
+"dependencies": {
+    "@lynx-example/xxx": "xxx",
+}
+```
+
+4. Install dependencies in the lynx-website root directory, then start the project:
 
 ```bash
-git submodule update --init --recursive
+pnpm i
+pnpm run dev
 ```
 
-3. Use it in your MDX files:
+5. Use it in your MDX files:
 
 ```jsx
-import { LynxGoMark } from "@/components/lynxGo";
+import { Go } from "@lynx";
 
-// path: The path is within the 'lynx-examples' folder, referring to the path of the file that needs to be displayed.
-<LynxGoMark path="examples/event/src/App.tsx" lang="tsx" />;
+<Go
+  example="xxx"
+  defaultFile="src/App.tsx"
+  img="xxx-example-preview.png"
+/>;
 ```
 
-4. Update the `LynxGoMark` code:
-
-just need to modify the 'path' of the `LynxGoMark` component.
+For more details please see [`<Go/>`](https://github.com/lynx-family/lynx-website/blob/main/src/components/go/README.md)

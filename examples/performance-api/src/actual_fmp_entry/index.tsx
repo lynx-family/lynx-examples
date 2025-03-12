@@ -11,10 +11,10 @@ export default function MetricActualFmpEntryExample(this: any) {
   useMemo(() => {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       if (entry.entryType == "metric" && entry.name == "actualFmp") {
         // 3. Received "metric.actualFmp" event.
-        let actualfmpEntry = entry as MetricActualFmpEntry;
+        const actualfmpEntry = entry as MetricActualFmpEntry;
         setActualFMPEntry("actualfmpEntry : " + JSON.stringify(actualfmpEntry, null, 4));
       }
     });

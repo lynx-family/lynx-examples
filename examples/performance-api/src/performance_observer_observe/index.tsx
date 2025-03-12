@@ -11,7 +11,7 @@ export default function InitLynxviewEntryExample(this: any) {
   function observerAllEntryTypePerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       console.log(JSON.stringify(entry));
       // 3. process "metric.fcp" and "pipeline"
       let entryType: string | undefined;
@@ -41,7 +41,7 @@ export default function InitLynxviewEntryExample(this: any) {
   function observeSpecificPerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       // 3. process "metric.fcp" and "pipeline"
       let entryType: string | undefined;
       if (entry.entryType == "metric" && entry.name == "fcp") {

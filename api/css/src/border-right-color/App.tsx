@@ -3,7 +3,7 @@ import "./index.scss";
 
 const BorderRightColor = () => {
   return (
-    <view class="intro">
+    <view className="intro">
       <text className="border-color">
         {"\n border-left-color: red; \n border-right-color: blue; \n border-top-color: green; \n border-bottom-color: black; \n"}
       </text>

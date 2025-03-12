@@ -9,10 +9,10 @@ export default function InitLynxviewEntryExample(this: any) {
   function observerPerformanceEntry() {
     "background-only";
     // 1. Create a performance observer.
-    let observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
+    const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
       if (entry.entryType == "init" && entry.name == "lynxview") {
         // 3. Received "init.lynxview" event.
-        let initLynxviewEntry = entry as InitLynxviewEntry;
+        const initLynxviewEntry = entry as InitLynxviewEntry;
         setInitLynxviewEntry(JSON.stringify(initLynxviewEntry, null, 4));
         observer.disconnect();
       }
