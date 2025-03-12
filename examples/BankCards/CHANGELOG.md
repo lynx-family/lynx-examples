@@ -1,5 +1,11 @@
 # @lynx-example/bankcards
 
+## 0.3.1
+
+### Patch Changes
+
+- 4b435a4: Changed `class` to `className` for all Examples
+
 ## 0.3.0
 
 ### Minor Changes

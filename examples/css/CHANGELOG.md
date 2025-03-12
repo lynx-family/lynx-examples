@@ -1,5 +1,12 @@
 # @lynx-example/css
 
+## 0.3.2
+
+### Patch Changes
+
+- df6d350: Change `class` to `className`.
+- 4b435a4: Changed `class` to `className` for all Examples
+
 ## 0.3.1
 
 ### Patch Changes
