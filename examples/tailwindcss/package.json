@@ -16,7 +16,7 @@
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
     "typescript": "~5.7.3",
-    "@lynx-contrib/tailwind-preset": "0.0.2",
+    "@lynx-js/tailwind-preset": "0.0.2",
     "rsbuild-plugin-tailwindcss": "^0.2.0",
     "tailwindcss": "^3.4.17"
   },
