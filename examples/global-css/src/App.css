@@ -1,0 +1,7 @@
+.red {
+  background: red;
+}
+
+.red > text {
+  color: blue;
+}
