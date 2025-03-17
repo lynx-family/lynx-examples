@@ -2,6 +2,7 @@ packages:
   - api/*
   - examples/*
   - examples/web-platform/packages/*
+  - examples/with-solidjs/packages/*
 
 catalog:
   "@lynx-js/qrcode-rsbuild-plugin": "0.3.3"
