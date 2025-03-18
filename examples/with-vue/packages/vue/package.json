@@ -1,0 +1,16 @@
+{
+  "name": "@lynx-js/vue",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "@vue/runtime-core": "3.5.13"
+  },
+  "devDependencies": {
+    "@lynx-js/types": "3.2.0"
+  },
+  "peerDependencies": {
+    "@lynx-js/types": "*"
+  }
+}

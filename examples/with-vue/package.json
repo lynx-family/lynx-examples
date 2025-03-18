@@ -1,0 +1,36 @@
+{
+  "name": "@lynx-example/with-vue",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "An example shows how to use Lynx with Vue",
+  "license": "Apache-2.0",
+  "files": [
+    "dist/",
+    "src/",
+    "rspack.config.ts",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/with-vue"
+  },
+  "scripts": {
+    "dev": "rspack dev",
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
+    "@lynx-js/template-webpack-plugin": "0.6.4",
+    "@lynx-js/types": "3.2.0",
+    "@lynx-js/vue": "workspace:*",
+    "@rspack/cli": "^1.2.8",
+    "@rspack/core": "^1.2.8",
+    "@vue/compiler-core": "3.5.13",
+    "@vue/compiler-sfc": "3.5.13",
+    "vue-loader": "17.4.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
