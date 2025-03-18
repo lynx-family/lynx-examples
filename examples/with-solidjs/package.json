@@ -1,16 +1,26 @@
 {
   "name": "@lynx-example/with-solidjs",
-  "description": "An example shows how to use Lynx with SolidJS",
   "version": "0.0.1",
+  "type": "module",
+  "description": "An example shows how to use Lynx with SolidJS",
+  "license": "Apache-2.0",
+  "files": [
+    "dist/",
+    "src/",
+    "rspack.config.ts",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/with-solidjs"
+  },
   "scripts": {
-    "start": "rspack dev",
+    "dev": "rspack dev",
     "build": "rspack build"
   },
-  "type": "module",
-  "dependencies": {
-    "@lynx-js/solid": "workspace:*"
-  },
   "devDependencies": {
+    "@lynx-js/solid": "workspace:*",
     "@lynx-js/template-webpack-plugin": "0.6.4",
     "@lynx-js/types": "3.2.0",
     "@rspack/cli": "^1.2.8",
@@ -18,5 +28,8 @@
     "babel-loader": "^10.0.0",
     "babel-preset-solid": "^1.0.0",
     "@babel/preset-typescript": "^7.13.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
