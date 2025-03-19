@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.3.1
+
+### Patch Changes
+
+- 0b74f93: feat:add font-face example.
+
 ## 0.3.0
 
 ### Minor Changes
