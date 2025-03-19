@@ -1,6 +1,10 @@
-# Use Lynx with SolidJS
+# Example: Use Lynx with SolidJS
 
 This example shows how to use Lynx with SolidJS.
+
+> [!CAUTION]
+> Disclaimer: This framework is not currently officially supported by Lynx and cannot represent the actual performance, development experience, and user experience of Lynx. The integration of this framework may have some limitations or may change in future versions.
+> The following code is for demonstration purposes only. It is not designed to be a complete framework. Its performance and compatibility cannot be guaranteed and should not be used in production.
 
 ## Produce a Lynx App Bundle (`.lynx.bundle`)
 
