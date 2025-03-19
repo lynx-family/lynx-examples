@@ -18,6 +18,7 @@ export default defineConfig({
       text_layout: "./src/text_layout/index.tsx",
       shadow_and_stroke: "./src/shadow_and_stroke/index.tsx",
       custom_font: "./src/custom_font/index.tsx",
+      font_face: "./src/font_face/index.tsx",
     },
     alias: {
       "@assets": "./assets",

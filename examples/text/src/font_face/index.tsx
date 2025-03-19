@@ -1,26 +1,9 @@
 import { root } from "@lynx-js/react";
 import { Component } from "@lynx-js/react";
-import fontFile from "../../assets/font/Doto-Regular.ttf";
 
 import "./index.scss";
 
-export default class CustomFontExample extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { fontName: "PingFang" };
-  }
-  componentDidMount() {
-    lynx.addFont(
-      {
-        "font-family": "Doto",
-        "src": `url(${fontFile})`,
-      },
-      () => {
-        console.log("load Doto font");
-        this.setState({ fontName: "Doto" });
-      },
-    );
-  }
+export default class FontFaceExample extends Component {
   render() {
     return (
       <view
@@ -33,13 +16,12 @@ export default class CustomFontExample extends Component {
       >
         <text>Whereas recognition of the inherent dignity</text>
         <text style={{ fontFamily: "Inter" }}>Whereas recognition of the inherent dignity</text>
-        <text style={{ fontFamily: this.state.fontName }}>Whereas recognition of the inherent dignity</text>
         <text style={{ fontFamily: "Icon" }}>&#xEA01;</text>
       </view>
     );
   }
 }
-root.render(<CustomFontExample />);
+root.render(<FontFaceExample />);
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept();
