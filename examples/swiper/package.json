@@ -2,7 +2,7 @@
   "name": "@lynx-example/swiper",
   "description": "An example shows how to use main thread script for interaction",
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "license": "Apache-2.0",
   "scripts": {
     "build": "rspeedy build",
