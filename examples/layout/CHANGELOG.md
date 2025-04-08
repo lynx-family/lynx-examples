@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.4.0
+
+### Minor Changes
+
+- df7bb3d: Upgrade to Rspeedy v0.9.0.
+
 ## 0.3.3
 
 ### Patch Changes

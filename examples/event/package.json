@@ -2,7 +2,7 @@
   "name": "@lynx-example/event",
   "description": "An example shows how to use Lynx Event",
   "type": "module",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "license": "Apache-2.0",
   "scripts": {
     "build": "rspeedy build",
