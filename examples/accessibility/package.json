@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/accessibility",
   "description": "An example shows how to make App accessible in ReactLynx",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",

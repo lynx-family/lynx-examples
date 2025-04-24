@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/image",
   "description": "An example shows how to use different kinds of images in Lynx",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",

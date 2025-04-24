@@ -1,5 +1,17 @@
 # @lynx-example/list
 
+## 0.4.0
+
+### Minor Changes
+
+- df7bb3d: Upgrade to Rspeedy v0.9.0.
+
+### Patch Changes
+
+- 92eb06b: feat: list add supports web
+- b59bd3b: feat: Introduce the showcase of async-rendering on `<list>`
+- dbf5cc3: feat: Introduce horizontal snap showcase for `<list>`
+
 ## 0.3.1
 
 ### Patch Changes

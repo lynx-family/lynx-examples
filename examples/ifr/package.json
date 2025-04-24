@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/ifr",
   "description": "An example about Instant First-Frame Rendering (IFR) in Lynx",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
