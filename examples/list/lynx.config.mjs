@@ -12,6 +12,7 @@ export default defineConfig({
     entry: {
       base: "./src/base/index.tsx",
       itemSnap: "./src/itemsnap/index.tsx",
+      horizontalSnap: "./src/horizontal-snap/index.tsx",
       loadMore: "./src/loadmore/index.tsx",
       flow: "./src/flow/index.tsx",
       waterfall: "./src/waterfall/index.tsx",
