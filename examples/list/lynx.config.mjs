@@ -17,6 +17,7 @@ export default defineConfig({
       flow: "./src/flow/index.tsx",
       waterfall: "./src/waterfall/index.tsx",
       sticky: "./src/sticky/index.tsx",
+      asyncRendering: "./src/async-rendering/index.tsx",
     },
   },
   plugins: [
