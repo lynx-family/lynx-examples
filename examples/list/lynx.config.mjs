@@ -18,6 +18,7 @@ export default defineConfig({
       waterfall: "./src/waterfall/index.tsx",
       sticky: "./src/sticky/index.tsx",
       asyncRendering: "./src/async-rendering/index.tsx",
+      zIndex: "./src/zIndex/index.tsx",
     },
   },
   plugins: [
