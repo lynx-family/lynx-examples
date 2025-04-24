@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/text",
   "description": "An example shows how to use text and inline-text in Lynx",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {

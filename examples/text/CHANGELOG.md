@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.4.1
+
+### Patch Changes
+
+- bc2ba95: feat:add cross text selection case.
+
 ## 0.4.0
 
 ### Minor Changes
