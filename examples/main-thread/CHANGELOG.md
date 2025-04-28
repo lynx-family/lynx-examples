@@ -1,5 +1,11 @@
 # @lynx-example/main-thread
 
+## 0.3.0
+
+### Minor Changes
+
+- 97de59b: Upgrade to Rspeedy v0.9.3.
+
 ## 0.2.0
 
 ### Minor Changes
