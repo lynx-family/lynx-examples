@@ -1,5 +1,11 @@
 # @lynx-example/react-lifecycle
 
+## 0.4.0
+
+### Minor Changes
+
+- 97de59b: Upgrade to Rspeedy v0.9.3.
+
 ## 0.3.0
 
 ### Minor Changes
