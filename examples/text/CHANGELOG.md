@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.5.1
+
+### Patch Changes
+
+- 1791207: feat:optimize cross text selection case.
+
 ## 0.5.0
 
 ### Minor Changes
