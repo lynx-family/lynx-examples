@@ -1,31 +1,35 @@
+// Copyright 2025 The Lynx Authors. All rights reserved.
+// Licensed under the Apache License Version 2.0 that can be found in the
+// LICENSE file in the root directory of this source tree.
+
 import { root } from "@lynx-js/react";
 import { useEffect } from "react";
 
 import "./index.scss";
 
+/**
+ * Metadata for each <text> node: position, dimensions, and selection bounds.
+ */
 interface TextNodeInfo {
-  left: number;
-  top: number;
-  height: number;
-  width: number;
-  id: string;
-  startX: number;
-  startY: number;
-  endX: number;
-  endY: number;
+  id: string; // Unique identifier for the DOM node
+  left: number; // X-coordinate of node's left edge
+  top: number; // Y-coordinate of node's top edge
+  width: number; // Width of the node's bounding box
+  height: number; // Height of the node's bounding box
+  startX: number; // Selected region's start X
+  startY: number; // Selected region's start Y
+  endX: number; // Selected region's end X
+  endY: number; // Selected region's end Y
 }
-var textsInfo: TextNodeInfo[] = [];
-let handlers: Array<{
-  x: number;
-  y: number;
-  radius: number;
-  startX: number;
-  startY: number;
-}> = [];
-let startPosition = { x: 0, y: 0 };
-let isSelecting = false;
+
+// Global storage for node info and selection handlers
+let textsInfo: TextNodeInfo[] = [];
+let handlers: Array<{ x: number; y: number; radius: number; startX: number; startY: number }> = [];
+let startPosition = { x: 0, y: 0 }; // Initial touch point for selection
+let isSelecting = false; // Flag: currently dragging a selection handle
 
 const CrossTextSelection = () => {
+  // useEffect hook to run code when the component mounts and unmounts
   useEffect(() => {
     console.log("component did mount");
     getTextNodeRect();
@@ -34,6 +38,7 @@ const CrossTextSelection = () => {
     };
   }, []);
 
+  // Handle long press event to start text selection
   const handleLongPress = (e) => {
     isSelecting = true;
     startPosition.x = e.detail.x;
@@ -41,8 +46,9 @@ const CrossTextSelection = () => {
     setSelection(e.detail.x, e.detail.y, e.detail.x, e.detail.y);
   };
 
+  // Handle touch start event to check if the touch is on a handler
   const handleTouchStart = (e) => {
-    if (handlers.length == 0) {
+    if (handlers.length === 0) {
       return;
     }
     const { x, y } = e.detail;
@@ -56,12 +62,14 @@ const CrossTextSelection = () => {
     }
   };
 
+  // Handle touch move event to update the selection area
   const handleTouchMove = (e) => {
     if (isSelecting) {
       setSelection(startPosition.x, startPosition.y, e.detail.x, e.detail.y);
     }
   };
 
+  // Handle touch end event to finalize the selection
   const handleTouchEnd = (e) => {
     if (isSelecting) {
       setSelection(startPosition.x, startPosition.y, e.detail.x, e.detail.y);
@@ -69,14 +77,15 @@ const CrossTextSelection = () => {
     isSelecting = false;
   };
 
+  // Handle tap event to clear the selection
   const handleTap = (e) => {
-    if (handlers.length == 0) {
+    if (handlers.length === 0) {
       return;
     }
-
     setSelection(-1, -1, -1, -1);
   };
 
+  // Asynchronous function to get the bounding rectangles of text nodes
   async function getTextNodeRect() {
     let resArray = await new Promise((resolve) => {
       lynx.createSelectorQuery()
@@ -106,21 +115,21 @@ const CrossTextSelection = () => {
         });
       }),
     ).then((values) => {
-      textsInfo = [...values]
-        .map(({ top, left, width, height, id }) => ({
-          id: String(id),
-          left: Number(left),
-          top: Number(top),
-          width: Number(width),
-          height: Number(height),
-          startX: -1,
-          startY: 0,
-          endX: width,
-          endY: height,
-        }));
+      textsInfo = [...values].map(({ top, left, width, height, id }) => ({
+        id: String(id),
+        left: Number(left),
+        top: Number(top),
+        width: Number(width),
+        height: Number(height),
+        startX: -1,
+        startY: 0,
+        endX: width,
+        endY: height,
+      }));
     });
   }
 
+  // Function to execute text selection on a specific node
   function execSelection(
     node: TextNodeInfo,
     startX: number,
@@ -172,6 +181,7 @@ const CrossTextSelection = () => {
     }
   }
 
+  // Function to set the text selection based on the start and end coordinates
   function setSelection(x1: number, y1: number, x2: number, y2: number) {
     const [[startX, startY], [endX, endY]] = [
       [x1, y1],
@@ -187,9 +197,7 @@ const CrossTextSelection = () => {
     for (const node of textsInfo) {
       if (
         (startY < node.top && node.top + node.height < endY)
-        || (node.left <= startX
-          && startX <= node.left + node.width
-          && node.top <= startY
+        || (node.left <= startX && startX <= node.left + node.width && node.top <= startY
           && startY <= node.top + node.height)
         || (node.left <= endX && endX <= node.left + node.width && node.top <= endY && endY <= node.top + node.height)
       ) {
@@ -282,6 +290,7 @@ const CrossTextSelection = () => {
     </page>
   );
 };
+
 export default CrossTextSelection;
 
 root.render(<CrossTextSelection />);
