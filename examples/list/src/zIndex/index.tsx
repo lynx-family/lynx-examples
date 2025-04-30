@@ -17,9 +17,10 @@ const ListContainer = () => {
         height: "100vh",
         listMainAxisGap: "5px",
         padding: "10px",
+        zIndex: "0",
       }}
     >
-      <list-item item-key={`list-item-over-flow`} key={`list-item-list-item-over-flow`} z-index={1}>
+      <list-item item-key={`list-item-over-flow`} key={`list-item-list-item-over-flow`} style={{ zIndex: "1" }}>
         <view style={{ width: "100%", height: "20px", backgroundColor: "red" }}>
           <text
             style={{
