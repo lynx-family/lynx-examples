@@ -1,5 +1,11 @@
 # @lynx-example/list
 
+## 0.5.1
+
+### Patch Changes
+
+- b2a4535: fix: modify `z-index`
+
 ## 0.5.0
 
 ### Minor Changes
