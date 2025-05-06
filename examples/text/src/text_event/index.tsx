@@ -1,5 +1,5 @@
-import { root } from "@lynx-js/react";
-import { useState } from "react";
+import { root, useState } from "@lynx-js/react";
+
 import "./index.scss";
 
 const AlignContent = () => {
