@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.5.2
+
+### Patch Changes
+
+- 6778c21: feat:add text selection case.
+
 ## 0.5.1
 
 ### Patch Changes
