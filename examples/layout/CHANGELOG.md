@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.5.2
+
+### Patch Changes
+
+- ccc739c: feat: update grid demo for better web preview.
+
 ## 0.5.1
 
 ### Patch Changes
