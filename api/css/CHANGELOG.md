@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.5.1
+
+### Patch Changes
+
+- 89ec087: feat: update `grid-template-columns`, `grid-template-rows` api demo
+
 ## 0.5.0
 
 ### Minor Changes
