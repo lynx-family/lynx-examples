@@ -13,7 +13,7 @@ const GridExample = () => {
       </text>
       <view
         className="container"
-        style={{ height: "120px", gridTemplateColumns: "1fr 100px 2fr", gridTemplateRows: "1fr 1fr" }}
+        style={{ height: "80px", gridTemplateColumns: "1fr 100px 2fr", gridTemplateRows: "1fr 1fr" }}
       >
         <text className="item" style={{ gridRowStart: "span 2" }}>span 2</text>
         <text className="item">TWO</text>
@@ -22,7 +22,10 @@ const GridExample = () => {
       </view>
 
       <text className="title">
-        grid-template-columns: 20% max-content minmax(50px, max-content);
+        grid-template-columns:
+      </text>
+      <text className="title">
+        20% max-content minmax(50px, max-content);
       </text>
       <view
         className="container"
@@ -32,7 +35,7 @@ const GridExample = () => {
         }}
       >
         <text className="item">20%</text>
-        <text className="item" style={{ fontSize: "27px" }}>NO WRAP!</text>
+        <text className="item" style={{ fontSize: "17px" }}>NO WRAP!</text>
         <text className="item">min-width:50px, will fit the container</text>
       </view>
 
@@ -45,7 +48,7 @@ const GridExample = () => {
         style={{
           gridTemplateColumns: "1fr 1fr",
           gridTemplateRows: "1fr max-content 1fr",
-          height: "220px",
+          height: "140px",
         }}
       >
         <text className="item" style={{ gridColumnStart: "span 2" }}>span 2</text>
