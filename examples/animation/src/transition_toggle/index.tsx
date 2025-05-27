@@ -1,8 +1,8 @@
-import { root } from "@lynx-js/react";
-import { useState } from "react";
+import { root, useState } from "@lynx-js/react";
+import type { ReactNode } from "@lynx-js/react";
 import "./index.scss";
 
-const AccordionItem = ({ title, content }) => {
+const AccordionItem = ({ title, content }: { title: ReactNode; content: ReactNode }) => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleItem = () => {

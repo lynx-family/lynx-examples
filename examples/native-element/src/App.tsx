@@ -1,11 +1,12 @@
 import { useState } from "@lynx-js/react";
+import * as Lynx from "@lynx-js/types";
 
 import "./App.css";
 
 export function App() {
   const [inputValue, setInputValue] = useState("");
 
-  const handleInput = (e) => {
+  const handleInput = (e: Lynx.BaseEvent<"input", { value: string }>) => {
     const currentValue = e.detail.value.trim();
     setInputValue(currentValue);
   };

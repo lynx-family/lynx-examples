@@ -18,15 +18,31 @@ const Display = () => {
         </view>
 
         <text>linear</text>
-        <view className="container" style={{ display: "linear", linearDirection: "row" }}>
+        <view className="container" style={{ display: "linear", linearOrientation: "horizontal" }}>
           <text className="item">1</text>
           <text className="item">2</text>
         </view>
 
         <text>relative</text>
         <view className="container" style={{ display: "relative" }}>
-          <text className="item" style={{ relativeId: "1" }}>1</text>
-          <text className="item" style={{ relativeRightOf: "1" }}>2</text>
+          <text
+            className="item"
+            style={{
+              // @ts-expect-error TODO(types): Support relativeId in `@lynx-js/types`
+              relativeId: "1",
+            }}
+          >
+            1
+          </text>
+          <text
+            className="item"
+            style={{
+              // @ts-expect-error TODO(types): Support relativeRightOf in `@lynx-js/types`
+              relativeRightOf: "1",
+            }}
+          >
+            2
+          </text>
         </view>
       </view>
     </scroll-view>

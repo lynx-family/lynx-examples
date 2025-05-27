@@ -3,7 +3,6 @@
 // LICENSE file in the root directory of this source tree.
 
 import "./Card.scss";
-import type { BankCard } from "./BankCardScrollView";
 
 interface CardProps {
   isFront: boolean;

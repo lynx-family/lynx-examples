@@ -18,12 +18,13 @@ const TextSelection = () => {
   const [contextMenuTopOffset, setContextMenuTopOffset] = useState(0);
 
   // Handle query errors
-  const handleQueryError = (res) => {
+  const handleQueryError = (res: { code: number; data: unknown }) => {
     console.log(res.code, res.data);
   };
 
   // Handle text selection change
-  const handleSelectionChange = (e) => {
+  // TODO(types): support selection change event in `@lynx-js/types`
+  const handleSelectionChange = (e: any) => {
     if (e.detail.start === -1) {
       setSelectedId("");
       hiddenContextMenu();
@@ -48,7 +49,7 @@ const TextSelection = () => {
   };
 
   // Handle copy action
-  const handleCopy = (e) => {
+  const handleCopy = () => {
     copyText();
     clearSelection();
   };
@@ -93,7 +94,7 @@ const TextSelection = () => {
   };
 
   // Show context menu at given position
-  const showContextMenuAtPosition = (left, top) => {
+  const showContextMenuAtPosition = (left: number, top: number) => {
     setShowContextMenu(true);
     setContextMenuLeftOffset(left);
     setContextMenuTopOffset(top);
@@ -125,6 +126,7 @@ const TextSelection = () => {
             text-selection={true}
             custom-context-menu={true}
             flatten={false}
+            // @ts-expect-error TODO(types): support selection change event in `@lynx-js/types`
             bindselectionchange={handleSelectionChange}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare maximus vehicula. Duis nisi velit,

@@ -19,7 +19,7 @@ const LinearAlignItemsExample = () => {
         className="container"
         style={{
           display: "linear",
-          linearDirection: "row",
+          linearOrientation: "horizontal",
           height: "300px",
           width: "90%",
           padding: "5px",

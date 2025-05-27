@@ -1,5 +1,3 @@
-import exp from "constants";
-
 export interface Poster {
   poster: string;
   name: string;

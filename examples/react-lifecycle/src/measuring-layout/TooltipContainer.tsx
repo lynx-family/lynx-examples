@@ -1,4 +1,13 @@
-export default function TooltipContainer({ children, handleLayoutChange }) {
+import type { PropsWithChildren } from "@lynx-js/react";
+
+interface TooltipContainerProps {
+  // TODO(types): add main-thread:bindlayoutchange in `@lynx-js/types`
+  handleLayoutChange: (event: any) => void;
+}
+
+export default function TooltipContainer(
+  { children, handleLayoutChange }: PropsWithChildren<TooltipContainerProps>,
+) {
   return (
     <view
       main-thread:bindlayoutchange={handleLayoutChange}

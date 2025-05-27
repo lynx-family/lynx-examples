@@ -1,5 +1,7 @@
+import type { MainThread, ScrollEvent } from "@lynx-js/types";
+
 export function MainThreadDraggable({ size }: { size: number }) {
-  let onScroll = (event) => {
+  let onScroll = (event: MainThread.TouchEvent & ScrollEvent) => {
     "main thread";
     const detail = event.detail.scrollTop;
     const newPos = {

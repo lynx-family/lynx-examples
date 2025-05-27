@@ -3,6 +3,7 @@ import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   source: {
@@ -18,6 +19,7 @@ export default defineConfig({
     pluginReactLynx(),
     pluginSass(),
     pluginQRCode(),
+    pluginTypeCheck(),
   ],
   environments: {
     web: {},

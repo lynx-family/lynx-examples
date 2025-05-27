@@ -11,7 +11,7 @@ const BorderInlineStartStyle = () => {
   const textStyle = {
     borderInlineStartStyle: "dashed",
     borderInlineEndStyle: "solid",
-  };
+  } as const;
 
   return (
     <>

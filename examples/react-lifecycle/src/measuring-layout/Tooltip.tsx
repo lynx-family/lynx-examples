@@ -1,7 +1,13 @@
+import type { PropsWithChildren } from "@lynx-js/react";
+import type { Rect } from "./ButtonWithTooltip.jsx";
 import TooltipContainer from "./TooltipContainer.jsx";
 
-export function Tooltip({ children, targetRect }) {
-  const handleLayoutChange = (e) => {
+interface TooltipProps {
+  targetRect: Rect | null;
+}
+
+export function Tooltip({ children, targetRect }: PropsWithChildren<TooltipProps>) {
+  const handleLayoutChange = (e: any) => {
     "main thread";
     let tooltipX = 0;
     let tooltipY = 0;
