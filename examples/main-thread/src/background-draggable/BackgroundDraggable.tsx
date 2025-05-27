@@ -1,9 +1,10 @@
 import { useState } from "@lynx-js/react";
+import type { ScrollEvent } from "@lynx-js/types";
 
 export function BackgroundDraggable({ size }: { size: number }) {
   const [posStyle, setPosStyle] = useState({ x: 0, y: 500 });
 
-  let onScroll = (event) => {
+  let onScroll = (event: ScrollEvent) => {
     const detail = event.detail.scrollTop;
     const newPos = {
       x: 0,

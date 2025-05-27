@@ -5,6 +5,8 @@
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
+
 import { entry } from "./lynx.config.mjs";
 
 delete entry.animate;
@@ -16,6 +18,7 @@ export default defineConfig({
   plugins: [
     pluginReactLynx(),
     pluginSass(),
+    pluginTypeCheck(),
   ],
   environments: {
     web: {},

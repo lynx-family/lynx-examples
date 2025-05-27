@@ -3,6 +3,7 @@
 // LICENSE file in the root directory of this source tree.
 
 import { root, useEffect } from "@lynx-js/react";
+import type { CommonEvent, SelectorQuery, TouchEvent } from "@lynx-js/types";
 
 import "./index.scss";
 
@@ -38,7 +39,7 @@ const CrossTextSelection = () => {
   }, []);
 
   // Handle long press event to start text selection
-  const handleLongPress = (e) => {
+  const handleLongPress = (e: CommonEvent) => {
     isSelecting = true;
     startPosition.x = e.detail.x;
     startPosition.y = e.detail.y;
@@ -46,7 +47,7 @@ const CrossTextSelection = () => {
   };
 
   // Handle touch start event to check if the touch is on a handler
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: TouchEvent) => {
     if (handlers.length === 0) {
       return;
     }
@@ -62,14 +63,14 @@ const CrossTextSelection = () => {
   };
 
   // Handle touch move event to update the selection area
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: TouchEvent) => {
     if (isSelecting) {
       setSelection(startPosition.x, startPosition.y, e.detail.x, e.detail.y);
     }
   };
 
   // Handle touch end event to finalize the selection
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = (e: TouchEvent) => {
     if (isSelecting) {
       setSelection(startPosition.x, startPosition.y, e.detail.x, e.detail.y);
     }
@@ -77,7 +78,7 @@ const CrossTextSelection = () => {
   };
 
   // Handle tap event to clear the selection
-  const handleTap = (e) => {
+  const handleTap = () => {
     if (handlers.length === 0) {
       return;
     }
@@ -86,11 +87,12 @@ const CrossTextSelection = () => {
 
   // Asynchronous function to get the bounding rectangles of text nodes
   async function getTextNodeRect() {
-    let resArray = await new Promise((resolve) => {
+    let resArray = await new Promise<SelectorQuery[]>((resolve) => {
       lynx.createSelectorQuery()
         .selectAll("#container text")
         .fields(
           {
+            // @ts-expect-error TODO(types): support `query` in `@lynx-js/types`
             query: true,
             id: true,
           },
@@ -101,12 +103,25 @@ const CrossTextSelection = () => {
 
     Promise.all(
       resArray.map((element) => {
-        return new Promise((resolve) => {
+        return new Promise<{
+          top: number;
+          left: number;
+          width: number;
+          height: number;
+          id: string;
+        }>((resolve) => {
+          // @ts-expect-error TODO(types): support `query` in `@lynx-js/types`
           element.query
             .selectRoot()
             .invoke({
               method: "boundingClientRect",
-              success: (res) => {
+              success: (res: {
+                top: number;
+                left: number;
+                width: number;
+                height: number;
+                id: string;
+              }) => {
                 resolve(res);
               },
             })

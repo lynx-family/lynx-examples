@@ -1,15 +1,14 @@
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
-import file from "node:fs";
-import path from "node:path";
-
-const version = JSON.parse(
-  file.readFileSync(path.resolve("./package.json"), "utf-8"),
-).version;
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
-  plugins: [pluginQRCode(), pluginReactLynx()],
+  plugins: [
+    pluginQRCode(),
+    pluginReactLynx(),
+    pluginTypeCheck(),
+  ],
   dev: {
     assetPrefix: true,
   },

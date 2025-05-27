@@ -2,7 +2,9 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import ReactLynx, { root, useEffect, useRef, useState } from "@lynx-js/react";
+import { root, useEffect, useRef, useState } from "@lynx-js/react";
+import type { Dispatch, SetStateAction } from "@lynx-js/react";
+import type { BaseEvent, NodesRef } from "@lynx-js/types";
 import "./index.scss";
 
 interface Todo {
@@ -19,7 +21,7 @@ interface TodoItemProps {
 }
 
 function TodoItem({ todo, isLastOne, onToggle, onDelete }: TodoItemProps) {
-  const ref = useRef<ReactLynx.NodesRef>(null);
+  const ref = useRef<NodesRef>(null);
 
   useEffect(() => {
     // always scroll the last one into view.
@@ -55,11 +57,11 @@ function TodoItem({ todo, isLastOne, onToggle, onDelete }: TodoItemProps) {
 function TodoApp() {
   const [todos, setTodos] = useState<Todo[]>(initialTodos);
 
-  const handleChange = (todo) => {
+  const handleChange = (todo: Todo) => {
     setTodos((list) => list.map((item) => (item === todo ? { ...item, done: !item.done } : item)));
   };
 
-  const handleDelete = (todo) => {
+  const handleDelete = (todo: Todo) => {
     setTodos((list) => list.filter((item) => item !== todo));
   };
 
@@ -86,14 +88,15 @@ function TodoApp() {
   );
 }
 
-function AddTodo({ setTodos }) {
+function AddTodo({ setTodos }: { setTodos: Dispatch<SetStateAction<Todo[]>> }) {
   const [inputValue, setInputValue] = useState("");
-  const handleInput = (e: ReactLynx.XInputEvent) => {
+
+  const handleInput = (e: BaseEvent<"input", { value: string }>) => {
     setInputValue(e.detail.value);
   };
 
   const handleAddTodo = () => {
-    setTodos((todos) => [
+    setTodos((todos: Todo[]) => [
       ...todos,
       { id: nextId++, done: false, text: inputValue },
     ]);

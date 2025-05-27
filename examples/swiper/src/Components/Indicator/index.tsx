@@ -19,12 +19,12 @@ export function Indicator({
 }
 
 function IndicatorItem(
-  { active, onClick, index }: { active: boolean; onClick: (index: number) => void; index: number },
+  { active, onClick, index }: { active: boolean; onClick?: (index: number) => void; index: number },
 ) {
   return (
     <view
       className={`indicator-item ${active ? "active" : ""}`}
-      bindtap={() => onClick(index)}
+      bindtap={() => onClick?.(index)}
     >
     </view>
   );

@@ -2,10 +2,10 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import ReactLynx, { root, useEffect, useRef, useState } from "@lynx-js/react";
-import BottomNode from "../final/Components/BottomNode.tsx";
-import BankCardScrollView from "./Components/BankCardScrollView";
-import Card from "./Components/Card";
+import { root, useState } from "@lynx-js/react";
+import BottomNode from "../final/Components/BottomNode.jsx";
+import BankCardScrollView from "./Components/BankCardScrollView.jsx";
+import Card from "./Components/Card.jsx";
 
 import "./index.scss";
 

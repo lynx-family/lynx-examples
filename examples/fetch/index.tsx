@@ -6,8 +6,8 @@ import { root, useState } from "@lynx-js/react";
 import "./index.scss";
 
 const App = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState<string>();
+  const [error, setError] = useState<string | null>(null);
 
   const handleButtonClick = async () => {
     setError(null);
@@ -19,7 +19,7 @@ const App = () => {
       console.log(text);
       setData(text);
     } catch (err) {
-      setError(err.message);
+      setError((err as Error).message);
     }
   };
 
