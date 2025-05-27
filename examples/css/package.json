@@ -27,7 +27,7 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.2.0",
+    "@lynx-js/types": "catalog:",
     "@rsbuild/plugin-sass": "^1.2.1",
     "@types/react": "^18.3.18",
     "typescript": "~5.7.3"
