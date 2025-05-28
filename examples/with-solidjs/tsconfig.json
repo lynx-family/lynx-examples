@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "preserve",
-    "jsxImportSource": "@lynx-js/react",
     "jsxImportSource": "@lynx-js/solid",
 
     "module": "node16",
