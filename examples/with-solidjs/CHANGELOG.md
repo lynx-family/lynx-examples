@@ -1,5 +1,11 @@
 # @lynx-example/with-solidjs
 
+## 0.4.0
+
+### Minor Changes
+
+- 09fd471: Bump React v0.109.0 with Rspeedy v0.9.7
+
 ## 0.3.0
 
 ### Minor Changes
