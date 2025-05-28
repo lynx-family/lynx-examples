@@ -19,9 +19,9 @@ export const App = () => {
       style={{
         width: "100%",
         height: "100%",
-        padding: 10,
+        padding: "10px",
         display: "linear",
-        marginTop: 20,
+        marginTop: "20px",
       }}
     >
       <view main-thread:bindtap={handleTap}>
