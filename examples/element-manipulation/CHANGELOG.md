@@ -1,5 +1,16 @@
 # @lynx-example/element-manipulation
 
+## 0.6.0
+
+### Minor Changes
+
+- 09fd471: Bump React v0.109.0 with Rspeedy v0.9.7
+
+### Patch Changes
+
+- f1d4d6e: Fix TypeScript errors.
+- 62c383d: Use `"10px"` instead of `10` for `padding` and `margin`.
+
 ## 0.5.0
 
 ### Minor Changes
