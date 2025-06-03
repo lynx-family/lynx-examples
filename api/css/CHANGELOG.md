@@ -1,5 +1,15 @@
 # @lynx-example/css-api
 
+## 0.6.0
+
+### Minor Changes
+
+- 09fd471: Bump React v0.109.0 with Rspeedy v0.9.7
+
+### Patch Changes
+
+- f1d4d6e: Fix TypeScript errors.
+
 ## 0.5.1
 
 ### Patch Changes

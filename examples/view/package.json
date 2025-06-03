@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/view",
   "description": "An example shows how to use view in Lynx",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
