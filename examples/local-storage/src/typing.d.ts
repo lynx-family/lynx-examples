@@ -2,10 +2,14 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-declare let NativeModules: {
-  NativeLocalStorageModule: {
-    setStorageItem(key: string, value: string): void;
-    getStorageItem(key: string): string | null;
-    clearStorage(): void;
-  };
-};
+declare module "@lynx-js/types" {
+  interface NativeModules {
+    NativeLocalStorageModule: {
+      setStorageItem(key: string, value: string): void;
+      getStorageItem(key: string): string | null;
+      clearStorage(): void;
+    };
+  }
+}
+
+export {};
