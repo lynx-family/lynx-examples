@@ -441,34 +441,6 @@ importers:
         specifier: ~5.7.3
         version: 5.7.3
 
-  examples/input:
-    dependencies:
-      '@lynx-js/react':
-        specifier: 'catalog:'
-        version: 0.109.0(@lynx-js/types@3.3.0)(@types/react@18.3.18)
-    devDependencies:
-      '@lynx-js/qrcode-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.3.6
-      '@lynx-js/react-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.10.1(@lynx-js/react@0.109.0(@lynx-js/types@3.3.0)(@types/react@18.3.18))(webpack@5.98.0)
-      '@lynx-js/rspeedy':
-        specifier: 'catalog:'
-        version: 0.9.7(@rspack/core@1.3.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)
-      '@lynx-js/types':
-        specifier: ^3.2.0
-        version: 3.3.0
-      '@rsbuild/plugin-sass':
-        specifier: ^1.2.1
-        version: 1.2.2(@rsbuild/core@1.3.21)
-      '@types/react':
-        specifier: ^18.3.18
-        version: 18.3.18
-      typescript:
-        specifier: ~5.7.3
-        version: 5.7.3
-
   examples/layout:
     dependencies:
       '@lynx-js/react':
@@ -854,34 +826,6 @@ importers:
       '@lynx-js/types':
         specifier: ^3.2.0
         version: 3.2.0
-      '@rsbuild/plugin-sass':
-        specifier: ^1.2.1
-        version: 1.2.2(@rsbuild/core@1.3.21)
-      '@types/react':
-        specifier: ^18.3.18
-        version: 18.3.18
-      typescript:
-        specifier: ~5.7.3
-        version: 5.7.3
-
-  examples/textarea:
-    dependencies:
-      '@lynx-js/react':
-        specifier: 'catalog:'
-        version: 0.109.0(@lynx-js/types@3.3.0)(@types/react@18.3.18)
-    devDependencies:
-      '@lynx-js/qrcode-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.3.6
-      '@lynx-js/react-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.10.1(@lynx-js/react@0.109.0(@lynx-js/types@3.3.0)(@types/react@18.3.18))(webpack@5.98.0)
-      '@lynx-js/rspeedy':
-        specifier: 'catalog:'
-        version: 0.9.7(@rspack/core@1.3.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)
-      '@lynx-js/types':
-        specifier: ^3.2.0
-        version: 3.3.0
       '@rsbuild/plugin-sass':
         specifier: ^1.2.1
         version: 1.2.2(@rsbuild/core@1.3.21)
@@ -2286,6 +2230,9 @@ packages:
 
   caniuse-lite@1.0.30001702:
     resolution: {integrity: sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==}
+
+  caniuse-lite@1.0.30001715:
+    resolution: {integrity: sha512-7ptkFGMm2OAOgvZpwgA4yjQ5SQbrNVGdRjzH0pBdy1Fasvcr+KAeECmbCAECzTuDuoX0FCY8KzUxjf9+9kfZEw==}
 
   caniuse-lite@1.0.30001718:
     resolution: {integrity: sha512-AflseV1ahcSunK53NfEs9gFWgOEmzr0f+kaMFA4xiLZlr9Hzt7HxcSpIFcnNCUkz6R6dWKa54rUz3HUmI3nVcw==}
@@ -6271,7 +6218,7 @@ snapshots:
 
   browserslist@4.24.4:
     dependencies:
-      caniuse-lite: 1.0.30001718
+      caniuse-lite: 1.0.30001715
       electron-to-chromium: 1.5.111
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
@@ -6308,11 +6255,13 @@ snapshots:
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.24.4
-      caniuse-lite: 1.0.30001718
+      caniuse-lite: 1.0.30001715
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
 
   caniuse-lite@1.0.30001702: {}
+
+  caniuse-lite@1.0.30001715: {}
 
   caniuse-lite@1.0.30001718: {}
 

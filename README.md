@@ -15,9 +15,6 @@ This repository is intended to showcase examples of Lynx.
   - [`scroll-view`]: An example shows how to use scrollable container
   - [`text`]: An example shows how to use text and inline-text
   - [`view`]: An example shows how to use view
-- XElement
-  - [`input`]: An example shows how to use input
-  - [`textarea`]: An example shows how to use textarea
 - Styling
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
@@ -47,7 +44,6 @@ This repository is intended to showcase examples of Lynx.
 [`scroll-view`]: ./examples/scroll-view
 [`text`]: ./examples/text
 [`view`]: ./examples/view
-[`input`]: ./examples/input
 [`fetch`]: ./examples/fetch
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility
