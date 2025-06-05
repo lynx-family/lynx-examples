@@ -48,6 +48,7 @@ This repository is intended to showcase examples of Lynx.
 [`text`]: ./examples/text
 [`view`]: ./examples/view
 [`input`]: ./examples/input
+[`textarea`]: ./examples/textarea
 [`fetch`]: ./examples/fetch
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility
