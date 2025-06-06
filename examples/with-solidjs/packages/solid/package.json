@@ -9,7 +9,7 @@
     "solid-js": "*"
   },
   "devDependencies": {
-    "@lynx-js/types": "3.2.0"
+    "@lynx-js/types": "catalog:"
   },
   "peerDependencies": {
     "@lynx-js/types": "*"
