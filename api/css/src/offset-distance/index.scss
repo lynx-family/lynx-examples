@@ -1,0 +1,45 @@
+.intro {
+  width: max-content;
+}
+
+.title {
+  font-size: 30px;
+  left: 40%;
+}
+
+.box {
+  position: absolute;
+  top: 50px;
+  color: white;
+  height: 66px;
+  width: 66px;
+  offset-path: path("M0,100 C0.42,1 1,0.58 ,100,0");
+  offset-rotate: 0deg;
+  transition: all 2s;
+  border-radius: 30%;
+  background-color: red;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offset-0 {
+  offset-distance: 0.1;
+}
+
+.offset-1 {
+  offset-distance: 0.5;
+}
+
+.offset-2 {
+  offset-distance: 0.8;
+}
+
+.container2 {
+  top: 175px;
+}
+
+.container3 {
+  top: 350px;
+}
