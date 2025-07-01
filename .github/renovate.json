@@ -1,0 +1,67 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":automergeStableNonMajor",
+    ":automergeTypes",
+    ":maintainLockFilesWeekly",
+    "helpers:pinGitHubActionDigests"
+  ],
+
+  "ignorePaths": [
+    "**/node_modules/**"
+  ],
+
+  "labels": ["bot:renovate"],
+
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "groupName": "Lynx",
+      "groupSlug": "Lynx",
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies"
+      ],
+      "matchPackageNames": [
+        "/@lynx-js/*/"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "groupName": "Rsbuild",
+      "groupSlug": "Rsbuild",
+      "addLabels": ["upstream:rspack"],
+      "matchDepTypes": [
+        "devDependencies",
+        "dependencies"
+      ],
+      "matchPackageNames": [
+        "/@rsbuild/*/",
+        "/rsbuild-plugin-*/"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
+      "groupName": "changesets",
+      "groupSlug": "changesets",
+      "matchPackageNames": [
+        "/^@changesets/*/"
+      ]
+    },
+    {
+      "groupName": "github-actions",
+      "groupSlug": "github-actions",
+      "matchManagers": ["github-actions"]
+    }
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ],
+  "ignoreDeps": [
+    "node"
+  ]
+}
