@@ -23,11 +23,7 @@
       "groupName": "Lynx",
       "groupSlug": "Lynx",
       "matchDepTypes": [
-        "devDependencies",
-        "dependencies"
-      ],
-      "matchPackageNames": [
-        "/@lynx-js/*/"
+        "pnpm.catalog.default"
       ],
       "rangeStrategy": "pin"
     },
