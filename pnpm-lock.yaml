@@ -94,9 +94,6 @@ importers:
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
-      prettier:
-        specifier: 3.4.2
-        version: 3.4.2
 
   examples/Gallery:
     dependencies:
@@ -574,9 +571,6 @@ importers:
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
-      prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
       typescript:
         specifier: ~5.7.3
         version: 5.7.3
@@ -658,9 +652,6 @@ importers:
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
-      prettier:
-        specifier: 3.4.2
-        version: 3.4.2
       typescript:
         specifier: ~5.7.3
         version: 5.7.3
@@ -916,9 +907,6 @@ importers:
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
-      prettier:
-        specifier: 3.4.2
-        version: 3.4.2
 
   examples/view:
     dependencies:
@@ -3864,11 +3852,6 @@ packages:
   prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
-    hasBin: true
-
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
-    engines: {node: '>=14'}
     hasBin: true
 
   process-nextick-args@2.0.1:
@@ -7910,8 +7893,6 @@ snapshots:
       source-map-js: 1.2.1
 
   prettier@2.8.8: {}
-
-  prettier@3.4.2: {}
 
   process-nextick-args@2.0.1: {}
 

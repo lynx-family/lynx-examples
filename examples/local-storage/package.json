@@ -6,7 +6,6 @@
     "build": "rspeedy build",
     "check": "biome check --write",
     "dev": "rspeedy dev",
-    "format": "prettier --write .",
     "preview": "rspeedy preview"
   },
   "files": [
@@ -29,7 +28,6 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
-    "prettier": "^3.4.2",
     "typescript": "~5.7.3"
   },
   "engines": {
