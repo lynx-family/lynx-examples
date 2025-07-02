@@ -11,7 +11,6 @@ export default defineConfig({
     pluginTypeCheck(),
   ],
   environments: {
-    web: {},
     lynx: {},
   },
 });

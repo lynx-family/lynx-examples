@@ -31,7 +31,7 @@ export function App() {
   return (
     <view className="input-card-url">
       <text className="bold-text">Card URL</text>
-      <input
+      <explorer-input
         id="input-id"
         className="input-box"
         bindinput={handleInput}
