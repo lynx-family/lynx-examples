@@ -1,5 +1,11 @@
 # @lynx-example/native-element
 
+## 0.6.1
+
+### Patch Changes
+
+- 6f32a6f: update custom element references from `<input>` to `<explorer-input>`
+
 ## 0.6.0
 
 ### Minor Changes
