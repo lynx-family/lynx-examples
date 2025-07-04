@@ -16,8 +16,9 @@ export function App() {
   };
 
   const getStorage = () => {
-    const value = NativeModules.NativeLocalStorageModule.getStorageItem("testKey");
-    setStoredValue(value);
+    NativeModules.NativeLocalStorageModule.getStorageItem("testKey", (value) => {
+      setStoredValue(value);
+    });
   };
 
   const clearStorage = () => {
