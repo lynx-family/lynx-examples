@@ -19,7 +19,7 @@
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@rsbuild/plugin-sass": "^1.2.1",
+    "@rsbuild/plugin-sass": "1.2.2",
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
