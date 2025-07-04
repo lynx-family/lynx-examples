@@ -1,5 +1,11 @@
 # @lynx-example/hello-world
 
+## 0.6.1
+
+### Patch Changes
+
+- 0c2269a: Add missing `color` on nested `<text>`.
+
 ## 0.6.0
 
 ### Minor Changes
