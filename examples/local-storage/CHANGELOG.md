@@ -1,5 +1,11 @@
 # @lynx-example/local-storage
 
+## 0.6.1
+
+### Patch Changes
+
+- 0bf7e4e: Make local storage demo use async callback to get storage.
+
 ## 0.6.0
 
 ### Minor Changes
