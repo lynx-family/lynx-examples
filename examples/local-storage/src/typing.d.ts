@@ -6,7 +6,7 @@ declare module "@lynx-js/types" {
   interface NativeModules {
     NativeLocalStorageModule: {
       setStorageItem(key: string, value: string): void;
-      getStorageItem(key: string): string | null;
+      getStorageItem(key: string, callback: (value: string | null) => void): void;
       clearStorage(): void;
     };
   }
