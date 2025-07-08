@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/local-storage",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
