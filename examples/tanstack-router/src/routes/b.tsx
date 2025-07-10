@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// @ts-ignore
 export const Route = createFileRoute("/b")({
   component: PageB,
 });
