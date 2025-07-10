@@ -7,11 +7,10 @@
 }
 
 .title {
-  font-size: 58rpx;
-  font-weight: 500;
-  padding: 10rpx;
-  color: #0095ff;
-  color: linear-gradient(120deg, #0095ff 30%, #42d392);
+  text-shadow: 0 2rpx 4rpx rgba(0, 149, 255, 0.3);
+  font-weight: 700;
+  border-bottom: 4rpx solid #0095ff;
+  padding-bottom: 10rpx;
 }
 
 .content {
