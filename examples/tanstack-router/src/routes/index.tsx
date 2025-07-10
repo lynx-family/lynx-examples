@@ -2,7 +2,6 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 
 import { Button } from "../components/button.js";
 
-// @ts-ignore
 export const Route = createFileRoute("/")({
   component: Index,
 });
