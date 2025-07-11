@@ -18,7 +18,7 @@
     "typescript": "~5.7.3",
     "@lynx-contrib/tailwind-preset": "0.0.2",
     "rsbuild-plugin-tailwindcss": "0.2.0",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.1.11"
   },
   "engines": {
     "node": ">=18"
