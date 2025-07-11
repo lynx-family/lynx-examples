@@ -32,8 +32,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            // @ts-expect-error no types supported yet
-            linearWeight: "0.5",
+            linearWeight: 0.5,
             backgroundColor: "rgb(255,53,26)",
             borderRadius: "6px",
           }}
@@ -42,8 +41,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            // @ts-expect-error no types supported yet
-            linearWeight: "2",
+            linearWeight: 2,
             backgroundColor: "rgb(0,235,235)",
             borderRadius: "6px",
           }}
@@ -52,8 +50,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            // @ts-expect-error no types supported yet
-            linearWeight: "0.5",
+            linearWeight: 0.5,
             backgroundColor: "rgb(255,53,26)",
             borderRadius: "6px",
           }}
