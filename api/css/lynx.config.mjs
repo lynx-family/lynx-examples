@@ -190,6 +190,9 @@ export default defineConfig({
       clip_path_inset: "./src/clip_path/inset",
       clip_path_ellipse: "./src/clip_path/ellipse",
       clip_path_path: "./src/clip_path/path",
+      offset_path_path: "./src/offset-path/App.tsx",
+      offset_distance_path: "./src/offset-distance/App.tsx",
+      offset_rotate_path: "./src/offset-rotate/App.tsx",
     },
   },
   plugins: [
