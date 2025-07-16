@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  padding-top: 150rpx;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-shadow: 0 2rpx 4rpx rgba(0, 149, 255, 0.3);
+  font-weight: 700;
+  border-bottom: 4rpx solid #0095ff;
+  padding-bottom: 10rpx;
+}
+
+.content {
+  margin: 10px;
+}
+
+.entry {
+  margin: 15px;
+  background-color: gainsboro;
+}
