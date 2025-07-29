@@ -16,6 +16,13 @@ export default defineConfig({
       },
     }),
   ],
+  environments: {
+    web: {},
+    lynx: {},
+  },
+  output: {
+    assetPrefix: "https://lynxjs.org/lynx-examples/tanstack-router/dist",
+  },
   tools: {
     rspack: {
       plugins: [
