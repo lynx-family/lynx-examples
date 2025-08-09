@@ -23,7 +23,7 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "^3.3.0",
     "@rsbuild/plugin-sass": "1.2.2",
-    "@types/react": "^18.3.23"
+    "@types/react": "^19.1.9"
   },
   "repository": {
     "directory": "examples/BankCards",
