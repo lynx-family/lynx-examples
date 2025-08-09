@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
-    "@rsbuild/plugin-type-check": "1.2.2",
+    "@rsbuild/plugin-type-check": "1.2.4",
     "dprint": "^0.50.1",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
