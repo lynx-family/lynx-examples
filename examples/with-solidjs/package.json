@@ -21,13 +21,13 @@
   },
   "devDependencies": {
     "@lynx-js/solid": "workspace:*",
-    "@lynx-js/template-webpack-plugin": "0.6.4",
-    "@lynx-js/types": "3.2.0",
-    "@rspack/cli": "^1.2.8",
-    "@rspack/core": "^1.2.8",
+    "@lynx-js/template-webpack-plugin": "0.8.3",
+    "@lynx-js/types": "3.3.0",
+    "@rspack/cli": "^1.4.11",
+    "@rspack/core": "^1.4.11",
     "babel-loader": "^10.0.0",
-    "babel-preset-solid": "^1.0.0",
-    "@babel/preset-typescript": "^7.13.0"
+    "babel-preset-solid": "^1.9.8",
+    "@babel/preset-typescript": "^7.27.1"
   },
   "engines": {
     "node": ">=18"
