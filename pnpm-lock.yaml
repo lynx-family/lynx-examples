@@ -1046,8 +1046,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(@babel/core@7.28.0)(webpack@5.101.0)
       babel-preset-solid:
-        specifier: ^1.9.8
-        version: 1.9.8(@babel/core@7.28.0)
+        specifier: ^1.9.9
+        version: 1.9.9(@babel/core@7.28.0)
 
   examples/with-solidjs/packages/solid:
     dependencies:
@@ -2466,8 +2466,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.20.12
 
-  babel-preset-solid@1.9.8:
-    resolution: {integrity: sha512-Tz2ZoKCPITeV+cANGeIA6pxHBLeEtX7hwk04tEh3xSWVqHMf2FqFwVz0RBxCLlBehpKfY1scDiuijBkmyVpqrQ==}
+  babel-preset-solid@1.9.9:
+    resolution: {integrity: sha512-pCnxWrciluXCeli/dj5PIEHgbNzim3evtTn12snjqqg8QZWJNMjH1AWIp4iG/tbVjqQ72aBEymMSagvmgxubXw==}
     peerDependencies:
       '@babel/core': ^7.0.0
       solid-js: ^1.9.8
@@ -6655,7 +6655,7 @@ snapshots:
       parse5: 7.3.0
       validate-html-nesting: 1.2.3
 
-  babel-preset-solid@1.9.8(@babel/core@7.28.0):
+  babel-preset-solid@1.9.9(@babel/core@7.28.0):
     dependencies:
       '@babel/core': 7.28.0
       babel-plugin-jsx-dom-expressions: 0.40.1(@babel/core@7.28.0)
