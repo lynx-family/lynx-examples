@@ -23,10 +23,54 @@ const App = () => {
     }
   };
 
+  async function streamToArrayBuffer(stream: any) {
+    const reader = stream.getReader();
+    while (true) {
+      console.log("await read");
+      const { done, value } = await reader.read();
+      console.log("done", done);
+      if (done) {
+        break;
+      } else {
+        console.log(value.byteLength);
+        // @ts-ignore
+        const text = globalThis.TextCodecHelper.decode(value);
+        setData(text);
+        const currentTime = new Date();
+        console.log(text);
+        // @ts-ignore
+        console.log("duration ", currentTime.getTime() - globalThis.startTime.getTime());
+      }
+    }
+  }
+
+  const handleButtonClickStreaming = async () => {
+    setError(null);
+
+    try {
+      console.log("fetch streaming");
+      // @ts-ignore
+      globalThis.startTime = new Date();
+      // @ts-ignore
+      lynx.fetch("https://e3e0932a-9522-4aec-aec9-12cba94b0c7f.mock.pstmn.io/chunk", {
+        // @ts-ignore
+        lynxExtension: { "useStreaming": true },
+      }).then((response: any) => {
+        console.log("response");
+        streamToArrayBuffer(response.body);
+      });
+    } catch (err: any) {
+      setError(err.message);
+    }
+  };
+
   return (
     <view className="container">
       <view className="btn" bindtap={handleButtonClick}>
         <text>fetch</text>
+      </view>
+      <view className="btn" bindtap={handleButtonClickStreaming}>
+        <text>fetchChunk</text>
       </view>
       <scroll-view className="box" scroll-orientation="vertical">
         {error && <text className="error">Error: {error}</text>}
