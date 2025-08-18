@@ -3,12 +3,12 @@ import { root, useMemo, useState } from "@lynx-js/react";
 import type { PerformanceEntry, PipelineEntry } from "@lynx-js/types";
 import "./index.scss";
 
-export const RenderPropItem = (props: { value: string; hightLightProp?: string }) => {
+export const RenderPropItem = (props: { value: string; hightLightProp: string }) => {
   return (
     <text
       className={(props.hightLightProp && props.value.startsWith(`\t${props.hightLightProp}`))
         ? "hight-light-content"
-        : ""}
+        : "content"}
     >
       {props.value}
     </text>
@@ -51,9 +51,9 @@ export default function PipelineEntryExample(this: any) {
     <view className="container">
       <text className="title" __lynx_timing_flag={myName ? "myNamePipeline" : ""}>Hello {myName}~</text>
       <scroll-view className="scroll" scroll-orientation="vertical">
-        <text className="entry-item">{"{"}</text>
-        {allProps.map((entryName, index) => <RenderPropItem value={entryName} hightLightProp="" />)}
-        <text className="entry-item">{"}"}</text>
+        <text className="content">{"{"}</text>
+        {allProps.map((entryName, index) => <RenderPropItem value={entryName} hightLightProp="hostPlatformTiming" />)}
+        <text className="content">{"}"}</text>
       </scroll-view>
     </view>
   );
