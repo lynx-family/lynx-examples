@@ -685,20 +685,20 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.3.2
+        version: 3.3.2
       '@rsbuild/plugin-sass':
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
@@ -1681,6 +1681,9 @@ packages:
 
   '@lynx-js/types@3.3.0':
     resolution: {integrity: sha512-URUszZQBFGumpNDXm4FoLMMSSZAgH+NBvBOaERe8UWrnH0XB9Z8N2sAj28jfg57G+eZpRasbvu/ZR6NzFe5feQ==}
+
+  '@lynx-js/types@3.3.2':
+    resolution: {integrity: sha512-JJm5NFNoXIGR9blZEiQ8p2riJU2Or97+n6zr+Q2/q2A3lbs012/IAZy8oNH+/lDLdlktOXmy6mq5qxtFerCxFg==}
 
   '@lynx-js/use-sync-external-store@1.5.0':
     resolution: {integrity: sha512-iXwLiGUBgfWLozCIh3ICe07x534p9CVlFS3/iGEiFOce58MLX6/PbAvWcE8qEhYaOKiQNe9hqUnS2RbyCqoqGg==}
@@ -5655,6 +5658,10 @@ snapshots:
     dependencies:
       '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)
 
+  '@lynx-js/react-refresh-webpack-plugin@0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4))':
+    dependencies:
+      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)
+
   '@lynx-js/react-rsbuild-plugin@0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)':
     dependencies:
       '@lynx-js/css-extract-webpack-plugin': 0.6.2(@lynx-js/template-webpack-plugin@0.8.4)(webpack@5.101.3)
@@ -5670,6 +5677,21 @@ snapshots:
     transitivePeerDependencies:
       - webpack
 
+  '@lynx-js/react-rsbuild-plugin@0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(webpack@5.101.3)':
+    dependencies:
+      '@lynx-js/css-extract-webpack-plugin': 0.6.2(@lynx-js/template-webpack-plugin@0.8.4)(webpack@5.101.3)
+      '@lynx-js/react-alias-rsbuild-plugin': 0.10.12
+      '@lynx-js/react-refresh-webpack-plugin': 0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4))
+      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)
+      '@lynx-js/runtime-wrapper-webpack-plugin': 0.1.2
+      '@lynx-js/template-webpack-plugin': 0.8.4
+      '@lynx-js/use-sync-external-store': 1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))
+      background-only: 0.0.1
+    optionalDependencies:
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)
+    transitivePeerDependencies:
+      - webpack
+
   '@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)':
     dependencies:
       '@lynx-js/template-webpack-plugin': 0.8.4
@@ -5678,12 +5700,27 @@ snapshots:
     optionalDependencies:
       '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
 
+  '@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)':
+    dependencies:
+      '@lynx-js/template-webpack-plugin': 0.8.4
+      '@lynx-js/webpack-runtime-globals': 0.0.5
+      tiny-invariant: 1.3.3
+    optionalDependencies:
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)
+
   '@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)':
     dependencies:
       '@types/react': 18.3.23
       preact: '@hongzhiyuan/preact@10.24.0-00213bad'
     optionalDependencies:
       '@lynx-js/types': 3.3.0
+
+  '@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)':
+    dependencies:
+      '@types/react': 18.3.23
+      preact: '@hongzhiyuan/preact@10.24.0-00213bad'
+    optionalDependencies:
+      '@lynx-js/types': 3.3.2
 
   '@lynx-js/rspeedy@0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)':
     dependencies:
@@ -5728,9 +5765,17 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
+  '@lynx-js/types@3.3.2':
+    dependencies:
+      csstype: 3.1.3
+
   '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))':
     dependencies:
       '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+
+  '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))':
+    dependencies:
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)
 
   '@lynx-js/web-constants@0.15.6':
     dependencies:
