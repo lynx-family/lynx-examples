@@ -7,8 +7,7 @@
 
 .scroll {
   height: 100%;
-  margin: 15px;
-  background-color: gainsboro;
+  width: 100%;
 }
 
 .title {
@@ -19,6 +18,15 @@
   color: linear-gradient(120deg, #0095ff 30%, #42d392);
 }
 
+.content {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: gainsboro;
+}
+
 .hight-light-content {
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: bold;
+  background-color: rgb(216, 228, 243);
 }

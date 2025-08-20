@@ -15,6 +15,7 @@ export default defineConfig({
       tti_entry: "./src/tti_entry/index.tsx",
       actual_fmp_entry: "./src/actual_fmp_entry/index.tsx",
       pipeline_entry: "./src/pipeline_entry/index.tsx",
+      HostPlatformTiming: "./src/HostPlatformTiming/index.tsx",
       load_bundle_entry: "./src/load_bundle_entry/index.tsx",
       InitLynxviewEntry: "./src/init_lynxview_entry/index.tsx",
       InitBackgroundRuntimeEntry: "./src/init_background_runtime_entry/index.tsx",
