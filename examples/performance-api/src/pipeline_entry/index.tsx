@@ -3,22 +3,9 @@ import { root, useMemo, useState } from "@lynx-js/react";
 import type { PerformanceEntry, PipelineEntry } from "@lynx-js/types";
 import "./index.scss";
 
-export const RenderPropItem = (props: { value: string; hightLightProp?: string }) => {
-  return (
-    <text
-      className={(props.hightLightProp && props.value.startsWith(`\t${props.hightLightProp}`))
-        ? "hight-light-content"
-        : ""}
-    >
-      {props.value}
-    </text>
-  );
-};
-
 export default function PipelineEntryExample(this: any) {
-  const [pipelineEntry, setPipelineEntry] = useState<string>();
+  const [pipelineEntry, setPipelineEntry] = useState<string>("");
   const [myName, setMyName] = useState<string | undefined>(undefined);
-  const [allProps, setAllProps] = useState<string[]>([]);
 
   useMemo(() => {
     "background-only";
@@ -29,12 +16,7 @@ export default function PipelineEntryExample(this: any) {
         const pipelineEntry = entry as PipelineEntry;
         // `PerformanceEntry.identifier` is equal to `view.__lynx_timing_flag`.
         if (pipelineEntry.identifier == "myNamePipeline") {
-          const allProps: string[] = [];
-          Object.entries(pipelineEntry).map(([key, value]) => {
-            const line = "\t" + key + " : " + JSON.stringify(value, null, 4);
-            allProps.push(line.replace("}", "\t}"));
-          });
-          setAllProps(allProps);
+          setPipelineEntry(JSON.stringify(pipelineEntry, null, 4));
         }
       }
     });
@@ -50,11 +32,7 @@ export default function PipelineEntryExample(this: any) {
   return (
     <view className="container">
       <text className="title" __lynx_timing_flag={myName ? "myNamePipeline" : ""}>Hello {myName}~</text>
-      <scroll-view className="scroll" scroll-orientation="vertical">
-        <text className="entry-item">{"{"}</text>
-        {allProps.map((entryName, index) => <RenderPropItem value={entryName} hightLightProp="" />)}
-        <text className="entry-item">{"}"}</text>
-      </scroll-view>
+      <text className="entry">{pipelineEntry}</text>
     </view>
   );
 }

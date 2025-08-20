@@ -1,14 +1,9 @@
 .container {
   display: flex;
+  padding-top: 150rpx;
   height: 100%;
   flex-direction: column;
   align-items: center;
-}
-
-.scroll {
-  height: 100%;
-  margin: 15px;
-  background-color: gainsboro;
 }
 
 .title {
@@ -19,6 +14,11 @@
   color: linear-gradient(120deg, #0095ff 30%, #42d392);
 }
 
-.hight-light-content {
-  font-weight: bold;
+.content {
+  margin: 10px;
+}
+
+.entry {
+  margin: 15px;
+  background-color: gainsboro;
 }
