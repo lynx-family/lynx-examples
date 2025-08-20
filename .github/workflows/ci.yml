@@ -28,8 +28,11 @@ jobs:
           corepack enable
           pnpm install
       - name: Lint
+        env:
+          CHANGESET_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           pnpm dprint check
+          pnpm changeset status --verbose --since $CHANGESET_BASE_SHA
       - name: Build
         env:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
