@@ -1,0 +1,18 @@
+# About code owners
+
+# https://help.github.com/en/articles/about-code-owners
+
+* @colinaaa
+
+# Ignore lock files
+
+pnpm-lock.yaml
+
+# CSS examples
+
+/api/css @colinaaa
+
+# Example packages
+
+/examples @colinaaa
+
