@@ -1,14 +1,13 @@
-import * as React from "@lynx-js/react";
-import { root, useCallback, useMemo, useState } from "@lynx-js/react";
+import { root, useCallback, useEffect, useState } from "@lynx-js/react";
 import type { LoadBundleEntry, PerformanceEntry, PipelineEntry, ReloadBundleEntry } from "@lynx-js/types";
 import { ScrollItem } from "../common/ScrollItem/index.jsx";
 import "./index.scss";
 
-export default function LoadBundleEntryExample(this: any) {
+export default function LoadBundleEntryExample() {
   const [pipelineEntry, setPipelineEntry] = useState<string>("");
   const [entryName, setEntryName] = useState<string>("pending");
 
-  useMemo(() => {
+  useEffect(() => {
     "background-only";
     // 1. Create a performance observer.
     const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {

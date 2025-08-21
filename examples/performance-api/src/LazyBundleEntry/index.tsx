@@ -2,14 +2,15 @@ const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));
 
 import { lazy, root, Suspense, useCallback, useMemo, useState } from "@lynx-js/react";
 import type { LazyBundleEntry, PerformanceEntry } from "@lynx-js/types";
+import { useEffect } from "react";
 import { ScrollItem } from "../common/ScrollItem/index.jsx";
 import "./index.scss";
 
-export default function LazyBundleEntryExample(this: any) {
+export default function LazyBundleEntryExample() {
   const [lazyBundleEntry, setLazyBundleEntry] = useState<string>("");
   const [entryName, setEntryName] = useState<string>("Waiting...");
 
-  useMemo(() => {
+  useEffect(() => {
     "background-only";
     // 1. Create a performance observer.
     const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
@@ -23,6 +24,7 @@ export default function LazyBundleEntryExample(this: any) {
     // 2. Register to listen to the "resource" event.
     observer.observe(["resource"]);
   }, []);
+
   return (
     <view className="container">
       <text className="title">Hello LazyBundleEntry~</text>
