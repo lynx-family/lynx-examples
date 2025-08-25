@@ -1,5 +1,11 @@
 # @lynx-example/animation
 
+## 0.7.0
+
+### Patch Changes
+
+- 3216242: Add transition variable demo.
+
 ## 0.6.0
 
 ### Minor Changes
