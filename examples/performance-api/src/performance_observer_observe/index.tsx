@@ -18,8 +18,6 @@ export default function InitLynxviewEntryExample(this: any) {
       if (entry.entryType == "metric") {
         if (entry.name == "fcp") {
           entryType = "MetricFcpEntry";
-        } else if (entry.name == "tti") {
-          entryType = "MetricTtiEntry";
         } else if (entry.name == "actualFmp") {
           entryType = "MetricActualFmpEntry";
         }
