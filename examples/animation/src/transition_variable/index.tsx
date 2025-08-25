@@ -1,5 +1,4 @@
-import { root } from "@lynx-js/react";
-import { useState } from "react";
+import { root, useState } from "@lynx-js/react";
 import "./index.scss";
 
 const TransitionAnimationExample = () => {
@@ -7,7 +6,7 @@ const TransitionAnimationExample = () => {
   return (
     <view class="container">
       <view
-        bindtap={() => setIsActive1(!isActive1)}
+        bindtap={() => setIsActive1((isActive) => !isActive)}
         className={isActive1 ? "button button_scene_dark" : "button button_scene_bright"}
       >
         <text class="txt">Click It</text>
