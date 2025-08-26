@@ -1,5 +1,11 @@
 # @lynx-example/animation
 
+## 0.6.2
+
+### Patch Changes
+
+- 09fd471: Modify the order of css so that the key parts are on top.
+
 ## 0.6.1
 
 ### Patch Changes
