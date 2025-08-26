@@ -2,7 +2,7 @@
   "name": "@lynx-example/performance-api",
   "description": "Examples of Performance API",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "license": "Apache-2.0",
   "scripts": {
     "build": "rspeedy build",

@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.6.1
+
+### Patch Changes
+
+- 6076257: Remove TTI entry and related code
+
 ## 0.6.0
 
 ### Minor Changes
