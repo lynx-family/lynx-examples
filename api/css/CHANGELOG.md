@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.6.1
+
+### Patch Changes
+
+- 82af4da: Add `font-optical-sizing`, `font-feature-settings` and `font-variation-settings`
+
 ## 0.6.0
 
 ### Minor Changes

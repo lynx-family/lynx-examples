@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/css-api",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "type": "module",
   "description": "CSS properties API demo",
   "license": "Apache-2.0",
