@@ -16,6 +16,7 @@ export const entry = {
   keyframe_rotate: "./src/keyframe_rotate/index.tsx",
   animate: "./src/animate/index.tsx",
   transition_variable: "./src/transition_variable/index.tsx",
+  animate_mt: "./src/animate_mt/index.tsx",
 };
 
 export default defineConfig({
