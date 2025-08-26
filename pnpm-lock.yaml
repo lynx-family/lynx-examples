@@ -46,14 +46,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -64,8 +64,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -74,14 +74,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -92,21 +92,21 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
 
   examples/Gallery:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -117,8 +117,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -127,14 +127,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -142,8 +142,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -152,14 +152,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -167,8 +167,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -177,14 +177,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -195,8 +195,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -205,14 +205,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -220,8 +220,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -230,14 +230,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -248,8 +248,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -258,14 +258,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -273,8 +273,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -283,14 +283,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -301,8 +301,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -311,14 +311,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -329,21 +329,21 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
 
   examples/hello-world:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -351,8 +351,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -361,7 +361,7 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
       i18next:
         specifier: ^23.16.8
         version: 23.16.8
@@ -371,7 +371,7 @@ importers:
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -379,8 +379,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -389,7 +389,7 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
       jsbi:
         specifier: 4.3.2
         version: 4.3.2
@@ -399,7 +399,7 @@ importers:
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -407,8 +407,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -417,14 +417,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -432,8 +432,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -442,14 +442,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -460,8 +460,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -470,14 +470,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -488,8 +488,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -498,14 +498,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -513,8 +513,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -523,14 +523,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -541,8 +541,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -551,14 +551,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -566,8 +566,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -576,14 +576,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -591,8 +591,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -601,14 +601,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -616,8 +616,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -626,14 +626,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -641,8 +641,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -651,7 +651,7 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
       '@tanstack/react-query':
         specifier: 5.85.5
         version: 5.85.5(react@19.1.1)
@@ -661,7 +661,7 @@ importers:
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -672,8 +672,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -682,14 +682,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -700,8 +700,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -710,14 +710,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -728,8 +728,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -738,14 +738,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -753,8 +753,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -763,14 +763,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -781,8 +781,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -791,14 +791,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -809,8 +809,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -819,7 +819,7 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-contrib/tailwind-preset':
         specifier: 0.0.2
@@ -829,7 +829,7 @@ importers:
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -837,8 +837,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       rsbuild-plugin-tailwindcss:
         specifier: 0.2.3
         version: 0.2.3(@rsbuild/core@1.4.15)(tailwindcss@3.4.17)
@@ -853,7 +853,7 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
       '@tanstack/react-router':
         specifier: 1.121.34
         version: 1.121.34(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -866,7 +866,7 @@ importers:
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -877,21 +877,21 @@ importers:
         specifier: 1.121.34
         version: 1.121.34(@rsbuild/core@1.4.15)(@tanstack/react-router@1.121.34(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(webpack@5.101.3)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
 
   examples/text:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -902,8 +902,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -912,14 +912,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -930,8 +930,8 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -940,14 +940,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -958,21 +958,21 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
 
   examples/view:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -980,8 +980,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -992,14 +992,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -1007,8 +1007,8 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
@@ -1038,11 +1038,11 @@ importers:
         specifier: 1.3.5
         version: 1.3.5(@rsbuild/core@1.4.15)
       '@types/react':
-        specifier: ^19.1.10
-        version: 19.1.10
+        specifier: ^19.1.11
+        version: 19.1.11
       '@types/react-dom':
         specifier: ^19.1.7
-        version: 19.1.7(@types/react@19.1.10)
+        version: 19.1.7(@types/react@19.1.11)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -1088,14 +1088,14 @@ importers:
     dependencies:
       '@lynx-js/react':
         specifier: 'catalog:'
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.0
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)
+        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
@@ -1103,14 +1103,14 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
+        specifier: ^18.3.24
+        version: 18.3.24
       typescript:
         specifier: ~5.9.2
         version: 5.9.2
       zustand:
         specifier: ^5.0.8
-        version: 5.0.8(@types/react@18.3.23)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
+        version: 5.0.8(@types/react@18.3.24)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1))
 
 packages:
 
@@ -2220,11 +2220,11 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@18.3.23':
-    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
+  '@types/react@18.3.24':
+    resolution: {integrity: sha512-0dLEBsA1kI3OezMBF8nSsb7Nk19ZnsyE1LLhB8r27KbgU5H4pvuqZLdtE+aUkJVoXgTVuA+iLIwmZ0TuK4tx6A==}
 
-  '@types/react@19.1.10':
-    resolution: {integrity: sha512-EhBeSYX0Y6ye8pNebpKrwFJq7BoQ8J5SO6NlvNwwHjSj6adXJViPQrKlsyPw7hLBLvckEMO1yxeGdR82YBBlDg==}
+  '@types/react@19.1.11':
+    resolution: {integrity: sha512-lr3jdBw/BGj49Eps7EvqlUaoeA0xpj3pc0RoJkHpYaCHkVK7i28dKyImLQb3JVlqs3aYSXf7qYuWOW/fgZnTXQ==}
 
   '@types/retry@0.12.2':
     resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
@@ -5680,36 +5680,36 @@ snapshots:
     dependencies:
       unrs-resolver: 1.11.1
 
-  '@lynx-js/react-refresh-webpack-plugin@0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4))':
+  '@lynx-js/react-refresh-webpack-plugin@0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(@lynx-js/template-webpack-plugin@0.8.4))':
     dependencies:
-      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)
+      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(@lynx-js/template-webpack-plugin@0.8.4)
 
-  '@lynx-js/react-rsbuild-plugin@0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(webpack@5.101.3)':
+  '@lynx-js/react-rsbuild-plugin@0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(webpack@5.101.3)':
     dependencies:
       '@lynx-js/css-extract-webpack-plugin': 0.6.2(@lynx-js/template-webpack-plugin@0.8.4)(webpack@5.101.3)
       '@lynx-js/react-alias-rsbuild-plugin': 0.10.12
-      '@lynx-js/react-refresh-webpack-plugin': 0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4))
-      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)
+      '@lynx-js/react-refresh-webpack-plugin': 0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(@lynx-js/template-webpack-plugin@0.8.4))
+      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(@lynx-js/template-webpack-plugin@0.8.4)
       '@lynx-js/runtime-wrapper-webpack-plugin': 0.1.2
       '@lynx-js/template-webpack-plugin': 0.8.4
-      '@lynx-js/use-sync-external-store': 1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))
+      '@lynx-js/use-sync-external-store': 1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))
       background-only: 0.0.1
     optionalDependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
     transitivePeerDependencies:
       - webpack
 
-  '@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))(@lynx-js/template-webpack-plugin@0.8.4)':
+  '@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))(@lynx-js/template-webpack-plugin@0.8.4)':
     dependencies:
       '@lynx-js/template-webpack-plugin': 0.8.4
       '@lynx-js/webpack-runtime-globals': 0.0.5
       tiny-invariant: 1.3.3
     optionalDependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
 
-  '@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)':
+  '@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)':
     dependencies:
-      '@types/react': 18.3.23
+      '@types/react': 18.3.24
       preact: '@hongzhiyuan/preact@10.24.0-00213bad'
     optionalDependencies:
       '@lynx-js/types': 3.3.0
@@ -5757,9 +5757,9 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23))':
+  '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24))':
     dependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.23)
+      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.24)
 
   '@lynx-js/web-constants@0.15.6':
     dependencies:
@@ -6431,16 +6431,16 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@19.1.7(@types/react@19.1.10)':
+  '@types/react-dom@19.1.7(@types/react@19.1.11)':
     dependencies:
-      '@types/react': 19.1.10
+      '@types/react': 19.1.11
 
-  '@types/react@18.3.23':
+  '@types/react@18.3.24':
     dependencies:
       '@types/prop-types': 15.7.15
       csstype: 3.1.3
 
-  '@types/react@19.1.10':
+  '@types/react@19.1.11':
     dependencies:
       csstype: 3.1.3
 
@@ -9456,8 +9456,8 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zustand@5.0.8(@types/react@18.3.23)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1)):
+  zustand@5.0.8(@types/react@18.3.24)(react@19.1.1)(use-sync-external-store@1.5.0(react@19.1.1)):
     optionalDependencies:
-      '@types/react': 18.3.23
+      '@types/react': 18.3.24
       react: 19.1.1
       use-sync-external-store: 1.5.0(react@19.1.1)
