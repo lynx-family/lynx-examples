@@ -15,6 +15,7 @@
   "files": [
     "dist/",
     "src/",
+    "assets/",
     "lynx.config.mjs"
   ],
   "repository": {

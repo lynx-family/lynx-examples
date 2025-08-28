@@ -23,6 +23,7 @@ export default defineConfig({
       font_face: "./src/font_face/index.tsx",
       cross_text_selection: "./src/cross_text_selection/index.tsx",
       text_selection: "./src/text_selection/index.tsx",
+      variable_font: "./src/variable_font/index.tsx",
     },
     alias: {
       "@assets": "./assets",

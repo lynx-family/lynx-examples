@@ -1,6 +1,7 @@
 import { root, useState } from "@lynx-js/react";
 
 import "./index.scss";
+import ExclamationCircle from "@assets/image/exclamationcircle.png?inline";
 
 const AlignContent = () => {
   const [inlineViewTextTimes, setInlineViewTextTimes] = useState(0);
@@ -50,7 +51,7 @@ const AlignContent = () => {
         لإعادة الشحن على
         <image
           bindtap={clickInlineImage}
-          src="https://picsum.photos/id/237/22/22"
+          src={ExclamationCircle}
           style={{
             width: "22px",
             height: "22px",
@@ -86,7 +87,7 @@ const AlignContent = () => {
         لإعادة الشحن على
         <image
           bindtap={clickInlineImage}
-          src="https://picsum.photos/id/237/22/22"
+          src={ExclamationCircle}
           style={{
             width: "22px",
             height: "22px",
@@ -133,7 +134,7 @@ const AlignContent = () => {
         </text>
         <image
           style="width:10px;height:10px"
-          src="https://picsum.photos/30/10"
+          src={ExclamationCircle}
         >
         </image>
         <text style="font-size: 16px;">
