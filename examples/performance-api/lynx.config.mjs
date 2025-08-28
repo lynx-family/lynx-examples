@@ -13,7 +13,10 @@ export default defineConfig({
     entry: {
       fcp_entry: "./src/fcp_entry/index.tsx",
       actual_fmp_entry: "./src/actual_fmp_entry/index.tsx",
-      pipeline_entry: "./src/pipeline_entry/index.tsx",
+      PipelineEntry: "./src/PipelineEntry/index.tsx",
+      HostPlatformTiming: "./src/HostPlatformTiming/index.tsx",
+      ReloadBundleEntry: "./src/ReloadBundleEntry/index.tsx",
+      LazyBundleEntry: "./src/LazyBundleEntry/index.tsx",
       load_bundle_entry: "./src/load_bundle_entry/index.tsx",
       InitLynxviewEntry: "./src/init_lynxview_entry/index.tsx",
       InitBackgroundRuntimeEntry: "./src/init_background_runtime_entry/index.tsx",
