@@ -3,7 +3,7 @@ import type { LoadBundleEntry, PerformanceEntry, PipelineEntry, ReloadBundleEntr
 import { ScrollItem } from "../common/ScrollItem/index.jsx";
 import "./index.scss";
 
-export default function LoadBundleEntryExample() {
+export default function ReloadBundleEntryExample() {
   const [pipelineEntry, setPipelineEntry] = useState<string>("");
   const [entryName, setEntryName] = useState<string>("pending");
 
@@ -42,7 +42,7 @@ export default function LoadBundleEntryExample() {
   );
 }
 
-root.render(<LoadBundleEntryExample />);
+root.render(<ReloadBundleEntryExample />);
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept();

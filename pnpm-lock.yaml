@@ -1718,9 +1718,6 @@ packages:
   '@lynx-js/types@3.4.11':
     resolution: {integrity: sha512-k4mu4d2xmMqMIP1e7WGPdzO/k9x9W35b/OE/awalQUbcLlruFatagEOEM6TANK/VuRvEl0eLXQjhBnSwGkgt5w==}
 
-  '@lynx-js/types@3.3.2':
-    resolution: {integrity: sha512-JJm5NFNoXIGR9blZEiQ8p2riJU2Or97+n6zr+Q2/q2A3lbs012/IAZy8oNH+/lDLdlktOXmy6mq5qxtFerCxFg==}
-
   '@lynx-js/use-sync-external-store@1.5.0':
     resolution: {integrity: sha512-iXwLiGUBgfWLozCIh3ICe07x534p9CVlFS3/iGEiFOce58MLX6/PbAvWcE8qEhYaOKiQNe9hqUnS2RbyCqoqGg==}
     peerDependencies:
@@ -5794,10 +5791,6 @@ snapshots:
   '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.4(@lynx-js/types@3.4.11)(@types/react@18.3.23))':
     dependencies:
       '@lynx-js/react': 0.112.4(@lynx-js/types@3.4.11)(@types/react@18.3.23)
-
-  '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23))':
-    dependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.2)(@types/react@18.3.23)
 
   '@lynx-js/web-constants@0.15.6':
     dependencies:

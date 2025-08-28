@@ -1,4 +1,4 @@
-import { lazy, root, Suspense, useCallback, useMemo, useState } from "@lynx-js/react";
+import { lazy, root, Suspense, useState } from "@lynx-js/react";
 import type { LazyBundleEntry, PerformanceEntry } from "@lynx-js/types";
 import { useEffect } from "react";
 import { ScrollItem } from "../common/ScrollItem/index.jsx";
