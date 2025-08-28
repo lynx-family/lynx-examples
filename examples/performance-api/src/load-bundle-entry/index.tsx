@@ -1,6 +1,6 @@
 import { root, useMemo, useState } from "@lynx-js/react";
 import type { LoadBundleEntry, PerformanceEntry } from "@lynx-js/types";
-import { ScrollItem } from "../Common/ScrollItem/index.jsx";
+import { ScrollItem } from "../common/scroll-item/index.jsx";
 import "./index.scss";
 
 export default function LoadBundleEntryExample(this: any) {

@@ -1,6 +1,6 @@
 import { root, useEffect, useState } from "@lynx-js/react";
 import type { PerformanceEntry, PipelineEntry } from "@lynx-js/types";
-import { ScrollItem } from "../Common/ScrollItem/index.jsx";
+import { ScrollItem } from "../common/scroll-item/index.jsx";
 import "./index.scss";
 
 export default function PipelineEntryExample() {
