@@ -30,7 +30,7 @@ const App = () => {
       if (done) {
         break;
       } else {
-        const text = globalThis.TextCodecHelper.decode(value);
+        const text = TextCodecHelper.decode(value);
         setData(text);
       }
     }
