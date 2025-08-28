@@ -1,6 +1,6 @@
 import { root, useCallback, useEffect, useState } from "@lynx-js/react";
 import type { LoadBundleEntry, PerformanceEntry, PipelineEntry, ReloadBundleEntry } from "@lynx-js/types";
-import { ScrollItem } from "../common/ScrollItem/index.jsx";
+import { ScrollItem } from "../Common/ScrollItem/index.jsx";
 import "./index.scss";
 
 export default function ReloadBundleEntryExample() {
