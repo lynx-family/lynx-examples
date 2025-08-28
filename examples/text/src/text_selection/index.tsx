@@ -126,7 +126,6 @@ const TextSelection = () => {
             text-selection={true}
             custom-context-menu={true}
             flatten={false}
-            // @ts-expect-error TODO(types): support selection change event in `@lynx-js/types`
             bindselectionchange={handleSelectionChange}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare maximus vehicula. Duis nisi velit,

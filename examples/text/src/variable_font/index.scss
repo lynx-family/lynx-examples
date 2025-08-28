@@ -1,0 +1,16 @@
+@font-face {
+  font-family: FiraCode;
+  src: url("./../../assets/font/FiraCode-VF.ttf");
+}
+
+.variable-font-normal {
+  font-family: FiraCode;
+}
+
+.font-feature-settings {
+  font-feature-settings: "onum";
+}
+
+.font-variation-settings {
+  font-variation-settings: "wght" 750;
+}

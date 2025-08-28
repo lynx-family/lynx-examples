@@ -59,6 +59,8 @@
     "pnpmDedupe"
   ],
   "ignoreDeps": [
-    "node"
+    "node",
+    "@tanstack/react-router",
+    "@tanstack/router-plugin"
   ]
 }

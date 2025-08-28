@@ -15,7 +15,7 @@ jobs:
   test:
     runs-on: lynx-ubuntu-24.04-xlarge
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           fetch-depth: 0
       - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4
@@ -28,8 +28,11 @@ jobs:
           corepack enable
           pnpm install
       - name: Lint
+        env:
+          CHANGESET_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           pnpm dprint check
+          pnpm changeset status --verbose --since $CHANGESET_BASE_SHA
       - name: Build
         env:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
