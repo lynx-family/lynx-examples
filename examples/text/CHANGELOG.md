@@ -1,5 +1,12 @@
 # @lynx-example/text
 
+## 0.6.1
+
+### Patch Changes
+
+- ac0e23b: Bump `@lynx-js/types` 3.4.11
+- 37d9ec4: feat: add variable font example and optimize text examples.
+
 ## 0.6.0
 
 ### Minor Changes
