@@ -22,7 +22,7 @@
   "devDependencies": {
     "@lynx-js/solid": "workspace:*",
     "@lynx-js/template-webpack-plugin": "0.8.4",
-    "@lynx-js/types": "3.3.0",
+    "@lynx-js/types": "^3.4.11",
     "@rspack/cli": "^1.4.11",
     "@rspack/core": "^1.4.11",
     "babel-loader": "^10.0.0",

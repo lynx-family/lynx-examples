@@ -10,7 +10,6 @@ export default class CustomFontExample extends Component<{}, { fontName: string 
     this.state = { fontName: "PingFang" };
   }
   componentDidMount() {
-    // @ts-expect-error TODO(types): should not error on `lynx.addFont`
     lynx.addFont(
       {
         "font-family": "Doto",
