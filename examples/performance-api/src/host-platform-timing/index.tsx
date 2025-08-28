@@ -1,11 +1,12 @@
 import { root, useEffect, useState } from "@lynx-js/react";
 import type { PerformanceEntry, PipelineEntry } from "@lynx-js/types";
-import { ScrollItem } from "../common/ScrollItem/index.jsx";
+import { ScrollItem } from "../common/scroll-item/index.jsx";
 import "./index.scss";
 
 export default function PipelineEntryExample() {
-  const [pipelineEntry, setPipelineEntry] = useState("");
   const [myName, setMyName] = useState<string | undefined>(undefined);
+  const [pipelineEntry, setPipelineEntry] = useState("");
+  const [hostPlatformTiming, setHostPlatformTiming] = useState("");
 
   useEffect(() => {
     "background-only";
@@ -17,6 +18,7 @@ export default function PipelineEntryExample() {
         // `PerformanceEntry.identifier` is equal to `view.__lynx_timing_flag`.
         if (pipelineEntry.identifier == "myNamePipeline") {
           setPipelineEntry(JSON.stringify(pipelineEntry, null, 4));
+          setHostPlatformTiming(JSON.stringify(pipelineEntry.hostPlatformTiming, null, 4));
         }
       }
     });
@@ -25,13 +27,14 @@ export default function PipelineEntryExample() {
 
     // Update real data after simulating a network request.
     setTimeout(() => {
-      setMyName("PipelineEntry");
+      setMyName("HostPlatformTiming");
     }, 2000);
   }, []);
 
   return (
     <view className="container">
       <text className="title" __lynx_timing_flag={myName ? "myNamePipeline" : ""}>Hello {myName}~</text>
+      <ScrollItem title="HostPlatformTiming" value={hostPlatformTiming} height="220px" />
       <ScrollItem title="PipelineEntry" value={pipelineEntry} />
     </view>
   );

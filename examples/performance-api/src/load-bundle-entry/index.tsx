@@ -1,10 +1,10 @@
-import * as React from "@lynx-js/react";
 import { root, useMemo, useState } from "@lynx-js/react";
 import type { LoadBundleEntry, PerformanceEntry } from "@lynx-js/types";
+import { ScrollItem } from "../common/scroll-item/index.jsx";
 import "./index.scss";
 
 export default function LoadBundleEntryExample(this: any) {
-  const [loadBundleEntry, setLoadBundleEntry] = useState<string>("");
+  const [loadBundleEntry, setLoadBundleEntry] = useState("");
 
   useMemo(() => {
     "background-only";
@@ -23,7 +23,7 @@ export default function LoadBundleEntryExample(this: any) {
   return (
     <view className="container">
       <text className="title">Hello LoadBundleEntry~</text>
-      <text className="entry">{loadBundleEntry}</text>
+      <ScrollItem title="LoadBundleEntry" value={loadBundleEntry} />
     </view>
   );
 }

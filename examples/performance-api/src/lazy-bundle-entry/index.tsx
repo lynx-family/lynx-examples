@@ -1,7 +1,7 @@
 import { lazy, root, Suspense, useState } from "@lynx-js/react";
 import type { LazyBundleEntry, PerformanceEntry } from "@lynx-js/types";
 import { useEffect } from "react";
-import { ScrollItem } from "../common/ScrollItem/index.jsx";
+import { ScrollItem } from "../common/scroll-item/index.jsx";
 import "./index.scss";
 
 const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));

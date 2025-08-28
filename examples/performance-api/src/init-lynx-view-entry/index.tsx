@@ -1,4 +1,3 @@
-import * as React from "@lynx-js/react";
 import { root, useMemo, useState } from "@lynx-js/react";
 import type { InitLynxviewEntry, PerformanceEntry } from "@lynx-js/types";
 import "./index.css";
