@@ -4,8 +4,8 @@ import { ScrollItem } from "../common/ScrollItem/index.jsx";
 import "./index.scss";
 
 export default function ReloadBundleEntryExample() {
-  const [pipelineEntry, setPipelineEntry] = useState<string>("");
-  const [entryName, setEntryName] = useState<string>("pending");
+  const [pipelineEntry, setPipelineEntry] = useState("");
+  const [entryName, setEntryName] = useState("pending");
 
   useEffect(() => {
     "background-only";

@@ -4,7 +4,7 @@ import { ScrollItem } from "../common/ScrollItem/index.jsx";
 import "./index.scss";
 
 export default function PipelineEntryExample() {
-  const [pipelineEntry, setPipelineEntry] = useState<string>("");
+  const [pipelineEntry, setPipelineEntry] = useState("");
   const [myName, setMyName] = useState<string | undefined>(undefined);
 
   useEffect(() => {

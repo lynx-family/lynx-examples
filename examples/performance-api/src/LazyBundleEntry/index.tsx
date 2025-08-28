@@ -7,8 +7,8 @@ import "./index.scss";
 const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));
 
 export default function LazyBundleEntryExample() {
-  const [lazyBundleEntry, setLazyBundleEntry] = useState<string>("");
-  const [entryName, setEntryName] = useState<string>("Waiting...");
+  const [lazyBundleEntry, setLazyBundleEntry] = useState("");
+  const [entryName, setEntryName] = useState("Waiting...");
 
   useEffect(() => {
     "background-only";

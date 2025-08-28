@@ -5,8 +5,8 @@ import "./index.scss";
 
 export default function PipelineEntryExample() {
   const [myName, setMyName] = useState<string | undefined>(undefined);
-  const [pipelineEntry, setPipelineEntry] = useState<string>("");
-  const [hostPlatformTiming, setHostPlatformTiming] = useState<string>("");
+  const [pipelineEntry, setPipelineEntry] = useState("");
+  const [hostPlatformTiming, setHostPlatformTiming] = useState("");
 
   useEffect(() => {
     "background-only";
