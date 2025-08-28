@@ -1,5 +1,17 @@
 # @lynx-example/animation
 
+## 0.6.2
+
+### Patch Changes
+
+- 3d892fb: Modify the order of CSS so that the key parts are on top.
+
+## 0.6.1
+
+### Patch Changes
+
+- 495c52d: Add transition variable demo.
+
 ## 0.6.0
 
 ### Minor Changes

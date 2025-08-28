@@ -1,0 +1,33 @@
+.button_scene_bright {
+  --bg-color: #f2f2f2;
+  --color: #000000;
+}
+
+.button_scene_dark {
+  --bg-color: #343a46;
+  --color: #ffffff;
+}
+
+.button {
+  background-color: var(--bg-color);
+  transition: all 0.3s;
+  width: 142px;
+  height: 48px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt {
+  color: var(--color);
+  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}

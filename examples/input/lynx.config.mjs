@@ -26,6 +26,5 @@ export default defineConfig({
   },
   environments: {
     lynx: {},
-    web: {},
   },
 });

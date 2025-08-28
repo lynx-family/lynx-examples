@@ -20,6 +20,8 @@ export default defineConfig({
       sticky: "./src/sticky/index.tsx",
       asyncRendering: "./src/async-rendering/index.tsx",
       zIndex: "./src/zIndex/index.tsx",
+      recyclable: "./src/recyclable/index.tsx",
+      recycleSticky: "./src/recycle-sticky/index.tsx",
     },
   },
   plugins: [

@@ -28,7 +28,7 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "3.3.0",
+    "@lynx-js/types": "^3.4.11",
     "@tanstack/router-plugin": "1.121.34",
     "@types/react": "^18.3.23"
   }
