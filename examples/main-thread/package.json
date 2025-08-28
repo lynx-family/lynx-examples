@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/main-thread",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "type": "module",
   "description": "Lynx main thread demo",
   "license": "Apache-2.0",

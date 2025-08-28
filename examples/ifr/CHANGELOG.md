@@ -1,5 +1,11 @@
 # @lynx-example/ifr
 
+## 0.5.1
+
+### Patch Changes
+
+- ac0e23b: Bump `@lynx-js/types` 3.4.11
+
 ## 0.5.0
 
 ### Minor Changes

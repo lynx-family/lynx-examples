@@ -1,5 +1,12 @@
 # @lynx-example/fetch
 
+## 0.6.1
+
+### Patch Changes
+
+- ac0e23b: Bump `@lynx-js/types` 3.4.11
+- 4f96ce8: Add chunk streaming example.
+
 ## 0.6.0
 
 ### Minor Changes

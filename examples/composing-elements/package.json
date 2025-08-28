@@ -1,7 +1,7 @@
 {
   "name": "@lynx-example/composing-elements",
   "description": "An example shows how to composing elements in ReactLynx",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",

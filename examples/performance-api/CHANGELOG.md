@@ -1,5 +1,12 @@
 # @lynx-example/performance-api
 
+## 0.6.2
+
+### Patch Changes
+
+- c952442: Add `LazyBundleEntry` and `ReloadBundleEntry`.
+- ac0e23b: Bump `@lynx-js/types` 3.4.11
+
 ## 0.6.1
 
 ### Patch Changes
