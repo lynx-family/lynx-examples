@@ -36,7 +36,6 @@
 "@lynx-example/ifr": patch
 "@lynx-example/css-api": patch
 "@lynx-example/with-solidjs": patch
-"@lynx-example/tanstack-router": patch
 ---
 
 Bump `@lynx-js/types` 3.4.11
