@@ -4,6 +4,7 @@
 
 import { root } from "@lynx-js/react";
 import "./index.scss";
+import ExclamationCircle from "@assets/image/exclamationcircle.png?inline";
 
 const AlignContent = () => {
   const examples = [
@@ -31,10 +32,10 @@ const AlignContent = () => {
           }}
         >
           <text className="item clip" text-maxline="1">
-            HellowWorld HellowWorld HellowWorld
+            Hello World Hello World Hello World
           </text>
           <text className="item ellipsis" text-maxline="1">
-            HellowWorld HellowWorld HellowWorld
+            Hello World Hello World Hello World
           </text>
         </view>
       </view>
@@ -324,7 +325,7 @@ const AlignContent = () => {
           >
             لإعادة الشحن على دون دفع رسوم الخدمة داخل
             <image
-              src="https://picsum.photos/id/237/22/22"
+              src={ExclamationCircle}
               style={{
                 width: "22px",
                 height: "22px",
