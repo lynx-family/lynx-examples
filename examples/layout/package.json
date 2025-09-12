@@ -1,24 +1,25 @@
 {
   "name": "@lynx-example/layout",
-  "description": "Examples of the layout related styling",
-  "type": "module",
   "version": "0.6.2",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "description": "Examples of the layout related styling",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/layout"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.web.config.mjs",
     "lynx.config.mjs"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/layout"
+  "scripts": {
+    "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"

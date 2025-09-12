@@ -1,19 +1,25 @@
 {
   "name": "@lynx-example/todolist",
-  "type": "module",
-  "description": "An demo implements todolist",
   "version": "0.6.2",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "description": "An demo implements todolist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/todo-list"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs"
   ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
@@ -24,10 +30,5 @@
     "@lynx-js/types": "^3.4.11",
     "@rsbuild/plugin-sass": "1.3.5",
     "@types/react": "^18.3.23"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/todo-list"
   }
 }

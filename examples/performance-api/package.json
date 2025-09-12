@@ -1,19 +1,25 @@
 {
   "name": "@lynx-example/performance-api",
-  "description": "Examples of Performance API",
-  "type": "module",
   "version": "0.6.3",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "description": "Examples of Performance API",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/performance-api"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs"
   ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
@@ -25,10 +31,5 @@
     "@rsbuild/plugin-sass": "1.3.5",
     "@types/react": "^18.3.23",
     "typescript": "~5.9.2"
-  },
-  "repository": {
-    "directory": "examples/performance-api",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   }
 }

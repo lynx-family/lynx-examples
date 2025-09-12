@@ -1,7 +1,18 @@
 {
   "name": "@lynx-example/lazy-bundle",
   "version": "0.6.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/lazy-bundle"
+  },
+  "author": "Lynx Authors",
   "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -10,11 +21,6 @@
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.ts"
-  ],
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
@@ -25,10 +31,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/lazy-bundle"
   }
 }

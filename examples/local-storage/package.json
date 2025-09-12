@@ -1,22 +1,23 @@
 {
   "name": "@lynx-example/local-storage",
   "version": "0.6.3",
-  "type": "module",
-  "scripts": {
-    "build": "rspeedy build",
-    "check": "biome check --write",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/local-storage"
   },
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.ts"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/local-storage"
+  "scripts": {
+    "build": "rspeedy build",
+    "check": "biome check --write",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
