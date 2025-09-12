@@ -1,5 +1,11 @@
 # @lynx-example/lynx-api
 
+## 0.1.3
+
+### Patch Changes
+
+- 4146aae: Publish with npm trusted publishing
+
 ## 0.1.2
 
 ### Patch Changes

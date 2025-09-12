@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/element-manipulation",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "type": "module",
   "description": "Lynx element manipulation demo",
   "license": "Apache-2.0",

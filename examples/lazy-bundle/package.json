@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/lazy-bundle",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
