@@ -1,5 +1,11 @@
 # @lynx-example/tanstack-router
 
+## 0.6.5
+
+### Patch Changes
+
+- 4146aae: Publish with npm trusted publishing
+
 ## 0.6.4
 
 ### Patch Changes

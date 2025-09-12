@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/react-lifecycle",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "type": "module",
   "description": "ReactLynx lifecycle demo",
   "license": "Apache-2.0",
