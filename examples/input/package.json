@@ -1,9 +1,20 @@
 {
   "name": "@lynx-example/input",
-  "description": "An example shows how to use input in Lynx",
-  "type": "module",
   "version": "0.6.3",
+  "description": "An example shows how to use input in Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/input"
+  },
   "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,16 +22,6 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.mjs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/input"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",

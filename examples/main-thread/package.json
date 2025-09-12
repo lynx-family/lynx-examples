@@ -1,19 +1,20 @@
 {
   "name": "@lynx-example/main-thread",
   "version": "0.4.2",
-  "type": "module",
   "description": "Lynx main thread demo",
-  "license": "Apache-2.0",
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.ts"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/main-thread"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",

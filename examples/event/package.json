@@ -1,9 +1,20 @@
 {
   "name": "@lynx-example/event",
-  "description": "An example shows how to use Lynx Event",
-  "type": "module",
   "version": "0.6.2",
+  "description": "An example shows how to use Lynx Event",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/event"
+  },
   "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,16 +22,6 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.mjs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/event"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",

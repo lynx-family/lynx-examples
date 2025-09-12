@@ -2,6 +2,7 @@
   "name": "@lynx-example/lynx-project",
   "version": "0.0.0",
   "private": true,
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",

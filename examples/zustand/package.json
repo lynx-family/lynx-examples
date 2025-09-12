@@ -1,9 +1,20 @@
 {
   "name": "@lynx-example/zustand",
-  "description": "An example shows how to use zustand in Lynx",
   "version": "0.6.2",
-  "type": "module",
+  "description": "An example shows how to use zustand in Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/zustand"
+  },
   "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,16 +22,6 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.mjs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/zustand"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
