@@ -1,6 +1,7 @@
-import preset from "@lynx-contrib/tailwind-preset";
+import preset from "@lynx-js/tailwind-preset";
 
 export default {
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   presets: [
     preset,
   ],
