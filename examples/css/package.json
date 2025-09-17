@@ -1,24 +1,25 @@
 {
   "name": "@lynx-example/css",
+  "version": "0.6.2",
   "description": "An example shows how to use different CSS properties",
-  "type": "module",
-  "version": "0.6.1",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/css"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "resource/",
     "src/",
     "lynx.config.mjs"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/css"
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"

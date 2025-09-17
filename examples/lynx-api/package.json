@@ -1,23 +1,24 @@
 {
   "name": "@lynx-example/lynx-api",
-  "version": "0.1.2",
-  "type": "module",
-  "scripts": {
-    "build": "rspeedy build",
-    "check": "biome check --write",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "version": "0.1.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/lynx-api"
   },
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "resource/",
     "lynx.config.ts"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/lynx-api"
+  "scripts": {
+    "build": "rspeedy build",
+    "check": "biome check --write",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"

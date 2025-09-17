@@ -1,27 +1,28 @@
 {
   "name": "@lynx-example/tanstack-router",
+  "version": "0.6.5",
   "description": "An example shows how to use TanStack Router in Lynx",
-  "version": "0.6.3",
-  "type": "module",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.mjs"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/tanstack-router"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
   "dependencies": {
     "@lynx-js/react": "catalog:",
-    "@tanstack/react-router": "1.121.34",
+    "@tanstack/react-router": "1.131.36",
     "url-search-params-polyfill": "^8.2.5"
   },
   "devDependencies": {
@@ -29,7 +30,7 @@
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "^3.4.11",
-    "@tanstack/router-plugin": "1.121.34",
+    "@tanstack/router-plugin": "1.131.36",
     "@types/react": "^18.3.23"
   }
 }

@@ -4,13 +4,12 @@
   "private": true,
   "description": "An example shows how to use Lynx Web Platform",
   "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "scripts": {
     "build": "pnpm --filter lynx-project run build",
     "dev": "pnpm --filter react-container run dev"
   },
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {
   }
 }

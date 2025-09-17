@@ -20,7 +20,7 @@ function RootComponent() {
       <Outlet />
 
       <image
-        src="https://tanstack.com/assets/splash-dark-8nwlc0Nt.png"
+        src="https://tanstack.com/images/logos/splash-light.png"
         style={{
           height: "150px",
           width: "150px",

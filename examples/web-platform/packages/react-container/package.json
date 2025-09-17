@@ -2,9 +2,10 @@
   "name": "@lynx-example/react-container",
   "version": "0.0.0",
   "private": true,
+  "author": "Lynx Authors",
   "scripts": {
-    "dev": "rsbuild dev --open",
     "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
     "preview": "rsbuild preview"
   },
   "dependencies": {

@@ -1,8 +1,19 @@
 {
   "name": "@lynx-example/view",
+  "version": "0.6.2",
   "description": "An example shows how to use view in Lynx",
-  "version": "0.6.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/view"
+  },
+  "author": "Lynx Authors",
   "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,11 +22,6 @@
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.ts"
-  ],
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
@@ -26,10 +32,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "directory": "examples/view",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   }
 }

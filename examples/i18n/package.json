@@ -1,6 +1,12 @@
 {
   "name": "@lynx-example/i18n",
-  "version": "0.5.1",
+  "version": "0.5.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/i18n"
+  },
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
@@ -18,11 +24,6 @@
     "@lynx-js/types": "^3.4.11",
     "@types/react": "^18.3.23",
     "typescript": "~5.9.2"
-  },
-  "repository": {
-    "directory": "examples/i18n",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   },
   "engines": {
     "node": ">=18"

@@ -25,6 +25,8 @@ export default defineConfig({
       text_selection: "./src/text_selection/index.tsx",
       variable_font: "./src/variable_font/index.tsx",
     },
+  },
+  resolve: {
     alias: {
       "@assets": "./assets",
     },

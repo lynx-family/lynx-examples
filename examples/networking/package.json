@@ -1,23 +1,24 @@
 {
   "name": "@lynx-example/networking",
+  "version": "0.4.2",
   "description": "An example shows Lynx networking abilities",
-  "type": "module",
-  "version": "0.4.1",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/networking"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/networking"
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:",

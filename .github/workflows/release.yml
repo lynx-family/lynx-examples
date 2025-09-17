@@ -5,15 +5,13 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-  id-token: write
+permissions: {}
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    environment: npm
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: false
@@ -33,10 +31,12 @@ jobs:
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22
+          package-manager-cache: false
 
       - name: Install Dependencies
         run: |
-          npm i -g corepack
+          npm i -g corepack npm@latest
+          npm --version
           corepack enable
           pnpm install
 
@@ -47,4 +47,3 @@ jobs:
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

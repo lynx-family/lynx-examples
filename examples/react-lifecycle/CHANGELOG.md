@@ -1,5 +1,11 @@
 # @lynx-example/react-lifecycle
 
+## 0.5.2
+
+### Patch Changes
+
+- 4146aae: Publish with npm trusted publishing
+
 ## 0.5.1
 
 ### Patch Changes

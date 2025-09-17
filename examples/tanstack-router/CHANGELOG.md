@@ -1,5 +1,19 @@
 # @lynx-example/tanstack-router
 
+## 0.6.5
+
+### Patch Changes
+
+- 4146aae: Publish with npm trusted publishing
+
+## 0.6.4
+
+### Patch Changes
+
+- 8b4ae84: Resolve breaking change introduced in `@tanstack/router@1.127.9`.
+
+  Fix white screen issue on ReactLynx by explicitly setting `isServer: false` in router configuration to override incorrect server environment detection.
+
 ## 0.6.3
 
 ### Patch Changes

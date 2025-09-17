@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.6.2
+
+### Patch Changes
+
+- 4146aae: Publish with npm trusted publishing
+
 ## 0.6.1
 
 ### Patch Changes

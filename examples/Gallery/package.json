@@ -1,20 +1,26 @@
 {
   "name": "@lynx-example/gallery",
+  "version": "0.6.2",
   "description": "An example shows how to build a picture gallery and master Lynx better",
-  "type": "module",
-  "version": "0.6.1",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/Gallery"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "resource/",
     "src/",
     "lynx.config.mjs"
   ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
@@ -26,10 +32,5 @@
     "@rsbuild/plugin-sass": "1.3.5",
     "@types/react": "^18.3.23",
     "typescript": "~5.9.2"
-  },
-  "repository": {
-    "directory": "examples/Gallery",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   }
 }
