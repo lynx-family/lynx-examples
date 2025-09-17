@@ -852,40 +852,6 @@ importers:
         specifier: ~5.9.2
         version: 5.9.2
 
-  examples/tailwindcss-with-plugin:
-    dependencies:
-      '@lynx-js/react':
-        specifier: 'catalog:'
-        version: 0.112.6(@lynx-js/types@3.4.11)(@types/react@18.3.23)
-    devDependencies:
-      '@lynx-js/qrcode-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.4.1
-      '@lynx-js/react-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.10.13(@lynx-js/react@0.112.6(@lynx-js/types@3.4.11)(@types/react@18.3.23))(webpack@5.101.3)
-      '@lynx-js/rspeedy':
-        specifier: 'catalog:'
-        version: 0.11.1(@rspack/core@1.5.1(@swc/helpers@0.5.17))(typescript@5.9.2)(webpack@5.101.3)
-      '@lynx-js/tailwind-preset':
-        specifier: 0.2.1
-        version: 0.2.1(tailwindcss@3.4.17)
-      '@lynx-js/types':
-        specifier: ^3.4.11
-        version: 3.4.11
-      '@types/react':
-        specifier: ^18.3.23
-        version: 18.3.23
-      rsbuild-plugin-tailwindcss:
-        specifier: ^0.2.3
-        version: 0.2.3(@rsbuild/core@1.5.2)(tailwindcss@3.4.17)
-      tailwindcss:
-        specifier: ^3.4.17
-        version: 3.4.17
-      typescript:
-        specifier: ~5.9.2
-        version: 5.9.2
-
   examples/tanstack-router:
     dependencies:
       '@lynx-js/react':
@@ -5800,15 +5766,6 @@ packages:
   root-link-target@3.1.0:
     resolution: {integrity: sha512-hdke7IGy7j6TCIGhUDnaX41OFpHgZOaZ70GHUS2RdolaHj9Gn3jVvV9xE+sd6rTuRd4t7bNpzYSKSpAz/74H/A==}
     engines: {node: '>=10'}
-
-  rsbuild-plugin-tailwindcss@0.2.3:
-    resolution: {integrity: sha512-UUARLNjMHLNQXvZ7JTVXES41KznawRIJKULt+ZLDBvzOV7buE0BrBYOSlP+r+7SYn8kcvtwdM9TANpOlNwHvZQ==}
-    peerDependencies:
-      '@rsbuild/core': ^1.1.0
-      tailwindcss: ^3.1.0
-    peerDependenciesMeta:
-      '@rsbuild/core':
-        optional: true
 
   rslog@1.2.11:
     resolution: {integrity: sha512-YgMMzQf6lL9q4rD9WS/lpPWxVNJ1ttY9+dOXJ0+7vJrKCAOT4GH0EiRnBi9mKOitcHiOwjqJPV1n/HRqqgZmOQ==}
@@ -12220,12 +12177,6 @@ snapshots:
       can-link: 2.0.0
       next-path: 1.0.0
       path-temp: 2.0.0
-
-  rsbuild-plugin-tailwindcss@0.2.3(@rsbuild/core@1.5.2)(tailwindcss@3.4.17):
-    dependencies:
-      tailwindcss: 3.4.17
-    optionalDependencies:
-      '@rsbuild/core': 1.5.2
 
   rslog@1.2.11: {}
 
