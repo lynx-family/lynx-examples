@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.4.0
+
+### Minor Changes
+
+- 9658300: Use PostCSS instead of `rsbuild-plugin-tailwindcss`.
+
 ## 0.3.2
 
 ### Patch Changes
