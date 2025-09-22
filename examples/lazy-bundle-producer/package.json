@@ -1,0 +1,25 @@
+{
+  "name": "@lynx-example/lazy-bundle-producer",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "3.4.11",
+    "@rsbuild/plugin-type-check": "1.2.4",
+    "@types/react": "^18.3.23",
+    "typescript": "~5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
