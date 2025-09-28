@@ -1,0 +1,40 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.control {
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: green;
+}
