@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.6.4
+
+### Patch Changes
+
+- 8bc6f7c: Add examples for `pointer-events: 'none'` and `pointer-events: 'auto'`.
+
 ## 0.6.3
 
 ### Patch Changes
