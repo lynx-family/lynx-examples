@@ -148,6 +148,7 @@ export default defineConfig({
       "padding-right": "./src/padding-right/App.tsx",
       "padding-top": "./src/padding-top/App.tsx",
       "perspective": "./src/perspective/App.tsx",
+      "pointer-events": "./src/pointer-events/App.tsx",
       "position": "./src/position/App.tsx",
       "ppx": "./src/ppx/App.tsx",
       "relative-align-bottom": "./src/relative-align-bottom/App.tsx",
