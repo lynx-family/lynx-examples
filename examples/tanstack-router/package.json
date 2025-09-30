@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:",
-    "@tanstack/react-router": "1.131.36",
+    "@tanstack/react-router": "1.132.27",
     "url-search-params-polyfill": "^8.2.5"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "^3.4.11",
-    "@tanstack/router-plugin": "1.131.36",
-    "@types/react": "^18.3.23"
+    "@tanstack/router-plugin": "1.132.27",
+    "@types/react": "^18.3.25"
   }
 }
