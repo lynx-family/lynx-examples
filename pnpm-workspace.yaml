@@ -6,6 +6,6 @@ packages:
 
 catalog:
   "@lynx-js/qrcode-rsbuild-plugin": "0.4.2"
-  "@lynx-js/rspeedy": "0.11.4"
-  "@lynx-js/react": "0.114.0"
-  "@lynx-js/react-rsbuild-plugin": "0.11.0"
+  "@lynx-js/rspeedy": "0.11.5"
+  "@lynx-js/react": "0.114.1"
+  "@lynx-js/react-rsbuild-plugin": "0.11.1"
