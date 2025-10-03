@@ -16,4 +16,9 @@ export default defineConfig({
     pluginReactLynx(),
     pluginTypeCheck(),
   ],
+  environments: {
+    lynx: {},
+    // can open when web supports querySelector
+    // web: {},
+  },
 });
