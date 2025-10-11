@@ -21,6 +21,7 @@ export default defineConfig({
       event_node_eom: "./src/event_node_eom/index.tsx",
       event_node_sq: "./src/event_node_sq/index.tsx",
       event_static_catch: "./src/event_static_catch/index.tsx",
+      event_stop_propagation: "./src/event_stop_propagation/index.tsx",
       visibility_expose: "./src/visibility_expose/index.tsx",
       visibility_expose_custom: "./src/visibility_expose_custom/index.tsx",
       visibility_expose_global: "./src/visibility_expose_global/index.tsx",
