@@ -1,5 +1,11 @@
 # @lynx-example/event
 
+## 0.6.3
+
+### Patch Changes
+
+- 74064cd: Add `event.stopPropgation` examples
+
 ## 0.6.2
 
 ### Patch Changes
