@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.3
+
+### Patch Changes
+
+- 0bd41ce: Add chunked encoding example.
+
 ## 0.4.2
 
 ### Patch Changes
