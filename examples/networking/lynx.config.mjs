@@ -13,6 +13,7 @@ export default defineConfig({
     entry: {
       "fetch": "./src/fetch/index.tsx",
       "react-query": "/src/react-query/index.tsx",
+      "chunked-encoding": "/src/chunked-encoding/index.tsx",
     },
   },
   output: {
