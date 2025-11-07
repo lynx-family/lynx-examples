@@ -1,5 +1,11 @@
 # @lynx-example/discover-page
 
+## 0.6.3
+
+### Patch Changes
+
+- 1a4f8a8: feat: add web bundle for preview.
+
 ## 0.6.2
 
 ### Patch Changes
