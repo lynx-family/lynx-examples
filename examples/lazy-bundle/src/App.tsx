@@ -2,7 +2,9 @@ import { lazy, Suspense, useEffect } from "@lynx-js/react";
 
 import "./App.css";
 
-const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));
+const url =
+  "https://lf-lynx.tiktok-cdns.com/obj/lynx-artifacts-oss-sg/plugin/static/lazy-bundle-producer-new.lynx.bundle";
+const MyLazyBundle = lazy(() => import(url, { with: { type: "component" } }));
 
 export function App() {
   useEffect(() => {
