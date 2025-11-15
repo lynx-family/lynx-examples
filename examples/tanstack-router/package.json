@@ -22,15 +22,15 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:",
-    "@tanstack/react-router": "1.132.31",
+    "@tanstack/react-router": "1.136.5",
     "url-search-params-polyfill": "^8.2.5"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.4.11",
-    "@tanstack/router-plugin": "1.132.31",
-    "@types/react": "^18.3.25"
+    "@lynx-js/types": "^3.5.11",
+    "@tanstack/router-plugin": "1.136.5",
+    "@types/react": "^18.3.26"
   }
 }
