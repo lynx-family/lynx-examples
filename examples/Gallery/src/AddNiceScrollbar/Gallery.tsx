@@ -43,6 +43,7 @@ export const Gallery = (props: { pictureData: Picture[] }) => {
         scroll-orientation="vertical"
         custom-list-name="list-container"
         bindscroll={onScroll}
+        scroll-event-throttle={0}
       >
         {pictureData.map((picture: Picture, index: number) => (
           <list-item

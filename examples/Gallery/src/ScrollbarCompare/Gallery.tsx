@@ -55,6 +55,7 @@ export const Gallery = (props: { pictureData: Picture[] }) => {
         custom-list-name="list-container"
         bindscroll={onScroll}
         main-thread:bindscroll={onScrollMTS}
+        scroll-event-throttle={0}
       >
         {pictureData.map((picture: Picture, index: number) => (
           <list-item
