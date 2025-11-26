@@ -1,5 +1,12 @@
 # @lynx-example/discover-page
 
+## 0.6.3
+
+### Patch Changes
+
+- a2f30d1: Add scroll-event-throttle to deal with lag
+- 1a4f8a8: feat: add web bundle for preview.
+
 ## 0.6.2
 
 ### Patch Changes
