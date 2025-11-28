@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.4
+
+### Patch Changes
+
+- 128c817: disable web output.
+
 ## 0.4.3
 
 ### Patch Changes
