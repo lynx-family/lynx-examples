@@ -1,5 +1,11 @@
 # @lynx-example/animation
 
+## 0.6.5
+
+### Patch Changes
+
+- d5e1943: set filename to '[name].[platform].bundle' to eliminate difference between different versions.
+
 ## 0.6.4
 
 ### Patch Changes

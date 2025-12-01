@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/list",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "An example shows how to use list in Lynx",
   "repository": {
     "type": "git",

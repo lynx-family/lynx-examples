@@ -1,5 +1,11 @@
 # @lynx-example/i18n
 
+## 0.5.3
+
+### Patch Changes
+
+- d5e1943: set filename to '[name].[platform].bundle' to eliminate difference between different versions.
+
 ## 0.5.2
 
 ### Patch Changes

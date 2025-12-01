@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/event",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "An example shows how to use Lynx Event",
   "repository": {
     "type": "git",
