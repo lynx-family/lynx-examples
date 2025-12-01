@@ -27,5 +27,6 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/scroll-view/dist",
+    filename: "[name].[platform].bundle",
   },
 });

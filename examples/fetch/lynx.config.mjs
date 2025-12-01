@@ -12,6 +12,9 @@ export default defineConfig({
   source: {
     entry: "./index.tsx",
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx(),
     pluginSass({}),

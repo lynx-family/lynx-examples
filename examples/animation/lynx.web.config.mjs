@@ -25,5 +25,6 @@ export default defineConfig({
   },
   output: {
     cleanDistPath: false,
+    filename: "[name].[platform].bundle",
   },
 });

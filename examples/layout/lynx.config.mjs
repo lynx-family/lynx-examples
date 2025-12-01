@@ -33,6 +33,9 @@ export default defineConfig({
       sizing: "./src/sizing/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx({
       enableCSSInheritance: true,

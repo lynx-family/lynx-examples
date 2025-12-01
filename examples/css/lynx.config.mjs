@@ -35,6 +35,7 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/css/dist",
+    filename: "[name].[platform].bundle",
   },
   plugins: [
     pluginReactLynx({

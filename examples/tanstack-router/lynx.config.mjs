@@ -22,6 +22,7 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/tanstack-router/dist",
+    filename: "[name].[platform].bundle",
   },
   tools: {
     rspack: {

@@ -16,4 +16,7 @@ export default defineConfig({
     pluginReactLynx(),
     pluginTypeCheck(),
   ],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
 });

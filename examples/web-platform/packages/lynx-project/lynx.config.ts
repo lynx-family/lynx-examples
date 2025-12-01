@@ -5,6 +5,9 @@ export default defineConfig({
   plugins: [
     pluginReactLynx(),
   ],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   environments: {
     web: {},
     lynx: {},

@@ -35,4 +35,7 @@ export default defineConfig({
     pluginQRCode(),
     pluginTypeCheck(),
   ],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
 });
