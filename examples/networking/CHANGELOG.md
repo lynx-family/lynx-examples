@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.5
+
+### Patch Changes
+
+- d5e1943: set filename to '[name].[platform].bundle' to eliminate difference between different versions.
+
 ## 0.4.4
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/input",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "An example shows how to use input in Lynx",
   "repository": {
     "type": "git",

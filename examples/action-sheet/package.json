@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/action-sheet",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "An example shows how to build an ActionSheet in Lynx",
   "repository": {
     "type": "git",

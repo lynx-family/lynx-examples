@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/fetch",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "An example shows how fetch API work in ReactLynx",
   "repository": {
     "type": "git",
