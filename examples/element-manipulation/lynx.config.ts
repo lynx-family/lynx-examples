@@ -14,6 +14,9 @@ export default defineConfig({
       "event-main-thread": "./src/event-main-thread/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginQRCode(),
     pluginReactLynx(),

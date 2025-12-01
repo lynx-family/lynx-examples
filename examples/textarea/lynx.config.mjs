@@ -23,6 +23,7 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/textarea/dist",
+    filename: "[name].[platform].bundle",
   },
   environments: {
     lynx: {},

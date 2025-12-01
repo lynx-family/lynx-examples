@@ -23,6 +23,9 @@ export default defineConfig({
   source: {
     entry,
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx(),
     pluginSass(),

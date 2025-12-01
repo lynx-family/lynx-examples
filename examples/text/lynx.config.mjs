@@ -43,5 +43,6 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/text/dist",
+    filename: "[name].[platform].bundle",
   },
 });

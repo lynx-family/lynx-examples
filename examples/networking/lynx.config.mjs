@@ -18,6 +18,7 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/networking/dist",
+    filename: "[name].[platform].bundle",
   },
   plugins: [
     pluginReactLynx({

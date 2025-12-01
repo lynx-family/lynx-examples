@@ -28,6 +28,9 @@ export default defineConfig({
       visibility_intersection: "./src/visibility_intersection/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx(),
     pluginSass(),

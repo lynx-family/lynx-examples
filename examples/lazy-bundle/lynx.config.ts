@@ -21,5 +21,6 @@ export default defineConfig({
         exclude: [/async[\\/].*[\\/]template(\.[a-z0-9]+)?\.js$/],
       },
     },
+    filename: "[name].[platform].bundle",
   },
 });

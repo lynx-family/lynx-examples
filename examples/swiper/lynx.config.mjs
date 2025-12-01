@@ -31,5 +31,6 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/swiper/dist",
+    filename: "[name].[platform].bundle",
   },
 });

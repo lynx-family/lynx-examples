@@ -29,5 +29,6 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/bankcards/dist",
+    filename: "[name].[platform].bundle",
   },
 });

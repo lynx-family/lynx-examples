@@ -17,4 +17,7 @@ export default defineConfig({
     }),
     pluginTypeCheck(),
   ],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
 });

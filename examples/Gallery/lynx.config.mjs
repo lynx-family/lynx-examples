@@ -28,6 +28,7 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/gallery/dist",
+    filename: "[name].[platform].bundle",
   },
   environments: {
     web: {},
