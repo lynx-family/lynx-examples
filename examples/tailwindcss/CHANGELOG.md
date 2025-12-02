@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.4.2
+
+### Patch Changes
+
+- 8b73c55: unify @lynx-js/types version.
+
 ## 0.4.1
 
 ### Patch Changes

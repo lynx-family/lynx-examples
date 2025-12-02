@@ -1,5 +1,11 @@
 # @lynx-example/lynx-api
 
+## 0.1.5
+
+### Patch Changes
+
+- 8b73c55: unify @lynx-js/types version.
+
 ## 0.1.4
 
 ### Patch Changes

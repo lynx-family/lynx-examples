@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/scroll-view",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "An example shows how to use scrollable container",
   "repository": {
     "type": "git",
