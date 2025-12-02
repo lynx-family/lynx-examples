@@ -92,11 +92,10 @@ const CrossTextSelection = () => {
         .selectAll("#container text")
         .fields(
           {
-            // @ts-expect-error TODO(types): support `query` in `@lynx-js/types`
             query: true,
             id: true,
           },
-          resolve,
+          (data) => resolve(data.map((item) => item.query)),
         )
         .exec();
     });
