@@ -9,3 +9,4 @@ catalog:
   "@lynx-js/rspeedy": "0.11.8"
   "@lynx-js/react": "0.114.3"
   "@lynx-js/react-rsbuild-plugin": "0.11.3"
+  "@lynx-js/types": "3.4.11"

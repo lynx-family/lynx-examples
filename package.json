@@ -35,6 +35,9 @@
       "@biomejs/biome",
       "dprint"
     ],
+    "overrides": {
+      "@lynx-js/types": "catalog:"
+    },
     "ignoredBuiltDependencies": [
       "core-js"
     ]

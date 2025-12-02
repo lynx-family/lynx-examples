@@ -24,7 +24,7 @@
     "@babel/preset-typescript": "^7.27.1",
     "@lynx-js/solid": "workspace:*",
     "@lynx-js/template-webpack-plugin": "0.9.0",
-    "@lynx-js/types": "^3.4.11",
+    "@lynx-js/types": "catalog:",
     "@rspack/cli": "^1.5.8",
     "@rspack/core": "^1.5.8",
     "babel-loader": "^10.0.0",
