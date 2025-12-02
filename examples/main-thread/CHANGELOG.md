@@ -1,5 +1,11 @@
 # @lynx-example/main-thread
 
+## 0.4.4
+
+### Patch Changes
+
+- 8b73c55: unify @lynx-js/types version.
+
 ## 0.4.3
 
 ### Patch Changes

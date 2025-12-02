@@ -1,5 +1,11 @@
 # @lynx-example/animation
 
+## 0.6.6
+
+### Patch Changes
+
+- 8b73c55: unify @lynx-js/types version.
+
 ## 0.6.5
 
 ### Patch Changes
