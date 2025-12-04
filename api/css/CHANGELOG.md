@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.6.6
+
+### Patch Changes
+
+- fdbd80d: Add `brightness()`, `contrast()` and `saturate()` example for the `filter` property.
+
 ## 0.6.5
 
 ### Patch Changes
