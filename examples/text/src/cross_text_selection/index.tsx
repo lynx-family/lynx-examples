@@ -92,49 +92,39 @@ const CrossTextSelection = () => {
         .selectAll("#container text")
         .fields(
           {
-            // @ts-expect-error TODO(types): support `query` in `@lynx-js/types`
             query: true,
             id: true,
           },
-          resolve,
+          (result) => resolve(result.map(({ query }) => query)),
         )
         .exec();
     });
 
     Promise.all(
-      resArray.map((element) => {
+      resArray.map((selectorQuery) => {
         return new Promise<{
           top: number;
           left: number;
           width: number;
           height: number;
           id: string;
-        }>((resolve) => {
-          // @ts-expect-error TODO(types): support `query` in `@lynx-js/types`
-          element.query
-            .selectRoot()
+        }>((resolve, reject) => {
+          selectorQuery.selectRoot()
             .invoke({
               method: "boundingClientRect",
-              success: (res: {
-                top: number;
-                left: number;
-                width: number;
-                height: number;
-                id: string;
-              }) => {
-                resolve(res);
-              },
+              success: resolve,
+              fail: reject,
             })
             .exec();
         });
       }),
     ).then((values) => {
-      textsInfo = [...values].map(({ top, left, width, height, id }) => ({
-        id: String(id),
-        left: Number(left),
-        top: Number(top),
-        width: Number(width),
-        height: Number(height),
+      textsInfo = values.map(({ top, left, width, height, id }) => ({
+        id,
+        left,
+        top,
+        width,
+        height,
         startX: -1,
         startY: 0,
         endX: width,
