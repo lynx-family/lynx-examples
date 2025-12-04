@@ -18,6 +18,7 @@ This repository is intended to showcase examples of Lynx.
 - XElement
   - [`input`]: An example shows how to use input
   - [`textarea`]: An example shows how to use textarea
+  - [`overlay`]: An example shows how to use overlay
 - Styling
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
@@ -49,6 +50,7 @@ This repository is intended to showcase examples of Lynx.
 [`view`]: ./examples/view
 [`input`]: ./examples/input
 [`textarea`]: ./examples/textarea
+[`overlay`]: ./examples/overlay
 [`fetch`]: ./examples/fetch
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility
