@@ -21,14 +21,14 @@
     "dev": "rspack dev"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.27.1",
+    "@babel/preset-typescript": "^7.28.5",
     "@lynx-js/solid": "workspace:*",
-    "@lynx-js/template-webpack-plugin": "0.9.0",
+    "@lynx-js/template-webpack-plugin": "0.9.1",
     "@lynx-js/types": "catalog:",
-    "@rspack/cli": "^1.5.8",
-    "@rspack/core": "^1.5.8",
+    "@rspack/cli": "^1.6.6",
+    "@rspack/core": "^1.6.6",
     "babel-loader": "^10.0.0",
-    "babel-preset-solid": "^1.9.9"
+    "babel-preset-solid": "^1.9.10"
   },
   "engines": {
     "node": ">=18"
