@@ -2,12 +2,11 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import { type InitData, root, useInitData } from "@lynx-js/react";
-import type { GlobalProps } from "@lynx-js/types";
+import { root, useInitData } from "@lynx-js/react";
 
 export function App() {
-  const initData: InitData = useInitData();
-  const globalProps: GlobalProps = lynx.__globalProps;
+  const initData = useInitData();
+  const globalProps = lynx.__globalProps;
 
   return (
     <view>
