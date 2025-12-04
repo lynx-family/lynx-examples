@@ -28,8 +28,8 @@
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "catalog:",
-    "@types/react": "^18.3.25",
+    "@types/react": "^18.3.27",
     "typescript": "~5.9.3",
-    "zustand": "^5.0.8"
+    "zustand": "^5.0.9"
   }
 }
