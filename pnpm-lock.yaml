@@ -687,6 +687,34 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
 
+  examples/overlay:
+    dependencies:
+      '@lynx-js/react':
+        specifier: 'catalog:'
+        version: 0.114.5(@lynx-js/types@3.6.0)(@types/react@18.3.27)
+    devDependencies:
+      '@lynx-js/qrcode-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.4.3
+      '@lynx-js/react-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.11.4(@lynx-js/react@0.114.5(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)
+      '@lynx-js/rspeedy':
+        specifier: 'catalog:'
+        version: 0.12.0(@rspack/core@1.6.6(@swc/helpers@0.5.17))(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/types':
+        specifier: 3.6.0
+        version: 3.6.0
+      '@rsbuild/plugin-sass':
+        specifier: 1.4.0
+        version: 1.4.0(@rsbuild/core@1.6.7)
+      '@types/react':
+        specifier: ^18.3.25
+        version: 18.3.27
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+
   examples/page:
     dependencies:
       '@lynx-js/react':
