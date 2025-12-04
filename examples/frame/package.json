@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "description": "An example shows how to use `<frame>` in Lynx",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/frame"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
