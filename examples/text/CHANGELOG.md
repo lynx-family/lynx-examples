@@ -1,5 +1,11 @@
 # @lynx-example/text
 
+## 0.6.5
+
+### Patch Changes
+
+- c21230d: Fix types error.
+
 ## 0.6.4
 
 ### Patch Changes
