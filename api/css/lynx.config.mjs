@@ -207,5 +207,6 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/css-api/dist",
+    filename: "[name].[platform].bundle",
   },
 });
