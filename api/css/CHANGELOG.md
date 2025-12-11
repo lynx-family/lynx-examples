@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.7.0
+
+### Minor Changes
+
+- a4465bf: set filename of css-api to '[name].[platform].bundle' to keep consistent with other packages
+
 ## 0.6.6
 
 ### Patch Changes
