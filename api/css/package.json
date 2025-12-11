@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/css-api",
-  "version": "0.6.6",
+  "version": "0.7.0",
   "description": "CSS properties API demo",
   "repository": {
     "type": "git",
