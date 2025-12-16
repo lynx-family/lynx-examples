@@ -1,8 +1,14 @@
-import { lazy, Suspense, useEffect } from "@lynx-js/react";
+import { lazy, root, Suspense, useEffect } from "@lynx-js/react";
 
 import "./App.css";
 
-const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));
+const bundleUrl = `${process.env.ASSET_PREFIX}/producer.lynx.bundle`;
+const MyLazyBundle = lazy(
+  () =>
+    import(bundleUrl, {
+      with: { type: "component" },
+    }),
+);
 
 export function App() {
   useEffect(() => {
@@ -18,3 +24,5 @@ export function App() {
     </view>
   );
 }
+
+root.render(<App />);
