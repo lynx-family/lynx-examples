@@ -18,6 +18,9 @@ catalogs:
     '@lynx-js/rspeedy':
       specifier: 0.12.0
       version: 0.12.0
+    '@lynx-js/template-webpack-plugin':
+      specifier: 0.9.1
+      version: 0.9.1
 
 overrides:
   '@lynx-js/types': 3.6.0
@@ -1115,7 +1118,7 @@ importers:
         specifier: workspace:*
         version: link:packages/solid
       '@lynx-js/template-webpack-plugin':
-        specifier: 0.9.1
+        specifier: 'catalog:'
         version: 0.9.1
       '@lynx-js/types':
         specifier: 3.6.0
