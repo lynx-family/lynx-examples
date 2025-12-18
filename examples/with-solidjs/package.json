@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.28.5",
     "@lynx-js/solid": "workspace:*",
-    "@lynx-js/template-webpack-plugin": "0.9.1",
+    "@lynx-js/template-webpack-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
     "@rspack/cli": "^1.6.6",
     "@rspack/core": "^1.6.6",
