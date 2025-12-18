@@ -2,7 +2,7 @@
 
 # https://help.github.com/en/articles/about-code-owners
 
-* @colinaaa
+* @colinaaa @HuJean
 
 # Ignore lock files
 
@@ -10,9 +10,9 @@ pnpm-lock.yaml
 
 # CSS examples
 
-/api/css @colinaaa
+/api/css @colinaaa @HuJean
 
 # Example packages
 
-/examples @colinaaa
+/examples @colinaaa @HuJean
 
