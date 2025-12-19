@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/accessibility",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "An example shows how to make App accessible in ReactLynx",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/view",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "An example shows how to use view in Lynx",
   "repository": {
     "type": "git",

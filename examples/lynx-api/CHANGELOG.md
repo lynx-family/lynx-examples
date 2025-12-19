@@ -1,5 +1,11 @@
 # @lynx-example/lynx-api
 
+## 0.1.6
+
+### Patch Changes
+
+- 51dd423: Upgrade ReactLynx version to 0.115 minor version
+
 ## 0.1.5
 
 ### Patch Changes

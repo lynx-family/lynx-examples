@@ -1,5 +1,11 @@
 # @lynx-example/tanstack-router
 
+## 0.6.8
+
+### Patch Changes
+
+- 51dd423: Upgrade ReactLynx version to 0.115 minor version
+
 ## 0.6.7
 
 ### Patch Changes

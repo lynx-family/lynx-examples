@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/networking",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "An example shows Lynx networking abilities",
   "repository": {
     "type": "git",

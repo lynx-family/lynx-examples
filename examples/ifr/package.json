@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/ifr",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "An example about Instant First-Frame Rendering (IFR) in Lynx",
   "repository": {
     "type": "git",
