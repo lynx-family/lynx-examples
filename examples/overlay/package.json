@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/overlay",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "An example shows how to use `<overlay>` in Lynx",
   "repository": {
     "type": "git",

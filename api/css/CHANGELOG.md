@@ -1,5 +1,12 @@
 # @lynx-example/css-api
 
+## 0.7.1
+
+### Patch Changes
+
+- 7bf4853: Add example for `conic-gradient()`.
+- 51dd423: Upgrade ReactLynx version to 0.115 minor version
+
 ## 0.7.0
 
 ### Minor Changes

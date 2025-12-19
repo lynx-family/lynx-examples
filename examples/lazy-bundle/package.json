@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/lazy-bundle",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",

@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.7
+
+### Patch Changes
+
+- 51dd423: Upgrade ReactLynx version to 0.115 minor version
+
 ## 0.4.6
 
 ### Patch Changes

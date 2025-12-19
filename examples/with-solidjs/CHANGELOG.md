@@ -1,5 +1,11 @@
 # @lynx-example/with-solidjs
 
+## 0.4.4
+
+### Patch Changes
+
+- 51dd423: Upgrade ReactLynx version to 0.115 minor version
+
 ## 0.4.3
 
 ### Patch Changes

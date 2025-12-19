@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/gallery",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "An example shows how to build a picture gallery and master Lynx better",
   "repository": {
     "type": "git",
