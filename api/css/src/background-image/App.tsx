@@ -30,6 +30,11 @@ const BackgroundImage = () => {
       width: "50%",
       backgroundImage: "linear-gradient(green 40%, yellow 40%, blue 70%)",
     },
+    conic: {
+      width: "50%",
+      height: "100%",
+      backgroundImage: "conic-gradient(from 180deg at 50% 50%, red, blue, red)",
+    },
     radial1: {
       width: "50%",
       backgroundImage: "radial-gradient(red, green)",
@@ -52,6 +57,7 @@ const BackgroundImage = () => {
         <view className="container" style={containerStyles.image2}></view>
         <view className="container">
           <view style={containerStyles.gradient1}></view>
+          <view style={containerStyles.conic}></view>
         </view>
         <view className="container">
           <view style={containerStyles.gradient2} />
