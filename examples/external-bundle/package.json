@@ -1,0 +1,41 @@
+{
+  "name": "@lynx-example/external-bundle",
+  "version": "0.0.0",
+  "description": "Using external bundle in Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/external-bundle"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "scripts": {
+    "build": "pnpm build:bundle && rspeedy build",
+    "dev": "pnpm build:bundle && rspeedy dev",
+    "preview": "rspeedy preview",
+    "build:bundle": "pnpm run --stream '/^build:bundle:.*/'",
+    "build:bundle:lodash": "rslib build --config lodash.rslib.config.js",
+    "build:bundle:react": "rslib build --config react.rslib.config.js",
+    "build:bundle:comp": "rslib build --config comp.rslib.config.js"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/external-bundle-rsbuild-plugin": "0.0.1",
+    "@lynx-js/lynx-bundle-rslib-config": "0.1.0",
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-alias-rsbuild-plugin": "0.12.2",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@rslib/core": "0.18.6",
+    "@types/react": "^18.3.27",
+    "lodash-es": "4.17.22"
+  }
+}
