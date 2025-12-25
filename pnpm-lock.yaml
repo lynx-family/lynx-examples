@@ -74,7 +74,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -102,7 +102,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -127,7 +127,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -205,7 +205,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -258,7 +258,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -311,13 +311,47 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
       typescript:
         specifier: ~5.9.3
         version: 5.9.3
+
+  examples/external-bundle:
+    dependencies:
+      '@lynx-js/react':
+        specifier: 'catalog:'
+        version: 0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27)
+    devDependencies:
+      '@lynx-js/external-bundle-rsbuild-plugin':
+        specifier: npm:@lynx-js/external-bundle-rsbuild-plugin-canary@0.0.1-canary-20251225-cd89bf9e
+        version: '@lynx-js/external-bundle-rsbuild-plugin-canary@0.0.1-canary-20251225-cd89bf9e'
+      '@lynx-js/lynx-bundle-rslib-config':
+        specifier: 0.0.2
+        version: 0.0.2
+      '@lynx-js/qrcode-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.4.3
+      '@lynx-js/react-alias-rsbuild-plugin':
+        specifier: 0.12.2
+        version: 0.12.2
+      '@lynx-js/react-rsbuild-plugin':
+        specifier: npm:@lynx-js/react-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e
+        version: '@lynx-js/react-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)'
+      '@lynx-js/rspeedy':
+        specifier: 'catalog:'
+        version: 0.12.2(@rspack/core@1.6.6(@swc/helpers@0.5.17))(typescript@5.9.3)(webpack@5.101.3)
+      '@rslib/core':
+        specifier: 0.18.6
+        version: 0.18.6(typescript@5.9.3)
+      '@types/react':
+        specifier: ^18.3.27
+        version: 18.3.27
+      lodash-es:
+        specifier: 4.17.22
+        version: 4.17.22
 
   examples/fetch:
     dependencies:
@@ -339,7 +373,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -495,7 +529,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -523,7 +557,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -576,7 +610,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -707,7 +741,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -735,7 +769,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.25
         version: 18.3.27
@@ -763,7 +797,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -791,7 +825,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -844,7 +878,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -872,7 +906,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -962,7 +996,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -990,7 +1024,7 @@ importers:
         version: 3.6.0
       '@rsbuild/plugin-sass':
         specifier: 1.4.0
-        version: 1.4.0(@rsbuild/core@1.6.13)
+        version: 1.4.0(@rsbuild/core@1.7.0-beta.1)
       '@types/react':
         specifier: ^18.3.27
         version: 18.3.27
@@ -1158,6 +1192,64 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@ast-grep/napi-darwin-arm64@0.37.0':
+    resolution: {integrity: sha512-QAiIiaAbLvMEg/yBbyKn+p1gX2/FuaC0SMf7D7capm/oG4xGMzdeaQIcSosF4TCxxV+hIH4Bz9e4/u7w6Bnk3Q==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@ast-grep/napi-darwin-x64@0.37.0':
+    resolution: {integrity: sha512-zvcvdgekd4ySV3zUbUp8HF5nk5zqwiMXTuVzTUdl/w08O7JjM6XPOIVT+d2o/MqwM9rsXdzdergY5oY2RdhSPA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@ast-grep/napi-linux-arm64-gnu@0.37.0':
+    resolution: {integrity: sha512-L7Sj0lXy8X+BqSMgr1LB8cCoWk0rericdeu+dC8/c8zpsav5Oo2IQKY1PmiZ7H8IHoFBbURLf8iklY9wsD+cyA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-arm64-musl@0.37.0':
+    resolution: {integrity: sha512-LF9sAvYy6es/OdyJDO3RwkX3I82Vkfsng1sqUBcoWC1jVb1wX5YVzHtpQox9JrEhGl+bNp7FYxB4Qba9OdA5GA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-x64-gnu@0.37.0':
+    resolution: {integrity: sha512-TViz5/klqre6aSmJzswEIjApnGjJzstG/SE8VDWsrftMBMYt2PTu3MeluZVwzSqDao8doT/P+6U11dU05UOgxw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-x64-musl@0.37.0':
+    resolution: {integrity: sha512-/BcCH33S9E3ovOAEoxYngUNXgb+JLg991sdyiNP2bSoYd30a9RHrG7CYwW6fMgua3ijQ474eV6cq9yZO1bCpXg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@ast-grep/napi-win32-arm64-msvc@0.37.0':
+    resolution: {integrity: sha512-TjQA4cFoIEW2bgjLkaL9yqT4XWuuLa5MCNd0VCDhGRDMNQ9+rhwi9eLOWRaap3xzT7g+nlbcEHL3AkVCD2+b3A==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@ast-grep/napi-win32-ia32-msvc@0.37.0':
+    resolution: {integrity: sha512-uNmVka8fJCdYsyOlF9aZqQMLTatEYBynjChVTzUfFMDfmZ0bihs/YTqJVbkSm8TZM7CUX82apvn50z/dX5iWRA==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@ast-grep/napi-win32-x64-msvc@0.37.0':
+    resolution: {integrity: sha512-vCiFOT3hSCQuHHfZ933GAwnPzmL0G04JxQEsBRfqONywyT8bSdDc/ECpAfr3S9VcS4JZ9/F6tkePKW/Om2Dq2g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@ast-grep/napi@0.37.0':
+    resolution: {integrity: sha512-Hb4o6h1Pf6yRUAX07DR4JVY7dmQw+RVQMW5/m55GoiAT/VRoKCWBtIUPPOnqDVhbx1Cjfil9b6EDrgJsUAujEQ==}
+    engines: {node: '>= 10'}
 
   '@babel/code-frame@7.26.2':
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
@@ -1691,14 +1783,35 @@ packages:
     resolution: {integrity: sha512-RS399O/03gpBFbztnsRlwarkMoS2bSVWL8YUnEwy/w9rKewO7CqhX0IUFUZXrzRv0JR17eZJ+YN+14ga+g5FyA==}
     engines: {node: '>=18'}
 
+  '@lynx-js/css-extract-webpack-plugin-canary@0.7.0':
+    resolution: {integrity: sha512-/LUWBqjLdCImyRTcxnxVxIV9SiQIPvS5SBrQ08BEILDn3E3EQRT1UTxUbtHGnPWeczODkPbP+g+hZlhHanJjbw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/template-webpack-plugin': '*'
+
   '@lynx-js/css-extract-webpack-plugin@0.7.0':
     resolution: {integrity: sha512-sqBEDg4bYPyc/v/ldNPfUsGokPsNlDnwWBKmZ9uDvUaLwfpxxexDxQ7M06q5BXnU+9SFiWoplrKL31c62foa6A==}
     engines: {node: '>=18'}
     peerDependencies:
       '@lynx-js/template-webpack-plugin': ^0.10.0
 
+  '@lynx-js/css-serializer-canary@0.1.3':
+    resolution: {integrity: sha512-L+9MMKvCYFogVJSRocOi6VScLCm6XoyQBiFo+sBhGUvxBsn+iw9u4atI6/ZNLz2QXVG9a+qDi17TV6JgfDtVrA==}
+
   '@lynx-js/css-serializer@0.1.3':
     resolution: {integrity: sha512-AngMqNr8qvGeejv68MjbVNiuYAjzMm3S/t6lrCbtRn8jwa8gVU0Std2mVCMDeIoWzfjjliyRQMd6AzGydOh8dg==}
+
+  '@lynx-js/external-bundle-rsbuild-plugin-canary@0.0.1-canary-20251225-cd89bf9e':
+    resolution: {integrity: sha512-8YnG63umdeAnr3MzG+kB8i0TtTvCSOu3ttGNdXrHJjfTvKqyH7tm35m17tBQrQuDUP+iD5Z7AkLLSkL9Waj0Ow==}
+    engines: {node: '>=18'}
+
+  '@lynx-js/externals-loading-webpack-plugin-canary@0.0.2-canary-20251225-cd89bf9e':
+    resolution: {integrity: sha512-s0pDHSp5YpP/HC6SL6mAo/DInz3sCkK2BL0NS5BIi2jc2W268Ok9dF+bysptDc53LXLNeB4ZSVjjUCv2eRqoWg==}
+    engines: {node: '>=18'}
+
+  '@lynx-js/lynx-bundle-rslib-config@0.0.2':
+    resolution: {integrity: sha512-Ui2ST9zEvxEbrmz65Q//JiEaPTj/IBX0G+6OBkSW93XjlZeLL/JuGhjeezCtyb4z3zl75qx7oVFNWfd5KWGojA==}
+    engines: {node: '>=18'}
 
   '@lynx-js/lynx-core@0.1.3':
     resolution: {integrity: sha512-uWzKKYJUK4Q09ZRZxWSAFINnmZb9piWPbvWF9SkLn+3snBl9u/BJa4ekPRcKWAhBmpbtxWH1x27fxe3Q3p5l3Q==}
@@ -1710,9 +1823,23 @@ packages:
     resolution: {integrity: sha512-3WAW4kwNk33UujJjO691TnQyGLL8WrtUVK+p2zzWZOSAUlfhoKZkV6+Seh80II8WJfMlZBAIuT62edQteuew8A==}
     engines: {node: '>=18'}
 
+  '@lynx-js/react-alias-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e':
+    resolution: {integrity: sha512-gmPr1jQCb12njCcoQaPdjK3awOh/oweeVzQt/hCjQiwJK5NIHbH6PaM43WkjJ0iWQjJwIJLU665ygIzYd8d/Pg==}
+    engines: {node: '>=18'}
+
   '@lynx-js/react-alias-rsbuild-plugin@0.12.1':
     resolution: {integrity: sha512-wVXtE0m9GLNcjT5RYEPfdRXGohTh/FoksiC62K2wJS/dswWJeE7ZPzf7oUFgQZ8LLA+qwEOsWFUm0EIzNlPvTg==}
     engines: {node: '>=18'}
+
+  '@lynx-js/react-alias-rsbuild-plugin@0.12.2':
+    resolution: {integrity: sha512-oaHSpM0dznzIqTTBnRakEOTSvsaKbkVw0E1fppqsVZEd+VyRP6e761OJib2T5wlQeHqzVNSU3cas/wds7xx1gQ==}
+    engines: {node: '>=18'}
+
+  '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4':
+    resolution: {integrity: sha512-wYILvrNDXjN9LLSajW3BMWqzNP7QeHf5Mx1CBkImjiB4Lyutu/cY/b70wtC6zi9qy8JxEjpfoqgSejiAavGOjw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react-webpack-plugin': '*'
 
   '@lynx-js/react-refresh-webpack-plugin@0.3.4':
     resolution: {integrity: sha512-R5hpuih6TAzxtKngrrg7i6MQUBeMMQWZWR31UMF9ld98wH1WnRrMeq0ZjkmYZhDhQQA2ViQDaHkOvOrtU4yjhg==}
@@ -1720,11 +1847,30 @@ packages:
     peerDependencies:
       '@lynx-js/react-webpack-plugin': ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.6.0 || ^0.7.0
 
+  '@lynx-js/react-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e':
+    resolution: {integrity: sha512-0I5rHA52vdOg+DtFBiGtIjraiX8kfxutXeRUxBlJAFLMbLqPoYiXOewnPKubqvKp50mz5CBG6TzmgU07YLUk3w==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react': '*'
+    peerDependenciesMeta:
+      '@lynx-js/react':
+        optional: true
+
   '@lynx-js/react-rsbuild-plugin@0.12.1':
     resolution: {integrity: sha512-luKyUzrjbWnIDeyltJ9iLXEv8lp8hLizHWWBN+qNCZ05JYJzug1QdfAWMpdCS9j7l1mLNQWh+LPhaolKkJOWqQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@lynx-js/react': ^0.103.0 || ^0.104.0 || ^0.105.0 || ^0.106.0 || ^0.107.0 || ^0.108.0 || ^0.109.0 || ^0.110.0 || ^0.111.0 || ^0.112.0 || ^0.113.0 || ^0.114.0 || ^0.115.0
+    peerDependenciesMeta:
+      '@lynx-js/react':
+        optional: true
+
+  '@lynx-js/react-webpack-plugin-canary@0.7.3':
+    resolution: {integrity: sha512-TpYt2Dxw2CA7NArDvW+zWUxHSL3PejD1Ae0dvLZmbzDrTTOO8ESgkK5aQK0DYUvPgEADn3SKKcIT5PitCImvNg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react': '*'
+      '@lynx-js/template-webpack-plugin': '*'
     peerDependenciesMeta:
       '@lynx-js/react':
         optional: true
@@ -1758,6 +1904,10 @@ packages:
       typescript:
         optional: true
 
+  '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.3':
+    resolution: {integrity: sha512-0/6KaikyOqJ49FYDRbneWOVlQmO016K6VvJ39pNhowbuUhndcaah3MwG9wTubC9obClLrhlXgkooGZ6oDiuxsA==}
+    engines: {node: '>=18'}
+
   '@lynx-js/runtime-wrapper-webpack-plugin@0.1.3':
     resolution: {integrity: sha512-F/spRqXWE5XS4h36mN89ulGGXjvs7DEiBFUO/Xf6barstKXbhLM485CwMzXz/Zh07ZIFvnHFtRZprOT0jNrrag==}
     engines: {node: '>=18'}
@@ -1770,12 +1920,21 @@ packages:
   '@lynx-js/tasm@0.0.20':
     resolution: {integrity: sha512-ezMq43s59jqFuQ1YygpsUuZmGXw4XH+00RsB5RVmkYZuHQxEaLt/ECTOixF+9RixvAyhmxzF2eSURvmNckO9xg==}
 
+  '@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e':
+    resolution: {integrity: sha512-a4If7iC+pdHM9XvJSyk2gm5pdAbExNSLhlszZgDzz4P9NfY6H6GURY04T9z83ICglWfH2k8DSW7xe1Ns6PUKxA==}
+    engines: {node: '>=18'}
+
   '@lynx-js/template-webpack-plugin@0.10.0':
     resolution: {integrity: sha512-xEAmZo/uLpMhINcbnLPOz5oCY+ITss4HqYUZMFNiO9EJqpel1nb0IpVu8raj4YN9iOcqU9BGi6U6vqdlYp4bpw==}
     engines: {node: '>=18'}
 
   '@lynx-js/types@3.6.0':
     resolution: {integrity: sha512-nNCuFP5Cpd7X/D3X7JsQLYkiIUsr6iTsRpqSz4swUdlNpK64Xt9epdjkqxbruuUqplFFmkhjThjWN4Bc8uZNWQ==}
+
+  '@lynx-js/use-sync-external-store-canary@1.5.0':
+    resolution: {integrity: sha512-ZA4z/lRiaAebwW3EpWyJN3J0PG2LNYbf9BKG8BZp070ug1kdjoTsQVgXcX3uiN3emcqSlfl/4U4DyIt86DNhqA==}
+    peerDependencies:
+      '@lynx-js/react': '*'
 
   '@lynx-js/use-sync-external-store@1.5.0':
     resolution: {integrity: sha512-iXwLiGUBgfWLozCIh3ICe07x534p9CVlFS3/iGEiFOce58MLX6/PbAvWcE8qEhYaOKiQNe9hqUnS2RbyCqoqGg==}
@@ -1818,6 +1977,10 @@ packages:
 
   '@lynx-js/webpack-dev-transport@0.2.0':
     resolution: {integrity: sha512-RSy02FSoMsavEn2wna4khSJwT2uGW4XeLduKH8UDT3aCsBNM/rXndUyG6PbwMcywXCeyb8UofkhaQDtJvNJklA==}
+    engines: {node: '>=18'}
+
+  '@lynx-js/webpack-runtime-globals-canary@0.0.6':
+    resolution: {integrity: sha512-ZaYxOuTyO2L8tiBHM8P5/s/33VBM0Gi05Urfjh5WOxnC7zgGlYARnfBBZA772cQpWbqsbLF16u834mwJjDxqXQ==}
     engines: {node: '>=18'}
 
   '@lynx-js/webpack-runtime-globals@0.0.6':
@@ -2497,6 +2660,11 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
+  '@rsbuild/core@1.7.0-beta.1':
+    resolution: {integrity: sha512-qQ9jKF0GzUI2a53Ql18p252PBPBRVnLWQQXOWevolHNakSrTQ+ESD9pK0AvmJIF8TiQ7qaSccEzrisTg+EQfEA==}
+    engines: {node: '>=18.12.0'}
+    hasBin: true
+
   '@rsbuild/plugin-check-syntax@1.3.0':
     resolution: {integrity: sha512-lHrd6hToPFVOGWr0U/Ox7pudHWdhPSFsr2riWpjNRlUuwiXdU2SYMROaVUCrLJvYFzJyEMsFOi1w59rBQCG2HQ==}
     peerDependencies:
@@ -2565,8 +2733,26 @@ packages:
   '@rsdoctor/utils@1.2.3':
     resolution: {integrity: sha512-HawWrcqXeqdhj4dKhdjJg4BXvstcQauYSRx0cnYH78f7z9PW60Smr6vYpByXC87rK3JKpa6CNiZi+qhI5yTAog==}
 
+  '@rslib/core@0.18.6':
+    resolution: {integrity: sha512-mMjfmtXRPHOCzO1A8KcAQckIHi/vA+qOHT/zK4M8Nnr5h1eAO6HIEN7AvJdgbIf5YXsVH6bXonrXdAwwP0gHow==}
+    engines: {node: '>=18.12.0'}
+    hasBin: true
+    peerDependencies:
+      '@microsoft/api-extractor': ^7
+      typescript: ^5
+    peerDependenciesMeta:
+      '@microsoft/api-extractor':
+        optional: true
+      typescript:
+        optional: true
+
   '@rspack/binding-darwin-arm64@1.6.6':
     resolution: {integrity: sha512-vGVDP0rlWa2w/gLba/sncVfkCah0HmhdmK5vGj/7sSX0iViwQneA2xjxDHyCNSQrvfq9GJmj4Kmdq/9tGh0KuA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rspack/binding-darwin-arm64@1.7.0-beta.1':
+    resolution: {integrity: sha512-UR+WRtuRttu1dMY8lIP3qHcDVjRfz8RtS5KegUw7EArmOMDQBUpZtc+xporXnKr/bf6FTdwUpUh2KTJ9Ss3H2Q==}
     cpu: [arm64]
     os: [darwin]
 
@@ -2575,8 +2761,18 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  '@rspack/binding-darwin-x64@1.7.0-beta.1':
+    resolution: {integrity: sha512-wPR3uE0PXL+AUHI7rH2SKAYxinjjhiVOLgE+KxeHQwx5P3G1GjmMi9b+vif/NRTDNyFYS0VnxHFMb7Ja5rFhRw==}
+    cpu: [x64]
+    os: [darwin]
+
   '@rspack/binding-linux-arm64-gnu@1.6.6':
     resolution: {integrity: sha512-rIguCCtlTcwoFlwheDiUgdImk27spuCRn43zGJogARpM/ZYRFKIuSwFDGUtJT2g0TSLUAHUhWAUqC36NwvrbMQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rspack/binding-linux-arm64-gnu@1.7.0-beta.1':
+    resolution: {integrity: sha512-iI+84/jOgLCTfORniIsQFoqwSsT9ppJXCCZS0Hzx9nn5vjZ+i/dmh6C7EwD9pJQgLhuqMLRv9Pd7Cz8zD9pv/A==}
     cpu: [arm64]
     os: [linux]
 
@@ -2585,8 +2781,18 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  '@rspack/binding-linux-arm64-musl@1.7.0-beta.1':
+    resolution: {integrity: sha512-EdYWcjXOMTYB+qdR84u2wBwhNlqdwDmiMrL3TnFYh2NH6dQJqEUvzSe7bx2UKOobIkNnVU0wCeT5jZOPnEwXBg==}
+    cpu: [arm64]
+    os: [linux]
+
   '@rspack/binding-linux-x64-gnu@1.6.6':
     resolution: {integrity: sha512-gSlVdASszWHosQKn+nzYOInBijdQboUnmNMGgW9/PijVg3433IvQjzviUuJFno8CMGgrACV9yw+ZFDuK0J57VA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@rspack/binding-linux-x64-gnu@1.7.0-beta.1':
+    resolution: {integrity: sha512-3G3bkWnxkGnCn/t4KtU9KHG4lLdmIWF3ApEkXZL0YNHSEg+eFkMm3oVL/YtJUdRNU4QlbL4lwPcuMIDK6FOefw==}
     cpu: [x64]
     os: [linux]
 
@@ -2595,12 +2801,26 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@rspack/binding-linux-x64-musl@1.7.0-beta.1':
+    resolution: {integrity: sha512-q5LnITueKNPFFDmOjGU7e17cczr65MXQKC72VvNEpD2lDSqe9GbQ9tmlbG1seWmGKtsRSwi+j1qeZhoC3AQW4w==}
+    cpu: [x64]
+    os: [linux]
+
   '@rspack/binding-wasm32-wasi@1.6.6':
     resolution: {integrity: sha512-W4mWdlLnYrbUaktyHOGNfATblxMTbgF7CBfDw8PhbDtjd2l8e/TnaHgIDkwITHXAOMEF/QEKfo9FtusbcQJNKw==}
     cpu: [wasm32]
 
+  '@rspack/binding-wasm32-wasi@1.7.0-beta.1':
+    resolution: {integrity: sha512-cJ41fUloY6RMMMsa5JQ0z13BDDlmMR5NX5LYWB0aY+rppF77EfxaPeNzb9NTL3QKh8zy1OPcZzZ+n27JEWlAXg==}
+    cpu: [wasm32]
+
   '@rspack/binding-win32-arm64-msvc@1.6.6':
     resolution: {integrity: sha512-cw5OgxqoDwjoZlk0L3vGEwcjPZsOVFYLwr2ssiC05rsTbhBwxj8coLpAJdvUvbf6C2TTmCB7iPe2sPq1KWD37g==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rspack/binding-win32-arm64-msvc@1.7.0-beta.1':
+    resolution: {integrity: sha512-+Jbx0le019Xc692pD6bqN7pZQDZg1fZuKLpBaI+FINIkJ7JzkCn64UhbxFpcskc1Z8/tBojEvu9FIozVnWq7Kg==}
     cpu: [arm64]
     os: [win32]
 
@@ -2609,13 +2829,26 @@ packages:
     cpu: [ia32]
     os: [win32]
 
+  '@rspack/binding-win32-ia32-msvc@1.7.0-beta.1':
+    resolution: {integrity: sha512-UOqEsWL8Udp1Fb2YwoY3Na2fo5gwzGW9EXVJ7l0AJEVSKGSwuM/Wk0dD5jmwKYilVzwZ23Dx8hVZreM6/Y33aQ==}
+    cpu: [ia32]
+    os: [win32]
+
   '@rspack/binding-win32-x64-msvc@1.6.6':
     resolution: {integrity: sha512-q5QTvdhPUh+CA93cQG5zWKRIHMIWPzw+ftFDEwBw52zYdvNAoLniqD8o5Mi8CT0pndhulXgR5aw0Sjd3eMah+A==}
     cpu: [x64]
     os: [win32]
 
+  '@rspack/binding-win32-x64-msvc@1.7.0-beta.1':
+    resolution: {integrity: sha512-YtziYe5sSLcJRItkp4Vq/dKGUV9dBZHwhXGjf44K4AlwEtAblf2GnlzrYfDeZP6uqqCjH0f9A//3+zytO2so0w==}
+    cpu: [x64]
+    os: [win32]
+
   '@rspack/binding@1.6.6':
     resolution: {integrity: sha512-noiV+qhyBTVpvG2M4bnOwKk2Ynl6G47Wf7wpCjPCFr87qr3txNwTTnhkEJEU59yj+VvIhbRD2rf5+9TLoT0Wxg==}
+
+  '@rspack/binding@1.7.0-beta.1':
+    resolution: {integrity: sha512-BZXEMduPOyGkqJNRaf90uI2QMSH241S1YwXyK9DKH406sZfUTvIwhE9LFVaEgNucChwJ7DXTriwuBJSHVf0R1Q==}
 
   '@rspack/cli@1.6.6':
     resolution: {integrity: sha512-CzKPQ00Ym1jEzU1i7Wem2JWbNGX4hnndnBi5f3FMM8gEUUD+SQQVm8fYeMlFIMbHIpYan+x+nxcnjxT5hiQ4kA==}
@@ -2625,6 +2858,15 @@ packages:
 
   '@rspack/core@1.6.6':
     resolution: {integrity: sha512-2mR+2YBydlgZ7Q0Rpd6bCC3MBnV9TS0x857K0zIhbDj4BQOqaWVy1n7fx/B3MrS8TR0QCuzKfyDAjNz+XTyJVQ==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      '@swc/helpers': '>=0.5.1'
+    peerDependenciesMeta:
+      '@swc/helpers':
+        optional: true
+
+  '@rspack/core@1.7.0-beta.1':
+    resolution: {integrity: sha512-dqLODRPWFCWs4YR34kPT4Gr7ruLBihn4lxM+nf87FiaXKIeb7Ga5K0cnh52t+Wzly6GsdAWZQWmq0pDiqPhy0w==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       '@swc/helpers': '>=0.5.1'
@@ -3147,6 +3389,9 @@ packages:
     peerDependenciesMeta:
       solid-js:
         optional: true
+
+  background-only-canary@0.0.1:
+    resolution: {integrity: sha512-f1kw8BdNm1uZGVUf7+A2S3kFvS/8HrSNn+3knI49WiRZAfkDX4fljDC7cFR9IZ8TIRRZQKLFKQp20a9hjewQUQ==}
 
   background-only@0.0.1:
     resolution: {integrity: sha512-YXR2zshAf3qs3jnpApQaDUG0x4L6YWpSZfLDhdeiCFxfp/n8YwfoAQ1hAigEF3VpXOMOJeZYFWtBbiFv/v2Qfg==}
@@ -4646,6 +4891,9 @@ packages:
     resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  lodash-es@4.17.22:
+    resolution: {integrity: sha512-XEawp1t0gxSi9x01glktRZ5HDy0HXqrM0x5pXQM98EaI0NxO6jVM7omDOxsuEo5UIASAnm2bRp1Jt/e0a2XU8Q==}
+
   lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
 
@@ -5624,6 +5872,22 @@ packages:
   root-link-target@3.1.0:
     resolution: {integrity: sha512-hdke7IGy7j6TCIGhUDnaX41OFpHgZOaZ70GHUS2RdolaHj9Gn3jVvV9xE+sd6rTuRd4t7bNpzYSKSpAz/74H/A==}
     engines: {node: '>=10'}
+
+  rsbuild-plugin-dts@0.18.6:
+    resolution: {integrity: sha512-E0KxiXxY5T3D+DjMMQS3/DMlNwjzNp1xEYyH68gwI7Ptm3a1ChawvlZ1DqVW5m8NWkdbCbcAyazwOnDD3yVOLQ==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      '@microsoft/api-extractor': ^7
+      '@rsbuild/core': 1.x
+      '@typescript/native-preview': 7.x
+      typescript: ^5
+    peerDependenciesMeta:
+      '@microsoft/api-extractor':
+        optional: true
+      '@typescript/native-preview':
+        optional: true
+      typescript:
+        optional: true
 
   rslog@1.2.11:
     resolution: {integrity: sha512-YgMMzQf6lL9q4rD9WS/lpPWxVNJ1ttY9+dOXJ0+7vJrKCAOT4GH0EiRnBi9mKOitcHiOwjqJPV1n/HRqqgZmOQ==}
@@ -6667,6 +6931,45 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.30
 
+  '@ast-grep/napi-darwin-arm64@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-darwin-x64@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-linux-arm64-gnu@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-linux-arm64-musl@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-linux-x64-gnu@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-linux-x64-musl@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-win32-arm64-msvc@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-win32-ia32-msvc@0.37.0':
+    optional: true
+
+  '@ast-grep/napi-win32-x64-msvc@0.37.0':
+    optional: true
+
+  '@ast-grep/napi@0.37.0':
+    optionalDependencies:
+      '@ast-grep/napi-darwin-arm64': 0.37.0
+      '@ast-grep/napi-darwin-x64': 0.37.0
+      '@ast-grep/napi-linux-arm64-gnu': 0.37.0
+      '@ast-grep/napi-linux-arm64-musl': 0.37.0
+      '@ast-grep/napi-linux-x64-gnu': 0.37.0
+      '@ast-grep/napi-linux-x64-musl': 0.37.0
+      '@ast-grep/napi-win32-arm64-msvc': 0.37.0
+      '@ast-grep/napi-win32-ia32-msvc': 0.37.0
+      '@ast-grep/napi-win32-x64-msvc': 0.37.0
+
   '@babel/code-frame@7.26.2':
     dependencies:
       '@babel/helper-validator-identifier': 7.28.5
@@ -7270,6 +7573,13 @@ snapshots:
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.6
 
+  '@lynx-js/css-extract-webpack-plugin-canary@0.7.0(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e)(webpack@5.101.3)':
+    dependencies:
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e'
+      mini-css-extract-plugin: 2.9.4(webpack@5.101.3)
+    transitivePeerDependencies:
+      - webpack
+
   '@lynx-js/css-extract-webpack-plugin@0.7.0(@lynx-js/template-webpack-plugin@0.10.0)(webpack@5.101.3)':
     dependencies:
       '@lynx-js/template-webpack-plugin': 0.10.0
@@ -7277,9 +7587,24 @@ snapshots:
     transitivePeerDependencies:
       - webpack
 
+  '@lynx-js/css-serializer-canary@0.1.3':
+    dependencies:
+      css-tree: 3.1.0
+
   '@lynx-js/css-serializer@0.1.3':
     dependencies:
       css-tree: 3.1.0
+
+  '@lynx-js/external-bundle-rsbuild-plugin-canary@0.0.1-canary-20251225-cd89bf9e':
+    dependencies:
+      '@lynx-js/externals-loading-webpack-plugin': '@lynx-js/externals-loading-webpack-plugin-canary@0.0.2-canary-20251225-cd89bf9e'
+
+  '@lynx-js/externals-loading-webpack-plugin-canary@0.0.2-canary-20251225-cd89bf9e': {}
+
+  '@lynx-js/lynx-bundle-rslib-config@0.0.2':
+    dependencies:
+      '@lynx-js/runtime-wrapper-webpack-plugin': 0.1.3
+      '@lynx-js/tasm': 0.0.20
 
   '@lynx-js/lynx-core@0.1.3': {}
 
@@ -7287,11 +7612,34 @@ snapshots:
 
   '@lynx-js/qrcode-rsbuild-plugin@0.4.3': {}
 
+  '@lynx-js/react-alias-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e': {}
+
   '@lynx-js/react-alias-rsbuild-plugin@0.12.1': {}
+
+  '@lynx-js/react-alias-rsbuild-plugin@0.12.2': {}
+
+  '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4(@lynx-js/react-webpack-plugin-canary@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e))':
+    dependencies:
+      '@lynx-js/react-webpack-plugin': '@lynx-js/react-webpack-plugin-canary@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e)'
 
   '@lynx-js/react-refresh-webpack-plugin@0.3.4(@lynx-js/react-webpack-plugin@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin@0.10.0))':
     dependencies:
       '@lynx-js/react-webpack-plugin': 0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin@0.10.0)
+
+  '@lynx-js/react-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)':
+    dependencies:
+      '@lynx-js/css-extract-webpack-plugin': '@lynx-js/css-extract-webpack-plugin-canary@0.7.0(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e)(webpack@5.101.3)'
+      '@lynx-js/react-alias-rsbuild-plugin': '@lynx-js/react-alias-rsbuild-plugin-canary@0.12.3-canary-20251225-cd89bf9e'
+      '@lynx-js/react-refresh-webpack-plugin': '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4(@lynx-js/react-webpack-plugin-canary@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e))'
+      '@lynx-js/react-webpack-plugin': '@lynx-js/react-webpack-plugin-canary@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e)'
+      '@lynx-js/runtime-wrapper-webpack-plugin': '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.3'
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e'
+      '@lynx-js/use-sync-external-store': '@lynx-js/use-sync-external-store-canary@1.5.0(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))'
+      background-only: background-only-canary@0.0.1
+    optionalDependencies:
+      '@lynx-js/react': 0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27)
+    transitivePeerDependencies:
+      - webpack
 
   '@lynx-js/react-rsbuild-plugin@0.12.1(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)':
     dependencies:
@@ -7307,6 +7655,14 @@ snapshots:
       '@lynx-js/react': 0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27)
     transitivePeerDependencies:
       - webpack
+
+  '@lynx-js/react-webpack-plugin-canary@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e)':
+    dependencies:
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e'
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.6'
+      tiny-invariant: 1.3.3
+    optionalDependencies:
+      '@lynx-js/react': 0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27)
 
   '@lynx-js/react-webpack-plugin@0.7.3(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))(@lynx-js/template-webpack-plugin@0.10.0)':
     dependencies:
@@ -7349,6 +7705,10 @@ snapshots:
       - utf-8-validate
       - webpack
 
+  '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.3':
+    dependencies:
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.6'
+
   '@lynx-js/runtime-wrapper-webpack-plugin@0.1.3':
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.6
@@ -7358,6 +7718,15 @@ snapshots:
       tailwindcss: 3.4.18
 
   '@lynx-js/tasm@0.0.20': {}
+
+  '@lynx-js/template-webpack-plugin-canary@0.10.1-canary-20251225-cd89bf9e':
+    dependencies:
+      '@lynx-js/css-serializer': '@lynx-js/css-serializer-canary@0.1.3'
+      '@lynx-js/tasm': 0.0.20
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.6'
+      '@rspack/lite-tapable': 1.0.1
+      css-tree: 3.1.0
+      object.groupby: 1.0.3
 
   '@lynx-js/template-webpack-plugin@0.10.0':
     dependencies:
@@ -7371,6 +7740,10 @@ snapshots:
   '@lynx-js/types@3.6.0':
     dependencies:
       csstype: 3.1.3
+
+  '@lynx-js/use-sync-external-store-canary@1.5.0(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))':
+    dependencies:
+      '@lynx-js/react': 0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27)
 
   '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.115.1(@lynx-js/types@3.6.0)(@types/react@18.3.27))':
     dependencies:
@@ -7419,6 +7792,8 @@ snapshots:
       '@lynx-js/web-worker-rpc': 0.18.4
 
   '@lynx-js/webpack-dev-transport@0.2.0': {}
+
+  '@lynx-js/webpack-runtime-globals-canary@0.0.6': {}
 
   '@lynx-js/webpack-runtime-globals@0.0.6': {}
 
@@ -8568,6 +8943,14 @@ snapshots:
       core-js: 3.47.0
       jiti: 2.6.1
 
+  '@rsbuild/core@1.7.0-beta.1':
+    dependencies:
+      '@rspack/core': 1.7.0-beta.1(@swc/helpers@0.5.17)
+      '@rspack/lite-tapable': 1.1.0
+      '@swc/helpers': 0.5.17
+      core-js: 3.47.0
+      jiti: 2.6.1
+
   '@rsbuild/plugin-check-syntax@1.3.0(@rsbuild/core@1.6.13)':
     dependencies:
       acorn: 8.15.0
@@ -8601,9 +8984,9 @@ snapshots:
     transitivePeerDependencies:
       - webpack-hot-middleware
 
-  '@rsbuild/plugin-sass@1.4.0(@rsbuild/core@1.6.13)':
+  '@rsbuild/plugin-sass@1.4.0(@rsbuild/core@1.7.0-beta.1)':
     dependencies:
-      '@rsbuild/core': 1.6.13
+      '@rsbuild/core': 1.7.0-beta.1
       deepmerge: 4.3.1
       loader-utils: 2.0.4
       postcss: 8.5.6
@@ -8736,22 +9119,49 @@ snapshots:
       - supports-color
       - webpack
 
+  '@rslib/core@0.18.6(typescript@5.9.3)':
+    dependencies:
+      '@rsbuild/core': 1.7.0-beta.1
+      rsbuild-plugin-dts: 0.18.6(@rsbuild/core@1.7.0-beta.1)(typescript@5.9.3)
+    optionalDependencies:
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - '@typescript/native-preview'
+
   '@rspack/binding-darwin-arm64@1.6.6':
+    optional: true
+
+  '@rspack/binding-darwin-arm64@1.7.0-beta.1':
     optional: true
 
   '@rspack/binding-darwin-x64@1.6.6':
     optional: true
 
+  '@rspack/binding-darwin-x64@1.7.0-beta.1':
+    optional: true
+
   '@rspack/binding-linux-arm64-gnu@1.6.6':
+    optional: true
+
+  '@rspack/binding-linux-arm64-gnu@1.7.0-beta.1':
     optional: true
 
   '@rspack/binding-linux-arm64-musl@1.6.6':
     optional: true
 
+  '@rspack/binding-linux-arm64-musl@1.7.0-beta.1':
+    optional: true
+
   '@rspack/binding-linux-x64-gnu@1.6.6':
     optional: true
 
+  '@rspack/binding-linux-x64-gnu@1.7.0-beta.1':
+    optional: true
+
   '@rspack/binding-linux-x64-musl@1.6.6':
+    optional: true
+
+  '@rspack/binding-linux-x64-musl@1.7.0-beta.1':
     optional: true
 
   '@rspack/binding-wasm32-wasi@1.6.6':
@@ -8759,13 +9169,27 @@ snapshots:
       '@napi-rs/wasm-runtime': 1.0.7
     optional: true
 
+  '@rspack/binding-wasm32-wasi@1.7.0-beta.1':
+    dependencies:
+      '@napi-rs/wasm-runtime': 1.0.7
+    optional: true
+
   '@rspack/binding-win32-arm64-msvc@1.6.6':
+    optional: true
+
+  '@rspack/binding-win32-arm64-msvc@1.7.0-beta.1':
     optional: true
 
   '@rspack/binding-win32-ia32-msvc@1.6.6':
     optional: true
 
+  '@rspack/binding-win32-ia32-msvc@1.7.0-beta.1':
+    optional: true
+
   '@rspack/binding-win32-x64-msvc@1.6.6':
+    optional: true
+
+  '@rspack/binding-win32-x64-msvc@1.7.0-beta.1':
     optional: true
 
   '@rspack/binding@1.6.6':
@@ -8780,6 +9204,19 @@ snapshots:
       '@rspack/binding-win32-arm64-msvc': 1.6.6
       '@rspack/binding-win32-ia32-msvc': 1.6.6
       '@rspack/binding-win32-x64-msvc': 1.6.6
+
+  '@rspack/binding@1.7.0-beta.1':
+    optionalDependencies:
+      '@rspack/binding-darwin-arm64': 1.7.0-beta.1
+      '@rspack/binding-darwin-x64': 1.7.0-beta.1
+      '@rspack/binding-linux-arm64-gnu': 1.7.0-beta.1
+      '@rspack/binding-linux-arm64-musl': 1.7.0-beta.1
+      '@rspack/binding-linux-x64-gnu': 1.7.0-beta.1
+      '@rspack/binding-linux-x64-musl': 1.7.0-beta.1
+      '@rspack/binding-wasm32-wasi': 1.7.0-beta.1
+      '@rspack/binding-win32-arm64-msvc': 1.7.0-beta.1
+      '@rspack/binding-win32-ia32-msvc': 1.7.0-beta.1
+      '@rspack/binding-win32-x64-msvc': 1.7.0-beta.1
 
   '@rspack/cli@1.6.6(@rspack/core@1.6.6(@swc/helpers@0.5.17))(@types/express@4.17.23)(webpack@5.101.3)':
     dependencies:
@@ -8801,6 +9238,14 @@ snapshots:
     dependencies:
       '@module-federation/runtime-tools': 0.21.6
       '@rspack/binding': 1.6.6
+      '@rspack/lite-tapable': 1.1.0
+    optionalDependencies:
+      '@swc/helpers': 0.5.17
+
+  '@rspack/core@1.7.0-beta.1(@swc/helpers@0.5.17)':
+    dependencies:
+      '@module-federation/runtime-tools': 0.21.6
+      '@rspack/binding': 1.7.0-beta.1
       '@rspack/lite-tapable': 1.1.0
     optionalDependencies:
       '@swc/helpers': 0.5.17
@@ -9398,6 +9843,8 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.3
       babel-plugin-jsx-dom-expressions: 0.40.3(@babel/core@7.28.3)
+
+  background-only-canary@0.0.1: {}
 
   background-only@0.0.1: {}
 
@@ -10977,6 +11424,8 @@ snapshots:
     dependencies:
       p-locate: 6.0.0
 
+  lodash-es@4.17.22: {}
+
   lodash.kebabcase@4.1.1: {}
 
   lodash.memoize@4.1.2: {}
@@ -11893,6 +12342,13 @@ snapshots:
       can-link: 2.0.0
       next-path: 1.0.0
       path-temp: 2.0.0
+
+  rsbuild-plugin-dts@0.18.6(@rsbuild/core@1.7.0-beta.1)(typescript@5.9.3):
+    dependencies:
+      '@ast-grep/napi': 0.37.0
+      '@rsbuild/core': 1.7.0-beta.1
+    optionalDependencies:
+      typescript: 5.9.3
 
   rslog@1.2.11: {}
 
