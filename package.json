@@ -22,13 +22,13 @@
     "dprint": "^0.50.2",
     "husky": "^9.1.7",
     "nano-staged": "^0.9.0",
-    "sort-package-json": "^3.5.0",
-    "turbo": "^2.6.2"
+    "sort-package-json": "^3.6.0",
+    "turbo": "^2.7.2"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.26.2",
   "engines": {
     "node": ">=22",
-    "pnpm": "10.24.0"
+    "pnpm": "10.26.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
