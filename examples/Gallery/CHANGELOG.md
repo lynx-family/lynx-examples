@@ -1,5 +1,11 @@
 # @lynx-example/discover-page
 
+## 0.6.7
+
+### Patch Changes
+
+- 28bd26a: chore: use percentage unit to replace vw&vh
+
 ## 0.6.6
 
 ### Patch Changes
