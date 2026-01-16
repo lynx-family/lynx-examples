@@ -1,5 +1,11 @@
 # @lynx-example/react-lifecycle
 
+## 0.5.6
+
+### Patch Changes
+
+- b5eedc8: feat: add environments config for web bundle
+
 ## 0.5.5
 
 ### Patch Changes
