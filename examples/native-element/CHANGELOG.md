@@ -1,5 +1,11 @@
 # @lynx-example/native-element
 
+## 0.6.7
+
+### Patch Changes
+
+- b5eedc8: feat: add environments config for web bundle
+
 ## 0.6.6
 
 ### Patch Changes

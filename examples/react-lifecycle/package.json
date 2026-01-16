@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/react-lifecycle",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "ReactLynx lifecycle demo",
   "repository": {
     "type": "git",
