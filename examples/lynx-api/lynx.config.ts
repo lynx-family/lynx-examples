@@ -18,6 +18,10 @@ export default defineConfig({
     pluginQRCode(),
     pluginTypeCheck(),
   ],
+  environments: {
+    web: {},
+    lynx: {},
+  },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/lynx-api/dist",
     filename: "[name].[platform].bundle",

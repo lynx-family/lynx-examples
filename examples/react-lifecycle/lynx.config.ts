@@ -20,4 +20,8 @@ export default defineConfig({
   output: {
     filename: "[name].[platform].bundle",
   },
+  environments: {
+    web: {},
+    lynx: {},
+  },
 });
