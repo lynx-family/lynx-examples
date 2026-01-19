@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/svg",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "An example shows how to use `<svg>` in Lynx",
   "repository": {
     "type": "git",

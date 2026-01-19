@@ -1,5 +1,11 @@
 # @lynx-example/lynx-api
 
+## 0.1.7
+
+### Patch Changes
+
+- b5eedc8: feat: add environments config for web bundle
+
 ## 0.1.6
 
 ### Patch Changes
