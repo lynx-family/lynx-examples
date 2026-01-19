@@ -20,6 +20,7 @@ This repository is intended to showcase examples of Lynx.
   - [`input`]: An example shows how to use input
   - [`textarea`]: An example shows how to use textarea
   - [`overlay`]: An example shows how to use overlay
+  - [`svg`]: An example shows how to use svg
 - Styling
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
@@ -53,6 +54,7 @@ This repository is intended to showcase examples of Lynx.
 [`input`]: ./examples/input
 [`textarea`]: ./examples/textarea
 [`overlay`]: ./examples/overlay
+[`svg`]: ./examples/svg
 [`fetch`]: ./examples/fetch
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility
