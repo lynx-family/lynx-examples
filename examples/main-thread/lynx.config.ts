@@ -19,7 +19,7 @@ export default defineConfig({
   environments: {
     lynx: {},
     // can open when web supports querySelector
-    // web: {},
+    web: {},
   },
   output: {
     filename: "[name].[platform].bundle",
