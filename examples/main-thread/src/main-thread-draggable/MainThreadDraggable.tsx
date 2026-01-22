@@ -1,26 +1,15 @@
-import type { MainThread, ScrollEvent } from "@lynx-js/types";
+import type { RefObject } from "@lynx-js/react";
+import type { MainThread } from "@lynx-js/types";
 
-export function MainThreadDraggable({ size }: { size: number }) {
-  let onScroll = (event: MainThread.TouchEvent & ScrollEvent) => {
-    "main thread";
-    const detail = event.detail.scrollTop;
-    const newPos = {
-      x: 0,
-      y: 500 - detail,
-    };
-    event.currentTarget.setStyleProperty(
-      "transform",
-      `translate(${newPos.x}px, ${newPos.y}px)`,
-    );
-  };
-
+export function MainThreadDraggable(
+  props: { size: number; "main-thread:ref"?: RefObject<MainThread.Element> },
+) {
   return (
     <view
-      global-target="scroll"
-      main-thread:global-bindscroll={onScroll}
+      main-thread:ref={props["main-thread:ref"]}
       style={{
-        height: size + "px",
-        width: size + "px",
+        height: props.size + "px",
+        width: props.size + "px",
         background: "lightskyblue",
         transform: `translate(0px, 500px)`,
       }}
