@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  gap: 24px;
+}
+
+.wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.wheel-hole {
+  width: 96px;
+  height: 96px;
+  border-radius: 9999px;
+  background-color: #0d0d0d;
+}
+
+.gradient-disc {
+  background: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1);
+}
+
+.gradient-ring {
+  background: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1, #ff7385);
+}
+
+.gradient-offset {
+  background: conic-gradient(
+    from 36deg at 33% 67%,
+    #ff7385,
+    #fe69a1,
+    #00d0f1
+  );
+}
+
+.wheel-picker {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+
+  top: 50%;
+  left: 50%;
+
+  /* 
+   * Step 1: move picker's center onto the wheel center
+   * Step 2: rotate to angle
+   * Step 3: translate outwards by radius
+   */
+  transform: rotate(30deg) translateX(46px);
+  transform-origin: 0 0;
+}
+
+.caption-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #f8f8f8;
+}
+
+.subtitle {
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.footnote {
+  line-height: 14px;
+  font-size: 11px;
+  color: #4f4f4f;
+}

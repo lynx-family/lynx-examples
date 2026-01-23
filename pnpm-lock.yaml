@@ -266,6 +266,31 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
 
+  examples/design-guide:
+    dependencies:
+      '@lynx-js/react':
+        specifier: 'catalog:'
+        version: 0.115.3(@lynx-js/types@3.6.0)(@types/react@18.3.27)
+    devDependencies:
+      '@lynx-js/qrcode-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.4.3
+      '@lynx-js/react-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.12.4(@lynx-js/react@0.115.3(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)
+      '@lynx-js/rspeedy':
+        specifier: 'catalog:'
+        version: 0.12.5(@rspack/core@1.6.6(@swc/helpers@0.5.17))(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/types':
+        specifier: 3.6.0
+        version: 3.6.0
+      '@types/react':
+        specifier: ^18.3.27
+        version: 18.3.27
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+
   examples/element-manipulation:
     dependencies:
       '@lynx-js/react':
