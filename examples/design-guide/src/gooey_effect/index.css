@@ -1,34 +1,22 @@
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-
-  gap: 48px;
-}
-
 .stage {
-  width: 100%;
-  height: 200px;
   filter: contrast(100);
-
   /* background color must be explicit, for contrast */
   background-color: black;
+
+  width: 100%;
+  height: 200px;
 }
 
 .inner-stage {
+  /* Lynx: only one filter function per declaration */
+  filter: blur(20px);
+
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
-
-  /* Lynx: only one filter function per declaration */
-  filter: blur(20px);
 }
 
 .dot {
@@ -70,6 +58,25 @@
   100% {
     transform: translateX(-24px) translateY(0px) scale(1.00);
   }
+}
+
+/* =========================
+ * Layout
+ * ========================= */
+
+.design-container {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 48px;
+
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .caption-container {
