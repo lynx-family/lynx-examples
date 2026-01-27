@@ -10,7 +10,7 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 export default defineConfig({
   source: {
     entry: {
-      conic_gradient: "./src/color_wheels/index.tsx",
+      color_wheels: "./src/color_wheels/index.tsx",
       gooey_effect: "./src/gooey_effect/index.tsx",
     },
   },

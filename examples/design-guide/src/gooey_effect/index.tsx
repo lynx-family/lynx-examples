@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <view className="container">
+    <view className="design-container">
       <view className="stage">
         <view className="inner-stage">
           <view className="dot g1" />

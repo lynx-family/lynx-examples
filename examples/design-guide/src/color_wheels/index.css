@@ -1,12 +1,18 @@
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0d0d0d;
-  gap: 24px;
+.gradient-disc {
+  background-image: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1);
+}
+
+.gradient-ring {
+  background-image: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1, #ff7385);
+}
+
+.gradient-offset {
+  background-image: conic-gradient(
+    from 36deg at 33% 67%,
+    #ff7385,
+    #fe69a1,
+    #00d0f1
+  );
 }
 
 .wheel {
@@ -25,23 +31,6 @@
   height: 96px;
   border-radius: 9999px;
   background-color: #0d0d0d;
-}
-
-.gradient-disc {
-  background: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1);
-}
-
-.gradient-ring {
-  background: conic-gradient(#ff7385, #fe69a1, #a998bf, #00d0f1, #ff7385);
-}
-
-.gradient-offset {
-  background: conic-gradient(
-    from 36deg at 33% 67%,
-    #ff7385,
-    #fe69a1,
-    #00d0f1
-  );
 }
 
 .wheel-picker {
@@ -67,6 +56,21 @@
    */
   transform: rotate(30deg) translateX(46px);
   transform-origin: 0 0;
+}
+
+/* =========================
+ * Layout
+ * ========================= */
+
+.design-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  gap: 24px;
 }
 
 .caption-container {

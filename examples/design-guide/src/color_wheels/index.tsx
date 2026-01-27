@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <view className="container">
+    <view className="design-container">
       <view className="wheel gradient-disc" />
       <view className="wheel gradient-ring">
         <view className="wheel-hole" />
