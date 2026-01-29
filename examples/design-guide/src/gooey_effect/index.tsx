@@ -1,5 +1,6 @@
 import { root } from "@lynx-js/react";
 
+import { Caption } from "../shared/components/caption/index.jsx";
 import "./index.css";
 
 function App() {
@@ -13,11 +14,11 @@ function App() {
           <view className="dot g4" />
         </view>
       </view>
-      <view className="caption-container">
-        <text className="title">Gooey Effect</text>
-        <text className="subtitle">Powered by CSS filter: contrast + blur</text>
-        <text className="footnote">Requires Lynx SDK 3.6+</text>
-      </view>
+      <Caption
+        title="Gooey Effect"
+        subtitle="Powered by CSS filter: contrast + blur"
+        footnote="Requires Lynx SDK 3.6+"
+      />
     </view>
   );
 }
