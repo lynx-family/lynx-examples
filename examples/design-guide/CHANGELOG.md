@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.2.0
+
+### Minor Changes
+
+- e5a0a4a: Add the `force_field` example.
+
 ## 0.1.1
 
 ### Patch Changes
