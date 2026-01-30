@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.3.0
+
+### Minor Changes
+
+- ec7a3b1: Add the `soft_glow` example to demonstrate token-based shadow composition. Refine visual details in the `force_field` example.
+
 ## 0.2.0
 
 ### Minor Changes
