@@ -2,7 +2,7 @@
   position: relative;
   --dot-size: 5px;
   --dot-color: #f8f8f8;
-  --dot-accent-color: #ffff00;
+  --dot-accent-color: #ff7385;
   --field-size: 300px;
   width: var(--field-size);
   height: var(--field-size);
