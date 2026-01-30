@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.3.2
+
+### Patch Changes
+
+- 8c521d4: Refine the `force_field` example to clarify token override semantics.
+
 ## 0.3.1
 
 ### Patch Changes
