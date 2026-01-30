@@ -4,7 +4,7 @@ import { useMemo } from "@lynx-js/react";
 import { Caption } from "../shared/components/caption/index.jsx";
 import { usePointerFieldPoint } from "../shared/hooks/use-pointer-field-point/index.js";
 import { CELLS } from "./cells.js";
-import { lerpColor4 } from "./color.js";
+import { lerpColor } from "./color.js";
 import { makeForceField } from "./field-force.js";
 import { Dot, DotField } from "./field.jsx";
 import { clamp01 } from "./math.js";
@@ -14,8 +14,8 @@ const RADIUS = 0.60;
 
 const forceAt = makeForceField({
   radius: RADIUS,
-  strength: 0.14,
-  falloff: 1.8,
+  strength: 0.15,
+  falloff: 1.25,
   mode: "repel",
   swirl: 0.6,
   clampMax: 0.14,
@@ -47,10 +47,10 @@ function App() {
       const y = clamp01(cell.cy + f.dy);
 
       const dist01 = clamp01(f.d / RADIUS);
-      const g = Math.pow(dist01, 1.25);
+      const g = Math.pow(dist01, 1.5);
 
-      const s = 0.6 + (1 - g) * 1.8;
-      const color = lerpColor4(g, "#EBF4F6", "#7AB2B2", "#088395", "#09637E");
+      const s = 0.5 + (1 - g) * 2.5;
+      const color = lerpColor(g, "#ff7385", "#00d0f1");
 
       return { id: cell.id, x, y, s, color };
     });
@@ -67,7 +67,7 @@ function App() {
       <DotField
         fieldSize={300}
         dotSize={5}
-        dotAccentColor="#ff7385"
+        dotAccentColor="#ff1a6e"
         bindtouchstart={handlePointerDown}
         bindtouchmove={handlePointerMove}
         bindtouchend={handlePointerUp}

@@ -1,18 +1,18 @@
 import type { DotFieldProps, DotProps } from "./field.types.js";
-
 import "./field.css";
 
 /**
- * Dot consumes normalized, unitless styling parameters.
- * Concrete layout and sizing are resolved against field-level
- * CSS variables, rather than computed imperatively in JS.
+ * Dot consumes normalized, unitless params.
+ * Layout and sizing is resolved via field-scoped CSS vars.
  */
 function Dot({ x = 0, y = 0, s = 1, color, useAccent }: DotProps) {
   return (
     <view
       className="dot"
-      // Inline CSS var reference: route to a field-scoped CSS token (`--dot-accent-color`)
-      // instead of resolving the color imperatively in JS.
+      /**
+       * Inline CSS var reference: route accent color to a
+       * field-scoped CSS token (`--dot-accent-color`)
+       */
       style={`--x:${x}; --y:${y}; --s:${s}; background-color:${useAccent ? "var(--dot-accent-color)" : color}`}
     />
   );
