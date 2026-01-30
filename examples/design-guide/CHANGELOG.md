@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.3.1
+
+### Patch Changes
+
+- f706135: Adjust container styling to better fit the Go playground by removing extra padding.
+
 ## 0.3.0
 
 ### Minor Changes
