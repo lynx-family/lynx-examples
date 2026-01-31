@@ -14,6 +14,7 @@ export default defineConfig({
       "fetch": "./src/fetch/index.tsx",
       "react-query": "/src/react-query/index.tsx",
       "chunked-encoding": "/src/chunked-encoding/index.tsx",
+      "streaming-fetch": "/src/streaming-fetch/index.tsx",
     },
   },
   output: {
