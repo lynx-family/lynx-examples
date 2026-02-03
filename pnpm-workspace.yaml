@@ -11,3 +11,5 @@ catalog:
   "@lynx-js/react-rsbuild-plugin": "0.12.7"
   "@lynx-js/types": "3.6.0"
   "@lynx-js/template-webpack-plugin": "0.10.3"
+  "@lynx-js/external-bundle-rsbuild-plugin": "0.0.2"
+  "@lynx-js/lynx-bundle-rslib-config": "0.2.1"
