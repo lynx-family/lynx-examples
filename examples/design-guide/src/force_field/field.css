@@ -1,0 +1,23 @@
+.dot-field {
+  position: relative;
+  --dot-size: 5px;
+  --dot-color: #f8f8f8;
+  --dot-accent-color: #ff7385;
+  --field-size: 300px;
+  width: var(--field-size);
+  height: var(--field-size);
+}
+
+.dot {
+  width: calc(var(--dot-size) * var(--s, 1));
+  height: calc(var(--dot-size) * var(--s, 1));
+  transform: translate(
+    calc(var(--field-size) * var(--x, 0)),
+    calc(var(--field-size) * var(--y, 0))
+  );
+  background-color: var(--dot-color, #f8f8f8);
+  border-radius: 9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

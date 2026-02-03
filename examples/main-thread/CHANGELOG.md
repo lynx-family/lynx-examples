@@ -1,5 +1,11 @@
 # @lynx-example/main-thread
 
+## 0.4.6
+
+### Patch Changes
+
+- c8ecb82: Remove `global-bind`, which does not work on Web.
+
 ## 0.4.5
 
 ### Patch Changes
