@@ -6,6 +6,12 @@ settings:
 
 catalogs:
   default:
+    '@lynx-js/external-bundle-rsbuild-plugin':
+      specifier: 0.0.2
+      version: 0.0.2
+    '@lynx-js/lynx-bundle-rslib-config':
+      specifier: 0.2.1
+      version: 0.2.1
     '@lynx-js/qrcode-rsbuild-plugin':
       specifier: 0.4.4
       version: 0.4.4
@@ -354,17 +360,14 @@ importers:
         version: 0.116.2(@lynx-js/types@3.6.0)(@types/react@18.3.27)
     devDependencies:
       '@lynx-js/external-bundle-rsbuild-plugin':
-        specifier: 0.0.1
-        version: 0.0.1
+        specifier: 'catalog:'
+        version: 0.0.2
       '@lynx-js/lynx-bundle-rslib-config':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 'catalog:'
+        version: 0.2.1
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.4
-      '@lynx-js/react-alias-rsbuild-plugin':
-        specifier: 0.12.2
-        version: 0.12.2
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.12.7(@lynx-js/react@0.116.2(@lynx-js/types@3.6.0)(@types/react@18.3.27))(webpack@5.101.3)
@@ -1833,16 +1836,16 @@ packages:
   '@lynx-js/css-serializer@0.1.3':
     resolution: {integrity: sha512-AngMqNr8qvGeejv68MjbVNiuYAjzMm3S/t6lrCbtRn8jwa8gVU0Std2mVCMDeIoWzfjjliyRQMd6AzGydOh8dg==}
 
-  '@lynx-js/external-bundle-rsbuild-plugin@0.0.1':
-    resolution: {integrity: sha512-34Fjx3E+vlGlPPlpPb8jUosPF0YEqo2DhBJcMRYb9mjGI4kKkCN0CRQ0jiWEkkq4qpZaiqOLoHYQ9TpbPy1D2w==}
+  '@lynx-js/external-bundle-rsbuild-plugin@0.0.2':
+    resolution: {integrity: sha512-OtD4kxxJtIldOaRB+W5eABSKDpr0bsDnTCsnKQP100sp4jwLTB8Ay9eIAkmUOw/A58lNSwqJVQaOlOsMuH7y+w==}
     engines: {node: '>=18'}
 
-  '@lynx-js/externals-loading-webpack-plugin@0.0.2':
-    resolution: {integrity: sha512-e/optxa555V5Fr0gESfIqNgCtQ1VAW6K0pJ+dSX+TAp9gIm0MlgDfzJ/4KMzavVtkeXaDnUlM360HLO3vg5Wpw==}
+  '@lynx-js/externals-loading-webpack-plugin@0.0.3':
+    resolution: {integrity: sha512-EtJK1VVMGMYwHf6nvoDIcZ3F51Ii/UMQg70LGo2rme96XbiVBc+uQ+adFJ1WigLLpiWyxYw0aOEUsKYqMUtcIw==}
     engines: {node: '>=18'}
 
-  '@lynx-js/lynx-bundle-rslib-config@0.1.0':
-    resolution: {integrity: sha512-4Hgxrhn+2f8Fxo4Af7ArPu6dxsTnKGbffBriH2G+M9ma9XfgwB5bgjAM4Ee8RQnY1P984XghtmVliwjPIZiXdA==}
+  '@lynx-js/lynx-bundle-rslib-config@0.2.1':
+    resolution: {integrity: sha512-w97IBTLdsNLtU8T4nGLkGsYnkPFtgm9VrSTEfdKq3TVXEn/hNNkSpCno4VwjfyeWO83Q63cTqOVrCdXfe2JyDQ==}
     engines: {node: '>=18'}
 
   '@lynx-js/lynx-core@0.1.3':
@@ -1853,10 +1856,6 @@ packages:
 
   '@lynx-js/qrcode-rsbuild-plugin@0.4.4':
     resolution: {integrity: sha512-wMZ54yYXo9VgLGPFChBICuKkj/8eBOi5vuFLQtlcOW017IUGWkH4hYZPjRei+xOryUwyT7OFqBkDf3YFSHu3+g==}
-    engines: {node: '>=18'}
-
-  '@lynx-js/react-alias-rsbuild-plugin@0.12.2':
-    resolution: {integrity: sha512-oaHSpM0dznzIqTTBnRakEOTSvsaKbkVw0E1fppqsVZEd+VyRP6e761OJib2T5wlQeHqzVNSU3cas/wds7xx1gQ==}
     engines: {node: '>=18'}
 
   '@lynx-js/react-alias-rsbuild-plugin@0.12.7':
@@ -7647,13 +7646,13 @@ snapshots:
     dependencies:
       css-tree: 3.1.0
 
-  '@lynx-js/external-bundle-rsbuild-plugin@0.0.1':
+  '@lynx-js/external-bundle-rsbuild-plugin@0.0.2':
     dependencies:
-      '@lynx-js/externals-loading-webpack-plugin': 0.0.2
+      '@lynx-js/externals-loading-webpack-plugin': 0.0.3
 
-  '@lynx-js/externals-loading-webpack-plugin@0.0.2': {}
+  '@lynx-js/externals-loading-webpack-plugin@0.0.3': {}
 
-  '@lynx-js/lynx-bundle-rslib-config@0.1.0':
+  '@lynx-js/lynx-bundle-rslib-config@0.2.1':
     dependencies:
       '@lynx-js/runtime-wrapper-webpack-plugin': 0.1.3
       '@lynx-js/tasm': 0.0.20
@@ -7663,8 +7662,6 @@ snapshots:
   '@lynx-js/offscreen-document@0.1.4': {}
 
   '@lynx-js/qrcode-rsbuild-plugin@0.4.4': {}
-
-  '@lynx-js/react-alias-rsbuild-plugin@0.12.2': {}
 
   '@lynx-js/react-alias-rsbuild-plugin@0.12.7': {}
 
