@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.7.0
+
+### Minor Changes
+
+- c842f55: Replace `MetricFcpEntry` with `MetricFspEntry` since `MetricFcpEntry` has been deprecated in Lynx 3.7.
+
 ## 0.6.6
 
 ### Patch Changes
