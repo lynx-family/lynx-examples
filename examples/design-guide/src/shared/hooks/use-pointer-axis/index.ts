@@ -27,12 +27,17 @@ function usePointerAxis({
   const posRef = useRef<PointerAxisPosition | null>(null);
   const draggingRef = useRef(false);
 
-  const pickCoord = (e: TouchEvent) => (axis === "x" ? e.detail.x : e.detail.y);
+  const pickCoord = (e: TouchEvent) => {
+    const t = e.touches?.[0] ?? e.changedTouches?.[0];
+    if (!t) return null;
+    return axis === "x" ? t.clientX : t.clientY;
+  };
 
   const startRef = axis === "x" ? frame.leftRef : frame.topRef;
   const lengthRef = axis === "x" ? frame.widthRef : frame.heightRef;
 
-  const buildPosition = (coord: number): PointerAxisPosition | null => {
+  const buildPosition = (coord: number | null): PointerAxisPosition | null => {
+    if (coord === null) return null;
     const length = lengthRef.current;
     const start = startRef.current;
 
@@ -51,7 +56,10 @@ function usePointerAxis({
 
     // Web: viewport changes may not trigger layoutchange; refresh rect before computing.
     if (externalFrame == null) {
-      internalFrameRef.refreshRect();
+      internalFrameRef.refreshRect(() => {
+        buildPosition(pickCoord(e));
+        if (posRef.current) onUpdate?.(posRef.current);
+      });
     }
 
     buildPosition(pickCoord(e));

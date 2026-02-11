@@ -9,6 +9,7 @@ export type PointerPoint = { x: number; y: number };
 export type UsePointerPointProps = {
   x0?: number;
   y0?: number;
+  debug?: boolean;
 };
 
 export type PointerBindProps = {
@@ -26,6 +27,20 @@ export type PointerBindProps = {
   bindlayoutchange?: (e: LayoutChangeEvent) => void;
 };
 
+export type PointerPointDebugInfo = {
+  /** Latest raw event coords from TouchEvent.detail */
+  lastEvent?: { x: number; y: number };
+
+  /** Latest frame snapshot used for mapping */
+  frame: { left: number | null; top: number | null; width: number; height: number };
+
+  /** Latest computed axis positions */
+  axis: {
+    x?: { offset: number; ratio: number; length: number };
+    y?: { offset: number; ratio: number; length: number };
+  };
+};
+
 export type UsePointerPointReturnValue = {
   p: PointerPoint;
   bind: PointerBindProps;
@@ -33,11 +48,14 @@ export type UsePointerPointReturnValue = {
   handlePointerMove: (e: TouchEvent) => void;
   handlePointerUp: (e: TouchEvent) => void;
   handleElementLayoutChange: (e: LayoutChangeEvent) => void;
+  /** Debug-only: populated when `debug: true` */
+  debug?: PointerPointDebugInfo;
 };
 
 function usePointerPoint({
   x0 = 0.5,
   y0 = 0.5,
+  debug = false,
 }: UsePointerPointProps = {}): UsePointerPointReturnValue {
   const [p, setP] = useState<PointerPoint>({ x: x0, y: y0 });
 
@@ -46,11 +64,34 @@ function usePointerPoint({
 
   const frameRef = useElementFrame();
 
+  const debugRef = useRef<PointerPointDebugInfo>({
+    frame: { left: null, top: null, width: 0, height: 0 },
+    axis: {},
+  });
+
+  const syncFrameDebug = () => {
+    if (!debug) return;
+    debugRef.current.frame = {
+      left: frameRef.leftRef.current,
+      top: frameRef.topRef.current,
+      width: frameRef.widthRef.current,
+      height: frameRef.heightRef.current,
+    };
+  };
+
   const axisX = usePointerAxis({
     axis: "x",
     frame: frameRef,
     onUpdate(pos) {
       lastXRef.current = pos.offsetRatio;
+      if (debug) {
+        syncFrameDebug();
+        debugRef.current.axis.x = {
+          offset: pos.offset,
+          ratio: pos.offsetRatio,
+          length: pos.elementLength,
+        };
+      }
       setP({ x: lastXRef.current, y: lastYRef.current });
     },
   });
@@ -60,22 +101,40 @@ function usePointerPoint({
     frame: frameRef,
     onUpdate(pos) {
       lastYRef.current = pos.offsetRatio;
+      if (debug) {
+        syncFrameDebug();
+        debugRef.current.axis.y = {
+          offset: pos.offset,
+          ratio: pos.offsetRatio,
+          length: pos.elementLength,
+        };
+      }
       setP({ x: lastXRef.current, y: lastYRef.current });
     },
   });
 
   const handlePointerDown = (e: TouchEvent) => {
-    frameRef.refreshRect();
-    axisY.handlePointerDown(e);
-    axisX.handlePointerDown(e);
+    if (debug) {
+      debugRef.current.lastEvent = { x: e.detail.x, y: e.detail.y };
+    }
+    frameRef.refreshRect(() => {
+      axisY.handlePointerDown(e);
+      axisX.handlePointerDown(e);
+    });
   };
 
   const handlePointerMove = (e: TouchEvent) => {
+    if (debug) {
+      debugRef.current.lastEvent = { x: e.detail.x, y: e.detail.y };
+    }
     axisY.handlePointerMove(e);
     axisX.handlePointerMove(e);
   };
 
   const handlePointerUp = (e: TouchEvent) => {
+    if (debug) {
+      debugRef.current.lastEvent = { x: e.detail.x, y: e.detail.y };
+    }
     axisY.handlePointerUp(e);
     axisX.handlePointerUp(e);
   };
@@ -107,6 +166,7 @@ function usePointerPoint({
       bindmouseup: bindPointer.bindmouseup,
       bindlayoutchange: handleElementLayoutChange,
     },
+    debug: debug ? debugRef.current : undefined,
   };
 }
 
