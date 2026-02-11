@@ -32,8 +32,10 @@ export type UseElementFrameReturnValue = ElementFrame & {
   /**
    * Refresh bounding rect using the last known target id.
    * Useful on web where viewport changes may not always trigger layoutchange.
+   *
+   * The optional callback is invoked after refs are updated.
    */
-  refreshRect: () => void;
+  refreshRect: (onRefreshed?: () => void) => void;
 };
 
 export function useElementFrame(): UseElementFrameReturnValue {
@@ -45,7 +47,7 @@ export function useElementFrame(): UseElementFrameReturnValue {
   // Keep the last known element id so we can re-query rect on demand.
   const targetIdRef = useRef<number | string | null>(null);
 
-  const queryRectById = (id: number | string | null) => {
+  const queryRectById = (id: number | string | null, onSuccess?: () => void) => {
     if (id == null) return;
 
     const currentTarget = lynx
@@ -61,6 +63,7 @@ export function useElementFrame(): UseElementFrameReturnValue {
           topRef.current = res.top;
           widthRef.current = res.width;
           heightRef.current = res.height;
+          onSuccess?.();
         },
       })
       .exec();
@@ -78,8 +81,8 @@ export function useElementFrame(): UseElementFrameReturnValue {
     queryRectById(id);
   };
 
-  const refreshRect = () => {
-    queryRectById(targetIdRef.current);
+  const refreshRect = (onRefreshed?: () => void) => {
+    queryRectById(targetIdRef.current, onRefreshed);
   };
 
   return {
