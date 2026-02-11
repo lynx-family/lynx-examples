@@ -48,6 +48,12 @@ function usePointerAxis({
 
   const handlePointerDown = (e: TouchEvent) => {
     draggingRef.current = true;
+
+    // Web: viewport changes may not trigger layoutchange; refresh rect before computing.
+    if (externalFrame == null) {
+      internalFrameRef.refreshRect();
+    }
+
     buildPosition(pickCoord(e));
     if (posRef.current) onUpdate?.(posRef.current);
   };

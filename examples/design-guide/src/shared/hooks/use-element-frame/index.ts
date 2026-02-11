@@ -29,6 +29,11 @@ export type ElementFrame = {
 export type UseElementFrameReturnValue = ElementFrame & {
   /** Bind to <view bindlayoutchange={...} /> */
   handleLayoutChange: (e: LayoutChangeEvent) => void;
+  /**
+   * Refresh bounding rect using the last known target id.
+   * Useful on web where viewport changes may not always trigger layoutchange.
+   */
+  refreshRect: () => void;
 };
 
 export function useElementFrame(): UseElementFrameReturnValue {
@@ -37,27 +42,44 @@ export function useElementFrame(): UseElementFrameReturnValue {
   const widthRef = useRef(0);
   const heightRef = useRef(0);
 
+  // Keep the last known element id so we can re-query rect on demand.
+  const targetIdRef = useRef<number | string | null>(null);
+
+  const queryRectById = (id: number | string | null) => {
+    if (id == null) return;
+
+    const currentTarget = lynx
+      .createSelectorQuery()
+      // @ts-expect-error Lynx internal UniqueID typing
+      .selectUniqueID(id);
+
+    currentTarget
+      ?.invoke({
+        method: "boundingClientRect",
+        success: (res: { left: number; top: number; width: number; height: number }) => {
+          leftRef.current = res.left;
+          topRef.current = res.top;
+          widthRef.current = res.width;
+          heightRef.current = res.height;
+        },
+      })
+      .exec();
+  };
+
   const handleLayoutChange = (e: LayoutChangeEvent) => {
     // Sync element size from layout event
     widthRef.current = e.detail.width;
     heightRef.current = e.detail.height;
 
-    // Query screen-based bounding rect
-    const currentTarget = lynx
-      .createSelectorQuery()
-      // @ts-expect-error Lynx internal UID typing
-      .selectUniqueID(e.currentTarget.uid ?? e.currentTarget.uniqueId);
+    // @ts-expect-error Lynx internal UniqueID typing
+    const id = e.currentTarget.uid ?? e.currentTarget.uniqueId;
+    targetIdRef.current = id;
 
-    currentTarget
-      ?.invoke({
-        method: "boundingClientRect",
-        params: { relativeTo: "screen" },
-        success: (res: { left: number; top: number }) => {
-          leftRef.current = res.left;
-          topRef.current = res.top;
-        },
-      })
-      .exec();
+    queryRectById(id);
+  };
+
+  const refreshRect = () => {
+    queryRectById(targetIdRef.current);
   };
 
   return {
@@ -66,5 +88,6 @@ export function useElementFrame(): UseElementFrameReturnValue {
     widthRef,
     heightRef,
     handleLayoutChange,
+    refreshRect,
   };
 }
