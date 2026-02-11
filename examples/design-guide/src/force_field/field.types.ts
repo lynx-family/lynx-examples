@@ -1,5 +1,5 @@
 import type { ReactNode } from "@lynx-js/react";
-import type { LayoutChangeEvent, TouchEvent } from "@lynx-js/types";
+import type { LayoutChangeEvent, MouseEvent, TouchEvent } from "@lynx-js/types";
 
 type DotProps = {
   /** Normalized x position in the field (0..1). */
@@ -37,12 +37,15 @@ type DotFieldProps = {
   /** Field children (dots or other field-aware elements). */
   children?: ReactNode;
 
-  /** Pointer / touch handlers bound at the field level. */
+  /** Pointer (touch/mouse) handlers bound at the field level. */
   bindtouchstart?: (e: TouchEvent) => void;
   bindtouchmove?: (e: TouchEvent) => void;
   bindtouchend?: (e: TouchEvent) => void;
   bindtouchcancel?: (e: TouchEvent) => void;
 
+  bindmousedown?: (e: MouseEvent) => void;
+  bindmousemove?: (e: MouseEvent) => void;
+  bindmouseup?: (e: MouseEvent) => void;
   /** Layout measurement handler for field coordinate mapping. */
   bindlayoutchange?: (e: LayoutChangeEvent) => void;
 };
