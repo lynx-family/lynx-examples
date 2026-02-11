@@ -2,7 +2,7 @@ import { root } from "@lynx-js/react";
 import { useMemo } from "@lynx-js/react";
 
 import { Caption } from "../shared/components/caption/index.jsx";
-import { usePointerFieldPoint } from "../shared/hooks/use-pointer-field-point/index.js";
+import { usePointerPoint } from "../shared/hooks/use-pointer-point/index.js";
 import { CELLS } from "./cells.js";
 import { lerpColor } from "./color.js";
 import { makeForceField } from "./field-force.js";
@@ -24,11 +24,8 @@ const forceAt = makeForceField({
 function App() {
   const {
     p, // Force point in normalized space
-    handlePointerDown,
-    handlePointerMove,
-    handlePointerUp,
-    handleElementLayoutChange,
-  } = usePointerFieldPoint({ x0: 0.6, y0: 1 });
+    bind, // Spreadable interaction bindings (touch + mouse + layout)
+  } = usePointerPoint({ x0: 0.6, y0: 1 });
 
   const models = useMemo(() => {
     let minD = Infinity;
@@ -68,10 +65,7 @@ function App() {
         fieldSize={300}
         dotSize={5}
         dotAccentColor="#ff1a6e"
-        bindtouchstart={handlePointerDown}
-        bindtouchmove={handlePointerMove}
-        bindtouchend={handlePointerUp}
-        bindlayoutchange={handleElementLayoutChange}
+        {...bind}
       >
         {models.map((m) => (
           <Dot

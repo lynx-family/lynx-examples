@@ -15,6 +15,11 @@ export type ForceFieldOptions = {
    * higher = faster decay
    */
   falloff?: number;
+  /**
+   * interaction direction:
+   * - "repel": push points away from the center
+   * - "attract": pull points toward the center
+   */
   mode?: "repel" | "attract";
 
   // Optional style

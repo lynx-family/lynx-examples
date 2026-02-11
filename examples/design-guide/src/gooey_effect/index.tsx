@@ -7,7 +7,7 @@ function App() {
   return (
     <view className="design-container">
       <view className="stage">
-        <view className="inner-stage">
+        <view className="dots-container">
           <view className="dot g1" />
           <view className="dot g2" />
           <view className="dot g3" />

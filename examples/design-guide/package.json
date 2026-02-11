@@ -21,7 +21,8 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/react": "catalog:"
+    "@lynx-js/react": "catalog:",
+    "@lynx-js/react-use": "catalog:"
   },
   "devDependencies": {
     "@lynx-js/config-rsbuild-plugin": "^0.0.1",

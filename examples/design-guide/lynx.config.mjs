@@ -11,10 +11,10 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 export default defineConfig({
   source: {
     entry: {
-      soft_glow: "./src/soft_glow/index.tsx",
-      color_wheels: "./src/color_wheels/index.tsx",
       force_field: "./src/force_field/index.tsx",
+      color_wheels: "./src/color_wheels/index.tsx",
       gooey_effect: "./src/gooey_effect/index.tsx",
+      soft_glow: "./src/soft_glow/index.tsx",
     },
   },
   output: {
@@ -36,6 +36,9 @@ export default defineConfig({
     }),
     pluginTypeCheck(),
   ],
+  performance: {
+    removeConsole: true,
+  },
   environments: {
     web: {},
     lynx: {},

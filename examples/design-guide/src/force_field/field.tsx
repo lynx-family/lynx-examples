@@ -29,12 +29,9 @@ function DotField({
   dotSize,
   dotColor,
   dotAccentColor,
+  style,
   children,
-  bindtouchstart,
-  bindtouchmove,
-  bindtouchend,
-  bindtouchcancel,
-  bindlayoutchange,
+  ...rest // Interaction Handlers
 }: DotFieldProps) {
   const styleParts: string[] = [];
 
@@ -44,17 +41,15 @@ function DotField({
   if (dotColor) styleParts.push(`--dot-color:${dotColor}`);
   if (dotAccentColor) styleParts.push(`--dot-accent-color:${dotAccentColor}`);
 
+  const mergedStyle = style
+    ? `${styleParts.join("; ")}; ${style}`
+    : styleParts.join("; ");
+
   return (
     <view
-      /* Styling boundary: inject field-level CSS token overrides (if any) */
-      style={styleParts.join("; ")}
+      style={mergedStyle}
       className="dot-field"
-      /* Interaction */
-      bindtouchstart={bindtouchstart}
-      bindtouchmove={bindtouchmove}
-      bindtouchend={bindtouchend}
-      bindtouchcancel={bindtouchcancel}
-      bindlayoutchange={bindlayoutchange}
+      {...rest}
     >
       {children}
     </view>
