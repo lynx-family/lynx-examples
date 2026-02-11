@@ -36,6 +36,9 @@ export default defineConfig({
     }),
     pluginTypeCheck(),
   ],
+  performance: {
+    removeConsole: true,
+  },
   environments: {
     web: {},
     lynx: {},
