@@ -1,5 +1,6 @@
 import { useRef } from "@lynx-js/react";
 import type { LayoutChangeEvent, TouchEvent } from "@lynx-js/types";
+import { useElementFrame } from "../use-element-frame/index.js";
 import type { PointerAxisPosition, UsePointerAxisProps, UsePointerAxisReturnValueBase } from "./types.js";
 
 /**
@@ -16,18 +17,24 @@ function usePointerAxis({
   axis = "x",
   onUpdate,
   onCommit,
+  frame: externalFrame,
 }: UsePointerAxisProps = {}): UsePointerAxisReturnValue {
   /** Element (coordinate frame) & metrics */
-  const eleStartRef = useRef<number | null>(null); // left or top
-  const eleLengthRef = useRef(0); // width or height
+
+  const internalFrameRef = useElementFrame();
+  const frame = externalFrame ?? internalFrameRef;
+
   const posRef = useRef<PointerAxisPosition | null>(null);
   const draggingRef = useRef(false);
 
   const pickCoord = (e: TouchEvent) => (axis === "x" ? e.detail.x : e.detail.y);
 
+  const startRef = axis === "x" ? frame.leftRef : frame.topRef;
+  const lengthRef = axis === "x" ? frame.widthRef : frame.heightRef;
+
   const buildPosition = (coord: number): PointerAxisPosition | null => {
-    const length = eleLengthRef.current;
-    const start = eleStartRef.current;
+    const length = lengthRef.current;
+    const start = startRef.current;
 
     if (length > 0 && start != null) {
       const offset = coord - start;
@@ -61,22 +68,9 @@ function usePointerAxis({
   };
 
   const handleElementLayoutChange = (e: LayoutChangeEvent) => {
-    eleLengthRef.current = axis === "x" ? e.detail.width : e.detail.height;
-
-    const currentTarget = lynx
-      .createSelectorQuery()
-      // @ts-expect-error
-      .selectUniqueID(e.currentTarget.uid);
-
-    currentTarget
-      ?.invoke({
-        method: "boundingClientRect",
-        params: { relativeTo: "screen" }, // screen-based so it matches e.detail.x/y
-        success: (res: { left: number; top: number }) => {
-          eleStartRef.current = axis === "x" ? res.left : res.top;
-        },
-      })
-      .exec();
+    // If using injected frame, measurement is handled elsewhere.
+    if (externalFrame != null) return;
+    internalFrameRef.handleLayoutChange(e);
   };
 
   return {

@@ -1,6 +1,7 @@
 import { useRef, useState } from "@lynx-js/react";
 import { useTouchEmulation } from "@lynx-js/react-use";
 import type { LayoutChangeEvent, MouseEvent, TouchEvent } from "@lynx-js/types";
+import { useElementFrame } from "../use-element-frame/index.js";
 import { usePointerAxis } from "../use-pointer-axis/index.js";
 
 export type PointerPoint = { x: number; y: number };
@@ -43,8 +44,11 @@ function usePointerPoint({
   const lastXRef = useRef(x0);
   const lastYRef = useRef(y0);
 
+  const frameRef = useElementFrame();
+
   const axisX = usePointerAxis({
     axis: "x",
+    frame: frameRef,
     onUpdate(pos) {
       lastXRef.current = pos.offsetRatio;
       setP({ x: lastXRef.current, y: lastYRef.current });
@@ -53,6 +57,7 @@ function usePointerPoint({
 
   const axisY = usePointerAxis({
     axis: "y",
+    frame: frameRef,
     onUpdate(pos) {
       lastYRef.current = pos.offsetRatio;
       setP({ x: lastXRef.current, y: lastYRef.current });
@@ -75,9 +80,7 @@ function usePointerPoint({
   };
 
   const handleElementLayoutChange = (e: LayoutChangeEvent) => {
-    // Both axes need layout + rect
-    axisY.handleElementLayoutChange(e);
-    axisX.handleElementLayoutChange(e);
+    frameRef.handleLayoutChange(e);
   };
 
   // One emulation at the boundary (touch + mouse)

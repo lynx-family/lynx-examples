@@ -1,3 +1,5 @@
+import type { ElementFrame } from "../use-element-frame/index.js";
+
 /** Pointer position in the element’s local frame. */
 type PointerAxisPosition = {
   /** Horizontal offset from element's left edge (px). Can be <0 or >length. */
@@ -11,6 +13,8 @@ type PointerAxisPosition = {
 /** Interaction callbacks. */
 type UsePointerAxisProps = {
   axis?: PointerAxis;
+  /** Injected measurement frame */
+  frame?: ElementFrame;
   /** Fires during drag/move. */
   onUpdate?: (pos: PointerAxisPosition) => void;
   /** Fires on pointer up (final value). */
