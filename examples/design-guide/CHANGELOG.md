@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.4.1
+
+### Patch Changes
+
+- b2668d8: Fix Lynx Web pointer coordinate drift by refreshing element rect on interaction start
+
 ## 0.4.0
 
 ### Minor Changes
