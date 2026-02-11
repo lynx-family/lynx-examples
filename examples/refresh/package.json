@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/refresh",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "description": "An example shows how to use `<refresh>` in Lynx",
   "repository": {
     "type": "git",
