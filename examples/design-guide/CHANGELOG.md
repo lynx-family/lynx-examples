@@ -1,5 +1,11 @@
 # @lynx-example/design-guide
 
+## 0.4.2
+
+### Patch Changes
+
+- 8efb295: Fix pointer coordinate space mismatch (client vs page) in the `force_field` example on the web.
+
 ## 0.4.1
 
 ### Patch Changes
