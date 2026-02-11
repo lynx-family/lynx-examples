@@ -1,5 +1,15 @@
 # @lynx-example/design-guide
 
+## 0.4.0
+
+### Minor Changes
+
+- 77d7f52: Enable interactive pointer support for `force_field` on web and unify cross-platform pointer behavior.
+
+### Patch Changes
+
+- 77d7f52: Align cross-platform perception and document rendering differences in `gooey_effect`.
+
 ## 0.3.2
 
 ### Patch Changes
