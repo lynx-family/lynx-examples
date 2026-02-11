@@ -1,0 +1,37 @@
+import { defineExternalBundleRslibConfig } from "@lynx-js/lynx-bundle-rslib-config";
+import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+
+export default defineExternalBundleRslibConfig({
+  id: "comp",
+  source: {
+    entry: {
+      "component": "./src/components/index.js",
+    },
+  },
+  plugins: [
+    pluginReactLynx(),
+  ],
+  output: {
+    cleanDistPath: false,
+    dataUriLimit: Number.POSITIVE_INFINITY,
+    externals: {
+      "@lynx-js/react": ["ReactLynx", "React"],
+      "@lynx-js/react/internal": ["ReactLynx", "ReactInternal"],
+      "@lynx-js/react/experimental/lazy/import": [
+        "ReactLynx",
+        "ReactLazyImport",
+      ],
+      "@lynx-js/react/legacy-react-runtime": [
+        "ReactLynx",
+        "ReactLegacyRuntime",
+      ],
+      "@lynx-js/react/runtime-components": ["ReactLynx", "ReactComponents"],
+      "@lynx-js/react/worklet-runtime/bindings": [
+        "ReactLynx",
+        "ReactWorkletRuntime",
+      ],
+      "@lynx-js/react/debug": ["ReactLynx", "ReactDebug"],
+      "preact": ["ReactLynx", "Preact"],
+    },
+  },
+});
