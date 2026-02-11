@@ -65,6 +65,7 @@ function usePointerPoint({
   });
 
   const handlePointerDown = (e: TouchEvent) => {
+    frameRef.refreshRect();
     axisY.handlePointerDown(e);
     axisX.handlePointerDown(e);
   };
