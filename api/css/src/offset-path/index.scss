@@ -1,0 +1,78 @@
+.intro {
+  width: max-content;
+}
+
+.title {
+  font-size: 30px;
+  left: 50%;
+}
+
+.box1 {
+  position: absolute;
+  top: 50px;
+  color: white;
+  height: 66px;
+  width: 66px;
+  offset-path: path("M0,100 C0.42,1 1,0.58 ,100,0");
+  offset-rotate: 0deg;
+  border-radius: 50%;
+  background-color: red;
+  animation: ani 3s linear infinite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 {
+  top: 175px;
+}
+
+.box2 {
+  top: 25px;
+  position: absolute;
+  color: white;
+  height: 66px;
+  width: 66px;
+  offset-path: path("M 10 80 L 50 10 L 90 80 Z");
+  offset-rotate: 0deg;
+  border-radius: 50%;
+  background-color: red;
+  animation: ani 3s linear infinite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container3 {
+  top: 350px;
+}
+
+.box3 {
+  top: 50px;
+  position: absolute;
+  color: white;
+  height: 66px;
+  width: 66px;
+  offset-path: path(
+    "M50,10 L90.45,34.55 L73.39,80.45 L26.61,80.45 L9.55,34.55 Z"
+  );
+  offset-rotate: 0deg;
+  border-radius: 50%;
+  background-color: red;
+  animation: ani 3s linear infinite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes ani {
+  from {
+    offset-distance: 0;
+  }
+  to {
+    offset-distance: 1;
+  }
+}
