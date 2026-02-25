@@ -1,0 +1,35 @@
+{
+  "name": "@lynx-example/title-bar-view",
+  "version": "0.6.10",
+  "description": "An example shows how to use `<title-bar-view>` in Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/title-bar-view"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "1.4.0",
+    "@types/react": "^18.3.25",
+    "typescript": "~5.9.3"
+  }
+}
