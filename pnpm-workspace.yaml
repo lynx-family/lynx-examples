@@ -5,10 +5,10 @@ packages:
   - examples/with-solidjs/packages/*
 
 catalog:
-  "@lynx-js/qrcode-rsbuild-plugin": "0.4.3"
-  "@lynx-js/rspeedy": "0.12.5"
-  "@lynx-js/react": "0.115.3"
-  "@lynx-js/react-rsbuild-plugin": "0.12.4"
-  "@lynx-js/types": "3.6.0"
-  "@lynx-js/template-webpack-plugin": "0.10.1"
+  "@lynx-js/qrcode-rsbuild-plugin": "0.4.5"
+  "@lynx-js/rspeedy": "0.13.4"
+  "@lynx-js/react": "0.116.3"
+  "@lynx-js/react-rsbuild-plugin": "0.12.8"
+  "@lynx-js/types": "3.7.0"
+  "@lynx-js/template-webpack-plugin": "0.10.3"
   "@lynx-js/react-use": "0.1.3"
