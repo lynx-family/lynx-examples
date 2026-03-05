@@ -17,12 +17,12 @@
   ],
   "scripts": {
     "build": "pnpm build:bundle && rspeedy build",
-    "dev": "pnpm build:bundle && rspeedy dev",
-    "preview": "rspeedy preview",
     "build:bundle": "pnpm run --stream '/^build:bundle:.*/'",
+    "build:bundle:comp": "rslib build --config comp.rslib.config.js",
     "build:bundle:lodash": "rslib build --config lodash.rslib.config.js",
     "build:bundle:react": "rslib build --config react.rslib.config.js",
-    "build:bundle:comp": "rslib build --config comp.rslib.config.js"
+    "dev": "pnpm build:bundle && rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
