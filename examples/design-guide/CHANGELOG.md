@@ -1,5 +1,27 @@
 # @lynx-example/design-guide
 
+## 0.4.2
+
+### Patch Changes
+
+- 8efb295: Fix pointer coordinate space mismatch (client vs page) in the `force_field` example on the web.
+
+## 0.4.1
+
+### Patch Changes
+
+- b2668d8: Fix Lynx Web pointer coordinate drift by refreshing element rect on interaction start
+
+## 0.4.0
+
+### Minor Changes
+
+- 77d7f52: Enable interactive pointer support for `force_field` on web and unify cross-platform pointer behavior.
+
+### Patch Changes
+
+- 77d7f52: Align cross-platform perception and document rendering differences in `gooey_effect`.
+
 ## 0.3.2
 
 ### Patch Changes

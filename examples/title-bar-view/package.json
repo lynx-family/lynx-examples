@@ -1,11 +1,11 @@
 {
-  "name": "@lynx-example/performance-api",
-  "version": "0.7.0",
-  "description": "Examples of Performance API",
+  "name": "@lynx-example/title-bar-view",
+  "version": "0.6.11",
+  "description": "An example shows how to use `<title-bar-view>` in Lynx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/performance-api"
+    "directory": "examples/title-bar-view"
   },
   "license": "Apache-2.0",
   "author": "Lynx Authors",
@@ -29,7 +29,7 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "catalog:",
     "@rsbuild/plugin-sass": "1.4.0",
-    "@types/react": "^18.3.27",
+    "@types/react": "^18.3.25",
     "typescript": "~5.9.3"
   }
 }

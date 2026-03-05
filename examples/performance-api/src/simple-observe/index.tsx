@@ -11,10 +11,10 @@ export default function SimpleObserveExample(this: any) {
     "background-only";
     // 1. Create a performance observer.
     const observer = lynx.performance.createObserver((entry: PerformanceEntry) => {
-      // 3. process "metric.fcp" and "pipeline"
+      // 3. process "metric.fsp" and "pipeline"
       let entryType: string | undefined;
-      if (entry.entryType == "metric" && entry.name == "fcp") {
-        entryType = "MetricFcpEntry";
+      if (entry.entryType == "metric" && entry.name == "fsp") {
+        entryType = "MetricFspEntry";
       } else if (entry.entryType == "pipeline") {
         entryType = "PipelineEntry";
       }
@@ -26,8 +26,8 @@ export default function SimpleObserveExample(this: any) {
         });
       }
     });
-    // 2. register to listen to the "metric.fcp" and "pipeline" event.
-    observer.observe(["metric.fcp", "pipeline"]);
+    // 2. register to listen to the "metric.fsp" and "pipeline" event.
+    observer.observe(["metric.fsp", "pipeline"]);
   }, []);
 
   return (

@@ -55,6 +55,8 @@ This repository is intended to showcase examples of Lynx.
 [`textarea`]: ./examples/textarea
 [`overlay`]: ./examples/overlay
 [`svg`]: ./examples/svg
+[`refresh`]: ./examples/refresh
+[`title-bar-view`]: ./examples/title-bar-view
 [`fetch`]: ./examples/fetch
 [`basic-usage`]: ./examples/web-platform
 [`accessibility`]: ./examples/accessibility

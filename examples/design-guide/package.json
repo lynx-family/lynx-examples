@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/design-guide",
-  "version": "0.3.2",
+  "version": "0.4.2",
   "description": "An example demonstrating design with Lynx capabilities.",
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/react": "catalog:"
+    "@lynx-js/react": "catalog:",
+    "@lynx-js/react-use": "catalog:"
   },
   "devDependencies": {
     "@lynx-js/config-rsbuild-plugin": "^0.0.1",
