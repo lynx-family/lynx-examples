@@ -35,6 +35,6 @@
     "@lynx-js/rspeedy": "catalog:",
     "@rslib/core": "0.19.6",
     "@types/react": "^18.3.28",
-    "lodash-es": "4.17.22"
+    "lodash-es": "4.17.23"
   }
 }
