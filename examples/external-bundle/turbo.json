@@ -3,15 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "dependsOn": ["build:bundle"],
-      "inputs": [
-        "src/**",
-        "lynx.config.mjs",
-        "tsconfig.json"
-      ],
-      "outputs": [
-        "dist/**"
-      ]
+      "dependsOn": ["build:bundle"]
     },
     "build:bundle": {
       "dependsOn": ["build:bundle:lodash", "build:bundle:react", "build:bundle:comp"],
