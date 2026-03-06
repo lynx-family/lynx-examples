@@ -27,7 +27,7 @@
     "@lynx-js/types": "catalog:",
     "@rspack/cli": "^1.7.7",
     "@rspack/core": "^1.7.7",
-    "babel-loader": "^10.0.0",
+    "babel-loader": "^10.1.0",
     "babel-preset-solid": "^1.9.10"
   },
   "engines": {
