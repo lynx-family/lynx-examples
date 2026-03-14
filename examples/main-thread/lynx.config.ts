@@ -9,6 +9,8 @@ export default defineConfig({
     entry: {
       "background-draggable": "./src/background-draggable/index.tsx",
       "main-thread-draggable": "./src/main-thread-draggable/index.tsx",
+      "cross-thread-calls": "./src/cross-thread-calls/index.tsx",
+      "shared-module": "./src/shared-module/index.tsx",
     },
   },
   plugins: [
