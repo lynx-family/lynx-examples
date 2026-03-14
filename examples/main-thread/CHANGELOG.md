@@ -1,5 +1,11 @@
 # @lynx-example/main-thread
 
+## 0.4.7
+
+### Patch Changes
+
+- c786b41: Add cross-thread-calls and shared-module examples.
+
 ## 0.4.6
 
 ### Patch Changes
