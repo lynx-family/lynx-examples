@@ -3,8 +3,8 @@
     "jsx": "preserve",
     "jsxImportSource": "@lynx-js/react",
 
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
 
     "strict": true,
     "isolatedModules": true,
