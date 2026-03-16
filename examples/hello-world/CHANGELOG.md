@@ -1,5 +1,11 @@
 # @lynx-example/hello-world
 
+## 0.6.8
+
+### Patch Changes
+
+- 1ce536b: Revert vw/vh units change that broke hello-world starter.
+
 ## 0.6.7
 
 ### Patch Changes
