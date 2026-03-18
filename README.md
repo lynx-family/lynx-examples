@@ -31,7 +31,7 @@ This repository is intended to showcase examples of Lynx.
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
-  - [`tailwindcss`]: An example shows how to use Tailwind CSS in Lynx
+  - [`tailwindcss`]: A settings UI with runtime theme switching using Tailwind CSS and CSS variables
 - API
   - [`fetch`]: An example shows how to use fetch API
   - [`lazy-bundle`]: An example shows how code-splitting and lazy bundle works

@@ -1,9 +1,8 @@
-import preset from "@lynx-js/tailwind-preset";
-import type { Config } from "tailwindcss";
+import { type Config } from "tailwindcss";
 
-const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  presets: [preset],
+export default {
+  presets: [require("@lynx-js/tailwind-preset")],
+  content: ["./src/**/*.tsx"],
   theme: {
     extend: {
       colors: {
@@ -36,8 +35,11 @@ const config: Config = {
         border: "var(--color-border)",
         ring: "var(--color-ring)",
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-};
-
-export default config;
+} satisfies Config;

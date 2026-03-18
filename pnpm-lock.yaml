@@ -1038,40 +1038,6 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
 
-  examples/tailwindcss2:
-    dependencies:
-      '@lynx-js/react':
-        specifier: 'catalog:'
-        version: 0.116.4(@lynx-js/types@3.7.0)(@types/react@18.3.28)
-    devDependencies:
-      '@lynx-js/config-rsbuild-plugin':
-        specifier: 0.0.1
-        version: 0.0.1(@lynx-js/rspeedy@0.13.4(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))
-      '@lynx-js/qrcode-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.4.6
-      '@lynx-js/react-rsbuild-plugin':
-        specifier: 'catalog:'
-        version: 0.12.9(@lynx-js/react@0.116.4(@lynx-js/types@3.7.0)(@types/react@18.3.28))(webpack@5.101.3)
-      '@lynx-js/rspeedy':
-        specifier: 'catalog:'
-        version: 0.13.4(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
-      '@lynx-js/tailwind-preset':
-        specifier: 0.4.0
-        version: 0.4.0(tailwindcss@3.4.19)
-      '@lynx-js/types':
-        specifier: 3.7.0
-        version: 3.7.0
-      '@types/react':
-        specifier: ^18.3.28
-        version: 18.3.28
-      tailwindcss:
-        specifier: ^3.4.19
-        version: 3.4.19
-      typescript:
-        specifier: ~5.9.3
-        version: 5.9.3
-
   examples/tanstack-router:
     dependencies:
       '@lynx-js/react':
