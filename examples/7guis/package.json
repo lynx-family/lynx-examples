@@ -3,14 +3,20 @@
   "version": "0.1.0",
   "private": false,
   "description": "7 GUIs benchmark — Counter, Temperature Converter, Flight Booker, Timer, CRUD, Circle Drawer, Cells",
-  "license": "Apache-2.0",
-  "type": "module",
-  "files": ["dist", "src", "lynx.config.ts", "tsconfig.json"],
   "repository": {
     "type": "git",
     "url": "https://github.com/nichenqin/lynx-examples",
     "directory": "examples/7guis"
   },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "lynx.config.ts",
+    "tsconfig.json"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev"
