@@ -1,11 +1,6 @@
 {
   "name": "@lynx-example/tailwindcss",
-  "version": "0.4.3",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/tailwindcss"
-  },
+  "version": "0.1.0",
   "author": "Lynx Authors",
   "type": "module",
   "scripts": {
