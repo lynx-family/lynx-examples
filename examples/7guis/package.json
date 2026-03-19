@@ -5,7 +5,7 @@
   "description": "7 GUIs benchmark — Counter, Temperature Converter, Flight Booker, Timer, CRUD, Circle Drawer, Cells",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nichenqin/lynx-examples",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/7guis"
   },
   "license": "Apache-2.0",
