@@ -1,6 +1,7 @@
 {
   "name": "@lynx-example/tailwindcss",
   "version": "0.1.0",
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
