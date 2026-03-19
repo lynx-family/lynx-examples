@@ -4,6 +4,8 @@ This repository is intended to showcase examples of Lynx.
 
 ## List of examples
 
+- Benchmarks
+  - [`7guis`]: The 7GUIs benchmark — Counter, Temperature Converter, Flight Booker, Timer, CRUD, Circle Drawer, Cells
 - Tutorials
   - [`hello-world`]: A minimal hello world example
   - [`tutorial-gallery`]: An example shows how to use discoverPage
@@ -59,6 +61,7 @@ This repository is intended to showcase examples of Lynx.
   - [`zustand`]: An example shows how to use zustand in Lynx
   - [`tanstack-router`]: An example shows how to use TanStack Router in Lynx
 
+[`7guis`]: ./examples/7guis
 [`action-sheet`]: ./examples/action-sheet
 [`animation`]: ./examples/animation
 [`css`]: ./examples/css
