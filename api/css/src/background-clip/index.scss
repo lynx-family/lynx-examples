@@ -3,7 +3,7 @@
 }
 
 .fixed_area {
-  height: 580px;
+  height: 850px;
   flex-direction: column;
 }
 
@@ -40,6 +40,10 @@
   border-radius: 100px;
 }
 
+.border-area {
+  background-clip: border-area;
+}
+
 .container {
   width: 300px;
   height: 200px;
@@ -51,4 +55,15 @@
   background-image:
     linear-gradient(to right, #222, #222),
     linear-gradient(90deg, #8f41e9, #578aef);
+}
+
+.border-area-container {
+  width: 300px;
+  height: 100px;
+  border: 25px solid transparent;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 8px 0;
+  background-clip: border-area;
+  background-image: linear-gradient(90deg, #8f41e9, #578aef);
 }
