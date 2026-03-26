@@ -46,7 +46,7 @@ importers:
         version: 2.0.6(@types/node@24.3.0)(typanion@3.14.0)
       '@rsbuild/plugin-type-check':
         specifier: 1.3.4
-        version: 1.3.4(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)
+        version: 1.3.4(@rsbuild/core@1.7.4)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)
       dprint:
         specifier: ^0.52.0
         version: 0.52.0
@@ -77,13 +77,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.3)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -105,7 +105,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -130,13 +130,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -155,13 +155,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -183,7 +183,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -208,7 +208,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -233,13 +233,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -261,7 +261,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -286,13 +286,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -311,7 +311,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 0.0.1
-        version: 0.0.1(@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.0.1(@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.6
@@ -320,7 +320,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -345,7 +345,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -370,13 +370,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -404,7 +404,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@rslib/core':
         specifier: 0.19.6
         version: 0.19.6(typescript@5.9.3)
@@ -429,13 +429,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -454,7 +454,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -479,7 +479,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -507,7 +507,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -535,7 +535,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -560,7 +560,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -585,13 +585,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -613,13 +613,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -641,7 +641,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -666,13 +666,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -694,7 +694,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -719,7 +719,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -744,7 +744,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -769,7 +769,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -797,13 +797,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -825,13 +825,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -853,13 +853,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -881,13 +881,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -909,7 +909,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -934,13 +934,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -962,13 +962,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -990,13 +990,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1018,13 +1018,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1046,7 +1046,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/tailwind-preset':
         specifier: 0.4.0
         version: 0.4.0(tailwindcss@3.4.19)
@@ -1083,13 +1083,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@tanstack/router-plugin':
         specifier: 1.166.2
-        version: 1.166.2(@rsbuild/core@1.7.3)(@tanstack/react-router@1.166.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(webpack@5.101.3)
+        version: 1.166.2(@rsbuild/core@1.7.4)(@tanstack/react-router@1.166.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(webpack@5.101.3)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1108,13 +1108,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1136,13 +1136,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1164,13 +1164,13 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
       '@rsbuild/plugin-sass':
-        specifier: 1.5.0
-        version: 1.5.0(@rsbuild/core@1.7.3)
+        specifier: 1.5.1
+        version: 1.5.1(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1192,7 +1192,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -1219,7 +1219,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -1249,11 +1249,11 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@rsbuild/core':
-        specifier: 1.7.3
-        version: 1.7.3
+        specifier: 1.7.4
+        version: 1.7.4
       '@rsbuild/plugin-react':
-        specifier: 1.4.5
-        version: 1.4.5(@rsbuild/core@1.7.3)
+        specifier: 1.4.6
+        version: 1.4.6(@rsbuild/core@1.7.4)
       '@types/react':
         specifier: ^19.2.14
         version: 19.2.14
@@ -1280,10 +1280,10 @@ importers:
         version: 3.7.0
       '@rspack/cli':
         specifier: ^1.7.7
-        version: 1.7.7(@rspack/core@1.7.7(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)
+        version: 1.7.7(@rspack/core@1.7.10(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)
       '@rspack/core':
         specifier: ^1.7.7
-        version: 1.7.7(@swc/helpers@0.5.19)
+        version: 1.7.10(@swc/helpers@0.5.19)
       babel-loader:
         specifier: ^10.0.0
         version: 10.0.0(@babel/core@7.29.0)(webpack@5.101.3)
@@ -1315,7 +1315,7 @@ importers:
         version: 0.13.0(@lynx-js/react@0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 3.7.0
         version: 3.7.0
@@ -2862,6 +2862,11 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
+  '@rsbuild/core@1.7.4':
+    resolution: {integrity: sha512-1hn9j62Kkckh2CGUMQcr/H/PtHgN5iqB3kChaMCVGqxrC4jbJBQxRtuHuWVJDKeEO0uWPMABAR748qJISIyh5w==}
+    engines: {node: '>=18.12.0'}
+    hasBin: true
+
   '@rsbuild/plugin-check-syntax@1.3.0':
     resolution: {integrity: sha512-lHrd6hToPFVOGWr0U/Ox7pudHWdhPSFsr2riWpjNRlUuwiXdU2SYMROaVUCrLJvYFzJyEMsFOi1w59rBQCG2HQ==}
     peerDependencies:
@@ -2878,15 +2883,21 @@ packages:
       '@rsbuild/core':
         optional: true
 
-  '@rsbuild/plugin-react@1.4.5':
-    resolution: {integrity: sha512-eS2sXCedgGA/7bLu8yVtn48eE/GyPbXx4Q7OcutB01IQ1D2y8WSMBys4nwfrecy19utvw4NPn4gYDy52316+vg==}
+  '@rsbuild/plugin-react@1.4.6':
+    resolution: {integrity: sha512-LAT6xHlEyZKA0VjF/ph5d50iyG+WSmBx+7g98HNZUwb94VeeTMZFB8qVptTkbIRMss3BNKOXmHOu71Lhsh9oEw==}
     peerDependencies:
       '@rsbuild/core': ^1.0.0 || ^2.0.0-0
+    peerDependenciesMeta:
+      '@rsbuild/core':
+        optional: true
 
-  '@rsbuild/plugin-sass@1.5.0':
-    resolution: {integrity: sha512-m9eLjN8KQe43obVAevy8ivbcAVWJkChxooWev9m+7JZYSDPW1Fr3Zmc5ZBkroQUy8NxGTj/eWc434TmtzL2Mrw==}
+  '@rsbuild/plugin-sass@1.5.1':
+    resolution: {integrity: sha512-rwou4KvDerqvAI0hstjlwF9jgzxPaSOr0PkwtEPjTnQcR5mK6AXZICpUBJbHGgjlAM0aTegKf5IYl/ENvaAQrQ==}
     peerDependencies:
       '@rsbuild/core': ^1.3.0 || ^2.0.0-0
+    peerDependenciesMeta:
+      '@rsbuild/core':
+        optional: true
 
   '@rsbuild/plugin-type-check@1.3.4':
     resolution: {integrity: sha512-ibOlMRVKeDfBBSd09YVzJjAUhX1KnTVbK0NK/rPBai3/DAovhUsmkxKDIsE+3HN93iGBSBiqOCIOrYFO2Z21Fw==}
@@ -2943,61 +2954,61 @@ packages:
       typescript:
         optional: true
 
-  '@rspack/binding-darwin-arm64@1.7.7':
-    resolution: {integrity: sha512-eL14fHy2JqfQ0YA5YMN2hktXhbafDSZt5kthvlBCbpQZLnYB7RP7TjHManIW/xFpnzrabvxkrLUOHhuIbWixIw==}
+  '@rspack/binding-darwin-arm64@1.7.10':
+    resolution: {integrity: sha512-bsXi7I6TpH+a4L6okIUh1JDvwT+XcK/L7Yvhu5G2t5YYyd2fl5vMM5O9cePRpEb0RdqJZ3Z8i9WIWHap9aQ8Gw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rspack/binding-darwin-x64@1.7.7':
-    resolution: {integrity: sha512-Zt+whHag/cTw1pZfRwkv11tu5LaAHy2VkvRVCsHClwrfp81PRcNJ2oRMurOUmRt1YL0mRdpRbZTh7XjGSc6gGw==}
+  '@rspack/binding-darwin-x64@1.7.10':
+    resolution: {integrity: sha512-h/kOGL1bUflDDYnbiUjaRE9kagJpour4FatGihueV03+cRGQ6jpde+BjUakqzMx65CeDbeYI6jAiPhElnlAtRw==}
     cpu: [x64]
     os: [darwin]
 
-  '@rspack/binding-linux-arm64-gnu@1.7.7':
-    resolution: {integrity: sha512-uSq4qkvmAzSDUTKE2v4yUgHIBdTily1k3BcK5wBCGFm9OPODj5lQZpAdOHHIwu+Jxyjoa7Mb64tghhj9hZcXcA==}
+  '@rspack/binding-linux-arm64-gnu@1.7.10':
+    resolution: {integrity: sha512-Z4reus7UxGM4+JuhiIht8KuGP1KgM7nNhOlXUHcQCMswP/Rymj5oJQN3TDWgijFUZs09ULl8t3T+AQAVTd/WvA==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rspack/binding-linux-arm64-musl@1.7.7':
-    resolution: {integrity: sha512-NhWCBfiu6plpmLRP6c6D5lBUaVrBr1nvjSEc7VyQF8TGh8URo2btH0wngEiX0nWvidsSlERt1l6Y5QPGuiCl1g==}
+  '@rspack/binding-linux-arm64-musl@1.7.10':
+    resolution: {integrity: sha512-LYaoVmWizG4oQ3g+St3eM5qxsyfH07kLirP7NJcDMgvu3eQ29MeyTZ3ugkgW6LvlmJue7eTQyf6CZlanoF5SSg==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rspack/binding-linux-x64-gnu@1.7.7':
-    resolution: {integrity: sha512-aRvf8gCI7jDeEN9i4u9fY5coa3ZAyHzGVA4ZhTJCgZ5wWA5A9SQewMSq7khS1WAAFE1USlk1tUuPujnrGoYrGg==}
+  '@rspack/binding-linux-x64-gnu@1.7.10':
+    resolution: {integrity: sha512-aIm2G4Kcm3qxDTNqKarK0oaLY2iXnCmpRQQhAcMlR0aS2LmxL89XzVeRr9GFA1MzGrAsZONWCLkxQvn3WUbm4Q==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rspack/binding-linux-x64-musl@1.7.7':
-    resolution: {integrity: sha512-ALPto4OT7snzXbYDyqkLfh1BvwDTTH1hPYXGUXBzQ0wEV7sXeyvxCC4yjH6B5MhR7W3tFuF4IfDy5Z4BxmOoGQ==}
+  '@rspack/binding-linux-x64-musl@1.7.10':
+    resolution: {integrity: sha512-SIHQbAgB9IPH0H3H+i5rN5jo9yA/yTMq8b7XfRkTMvZ7P7MXxJ0dE8EJu3BmCLM19sqnTc2eX+SVfE8ZMDzghA==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rspack/binding-wasm32-wasi@1.7.7':
-    resolution: {integrity: sha512-7DZvUp0v75n451qfZw1ppbPakL6NAc2gjb5e9AJcOb7KUMBHNyOxqpPo/jRYKxH7isPpLfpoId79WQGGNTTMAw==}
+  '@rspack/binding-wasm32-wasi@1.7.10':
+    resolution: {integrity: sha512-J9HDXHD1tj+9FmX4+K3CTkO7dCE2bootlR37YuC2Owc0Lwl1/i2oGT71KHnMqI9faF/hipAaQM5OywkiiuNB7w==}
     cpu: [wasm32]
 
-  '@rspack/binding-win32-arm64-msvc@1.7.7':
-    resolution: {integrity: sha512-oI08KqyVDKhq1Qi/YPMdrSLDOib0DQes9Cg67NJLZISe5UXwzvgBj7zyyKpaj8TLWnIlKSq4ITr3haRnd4lOfA==}
+  '@rspack/binding-win32-arm64-msvc@1.7.10':
+    resolution: {integrity: sha512-FaQGSCXH89nMOYW0bVp0bKQDQbrOEFFm7yedla7g6mkWlFVQo5UyBxid5wJUCqGJBtJepRxeRfByWiaI5nVGvg==}
     cpu: [arm64]
     os: [win32]
 
-  '@rspack/binding-win32-ia32-msvc@1.7.7':
-    resolution: {integrity: sha512-nZ/t7XpO/+tRjK6m85an27j8FwJqpYXVSBGReZbB6dVHZiS7l6psjWkIf6A3E2umn/RjA7qvHaPH9czWkH+Fhw==}
+  '@rspack/binding-win32-ia32-msvc@1.7.10':
+    resolution: {integrity: sha512-/66TNLOeM4R5dHhRWRVbMTgWghgxz+32ym0c/zGGXQRoMbz7210EoL40ALUgdBdeeREO8LoV+Mn7v8/QZCwHzw==}
     cpu: [ia32]
     os: [win32]
 
-  '@rspack/binding-win32-x64-msvc@1.7.7':
-    resolution: {integrity: sha512-+XnPOC1MoeF5Qa24Z8+DCsytQP0Q9Ifdkh+XzTWgvjpFQmGAkDynHUVfscmJL/8k/nd1l/6TyXCL1EGoqa0huQ==}
+  '@rspack/binding-win32-x64-msvc@1.7.10':
+    resolution: {integrity: sha512-SUa3v1W7PGFCy6AHRmDsm43/tkfaZFi1TN2oIk5aCdT9T51baDVBjAbehRDu9xFbK4piL3k7uqIVSIrKgVqk1g==}
     cpu: [x64]
     os: [win32]
 
-  '@rspack/binding@1.7.7':
-    resolution: {integrity: sha512-9FqHG2Bl70Bd4gUmwA+3xUx4pYphdLO9ToIm9iMWbBINyArME0XboZg4FoEdU13LqndkWqaamkE613BR0lRF3g==}
+  '@rspack/binding@1.7.10':
+    resolution: {integrity: sha512-j+DPEaSJLRgasxXNpYQpvC7wUkQF5WoWPiTfm4fLczwlAmYwGSVkJiyWDrOlvVPiGGYiXIaXEjVWTw6fT6/vnA==}
 
   '@rspack/cli@1.7.7':
     resolution: {integrity: sha512-NSE7kE0TGDgs1iWHQs6uI+H1KHXIKCFzb8zPJ/TgAbfFNQNRGuq3cPJXs2n+p+HmnN3xY4xFyTyMuS99BrprrA==}
@@ -3005,8 +3016,8 @@ packages:
     peerDependencies:
       '@rspack/core': ^1.0.0-alpha || ^1.x
 
-  '@rspack/core@1.7.7':
-    resolution: {integrity: sha512-efwVXxAA9eYgLtYX53zcuuex6Wr8DnOXeIw3JFoA8EuyN7TINGqnvkuGDuE+F9XQxQ3KBzVueiYdMK42sVTyUw==}
+  '@rspack/core@1.7.10':
+    resolution: {integrity: sha512-dO7J0aHSa9Fg2kGT0+ZsM500lMdlNIyCHavIaz7dTDn6KXvFz1qbWQ/48x3OlNFw1mA0jxAjjw9e7h3sWQZUNg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       '@swc/helpers': '>=0.5.1'
@@ -5841,8 +5852,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.6:
-    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
 
   preferred-pm@3.1.4:
@@ -7876,9 +7887,9 @@ snapshots:
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.6
 
-  '@lynx-js/config-rsbuild-plugin@0.0.1(@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))':
+  '@lynx-js/config-rsbuild-plugin@0.0.1(@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))':
     dependencies:
-      '@lynx-js/rspeedy': 0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/type-config': 3.6.0
 
   '@lynx-js/css-extract-webpack-plugin@0.7.0(@lynx-js/template-webpack-plugin@0.10.6(tslib@2.8.1))(webpack@5.101.3)':
@@ -7960,7 +7971,7 @@ snapshots:
     optionalDependencies:
       '@lynx-js/types': 3.7.0
 
-  '@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.7(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)':
+  '@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3)':
     dependencies:
       '@lynx-js/cache-events-webpack-plugin': 0.0.3
       '@lynx-js/chunk-loading-webpack-plugin': 0.3.3
@@ -7969,7 +7980,7 @@ snapshots:
       '@lynx-js/websocket': 0.0.4
       '@rsbuild/core': 1.7.3
       '@rsbuild/plugin-css-minimizer': 1.1.1(@rsbuild/core@1.7.3)(webpack@5.101.3)
-      '@rsdoctor/rspack-plugin': 1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/rspack-plugin': 1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -9206,7 +9217,15 @@ snapshots:
 
   '@rsbuild/core@1.7.3':
     dependencies:
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
+      '@rspack/lite-tapable': 1.1.0
+      '@swc/helpers': 0.5.19
+      core-js: 3.47.0
+      jiti: 2.6.1
+
+  '@rsbuild/core@1.7.4':
+    dependencies:
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
       '@rspack/lite-tapable': 1.1.0
       '@swc/helpers': 0.5.19
       core-js: 3.47.0
@@ -9237,31 +9256,43 @@ snapshots:
       - lightningcss
       - webpack
 
-  '@rsbuild/plugin-react@1.4.5(@rsbuild/core@1.7.3)':
+  '@rsbuild/plugin-react@1.4.6(@rsbuild/core@1.7.4)':
     dependencies:
-      '@rsbuild/core': 1.7.3
       '@rspack/plugin-react-refresh': 1.6.1(react-refresh@0.18.0)
       react-refresh: 0.18.0
+    optionalDependencies:
+      '@rsbuild/core': 1.7.4
     transitivePeerDependencies:
       - webpack-hot-middleware
 
-  '@rsbuild/plugin-sass@1.5.0(@rsbuild/core@1.7.3)':
+  '@rsbuild/plugin-sass@1.5.1(@rsbuild/core@1.7.3)':
     dependencies:
-      '@rsbuild/core': 1.7.3
       deepmerge: 4.3.1
       loader-utils: 2.0.4
-      postcss: 8.5.6
+      postcss: 8.5.8
       reduce-configs: 1.1.1
       sass-embedded: 1.97.3
+    optionalDependencies:
+      '@rsbuild/core': 1.7.3
 
-  '@rsbuild/plugin-type-check@1.3.4(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)':
+  '@rsbuild/plugin-sass@1.5.1(@rsbuild/core@1.7.4)':
+    dependencies:
+      deepmerge: 4.3.1
+      loader-utils: 2.0.4
+      postcss: 8.5.8
+      reduce-configs: 1.1.1
+      sass-embedded: 1.97.3
+    optionalDependencies:
+      '@rsbuild/core': 1.7.4
+
+  '@rsbuild/plugin-type-check@1.3.4(@rsbuild/core@1.7.4)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)':
     dependencies:
       deepmerge: 4.3.1
       json5: 2.2.3
       reduce-configs: 1.1.1
-      ts-checker-rspack-plugin: 1.3.0(@rspack/core@1.7.7(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)
+      ts-checker-rspack-plugin: 1.3.0(@rspack/core@1.7.10(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3)
     optionalDependencies:
-      '@rsbuild/core': 1.7.3
+      '@rsbuild/core': 1.7.4
     transitivePeerDependencies:
       - '@rspack/core'
       - tslib
@@ -9269,13 +9300,13 @@ snapshots:
 
   '@rsdoctor/client@1.2.3': {}
 
-  '@rsdoctor/core@1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/core@1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
       '@rsbuild/plugin-check-syntax': 1.3.0(@rsbuild/core@1.7.3)
-      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/sdk': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/sdk': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
       axios: 1.11.0
       browserslist-load-config: 1.0.1
       enhanced-resolve: 5.12.0
@@ -9294,10 +9325,10 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/graph@1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/graph@1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
-      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
       lodash.unionby: 4.8.0
       source-map: 0.7.6
     transitivePeerDependencies:
@@ -9305,16 +9336,16 @@ snapshots:
       - supports-color
       - webpack
 
-  '@rsdoctor/rspack-plugin@1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/rspack-plugin@1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
-      '@rsdoctor/core': 1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/sdk': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/core': 1.2.3(@rsbuild/core@1.7.3)(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/sdk': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
       lodash: 4.17.21
     optionalDependencies:
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
     transitivePeerDependencies:
       - '@rsbuild/core'
       - bufferutil
@@ -9323,12 +9354,12 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/sdk@1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/sdk@1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
       '@rsdoctor/client': 1.2.3
-      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
-      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/graph': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/utils': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
       '@types/fs-extra': 11.0.4
       body-parser: 1.20.3
       cors: 2.8.5
@@ -9347,20 +9378,20 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@rsdoctor/types@1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/types@1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
       '@types/connect': 3.4.38
       '@types/estree': 1.0.5
       '@types/tapable': 2.2.7
       source-map: 0.7.6
     optionalDependencies:
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
       webpack: 5.101.3
 
-  '@rsdoctor/utils@1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)':
+  '@rsdoctor/utils@1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)':
     dependencies:
       '@babel/code-frame': 7.26.2
-      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.7(@swc/helpers@0.5.19))(webpack@5.101.3)
+      '@rsdoctor/types': 1.2.3(@rspack/core@1.7.10(@swc/helpers@0.5.19))(webpack@5.101.3)
       '@types/estree': 1.0.5
       acorn: 8.15.0
       acorn-import-attributes: 1.9.5(acorn@8.15.0)
@@ -9383,63 +9414,63 @@ snapshots:
 
   '@rslib/core@0.19.6(typescript@5.9.3)':
     dependencies:
-      '@rsbuild/core': 1.7.3
-      rsbuild-plugin-dts: 0.19.6(@rsbuild/core@1.7.3)(typescript@5.9.3)
+      '@rsbuild/core': 1.7.4
+      rsbuild-plugin-dts: 0.19.6(@rsbuild/core@1.7.4)(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
       - '@typescript/native-preview'
 
-  '@rspack/binding-darwin-arm64@1.7.7':
+  '@rspack/binding-darwin-arm64@1.7.10':
     optional: true
 
-  '@rspack/binding-darwin-x64@1.7.7':
+  '@rspack/binding-darwin-x64@1.7.10':
     optional: true
 
-  '@rspack/binding-linux-arm64-gnu@1.7.7':
+  '@rspack/binding-linux-arm64-gnu@1.7.10':
     optional: true
 
-  '@rspack/binding-linux-arm64-musl@1.7.7':
+  '@rspack/binding-linux-arm64-musl@1.7.10':
     optional: true
 
-  '@rspack/binding-linux-x64-gnu@1.7.7':
+  '@rspack/binding-linux-x64-gnu@1.7.10':
     optional: true
 
-  '@rspack/binding-linux-x64-musl@1.7.7':
+  '@rspack/binding-linux-x64-musl@1.7.10':
     optional: true
 
-  '@rspack/binding-wasm32-wasi@1.7.7':
+  '@rspack/binding-wasm32-wasi@1.7.10':
     dependencies:
       '@napi-rs/wasm-runtime': 1.0.7
     optional: true
 
-  '@rspack/binding-win32-arm64-msvc@1.7.7':
+  '@rspack/binding-win32-arm64-msvc@1.7.10':
     optional: true
 
-  '@rspack/binding-win32-ia32-msvc@1.7.7':
+  '@rspack/binding-win32-ia32-msvc@1.7.10':
     optional: true
 
-  '@rspack/binding-win32-x64-msvc@1.7.7':
+  '@rspack/binding-win32-x64-msvc@1.7.10':
     optional: true
 
-  '@rspack/binding@1.7.7':
+  '@rspack/binding@1.7.10':
     optionalDependencies:
-      '@rspack/binding-darwin-arm64': 1.7.7
-      '@rspack/binding-darwin-x64': 1.7.7
-      '@rspack/binding-linux-arm64-gnu': 1.7.7
-      '@rspack/binding-linux-arm64-musl': 1.7.7
-      '@rspack/binding-linux-x64-gnu': 1.7.7
-      '@rspack/binding-linux-x64-musl': 1.7.7
-      '@rspack/binding-wasm32-wasi': 1.7.7
-      '@rspack/binding-win32-arm64-msvc': 1.7.7
-      '@rspack/binding-win32-ia32-msvc': 1.7.7
-      '@rspack/binding-win32-x64-msvc': 1.7.7
+      '@rspack/binding-darwin-arm64': 1.7.10
+      '@rspack/binding-darwin-x64': 1.7.10
+      '@rspack/binding-linux-arm64-gnu': 1.7.10
+      '@rspack/binding-linux-arm64-musl': 1.7.10
+      '@rspack/binding-linux-x64-gnu': 1.7.10
+      '@rspack/binding-linux-x64-musl': 1.7.10
+      '@rspack/binding-wasm32-wasi': 1.7.10
+      '@rspack/binding-win32-arm64-msvc': 1.7.10
+      '@rspack/binding-win32-ia32-msvc': 1.7.10
+      '@rspack/binding-win32-x64-msvc': 1.7.10
 
-  '@rspack/cli@1.7.7(@rspack/core@1.7.7(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)':
+  '@rspack/cli@1.7.7(@rspack/core@1.7.10(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)':
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
-      '@rspack/dev-server': 1.1.5(@rspack/core@1.7.7(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
+      '@rspack/dev-server': 1.1.5(@rspack/core@1.7.10(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)
       exit-hook: 4.0.0
       webpack-bundle-analyzer: 4.10.2
     transitivePeerDependencies:
@@ -9452,17 +9483,17 @@ snapshots:
       - webpack
       - webpack-cli
 
-  '@rspack/core@1.7.7(@swc/helpers@0.5.19)':
+  '@rspack/core@1.7.10(@swc/helpers@0.5.19)':
     dependencies:
       '@module-federation/runtime-tools': 0.22.0
-      '@rspack/binding': 1.7.7
+      '@rspack/binding': 1.7.10
       '@rspack/lite-tapable': 1.1.0
     optionalDependencies:
       '@swc/helpers': 0.5.19
 
-  '@rspack/dev-server@1.1.5(@rspack/core@1.7.7(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)':
+  '@rspack/dev-server@1.1.5(@rspack/core@1.7.10(@swc/helpers@0.5.19))(@types/express@4.17.23)(tslib@2.8.1)(webpack@5.101.3)':
     dependencies:
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
       chokidar: 3.6.0
       http-proxy-middleware: 2.0.9(@types/express@4.17.23)
       p-retry: 6.2.1
@@ -9548,7 +9579,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-plugin@1.166.2(@rsbuild/core@1.7.3)(@tanstack/react-router@1.166.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(webpack@5.101.3)':
+  '@tanstack/router-plugin@1.166.2(@rsbuild/core@1.7.4)(@tanstack/react-router@1.166.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(webpack@5.101.3)':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-syntax-jsx': 7.27.1(@babel/core@7.29.0)
@@ -9564,7 +9595,7 @@ snapshots:
       unplugin: 2.3.6
       zod: 3.25.76
     optionalDependencies:
-      '@rsbuild/core': 1.7.3
+      '@rsbuild/core': 1.7.4
       '@tanstack/react-router': 1.166.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       webpack: 5.101.3
     transitivePeerDependencies:
@@ -10378,9 +10409,9 @@ snapshots:
 
   crypto-random-string@2.0.0: {}
 
-  css-declaration-sorter@7.2.0(postcss@8.5.6):
+  css-declaration-sorter@7.2.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
   css-in-js-utils@3.1.0:
     dependencies:
@@ -10389,9 +10420,9 @@ snapshots:
   css-minimizer-webpack-plugin@7.0.2(webpack@5.101.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.30
-      cssnano: 7.1.2(postcss@8.5.6)
+      cssnano: 7.1.2(postcss@8.5.8)
       jest-worker: 29.7.0
-      postcss: 8.5.6
+      postcss: 8.5.8
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       webpack: 5.101.3
@@ -10423,49 +10454,49 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  cssnano-preset-default@7.0.10(postcss@8.5.6):
+  cssnano-preset-default@7.0.10(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      css-declaration-sorter: 7.2.0(postcss@8.5.6)
-      cssnano-utils: 5.0.1(postcss@8.5.6)
-      postcss: 8.5.6
-      postcss-calc: 10.1.1(postcss@8.5.6)
-      postcss-colormin: 7.0.5(postcss@8.5.6)
-      postcss-convert-values: 7.0.8(postcss@8.5.6)
-      postcss-discard-comments: 7.0.5(postcss@8.5.6)
-      postcss-discard-duplicates: 7.0.2(postcss@8.5.6)
-      postcss-discard-empty: 7.0.1(postcss@8.5.6)
-      postcss-discard-overridden: 7.0.1(postcss@8.5.6)
-      postcss-merge-longhand: 7.0.5(postcss@8.5.6)
-      postcss-merge-rules: 7.0.7(postcss@8.5.6)
-      postcss-minify-font-values: 7.0.1(postcss@8.5.6)
-      postcss-minify-gradients: 7.0.1(postcss@8.5.6)
-      postcss-minify-params: 7.0.5(postcss@8.5.6)
-      postcss-minify-selectors: 7.0.5(postcss@8.5.6)
-      postcss-normalize-charset: 7.0.1(postcss@8.5.6)
-      postcss-normalize-display-values: 7.0.1(postcss@8.5.6)
-      postcss-normalize-positions: 7.0.1(postcss@8.5.6)
-      postcss-normalize-repeat-style: 7.0.1(postcss@8.5.6)
-      postcss-normalize-string: 7.0.1(postcss@8.5.6)
-      postcss-normalize-timing-functions: 7.0.1(postcss@8.5.6)
-      postcss-normalize-unicode: 7.0.5(postcss@8.5.6)
-      postcss-normalize-url: 7.0.1(postcss@8.5.6)
-      postcss-normalize-whitespace: 7.0.1(postcss@8.5.6)
-      postcss-ordered-values: 7.0.2(postcss@8.5.6)
-      postcss-reduce-initial: 7.0.5(postcss@8.5.6)
-      postcss-reduce-transforms: 7.0.1(postcss@8.5.6)
-      postcss-svgo: 7.1.0(postcss@8.5.6)
-      postcss-unique-selectors: 7.0.4(postcss@8.5.6)
+      css-declaration-sorter: 7.2.0(postcss@8.5.8)
+      cssnano-utils: 5.0.1(postcss@8.5.8)
+      postcss: 8.5.8
+      postcss-calc: 10.1.1(postcss@8.5.8)
+      postcss-colormin: 7.0.5(postcss@8.5.8)
+      postcss-convert-values: 7.0.8(postcss@8.5.8)
+      postcss-discard-comments: 7.0.5(postcss@8.5.8)
+      postcss-discard-duplicates: 7.0.2(postcss@8.5.8)
+      postcss-discard-empty: 7.0.1(postcss@8.5.8)
+      postcss-discard-overridden: 7.0.1(postcss@8.5.8)
+      postcss-merge-longhand: 7.0.5(postcss@8.5.8)
+      postcss-merge-rules: 7.0.7(postcss@8.5.8)
+      postcss-minify-font-values: 7.0.1(postcss@8.5.8)
+      postcss-minify-gradients: 7.0.1(postcss@8.5.8)
+      postcss-minify-params: 7.0.5(postcss@8.5.8)
+      postcss-minify-selectors: 7.0.5(postcss@8.5.8)
+      postcss-normalize-charset: 7.0.1(postcss@8.5.8)
+      postcss-normalize-display-values: 7.0.1(postcss@8.5.8)
+      postcss-normalize-positions: 7.0.1(postcss@8.5.8)
+      postcss-normalize-repeat-style: 7.0.1(postcss@8.5.8)
+      postcss-normalize-string: 7.0.1(postcss@8.5.8)
+      postcss-normalize-timing-functions: 7.0.1(postcss@8.5.8)
+      postcss-normalize-unicode: 7.0.5(postcss@8.5.8)
+      postcss-normalize-url: 7.0.1(postcss@8.5.8)
+      postcss-normalize-whitespace: 7.0.1(postcss@8.5.8)
+      postcss-ordered-values: 7.0.2(postcss@8.5.8)
+      postcss-reduce-initial: 7.0.5(postcss@8.5.8)
+      postcss-reduce-transforms: 7.0.1(postcss@8.5.8)
+      postcss-svgo: 7.1.0(postcss@8.5.8)
+      postcss-unique-selectors: 7.0.4(postcss@8.5.8)
 
-  cssnano-utils@5.0.1(postcss@8.5.6):
+  cssnano-utils@5.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  cssnano@7.1.2(postcss@8.5.6):
+  cssnano@7.1.2(postcss@8.5.8):
     dependencies:
-      cssnano-preset-default: 7.0.10(postcss@8.5.6)
+      cssnano-preset-default: 7.0.10(postcss@8.5.8)
       lilconfig: 3.1.3
-      postcss: 8.5.6
+      postcss: 8.5.8
 
   csso@5.0.5:
     dependencies:
@@ -12204,166 +12235,166 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-calc@10.1.1(postcss@8.5.6):
+  postcss-calc@10.1.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
       postcss-value-parser: 4.2.0
 
-  postcss-colormin@7.0.5(postcss@8.5.6):
+  postcss-colormin@7.0.5(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
       caniuse-api: 3.0.0
       colord: 2.9.3
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-convert-values@7.0.8(postcss@8.5.6):
+  postcss-convert-values@7.0.8(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-discard-comments@7.0.5(postcss@8.5.6):
+  postcss-discard-comments@7.0.5(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
 
-  postcss-discard-duplicates@7.0.2(postcss@8.5.6):
+  postcss-discard-duplicates@7.0.2(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-discard-empty@7.0.1(postcss@8.5.6):
+  postcss-discard-empty@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-discard-overridden@7.0.1(postcss@8.5.6):
+  postcss-discard-overridden@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-import@15.1.0(postcss@8.5.6):
+  postcss-import@15.1.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.10
 
-  postcss-js@4.0.1(postcss@8.5.6):
+  postcss-js@4.0.1(postcss@8.5.8):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-load-config@4.0.2(postcss@8.5.6):
+  postcss-load-config@4.0.2(postcss@8.5.8):
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.8.1
     optionalDependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-merge-longhand@7.0.5(postcss@8.5.6):
+  postcss-merge-longhand@7.0.5(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
-      stylehacks: 7.0.7(postcss@8.5.6)
+      stylehacks: 7.0.7(postcss@8.5.8)
 
-  postcss-merge-rules@7.0.7(postcss@8.5.6):
+  postcss-merge-rules@7.0.7(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
       caniuse-api: 3.0.0
-      cssnano-utils: 5.0.1(postcss@8.5.6)
-      postcss: 8.5.6
+      cssnano-utils: 5.0.1(postcss@8.5.8)
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
 
-  postcss-minify-font-values@7.0.1(postcss@8.5.6):
+  postcss-minify-font-values@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-minify-gradients@7.0.1(postcss@8.5.6):
+  postcss-minify-gradients@7.0.1(postcss@8.5.8):
     dependencies:
       colord: 2.9.3
-      cssnano-utils: 5.0.1(postcss@8.5.6)
-      postcss: 8.5.6
+      cssnano-utils: 5.0.1(postcss@8.5.8)
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-minify-params@7.0.5(postcss@8.5.6):
+  postcss-minify-params@7.0.5(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      cssnano-utils: 5.0.1(postcss@8.5.6)
-      postcss: 8.5.6
+      cssnano-utils: 5.0.1(postcss@8.5.8)
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-minify-selectors@7.0.5(postcss@8.5.6):
+  postcss-minify-selectors@7.0.5(postcss@8.5.8):
     dependencies:
       cssesc: 3.0.0
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
 
-  postcss-nested@6.2.0(postcss@8.5.6):
+  postcss-nested@6.2.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 6.1.2
 
-  postcss-normalize-charset@7.0.1(postcss@8.5.6):
+  postcss-normalize-charset@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-normalize-display-values@7.0.1(postcss@8.5.6):
+  postcss-normalize-display-values@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-positions@7.0.1(postcss@8.5.6):
+  postcss-normalize-positions@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-repeat-style@7.0.1(postcss@8.5.6):
+  postcss-normalize-repeat-style@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-string@7.0.1(postcss@8.5.6):
+  postcss-normalize-string@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-timing-functions@7.0.1(postcss@8.5.6):
+  postcss-normalize-timing-functions@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-unicode@7.0.5(postcss@8.5.6):
+  postcss-normalize-unicode@7.0.5(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-url@7.0.1(postcss@8.5.6):
+  postcss-normalize-url@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-normalize-whitespace@7.0.1(postcss@8.5.6):
+  postcss-normalize-whitespace@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-ordered-values@7.0.2(postcss@8.5.6):
+  postcss-ordered-values@7.0.2(postcss@8.5.8):
     dependencies:
-      cssnano-utils: 5.0.1(postcss@8.5.6)
-      postcss: 8.5.6
+      cssnano-utils: 5.0.1(postcss@8.5.8)
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
-  postcss-reduce-initial@7.0.5(postcss@8.5.6):
+  postcss-reduce-initial@7.0.5(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
       caniuse-api: 3.0.0
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-reduce-transforms@7.0.1(postcss@8.5.6):
+  postcss-reduce-transforms@7.0.1(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
 
   postcss-selector-parser@6.1.2:
@@ -12376,20 +12407,20 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-svgo@7.1.0(postcss@8.5.6):
+  postcss-svgo@7.1.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
       svgo: 4.0.1
 
-  postcss-unique-selectors@7.0.4(postcss@8.5.6):
+  postcss-unique-selectors@7.0.4(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.6:
+  postcss@8.5.8:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -12633,10 +12664,10 @@ snapshots:
       next-path: 1.0.0
       path-temp: 2.0.0
 
-  rsbuild-plugin-dts@0.19.6(@rsbuild/core@1.7.3)(typescript@5.9.3):
+  rsbuild-plugin-dts@0.19.6(@rsbuild/core@1.7.4)(typescript@5.9.3):
     dependencies:
       '@ast-grep/napi': 0.37.0
-      '@rsbuild/core': 1.7.3
+      '@rsbuild/core': 1.7.4
     optionalDependencies:
       typescript: 5.9.3
 
@@ -13209,10 +13240,10 @@ snapshots:
 
   strip-indent@4.1.0: {}
 
-  stylehacks@7.0.7(postcss@8.5.6):
+  stylehacks@7.0.7(postcss@8.5.8):
     dependencies:
       browserslist: 4.28.1
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 7.1.1
 
   stylis@4.3.6: {}
@@ -13274,11 +13305,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.6
-      postcss-import: 15.1.0(postcss@8.5.6)
-      postcss-js: 4.0.1(postcss@8.5.6)
-      postcss-load-config: 4.0.2(postcss@8.5.6)
-      postcss-nested: 6.2.0(postcss@8.5.6)
+      postcss: 8.5.8
+      postcss-import: 15.1.0(postcss@8.5.8)
+      postcss-js: 4.0.1(postcss@8.5.8)
+      postcss-load-config: 4.0.2(postcss@8.5.8)
+      postcss-nested: 6.2.0(postcss@8.5.8)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.10
       sucrase: 3.35.0
@@ -13377,7 +13408,7 @@ snapshots:
     dependencies:
       utf8-byte-length: 1.0.5
 
-  ts-checker-rspack-plugin@1.3.0(@rspack/core@1.7.7(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3):
+  ts-checker-rspack-plugin@1.3.0(@rspack/core@1.7.10(@swc/helpers@0.5.19))(tslib@2.8.1)(typescript@5.9.3):
     dependencies:
       '@rspack/lite-tapable': 1.1.0
       chokidar: 3.6.0
@@ -13385,7 +13416,7 @@ snapshots:
       picocolors: 1.1.1
       typescript: 5.9.3
     optionalDependencies:
-      '@rspack/core': 1.7.7(@swc/helpers@0.5.19)
+      '@rspack/core': 1.7.10(@swc/helpers@0.5.19)
     transitivePeerDependencies:
       - tslib
 
