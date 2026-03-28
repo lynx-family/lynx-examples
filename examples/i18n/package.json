@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:",
-    "i18next": "^23.16.8"
+    "i18next": "^26.0.1"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
