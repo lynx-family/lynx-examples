@@ -1,0 +1,7 @@
+# @lynx-example/7guis
+
+## 0.2.0
+
+### Minor Changes
+
+- 80a5c50: Add 7GUIs benchmark suite ported to ReactLynx
