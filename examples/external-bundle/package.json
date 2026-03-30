@@ -27,10 +27,10 @@
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
-    "@lynx-js/external-bundle-rsbuild-plugin": "0.0.4",
-    "@lynx-js/lynx-bundle-rslib-config": "0.2.3",
+    "@lynx-js/external-bundle-rsbuild-plugin": "catalog:",
+    "@lynx-js/lynx-bundle-rslib-config": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
-    "@lynx-js/react-umd": "0.117.0",
+    "@lynx-js/react-umd": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@rslib/core": "0.19.6",

@@ -35,13 +35,6 @@
       "@biomejs/biome",
       "dprint"
     ],
-    "overrides": {
-      "@lynx-js/types": "catalog:",
-      "@lynx-js/external-bundle-rsbuild-plugin": "file:examples/external-bundle/vendor/lynx-js-external-bundle-rsbuild-plugin-0.0.4.tgz",
-      "@lynx-js/externals-loading-webpack-plugin": "file:examples/external-bundle/vendor/lynx-js-externals-loading-webpack-plugin-0.0.5.tgz",
-      "@lynx-js/lynx-bundle-rslib-config": "file:examples/external-bundle/vendor/lynx-js-lynx-bundle-rslib-config-0.2.3.tgz",
-      "@lynx-js/react-umd": "file:examples/external-bundle/vendor/lynx-js-react-umd-0.117.0.tgz"
-    },
     "ignoredBuiltDependencies": [
       "core-js"
     ]
