@@ -58,6 +58,8 @@ export function useElementFrame(): UseElementFrameReturnValue {
     currentTarget
       ?.invoke({
         method: "boundingClientRect",
+        // TODO: We currently use screen coordinates to align pointer clientX/clientY with boundingClientRect; this is not the original web clientX/clientY semantics. Revisit and standardize the coordinate system.
+        params: { relativeTo: "screen" },
         success: (res: { left: number; top: number; width: number; height: number }) => {
           leftRef.current = res.left;
           topRef.current = res.top;
