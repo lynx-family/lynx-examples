@@ -1,0 +1,18 @@
+.scroll-view {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  height: 100vh;
+}
+
+.chunk-item {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+  text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
