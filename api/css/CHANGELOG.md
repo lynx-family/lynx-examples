@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.8.0
+
+### Minor Changes
+
+- 579f297: Add background-clip: border-area showcase
+
 ## 0.7.1
 
 ### Patch Changes
