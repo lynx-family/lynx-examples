@@ -25,10 +25,10 @@
     "@lynx-js/solid": "workspace:*",
     "@lynx-js/template-webpack-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
-    "@rspack/cli": "^1.7.7",
-    "@rspack/core": "^1.7.7",
-    "babel-loader": "^10.0.0",
-    "babel-preset-solid": "^1.9.10"
+    "@rspack/cli": "^1.7.11",
+    "@rspack/core": "^1.7.11",
+    "babel-loader": "^10.1.1",
+    "babel-preset-solid": "^1.9.12"
   },
   "engines": {
     "node": ">=18"
