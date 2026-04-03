@@ -22,6 +22,7 @@ This repository is intended to showcase examples of Lynx.
   - [`frame`]: An example shows how to use frame
   - [`page`]: An example shows how to use page in Lynx
   - [`refresh`]: An example shows how to use `<refresh>` in Lynx
+  - [`viewpager`]: An example shows how to use `<viewpager>` in Lynx
   - [`title-bar-view`]: An example shows how to use `<title-bar-view>` in Lynx
   - [`native-element`]: An example about using native element in Lynx
 - XElement
@@ -101,6 +102,7 @@ This repository is intended to showcase examples of Lynx.
 [`tutorial-bankcards`]: ./examples/BankCards
 [`composing-elements`]: ./examples/composing-elements
 [`view`]: ./examples/view
+[`viewpager`]: ./examples/viewpager
 [`basic-usage`]: ./examples/web-platform
 [`with-solidjs`]: ./examples/with-solidjs
 [`zustand`]: ./examples/zustand
