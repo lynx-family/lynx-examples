@@ -1,7 +1,18 @@
 {
   "name": "@lynx-example/design-guide",
   "version": "0.4.2",
-  "description": "An example demonstrating design with Lynx capabilities.",
+  "description": "An example demonstrating design with Lynx capabilities",
+  "keywords": [
+    "lynx",
+    "lynx-js",
+    "example",
+    "design",
+    "design-engineering",
+    "design-guide",
+    "ui",
+    "animation",
+    "effects"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
@@ -13,6 +24,8 @@
   "files": [
     "dist/",
     "src/",
+    "LICENSE",
+    "CHANGELOG.md",
     "lynx.config.mjs"
   ],
   "scripts": {
