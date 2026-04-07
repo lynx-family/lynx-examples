@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/7guis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "description": "7 GUIs benchmark — Counter, Temperature Converter, Flight Booker, Timer, CRUD, Circle Drawer, Cells",
   "repository": {
