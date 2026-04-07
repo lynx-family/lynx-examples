@@ -35,6 +35,7 @@ export function App() {
     >
       <input
         type="text"
+        // @ts-expect-error @lynx-js/types InputProps misses value
         value={celsius}
         style={{
           width: "100px",
@@ -50,6 +51,7 @@ export function App() {
       <text style={{ fontSize: "16px" }}>Celsius =</text>
       <input
         type="text"
+        // @ts-expect-error @lynx-js/types InputProps misses value
         value={fahrenheit}
         style={{
           width: "100px",
