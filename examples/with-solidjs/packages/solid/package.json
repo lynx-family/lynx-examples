@@ -2,6 +2,11 @@
   "name": "@lynx-js/solid",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/with-solidjs/packages/solid"
+  },
   "author": "Lynx Authors",
   "type": "module",
   "module": "./src/index.ts",

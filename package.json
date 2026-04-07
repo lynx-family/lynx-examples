@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "description": "The examples for Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git"
+  },
   "license": "Apache-2.0",
   "author": "Lynx Authors",
   "scripts": {

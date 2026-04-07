@@ -12,6 +12,9 @@
       ],
       "outputs": [
         "dist"
+      ],
+      "passThroughEnv": [
+        "NODE_OPTIONS"
       ]
     }
   }
