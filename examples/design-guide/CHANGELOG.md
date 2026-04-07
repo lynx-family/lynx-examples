@@ -1,5 +1,12 @@
 # @lynx-example/design-guide
 
+## 0.4.3
+
+### Patch Changes
+
+- 2a5a904: Fix `force_field` example pointer coord drift when NavBar present by aligning clientX/clientY with screen-based boundingClientRect coords (not original web semantics).
+- c0fce3a: Add README and update package keywords, include LICENSE/CHANGELOG.md.
+
 ## 0.4.2
 
 ### Patch Changes
