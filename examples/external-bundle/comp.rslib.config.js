@@ -12,26 +12,11 @@ export default defineExternalBundleRslibConfig({
     pluginReactLynx(),
   ],
   output: {
-    cleanDistPath: false,
-    dataUriLimit: Number.POSITIVE_INFINITY,
-    externals: {
-      "@lynx-js/react": ["ReactLynx", "React"],
-      "@lynx-js/react/internal": ["ReactLynx", "ReactInternal"],
-      "@lynx-js/react/experimental/lazy/import": [
-        "ReactLynx",
-        "ReactLazyImport",
-      ],
-      "@lynx-js/react/legacy-react-runtime": [
-        "ReactLynx",
-        "ReactLegacyRuntime",
-      ],
-      "@lynx-js/react/runtime-components": ["ReactLynx", "ReactComponents"],
-      "@lynx-js/react/worklet-runtime/bindings": [
-        "ReactLynx",
-        "ReactWorkletRuntime",
-      ],
-      "@lynx-js/react/debug": ["ReactLynx", "ReactDebug"],
-      "preact": ["ReactLynx", "Preact"],
+    distPath: {
+      root: "dist-external-bundle",
+    },
+    externalsPresets: {
+      reactlynx: true,
     },
   },
 });

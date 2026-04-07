@@ -20,7 +20,6 @@
     "build:bundle": "pnpm run --stream '/^build:bundle:.*/'",
     "build:bundle:comp": "rslib build --config comp.rslib.config.js",
     "build:bundle:lodash": "rslib build --config lodash.rslib.config.js",
-    "build:bundle:react": "rslib build --config react.rslib.config.js",
     "dev": "pnpm build:bundle && rspeedy dev",
     "preview": "rspeedy preview"
   },
@@ -32,6 +31,7 @@
     "@lynx-js/lynx-bundle-rslib-config": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-umd": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@rslib/core": "0.19.6",
     "@types/react": "^18.3.28",

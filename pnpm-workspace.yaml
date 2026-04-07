@@ -5,8 +5,9 @@ packages:
   - examples/with-solidjs/packages/*
 
 catalog:
-  "@lynx-js/external-bundle-rsbuild-plugin": "0.0.4"
-  "@lynx-js/lynx-bundle-rslib-config": "0.2.3"
+  "@lynx-js/external-bundle-rsbuild-plugin": "0.1.0"
+  "@lynx-js/lynx-bundle-rslib-config": "0.3.0"
+  "@lynx-js/react-umd": "0.117.1"
   "@lynx-js/qrcode-rsbuild-plugin": "0.4.6"
   "@lynx-js/react-use": "0.2.0"
   "@lynx-js/react": "0.117.0"
