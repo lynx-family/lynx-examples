@@ -1,6 +1,7 @@
 import { root, useState } from "@lynx-js/react";
 import _ from "lodash-es";
 import { Button } from "./components";
+import "./index.css";
 
 function App() {
   const [count, setCount] = useState(0);
