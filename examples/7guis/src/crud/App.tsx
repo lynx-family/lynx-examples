@@ -62,6 +62,7 @@ export function App() {
         <text style={{ fontSize: "12px", color: "#666" }}>Filter prefix:</text>
         <input
           type="text"
+          // @ts-expect-error @lynx-js/types InputProps misses value
           value={prefix}
           placeholder="Filter prefix"
           style={{
@@ -119,6 +120,7 @@ export function App() {
           <text style={{ fontSize: "14px", width: "80px" }}>Name:</text>
           <input
             type="text"
+            // @ts-expect-error @lynx-js/types InputProps misses value
             value={first}
             style={{
               flex: 1,
@@ -143,6 +145,7 @@ export function App() {
           <text style={{ fontSize: "14px", width: "80px" }}>Surname:</text>
           <input
             type="text"
+            // @ts-expect-error @lynx-js/types InputProps misses value
             value={last}
             style={{
               flex: 1,

@@ -54,6 +54,7 @@ export function App() {
         </text>
         <input
           type="text"
+          // @ts-expect-error @lynx-js/types InputProps misses value
           value={departureDate}
           style={{
             height: "36px",
@@ -74,6 +75,7 @@ export function App() {
         </text>
         <input
           type="text"
+          // @ts-expect-error @lynx-js/types InputProps misses value
           value={returnDate}
           style={{
             height: "36px",

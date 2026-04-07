@@ -141,6 +141,7 @@ export function App() {
                 ? (
                   <input
                     type="text"
+                    // @ts-expect-error @lynx-js/types InputProps misses value
                     value={editValue}
                     style={{
                       height: "28px",
