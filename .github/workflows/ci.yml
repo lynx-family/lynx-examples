@@ -37,5 +37,5 @@ jobs:
       - name: Build
         env:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
-          NODE_OPTIONS: --max-old-space-size=4096
+          NODE_OPTIONS: --max-old-space-size=8192
         run: pnpm turbo run build --affected
