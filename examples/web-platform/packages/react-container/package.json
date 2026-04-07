@@ -2,6 +2,11 @@
   "name": "@lynx-example/react-container",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/web-platform/packages/react-container"
+  },
   "author": "Lynx Authors",
   "scripts": {
     "build": "rsbuild build",

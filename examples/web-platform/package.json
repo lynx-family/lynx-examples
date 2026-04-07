@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "description": "An example shows how to use Lynx Web Platform",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/web-platform"
+  },
   "license": "Apache-2.0",
   "author": "Lynx Authors",
   "scripts": {

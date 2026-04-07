@@ -2,6 +2,11 @@
   "name": "@lynx-example/lynx-project",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/web-platform/packages/lynx-project"
+  },
   "author": "Lynx Authors",
   "type": "module",
   "scripts": {
