@@ -15,7 +15,6 @@ export default defineExternalBundleRslibConfig({
     distPath: {
       root: "dist-external-bundle",
     },
-    dataUriLimit: Number.POSITIVE_INFINITY,
     externalsPresets: {
       reactlynx: true,
     },
