@@ -6,6 +6,7 @@ import { pluginExternalBundle } from "@lynx-js/external-bundle-rsbuild-plugin";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
+import pkg from "./package.json" with { type: "json" };
 
 export default defineConfig({
   source: {
@@ -15,7 +16,7 @@ export default defineConfig({
   },
   output: {
     filename: "[name].[platform].bundle",
-    assetPrefix: "https://unpkg.com/@lynx-example/external-bundle@latest/dist",
+    assetPrefix: `https://unpkg.com/@lynx-example/external-bundle@${pkg.version}/dist`,
   },
   plugins: [
     pluginReactLynx(),
