@@ -5,4 +5,7 @@
  * This is a limitation of Lynx engine
  * we can remove this limitation in the future
  */
-.dummy {}
+.dummy {
+  /* Add a rule to avoid being shaken away by css minimizer */
+  color: red;
+}
