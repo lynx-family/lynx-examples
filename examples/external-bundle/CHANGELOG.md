@@ -1,5 +1,11 @@
 # @lynx-example/external-bundle
 
+## 0.0.4
+
+### Patch Changes
+
+- b3affe3: Add css rule to dummy class to avoid being shaken away by css minimizer.
+
 ## 0.0.3
 
 ### Patch Changes
