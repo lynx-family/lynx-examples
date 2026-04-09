@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/scroll-coordinator",
-  "version": "0.6.12",
+  "version": "0.6.13",
   "description": "An example shows how to use `<scroll-coordinator>` in Lynx",
   "repository": {
     "type": "git",

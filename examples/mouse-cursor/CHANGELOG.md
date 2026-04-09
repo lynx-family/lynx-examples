@@ -1,15 +1,9 @@
-# @lynx-example/svg
+# @lynx-example/mouse-cursor
 
-## 0.6.9
+## 0.1.0
 
-### Patch Changes
+### Minor Changes
 
 - cff0b4c: Add a mouse cursor interaction example that keeps only the Lynx UI part of the
   `pc-mouse-cursor` desktop showcase, add a CSS cursor API demo entry, and
   refresh the SVG example with a single card-style logo preview.
-
-## 0.6.8
-
-### Patch Changes
-
-- c3a342f: Initial release
