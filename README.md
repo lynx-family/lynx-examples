@@ -50,6 +50,7 @@ This repository is intended to showcase examples of Lynx.
   - [`basic-usage`]: An example shows how to use Lynx Web Platform
 - UI Components
   - [`action-sheet`]: An example shows how to make an ActionSheet
+  - [`mouse-cursor`]: An example shows drag, hover, and cursor states with Lynx UI
   - [`swiper`]: An example shows how to use main thread script for interaction
 - A11y
   - [`accessibility`]: An example shows how to make App accessibility
@@ -84,6 +85,7 @@ This repository is intended to showcase examples of Lynx.
 [`local-storage`]: ./examples/local-storage
 [`lynx-api`]: ./examples/lynx-api
 [`main-thread`]: ./examples/main-thread
+[`mouse-cursor`]: ./examples/mouse-cursor
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking
 [`overlay`]: ./examples/overlay

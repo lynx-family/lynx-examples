@@ -1,0 +1,207 @@
+.Page {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 18% 14%,
+      rgba(14, 165, 233, 0.24),
+      transparent 24%
+    ),
+    radial-gradient(
+    circle at 84% 20%,
+    rgba(244, 114, 182, 0.16),
+    transparent 22%
+  ),
+    linear-gradient(180deg, #030712 0%, #08111f 54%, #0f172a 100%);
+}
+
+.PageBackdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.PageOrb {
+  position: absolute;
+  background: radial-gradient(
+    71.43% 62.3% at 46.43% 36.43%,
+    rgba(18, 229, 229, 0) 15%,
+    rgba(239, 155, 255, 0.3) 56.35%,
+    #ff6448 100%
+  );
+  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
+  border-radius: 50%;
+  width: 150vh;
+  height: 150vh;
+  top: -30vh;
+  left: 44.27vw;
+  transform: rotate(15.25deg);
+}
+
+.BackdropGlow {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.BackdropGlow--a {
+  width: 182vw;
+  height: 182vw;
+  left: -54vw;
+  top: -84vw;
+  background: radial-gradient(
+    circle at 50% 42%,
+    rgba(56, 189, 248, 0.15),
+    rgba(56, 189, 248, 0) 58%
+  );
+  opacity: 0.92;
+}
+
+.BackdropGlow--b {
+  width: 128vw;
+  height: 128vw;
+  right: -34vw;
+  bottom: -74vw;
+  background: radial-gradient(
+    circle at 50% 45%,
+    rgba(244, 114, 182, 0.14),
+    rgba(244, 114, 182, 0) 62%
+  );
+  opacity: 0.82;
+}
+
+.BackdropGlow--accent {
+  left: 50%;
+  top: 4vh;
+  width: 88vw;
+  height: 62vw;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    71.43% 62.3% at 46.43% 36.43%,
+    rgba(18, 229, 229, 0) 15%,
+    rgba(239, 155, 255, 0.12) 56.35%,
+    rgba(255, 100, 72, 0.18) 100%
+  );
+  opacity: 0.28;
+  filter: blur(8px);
+}
+
+.Poster {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+  gap: 18px;
+  padding: 34px 0 28px;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Title {
+  color: #f8fafc;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.Stage {
+  position: relative;
+  align-self: center;
+  width: 980px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 34px;
+  background:
+    radial-gradient(
+      circle at 18% 30%,
+      rgba(125, 211, 252, 0.07),
+      transparent 36%
+    ),
+    radial-gradient(
+    circle at 84% 70%,
+    rgba(244, 114, 182, 0.05),
+    transparent 30%
+  ),
+    linear-gradient(
+    180deg,
+    rgba(6, 11, 23, 0.78) 0%,
+    rgba(10, 18, 32, 0.84) 100%
+  );
+  box-shadow:
+    0 32px 84px rgba(2, 8, 23, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.DesktopFrame {
+  position: absolute;
+  left: 588px;
+  top: 58px;
+  width: 336px;
+  height: 238px;
+  border-radius: 28px;
+  overflow: hidden;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.DesktopFrame--hot {
+  transform: scale(1.01);
+  filter: brightness(1.08);
+}
+
+.DesktopFrame--occupied {
+  filter: brightness(1.04);
+}
+
+.DesktopFrameImage {
+  width: 100%;
+  height: 100%;
+}
+
+.LogoCard {
+  position: absolute;
+  left: 160px;
+  top: 94px;
+  width: 132px;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    left 220ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    top 220ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    transform 180ms ease,
+    filter 180ms ease;
+  cursor: grab;
+}
+
+.LogoCard--dragging {
+  transition: none;
+  transform: scale(1.04) rotate(-1.5deg);
+  cursor: grabbing;
+  filter: drop-shadow(0 14px 32px rgba(2, 8, 23, 0.28));
+}
+
+.LogoCard--docked {
+  transform: scale(0.98);
+  filter: drop-shadow(0 12px 24px rgba(14, 165, 233, 0.2));
+}
+
+.LogoImage {
+  width: 100px;
+  height: 100px;
+}

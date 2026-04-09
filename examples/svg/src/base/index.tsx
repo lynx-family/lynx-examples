@@ -2,63 +2,37 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import { root, useState } from "@lynx-js/react";
+import { root } from "@lynx-js/react";
+
+const logoContent = `<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="panelFill" x1="28" y1="28" x2="292" y2="292" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#26292D" stop-opacity="0.72"/>
+    <stop offset="55%" stop-color="#4B4F56" stop-opacity="0.62"/>
+    <stop offset="100%" stop-color="#8B9098" stop-opacity="0.52"/>
+  </linearGradient>
+</defs>
+<rect x="28" y="28" width="264" height="264" rx="40" fill="url(#panelFill)"/>
+<rect x="28.5" y="28.5" width="263" height="263" rx="39.5" stroke="#FFFFFF" stroke-opacity="0.08"/>
+<g transform="translate(100 100) scale(6)" opacity="0.98">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.19683 4.42475L2.58326 6.22507C2.29923 6.42072 2.10258 6.71472 2.0335 7.04698L1.77798 8.27604C1.76443 8.34121 1.73438 8.40204 1.69058 8.45301L0.504615 10.0077C0.344941 10.1935 0.348791 10.6871 0.786137 11.0031C0.953848 11.1493 1.17807 11.477 1.43312 11.8497L1.43312 11.8497C1.97313 12.639 2.65131 13.6302 3.22376 13.5272C4.03382 13.2426 5.02541 13.1516 5.78673 13.5272C7.2667 14.8049 6.90331 15.983 6.38234 17.672C6.17271 18.3516 5.93755 19.114 5.78673 19.9988C6.49755 17.4117 8.09592 14.4069 10.9781 13.3874C10.4588 12.9632 9.39906 12.5691 8.46129 12.4742C8.46129 12.4742 11.3423 10.0077 14.8957 8.87434C12.4151 2.97197 8.32052 0.151295 8.32052 0.151295C8.11187 -0.10677 7.69054 -0.0221092 7.6036 0.295351C7.53376 1.22845 7.41798 1.86295 7.22685 2.46105L5.78673 0.799291C5.6363 0.61794 5.33557 0.722655 5.33707 0.955861C5.5809 2.31136 5.54668 3.07222 5.19683 4.42475ZM6.21052 4.30085L6.21912 4.3003C6.23794 4.29909 6.25646 4.29664 6.27456 4.29302L6.21052 4.30085ZM8.15541 1.25793C9.1423 2.96321 9.58937 3.932 9.74102 5.73998C8.6912 5.14364 8.23382 4.99187 7.46183 4.99565C7.91215 3.62621 8.04976 2.8016 8.15541 1.25793Z" fill="white"/>
+  <path d="M14.4988 13.9228C10.479 14.8427 8.19556 16.2278 6.44922 19.9994C9.58406 14.7399 19.0737 15.6805 19.0737 15.6805C18.8964 14.8214 17.0097 13.183 15.7688 12.1782C15.7688 12.1782 16.7699 10.9474 18.983 10.3244C18.983 10.3244 14.728 10.5709 12.2508 11.9084C13.0533 12.3319 14.0812 13.0467 14.4988 13.9228Z" fill="white"/>
+</g>
+</svg>`;
 
 const App = () => {
-  const [visible, setVisible] = useState(true);
-
   return (
     <view
       style={{
         width: "100%",
         height: "100%",
-        flexDirection: "column",
-        backgroundColor: "white",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#0f0f10",
+        padding: "32px",
       }}
     >
-      <svg
-        content={`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-<rect x="10" y="20" width="50" height="50" fill="#ccff66" stroke="#ff0000"/>
-<rect x="10" y="30" width="50" height="50" fill="none"/>
-<circle cx="50" cy="50" r="20" fill="#ff000088" stroke-width="10" stroke="#00ff0088" />
-<line x1="0" x2="0" y1="0" y2="100" stroke="black"/>
-</svg>`}
-        style={{ width: "374px", height: "125px", marginTop: "50px" }}
-      />
-      <svg
-        content={`<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
-  <polyline points="0,0 50,150 100,75 150,50 200,140 250,140"
-  stroke="green" stroke-width="3" />
-  <polygon points="200,10 250,190 150,190" fill="blue" stroke="green" stroke-width="3" />
-</svg>`}
-        style={{ width: "374px", height: "125px", marginTop: "100px" }}
-      />
-      <svg
-        content={`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="myClip1" clipPathUnits="userSpaceOnUse">
-    <circle cx="50" cy="50" r="35" />
-  </clipPath>
-
-  <clipPath id="myClip2" clipPathUnits="objectBoundingBox">
-    <circle cx=".5" cy=".5" r=".35" />
-  </clipPath>
-
-  <!-- Some reference rect to materialized to clip path -->
-  <rect id="r1" x="0" y="0" width="45" height="45" fill="#000" />
-  <rect id="r2" x="0" y="55" width="45" height="45" fill="#000"/>
-  <rect id="r3" x="55" y="55" width="45" height="45" fill="#000"/>
-  <rect id="r4" x="55" y="0" width="45" height="45" fill="#000"/>
-
-  <!-- The first 3 rect are clipped with userSpaceOnUse units -->
-  <use clip-path="url(#myClip1)" href="#r1" fill="red" />
-  <use clip-path="url(#myClip1)" href="#r2" fill="red" />
-  <use clip-path="url(#myClip1)" href="#r3" fill="red" />
-
-  <!-- The last rect is clipped with objectBoundingBox units -->
-  <use clip-path="url(#myClip2)" href="#r4" fill="red" />
-</svg>`}
-        style={{ width: "374px", height: "125px", marginTop: "100px" }}
-      />
+      <svg content={logoContent} style={{ width: "320px", height: "320px" }} />
     </view>
   );
 };
