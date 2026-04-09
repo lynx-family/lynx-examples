@@ -22,6 +22,7 @@ This repository is intended to showcase examples of Lynx.
   - [`frame`]: An example shows how to use frame
   - [`page`]: An example shows how to use page in Lynx
   - [`refresh`]: An example shows how to use `<refresh>` in Lynx
+  - [`scroll-coordinator`]: An example shows how to use `<scroll-coordinator>` in Lynx
   - [`viewpager`]: An example shows how to use `<viewpager>` in Lynx
   - [`title-bar-view`]: An example shows how to use `<title-bar-view>` in Lynx
   - [`native-element`]: An example about using native element in Lynx
@@ -90,6 +91,7 @@ This repository is intended to showcase examples of Lynx.
 [`performance-apis`]: ./examples/performance-api
 [`react-lifecycle`]: ./examples/react-lifecycle
 [`refresh`]: ./examples/refresh
+[`scroll-coordinator`]: ./examples/scroll-coordinator
 [`scroll-view`]: ./examples/scroll-view
 [`svg`]: ./examples/svg
 [`swiper`]: ./examples/swiper
