@@ -5,11 +5,43 @@ type Point = { x: number; y: number };
 type Rect = { left: number; top: number; width: number; height: number };
 type TargetId = number | string | null;
 
+const STAGE_BASE = { width: 980, height: 320 };
 const LOGO_SIZE = { width: 132, height: 132 };
 const LOGO_HOME: Point = { x: 160, y: 94 };
+const STAGE_PADDING = { x: 24, y: 24 };
+const DOCK_OFFSET_Y = -15;
 
 function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, value));
+}
+
+function scaleX(value: number, stageRect: Rect) {
+  return value * stageRect.width / STAGE_BASE.width;
+}
+
+function scaleY(value: number, stageRect: Rect) {
+  return value * stageRect.height / STAGE_BASE.height;
+}
+
+function toRenderedPoint(point: Point, stageRect: Rect): Point {
+  return {
+    x: scaleX(point.x, stageRect),
+    y: scaleY(point.y, stageRect),
+  };
+}
+
+function toLogicalPoint(point: Point, stageRect: Rect): Point {
+  return {
+    x: point.x * STAGE_BASE.width / stageRect.width,
+    y: point.y * STAGE_BASE.height / stageRect.height,
+  };
+}
+
+function getLogoSize(stageRect: Rect) {
+  return {
+    width: scaleX(LOGO_SIZE.width, stageRect),
+    height: scaleY(LOGO_SIZE.height, stageRect),
+  };
 }
 
 function readTargetId(event: LayoutChangeEvent): TargetId {
@@ -65,18 +97,30 @@ function isInside(rect: Rect, point: Point) {
 }
 
 function getDraggedLogoPosition(point: Point, stageRect: Rect, dragOffset: Point) {
-  return {
-    x: clamp(point.x - dragOffset.x, 24, stageRect.width - LOGO_SIZE.width - 24),
-    y: clamp(point.y - dragOffset.y, 24, stageRect.height - LOGO_SIZE.height - 24),
+  const logoSize = getLogoSize(stageRect);
+  const renderedPosition = {
+    x: clamp(
+      point.x - dragOffset.x,
+      scaleX(STAGE_PADDING.x, stageRect),
+      stageRect.width - logoSize.width - scaleX(STAGE_PADDING.x, stageRect),
+    ),
+    y: clamp(
+      point.y - dragOffset.y,
+      scaleY(STAGE_PADDING.y, stageRect),
+      stageRect.height - logoSize.height - scaleY(STAGE_PADDING.y, stageRect),
+    ),
   };
+  return toLogicalPoint(renderedPosition, stageRect);
 }
 
-function getLogoRect(position: Point): Rect {
+function getLogoRect(position: Point, stageRect: Rect): Rect {
+  const renderedPosition = toRenderedPoint(position, stageRect);
+  const logoSize = getLogoSize(stageRect);
   return {
-    left: position.x,
-    top: position.y,
-    width: LOGO_SIZE.width,
-    height: LOGO_SIZE.height,
+    left: renderedPosition.x,
+    top: renderedPosition.y,
+    width: logoSize.width,
+    height: logoSize.height,
   };
 }
 
@@ -86,8 +130,8 @@ function getRectIntersectionArea(a: Rect, b: Rect) {
   return overlapWidth * overlapHeight;
 }
 
-function shouldDockLogo(position: Point, desktopRect: Rect) {
-  const logoRect = getLogoRect(position);
+function shouldDockLogo(position: Point, stageRect: Rect, desktopRect: Rect) {
+  const logoRect = getLogoRect(position, stageRect);
   const logoCenter = {
     x: logoRect.left + logoRect.width / 2,
     y: logoRect.top + logoRect.height / 2,
@@ -101,11 +145,12 @@ function shouldDockLogo(position: Point, desktopRect: Rect) {
   return overlapRatio >= 0.35;
 }
 
-function getDockedLogoPosition(desktopRect: Rect) {
-  return {
-    x: desktopRect.left + Math.round((desktopRect.width - LOGO_SIZE.width) / 2),
-    y: desktopRect.top + Math.round((desktopRect.height - LOGO_SIZE.height) / 2) - 15,
-  };
+function getDockedLogoPosition(desktopRect: Rect, stageRect: Rect) {
+  const logoSize = getLogoSize(stageRect);
+  return toLogicalPoint({
+    x: desktopRect.left + Math.round((desktopRect.width - logoSize.width) / 2),
+    y: desktopRect.top + Math.round((desktopRect.height - logoSize.height) / 2) + scaleY(DOCK_OFFSET_Y, stageRect),
+  }, stageRect);
 }
 
 export function useDesktopDrag() {
@@ -176,12 +221,13 @@ export function useDesktopDrag() {
     refreshMeasurements(() => {
       if (!stageRectRef.current) return;
       const point = toStagePoint(clientPoint, stageRectRef.current);
+      const renderedLogoPos = toRenderedPoint(logoPosRef.current, stageRectRef.current);
       dragActiveRef.current = true;
       setDragging(true);
       setDocked(false);
       dragOffsetRef.current = {
-        x: point.x - logoPosRef.current.x,
-        y: point.y - logoPosRef.current.y,
+        x: point.x - renderedLogoPos.x,
+        y: point.y - renderedLogoPos.y,
       };
       setDesktopHot(false);
     });
@@ -192,7 +238,7 @@ export function useDesktopDrag() {
     const point = toStagePoint(readClientPoint(event), stageRectRef.current);
     const next = getDraggedLogoPosition(point, stageRectRef.current, dragOffsetRef.current);
     setLogoPosition(next);
-    setDesktopHot(desktopRectRef.current ? shouldDockLogo(next, desktopRectRef.current) : false);
+    setDesktopHot(desktopRectRef.current ? shouldDockLogo(next, stageRectRef.current, desktopRectRef.current) : false);
   };
 
   const finishDrag = (event: MouseEvent) => {
@@ -200,10 +246,12 @@ export function useDesktopDrag() {
     dragActiveRef.current = false;
     const point = toStagePoint(readClientPoint(event), stageRectRef.current);
     const releasePos = getDraggedLogoPosition(point, stageRectRef.current, dragOffsetRef.current);
-    const willDock = desktopRectRef.current ? shouldDockLogo(releasePos, desktopRectRef.current) : false;
+    const willDock = desktopRectRef.current
+      ? shouldDockLogo(releasePos, stageRectRef.current, desktopRectRef.current)
+      : false;
 
     if (willDock && desktopRectRef.current) {
-      setLogoPosition(getDockedLogoPosition(desktopRectRef.current));
+      setLogoPosition(getDockedLogoPosition(desktopRectRef.current, stageRectRef.current));
       setDocked(true);
     } else {
       setLogoPosition(LOGO_HOME);
@@ -223,11 +271,19 @@ export function useDesktopDrag() {
     setDesktopHot(false);
   };
 
+  const logoCardStyle = {
+    left: `${logoPos.x / STAGE_BASE.width * 100}%`,
+    top: `${logoPos.y / STAGE_BASE.height * 100}%`,
+    width: `${LOGO_SIZE.width / STAGE_BASE.width * 100}%`,
+    height: `${LOGO_SIZE.height / STAGE_BASE.height * 100}%`,
+    cursor: dragging ? "grabbing" : "grab",
+  };
+
   return {
     desktopHot,
     docked,
     dragging,
-    logoPos,
+    logoCardStyle,
     cancelDrag,
     finishDrag,
     handleDesktopLayout,
