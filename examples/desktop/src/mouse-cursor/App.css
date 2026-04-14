@@ -1,11 +1,13 @@
 .Page {
   display: flex;
   flex: 1;
+  width: 100%;
   min-height: 100%;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
   background:
     radial-gradient(
       circle at 18% 14%,
@@ -97,9 +99,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 980px;
+  width: 100%;
+  max-width: 980px;
   gap: 18px;
-  padding: 34px 0 28px;
+  padding: 28px 0 24px;
 }
 
 .Header {
@@ -114,7 +117,7 @@
 
 .Title {
   color: #f8fafc;
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 800;
   line-height: 1;
 }
@@ -122,10 +125,10 @@
 .Stage {
   position: relative;
   align-self: center;
-  width: 980px;
-  height: 320px;
+  width: 100%;
+  aspect-ratio: 49 / 16;
   overflow: hidden;
-  border-radius: 34px;
+  border-radius: 3.469388%;
   background:
     radial-gradient(
       circle at 18% 30%,
@@ -149,11 +152,11 @@
 
 .DesktopFrame {
   position: absolute;
-  left: 588px;
-  top: 58px;
-  width: 336px;
-  height: 238px;
-  border-radius: 28px;
+  left: 60%;
+  top: 18.125%;
+  width: 34.285714%;
+  height: 74.375%;
+  border-radius: 8.333333%;
   overflow: hidden;
   transition: transform 180ms ease, filter 180ms ease;
 }
@@ -174,10 +177,6 @@
 
 .LogoCard {
   position: absolute;
-  left: 160px;
-  top: 94px;
-  width: 132px;
-  height: 132px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +201,7 @@
 }
 
 .LogoImage {
-  width: 100px;
-  height: 100px;
+  width: 75.757576%;
+  height: 75.757576%;
   pointer-events: none;
 }
