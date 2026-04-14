@@ -1,5 +1,13 @@
 # @lynx-example/css-api
 
+## 0.9.0
+
+### Minor Changes
+
+- 505c163: Move the `cursor` and `mouse-cursor` demos into a new desktop example package,
+  and align the `mouse-cursor` drag flow with W3C-style mouse events for
+  consistent Lynx and web behavior. Remove the old `cursor` entry from `css-api`.
+
 ## 0.8.1
 
 ### Patch Changes
