@@ -5,5 +5,6 @@ declare module "@lynx-js/types" {
     // FIXME: remove after upgrading to a published @lynx-js/types version
     // that includes bindmouseleave.
     bindmouseleave?: (event: MouseEvent) => void;
+    draggable?: boolean;
   }
 }

@@ -1,26 +1,15 @@
 import { useRef, useState } from "@lynx-js/react";
-import type { LayoutChangeEvent, TouchEvent } from "@lynx-js/types";
-import { useTouchEmulationCompat } from "./useTouchEmulationCompat";
+import type { LayoutChangeEvent, MouseEvent } from "@lynx-js/types";
 
 type Point = { x: number; y: number };
 type Rect = { left: number; top: number; width: number; height: number };
 type TargetId = number | string | null;
 
-const STAGE_FALLBACK: Rect = { left: 0, top: 0, width: 980, height: 320 };
 const LOGO_SIZE = { width: 132, height: 132 };
 const LOGO_HOME: Point = { x: 160, y: 94 };
 
 function clamp(value: number, min: number, max: number) {
   return Math.max(min, Math.min(max, value));
-}
-
-function readLayoutSize(event: LayoutChangeEvent): Pick<Rect, "width" | "height"> {
-  const detail = (event.detail ?? {}) as Partial<Rect> & { layout?: Partial<Rect> };
-  const layout = detail.layout ?? detail;
-  return {
-    width: typeof layout.width === "number" ? layout.width : 0,
-    height: typeof layout.height === "number" ? layout.height : 0,
-  };
 }
 
 function readTargetId(event: LayoutChangeEvent): TargetId {
@@ -30,7 +19,6 @@ function readTargetId(event: LayoutChangeEvent): TargetId {
 
 function queryRectById(id: TargetId, onSuccess?: (rect: Rect) => void) {
   if (id == null) {
-    onSuccess?.(STAGE_FALLBACK);
     return;
   }
 
@@ -42,29 +30,14 @@ function queryRectById(id: TargetId, onSuccess?: (rect: Rect) => void) {
   target
     ?.invoke({
       method: "boundingClientRect",
-      // Keep pointer coords and element rects in the same screen-based space on web.
-      params: { relativeTo: "screen" },
       success: (rect: Rect) => onSuccess?.(rect),
     })
     .exec();
 }
 
-function readScreenPoint(event: TouchEvent): Point {
-  const touch = event.touches?.[0] ?? event.changedTouches?.[0];
-  const x = typeof touch?.clientX === "number"
-    ? touch.clientX
-    : typeof touch?.pageX === "number"
-    ? touch.pageX
-    : typeof event.detail?.x === "number"
-    ? event.detail.x
-    : 0;
-  const y = typeof touch?.clientY === "number"
-    ? touch.clientY
-    : typeof touch?.pageY === "number"
-    ? touch.pageY
-    : typeof event.detail?.y === "number"
-    ? event.detail.y
-    : 0;
+function readClientPoint(event: MouseEvent): Point {
+  const x = event.clientX;
+  const y = event.clientY;
   return { x, y };
 }
 
@@ -140,9 +113,9 @@ export function useDesktopDrag() {
   const [dragging, setDragging] = useState(false);
   const [desktopHot, setDesktopHot] = useState(false);
   const [docked, setDocked] = useState(false);
-  const stageRectRef = useRef<Rect>(STAGE_FALLBACK);
+  const stageRectRef = useRef<Rect | null>(null);
   const desktopRectRef = useRef<Rect | null>(null);
-  const desktopScreenRectRef = useRef<Rect | null>(null);
+  const desktopClientRectRef = useRef<Rect | null>(null);
   const stageTargetIdRef = useRef<TargetId>(null);
   const desktopTargetIdRef = useRef<TargetId>(null);
   const logoPosRef = useRef<Point>(LOGO_HOME);
@@ -155,16 +128,16 @@ export function useDesktopDrag() {
   };
 
   const syncDesktopRect = () => {
-    if (!desktopScreenRectRef.current) return;
-    desktopRectRef.current = toStageRect(desktopScreenRectRef.current, stageRectRef.current);
+    if (!desktopClientRectRef.current || !stageRectRef.current) {
+      desktopRectRef.current = null;
+      return;
+    }
+    desktopRectRef.current = toStageRect(desktopClientRectRef.current, stageRectRef.current);
   };
 
   const refreshStageRect = (onRefreshed?: () => void) => {
     queryRectById(stageTargetIdRef.current, (rect) => {
-      stageRectRef.current = {
-        ...stageRectRef.current,
-        ...rect,
-      };
+      stageRectRef.current = rect;
       syncDesktopRect();
       onRefreshed?.();
     });
@@ -177,7 +150,7 @@ export function useDesktopDrag() {
     }
 
     queryRectById(desktopTargetIdRef.current, (rect) => {
-      desktopScreenRectRef.current = rect;
+      desktopClientRectRef.current = rect;
       syncDesktopRect();
       onRefreshed?.();
     });
@@ -188,12 +161,6 @@ export function useDesktopDrag() {
   };
 
   const handleStageLayout = (event: LayoutChangeEvent) => {
-    const layout = readLayoutSize(event);
-    stageRectRef.current = {
-      ...stageRectRef.current,
-      width: layout.width || stageRectRef.current.width,
-      height: layout.height || stageRectRef.current.height,
-    };
     stageTargetIdRef.current = readTargetId(event);
     refreshStageRect();
   };
@@ -203,11 +170,12 @@ export function useDesktopDrag() {
     refreshMeasurements();
   };
 
-  const handleLogoDown = (event: TouchEvent) => {
-    const screenPoint = readScreenPoint(event);
+  const handleLogoDown = (event: MouseEvent) => {
+    const clientPoint = readClientPoint(event);
 
     refreshMeasurements(() => {
-      const point = toStagePoint(screenPoint, stageRectRef.current);
+      if (!stageRectRef.current) return;
+      const point = toStagePoint(clientPoint, stageRectRef.current);
       dragActiveRef.current = true;
       setDragging(true);
       setDocked(false);
@@ -219,18 +187,18 @@ export function useDesktopDrag() {
     });
   };
 
-  const handleMove = (event: TouchEvent) => {
-    if (!dragActiveRef.current) return;
-    const point = toStagePoint(readScreenPoint(event), stageRectRef.current);
+  const handleMove = (event: MouseEvent) => {
+    if (!dragActiveRef.current || !stageRectRef.current) return;
+    const point = toStagePoint(readClientPoint(event), stageRectRef.current);
     const next = getDraggedLogoPosition(point, stageRectRef.current, dragOffsetRef.current);
     setLogoPosition(next);
     setDesktopHot(desktopRectRef.current ? shouldDockLogo(next, desktopRectRef.current) : false);
   };
 
-  const finishDrag = (event: TouchEvent) => {
-    if (!dragActiveRef.current) return;
+  const finishDrag = (event: MouseEvent) => {
+    if (!dragActiveRef.current || !stageRectRef.current) return;
     dragActiveRef.current = false;
-    const point = toStagePoint(readScreenPoint(event), stageRectRef.current);
+    const point = toStagePoint(readClientPoint(event), stageRectRef.current);
     const releasePos = getDraggedLogoPosition(point, stageRectRef.current, dragOffsetRef.current);
     const willDock = desktopRectRef.current ? shouldDockLogo(releasePos, desktopRectRef.current) : false;
 
@@ -255,25 +223,16 @@ export function useDesktopDrag() {
     setDesktopHot(false);
   };
 
-  const stagePointerBind = useTouchEmulationCompat({
-    onTouchMove: handleMove,
-    onTouchEnd: finishDrag,
-    onTouchCancel: cancelDrag,
-  });
-
-  const logoPointerBind = useTouchEmulationCompat({
-    onTouchStart: handleLogoDown,
-  });
-
   return {
-    stagePointerBind,
-    logoPointerBind,
     desktopHot,
     docked,
     dragging,
     logoPos,
     cancelDrag,
+    finishDrag,
     handleDesktopLayout,
+    handleLogoDown,
+    handleMove,
     handleStageLayout,
   };
 }

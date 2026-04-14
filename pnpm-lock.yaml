@@ -340,6 +340,9 @@ importers:
         specifier: 'catalog:'
         version: 0.117.0(@lynx-js/types@3.7.0)(@types/react@18.3.28)
     devDependencies:
+      '@lynx-js/config-rsbuild-plugin':
+        specifier: 0.0.1
+        version: 0.0.1(@lynx-js/rspeedy@0.13.6(@rspack/core@1.7.10(@swc/helpers@0.5.19))(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.4.6
