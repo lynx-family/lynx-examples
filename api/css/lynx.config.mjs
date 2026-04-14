@@ -77,7 +77,6 @@ export default defineConfig({
       "caret-color": "./src/caret-color/App.tsx",
       "color": "./src/color/App.tsx",
       "column-gap": "./src/column-gap/App.tsx",
-      "cursor": "./src/cursor/App.tsx",
       "direction": "./src/direction/App.tsx",
       "display": "./src/display/App.tsx",
       "filter": "./src/filter/App.tsx",
