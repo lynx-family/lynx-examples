@@ -32,6 +32,7 @@ export default defineConfig({
     pluginTypeCheck(),
   ],
   output: {
+    assetPrefix: "https://lynxjs.org/lynx-examples/desktop/dist",
     filename: "[name].[platform].bundle",
   },
   environments: {
