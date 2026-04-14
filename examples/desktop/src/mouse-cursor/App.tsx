@@ -5,15 +5,14 @@ import "./App.css";
 
 export function App() {
   const {
+    stagePointerBind,
+    logoPointerBind,
     desktopHot,
     docked,
     dragging,
     logoPos,
     cancelDrag,
-    finishDrag,
     handleDesktopLayout,
-    handleLogoDown,
-    handleMove,
     handleStageLayout,
   } = useDesktopDrag();
   const desktopFrameClassName = `DesktopFrame ${desktopHot ? "DesktopFrame--hot" : ""} ${
@@ -29,11 +28,7 @@ export function App() {
   return (
     <page
       className="Page"
-      bindmousemove={handleMove}
-      bindtouchmove={handleMove}
-      bindmouseup={finishDrag}
-      bindtouchend={finishDrag}
-      bindtouchcancel={cancelDrag}
+      {...stagePointerBind}
       bindmouseleave={cancelDrag}
     >
       <view className="PageBackdrop">
@@ -55,8 +50,7 @@ export function App() {
           <view
             className={logoCardClassName}
             style={logoCardStyle}
-            bindmousedown={handleLogoDown}
-            bindtouchstart={handleLogoDown}
+            {...logoPointerBind}
           >
             <image src={lynxLogo} className="LogoImage" />
           </view>

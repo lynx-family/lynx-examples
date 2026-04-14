@@ -1,11 +1,11 @@
 {
-  "name": "@lynx-example/mouse-cursor",
+  "name": "@lynx-example/desktop",
   "version": "0.0.0",
-  "description": "An example shows mouse drag, hover, and cursor states in Lynx",
+  "description": "Desktop-oriented cursor demos for Lynx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/mouse-cursor"
+    "directory": "examples/desktop"
   },
   "author": "Lynx Authors",
   "type": "module",
