@@ -8,9 +8,24 @@ import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
+const isChunkedBuild = process.env.CSS_API_BUILD_CHUNK_INDEX !== undefined;
+
+function getEntries(entries) {
+  const chunks = Number(process.env.CSS_API_BUILD_CHUNKS);
+  const chunkIndex = Number(process.env.CSS_API_BUILD_CHUNK_INDEX);
+
+  if (!Number.isInteger(chunks) || !Number.isInteger(chunkIndex) || chunks <= 1) {
+    return entries;
+  }
+
+  return Object.fromEntries(
+    Object.entries(entries).filter((_, index) => index % chunks === chunkIndex),
+  );
+}
+
 export default defineConfig({
   source: {
-    entry: {
+    entry: getEntries({
       "-x-auto-font-size-preset-sizes": "./src/-x-auto-font-size-preset-sizes/App.tsx",
       "-x-auto-font-size": "./src/-x-auto-font-size/App.tsx",
       "-x-handle-color": "./src/-x-handle-color/App.tsx",
@@ -194,7 +209,7 @@ export default defineConfig({
       clip_path_inset: "./src/clip_path/inset",
       clip_path_ellipse: "./src/clip_path/ellipse",
       clip_path_path: "./src/clip_path/path",
-    },
+    }),
   },
   plugins: [
     pluginReactLynx({
@@ -209,6 +224,7 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/css-api/dist",
+    cleanDistPath: !isChunkedBuild || process.env.CSS_API_BUILD_CHUNK_INDEX === "0",
     filename: "[name].[platform].bundle",
   },
 });

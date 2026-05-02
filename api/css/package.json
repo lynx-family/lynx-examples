@@ -17,7 +17,7 @@
     "lynx.config.mjs"
   ],
   "scripts": {
-    "build": "rspeedy build",
+    "build": "node ./scripts/build.mjs",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
