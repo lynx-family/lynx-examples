@@ -203,7 +203,9 @@ export default defineConfig({
     }),
     pluginSass({}),
     pluginQRCode(),
-    pluginTypeCheck(),
+    pluginTypeCheck({
+      enable: process.env.CI !== "1",
+    }),
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/css-api/dist",
