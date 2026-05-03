@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.9.1
+
+### Patch Changes
+
+- 379696c: Skip CSS API type checking during CI builds to avoid out-of-memory failures.
+
 ## 0.9.0
 
 ### Minor Changes
