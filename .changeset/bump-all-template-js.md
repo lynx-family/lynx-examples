@@ -1,0 +1,51 @@
+---
+"@lynx-example/7guis": patch
+"@lynx-example/accessibility": patch
+"@lynx-example/action-sheet": patch
+"@lynx-example/animation": patch
+"@lynx-example/bankcards": patch
+"@lynx-example/composing-elements": patch
+"@lynx-example/css": patch
+"@lynx-example/css-api": patch
+"@lynx-example/design-guide": patch
+"@lynx-example/desktop": patch
+"@lynx-example/element-manipulation": patch
+"@lynx-example/event": patch
+"@lynx-example/external-bundle": patch
+"@lynx-example/fetch": patch
+"@lynx-example/frame": patch
+"@lynx-example/gallery": patch
+"@lynx-example/hello-world": patch
+"@lynx-example/i18n": patch
+"@lynx-example/ifr": patch
+"@lynx-example/image": patch
+"@lynx-example/input": patch
+"@lynx-example/layout": patch
+"@lynx-example/lazy-bundle": patch
+"@lynx-example/list": patch
+"@lynx-example/local-storage": patch
+"@lynx-example/lynx-api": patch
+"@lynx-example/main-thread": patch
+"@lynx-example/native-element": patch
+"@lynx-example/networking": patch
+"@lynx-example/overlay": patch
+"@lynx-example/page": patch
+"@lynx-example/performance-api": patch
+"@lynx-example/react-lifecycle": patch
+"@lynx-example/refresh": patch
+"@lynx-example/scroll-coordinator": patch
+"@lynx-example/scroll-view": patch
+"@lynx-example/svg": patch
+"@lynx-example/swiper": patch
+"@lynx-example/tailwindcss": patch
+"@lynx-example/tanstack-router": patch
+"@lynx-example/text": patch
+"@lynx-example/textarea": patch
+"@lynx-example/title-bar-view": patch
+"@lynx-example/view": patch
+"@lynx-example/viewpager": patch
+"@lynx-example/with-solidjs": patch
+"@lynx-example/zustand": patch
+---
+
+Bump every example package to publish a fresh release. Internal mirror picks up new versions on the next sync, which is needed so downstream republishing of `@byted-lynx-example/*` reflects the new build artifacts.
