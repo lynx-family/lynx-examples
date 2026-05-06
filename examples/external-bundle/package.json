@@ -13,7 +13,8 @@
   "files": [
     "dist/",
     "src/",
-    "lynx.config.mjs"
+    "lynx.config.mjs",
+    "*.rslib.config.js"
   ],
   "scripts": {
     "build": "pnpm build:bundle && rspeedy build",
