@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "@lynx-js/react",
+    "allowJs": true,
+
+    "module": "node16",
+    "moduleResolution": "node16",
+
+    "strict": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+  },
+  "include": ["src"],
+  "exclude": ["dist/"],
+}
