@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "pnpm build:bundle && rspeedy build",
-    "build:bundle": "pnpm run --stream '/^build:bundle:.*/'",
+    "build:bundle": "rm -rf dist-external-bundle && pnpm run --stream '/^build:bundle:.*/'",
     "build:bundle:comp": "rslib build --config comp.rslib.config.js",
     "build:bundle:lodash": "rslib build --config lodash.rslib.config.js",
     "dev": "pnpm build:bundle && rspeedy dev",

@@ -15,6 +15,7 @@ export default defineExternalBundleRslibConfig({
     pluginReactLynx(),
   ],
   output: {
+    cleanDistPath: false,
     distPath: {
       root: "dist-external-bundle",
     },
