@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/desktop",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Desktop-oriented cursor demos for Lynx",
   "repository": {
     "type": "git",

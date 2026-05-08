@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/blur-view",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An example shows how to use `<blur-view>` in Lynx",
   "repository": {
     "type": "git",
