@@ -1,0 +1,40 @@
+:root {
+  background-color: #101114;
+  --color-text: #ffffff;
+}
+
+text {
+  color: var(--color-text);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.button {
+  margin-top: 24px;
+  padding: 16px 28px;
+  border-radius: 8px;
+  background-color: #ff351a;
+}
+
+.button-label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.counter {
+  margin-top: 20px;
+  font-size: 72px;
+  font-weight: 700;
+  color: #ff351a;
+}
