@@ -13,6 +13,7 @@ This repository is intended to showcase examples of Lynx.
   - [`composing-elements`]: An example shows how to composing elements in ReactLynx
   - [`design-guide`]: An example demonstrating design with Lynx capabilities
 - Builtin Elements
+  - [`blur-view`]: An example shows how to use `<blur-view>` in Lynx
   - [`event`]: An example shows how touch events work
   - [`image`]: An example shows how to use images
   - [`list`]: An example shows how to use reusable and scrollable container
@@ -67,6 +68,7 @@ This repository is intended to showcase examples of Lynx.
 [`7guis`]: ./examples/7guis
 [`action-sheet`]: ./examples/action-sheet
 [`animation`]: ./examples/animation
+[`blur-view`]: ./examples/blur-view
 [`css`]: ./examples/css
 [`desktop`]: ./examples/desktop
 [`design-guide`]: ./examples/design-guide
