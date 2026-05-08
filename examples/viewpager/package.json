@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/viewpager",
-  "version": "0.6.12",
+  "version": "0.6.13",
   "description": "An example shows how to use `<viewpager>` in Lynx",
   "repository": {
     "type": "git",
