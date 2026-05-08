@@ -29,6 +29,8 @@ export default defineConfig({
       plugins: [
         tanstackRouter({
           target: "react",
+          quoteStyle: "double",
+          semicolons: true,
         }),
       ],
       resolve: {
