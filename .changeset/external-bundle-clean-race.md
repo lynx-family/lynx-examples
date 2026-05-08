@@ -2,8 +2,11 @@
 "@lynx-example/external-bundle": patch
 ---
 
-Fix a race condition in `pnpm build:bundle` where `lodash-es` and `comp` rslib builds run in parallel and both clean the shared `dist-external-bundle/` output dir on startup.
+Fix a race condition in `pnpm build:bundle` where `comp` and `lodash-es` rslib builds run in parallel and both clean the shared `dist-external-bundle/` output dir at startup.
 
-When the larger `lodash-es` bundle starts late (e.g. under CI scheduling jitter), its startup clean wipes `comp.template.js` that the faster `comp` build has already written, causing `external-bundle-rsbuild-plugin` to fail with `could not find local bundle .../dist-external-bundle/comp.template.js`.
+When the slower bundle's startup clean lands after the faster bundle has already written its template, the faster bundle's file gets deleted, and the subsequent rspeedy build fails with `external-bundle-rsbuild-plugin could not find local bundle .../dist-external-bundle/comp.template.js`.
 
-Disable `cleanDistPath` for the slower bundle (`lodash.rslib.config.js`) so it can no longer wipe the faster bundle's output. The faster `comp` build still cleans the directory at startup, which is sufficient because its clean always finishes before either bundle writes.
+The fix:
+
+- Set `cleanDistPath: false` on both `comp.rslib.config.js` and `lodash.rslib.config.js` so neither parallel build can wipe the shared dir.
+- Clean `dist-external-bundle/` once before the parallel builds in the `build:bundle` script, so stale outputs from previous runs are still cleared.
