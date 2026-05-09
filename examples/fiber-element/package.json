@@ -1,0 +1,35 @@
+{
+  "name": "@lynx-example/fiber-element",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An example of building Lynx apps with FiberElement / Element PAPI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/fiber-element"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "lynx.config.js"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",
+    "@lynx-js/template-webpack-plugin": "catalog:",
+    "@lynx-js/type-element-api": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
