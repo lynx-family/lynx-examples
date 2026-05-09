@@ -1,0 +1,364 @@
+:root {
+  background-color: #0f1116;
+  color: #f3efe8;
+}
+
+.Screen {
+  min-height: 100vh;
+  background-color: #0f1116;
+}
+
+.Glow {
+  position: fixed;
+  border-radius: 9999px;
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.Glow--orange {
+  top: -240px;
+  right: -140px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(
+    circle,
+    rgba(233, 123, 61, 0.26) 0%,
+    rgba(233, 123, 61, 0) 70%
+  );
+}
+
+.Glow--blue {
+  left: -100px;
+  bottom: 90px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(
+    circle,
+    rgba(76, 146, 255, 0.24) 0%,
+    rgba(76, 146, 255, 0) 72%
+  );
+}
+
+.Shell {
+  position: relative;
+  min-height: 100vh;
+  padding: 48px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.TopbarLead {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.LogoRow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.LogoBadge {
+  width: 28px;
+  height: 28px;
+}
+
+.LogoBadge--hono {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 16px rgba(255, 93, 47, 0.18);
+}
+
+.LogoBadge--react {
+  opacity: 0.92;
+}
+
+.Eyebrow {
+  display: block;
+  color: #f08e59;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Title {
+  display: block;
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #f8f4ed;
+  white-space: nowrap;
+}
+
+.Badge {
+  max-width: 240px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.BadgeText {
+  font-size: 12px;
+  color: #c8bbb0;
+}
+
+.PromptRow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.PromptButton {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.PromptText {
+  color: #ddd1c6;
+  font-size: 14px;
+}
+
+.Panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+  border-radius: 28px;
+  background-color: rgba(17, 21, 29, 0.84);
+}
+
+.MessageViewport {
+  flex: 1;
+  min-height: 0;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px;
+}
+
+.Bubble {
+  max-width: 92%;
+  padding: 14px 16px;
+  border-radius: 22px;
+  margin-bottom: 10px;
+}
+
+.Bubble--assistant {
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.Bubble--thinking {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(240, 165, 122, 0.22);
+  background-color: rgba(240, 165, 122, 0.08);
+}
+
+.Bubble--user {
+  align-self: flex-end;
+  background-color: #e97b3d;
+}
+
+.BubbleRole {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.Bubble--assistant .BubbleRole {
+  color: #f0a57a;
+}
+
+.Bubble--thinking .BubbleRole {
+  color: #f4bc9a;
+}
+
+.Bubble--user .BubbleRole {
+  color: rgba(255, 244, 235, 0.78);
+}
+
+.BubbleText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #efe5d8;
+}
+
+.Bubble--user .BubbleText {
+  color: #fff7f0;
+}
+
+.Bubble--thinking .BubbleText {
+  color: #f5d5c1;
+}
+
+.ThinkingRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.BubbleText--thinkingLabel {
+  color: #f5d5c1;
+}
+
+.TypingCaret {
+  color: #f0a57a;
+  animation-name: caretBlink;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+}
+
+.ThinkingDots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.ThinkingDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: #f0a57a;
+  opacity: 0.3;
+  animation-name: thinkingPulse;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.ThinkingDot--1 {
+  animation-delay: 0s;
+}
+
+.ThinkingDot--2 {
+  animation-delay: 0.2s;
+}
+
+.ThinkingDot--3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes thinkingPulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+
+  60% {
+    opacity: 0.55;
+    transform: scale(0.96);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes caretBlink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.Composer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ComposerInput {
+  min-height: 64px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background-color: #1a1f29;
+  color: #f3ecdf;
+  font-size: 16px;
+}
+
+.ComposerInput::placeholder {
+  color: #8f98a8;
+}
+
+.ComposerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ComposerHint {
+  flex: 1;
+  font-size: 13px;
+  color: #b8a99c;
+}
+
+.PrimaryButton {
+  padding: 12px 18px;
+  border-radius: 18px;
+  background-color: #1c7ed6;
+}
+
+.PrimaryButtonText {
+  color: #f7fbff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.PrimaryButton.ui-disabled {
+  background-color: #42566c;
+}
+
+.FooterNote {
+  padding: 14px 16px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.FooterLabel {
+  display: block;
+  font-size: 12px;
+  color: #c0b3a8;
+  margin-bottom: 6px;
+}
+
+.FooterText {
+  font-size: 14px;
+  color: #e6dbcf;
+}
