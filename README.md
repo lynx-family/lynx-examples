@@ -102,6 +102,7 @@ This repository is intended to showcase examples of Lynx.
 [`tailwindcss`]: ./examples/tailwindcss
 [`tanstack-router`]: ./examples/tanstack-router
 [`text`]: ./examples/text
+[`webview`]: ./examples/webview
 [`textarea`]: ./examples/textarea
 [`title-bar-view`]: ./examples/title-bar-view
 [`tutorial-gallery`]: ./examples/Gallery
