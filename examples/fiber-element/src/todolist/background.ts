@@ -1,42 +1,14 @@
+import { setEventHandler } from "../common/event.js";
+import { renderState, setRenderState, syncState } from "../common/state.js";
 import type { Filter, RenderState } from "./types.js";
 
-let renderState = readInitialState();
-let lastSyncedState = renderState;
-
-function readInitialState(): Required<RenderState> {
-  const params = lynxCoreInject.tt._params;
-  return {
-    ...(params?.updateData ?? {}),
-    ...(params?.initData ?? {}),
-  } as Required<RenderState>;
-}
-
-function setRenderState(patch: RenderState): void {
-  renderState = { ...renderState, ...patch };
-}
-
-function createSyncPatch(): RenderState {
-  const patch: RenderState = {};
-  for (const key of Object.keys(renderState) as Array<keyof RenderState>) {
-    if (renderState[key] !== lastSyncedState[key]) {
-      (patch as Record<string, unknown>)[key] = renderState[key];
-    }
-  }
-  return patch;
-}
-
-function syncState(): void {
-  const patch = createSyncPatch();
-  if (Object.keys(patch).length === 0) return;
-  lastSyncedState = renderState;
-  lynx.getNativeApp().callLepusMethod("updatePage", patch);
-}
+const state = renderState as RenderState;
 
 function addTodo(): void {
-  const nextId = String(renderState.todos.length + 1);
+  const nextId = String(state.todos?.length ?? 0 + 1);
   setRenderState({
     todos: [
-      ...renderState.todos,
+      ...(state.todos ?? []),
       { id: nextId, title: `New task ${nextId}`, completed: false },
     ],
   });
@@ -45,7 +17,7 @@ function addTodo(): void {
 
 function clearCompleted(): void {
   setRenderState({
-    todos: renderState.todos.filter((todo) => !todo.completed),
+    todos: state.todos?.filter((todo) => !todo.completed) ?? [],
   });
   syncState();
 }
@@ -57,7 +29,7 @@ function setFilter(filter: Filter): void {
 
 function toggleTodo(id: string): void {
   setRenderState({
-    todos: renderState.todos.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo),
+    todos: state.todos?.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo) ?? [],
   });
   syncState();
 }
@@ -71,7 +43,7 @@ function reloadTodos(): void {
   }, 600);
 }
 
-function handleTodoEvent(handlerName: string): boolean {
+setEventHandler((handlerName: string) => {
   if (handlerName === "reloadTodos") {
     reloadTodos();
     return true;
@@ -96,11 +68,4 @@ function handleTodoEvent(handlerName: string): boolean {
     return true;
   }
   return false;
-}
-
-const previousPublishEvent = lynxCoreInject.tt.publishEvent;
-
-lynxCoreInject.tt.publishEvent = (handlerName: string, data: unknown) => {
-  if (handleTodoEvent(handlerName)) return;
-  previousPublishEvent?.call(lynxCoreInject.tt, handlerName, data);
-};
+});

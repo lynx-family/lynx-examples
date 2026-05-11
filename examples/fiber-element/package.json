@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "build": "rspeedy build",
-    "dev": "rspeedy dev"
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",

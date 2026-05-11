@@ -104,7 +104,7 @@ export function pluginTemplateWebpack() {
                       args.encodeData.compilerOptions.enableCSSSelector,
                     ),
                   ),
-                  chunks: [],
+                  chunks: cssAssets,
                 };
 
                 return args;

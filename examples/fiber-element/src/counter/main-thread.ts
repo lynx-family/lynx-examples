@@ -4,6 +4,7 @@ const page = __CreatePage("0", 0);
 const pageId = __GetElementUniqueID(page);
 __SetClasses(page, "page");
 
+let count = 0;
 let counterText: RawTextElementRef | undefined;
 
 function createText(className: string, value: string) {
@@ -25,7 +26,7 @@ function renderPage(data: Record<string, unknown>): void {
   __AppendElement(button, label.text);
   __AppendElement(page, button);
 
-  const counter = createText("counter", String(data["count"] ?? 0));
+  const counter = createText("counter", String(data["count"]));
   counterText = counter.raw;
   __AppendElement(page, counter.text);
 }
@@ -43,7 +44,9 @@ function getPageData(): Record<string, unknown> {
 function processData(
   data: Record<string, unknown>,
 ): Record<string, unknown> {
-  return data;
+  return {
+    count,
+  };
 }
 
 Object.assign(globalThis, {
