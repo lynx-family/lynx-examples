@@ -1,16 +1,20 @@
-let count = 0;
+import { setEventHandler } from "../common/event.js";
+import { renderState, setRenderState, syncState } from "../common/state.js";
 
-function increment(): void {
-  count += 1;
-  lynx.getNativeApp().callLepusMethod("updatePage", { count });
-}
-
-const previousPublishEvent = lynxCoreInject.tt.publishEvent;
-
-lynxCoreInject.tt.publishEvent = (handlerName: string, data: unknown) => {
-  if (handlerName === "increment") {
-    increment();
-    return;
-  }
-  previousPublishEvent?.call(lynxCoreInject.tt, handlerName, data);
+type CounterState = {
+  count: number;
 };
+
+// get initial state from main thread
+const state = renderState as CounterState;
+
+// handle event from main thread and sync state to main thread
+setEventHandler((handlerName: string) => {
+  if (handlerName === "increment") {
+    const { count } = state;
+    setRenderState({ count: count + 1 });
+    syncState();
+    return true;
+  }
+  return false;
+});
