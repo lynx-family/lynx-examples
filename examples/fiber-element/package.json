@@ -27,7 +27,7 @@
     "@lynx-js/template-webpack-plugin": "catalog:",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.3"
   },
   "engines": {
     "node": ">=18"
