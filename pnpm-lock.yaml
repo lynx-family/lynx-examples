@@ -39,9 +39,9 @@ catalogs:
     '@lynx-js/type-element-api':
       specifier: 0.0.3
       version: 0.0.3
-
-overrides:
-  '@lynx-js/types': 3.8.0
+    '@lynx-js/types':
+      specifier: 3.8.0
+      version: 3.8.0
 
 importers:
 
@@ -88,11 +88,11 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
-        version: 1.5.2(@rsbuild/core@2.0.3(core-js@3.47.0))
+        version: 1.5.2(@rsbuild/core@1.7.5)
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -116,7 +116,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -141,7 +141,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -166,7 +166,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -194,7 +194,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -219,7 +219,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -244,7 +244,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -272,7 +272,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -297,7 +297,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -322,7 +322,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -356,7 +356,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -384,7 +384,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -409,7 +409,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -434,7 +434,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -496,7 +496,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -523,7 +523,7 @@ importers:
         specifier: 'catalog:'
         version: 0.0.3
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       typescript:
         specifier: ~5.9.3
@@ -545,7 +545,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -570,7 +570,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -598,7 +598,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -626,7 +626,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -651,7 +651,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -676,7 +676,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -704,7 +704,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -732,7 +732,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -757,7 +757,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -785,7 +785,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -810,7 +810,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -835,7 +835,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -860,7 +860,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -888,7 +888,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -916,7 +916,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -944,7 +944,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -972,7 +972,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1000,7 +1000,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -1025,7 +1025,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1053,7 +1053,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1081,7 +1081,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1109,7 +1109,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1137,7 +1137,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1168,7 +1168,7 @@ importers:
         specifier: 0.4.0
         version: 0.4.0(tailwindcss@3.4.19)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -1202,7 +1202,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@tanstack/router-plugin':
         specifier: 1.166.2
@@ -1227,7 +1227,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1255,7 +1255,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1283,7 +1283,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1311,7 +1311,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -1336,7 +1336,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
@@ -1366,7 +1366,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -1428,11 +1428,11 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
-        version: 1.5.2(@rsbuild/core@1.7.5)
+        version: 1.5.2(@rsbuild/core@2.0.3(core-js@3.47.0))
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -1452,7 +1452,7 @@ importers:
         specifier: 'catalog:'
         version: 0.11.0(@lynx-js/lynx-core@0.1.3)(tslib@2.8.1)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@rspack/cli':
         specifier: ^1.7.7
@@ -1474,7 +1474,7 @@ importers:
         version: 1.9.9
     devDependencies:
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
 
   examples/zustand:
@@ -1493,7 +1493,7 @@ importers:
         specifier: 'catalog:'
         version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
-        specifier: 3.8.0
+        specifier: 'catalog:'
         version: 3.8.0
       '@types/react':
         specifier: ^18.3.28
@@ -2259,7 +2259,7 @@ packages:
   '@lynx-js/react@0.120.0':
     resolution: {integrity: sha512-XDDiMeQdK+FVlCHmeY3rUbvuTA2WPH/+8JznkUDVwUIwKmojoeEUOMCCXny434hIpBEtDeOtBoIEhxg569QGTw==}
     peerDependencies:
-      '@lynx-js/types': 3.8.0
+      '@lynx-js/types': '*'
       '@types/react': ^18
     peerDependenciesMeta:
       '@lynx-js/types':
@@ -3018,11 +3018,6 @@ packages:
     resolution: {integrity: sha512-DmCG8GzysnCZ15bres3N5AHCmwBwYgp0As6xjhQ47rAUTUXxJiK+lLUxaGsX3hd/30qUpVElh05PbGuxRPgJwA==}
     engines: {node: '>= 10'}
 
-  '@rsbuild/core@1.7.4':
-    resolution: {integrity: sha512-1hn9j62Kkckh2CGUMQcr/H/PtHgN5iqB3kChaMCVGqxrC4jbJBQxRtuHuWVJDKeEO0uWPMABAR748qJISIyh5w==}
-    engines: {node: '>=18.12.0'}
-    hasBin: true
-
   '@rsbuild/core@1.7.5':
     resolution: {integrity: sha512-i37urpoV4y9NSsGiUOuLdoI42KJ5h4gAZ8EG8Ilmsond3bxoAoOCu7YvC+1pJ7p+r16suVPW8cki891ZKHOoXQ==}
     engines: {node: '>=18.12.0'}
@@ -3661,10 +3656,6 @@ packages:
     engines: {node: '>=10.13.0'}
     peerDependencies:
       acorn: ^8.14.0
-
-  acorn-walk@8.3.4:
-    resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
-    engines: {node: '>=0.4.0'}
 
   acorn-walk@8.3.5:
     resolution: {integrity: sha512-HEHNfbars9v4pgpW6SO1KSPkfoS0xVOM/9UzkJltjlsHZmJasxg8aXkuZa7SMf8vKGIBhpUsPluQSqhJFCqebw==}
@@ -5269,9 +5260,6 @@ packages:
   kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
-
-  launch-editor@2.11.1:
-    resolution: {integrity: sha512-SEET7oNfgSaB6Ym0jufAdCeo3meJVeCaaDyzRygy0xsp2BFKCprcfHljTq4QkzTLUxEKkFK6OK4811YM2oSrRg==}
 
   launch-editor@2.13.2:
     resolution: {integrity: sha512-4VVDnbOpLXy/s8rdRCSXb+zfMeFR0WlJWpET1iA9CQdlZDfwyLjUuGQzXU4VeOoey6AicSAluWan7Etga6Kcmg==}
@@ -9456,14 +9444,6 @@ snapshots:
       '@reflink/reflink-win32-arm64-msvc': 0.1.19
       '@reflink/reflink-win32-x64-msvc': 0.1.19
 
-  '@rsbuild/core@1.7.4':
-    dependencies:
-      '@rspack/core': 1.7.10(@swc/helpers@0.5.21)
-      '@rspack/lite-tapable': 1.1.0
-      '@swc/helpers': 0.5.21
-      core-js: 3.47.0
-      jiti: 2.6.1
-
   '@rsbuild/core@1.7.5':
     dependencies:
       '@rspack/core': 1.7.10(@swc/helpers@0.5.21)
@@ -9653,8 +9633,8 @@ snapshots:
 
   '@rslib/core@0.19.6(typescript@5.9.3)':
     dependencies:
-      '@rsbuild/core': 1.7.4
-      rsbuild-plugin-dts: 0.19.6(@rsbuild/core@1.7.4)(typescript@5.9.3)
+      '@rsbuild/core': 1.7.5
+      rsbuild-plugin-dts: 0.19.6(@rsbuild/core@1.7.5)(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -10261,10 +10241,6 @@ snapshots:
       acorn: 8.15.0
 
   acorn-import-phases@1.0.4(acorn@8.15.0):
-    dependencies:
-      acorn: 8.15.0
-
-  acorn-walk@8.3.4:
     dependencies:
       acorn: 8.15.0
 
@@ -11925,11 +11901,6 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  launch-editor@2.11.1:
-    dependencies:
-      picocolors: 1.1.1
-      shell-quote: 1.8.3
-
   launch-editor@2.13.2:
     dependencies:
       picocolors: 1.1.1
@@ -12953,10 +12924,10 @@ snapshots:
       next-path: 1.0.0
       path-temp: 2.0.0
 
-  rsbuild-plugin-dts@0.19.6(@rsbuild/core@1.7.4)(typescript@5.9.3):
+  rsbuild-plugin-dts@0.19.6(@rsbuild/core@1.7.5)(typescript@5.9.3):
     dependencies:
       '@ast-grep/napi': 0.37.0
-      '@rsbuild/core': 1.7.4
+      '@rsbuild/core': 1.7.5
     optionalDependencies:
       typescript: 5.9.3
 
@@ -13907,7 +13878,7 @@ snapshots:
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       acorn: 8.15.0
-      acorn-walk: 8.3.4
+      acorn-walk: 8.3.5
       commander: 7.2.0
       debounce: 1.2.1
       escape-string-regexp: 4.0.0
@@ -13954,7 +13925,7 @@ snapshots:
       graceful-fs: 4.2.11
       http-proxy-middleware: 2.0.9(@types/express@4.17.23)
       ipaddr.js: 2.2.0
-      launch-editor: 2.11.1
+      launch-editor: 2.13.2
       open: 10.2.0
       p-retry: 6.2.1
       schema-utils: 4.3.2
