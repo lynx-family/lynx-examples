@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.9.2
+
+### Patch Changes
+
+- e037b0f: feat: add CSS API demo for line-based auto font sizing
+
 ## 0.9.1
 
 ### Patch Changes
