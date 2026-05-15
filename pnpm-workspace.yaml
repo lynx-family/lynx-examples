@@ -15,5 +15,5 @@ catalog:
   "@lynx-js/rspeedy": "0.14.3"
   "@lynx-js/types": "3.8.0"
   "@lynx-js/template-webpack-plugin": "0.11.0"
-  "@lynx-js/type-element-api": "0.0.3"
+  "@lynx-js/type-element-api": "0.0.6"
   "@lynx-js/runtime-wrapper-webpack-plugin": "0.1.3"
