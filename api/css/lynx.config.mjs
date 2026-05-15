@@ -26,6 +26,7 @@ function getEntries(entries) {
 export default defineConfig({
   source: {
     entry: getEntries({
+      "-x-auto-font-size-line-ranges": "./src/-x-auto-font-size-line-ranges/App.tsx",
       "-x-auto-font-size-preset-sizes": "./src/-x-auto-font-size-preset-sizes/App.tsx",
       "-x-auto-font-size": "./src/-x-auto-font-size/App.tsx",
       "-x-handle-color": "./src/-x-handle-color/App.tsx",
