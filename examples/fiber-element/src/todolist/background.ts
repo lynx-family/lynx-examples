@@ -1,5 +1,5 @@
-import { setEventHandler } from "../common/event.js";
-import { renderState, setRenderState, syncState } from "../common/state.js";
+import { setupEventHandler } from "../common/background/event.js";
+import { renderState, setRenderState, syncState } from "../common/background/state.js";
 import type { Filter, RenderState } from "./types.js";
 
 const state = renderState as RenderState;
@@ -43,7 +43,7 @@ function reloadTodos(): void {
   }, 600);
 }
 
-setEventHandler((handlerName: string) => {
+setupEventHandler((handlerName: string) => {
   if (handlerName === "reloadTodos") {
     reloadTodos();
     return true;

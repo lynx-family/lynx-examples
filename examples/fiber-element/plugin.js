@@ -5,6 +5,21 @@ import { LynxEncodePlugin, LynxTemplatePlugin } from "@lynx-js/template-webpack-
 
 const PLUGIN_NAME = "template-webpack";
 
+function stripCssLocationFields(value) {
+  if (Array.isArray(value)) {
+    return value.map(stripCssLocationFields);
+  }
+  if (value && typeof value === "object") {
+    const next = {};
+    for (const [key, item] of Object.entries(value)) {
+      if (key.toLowerCase().includes("loc")) continue;
+      next[key] = stripCssLocationFields(item);
+    }
+    return next;
+  }
+  return value;
+}
+
 export function pluginTemplateWebpack() {
   return {
     name: PLUGIN_NAME,
@@ -86,10 +101,38 @@ export function pluginTemplateWebpack() {
                   return args;
                 }
 
+                const backgroundSource = backgroundAsset.source.source().toString();
+                const mainThreadSource = mainThreadAsset.source.source().toString();
+                const styleMap = LynxTemplatePlugin.convertCSSChunksToMap(
+                  cssAssets.map((asset) => asset.source.source().toString()),
+                  [],
+                  Boolean(args.encodeData.compilerOptions.enableCSSSelector),
+                );
+                const styleMapWithoutLoc = stripCssLocationFields(styleMap);
+
+                const jsonAssetName = `${pageName}.json`;
+                const jsonSource = JSON.stringify(
+                  {
+                    dsl: "react_nodiff",
+                    "main-thread": mainThreadSource,
+                    background: backgroundSource,
+                    style: styleMapWithoutLoc,
+                  },
+                  null,
+                  2,
+                );
+
+                compilation.emitAsset(jsonAssetName, {
+                  source() {
+                    return jsonSource;
+                  },
+                  size() {
+                    return Buffer.byteLength(jsonSource);
+                  },
+                });
+
                 args.encodeData.manifest = {
-                  [backgroundAsset.name]: backgroundAsset.source
-                    .source()
-                    .toString(),
+                  [backgroundAsset.name]: backgroundSource,
                 };
                 args.encodeData.lepusCode = {
                   root: mainThreadAsset,
@@ -97,13 +140,7 @@ export function pluginTemplateWebpack() {
                   filename: mainThreadAsset.name,
                 };
                 args.encodeData.css = {
-                  ...LynxTemplatePlugin.convertCSSChunksToMap(
-                    cssAssets.map((asset) => asset.source.source().toString()),
-                    [],
-                    Boolean(
-                      args.encodeData.compilerOptions.enableCSSSelector,
-                    ),
-                  ),
+                  ...styleMap,
                   chunks: cssAssets,
                 };
 

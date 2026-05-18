@@ -25,11 +25,17 @@ export default defineConfig({
     },
     filename: "[name].bundle",
   },
+  server: {
+    port: 8787,
+  },
   plugins: [
     pluginTemplateWebpack(),
     pluginQRCode({
       schema(url) {
-        return `${url}?fullscreen=true`;
+        return {
+          url,
+          json: url.replace(/\.bundle(?=[?#]|$)/, ".json"),
+        };
       },
     }),
   ],

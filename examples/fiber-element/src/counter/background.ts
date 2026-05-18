@@ -1,5 +1,5 @@
-import { setEventHandler } from "../common/event.js";
-import { renderState, setRenderState, syncState } from "../common/state.js";
+import { setupEventHandler } from "../common/background/event.js";
+import { renderState, setRenderState, syncState } from "../common/background/state.js";
 
 type CounterState = {
   count: number;
@@ -9,7 +9,7 @@ type CounterState = {
 const state = renderState as CounterState;
 
 // handle event from main thread and sync state to main thread
-setEventHandler((handlerName: string) => {
+setupEventHandler((handlerName: string) => {
   if (handlerName === "increment") {
     const { count } = state;
     setRenderState({ count: count + 1 });

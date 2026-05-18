@@ -1,10 +1,9 @@
 :root {
   background-color: #101114;
-  --color-text: #ffffff;
 }
 
 text {
-  color: var(--color-text);
+  color: #ffffff;
 }
 
 .page {
