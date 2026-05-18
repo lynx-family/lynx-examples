@@ -844,6 +844,34 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
 
+  examples/motion:
+    dependencies:
+      '@lynx-js/motion':
+        specifier: ^0.0.3
+        version: 0.0.3(@lynx-js/react@0.120.0(@lynx-js/types@3.8.0)(@types/react@18.3.28))(@lynx-js/types@3.8.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@lynx-js/react':
+        specifier: 'catalog:'
+        version: 0.120.0(@lynx-js/types@3.8.0)(@types/react@18.3.28)
+    devDependencies:
+      '@lynx-js/qrcode-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.4.6
+      '@lynx-js/react-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.16.1(@lynx-js/react@0.120.0(@lynx-js/types@3.8.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
+      '@lynx-js/rspeedy':
+        specifier: 'catalog:'
+        version: 0.14.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/types':
+        specifier: 3.8.0
+        version: 3.8.0
+      '@types/react':
+        specifier: ^18.3.28
+        version: 18.3.28
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+
   examples/native-element:
     dependencies:
       '@lynx-js/react':
@@ -1432,7 +1460,7 @@ importers:
         version: 3.8.0
       '@rsbuild/plugin-sass':
         specifier: 1.5.2
-        version: 1.5.2(@rsbuild/core@1.7.5)
+        version: 1.5.2(@rsbuild/core@2.0.3(core-js@3.47.0))
       '@types/react':
         specifier: ^18.3.28
         version: 18.3.28
@@ -2214,6 +2242,15 @@ packages:
 
   '@lynx-js/lynx-core@0.1.3':
     resolution: {integrity: sha512-uWzKKYJUK4Q09ZRZxWSAFINnmZb9piWPbvWF9SkLn+3snBl9u/BJa4ekPRcKWAhBmpbtxWH1x27fxe3Q3p5l3Q==}
+
+  '@lynx-js/motion@0.0.3':
+    resolution: {integrity: sha512-Kujwj1grxFTPjwr3IEO4Qca5YRsoJCeTctsEaUcVFYC5Ekb52LuUavJicMqUuswzW/HrARpJw9npLSiTjfcwYQ==}
+    peerDependencies:
+      '@lynx-js/react': '*'
+      '@lynx-js/types': 3.8.0
+    peerDependenciesMeta:
+      '@lynx-js/types':
+        optional: true
 
   '@lynx-js/qrcode-rsbuild-plugin@0.4.6':
     resolution: {integrity: sha512-KHnvkccapEWEtfRMJ4GxNoZDsv8c0RlfNfc3la/z8G2eP+vb8VtKG1Atk2FVagUVnJcuePeuue8LaivzoM/Irw==}
@@ -4674,6 +4711,20 @@ packages:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
 
+  framer-motion@12.34.1:
+    resolution: {integrity: sha512-kcZyNaYQfvE2LlH6+AyOaJAQV4rGp5XbzfhsZpiSZcwDMfZUHhuxLWeyRzf5I7jip3qKRpuimPA9pXXfr111kQ==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   fresh@0.5.2:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
@@ -5521,6 +5572,18 @@ packages:
     resolution: {integrity: sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==}
     engines: {node: '>=10'}
     hasBin: true
+
+  motion-dom@12.23.12:
+    resolution: {integrity: sha512-RcR4fvMCTESQBD/uKQe49D5RUeDOokkGRmz4ceaJKDBgHYtZtntC/s2vLvY38gqGaytinij/yi3hMcWVcEF5Kw==}
+
+  motion-dom@12.38.0:
+    resolution: {integrity: sha512-pdkHLD8QYRp8VfiNLb8xIBJis1byQ9gPT3Jnh2jqfFtAsWUA3dEepDlsWe/xMpO8McV+VdpKVcp+E+TGJEtOoA==}
+
+  motion-utils@12.23.6:
+    resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
+
+  motion-utils@12.36.0:
+    resolution: {integrity: sha512-eHWisygbiwVvf6PZ1vhaHCLamvkSbPIeAYxWUuL3a2PD/TROgE7FvfHWTIH4vMl798QLfMw15nRqIaRDXTlYRg==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -8179,6 +8242,19 @@ snapshots:
 
   '@lynx-js/lynx-core@0.1.3': {}
 
+  '@lynx-js/motion@0.0.3(@lynx-js/react@0.120.0(@lynx-js/types@3.8.0)(@types/react@18.3.28))(@lynx-js/types@3.8.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@lynx-js/react': 0.120.0(@lynx-js/types@3.8.0)(@types/react@18.3.28)
+      framer-motion: 12.34.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      motion-dom: 12.23.12
+      motion-utils: 12.23.6
+    optionalDependencies:
+      '@lynx-js/types': 3.8.0
+    transitivePeerDependencies:
+      - '@emotion/is-prop-valid'
+      - react
+      - react-dom
+
   '@lynx-js/qrcode-rsbuild-plugin@0.4.6': {}
 
   '@lynx-js/react-alias-rsbuild-plugin@0.16.1': {}
@@ -9514,16 +9590,6 @@ snapshots:
       '@rsbuild/core': 2.0.3(core-js@3.47.0)
     transitivePeerDependencies:
       - '@rspack/core'
-
-  '@rsbuild/plugin-sass@1.5.2(@rsbuild/core@1.7.5)':
-    dependencies:
-      deepmerge: 4.3.1
-      loader-utils: 2.0.4
-      postcss: 8.5.13
-      reduce-configs: 1.1.2
-      sass-embedded: 1.99.0
-    optionalDependencies:
-      '@rsbuild/core': 1.7.5
 
   '@rsbuild/plugin-sass@1.5.2(@rsbuild/core@2.0.3(core-js@3.47.0))':
     dependencies:
@@ -11344,6 +11410,15 @@ snapshots:
 
   forwarded@0.2.0: {}
 
+  framer-motion@12.34.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+    dependencies:
+      motion-dom: 12.38.0
+      motion-utils: 12.36.0
+      tslib: 2.8.1
+    optionalDependencies:
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
   fresh@0.5.2: {}
 
   fs-extra@11.3.0:
@@ -12186,6 +12261,18 @@ snapshots:
       minipass: 7.1.2
 
   mkdirp@3.0.1: {}
+
+  motion-dom@12.23.12:
+    dependencies:
+      motion-utils: 12.23.6
+
+  motion-dom@12.38.0:
+    dependencies:
+      motion-utils: 12.36.0
+
+  motion-utils@12.23.6: {}
+
+  motion-utils@12.36.0: {}
 
   mri@1.2.0: {}
 
