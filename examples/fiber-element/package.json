@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/fiber-element",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An example of building Lynx apps with FiberElement / Element PAPI",
   "repository": {
     "type": "git",
