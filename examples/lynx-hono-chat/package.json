@@ -1,0 +1,53 @@
+{
+  "name": "@lynx-example/lynx-hono-chat",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/lynx-hono-chat"
+  },
+  "author": "Lynx Authors",
+  "type": "module",
+  "bin": {
+    "lynx-hono-chat-start": "./bin/index.js"
+  },
+  "files": [
+    "bin/index.js",
+    "dist/**/*",
+    "lynx.config.js",
+    "lynx.config.ts",
+    "src/client/**/*",
+    "src/shared/**/*",
+    "!**/*.tsbuildinfo",
+    "!**/tsconfig.json"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "build:cli": "tsc -b script/tsconfig.json",
+    "build:client": "rspeedy build -c ./lynx.config.js",
+    "build:server": "tsc -b src/server/tsconfig.json",
+    "dev": "npm run build && node dist/script/cli.js",
+    "dev:client": "rspeedy dev -c ./lynx.config.js",
+    "typecheck": "tsc -b tsconfig.json --pretty false"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.53",
+    "@hono/node-server": "2.0.2",
+    "@lynx-js/lynx-ui": "3.132.0",
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "ai": "^6.0.162",
+    "hono": "^4.12.14",
+    "typescript": "~5.9.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
