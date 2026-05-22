@@ -1,7 +1,8 @@
 import { animate } from "@lynx-js/motion";
-import { runOnMainThread, useEffect, useMainThreadRef } from "@lynx-js/react";
+import { root, runOnMainThread, useEffect, useMainThreadRef } from "@lynx-js/react";
 import type { MainThread } from "@lynx-js/types";
 
+import { ThemeFrame } from "../shared/ThemeFrame";
 import "./styles.css";
 
 export default function Basic() {
@@ -9,8 +10,11 @@ export default function Basic() {
     null,
   );
   const boxMTRef = useMainThreadRef<MainThread.Element>(null);
+  const startTimerMTRef = useMainThreadRef<ReturnType<typeof setTimeout> | null>(
+    null,
+  );
 
-  function startAnimation() {
+  function startAnimationNow() {
     "main thread";
 
     if (boxMTRef.current) {
@@ -27,35 +31,52 @@ export default function Basic() {
     }
   }
 
+  function startAnimation() {
+    "main thread";
+
+    if (startTimerMTRef.current) {
+      clearTimeout(startTimerMTRef.current);
+    }
+
+    startTimerMTRef.current = setTimeout(() => {
+      startTimerMTRef.current = null;
+      startAnimationNow();
+    }, 1000);
+  }
+
   function endAnimation() {
     "main thread";
+
+    if (startTimerMTRef.current) {
+      clearTimeout(startTimerMTRef.current);
+      startTimerMTRef.current = null;
+    }
 
     animateMTRef.current?.stop();
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      void runOnMainThread(startAnimation)();
-    }, 1500);
+    void runOnMainThread(startAnimation)();
     return () => {
-      clearTimeout(timeoutId);
       void runOnMainThread(endAnimation)();
     };
   }, []);
 
   return (
-    <view className="case-container">
-      <view
-        main-thread:ref={boxMTRef}
-        style={{
-          width: "100px",
-          height: "100px",
-          backgroundColor: "#8df0cc",
-          borderRadius: "10px",
-          transform: "scale(1.5)",
-        }}
-      >
+    <ThemeFrame>
+      <view className="case-container">
+        <view
+          className="motion-box"
+          main-thread:ref={boxMTRef}
+        >
+        </view>
       </view>
-    </view>
+    </ThemeFrame>
   );
+}
+
+root.render(<Basic />);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept();
 }
