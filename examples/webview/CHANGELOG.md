@@ -1,5 +1,11 @@
 # @lynx-example/webview
 
+## 0.1.1
+
+### Patch Changes
+
+- f7a7f8a: Introduce examples for `<webview>`
+
 ## 0.1.0
 
 ### Minor Changes
