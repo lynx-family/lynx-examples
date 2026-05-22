@@ -2,6 +2,7 @@ import { animate, useMotionValueRef, useMotionValueRefEvent } from "@lynx-js/mot
 import { root, runOnMainThread, useMainThreadRef } from "@lynx-js/react";
 import type { MainThread } from "@lynx-js/types";
 
+import { ThemeFrame } from "../shared/ThemeFrame";
 import "./styles.css";
 
 export default function MiniExample() {
@@ -39,7 +40,7 @@ export default function MiniExample() {
 
   function startSpring() {
     "main thread";
-    const target = x.current.get() === 0 ? 200 : 0;
+    const target = x.current.get() === 0 ? 160 : 0;
     animate(x.current, target, {
       type: "spring",
       stiffness: 200,
@@ -49,7 +50,7 @@ export default function MiniExample() {
 
   function startScale() {
     "main thread";
-    const target = scale.current.get() === 1 ? 1.5 : 1;
+    const target = scale.current.get() === 1 ? 1.35 : 1;
     animate(scale.current, target, {
       duration: 0.4,
       ease: (t) => t,
@@ -57,17 +58,19 @@ export default function MiniExample() {
   }
 
   return (
-    <view className="mini-container">
-      <view main-thread:ref={boxRef} className="mini-box" />
-      <view className="mini-controls">
-        <view className="mini-btn" bindtap={handleTapSpring}>
-          <text>Spring Move</text>
-        </view>
-        <view className="mini-btn" bindtap={handleTapScale}>
-          <text>Scale BackOut</text>
+    <ThemeFrame theme="lunaris-light">
+      <view className="mini-container">
+        <view main-thread:ref={boxRef} className="mini-box" />
+        <view className="mini-controls">
+          <view className="mini-btn" bindtap={handleTapSpring}>
+            <text className="mini-btn-text">Spring Move</text>
+          </view>
+          <view className="mini-btn" bindtap={handleTapScale}>
+            <text className="mini-btn-text">Scale BackOut</text>
+          </view>
         </view>
       </view>
-    </view>
+    </ThemeFrame>
   );
 }
 

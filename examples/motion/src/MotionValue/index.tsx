@@ -1,16 +1,18 @@
 import { motionValue } from "@lynx-js/motion";
 import type { MotionValue } from "@lynx-js/motion";
-import { runOnMainThread, useEffect, useMainThreadRef } from "@lynx-js/react";
+import { animate } from "@lynx-js/motion";
+import { root, runOnMainThread, useEffect, useMainThreadRef } from "@lynx-js/react";
 import type { MainThread } from "@lynx-js/types";
 
+import { ThemeFrame } from "../shared/ThemeFrame";
 import "./styles.css";
 
 export default function Basic() {
   const boxMTRef = useMainThreadRef<MainThread.Element>(null);
-  const valueMTRef = useMainThreadRef<MotionValue<number>>();
-  const intervalMTRef = useMainThreadRef<ReturnType<typeof setInterval> | null>(
+  const animateMTRef = useMainThreadRef<ReturnType<typeof animate> | null>(
     null,
   );
+  const valueMTRef = useMainThreadRef<MotionValue<number>>();
   const unsubscribeMTRef = useMainThreadRef<(() => void) | null>(null);
 
   function bindMotionValueCallback() {
@@ -30,18 +32,19 @@ export default function Basic() {
 
     bindMotionValueCallback();
 
-    intervalMTRef.current = setInterval(() => {
-      valueMTRef.current?.set(valueMTRef.current.get() + 0.5);
-    }, 1000);
+    if (valueMTRef.current) {
+      animateMTRef.current = animate(valueMTRef.current, [0.8, 1.4], {
+        duration: 1,
+        repeat: Number.POSITIVE_INFINITY,
+        repeatType: "reverse",
+      });
+    }
   }
 
   function endAnimation() {
     "main thread";
 
-    if (intervalMTRef.current) {
-      clearInterval(intervalMTRef.current);
-      intervalMTRef.current = null;
-    }
+    animateMTRef.current?.stop();
 
     if (unsubscribeMTRef.current) {
       unsubscribeMTRef.current();
@@ -50,28 +53,27 @@ export default function Basic() {
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      void runOnMainThread(startAnimation)();
-    }, 1000);
+    void runOnMainThread(startAnimation)();
     return () => {
-      clearTimeout(timeoutId);
       void runOnMainThread(endAnimation)();
     };
   }, []);
 
   return (
-    <view className="case-container">
-      <view
-        main-thread:ref={boxMTRef}
-        style={{
-          width: "100px",
-          height: "100px",
-          backgroundColor: "#8df0cc",
-          borderRadius: "10px",
-          transform: "scale(1.5)",
-        }}
-      >
+    <ThemeFrame>
+      <view className="case-container">
+        <view
+          className="motion-box"
+          main-thread:ref={boxMTRef}
+        >
+        </view>
       </view>
-    </view>
+    </ThemeFrame>
   );
+}
+
+root.render(<Basic />);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept();
 }

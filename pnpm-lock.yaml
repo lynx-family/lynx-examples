@@ -846,6 +846,9 @@ importers:
 
   examples/motion:
     dependencies:
+      '@lynx-js/luna-styles':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@lynx-js/motion':
         specifier: ^0.0.3
         version: 0.0.3(@lynx-js/react@0.121.0(@lynx-js/types@3.9.0)(@types/react@18.3.28))(@lynx-js/types@3.9.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -2235,6 +2238,9 @@ packages:
 
   '@lynx-js/internal-preact@10.29.1-20260424024911-12b794f':
     resolution: {integrity: sha512-MQ+xjPL2f1P9/eCAdkT2h9cJRXl1qqhSJDX9GkPETt3UAepLo5N+HbGB8Qr3IUzqGDWMr3Mj76my1P0pLkKVDg==}
+
+  '@lynx-js/luna-styles@0.1.0':
+    resolution: {integrity: sha512-1DVx/mLmsnfdrTF1E9CWhl39/CWmR3nal38nY6QJ6sOImSC77HFDuE4Xr1g0V0hcX/8lAmTzgNwnqPEJE1a6JQ==}
 
   '@lynx-js/lynx-bundle-rslib-config@0.3.3':
     resolution: {integrity: sha512-TGKXoPb6u2E8kb+GkM3UbRoo4CaQJbQ16ZDRyN8vZvvTiZPZYpa5nAZr3j2WertYGsScUP4bY9hRTlBE2Tn9jw==}
@@ -8225,6 +8231,8 @@ snapshots:
   '@lynx-js/externals-loading-webpack-plugin@0.1.1': {}
 
   '@lynx-js/internal-preact@10.29.1-20260424024911-12b794f': {}
+
+  '@lynx-js/luna-styles@0.1.0': {}
 
   '@lynx-js/lynx-bundle-rslib-config@0.3.3':
     dependencies:

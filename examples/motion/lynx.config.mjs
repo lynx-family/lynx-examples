@@ -12,8 +12,11 @@ const enableBundleAnalysis = !!process.env["RSPEEDY_BUNDLE_ANALYSIS"];
 export default defineConfig({
   source: {
     entry: {
-      main: "./src/index.tsx",
+      basic: "./src/Basic/index.tsx",
+      gesture: "./src/iOSSlider/index.tsx",
       mini: "./src/Mini/index.tsx",
+      "motion-value": "./src/MotionValue/index.tsx",
+      spring: "./src/Spring/index.tsx",
     },
   },
   output: {
