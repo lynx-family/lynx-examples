@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/motion",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Examples for @lynx-js/motion and @lynx-js/motion/mini",
   "repository": {
     "type": "git",
