@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/a2ui",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "An example shows how to use a2ui in Lynx",
   "repository": {
     "type": "git",
