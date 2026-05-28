@@ -1,27 +1,6 @@
-import {
-  A2UI,
-  Button,
-  Card,
-  CheckBox,
-  ChoicePicker,
-  Column,
-  createMessageStore,
-  DateTimeInput,
-  Divider,
-  Icon,
-  Image,
-  LineChart,
-  List,
-  Modal,
-  PieChart,
-  RadioGroup,
-  Row,
-  Slider,
-  Tabs,
-  Text,
-  TextField,
-} from "@lynx-js/genui/a2ui";
-import type { CatalogInput, MessageStore } from "@lynx-js/genui/a2ui";
+import { A2UI, Button, Card, Column, createMessageStore, Icon, Image, Row, Text } from "@lynx-js/genui/a2ui";
+import type { CatalogComponent, CatalogInput, CatalogManifest, MessageStore } from "@lynx-js/genui/a2ui";
+import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useEffect, useMemo, useRef, useState } from "@lynx-js/react";
 
 import { actionMessages, initialMessages } from "./demoMessages.js";
@@ -32,28 +11,22 @@ import "./App.css";
 
 const STREAM_DELAY_MS = 760;
 
-const CATALOGS: readonly CatalogInput[] = [
-  Text as CatalogInput,
-  Column as CatalogInput,
-  Row as CatalogInput,
-  List as CatalogInput,
-  Card as CatalogInput,
-  Button as CatalogInput,
-  Divider as CatalogInput,
-  Image as CatalogInput,
-  LineChart as CatalogInput,
-  CheckBox as CatalogInput,
-  ChoicePicker as CatalogInput,
-  DateTimeInput as CatalogInput,
-  Icon as CatalogInput,
-  Modal as CatalogInput,
-  PieChart as CatalogInput,
-  RadioGroup as CatalogInput,
-  Slider as CatalogInput,
-  Tabs as CatalogInput,
-  TextField as CatalogInput,
-];
+function manifestEntry(
+  component: unknown,
+  manifest: CatalogManifest,
+): readonly [CatalogComponent, CatalogManifest] {
+  return [component as CatalogComponent, manifest];
+}
 
+const ALL_BUILTINS: readonly CatalogInput[] = [
+  manifestEntry(Text, catalogManifests.Text),
+  manifestEntry(Image, catalogManifests.Image),
+  manifestEntry(Row, catalogManifests.Row),
+  manifestEntry(Column, catalogManifests.Column),
+  manifestEntry(Card, catalogManifests.Card),
+  manifestEntry(Button, catalogManifests.Button),
+  manifestEntry(Icon, catalogManifests.Icon),
+];
 function createSession(
   onProgress: (progress: MockAgentProgress) => void,
 ): {
@@ -131,7 +104,7 @@ export function App() {
             <A2UI
               key={sessionId}
               messageStore={session.store}
-              catalogs={CATALOGS}
+              catalogs={ALL_BUILTINS}
               onAction={(action) => {
                 void agentRef.current?.onAction(action);
               }}
