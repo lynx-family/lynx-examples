@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "author": "Lynx Authors",
   "scripts": {
-    "build": "turbo run build",
+    "build": "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE=false turbo run build",
     "prepare": "husky",
     "release": "npm run build && pnpm changeset publish"
   },
