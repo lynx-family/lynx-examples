@@ -1,0 +1,194 @@
+@import "@lynx-js/luna-styles/index.css";
+@import "@lynx-js/genui/a2ui/styles/theme.css";
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f7f4;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.eyebrow {
+  color: #6a746f;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title {
+  margin-top: 4px;
+  color: var(--content);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.replay-button {
+  min-width: 92px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(93, 103, 98, 0.14);
+  background-color: rgba(255, 255, 255, 0.58);
+  box-sizing: border-box;
+}
+
+.replay-button:active {
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+.replay-icon {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.replay-label {
+  color: var(--content);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.a2ui-surface .button-borderless {
+  min-width: 0;
+  margin: 4px 0;
+  padding: 7px 11px;
+  gap: 6px;
+  border: 1px solid rgba(93, 103, 98, 0.14);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.58);
+  color: var(--content);
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.a2ui-surface .button-borderless.ui-active {
+  background-color: rgba(255, 255, 255, 0.82);
+  transform: translateY(1px);
+}
+
+.a2ui-surface .button-borderless .button-fallback {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.status-row {
+  height: 34px;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--canvas);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: #8d9792;
+}
+
+.status-dot--streaming {
+  background-color: #d79d1e;
+}
+
+.status-dot--done {
+  background-color: #0f766e;
+}
+
+.status-text {
+  color: #48524d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.scroll {
+  flex: 1;
+  min-height: 0;
+}
+
+.empty-state {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--canvas);
+}
+
+.empty-title {
+  color: #5d6762;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.a2ui-surface {
+  width: 100%;
+  padding-bottom: 24px;
+  color: var(--content);
+  background-color: #f6f7f4;
+}
+
+.a2ui-container {
+  width: 100%;
+}
+
+.a2ui-image {
+  border: none;
+}
+
+/* Override A2UI tokens with Luna tokens for the playground preview. */
+:root, .a2ui-light, .a2ui-dark {
+  --a2ui-color-background: var(--canvas);
+  --a2ui-color-on-background: var(--content);
+  --a2ui-color-surface: var(--paper);
+  --a2ui-color-on-surface: var(--content);
+  --a2ui-color-primary: var(--primary-2);
+  --a2ui-color-primary-hover: var(--primary-muted);
+  --a2ui-color-on-primary: var(--primary-content);
+  --a2ui-color-secondary: var(--secondary);
+  --a2ui-color-secondary-hover: var(--secondary-2);
+  --a2ui-color-on-secondary: var(--secondary-content);
+  --a2ui-color-border: var(--secondary);
+  --a2ui-color-input: var(--paper-clear);
+  --a2ui-color-on-input: var(--content);
+  --a2ui-color-input-error: #d92d20;
+  --a2ui-color-input-error-bg: rgba(217, 45, 32, 0.08);
+  --a2ui-color-background-ambient: var(--canvas-ambient);
+  --a2ui-color-surface-muted: var(--neutral-film);
+  --a2ui-color-surface-strong: var(--paper-clear);
+  --a2ui-color-border-strong: var(--secondary-2);
+  --a2ui-color-text-muted: var(--content-muted);
+  --a2ui-color-text-subtle: var(--content-muted-2);
+  --a2ui-color-overlay: var(--neutral-film);
+  --a2ui-icon-font-family: "Material Icons Round";
+  --a2ui-icon-color-primary: var(--primary);
+  --a2ui-icon-color-muted: var(--content-muted);
+}
