@@ -47,6 +47,7 @@ This repository is intended to showcase examples of Lynx.
   - [`local-storage`]: An example shows how to use local storage in Lynx
   - [`networking`]: An example shows Lynx networking abilities
   - [`react-lifecycle`]: An example shows ReactLynx lifecycle
+  - [`webassembly`]: An example shows how to run WebAssembly in Lynx
 - Web Platform
   - [`basic-usage`]: An example shows how to use Lynx Web Platform
 - UI Components
@@ -103,6 +104,7 @@ This repository is intended to showcase examples of Lynx.
 [`tanstack-router`]: ./examples/tanstack-router
 [`text`]: ./examples/text
 [`webview`]: ./examples/webview
+[`webassembly`]: ./examples/webassembly
 [`textarea`]: ./examples/textarea
 [`title-bar-view`]: ./examples/title-bar-view
 [`tutorial-gallery`]: ./examples/Gallery
