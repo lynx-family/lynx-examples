@@ -33,13 +33,13 @@ export const initialMessages = [
         },
         {
           "id": "weather-photo",
-          "component": "Text",
-          "text": "",
+          "component": "Loading",
+          "variant": "block",
         },
         {
           "id": "city-switch-button",
-          "component": "Text",
-          "text": "",
+          "component": "Loading",
+          "variant": "inline",
         },
         {
           "id": "weather-header-row",
@@ -52,12 +52,8 @@ export const initialMessages = [
         },
         {
           "id": "sunny-icon",
-          "component": "Icon",
-          "name": {
-            "path": "/weather/icon",
-          },
-          "size": "lg",
-          "color": "primary",
+          "component": "Loading",
+          "variant": "inline",
         },
         {
           "id": "weather-title-column",
@@ -66,6 +62,60 @@ export const initialMessages = [
             "city-text",
             "condition-text",
           ],
+        },
+        {
+          "id": "city-text",
+          "component": "Loading",
+          "variant": "inline",
+        },
+        {
+          "id": "condition-text",
+          "component": "Loading",
+          "variant": "inline",
+        },
+        {
+          "id": "temperature-text",
+          "component": "Loading",
+          "variant": "inline",
+        },
+        {
+          "id": "humidity-text",
+          "component": "Loading",
+          "variant": "inline",
+        },
+      ],
+    },
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "value": {
+        "weather": {
+          "city": "San Francisco",
+          "condition": "Sunny",
+          "iconUrl": "https://openweathermap.org/img/wn/02d@2x.png",
+          "photo":
+            "https://images.pexels.com/photos/36003582/pexels-photo-36003582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "temperature": "22°C",
+          "humidity": "Humidity 60%",
+        },
+      },
+    },
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "sunny-icon",
+          "component": "Image",
+          "url": {
+            "path": "/weather/iconUrl",
+          },
+          "variant": "icon",
+          "fit": "contain",
         },
         {
           "id": "city-text",
@@ -83,6 +133,14 @@ export const initialMessages = [
           },
           "variant": "body",
         },
+      ],
+    },
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
         {
           "id": "temperature-text",
           "component": "Text",
@@ -100,23 +158,6 @@ export const initialMessages = [
           "variant": "body",
         },
       ],
-    },
-  },
-  {
-    "version": "v0.9",
-    "updateDataModel": {
-      "surfaceId": "main",
-      "value": {
-        "weather": {
-          "city": "San Francisco",
-          "condition": "Sunny",
-          "icon": "wb_sunny",
-          "photo":
-            "https://images.pexels.com/photos/36003582/pexels-photo-36003582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "temperature": "22°C",
-          "humidity": "Humidity 60%",
-        },
-      },
     },
   },
   {
@@ -175,9 +216,9 @@ export const actionMessages: Record<string, readonly ServerToClientMessage[]> = 
         "value": {
           "city": "Paris",
           "condition": "Rainy",
-          "icon": "rainy",
+          "iconUrl": "https://openweathermap.org/img/wn/10d@2x.png",
           "photo":
-            "https://images.pexels.com/photos/12384888/pexels-photo-12384888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.pexels.com/photos/30276995/pexels-photo-30276995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "temperature": "21°C",
           "humidity": "Humidity 42%",
         },
@@ -220,7 +261,7 @@ export const actionMessages: Record<string, readonly ServerToClientMessage[]> = 
         "value": {
           "city": "San Francisco",
           "condition": "Sunny",
-          "icon": "wb_sunny",
+          "iconUrl": "https://openweathermap.org/img/wn/02d@2x.png",
           "photo":
             "https://images.pexels.com/photos/36003582/pexels-photo-36003582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "temperature": "22°C",

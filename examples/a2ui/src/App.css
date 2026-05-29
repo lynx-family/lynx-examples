@@ -4,7 +4,7 @@
 .page {
   width: 100%;
   min-height: 100vh;
-  padding: 20px 16px 24px;
+  padding: 10px 12px 16px;
   display: flex;
   flex-direction: column;
   background-color: #f6f7f4;
@@ -12,62 +12,43 @@
 }
 
 .topbar {
+  height: 32px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.title-block {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.eyebrow {
-  color: #6a746f;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.title {
-  margin-top: 4px;
-  color: var(--content);
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.12;
+  margin-bottom: 8px;
 }
 
 .replay-button {
-  min-width: 92px;
-  padding: 8px 12px;
+  min-width: 76px;
+  height: 28px;
+  padding: 0 11px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  border-radius: 8px;
-  border: 1px solid rgba(93, 103, 98, 0.14);
-  background-color: rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  background-color: rgba(240, 253, 250, 0.72);
   box-sizing: border-box;
 }
 
 .replay-button:active {
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(204, 251, 241, 0.82);
+  transform: translateY(1px);
 }
 
 .replay-icon {
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: 700;
+  margin-right: 5px;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 800;
   line-height: 1;
 }
 
 .replay-label {
-  color: var(--content);
+  color: #0f514d;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -76,19 +57,18 @@
 .a2ui-surface .button-borderless {
   min-width: 0;
   margin: 4px 0;
-  padding: 7px 11px;
-  gap: 6px;
-  border: 1px solid rgba(93, 103, 98, 0.14);
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.58);
-  color: var(--content);
+  padding: 8px 13px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 999px;
+  background-color: rgba(240, 253, 250, 0.7);
+  color: #0f514d;
   box-shadow: none;
   font-size: 12px;
   font-weight: 700;
 }
 
 .a2ui-surface .button-borderless.ui-active {
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(204, 251, 241, 0.82);
   transform: translateY(1px);
 }
 
@@ -97,21 +77,21 @@
   font-weight: inherit;
 }
 
-.status-row {
-  height: 34px;
-  padding: 0 12px;
-  margin-bottom: 14px;
+.a2ui-surface .card-elevated {
+  border-color: rgba(93, 103, 98, 0.08);
+  box-shadow: 0 6px 18px rgba(72, 82, 77, 0.06);
+}
+
+.status {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 8px;
-  background-color: var(--canvas);
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
-  margin-right: 8px;
+  margin-right: 6px;
   border-radius: 4px;
   background-color: #8d9792;
 }
@@ -126,8 +106,9 @@
 
 .status-text {
   color: #48524d;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
+  line-height: 1;
 }
 
 .scroll {
@@ -138,13 +119,24 @@
 .empty-state {
   min-height: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--canvas);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.loading-mark {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 3px solid rgba(72, 82, 77, 0.14);
+  border-top-color: #0f766e;
 }
 
 .empty-title {
-  color: #5d6762;
+  color: #48524d;
   font-size: 14px;
   font-weight: 700;
 }
@@ -162,6 +154,14 @@
 
 .a2ui-image {
   border: none;
+  box-shadow: none;
+}
+
+.a2ui-surface .image-variant-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #dbeafe;
 }
 
 /* Override A2UI tokens with Luna tokens for the playground preview. */
@@ -188,7 +188,4 @@
   --a2ui-color-text-muted: var(--content-muted);
   --a2ui-color-text-subtle: var(--content-muted-2);
   --a2ui-color-overlay: var(--neutral-film);
-  --a2ui-icon-font-family: "Material Icons Round";
-  --a2ui-icon-color-primary: var(--primary);
-  --a2ui-icon-color-muted: var(--content-muted);
 }

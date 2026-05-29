@@ -1,0 +1,34 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.loading-inline {
+  width: 100%;
+  min-height: 14px;
+}
+
+.loading-block {
+  width: 100%;
+  min-height: 48px;
+  padding: 6px 0;
+}
+
+.loading-skeleton {
+  height: 14px;
+  border-radius: 999px;
+  background-color: rgba(93, 103, 98, 0.12);
+}
+
+.loading-skeleton-primary {
+  width: 96%;
+}
+
+.loading-skeleton-secondary {
+  width: 68%;
+  margin-top: 10px;
+  background-color: rgba(93, 103, 98, 0.08);
+}
