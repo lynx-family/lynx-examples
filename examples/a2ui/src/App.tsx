@@ -1,9 +1,10 @@
-import { A2UI, Button, Card, Column, createMessageStore, Icon, Image, Row, Text } from "@lynx-js/genui/a2ui";
-import type { CatalogComponent, CatalogInput, CatalogManifest, MessageStore } from "@lynx-js/genui/a2ui";
+import { A2UI, Button, Card, Column, createMessageStore, defineCatalog, Image, Row, Text } from "@lynx-js/genui/a2ui";
+import type { CatalogComponent, MessageStore } from "@lynx-js/genui/a2ui";
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useEffect, useMemo, useRef, useState } from "@lynx-js/react";
 
 import { actionMessages, initialMessages } from "./demoMessages.js";
+import { Loading, loadingManifest } from "./Loading.js";
 import { createMockAgent } from "./mockAgent.js";
 import type { MockAgent, MockAgentProgress } from "./mockAgent.js";
 
@@ -11,22 +12,15 @@ import "./App.css";
 
 const STREAM_DELAY_MS = 760;
 
-function manifestEntry(
-  component: unknown,
-  manifest: CatalogManifest,
-): readonly [CatalogComponent, CatalogManifest] {
-  return [component as CatalogComponent, manifest];
-}
-
-const ALL_BUILTINS: readonly CatalogInput[] = [
-  manifestEntry(Text, catalogManifests.Text),
-  manifestEntry(Image, catalogManifests.Image),
-  manifestEntry(Row, catalogManifests.Row),
-  manifestEntry(Column, catalogManifests.Column),
-  manifestEntry(Card, catalogManifests.Card),
-  manifestEntry(Button, catalogManifests.Button),
-  manifestEntry(Icon, catalogManifests.Icon),
-];
+const ALL_BUILTINS = defineCatalog([
+  [Text as CatalogComponent, catalogManifests.Text],
+  [Image as CatalogComponent, catalogManifests.Image],
+  [Row as CatalogComponent, catalogManifests.Row],
+  [Column as CatalogComponent, catalogManifests.Column],
+  [Card as CatalogComponent, catalogManifests.Card],
+  [Button as CatalogComponent, catalogManifests.Button],
+  [Loading as CatalogComponent, loadingManifest],
+]).components;
 function createSession(
   onProgress: (progress: MockAgentProgress) => void,
 ): {
@@ -84,19 +78,14 @@ export function App() {
     <page>
       <view className="page">
         <view className="topbar">
-          <view className="title-block">
-            <text className="eyebrow">A2UI example</text>
-            <text className="title">Streaming generated UI</text>
+          <view className="status">
+            <view className={`status-dot status-dot--${progress.status}`} />
+            <text className="status-text">{statusText}</text>
           </view>
           <view className="replay-button" bindtap={replay}>
             <text className="replay-icon">↻</text>
             <text className="replay-label">Replay</text>
           </view>
-        </view>
-
-        <view className="status-row">
-          <view className={`status-dot status-dot--${progress.status}`} />
-          <text className="status-text">{statusText}</text>
         </view>
 
         {session?.store && (
@@ -111,12 +100,8 @@ export function App() {
               wrapSurface={(children) => <view className="a2ui-surface">{children}</view>}
               renderEmpty={() => (
                 <view className="empty-state">
-                  <text className="empty-title">Waiting for the first batch</text>
-                </view>
-              )}
-              renderFallback={() => (
-                <view className="empty-state">
-                  <text className="empty-title">Rendering...</text>
+                  <view className="loading-mark" />
+                  <text className="empty-title">Rendering UI</text>
                 </view>
               )}
               className="a2ui-container"
