@@ -1,5 +1,11 @@
 # @lynx-example/a2ui
 
+## 0.0.5
+
+### Patch Changes
+
+- 10a7f2a: Use genui-cli to generate catalog.
+
 ## 0.0.4
 
 ### Patch Changes
