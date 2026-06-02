@@ -1,16 +1,18 @@
 import { A2UI, Button, Card, Column, createMessageStore, defineCatalog, Image, Row, Text } from "@lynx-js/genui/a2ui";
-import type { CatalogComponent, MessageStore } from "@lynx-js/genui/a2ui";
+import type { CatalogComponent, CatalogManifest, MessageStore } from "@lynx-js/genui/a2ui";
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useEffect, useMemo, useRef, useState } from "@lynx-js/react";
 
+import generatedLoadingManifest from "./catalog/Loading/catalog.json";
+import { Loading } from "./catalog/Loading/Loading.js";
 import { actionMessages, initialMessages } from "./demoMessages.js";
-import { Loading, loadingManifest } from "./Loading.js";
 import { createMockAgent } from "./mockAgent.js";
 import type { MockAgent, MockAgentProgress } from "./mockAgent.js";
 
 import "./App.css";
 
 const STREAM_DELAY_MS = 760;
+const loadingManifest = generatedLoadingManifest satisfies CatalogManifest;
 
 const ALL_BUILTINS = defineCatalog([
   [Text as CatalogComponent, catalogManifests.Text],

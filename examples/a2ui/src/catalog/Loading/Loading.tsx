@@ -1,22 +1,14 @@
-import type { CatalogManifest } from "@lynx-js/genui/a2ui";
-
 import "./Loading.css";
 
+/**
+ * Loading placeholder shown while generated UI is streaming.
+ *
+ * @a2uiCatalog Loading
+ */
 export interface LoadingProps {
-  id?: string;
+  /** Visual layout variant for the loading placeholder. */
   variant?: "inline" | "block";
 }
-
-export const loadingManifest = {
-  Loading: {
-    properties: {
-      variant: {
-        type: "string",
-        enum: ["inline", "block"],
-      },
-    },
-  },
-} satisfies CatalogManifest;
 
 export function Loading(props: LoadingProps) {
   const variant = props.variant ?? "inline";
