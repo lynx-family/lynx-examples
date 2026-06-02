@@ -15,7 +15,8 @@
     "lynx.config.ts"
   ],
   "scripts": {
-    "build": "rspeedy build",
+    "build": "npm run catalog && rspeedy build",
+    "catalog": "genui-cli a2ui generate catalog --source src/catalog --out-dir src/catalog",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
