@@ -27,11 +27,11 @@ This repository is intended to showcase examples of Lynx.
   - [`viewpager`]: An example shows how to use `<viewpager>` in Lynx
   - [`title-bar-view`]: An example shows how to use `<title-bar-view>` in Lynx
   - [`native-element`]: An example about using native element in Lynx
-- XElement
   - [`input`]: An example shows how to use input
   - [`textarea`]: An example shows how to use textarea
   - [`overlay`]: An example shows how to use overlay
   - [`svg`]: An example shows how to use svg
+  - [`markdown`]: An example show how to use markdown
 - Styling
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
