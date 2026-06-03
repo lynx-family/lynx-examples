@@ -1,0 +1,21 @@
+.box {
+  width: 40px;
+  height: 40px;
+  background: #2bc4a2;
+  margin: 20px;
+  border-left: medium solid red;
+  border-bottom: medium solid blue;
+  border-right: medium solid black;
+  border-top: medium solid yellow;
+  offset-path: path("M20,20 C20,100 200,0 200,100");
+  animation: move 5000ms infinite alternate ease-in-out;
+}
+
+@keyframes move {
+  from {
+    offset-distance: 0;
+  }
+  to {
+    offset-distance: 1;
+  }
+}
