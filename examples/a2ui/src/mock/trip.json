@@ -1,0 +1,550 @@
+[
+  {
+    "version": "v0.9",
+    "createSurface": {
+      "surfaceId": "main",
+      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "value": {
+        "trip": {
+          "city": "Kyoto",
+          "duration": "48 hours",
+          "budget": {
+            "lodging": "$140",
+            "food": "$65",
+            "transport": "$22",
+            "activities": "$38",
+            "total": "$265"
+          },
+          "day1Stops": [
+            {
+              "time": "08:00",
+              "title": "Fushimi Inari Taisha",
+              "detail": "Early shrine walk before crowds"
+            },
+            {
+              "time": "11:00",
+              "title": "Higashiyama stroll",
+              "detail": "Sannenzaka lanes and tea break"
+            },
+            {
+              "time": "14:00",
+              "title": "Kiyomizu-dera",
+              "detail": "Temple visit and panoramic city views"
+            },
+            {
+              "time": "18:30",
+              "title": "Gion dinner",
+              "detail": "Kyoto-style set meal and evening walk"
+            }
+          ],
+          "day2Stops": [
+            {
+              "time": "08:30",
+              "title": "Arashiyama Bamboo Grove",
+              "detail": "Morning walk and riverside photos"
+            },
+            {
+              "time": "11:00",
+              "title": "Tenryu-ji",
+              "detail": "Garden visit and temple grounds"
+            },
+            {
+              "time": "14:30",
+              "title": "Nishiki Market",
+              "detail": "Snack crawl and local specialties"
+            },
+            {
+              "time": "17:30",
+              "title": "Pontocho evening",
+              "detail": "Final dinner by the canal"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Column",
+          "children": [
+            "loading_hero-card",
+            "loading_day1-card",
+            "loading_day2-card",
+            "loading_budget-card"
+          ]
+        },
+        {
+          "id": "loading_hero-card",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_day1-card",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_day2-card",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_budget-card",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Column",
+          "children": [
+            "hero-card",
+            "loading_day1-card",
+            "loading_day2-card",
+            "loading_budget-card"
+          ]
+        },
+        {
+          "id": "hero-card",
+          "component": "Card",
+          "child": "hero-column",
+          "variant": "elevated"
+        },
+        {
+          "id": "hero-column",
+          "component": "Column",
+          "children": [
+            "hero-image",
+            "title-text",
+            "subtitle-text"
+          ]
+        },
+        {
+          "id": "hero-image",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "title-text",
+          "component": "Text",
+          "text": "Kyoto in 48 hours",
+          "variant": "h1"
+        },
+        {
+          "id": "subtitle-text",
+          "component": "Text",
+          "text": "Two-day itinerary with timed stops and a simple budget summary",
+          "variant": "body"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Column",
+          "children": [
+            "hero-card",
+            "day1-card",
+            "loading_day2-card",
+            "loading_budget-card"
+          ]
+        },
+        {
+          "id": "day1-card",
+          "component": "Card",
+          "child": "day1-column",
+          "variant": "outlined"
+        },
+        {
+          "id": "day1-column",
+          "component": "Column",
+          "children": [
+            "day1-image",
+            "day1-title",
+            "day1-stops"
+          ]
+        },
+        {
+          "id": "day1-image",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "day1-title",
+          "component": "Text",
+          "text": "Day 1",
+          "variant": "h2"
+        },
+        {
+          "id": "day1-stops",
+          "component": "Column",
+          "children": {
+            "path": "/trip/day1Stops",
+            "componentId": "loading_stop-row"
+          }
+        },
+        {
+          "id": "loading_stop-row",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Column",
+          "children": [
+            "hero-card",
+            "day1-card",
+            "day2-card",
+            "loading_budget-card"
+          ]
+        },
+        {
+          "id": "day2-card",
+          "component": "Card",
+          "child": "day2-column",
+          "variant": "outlined"
+        },
+        {
+          "id": "day2-column",
+          "component": "Column",
+          "children": [
+            "day2-image",
+            "day2-title",
+            "day2-stops"
+          ]
+        },
+        {
+          "id": "day2-image",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "day2-title",
+          "component": "Text",
+          "text": "Day 2",
+          "variant": "h2"
+        },
+        {
+          "id": "day2-stops",
+          "component": "Column",
+          "children": {
+            "path": "/trip/day2Stops",
+            "componentId": "loading_stop-row"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "day1-stops",
+          "component": "Column",
+          "children": {
+            "path": "/trip/day1Stops",
+            "componentId": "stop-row"
+          }
+        },
+        {
+          "id": "day2-stops",
+          "component": "Column",
+          "children": {
+            "path": "/trip/day2Stops",
+            "componentId": "stop-row"
+          }
+        },
+        {
+          "id": "stop-row",
+          "component": "Row",
+          "children": [
+            "stop-time",
+            "stop-copy"
+          ],
+          "align": "start"
+        },
+        {
+          "id": "stop-time",
+          "component": "Text",
+          "text": {
+            "path": "time"
+          },
+          "variant": "h4",
+          "emphasis": "strong"
+        },
+        {
+          "id": "stop-copy",
+          "component": "Column",
+          "children": [
+            "stop-title",
+            "stop-detail"
+          ]
+        },
+        {
+          "id": "stop-title",
+          "component": "Text",
+          "text": {
+            "path": "title"
+          },
+          "variant": "h4"
+        },
+        {
+          "id": "stop-detail",
+          "component": "Text",
+          "text": {
+            "path": "detail"
+          },
+          "variant": "body"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Column",
+          "children": [
+            "hero-card",
+            "day1-card",
+            "day2-card",
+            "budget-card"
+          ]
+        },
+        {
+          "id": "budget-card",
+          "component": "Card",
+          "child": "budget-column",
+          "variant": "filled"
+        },
+        {
+          "id": "budget-column",
+          "component": "Column",
+          "children": [
+            "budget-image",
+            "budget-title",
+            "lodging-row",
+            "food-row",
+            "transport-row",
+            "activities-row",
+            "budget-divider",
+            "total-row"
+          ]
+        },
+        {
+          "id": "budget-image",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "budget-title",
+          "component": "Text",
+          "text": "Budget summary",
+          "variant": "h2"
+        },
+        {
+          "id": "lodging-row",
+          "component": "Row",
+          "children": [
+            "lodging-label",
+            "lodging-value"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "lodging-label",
+          "component": "Text",
+          "text": "Lodging",
+          "variant": "body"
+        },
+        {
+          "id": "lodging-value",
+          "component": "Text",
+          "text": {
+            "path": "/trip/budget/lodging"
+          },
+          "variant": "body",
+          "emphasis": "strong"
+        },
+        {
+          "id": "food-row",
+          "component": "Row",
+          "children": [
+            "food-label",
+            "food-value"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "food-label",
+          "component": "Text",
+          "text": "Food",
+          "variant": "body"
+        },
+        {
+          "id": "food-value",
+          "component": "Text",
+          "text": {
+            "path": "/trip/budget/food"
+          },
+          "variant": "body",
+          "emphasis": "strong"
+        },
+        {
+          "id": "transport-row",
+          "component": "Row",
+          "children": [
+            "transport-label",
+            "transport-value"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "transport-label",
+          "component": "Text",
+          "text": "Transport",
+          "variant": "body"
+        },
+        {
+          "id": "transport-value",
+          "component": "Text",
+          "text": {
+            "path": "/trip/budget/transport"
+          },
+          "variant": "body",
+          "emphasis": "strong"
+        },
+        {
+          "id": "activities-row",
+          "component": "Row",
+          "children": [
+            "activities-label",
+            "activities-value"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "activities-label",
+          "component": "Text",
+          "text": "Activities",
+          "variant": "body"
+        },
+        {
+          "id": "activities-value",
+          "component": "Text",
+          "text": {
+            "path": "/trip/budget/activities"
+          },
+          "variant": "body",
+          "emphasis": "strong"
+        },
+        {
+          "id": "budget-divider",
+          "component": "Divider",
+          "axis": "horizontal"
+        },
+        {
+          "id": "total-row",
+          "component": "Row",
+          "children": [
+            "total-label",
+            "total-value"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "total-label",
+          "component": "Text",
+          "text": "Estimated total",
+          "variant": "h3"
+        },
+        {
+          "id": "total-value",
+          "component": "Text",
+          "text": {
+            "path": "/trip/budget/total"
+          },
+          "variant": "h3",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "hero-image",
+          "component": "Image",
+          "url": "https://images.pexels.com/photos/36664015/pexels-photo-36664015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "variant": "header",
+          "mode": "aspectFill"
+        },
+        {
+          "id": "day1-image",
+          "component": "Image",
+          "url": "https://images.pexels.com/photos/31091591/pexels-photo-31091591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "variant": "mediumFeature",
+          "mode": "aspectFill"
+        },
+        {
+          "id": "day2-image",
+          "component": "Image",
+          "url": "https://images.pexels.com/photos/2070025/pexels-photo-2070025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "variant": "mediumFeature",
+          "mode": "aspectFill"
+        },
+        {
+          "id": "budget-image",
+          "component": "Image",
+          "url": "https://images.pexels.com/photos/16797718/pexels-photo-16797718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "variant": "mediumFeature",
+          "mode": "aspectFill"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "version": "v0.9",
+    "createSurface": {
+      "surfaceId": "main",
+      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "value": {
+        "analytics": {
+          "labels": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ],
+          "series": [
+            {
+              "name": "Revenue",
+              "values": [
+                82,
+                88,
+                91,
+                95,
+                101,
+                108,
+                112,
+                118,
+                121,
+                127,
+                132,
+                139
+              ],
+              "color": "#2563EB"
+            },
+            {
+              "name": "Operating Cost",
+              "values": [
+                61,
+                64,
+                66,
+                68,
+                70,
+                73,
+                76,
+                78,
+                79,
+                81,
+                84,
+                86
+              ],
+              "color": "#64748B"
+            },
+            {
+              "name": "Service Incidents",
+              "values": [
+                24,
+                22,
+                20,
+                19,
+                18,
+                17,
+                15,
+                14,
+                13,
+                12,
+                11,
+                10
+              ],
+              "color": "#059669"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "loading_analytics-card-content",
+          "variant": "elevated"
+        },
+        {
+          "id": "loading_analytics-card-content",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "analytics-card-content",
+          "variant": "elevated"
+        },
+        {
+          "id": "analytics-card-content",
+          "component": "Column",
+          "children": [
+            "loading_header-row",
+            "loading_subtitle-text",
+            "loading_divider",
+            "loading_chart"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "loading_header-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_subtitle-text",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_divider",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_chart",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "analytics-card-content",
+          "component": "Column",
+          "children": [
+            "header-row",
+            "loading_subtitle-text",
+            "loading_divider",
+            "loading_chart"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "header-row",
+          "component": "Row",
+          "children": [
+            "loading_title-text",
+            "loading_status-row"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "loading_title-text",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_status-row",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "header-row",
+          "component": "Row",
+          "children": [
+            "title-text",
+            "loading_status-row"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "title-text",
+          "component": "Text",
+          "text": "Operational Metrics Trend",
+          "variant": "h2",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "header-row",
+          "component": "Row",
+          "children": [
+            "title-text",
+            "status-row"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "status-row",
+          "component": "Row",
+          "children": [
+            "loading_status-icon",
+            "loading_status-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "loading_status-icon",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_status-text",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "status-row",
+          "component": "Row",
+          "children": [
+            "status-icon",
+            "loading_status-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "status-icon",
+          "component": "Image",
+          "url": "https://img.icons8.com/fluency/48/checkmark.png",
+          "variant": "icon"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "status-row",
+          "component": "Row",
+          "children": [
+            "status-icon",
+            "status-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "status-text",
+          "component": "Text",
+          "text": "Live dashboard view",
+          "variant": "caption",
+          "emphasis": "medium"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "analytics-card-content",
+          "component": "Column",
+          "children": [
+            "header-row",
+            "subtitle-text",
+            "loading_divider",
+            "loading_chart"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "subtitle-text",
+          "component": "Text",
+          "text": "Monthly time-series view with smooth multi-series trend lines, legend, labeled axes, and subtle grid lines for enterprise monitoring.",
+          "variant": "body"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "analytics-card-content",
+          "component": "Column",
+          "children": [
+            "header-row",
+            "subtitle-text",
+            "divider",
+            "loading_chart"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "divider",
+          "component": "Divider",
+          "axis": "horizontal"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "analytics-card-content",
+          "component": "Column",
+          "children": [
+            "header-row",
+            "subtitle-text",
+            "divider",
+            "chart"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "chart",
+          "component": "LineChart",
+          "labels": {
+            "path": "/analytics/labels"
+          },
+          "series": {
+            "path": "/analytics/series"
+          },
+          "variant": "natural",
+          "xLabel": "Month",
+          "yLabel": "Indexed business metric",
+          "showGrid": true,
+          "showLegend": true,
+          "height": 360
+        }
+      ]
+    }
+  }
+]
