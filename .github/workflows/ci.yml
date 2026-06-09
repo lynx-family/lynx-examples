@@ -39,3 +39,34 @@ jobs:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
           NODE_OPTIONS: --max-old-space-size=8192
         run: pnpm turbo run build --affected --concurrency=4
+      # Publish PR previews to pkg.pr.new, but only when the PR adds a
+      # changeset that actually bumps a publishable package. Fork PRs are
+      # included: this is a `pull_request` (not `pull_request_target`)
+      # workflow, so fork runs use a read-only token with no base-repo secrets
+      # — the same trust boundary the Build step above (which already runs fork
+      # build scripts) relies on.
+      - name: Collect packages with changesets
+        id: changeset
+        env:
+          CHANGESET_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          pnpm changeset status --since "$CHANGESET_BASE_SHA" --output .changeset-status.json
+          PACKAGE_DIRS=$(node .github/scripts/list-changeset-packages.cjs .changeset-status.json | tr '\n' ' ')
+          if [ -z "$(echo "$PACKAGE_DIRS" | tr -d '[:space:]')" ]; then
+            echo "No publishable packages affected by changesets; skipping pkg.pr.new publish."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Publishing the following package directories to pkg.pr.new:"
+          printf '  %s\n' $PACKAGE_DIRS
+          {
+            echo "skip=false"
+            echo "package-dirs<<EOF"
+            echo "$PACKAGE_DIRS"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: Publish to pkg.pr.new
+        if: steps.changeset.outputs.skip == 'false'
+        env:
+          PACKAGE_DIRS: ${{ steps.changeset.outputs.package-dirs }}
+        run: pnpm dlx pkg-pr-new publish --compact --pnpm $PACKAGE_DIRS
