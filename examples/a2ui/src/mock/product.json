@@ -1,0 +1,797 @@
+[
+  {
+    "version": "v0.9",
+    "createSurface": {
+      "surfaceId": "main",
+      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "path": "/product",
+      "value": {
+        "id": "product-001",
+        "imageQuery": "modern wireless headphones product photo",
+        "title": "Aurora Wireless Headphones",
+        "price": "$129.00",
+        "originalPrice": "$159.00",
+        "rating": "4.8",
+        "reviewCount": "1,284 reviews",
+        "discountBadge": "20% off",
+        "variantInfo": "Midnight Blue · Noise cancelling · 30 hr battery",
+        "stockStatus": "In stock — ships tomorrow",
+        "tags": [
+          {
+            "label": "Best seller"
+          },
+          {
+            "label": "Free shipping"
+          },
+          {
+            "label": "2-year warranty"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "loading_product-column",
+          "variant": "elevated"
+        },
+        {
+          "id": "loading_product-column",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "product-column",
+          "variant": "elevated"
+        },
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "loading_product-image",
+            "loading_discount-badge",
+            "loading_product-title",
+            "loading_rating-row",
+            "loading_price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "loading_product-image",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_discount-badge",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_product-title",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_rating-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_price-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_tags-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_variant-info",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_stock-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_cta-button",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "loading_discount-badge",
+            "loading_product-title",
+            "loading_rating-row",
+            "loading_price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "product-image",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "loading_product-title",
+            "loading_rating-row",
+            "loading_price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "discount-badge",
+          "component": "Card",
+          "child": "loading_discount-text",
+          "variant": "filled"
+        },
+        {
+          "id": "loading_discount-text",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "discount-badge",
+          "component": "Card",
+          "child": "discount-text",
+          "variant": "filled"
+        },
+        {
+          "id": "discount-text",
+          "component": "Text",
+          "text": {
+            "path": "/product/discountBadge"
+          },
+          "variant": "caption",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "loading_rating-row",
+            "loading_price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "product-title",
+          "component": "Text",
+          "text": {
+            "path": "/product/title"
+          },
+          "variant": "h3",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "loading_price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "rating-row",
+          "component": "Row",
+          "children": [
+            "loading_rating-icon",
+            "loading_rating-value",
+            "loading_review-count"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "loading_rating-icon",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_rating-value",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_review-count",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "rating-row",
+          "component": "Row",
+          "children": [
+            "rating-icon",
+            "loading_rating-value",
+            "loading_review-count"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "rating-icon",
+          "component": "Image",
+          "url": "https://img.icons8.com/fluency/48/star.png",
+          "variant": "icon"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "rating-row",
+          "component": "Row",
+          "children": [
+            "rating-icon",
+            "rating-value",
+            "loading_review-count"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "rating-value",
+          "component": "Text",
+          "text": {
+            "path": "/product/rating"
+          },
+          "variant": "caption",
+          "emphasis": "medium"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "rating-row",
+          "component": "Row",
+          "children": [
+            "rating-icon",
+            "rating-value",
+            "review-count"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "review-count",
+          "component": "Text",
+          "text": {
+            "path": "/product/reviewCount"
+          },
+          "variant": "caption"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "price-row",
+            "loading_tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "price-row",
+          "component": "Row",
+          "children": [
+            "loading_current-price",
+            "loading_original-price"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "loading_current-price",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_original-price",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "price-row",
+          "component": "Row",
+          "children": [
+            "current-price",
+            "loading_original-price"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "current-price",
+          "component": "Text",
+          "text": {
+            "path": "/product/price"
+          },
+          "variant": "h2",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "price-row",
+          "component": "Row",
+          "children": [
+            "current-price",
+            "original-price"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "original-price",
+          "component": "Text",
+          "text": {
+            "path": "/product/originalPrice"
+          },
+          "variant": "body"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "price-row",
+            "tags-row",
+            "loading_variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "tags-row",
+          "component": "Row",
+          "children": {
+            "path": "/product/tags",
+            "componentId": "loading_tag-chip"
+          },
+          "align": "center"
+        },
+        {
+          "id": "loading_tag-chip",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "tags-row",
+          "component": "Row",
+          "children": {
+            "path": "/product/tags",
+            "componentId": "tag-chip"
+          },
+          "align": "center"
+        },
+        {
+          "id": "tag-chip",
+          "component": "Card",
+          "child": "loading_tag-label",
+          "variant": "filled"
+        },
+        {
+          "id": "loading_tag-label",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "tag-chip",
+          "component": "Card",
+          "child": "tag-label",
+          "variant": "filled"
+        },
+        {
+          "id": "tag-label",
+          "component": "Text",
+          "text": {
+            "path": "label"
+          },
+          "variant": "caption"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "price-row",
+            "tags-row",
+            "variant-info",
+            "loading_stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "variant-info",
+          "component": "Text",
+          "text": {
+            "path": "/product/variantInfo"
+          },
+          "variant": "caption"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "price-row",
+            "tags-row",
+            "variant-info",
+            "stock-row",
+            "loading_cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "stock-row",
+          "component": "Row",
+          "children": [
+            "loading_stock-icon",
+            "loading_stock-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "loading_stock-icon",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_stock-text",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "stock-row",
+          "component": "Row",
+          "children": [
+            "stock-icon",
+            "loading_stock-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "stock-icon",
+          "component": "Image",
+          "url": "https://img.icons8.com/fluency/48/checkmark.png",
+          "variant": "icon"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "stock-row",
+          "component": "Row",
+          "children": [
+            "stock-icon",
+            "stock-text"
+          ],
+          "align": "center"
+        },
+        {
+          "id": "stock-text",
+          "component": "Text",
+          "text": {
+            "path": "/product/stockStatus"
+          },
+          "variant": "caption",
+          "emphasis": "medium"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-column",
+          "component": "Column",
+          "children": [
+            "product-image",
+            "discount-badge",
+            "product-title",
+            "rating-row",
+            "price-row",
+            "tags-row",
+            "variant-info",
+            "stock-row",
+            "cta-button"
+          ],
+          "align": "stretch"
+        },
+        {
+          "id": "cta-button",
+          "component": "Button",
+          "variant": "primary",
+          "child": "loading_cta-label",
+          "action": {
+            "event": {
+              "name": "add_to_cart",
+              "context": {
+                "productId": {
+                  "path": "/product/id"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "loading_cta-label",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "cta-button",
+          "component": "Button",
+          "variant": "primary",
+          "child": "cta-label",
+          "action": {
+            "event": {
+              "name": "add_to_cart",
+              "context": {
+                "productId": {
+                  "path": "/product/id"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "cta-label",
+          "component": "Text",
+          "text": "Add to cart"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "path": "/product/imageQuery",
+      "value": "https://images.pexels.com/photos/3394666/pexels-photo-3394666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "product-image",
+          "component": "Image",
+          "url": {
+            "path": "/product/imageQuery"
+          },
+          "variant": "mediumFeature",
+          "fit": "cover"
+        }
+      ]
+    }
+  }
+]

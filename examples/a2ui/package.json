@@ -21,7 +21,7 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/genui": "0.0.2",
+    "@lynx-js/genui": "0.0.3",
     "@lynx-js/luna-styles": "0.1.0",
     "@lynx-js/lynx-ui": "3.133.1",
     "@lynx-js/react": "catalog:"

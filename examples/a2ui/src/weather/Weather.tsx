@@ -3,13 +3,13 @@ import type { CatalogComponent, CatalogManifest, MessageStore } from "@lynx-js/g
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useEffect, useMemo, useRef, useState } from "@lynx-js/react";
 
-import generatedLoadingManifest from "./catalog/Loading/catalog.json";
-import { Loading } from "./catalog/Loading/Loading.js";
+import generatedLoadingManifest from "../catalog/Loading/catalog.json";
+import { Loading } from "../catalog/Loading/Loading.jsx";
+import { createMockAgent } from "../mockAgent.js";
+import type { MockAgent, MockAgentProgress } from "../mockAgent.js";
 import { actionMessages, initialMessages } from "./demoMessages.js";
-import { createMockAgent } from "./mockAgent.js";
-import type { MockAgent, MockAgentProgress } from "./mockAgent.js";
 
-import "./App.css";
+import "./Weather.css";
 
 const STREAM_DELAY_MS = 760;
 const loadingManifest = generatedLoadingManifest satisfies CatalogManifest;
@@ -40,7 +40,7 @@ function createSession(
   return { store, agent };
 }
 
-export function App() {
+export function Weather() {
   const agentRef = useRef<MockAgent | null>(null);
   const [sessionId, setSessionId] = useState(0);
   const [progress, setProgress] = useState<MockAgentProgress>({

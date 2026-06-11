@@ -14,9 +14,19 @@ export default defineConfig({
       enableCSSInlineVariables: true,
     }),
   ],
+  source: {
+    entry: {
+      weather: "./src/weather/index.tsx",
+      gallery: "./src/gallery/index.tsx",
+      actions: "./src/actions/index.tsx",
+    },
+  },
   environments: {
     web: {},
     lynx: {},
+  },
+  server: {
+    port: 8080,
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/a2ui/dist",

@@ -184,8 +184,8 @@ importers:
   examples/a2ui:
     dependencies:
       '@lynx-js/genui':
-        specifier: 0.0.2
-        version: 0.0.2(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(@lynx-js/types@3.9.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)
+        specifier: 0.0.3
+        version: 0.0.3(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(@lynx-js/types@3.9.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)
       '@lynx-js/luna-styles':
         specifier: 0.1.0
         version: 0.1.0
@@ -2332,8 +2332,8 @@ packages:
     resolution: {integrity: sha512-hDsJ7XeYQEJcBlC9nwcxmFz8tfWLzNnIFyyDXVD5Xg0Sb1wE26AXugdIdp4pcHlUcEpcr+Sj/JQYMXp6Q0USGA==}
     engines: {node: '>=18'}
 
-  '@lynx-js/genui@0.0.2':
-    resolution: {integrity: sha512-ZXpPkbEz/dSEIvWnaNJI0P2uHv+LSJjXDjLKjo99xGAyiAm7pWXnhpVSgE2RRDVMuDpI0X8KD1myZG3eqEL4Ng==}
+  '@lynx-js/genui@0.0.3':
+    resolution: {integrity: sha512-okzTQl2Qg60UIOHn3Rpk5Jgv3QazJH35j4+jfLTM4zd7uSkteVeov0wd7vUGLm9AgOWqyI38sN02ZeOwb8QVug==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -8614,7 +8614,7 @@ snapshots:
 
   '@lynx-js/externals-loading-webpack-plugin@0.2.0': {}
 
-  '@lynx-js/genui@0.0.2(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(@lynx-js/types@3.9.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)':
+  '@lynx-js/genui@0.0.3(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(@lynx-js/types@3.9.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)':
     dependencies:
       '@a2ui/web_core': 0.9.1
       '@lynx-js/react': 0.121.1(@lynx-js/types@3.9.0)(@types/react@18.3.28)
