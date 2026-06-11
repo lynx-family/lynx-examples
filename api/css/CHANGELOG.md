@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.10.0
+
+### Minor Changes
+
+- 4e411f7: Add examples for CSS offset-path, offset-distance, and offset-rotate.
+
 ## 0.9.2
 
 ### Patch Changes
