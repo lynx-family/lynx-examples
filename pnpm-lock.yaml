@@ -545,7 +545,7 @@ importers:
         specifier: ^18.3.28
         version: 18.3.28
 
-  examples/fiber-element:
+  examples/vanilla:
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'

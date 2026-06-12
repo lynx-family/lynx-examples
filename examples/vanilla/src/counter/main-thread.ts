@@ -16,7 +16,7 @@ function createText(className: string, value: string) {
 }
 
 function renderPage(data: Record<string, unknown>): void {
-  const title = createText("title", "FiberElement Counter");
+  const title = createText("title", "Vanilla Counter");
   __AppendElement(page, title.text);
 
   const button = __CreateView(pageId);

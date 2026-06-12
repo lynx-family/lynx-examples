@@ -155,7 +155,7 @@ function processData(data: RenderState): Required<RenderState> {
     todos: Array.isArray(raw["todos"])
       ? (raw["todos"] as Todo[])
       : [
-        { id: "1", title: "Create the FiberElement project", completed: true },
+        { id: "1", title: "Create the vanilla project", completed: true },
         {
           id: "2",
           title: "Render todos with Element PAPI",
