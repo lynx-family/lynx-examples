@@ -18,7 +18,7 @@ const App = () => {
           blur-effect="glass"
           glass-style="regular"
           glass-tint-color="rgba(120, 180, 255, 0.3)"
-          glass-interactive="true"
+          glass-interactive
           blur-radius="25"
           style="width:80%;height:120px;margin-top:80px;margin-left:10%;justify-content:center;align-items:center;border-radius:24px"
         >
