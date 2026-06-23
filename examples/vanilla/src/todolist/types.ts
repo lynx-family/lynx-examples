@@ -6,7 +6,7 @@ export interface Todo {
   completed: boolean;
 }
 
-export interface RenderState {
+export interface RenderData {
   loading?: boolean;
   filter?: Filter;
   todos?: Todo[];

@@ -1,10 +1,11 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 
-import { pluginTemplateWebpack } from "./plugin.js";
+import { pluginVanillaTemplateWebpack } from "./plugin.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -26,7 +27,10 @@ export default defineConfig({
     filename: "[name].bundle",
   },
   plugins: [
-    pluginTemplateWebpack(),
+    pluginVanillaTemplateWebpack(),
+    pluginLynxConfig({
+      enableEventHandleRefactor: true,
+    }),
     pluginQRCode({
       schema(url) {
         return `${url}?fullscreen=true`;

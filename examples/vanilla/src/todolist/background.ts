@@ -1,49 +1,45 @@
-import { setEventHandler } from "../common/event.js";
-import { renderState, setRenderState, syncState } from "../common/state.js";
-import type { Filter, RenderState } from "./types.js";
+import { getData, setData } from "../common/background/data.js";
+import { setBackgroundEventHandler } from "../common/background/event.js";
+import { setupBackground } from "../common/background/setup.js";
+import type { Filter, RenderData } from "./types.js";
 
-const state = renderState as RenderState;
+setupBackground();
+const data = getData<RenderData>();
 
 function addTodo(): void {
-  const nextId = String(state.todos?.length ?? 0 + 1);
-  setRenderState({
+  const nextId = String(data.todos?.length ?? 0 + 1);
+  setData({
     todos: [
-      ...(state.todos ?? []),
+      ...(data.todos ?? []),
       { id: nextId, title: `New task ${nextId}`, completed: false },
     ],
   });
-  syncState();
 }
 
 function clearCompleted(): void {
-  setRenderState({
-    todos: state.todos?.filter((todo) => !todo.completed) ?? [],
+  setData({
+    todos: data.todos?.filter((todo) => !todo.completed) ?? [],
   });
-  syncState();
 }
 
 function setFilter(filter: Filter): void {
-  setRenderState({ filter });
-  syncState();
+  setData({ filter });
 }
 
 function toggleTodo(id: string): void {
-  setRenderState({
-    todos: state.todos?.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo) ?? [],
+  setData({
+    todos: data.todos?.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo) ?? [],
   });
-  syncState();
 }
 
 function reloadTodos(): void {
-  setRenderState({ loading: true });
-  syncState();
+  setData({ loading: true });
   setTimeout(() => {
-    setRenderState({ loading: false });
-    syncState();
+    setData({ loading: false });
   }, 600);
 }
 
-setEventHandler((handlerName: string) => {
+setBackgroundEventHandler((handlerName: string) => {
   if (handlerName === "reloadTodos") {
     reloadTodos();
     return true;
