@@ -59,12 +59,14 @@ export function FormSection() {
             </FormField>
           </view>
 
-          <FormField as="Checkbox" name="agree" className="checkbox">
-            <CheckboxIndicator className="checkbox-indicator">
-              <view className="checkmark" />
-            </CheckboxIndicator>
+          <view className="row">
+            <FormField as="Checkbox" name="agree" className="checkbox">
+              <CheckboxIndicator className="checkbox-indicator">
+                <view className="checkmark" />
+              </CheckboxIndicator>
+            </FormField>
             <text className="row-label">I agree to terms</text>
-          </FormField>
+          </view>
 
           <view className="row">
             <FormField as="Switch" name="notify" className="switch">
