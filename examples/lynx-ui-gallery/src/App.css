@@ -1,3 +1,5 @@
+@import "@lynx-js/luna-styles/index.css";
+
 .gallery-container {
   width: 100%;
   height: 100%;
@@ -125,32 +127,59 @@
 
 /* Switch */
 .switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 48px;
   height: 28px;
-  position: relative;
+  border-radius: 9999px;
   overflow: hidden;
-  border-radius: 14px;
+}
+
+.switch.ui-disabled {
+  opacity: 0.5;
 }
 
 .switch-track {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 28px;
-  border-radius: 14px;
-  background-color: #444;
+  width: 100%;
+  height: 100%;
+  background-color: var(--neutral-faint, #444);
+  transition: background-color 150ms ease;
 }
 
 .switch-track.ui-checked {
-  background-color: #e94560;
+  background-color: var(--primary, #e94560);
+}
+
+.switch-track.ui-active {
+  background-color: var(--primary-2, #c0392b);
+}
+
+.switch-track.ui-checked.ui-active {
+  background-color: var(--primary-2, #c0392b);
 }
 
 .switch-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  background-color: #fff;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  transform: translateX(3px);
+  border-radius: 9999px;
+  background-color: var(--primary-content, #fff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 150ms ease, width 150ms ease;
+}
+
+.switch-thumb.ui-checked {
+  transform: translateX(23px);
+}
+
+.switch-thumb.ui-active {
+  width: 33px;
+}
+
+.switch-thumb.ui-checked.ui-active {
+  transform: translateX(12px);
 }
 
 /* Checkbox */

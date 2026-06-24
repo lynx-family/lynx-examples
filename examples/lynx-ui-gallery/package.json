@@ -20,11 +20,13 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
+    "@lynx-js/luna-styles": "0.1.0",
     "@lynx-js/lynx-ui": "3.133.1",
     "@lynx-js/preact-devtools": "5.0.1-20260525112551-dfe2d03",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
+    "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
