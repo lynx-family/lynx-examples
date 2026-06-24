@@ -16,6 +16,13 @@ export default defineConfig({
   ],
   output: {
     filename: "[name].[platform].bundle",
+    minify: {
+      jsOptions: {
+        minimizerOptions: {
+          mangle: false,
+        },
+      },
+    },
   },
   environments: {
     web: {},
