@@ -31,6 +31,7 @@ This repository is intended to showcase examples of Lynx.
   - [`textarea`]: An example shows how to use textarea
   - [`overlay`]: An example shows how to use overlay
   - [`svg`]: An example shows how to use svg
+  - [`video`]: An example shows how to use `<video>` in Lynx
   - [`markdown`]: An example show how to use markdown
 - Styling
   - [`animation`]: Examples for using animation
@@ -111,6 +112,7 @@ This repository is intended to showcase examples of Lynx.
 [`tutorial-bankcards`]: ./examples/BankCards
 [`composing-elements`]: ./examples/composing-elements
 [`view`]: ./examples/view
+[`video`]: ./examples/video
 [`viewpager`]: ./examples/viewpager
 [`basic-usage`]: ./examples/web-platform
 [`with-solidjs`]: ./examples/with-solidjs
