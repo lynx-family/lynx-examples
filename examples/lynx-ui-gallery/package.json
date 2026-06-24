@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/lynx-ui-gallery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Kitchen Sink gallery showcasing all lynx-ui components",
   "repository": {
     "type": "git",
