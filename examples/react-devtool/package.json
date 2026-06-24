@@ -1,11 +1,11 @@
 {
-  "name": "@lynx-example/lynx-ui-gallery",
+  "name": "@lynx-example/react-devtool",
   "version": "0.1.0",
-  "description": "A Kitchen Sink gallery showcasing all lynx-ui components",
+  "description": "lynx-ui-gallery with @lynx-js/preact-devtools enabled",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/lynx-ui-gallery"
+    "directory": "examples/react-devtool"
   },
   "author": "Lynx Authors",
   "type": "module",
@@ -15,13 +15,15 @@
     "lynx.config.ts"
   ],
   "scripts": {
-    "build": "rspeedy build",
+    "build": "REACT_DEV=true rspeedy build",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
   "dependencies": {
+    "@lynx-example/lynx-ui-gallery": "workspace:*",
     "@lynx-js/luna-styles": "0.1.0",
     "@lynx-js/lynx-ui": "3.133.1",
+    "@lynx-js/preact-devtools": "5.0.1-20260525112551-dfe2d03",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
