@@ -1,5 +1,11 @@
 # @lynx-example/react-devtool
 
+## 0.2.1
+
+### Patch Changes
+
+- 18c231f: Disable JavaScript mangle in the react-devtool example so component names remain readable in preact-devtools.
+
 ## 0.2.0
 
 ### Minor Changes
