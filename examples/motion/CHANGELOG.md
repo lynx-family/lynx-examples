@@ -1,5 +1,11 @@
 # @lynx-example/motion
 
+## 0.2.2
+
+### Patch Changes
+
+- e52a572: Republish so changesets-based CI can publish the package normally (no functional changes; 0.2.1 was manually published outside changesets to work around an OIDC auth failure).
+
 ## 0.2.1
 
 ### Patch Changes
