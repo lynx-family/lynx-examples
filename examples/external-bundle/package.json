@@ -14,7 +14,8 @@
     "dist/",
     "src/",
     "lynx.config.mjs",
-    "*.rslib.config.js"
+    "*.rslib.config.js",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "pnpm build:bundle && rspeedy build",

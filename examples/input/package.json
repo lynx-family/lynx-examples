@@ -13,7 +13,8 @@
   "files": [
     "dist/",
     "src/",
-    "lynx.config.mjs"
+    "lynx.config.mjs",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",

@@ -15,7 +15,8 @@
     "dist",
     "src",
     "lynx.config.ts",
-    "tsconfig.json"
+    "tsconfig.json",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "rspeedy build",
