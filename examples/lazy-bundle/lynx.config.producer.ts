@@ -6,12 +6,14 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 export default defineConfig({
   source: {
     entry: {
-      consumer: "./src/consumer/index.tsx",
+      producer: "./src/producer/index.tsx",
     },
   },
   plugins: [
     pluginQRCode(),
-    pluginReactLynx(),
+    pluginReactLynx({
+      experimental_isLazyBundle: true,
+    }),
     pluginTypeCheck(),
   ],
   dev: {

@@ -14,7 +14,7 @@
     "lynx.config.ts"
   ],
   "scripts": {
-    "build": "rspeedy build",
+    "build": "rspeedy build && rspeedy build --config lynx.config.producer.ts",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
