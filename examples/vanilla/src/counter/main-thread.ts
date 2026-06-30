@@ -1,57 +1,33 @@
 import type { RawTextElementRef } from "@lynx-js/type-element-api";
 
-const page = __CreatePage("0", 0);
-const pageId = __GetElementUniqueID(page);
-__SetClasses(page, "page");
+import { createPage, createText, createView } from "../common/main-thread/element.js";
+import { bindMainThreadEvent } from "../common/main-thread/event.js";
+import { setupMainThread } from "../common/main-thread/setup.js";
 
-let count = 0;
-let counterText: RawTextElementRef | undefined;
+const { page, pageId } = createPage("page");
 
-function createText(className: string, value: string) {
-  const text = __CreateText(pageId);
-  __SetClasses(text, className);
-  const raw = __CreateRawText(value);
-  __AppendElement(text, raw);
-  return { text, raw };
-}
-
-function renderPage(data: Record<string, unknown>): void {
-  const title = createText("title", "Vanilla Counter");
+function renderPage(): void {
+  let count = 0;
+  let counterText: RawTextElementRef | undefined;
+  const title = createText(pageId, "title", "Vanilla Counter");
   __AppendElement(page, title.text);
 
-  const button = __CreateView(pageId);
-  __SetClasses(button, "button");
-  __AddEvent(button, "bindEvent", "tap", "increment");
-  const label = createText("button-label", "Tap to Count");
+  const button = createView(pageId, "button");
+  bindMainThreadEvent(button, "tap", () => {
+    count += 1;
+    if (!counterText) return;
+    __SetAttribute(counterText, "text", String(count));
+    __FlushElementTree();
+  });
+  const label = createText(pageId, "button-label", "Tap to Count");
   __AppendElement(button, label.text);
   __AppendElement(page, button);
 
-  const counter = createText("counter", String(data["count"]));
+  const counter = createText(pageId, "counter", String(count));
   counterText = counter.raw;
   __AppendElement(page, counter.text);
 }
 
-function updatePage(data: Record<string, unknown>): void {
-  if (!counterText) return;
-  __SetAttribute(counterText, "text", String(data["count"] ?? 0));
-  __FlushElementTree();
-}
-
-function getPageData(): Record<string, unknown> {
-  return {};
-}
-
-function processData(
-  data: Record<string, unknown>,
-): Record<string, unknown> {
-  return {
-    count,
-  };
-}
-
-Object.assign(globalThis, {
+setupMainThread({
   renderPage,
-  updatePage,
-  getPageData,
-  processData,
-});
+}, { enableBackgroundSync: false });

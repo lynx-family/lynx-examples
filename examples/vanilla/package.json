@@ -22,6 +22,7 @@
     "preview": "rspeedy preview"
   },
   "devDependencies": {
+    "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",

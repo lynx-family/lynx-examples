@@ -1,14 +1,18 @@
+import fs from "node:fs";
 import path from "node:path";
 
 import { RuntimeWrapperWebpackPlugin } from "@lynx-js/runtime-wrapper-webpack-plugin";
 import { LynxEncodePlugin, LynxTemplatePlugin } from "@lynx-js/template-webpack-plugin";
 
-const PLUGIN_NAME = "template-webpack";
+const PLUGIN_NAME = "vanilla-template-webpack";
+const LYNX_ENGINE_VERSION = "3.5";
 
-export function pluginTemplateWebpack() {
+export function pluginVanillaTemplateWebpack() {
   return {
     name: PLUGIN_NAME,
     setup(api) {
+      // Keep the template plugin discoverable by Rspeedy's Lynx internals.
+      api.expose(Symbol.for("LynxTemplatePlugin"), { LynxTemplatePlugin });
       api.modifyBundlerChain((chain) => {
         const rawEntries = Object.entries(chain.entryPoints.entries() ?? {});
         chain.entryPoints.clear();
@@ -26,11 +30,16 @@ export function pluginTemplateWebpack() {
           const mtEntry = `${name}__main-thread`;
           const bgAsset = `.rspeedy/${name}/background.js`;
           const mtAsset = `.rspeedy/${name}/main-thread.js`;
+          const hasBackground = fs.existsSync(bgSource);
 
-          chain.entry(bgEntry).add({
-            import: bgSource,
-            filename: bgAsset,
-          });
+          // Each example entry always has main-thread code and may opt into a
+          // background thread by adding a sibling background.ts file.
+          if (hasBackground) {
+            chain.entry(bgEntry).add({
+              import: bgSource,
+              filename: bgAsset,
+            });
+          }
 
           chain.entry(mtEntry).add({
             import: [mtSource, cssSource],
@@ -42,21 +51,26 @@ export function pluginTemplateWebpack() {
               ...LynxTemplatePlugin.defaultOptions,
               filename: `${name}.bundle`,
               intermediate: `.rspeedy/${name}`,
-              chunks: [bgEntry, mtEntry],
+              chunks: hasBackground ? [bgEntry, mtEntry] : [mtEntry],
               dsl: "react_nodiff",
+              targetSdkVersion: LYNX_ENGINE_VERSION,
               cssPlugins: [],
             },
           ]);
 
-          chain.plugin(`runtime-wrapper-${name}`).use(
-            RuntimeWrapperWebpackPlugin,
-            [
-              {
-                targetSdkVersion: "3.2",
-                test: new RegExp(`${name}/background\\.js$`),
-              },
-            ],
-          );
+          if (hasBackground) {
+            // Background chunks run in the JavaScript thread and need the Lynx
+            // runtime wrapper, while main-thread chunks are encoded as lepus.
+            chain.plugin(`runtime-wrapper-${name}`).use(
+              RuntimeWrapperWebpackPlugin,
+              [
+                {
+                  targetSdkVersion: LYNX_ENGINE_VERSION,
+                  test: new RegExp(`${name}/background\\.js$`),
+                },
+              ],
+            );
+          }
         }
 
         chain.plugin("encode").use(LynxEncodePlugin, []);
@@ -66,6 +80,9 @@ export function pluginTemplateWebpack() {
             compiler.hooks.thisCompilation.tap(PLUGIN_NAME, (compilation) => {
               const hooks = LynxTemplatePlugin.getLynxTemplatePluginHooks(compilation);
               hooks.beforeEncode.tap(PLUGIN_NAME, (args) => {
+                // Re-map the generated assets into the template payload shape:
+                // background JS goes to manifest, main-thread JS goes to lepus,
+                // and extracted CSS is converted into Lynx CSS chunks.
                 const firstEntry = args.entryNames?.[0] ?? "";
                 const pageName = firstEntry.replace(/__.*$/, "");
                 if (!pageName) return args;
@@ -82,15 +99,20 @@ export function pluginTemplateWebpack() {
                   .map((file) => compilation.getAsset(file))
                   .filter((asset) => asset !== undefined);
 
-                if (!backgroundAsset || !mainThreadAsset) {
+                if (!mainThreadAsset) {
                   return args;
                 }
 
-                args.encodeData.manifest = {
-                  [backgroundAsset.name]: backgroundAsset.source
-                    .source()
-                    .toString(),
-                };
+                args.encodeData.compilerOptions.targetSdkVersion = LYNX_ENGINE_VERSION;
+                args.encodeData.compilerOptions.enableEventRefactor = true;
+
+                args.encodeData.manifest = backgroundAsset
+                  ? {
+                    [backgroundAsset.name]: backgroundAsset.source
+                      .source()
+                      .toString(),
+                  }
+                  : {};
                 args.encodeData.lepusCode = {
                   root: mainThreadAsset,
                   chunks: [],
