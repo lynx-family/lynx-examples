@@ -30,6 +30,7 @@ This repository is intended to showcase examples of Lynx.
   - [`input`]: An example shows how to use input
   - [`textarea`]: An example shows how to use textarea
   - [`overlay`]: An example shows how to use overlay
+  - [`animax`]: An example shows how to use `<animax-view>` in Lynx
   - [`svg`]: An example shows how to use svg
   - [`video`]: An example shows how to use `<video>` in Lynx
   - [`markdown`]: An example show how to use markdown
@@ -69,6 +70,7 @@ This repository is intended to showcase examples of Lynx.
 
 [`7guis`]: ./examples/7guis
 [`action-sheet`]: ./examples/action-sheet
+[`animax`]: ./examples/animax
 [`animation`]: ./examples/animation
 [`blur-view`]: ./examples/blur-view
 [`css`]: ./examples/css
