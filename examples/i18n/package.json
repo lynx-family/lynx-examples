@@ -23,7 +23,7 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "catalog:",
     "@types/react": "^18.3.28",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.3"
   },
   "engines": {
     "node": ">=18"
