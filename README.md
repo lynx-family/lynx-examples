@@ -64,6 +64,7 @@ This repository is intended to showcase examples of Lynx.
 - I18n
   - [`i18n`]: An example shows how to use i18n in Lynx
 - Third-party Integrations
+  - [`openui`]: An example shows how to render streaming OpenUI responses in Lynx
   - [`with-solidjs`]: An example shows how to use Lynx with SolidJS
   - [`zustand`]: An example shows how to use zustand in Lynx
   - [`tanstack-router`]: An example shows how to use TanStack Router in Lynx
@@ -95,6 +96,7 @@ This repository is intended to showcase examples of Lynx.
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking
 [`overlay`]: ./examples/overlay
+[`openui`]: ./examples/openui
 [`page`]: ./examples/page
 [`performance-apis`]: ./examples/performance-api
 [`react-lifecycle`]: ./examples/react-lifecycle

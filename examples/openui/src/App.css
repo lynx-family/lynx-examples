@@ -1,0 +1,134 @@
+@import "@lynx-js/genui/openui/styles/renderer.css";
+
+:root {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f4f6fb;
+  color: #172033;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  background-color: #f4f6fb;
+}
+
+.topbar {
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #8a93a6;
+}
+
+.status-dot--streaming {
+  background-color: #f59e0b;
+  animation-name: status-pulse;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.status-dot--done {
+  background-color: #22a06b;
+}
+
+.status-text {
+  color: #526078;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.replay-button {
+  height: 32px;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #d9deea;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.replay-icon {
+  color: #335cff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.replay-label {
+  color: #344054;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.scroll {
+  flex: 1;
+  min-height: 0;
+}
+
+.renderer-shell {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #e0e5ef;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 30px rgba(31, 42, 68, 0.08);
+}
+
+.action-toast {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background-color: #172033;
+}
+
+.action-toast-label {
+  color: #a8b4ca;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.action-toast-text {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@keyframes status-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
