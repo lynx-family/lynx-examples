@@ -1039,6 +1039,43 @@ importers:
         specifier: ~5.9.3
         version: 5.9.3
 
+  examples/openui:
+    dependencies:
+      '@lynx-js/genui':
+        specifier: 0.0.6
+        version: 0.0.6(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)
+      '@lynx-js/lynx-ui':
+        specifier: 3.133.1
+        version: 3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@lynx-js/react':
+        specifier: 'catalog:'
+        version: 0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28)
+    devDependencies:
+      '@lynx-js/config-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.0.2(@lynx-js/rspeedy@0.14.5(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3))
+      '@lynx-js/qrcode-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.4.7
+      '@lynx-js/react-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.16.3(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(tslib@2.8.1)(webpack@5.101.3)
+      '@lynx-js/rspeedy':
+        specifier: 'catalog:'
+        version: 0.14.5(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rspack/core@2.0.1(@swc/helpers@0.5.21))(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/types':
+        specifier: 4.0.0
+        version: 4.0.0
+      '@rsbuild/plugin-type-check':
+        specifier: 1.3.4
+        version: 1.3.4(@rsbuild/core@2.0.3(core-js@3.47.0))(@rspack/core@2.0.1(@swc/helpers@0.5.21))(tslib@2.8.1)(typescript@5.9.3)
+      '@types/react':
+        specifier: ^18.3.28
+        version: 18.3.28
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+
   examples/overlay:
     dependencies:
       '@lynx-js/react':
@@ -2499,6 +2536,17 @@ packages:
     peerDependencies:
       '@lynx-js/lynx-ui': ^3.133.0
       '@lynx-js/react': ^0.121.0
+    peerDependenciesMeta:
+      '@lynx-js/lynx-ui':
+        optional: true
+
+  '@lynx-js/genui@0.0.6':
+    resolution: {integrity: sha512-LiLwa3zmu/ogGA+C3WztkkBZovePCVqb4gxWwrS4IubX1P+oUmMDA+GyHrD7I5etSU2m01C6o1fPkdZzBWCGRQ==}
+    engines: {node: '>=22'}
+    hasBin: true
+    peerDependencies:
+      '@lynx-js/lynx-ui': '>=3.133.0'
+      '@lynx-js/react': '>=0.121.0'
     peerDependenciesMeta:
       '@lynx-js/lynx-ui':
         optional: true
@@ -8785,6 +8833,21 @@ snapshots:
   '@lynx-js/externals-loading-webpack-plugin@0.2.0': {}
 
   '@lynx-js/genui@0.0.3(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)':
+    dependencies:
+      '@a2ui/web_core': 0.9.1
+      '@lynx-js/react': 0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28)
+      '@openuidev/lang-core': 0.2.5(zod@3.25.76)
+      '@preact/signals': 2.9.1(preact@10.29.2)
+      typedoc: 0.28.19(typescript@5.9.3)
+      zod: 3.25.76
+    optionalDependencies:
+      '@lynx-js/lynx-ui': 3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+    transitivePeerDependencies:
+      - '@modelcontextprotocol/sdk'
+      - preact
+      - typescript
+
+  '@lynx-js/genui@0.0.6(@lynx-js/lynx-ui@3.133.1(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)':
     dependencies:
       '@a2ui/web_core': 0.9.1
       '@lynx-js/react': 0.121.1(@lynx-js/types@4.0.0)(@types/react@18.3.28)
