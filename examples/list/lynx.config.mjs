@@ -22,6 +22,7 @@ export default defineConfig({
       zIndex: "./src/zIndex/index.tsx",
       recyclable: "./src/recyclable/index.tsx",
       recycleSticky: "./src/recycle-sticky/index.tsx",
+      danmaku: "./src/danmaku/index.tsx",
     },
   },
   plugins: [
