@@ -1,0 +1,81 @@
+page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.Title {
+  color: #111111;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.Section {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.Label {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Button {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  border-radius: 8px;
+}
+
+.ButtonText {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.PortalHost {
+  min-height: 80px;
+  padding: 12px;
+  display: flex;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.PortalContent {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcfce7;
+  border-radius: 6px;
+}
+
+.PortalText {
+  color: #166534;
+  font-size: 14px;
+  font-weight: 700;
+}
