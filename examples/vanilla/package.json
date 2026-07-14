@@ -1,7 +1,6 @@
 {
   "name": "@lynx-example/vanilla",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
   "description": "An example of building Lynx apps with Element PAPI",
   "repository": {
     "type": "git",
@@ -33,5 +32,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
