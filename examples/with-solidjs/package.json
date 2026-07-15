@@ -22,7 +22,7 @@
     "dev": "rspack dev"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.28.5",
+    "@babel/preset-typescript": "^8.0.1",
     "@lynx-js/solid": "workspace:*",
     "@lynx-js/template-webpack-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
