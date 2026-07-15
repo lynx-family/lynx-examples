@@ -4,6 +4,11 @@ packages:
   - examples/web-platform/packages/*
   - examples/with-solidjs/packages/*
 
+allowBuilds:
+  core-js: false
+  dprint: true
+  esbuild: true
+
 catalog:
   "@lynx-js/external-bundle-rsbuild-plugin": "0.2.0"
   "@lynx-js/lynx-bundle-rslib-config": "0.3.3"

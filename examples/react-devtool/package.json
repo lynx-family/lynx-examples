@@ -16,7 +16,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "REACT_DEV=true rspeedy build",
+    "build": "REACT_DEVTOOL=true rspeedy build",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },

@@ -33,21 +33,5 @@
   "engines": {
     "node": ">=22",
     "pnpm": "11.13.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "dprint"
-    ],
-    "overrides": {
-      "@lynx-js/types": "catalog:"
-    },
-    "patchedDependencies": {
-      "@lynx-js/react-alias-rsbuild-plugin@0.16.3": "patches/@lynx-js__react-alias-rsbuild-plugin@0.16.3.patch",
-      "@lynx-js/react-webpack-plugin@0.9.3": "patches/@lynx-js__react-webpack-plugin@0.9.3.patch"
-    },
-    "ignoredBuiltDependencies": [
-      "core-js"
-    ]
   }
 }
