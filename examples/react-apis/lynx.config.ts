@@ -6,6 +6,7 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 export default defineConfig({
   source: {
     entry: {
+      "create-element": "./src/create-element/index.tsx",
       "create-portal": "./src/create-portal/index.tsx",
     },
   },

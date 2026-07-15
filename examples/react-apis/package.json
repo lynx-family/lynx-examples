@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/react-apis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Examples for APIs exported by ReactLynx",
   "repository": {
     "type": "git",
