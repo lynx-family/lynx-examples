@@ -1,5 +1,11 @@
 # @lynx-example/list
 
+## 0.6.7
+
+### Patch Changes
+
+- 8828cd7: Add a seamless multi-row danmaku loop with linked drag, momentum, and native auto-scroll.
+
 ## 0.6.6
 
 ### Patch Changes

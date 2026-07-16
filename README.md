@@ -45,6 +45,7 @@ This repository is intended to showcase examples of Lynx.
   - [`external-bundle`]: An example shows how to use external bundle in Lynx
   - [`element-manipulation`]: An example shows how to manipulate elements in Lynx
   - [`lynx-api`]: An example shows how to use Lynx APIs
+  - [`react-apis`]: An example shows how to use ReactLynx APIs
   - [`main-thread`]: An example shows how to use main thread scripts
   - [`local-storage`]: An example shows how to use local storage in Lynx
   - [`networking`]: An example shows Lynx networking abilities
@@ -64,6 +65,7 @@ This repository is intended to showcase examples of Lynx.
 - I18n
   - [`i18n`]: An example shows how to use i18n in Lynx
 - Third-party Integrations
+  - [`openui`]: An example shows how to render streaming OpenUI responses in Lynx
   - [`with-solidjs`]: An example shows how to use Lynx with SolidJS
   - [`zustand`]: An example shows how to use zustand in Lynx
   - [`tanstack-router`]: An example shows how to use TanStack Router in Lynx
@@ -91,10 +93,12 @@ This repository is intended to showcase examples of Lynx.
 [`list`]: ./examples/list
 [`local-storage`]: ./examples/local-storage
 [`lynx-api`]: ./examples/lynx-api
+[`react-apis`]: ./examples/react-apis
 [`main-thread`]: ./examples/main-thread
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking
 [`overlay`]: ./examples/overlay
+[`openui`]: ./examples/openui
 [`page`]: ./examples/page
 [`performance-apis`]: ./examples/performance-api
 [`react-lifecycle`]: ./examples/react-lifecycle
