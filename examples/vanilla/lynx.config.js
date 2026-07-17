@@ -17,7 +17,10 @@ export default defineConfig({
   source: {
     entry: {
       counter: path.join(projectRoot, "src/counter/main-thread.ts"),
+      "event-card": path.join(projectRoot, "src/event-card/main-thread.ts"),
+      "product-card": path.join(projectRoot, "src/product-card/main-thread.ts"),
       todolist: path.join(projectRoot, "src/todolist/main-thread.ts"),
+      "weather-card": path.join(projectRoot, "src/weather-card/main-thread.ts"),
     },
   },
   output: {
