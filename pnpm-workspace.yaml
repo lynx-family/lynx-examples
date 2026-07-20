@@ -23,7 +23,10 @@ catalog:
   "@lynx-js/type-element-api": "0.0.8"
   "@lynx-js/runtime-wrapper-webpack-plugin": "0.2.1"
   "@lynx-js/config-rsbuild-plugin": "0.1.0"
+  "@rsbuild/plugin-less": "2.0.1"
   "@rsbuild/plugin-sass": "2.0.1"
+  "@rsbuild/plugin-stylus": "2.0.1"
+  "@rsbuild/plugin-typed-css-modules": "1.2.4"
 
 minimumReleaseAgeExclude:
   - "@lynx-js/*"
