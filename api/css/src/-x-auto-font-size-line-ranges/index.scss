@@ -1,0 +1,24 @@
+.page {
+  margin: 24px;
+  flex-direction: column;
+  row-gap: 12px;
+  background-color: #f8fafc;
+}
+
+.card {
+  width: 210px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.title {
+  width: 180px;
+  font-size: 15px;
+  color: #1f2937;
+  -x-auto-font-size: true;
+  -x-auto-font-size-line-ranges:
+    line-range(1, 18px, 22px),
+    line-range(2, 16px, 18px),
+    line-range(3 to infinity, 14px);
+}

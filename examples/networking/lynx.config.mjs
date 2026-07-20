@@ -6,16 +6,19 @@ import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   source: {
     entry: {
       "fetch": "./src/fetch/index.tsx",
-      "react-query": "/src/react-query/index.tsx",
+      "react-query": "./src/react-query/index.tsx",
+      "chunked-encoding": "./src/chunked-encoding/index.tsx",
     },
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/networking/dist",
+    filename: "[name].[platform].bundle",
   },
   plugins: [
     pluginReactLynx({
@@ -23,9 +26,9 @@ export default defineConfig({
     }),
     pluginSass(),
     pluginQRCode(),
+    pluginTypeCheck(),
   ],
   environments: {
-    web: {},
     lynx: {},
   },
 });

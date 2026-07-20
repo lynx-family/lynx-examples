@@ -35,7 +35,7 @@ const LinearWeightSum = () => {
     alignItems: "center" as const,
     justifyContent: "center" as const,
     backgroundColor: "yellow",
-    linearWeight: "2",
+    linearWeight: 2,
   };
 
   const greenBoxStyle = {
@@ -43,7 +43,7 @@ const LinearWeightSum = () => {
     alignItems: "center" as const,
     justifyContent: "center" as const,
     backgroundColor: "green",
-    linearWeight: "1",
+    linearWeight: 1,
   };
 
   return (

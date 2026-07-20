@@ -11,8 +11,8 @@ const GridTemplateRow = () => {
 
   return (
     <>
-      <text style={titleStyle}>grid-template-rows: 50px 50px 50px;</text>
-      <view className="container" style={{ gridTemplateRows: "50px 50px 50px" }}>
+      <text style={titleStyle}>grid-template-rows: 40px 40px 40px;</text>
+      <view className="container" style={{ gridTemplateRows: "40px 40px 40px" }}>
         <text className="item">ONE</text>
         <text className="item">TWO</text>
         <text className="item">THREE</text>
@@ -20,8 +20,8 @@ const GridTemplateRow = () => {
         <text className="item">FIVE</text>
       </view>
 
-      <text style={titleStyle}>grid-template-rows: 1fr 100px 1fr;</text>
-      <view className="container" style={{ gridTemplateRows: "1fr 100px 1fr" }}>
+      <text style={titleStyle}>grid-template-rows: 1fr 60px 1fr;</text>
+      <view className="container" style={{ gridTemplateRows: "1fr 60px 1fr" }}>
         <text className="item">ONE</text>
         <text className="item">TWO</text>
         <text className="item">THREE</text>
@@ -29,11 +29,11 @@ const GridTemplateRow = () => {
         <text className="item">FIVE</text>
       </view>
 
-      <text style={titleStyle}>grid-template-rows: 1fr 1fr 2fr;</text>
-      <view className="container" style={{ gridTemplateRows: "1fr 1fr 2fr" }}>
+      <text style={titleStyle}>grid-template-rows: 1fr max-content 2fr;</text>
+      <view className="container" style={{ gridTemplateRows: "1fr max-content 2fr", height: "220px" }}>
         <text className="item">ONE</text>
         <text className="item">TWO</text>
-        <text className="item">THREE</text>
+        <text className="item">max-content: will take the maximum size of the items as the row size</text>
         <text className="item">FOUR</text>
         <text className="item">FIVE</text>
       </view>

@@ -4,8 +4,8 @@ import fontFile from "../../assets/font/Doto-Regular.ttf";
 
 import "./index.scss";
 
-export default class CustomFontExample extends Component {
-  constructor(props) {
+export default class CustomFontExample extends Component<{}, { fontName: string }> {
+  constructor(props: {}) {
     super(props);
     this.state = { fontName: "PingFang" };
   }

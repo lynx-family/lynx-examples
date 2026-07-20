@@ -16,8 +16,9 @@ export function App() {
   };
 
   const getStorage = () => {
-    const value = NativeModules.NativeLocalStorageModule.getStorageItem("testKey");
-    setStoredValue(value);
+    NativeModules.NativeLocalStorageModule.getStorageItem("testKey", (value) => {
+      setStoredValue(value);
+    });
   };
 
   const clearStorage = () => {
@@ -35,7 +36,7 @@ export function App() {
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
-  };
+  } as const;
 
   const contentBoxStyle = {
     border: "1px solid #ccc",
@@ -44,13 +45,13 @@ export function App() {
     borderRadius: "5px",
     width: "300px",
     textAlign: "center",
-  };
+  } as const;
 
   const buttonContainerStyle = {
     display: "flex",
     flexDirection: "column",
     width: "max-content",
-  };
+  } as const;
 
   const buttonStyle = {
     padding: "2px",

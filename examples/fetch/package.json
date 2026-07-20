@@ -1,8 +1,21 @@
 {
   "name": "@lynx-example/fetch",
-  "version": "0.3.0",
+  "version": "0.6.7",
   "description": "An example shows how fetch API work in ReactLynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/fetch"
+  },
+  "author": "Lynx Authors",
   "type": "module",
+  "files": [
+    "dist/",
+    "index.scss",
+    "index.tsx",
+    "lynx.config.mjs",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,25 +24,15 @@
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
-  "files": [
-    "dist/",
-    "index.scss",
-    "index.tsx",
-    "lynx.config.mjs"
-  ],
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@rsbuild/plugin-sass": "^1.2.1",
-    "@types/react": "^18.3.18"
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "catalog:",
+    "@types/react": "^18.3.28"
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/fetch"
   }
 }

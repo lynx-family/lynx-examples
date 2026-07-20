@@ -2,9 +2,9 @@ import { root, useState } from "@lynx-js/react";
 import "./index.scss";
 
 const LinearWeight = () => {
-  const [linearDirection, setLinearDirection] = useState(false);
+  const [linearOrientation, setLinearOrientation] = useState(false);
   const containerStyle = {
-    linearDirection: linearDirection ? "row" : "column" as "row" | "column",
+    linearOrientation: linearOrientation ? "horizontal" : "vertical" as "horizontal" | "vertical",
   };
   const buttonStyle = {
     width: "20%",
@@ -26,65 +26,65 @@ const LinearWeight = () => {
   const Container1View1Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "0.5" as const,
+    linearWeight: 0.5,
     backgroundColor: "red" as const,
   };
   const Container1View2Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "2" as const,
+    linearWeight: 2,
     backgroundColor: "yellow" as const,
   };
   const Container1View3Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "0.5" as const,
+    linearWeight: 0.5,
     backgroundColor: "blue" as const,
   };
 
   const Container2View1Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "1" as const,
+    linearWeight: 1,
     backgroundColor: "red" as const,
   };
   const Container2View2Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "1" as const,
+    linearWeight: 1,
     backgroundColor: "yellow" as const,
   };
   const Container2View3Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "1" as const,
+    linearWeight: 1,
     backgroundColor: "blue" as const,
   };
 
   const Container3View1Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "0.5" as const,
+    linearWeight: 0.5,
     backgroundColor: "red" as const,
   };
   const Container3View2Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "0.5" as const,
+    linearWeight: 0.5,
     backgroundColor: "yellow" as const,
   };
   const Container3View3Style = {
     width: "30px",
     height: "30px",
-    linearWeight: "2" as const,
+    linearWeight: 2,
     backgroundColor: "blue" as const,
   };
 
   return (
     <scroll-view className="root" scroll-orientation="vertical">
-      <view style={buttonStyle} bindtap={() => setLinearDirection(!linearDirection)}></view>
+      <view style={buttonStyle} bindtap={() => setLinearOrientation(!linearOrientation)}></view>
       <text style={text1Style}>Click above red button to switch linear-direction</text>
-      <text style={text2Style}>Current: "{linearDirection ? "row" : "column"}"</text>
+      <text style={text2Style}>Current: "{linearOrientation ? "row" : "column"}"</text>
       <text className="title">linear-weight: 0.5 2 0.5</text>
       <view className="linear_container" style={containerStyle}>
         <view style={Container1View1Style} />

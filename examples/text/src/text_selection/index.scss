@@ -1,0 +1,70 @@
+.Container {
+  margin: 10px;
+}
+
+.ContextMenu {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  position: absolute;
+}
+
+.ContextMenuText {
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.NormalText {
+  margin-bottom: 3px;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+:root {
+  background-color: #000;
+  --color-text: #fff;
+}
+
+.Background {
+  position: fixed;
+  background: radial-gradient(
+    71.43% 62.3% at 46.43% 36.43%,
+    rgba(18, 229, 229, 0) 15%,
+    rgba(239, 155, 255, 0.3) 56.35%,
+    #ff6448 100%
+  );
+  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  top: -60vw;
+  left: -14.27vw;
+  transform: rotate(15.25deg);
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+text {
+  color: var(--color-text);
+}
+
+.Banner {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}

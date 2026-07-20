@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect } from "@lynx-js/react";
 
 import "./App.css";
 
-const MyLazyBundle = lazy(() => import("./MyLazyBundle"));
+const MyLazyBundle = lazy(() => import("./MyLazyBundle.jsx"));
 
 export function App() {
   useEffect(() => {

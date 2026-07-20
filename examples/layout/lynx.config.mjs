@@ -6,6 +6,7 @@ import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   source: {
@@ -32,11 +33,15 @@ export default defineConfig({
       sizing: "./src/sizing/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx({
       enableCSSInheritance: true,
     }),
     pluginSass(),
     pluginQRCode(),
+    pluginTypeCheck(),
   ],
 });

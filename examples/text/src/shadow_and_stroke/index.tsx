@@ -15,6 +15,7 @@ export default class TextShadowAndStrokeExample extends Component {
         <text style={{ textShadow: "2px 2px 4px green", fontSize: "30px" }}>
           Text Shadow
         </text>
+        {/* @ts-expect-error TODO(types): Support textStroke in `@lynx-js/types` */}
         <text style={{ textStroke: "1px red", fontSize: "30px" }}>
           Text Stroke
         </text>

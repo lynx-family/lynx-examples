@@ -1,0 +1,191 @@
+@import "@lynx-js/luna-styles/index.css";
+@import "@lynx-js/genui/a2ui/styles/theme.css";
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f7f4;
+  box-sizing: border-box;
+}
+
+.topbar {
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.replay-button {
+  min-width: 76px;
+  height: 28px;
+  padding: 0 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 118, 110, 0.16);
+  background-color: rgba(240, 253, 250, 0.72);
+  box-sizing: border-box;
+}
+
+.replay-button:active {
+  background-color: rgba(204, 251, 241, 0.82);
+  transform: translateY(1px);
+}
+
+.replay-icon {
+  margin-right: 5px;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.replay-label {
+  color: #0f514d;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.a2ui-surface .button-borderless {
+  min-width: 0;
+  margin: 4px 0;
+  padding: 8px 13px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 999px;
+  background-color: rgba(240, 253, 250, 0.7);
+  color: #0f514d;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.a2ui-surface .button-borderless.ui-active {
+  background-color: rgba(204, 251, 241, 0.82);
+  transform: translateY(1px);
+}
+
+.a2ui-surface .button-borderless .button-fallback {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.a2ui-surface .card-elevated {
+  border-color: rgba(93, 103, 98, 0.08);
+  box-shadow: 0 6px 18px rgba(72, 82, 77, 0.06);
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  background-color: #8d9792;
+}
+
+.status-dot--streaming {
+  background-color: #d79d1e;
+}
+
+.status-dot--done {
+  background-color: #0f766e;
+}
+
+.status-text {
+  color: #48524d;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.scroll {
+  flex: 1;
+  min-height: 0;
+}
+
+.empty-state {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+.loading-mark {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 3px solid rgba(72, 82, 77, 0.14);
+  border-top-color: #0f766e;
+}
+
+.empty-title {
+  color: #48524d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.a2ui-surface {
+  width: 100%;
+  padding-bottom: 24px;
+  color: var(--content);
+  background-color: #f6f7f4;
+}
+
+.a2ui-container {
+  width: 100%;
+}
+
+.a2ui-image {
+  border: none;
+  box-shadow: none;
+}
+
+.a2ui-surface .image-variant-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #dbeafe;
+}
+
+/* Override A2UI tokens with Luna tokens for the playground preview. */
+:root, .a2ui-light, .a2ui-dark {
+  --a2ui-color-background: var(--canvas);
+  --a2ui-color-on-background: var(--content);
+  --a2ui-color-surface: var(--paper);
+  --a2ui-color-on-surface: var(--content);
+  --a2ui-color-primary: var(--primary-2);
+  --a2ui-color-primary-hover: var(--primary-muted);
+  --a2ui-color-on-primary: var(--primary-content);
+  --a2ui-color-secondary: var(--secondary);
+  --a2ui-color-secondary-hover: var(--secondary-2);
+  --a2ui-color-on-secondary: var(--secondary-content);
+  --a2ui-color-border: var(--secondary);
+  --a2ui-color-input: var(--paper-clear);
+  --a2ui-color-on-input: var(--content);
+  --a2ui-color-input-error: #d92d20;
+  --a2ui-color-input-error-bg: rgba(217, 45, 32, 0.08);
+  --a2ui-color-background-ambient: var(--canvas-ambient);
+  --a2ui-color-surface-muted: var(--neutral-film);
+  --a2ui-color-surface-strong: var(--paper-clear);
+  --a2ui-color-border-strong: var(--secondary-2);
+  --a2ui-color-text-muted: var(--content-muted);
+  --a2ui-color-text-subtle: var(--content-muted-2);
+  --a2ui-color-overlay: var(--neutral-film);
+}

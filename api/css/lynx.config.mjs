@@ -6,10 +6,27 @@ import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
+
+const isChunkedBuild = process.env.CSS_API_BUILD_CHUNK_INDEX !== undefined;
+
+function getEntries(entries) {
+  const chunks = Number(process.env.CSS_API_BUILD_CHUNKS);
+  const chunkIndex = Number(process.env.CSS_API_BUILD_CHUNK_INDEX);
+
+  if (!Number.isInteger(chunks) || !Number.isInteger(chunkIndex) || chunks <= 1) {
+    return entries;
+  }
+
+  return Object.fromEntries(
+    Object.entries(entries).filter((_, index) => index % chunks === chunkIndex),
+  );
+}
 
 export default defineConfig({
   source: {
-    entry: {
+    entry: getEntries({
+      "-x-auto-font-size-line-ranges": "./src/-x-auto-font-size-line-ranges/App.tsx",
       "-x-auto-font-size-preset-sizes": "./src/-x-auto-font-size-preset-sizes/App.tsx",
       "-x-auto-font-size": "./src/-x-auto-font-size/App.tsx",
       "-x-handle-color": "./src/-x-handle-color/App.tsx",
@@ -87,8 +104,11 @@ export default defineConfig({
       "flex-wrap": "./src/flex-wrap/App.tsx",
       "flex-flow": "./src/flex-flow/App.tsx",
       "font-family": "./src/font-family/App.tsx",
+      "font-feature-settings": "./src/font-feature-settings/App.tsx",
+      "font-optical-sizing": "./src/font-optical-sizing/App.tsx",
       "font-size": "./src/font-size/App.tsx",
       "font-style": "./src/font-style/App.tsx",
+      "font-variation-settings": "./src/font-variation-settings/App.tsx",
       "font-weight": "./src/font-weight/App.tsx",
       "gap": "./src/gap/App.tsx",
       "grid-auto-columns": "./src/grid-auto-columns/App.tsx",
@@ -132,6 +152,9 @@ export default defineConfig({
       "min-height": "./src/min-height/App.tsx",
       "min-width": "./src/min-width/App.tsx",
       "opacity": "./src/opacity/App.tsx",
+      "offset-distance": "./src/offset-distance/App.tsx",
+      "offset-path": "./src/offset-path/App.tsx",
+      "offset-rotate": "./src/offset-rotate/App.tsx",
       "order": "./src/order/App.tsx",
       "overflow": "./src/overflow/App.tsx",
       "overflow-x": "./src/overflow-x/App.tsx",
@@ -144,6 +167,7 @@ export default defineConfig({
       "padding-right": "./src/padding-right/App.tsx",
       "padding-top": "./src/padding-top/App.tsx",
       "perspective": "./src/perspective/App.tsx",
+      "pointer-events": "./src/pointer-events/App.tsx",
       "position": "./src/position/App.tsx",
       "ppx": "./src/ppx/App.tsx",
       "relative-align-bottom": "./src/relative-align-bottom/App.tsx",
@@ -189,7 +213,7 @@ export default defineConfig({
       clip_path_inset: "./src/clip_path/inset",
       clip_path_ellipse: "./src/clip_path/ellipse",
       clip_path_path: "./src/clip_path/path",
-    },
+    }),
   },
   plugins: [
     pluginReactLynx({
@@ -198,8 +222,13 @@ export default defineConfig({
     }),
     pluginSass({}),
     pluginQRCode(),
+    pluginTypeCheck({
+      enable: process.env.CI !== "1",
+    }),
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/css-api/dist",
+    cleanDistPath: !isChunkedBuild || process.env.CSS_API_BUILD_CHUNK_INDEX === "0",
+    filename: "[name].[platform].bundle",
   },
 });

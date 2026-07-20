@@ -1,9 +1,20 @@
-import { useRef, useState } from "@lynx-js/react";
+import { type PropsWithChildren, type ReactNode, useRef, useState } from "@lynx-js/react";
 import type { NodesRef } from "@lynx-js/types";
 import { Tooltip } from "./Tooltip.jsx";
 
-export function ButtonWithTooltip({ tooltipContent, children, ...rest }) {
-  const [targetRect, setTargetRect] = useState(null);
+export interface Rect {
+  left: number;
+  top: number;
+  right: number;
+  bottom: number;
+}
+
+interface ButtonWithTooltipProps {
+  tooltipContent: ReactNode;
+}
+
+export function ButtonWithTooltip({ tooltipContent, children, ...rest }: PropsWithChildren<ButtonWithTooltipProps>) {
+  const [targetRect, setTargetRect] = useState<Rect | null>(null);
   const buttonRef = useRef<NodesRef>(null);
   return (
     <>

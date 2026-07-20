@@ -1,0 +1,33 @@
+.box {
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.outer {
+  background-color: #f5c6cb;
+}
+.outer.active {
+  background-color: #f1aeb5;
+  border-color: #c2255c;
+  box-shadow: 0 0 0 3px rgba(194, 37, 92, 0.15);
+}
+
+.middle {
+  background-color: #ffe8a1;
+}
+.middle.active {
+  background-color: #ffd43b;
+  border-color: #f59f00;
+  box-shadow: 0 0 0 3px rgba(245, 159, 0, 0.15);
+}
+
+.inner {
+  background-color: #c3e6cb;
+}
+.inner.active {
+  background-color: #8ce99a;
+  border-color: #2f9e44;
+  box-shadow: 0 0 0 3px rgba(47, 158, 68, 0.15);
+}

@@ -12,6 +12,7 @@ export function Swiper({
 }: {
   data: string[];
   itemWidth?: number;
+  itemHeight?: number;
 }) {
   const [current, setCurrent] = useState(0);
 

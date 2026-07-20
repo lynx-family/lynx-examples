@@ -18,7 +18,7 @@ const LinearAlginItemsExample = () => {
       <view
         style={{
           display: "linear",
-          linearDirection: "column",
+          linearOrientation: "vertical",
           height: "300px",
           width: "90%",
           padding: "5px",
@@ -32,7 +32,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            linearWeight: "0.5",
+            linearWeight: 0.5,
             backgroundColor: "rgb(255,53,26)",
             borderRadius: "6px",
           }}
@@ -41,7 +41,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            linearWeight: "2",
+            linearWeight: 2,
             backgroundColor: "rgb(0,235,235)",
             borderRadius: "6px",
           }}
@@ -50,7 +50,7 @@ const LinearAlginItemsExample = () => {
         <view
           style={{
             margin: "5px",
-            linearWeight: "0.5",
+            linearWeight: 0.5,
             backgroundColor: "rgb(255,53,26)",
             borderRadius: "6px",
           }}

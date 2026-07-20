@@ -1,24 +1,26 @@
 {
   "name": "@lynx-example/layout",
+  "version": "0.6.7",
   "description": "Examples of the layout related styling",
-  "type": "module",
-  "version": "0.3.3",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
-  },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.web.config.mjs",
-    "lynx.config.mjs"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/layout"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.web.config.mjs",
+    "lynx.config.mjs",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rspeedy build && rspeedy build --config lynx.web.config.mjs",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
@@ -27,9 +29,9 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.2.0",
-    "@rsbuild/plugin-sass": "^1.2.1",
-    "@types/react": "^18.3.18",
-    "typescript": "~5.7.3"
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
   }
 }

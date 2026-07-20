@@ -5,12 +5,12 @@ const WordBreak = () => {
   const normalBreakStyle = {
     overflow: "hidden",
     wordBreak: "normal",
-  };
+  } as const;
 
   const breakAllStyle = {
     overflow: "hidden",
     wordBreak: "break-all",
-  };
+  } as const;
 
   return (
     <view className="container">

@@ -1,5 +1,5 @@
 import "./Card.scss";
-import type { BankCard } from "./BankCardScrollView";
+import type { BankCard } from "./BankCardScrollView.jsx";
 
 interface CardProps {
   selectedCard: BankCard;

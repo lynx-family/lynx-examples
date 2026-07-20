@@ -1,26 +1,25 @@
 {
   "name": "@lynx-example/css-api",
-  "version": "0.3.1",
-  "type": "module",
+  "version": "0.10.1",
   "description": "CSS properties API demo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "api/css"
+  },
   "license": "Apache-2.0",
-  "scripts": {
-    "dev": "rspeedy dev",
-    "build": "rspeedy build",
-    "preview": "rspeedy preview"
-  },
-  "engines": {
-    "node": ">=18"
-  },
+  "author": "Lynx Authors",
+  "type": "module",
   "files": [
     "dist/",
     "src/",
+    "resource/",
     "lynx.config.mjs"
   ],
-  "repository": {
-    "directory": "api/css",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
@@ -29,9 +28,12 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.2.0",
-    "@rsbuild/plugin-sass": "^1.2.1",
-    "@types/react": "^18.3.18",
-    "typescript": "~5.7.3"
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

@@ -2,6 +2,7 @@ import { defineConfig } from "@lynx-js/rspeedy";
 
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   source: {
@@ -13,8 +14,12 @@ export default defineConfig({
       "event-main-thread": "./src/event-main-thread/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginQRCode(),
     pluginReactLynx(),
+    pluginTypeCheck(),
   ],
 });

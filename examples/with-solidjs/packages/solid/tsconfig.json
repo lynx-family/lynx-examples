@@ -5,6 +5,7 @@
     "module": "ESNext",
     "target": "ESNext",
     "jsx": "preserve",
+    "jsxImportSource": "@lynx-js/react",
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,

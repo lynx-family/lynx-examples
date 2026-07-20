@@ -1,0 +1,370 @@
+[
+  {
+    "version": "v0.9",
+    "createSurface": {
+      "surfaceId": "main",
+      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "value": {
+        "weather": {
+          "city": "San Francisco",
+          "condition": "Sunny",
+          "photoQuery": "san francisco sunny skyline",
+          "temperature": "22°C",
+          "humidity": "60%"
+        }
+      }
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "loading_weather-column",
+          "variant": "elevated"
+        },
+        {
+          "id": "loading_weather-column",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "root",
+          "component": "Card",
+          "child": "weather-column",
+          "variant": "elevated"
+        },
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "loading_city-text",
+            "loading_weather-photo",
+            "loading_condition-text",
+            "loading_stats-row",
+            "loading_refresh-button"
+          ]
+        },
+        {
+          "id": "loading_city-text",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_weather-photo",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_condition-text",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_stats-row",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_refresh-button",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "city-text",
+            "loading_weather-photo",
+            "loading_condition-text",
+            "loading_stats-row",
+            "loading_refresh-button"
+          ]
+        },
+        {
+          "id": "city-text",
+          "component": "Text",
+          "text": {
+            "path": "/weather/city"
+          },
+          "variant": "h2"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "city-text",
+            "weather-photo",
+            "loading_condition-text",
+            "loading_stats-row",
+            "loading_refresh-button"
+          ]
+        },
+        {
+          "id": "weather-photo",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "city-text",
+            "weather-photo",
+            "condition-text",
+            "loading_stats-row",
+            "loading_refresh-button"
+          ]
+        },
+        {
+          "id": "condition-text",
+          "component": "Text",
+          "text": {
+            "path": "/weather/condition"
+          },
+          "variant": "h3"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "city-text",
+            "weather-photo",
+            "condition-text",
+            "stats-row",
+            "loading_refresh-button"
+          ]
+        },
+        {
+          "id": "stats-row",
+          "component": "Row",
+          "children": [
+            "loading_temperature-text",
+            "loading_humidity-text"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "loading_temperature-text",
+          "component": "Loading",
+          "variant": "block"
+        },
+        {
+          "id": "loading_humidity-text",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "stats-row",
+          "component": "Row",
+          "children": [
+            "temperature-text",
+            "loading_humidity-text"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "temperature-text",
+          "component": "Text",
+          "text": {
+            "path": "/weather/temperature"
+          },
+          "variant": "body",
+          "emphasis": "strong"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "stats-row",
+          "component": "Row",
+          "children": [
+            "temperature-text",
+            "humidity-text"
+          ],
+          "justify": "spaceBetween",
+          "align": "center"
+        },
+        {
+          "id": "humidity-text",
+          "component": "Text",
+          "text": {
+            "path": "/weather/humidity"
+          },
+          "variant": "body"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-column",
+          "component": "Column",
+          "children": [
+            "city-text",
+            "weather-photo",
+            "condition-text",
+            "stats-row",
+            "refresh-button"
+          ]
+        },
+        {
+          "id": "refresh-button",
+          "component": "Button",
+          "variant": "primary",
+          "child": "loading_refresh-label",
+          "action": {
+            "event": {
+              "name": "refresh_weather",
+              "context": {
+                "city": {
+                  "path": "/weather/city"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "loading_refresh-label",
+          "component": "Loading",
+          "variant": "block"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "refresh-button",
+          "component": "Button",
+          "variant": "primary",
+          "child": "refresh-label",
+          "action": {
+            "event": {
+              "name": "refresh_weather",
+              "context": {
+                "city": {
+                  "path": "/weather/city"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "refresh-label",
+          "component": "Text",
+          "text": "Refresh"
+        }
+      ]
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateDataModel": {
+      "surfaceId": "main",
+      "path": "/weather/photoQuery",
+      "value": "https://images.pexels.com/photos/36003582/pexels-photo-36003582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  {
+    "version": "v0.9",
+    "updateComponents": {
+      "surfaceId": "main",
+      "components": [
+        {
+          "id": "weather-photo",
+          "component": "Image",
+          "url": {
+            "path": "/weather/photoQuery"
+          },
+          "variant": "mediumFeature",
+          "mode": "aspectFill"
+        }
+      ]
+    }
+  }
+]

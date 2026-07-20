@@ -12,7 +12,7 @@ const easing = (x: number) => {
 export default function App() {
   return (
     <Page>
-      <Swiper data={picsArr} main-thread:easing={easing} duration={300} />
+      <Swiper data={picsArr} main-thread:easing={easing} />
     </Page>
   );
 }

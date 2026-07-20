@@ -23,7 +23,7 @@ const RelativeLayoutOnce = () => {
 
   const introStyle = {
     relativeLayoutOnce: relativeLayoutOnce,
-  };
+  } as const;
 
   return (
     <view style={containerStyle}>
@@ -31,6 +31,7 @@ const RelativeLayoutOnce = () => {
         <text>Click to change relative-layout-once</text>
       </view>
       <text style={textStyle}>relative-layout-once:{relativeLayoutOnce ? "true" : "false"}</text>
+      {/* @ts-expect-error TODO(types): Support relativeLayoutOnce in `@lynx-js/types` */}
       <view className="intro" style={introStyle}>
         <text className="t1">
           hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world

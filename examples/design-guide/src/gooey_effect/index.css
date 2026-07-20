@@ -1,0 +1,90 @@
+/*
+ * Gooey Effect (blur + contrast)
+ *
+ * Visual output depends on each platform’s graphics pipeline:
+ * - Web renders a precise, crisp Gaussian blur.
+ * - iOS appears softer and more diffused.
+ * - Android may exhibit minor geometric artifacts on small surfaces
+ *   (e.g. a diamond-shaped silhouette) due to blur and downsampling.
+ *
+ * Blur is applied at the container level to reduce per-element artifacts.
+ */
+
+.stage {
+  filter: contrast(5);
+  /* Background color must be explicit for contrast-based thresholding */
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
+
+.dots-container {
+  /* Apply blur at the group level to reduce per-element blur artifacts on some platforms */
+  filter: blur(12px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  /* Keep dots crisp; container-level blur produces the gooey merge */
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  background: white;
+  animation: blob 2200ms ease-in-out infinite;
+}
+
+/* Stagger phases without nth-child */
+.g1 {
+  animation-delay: 0ms;
+}
+.g2 {
+  animation-delay: -350ms;
+}
+.g3 {
+  animation-delay: -700ms;
+}
+.g4 {
+  animation-delay: -1050ms;
+}
+
+@keyframes blob {
+  0% {
+    transform: translateX(-18px) translateY(0px) scale(1.00);
+  }
+  25% {
+    transform: translateX(7.5px) translateY(-4.5px) scale(1.06);
+  }
+  50% {
+    transform: translateX(21px) translateY(0px) scale(1.00);
+  }
+  75% {
+    transform: translateX(4.5px) translateY(4.5px) scale(0.98);
+  }
+  100% {
+    transform: translateX(-18px) translateY(0px) scale(1.00);
+  }
+}
+
+/* =========================
+ * Layout
+ * ========================= */
+
+.design-container {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 40px;
+
+  padding-left: 0;
+  padding-right: 0;
+}

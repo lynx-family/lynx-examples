@@ -6,6 +6,8 @@ import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
+
 export default defineConfig({
   source: {
     entry: {
@@ -19,17 +21,28 @@ export default defineConfig({
       shadow_and_stroke: "./src/shadow_and_stroke/index.tsx",
       custom_font: "./src/custom_font/index.tsx",
       font_face: "./src/font_face/index.tsx",
+      cross_text_selection: "./src/cross_text_selection/index.tsx",
+      text_selection: "./src/text_selection/index.tsx",
+      variable_font: "./src/variable_font/index.tsx",
     },
+  },
+  resolve: {
     alias: {
       "@assets": "./assets",
     },
   },
-  plugins: [pluginReactLynx(), pluginSass({}), pluginQRCode()],
+  plugins: [
+    pluginReactLynx(),
+    pluginSass({}),
+    pluginQRCode(),
+    pluginTypeCheck(),
+  ],
   environments: {
     web: {},
     lynx: {},
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/text/dist",
+    filename: "[name].[platform].bundle",
   },
 });

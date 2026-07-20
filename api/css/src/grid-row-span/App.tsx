@@ -13,21 +13,48 @@ const GridRowSpan = () => {
     <>
       <text style={titleStyle}>grid-row-span: 1</text>
       <view className="container">
-        <text className="item" style={{ backgroundColor: "rgb(255,53,26)", gridRowSpan: "1" }}>ONE</text>
+        <text
+          className="item"
+          style={{
+            backgroundColor: "rgb(255,53,26)",
+            // @ts-expect-error TODO(types): Support gridRowSpan in `@lynx-js/types`
+            gridRowSpan: "1",
+          }}
+        >
+          ONE
+        </text>
         <text className="item">TWO</text>
         <text className="item">THREE</text>
       </view>
 
       <text style={titleStyle}>grid-row-span: 2</text>
       <view className="container">
-        <text className="item" style={{ backgroundColor: "rgb(255,53,26)", gridRowSpan: "2" }}>ONE</text>
+        <text
+          className="item"
+          style={{
+            backgroundColor: "rgb(255,53,26)",
+            // @ts-expect-error TODO(types): Support gridRowSpan in `@lynx-js/types`
+            gridRowSpan: "2",
+          }}
+        >
+          ONE
+        </text>
         <text className="item">TWO</text>
         <text className="item">THREE</text>
       </view>
 
       <text style={titleStyle}>grid-row-span: 3</text>
       <view className="container">
-        <text className="item" style={{ backgroundColor: "rgb(255,53,26)", gridRowSpan: "3" }}>ONE</text>
+        <text
+          className="item"
+          style={{
+            backgroundColor: "rgb(255,53,26)",
+            // @ts-expect-error TODO(types): Support gridRowSpan in `@lynx-js/types`
+            gridRowSpan: "3",
+          }}
+        >
+          ONE
+        </text>
         <text className="item">TWO</text>
         <text className="item">THREE</text>
       </view>

@@ -4,7 +4,7 @@ import "./index.scss";
 const BackgroundClip = () => {
   const scrollViewStyle = {
     flexDirection: "column" as const,
-    height: "2000px",
+    height: "2500px",
   };
 
   const fixedAreaStyle = {
@@ -25,7 +25,11 @@ const BackgroundClip = () => {
         <text className="shared border-box radius2"></text>
         <text className="shared padding-box radius2"></text>
         <text className="shared content-box radius2"></text>
+        <text className="shared border-area"></text>
+        <text className="shared border-area radius"></text>
+        <text className="shared border-area radius2"></text>
         <view className="container"></view>
+        <view className="border-area-container"></view>
       </view>
     </scroll-view>
   );

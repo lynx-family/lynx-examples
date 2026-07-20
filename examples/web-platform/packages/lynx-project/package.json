@@ -2,6 +2,12 @@
   "name": "@lynx-example/lynx-project",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/web-platform/packages/lynx-project"
+  },
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
@@ -15,9 +21,9 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.2.0",
-    "@types/react": "^18.3.18",
-    "typescript": "~5.7.3"
+    "@lynx-js/types": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
   },
   "engines": {
     "node": ">=18"

@@ -1,9 +1,21 @@
 {
   "name": "@lynx-example/swiper",
+  "version": "0.5.8",
   "description": "An example shows how to use main thread script for interaction",
-  "type": "module",
-  "version": "0.2.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/swiper"
+  },
   "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -12,23 +24,13 @@
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.mjs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/swiper"
-  },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "^3.2.0",
-    "@rsbuild/plugin-sass": "^1.2.1",
-    "@types/react": "^18.3.18",
-    "typescript": "~5.7.3"
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
   }
 }

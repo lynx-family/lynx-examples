@@ -1,0 +1,38 @@
+{
+  "name": "@lynx-example/lynx-api",
+  "version": "0.1.9",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/lynx-api"
+  },
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "resource/",
+    "lynx.config.ts",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "check": "biome check --write",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

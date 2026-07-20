@@ -1,0 +1,84 @@
+/* Semantic shadow tokens are progressively resolved into
+ * ambient and rim shadows through nested CSS variables,
+ * allowing visual intensity to be adjusted without changing structure.
+ */
+.card {
+  --primary: 254, 105, 161;
+  --secondary: 255, 115, 133;
+  --accent: 169, 152, 191;
+
+  --color: rgba(var(--secondary), 0.65);
+  --rim-color: rgba(var(--primary), 0.9);
+
+  --blur: 3px;
+  --spread: 0;
+  --rim-blur: 2px;
+  --rim-spread: -1px;
+
+  --ambient-shadow: 0 0 var(--blur) var(--spread) var(--color);
+  --rim-shadow: 0 0 var(--rim-blur) var(--rim-spread) var(--rim-color);
+  border-radius: 24px;
+  box-shadow:
+    var(--ambient-shadow),
+    var(--rim-shadow);
+  width: 84px;
+  height: 84px;
+  background: linear-gradient(
+    rgb(var(--accent)),
+    rgb(var(--primary))
+  );
+}
+
+/* Elevation levels adjust shadow parameters
+ * while preserving the same compositional structure.
+ */
+.ele-1 {
+  --blur: 3px;
+  --spread: 0;
+  --rim-blur: 2px;
+  --rim-spread: -1px;
+}
+
+.ele-2 {
+  --blur: 10px;
+  --spread: -1px;
+  --rim-blur: 6px;
+  --rim-spread: -2px;
+}
+
+.ele-3 {
+  --blur: 24px;
+  --spread: -3px;
+  --rim-blur: 12px;
+  --rim-spread: -4px;
+}
+
+.ele-4 {
+  --blur: 44px;
+  --spread: -5px;
+  --rim-blur: 24px;
+  --rim-spread: -8px;
+}
+
+/* =========================
+ * Layout
+ * ========================= */
+
+.design-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  gap: 36px;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}

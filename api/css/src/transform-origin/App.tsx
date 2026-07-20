@@ -7,7 +7,7 @@ const TransformOrigin = () => {
     width: "100px",
     height: "100px",
     border: "1px solid black",
-  };
+  } as const;
 
   const redBoxStyle = {
     position: "absolute",
@@ -15,7 +15,7 @@ const TransformOrigin = () => {
     height: "100px",
     backgroundColor: "red",
     transform: "rotate(45rad)",
-  };
+  } as const;
 
   const greenBoxStyle = {
     position: "absolute",
@@ -24,7 +24,7 @@ const TransformOrigin = () => {
     backgroundColor: "green",
     transformOrigin: "50% top",
     transform: "rotate(45rad)",
-  };
+  } as const;
 
   return (
     <scroll-view className="root" scroll-orientation="vertical">

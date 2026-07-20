@@ -6,6 +6,7 @@ import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginSass } from "@rsbuild/plugin-sass";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
   source: {
@@ -20,16 +21,21 @@ export default defineConfig({
       event_node_eom: "./src/event_node_eom/index.tsx",
       event_node_sq: "./src/event_node_sq/index.tsx",
       event_static_catch: "./src/event_static_catch/index.tsx",
+      event_stop_propagation: "./src/event_stop_propagation/index.tsx",
       visibility_expose: "./src/visibility_expose/index.tsx",
       visibility_expose_custom: "./src/visibility_expose_custom/index.tsx",
       visibility_expose_global: "./src/visibility_expose_global/index.tsx",
       visibility_intersection: "./src/visibility_intersection/index.tsx",
     },
   },
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   plugins: [
     pluginReactLynx(),
     pluginSass(),
     pluginQRCode(),
+    pluginTypeCheck(),
   ],
   environments: {
     web: {},

@@ -1,8 +1,20 @@
 {
   "name": "@lynx-example/page",
+  "version": "0.6.7",
   "description": "An example shows how to use page in Lynx",
-  "version": "0.3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/page"
+  },
+  "author": "Lynx Authors",
   "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.ts",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -11,26 +23,16 @@
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
-  "files": [
-    "dist/",
-    "src/",
-    "lynx.config.ts"
-  ],
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@rsbuild/plugin-sass": "^1.2.1",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/types": "latest",
-    "@types/react": "^18.3.18",
-    "typescript": "~5.7.3"
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/plugin-sass": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/page"
   }
 }

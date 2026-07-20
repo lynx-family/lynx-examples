@@ -5,15 +5,13 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-  id-token: write
+permissions: {}
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    environment: npm
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: false
@@ -24,19 +22,20 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           # This makes Actions fetch all Git history so that Changesets can generate changelogs
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version: 22
+          node-version: 24
+          package-manager-cache: false
 
       - name: Install Dependencies
         run: |
-          npm i -g corepack
+          npm i -g corepack@latest --force
           corepack enable
           pnpm install
 
@@ -47,4 +46,3 @@ jobs:
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

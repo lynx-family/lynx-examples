@@ -1,6 +1,7 @@
 .item {
-  font-size: 40rpx;
+  font-size: 25px;
   font-weight: 600;
+  align-self: center;
   text-align: center;
   border: 1px solid black;
   border-radius: 4px;
@@ -10,10 +11,10 @@
 .container {
   display: grid;
   gap: 10px;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   margin: 5px;
   padding: 5px;
   border: 1px solid #000;
   border-radius: 4px;
-  height: 200px;
+  height: 110px;
 }

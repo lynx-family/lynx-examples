@@ -11,9 +11,21 @@ const Filter = () => {
     filter: "grayscale(100%)",
   };
 
+  const brightnessStyle = {
+    filter: "brightness(0.3)",
+  };
+
+  const contrastStyle = {
+    filter: "contrast(0.5)",
+  };
+
+  const saturateStyle = {
+    filter: "saturate(0.7)",
+  };
+
   const imageStyle = {
-    width: "200px",
-    height: "350px",
+    width: "100px",
+    height: "140px",
   };
 
   return (
@@ -22,6 +34,15 @@ const Filter = () => {
         <image style={imageStyle} src={lynxImage} />
       </view>
       <view style={grayscaleStyle}>
+        <image style={imageStyle} src={lynxImage} />
+      </view>
+      <view style={brightnessStyle}>
+        <image style={imageStyle} src={lynxImage} />
+      </view>
+      <view style={contrastStyle}>
+        <image style={imageStyle} src={lynxImage} />
+      </view>
+      <view style={saturateStyle}>
         <image style={imageStyle} src={lynxImage} />
       </view>
     </scroll-view>

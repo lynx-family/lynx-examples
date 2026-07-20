@@ -8,7 +8,7 @@ const Height = () => {
 
   return (
     <scroll-view className="root" scroll-orientation="vertical" style={scrollViewStyle}>
-      <view style={{ display: "linear", linearDirection: "row" }}>
+      <view style={{ display: "linear", linearOrientation: "horizontal" }}>
         <text
           style={{
             height: "100px",

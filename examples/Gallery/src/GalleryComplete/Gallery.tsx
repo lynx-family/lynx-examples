@@ -40,6 +40,7 @@ export const Gallery = (
         scroll-orientation="vertical"
         custom-list-name="list-container"
         main-thread:bindscroll={onScrollMTS}
+        scroll-event-throttle={0}
       >
         {pictureData.map((picture: Picture, index: number) => (
           <list-item

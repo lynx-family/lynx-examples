@@ -7,7 +7,7 @@ const Transform = () => {
     alignItems: "center",
     padding: "20px",
     backgroundColor: "#f5f5f5",
-  };
+  } as const;
 
   const boxBaseStyle = {
     width: "120px",
@@ -17,37 +17,37 @@ const Transform = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  };
+  } as const;
 
   const textStyle = {
     color: "white",
     fontSize: "16px",
     textAlign: "center" as const,
-  };
+  } as const;
 
   const rotateStyle = {
     ...boxBaseStyle,
     transform: "rotate(45deg)",
     backgroundColor: "#4CAF50",
-  };
+  } as const;
 
   const scaleStyle = {
     ...boxBaseStyle,
     transform: "scale(1.2)",
     backgroundColor: "#FF9800",
-  };
+  } as const;
 
   const translateStyle = {
     ...boxBaseStyle,
     transform: "translate(50px, 0)",
     backgroundColor: "#9C27B0",
-  };
+  } as const;
 
   const multipleStyle = {
     ...boxBaseStyle,
     transform: "rotate(45deg) scale(0.8) translate(50px, 0)",
     backgroundColor: "#E91E63",
-  };
+  } as const;
 
   return (
     <scroll-view className="root" scroll-orientation="vertical">

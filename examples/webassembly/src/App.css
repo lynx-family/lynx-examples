@@ -1,0 +1,86 @@
+:root {
+  background-color: #f6f8fb;
+}
+
+text {
+  color: #17202a;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f8fbff 0%, #edf3f7 100%);
+}
+
+.Panel {
+  width: 100%;
+  max-width: 360px;
+  padding: 28px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(18, 35, 55, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  color: #476377;
+}
+
+.Title {
+  margin-top: 12px;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 800;
+}
+
+.Formula {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #526575;
+}
+
+.Button {
+  margin-top: 28px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #176f8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonText {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ResultBox {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #d5e1e8;
+  display: flex;
+  flex-direction: column;
+}
+
+.ResultLabel {
+  font-size: 13px;
+  color: #66808f;
+}
+
+.ResultValue {
+  margin-top: 8px;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 800;
+  color: #111827;
+}

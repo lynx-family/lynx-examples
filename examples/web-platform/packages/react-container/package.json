@@ -2,22 +2,30 @@
   "name": "@lynx-example/react-container",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/web-platform/packages/react-container"
+  },
+  "author": "Lynx Authors",
   "scripts": {
-    "dev": "rsbuild dev --open",
     "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@lynx-js/web-core": "^0.7.0",
-    "@lynx-js/web-elements": "^0.2.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@lynx-js/lynx-core": "^0.1.3",
+    "@lynx-js/web-core": "^0.20.3",
+    "@lynx-js/web-elements": "^0.12.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.2.3",
-    "@rsbuild/plugin-react": "^1.1.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "typescript": "^5.7.3"
+    "@rsbuild/core": "2.0.3",
+    "@rsbuild/plugin-react": "2.0.0",
+    "@rsbuild/plugin-type-check": "1.3.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,75 +1,120 @@
-.header__title {
-  font-size: 68rpx;
-  font-weight: 900;
-  text-align: center;
-  color: linear-gradient(120deg, #0095ff 30%, #42d392 100%);
-}
-
-.colorWidth {
-  border-width: 5px;
-  border-color: green red;
-}
-
-.wrapper {
-  display: flex;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-.wrapper > * {
-  padding: 10px;
-}
-
-.container {
+.GridContainer {
   display: grid;
-  grid-template-columns: 100px 1fr 2fr;
-  grid-template-rows: 100px 100px;
-  grid-auto-rows: 80px;
   width: 100%;
   padding: 10px;
   gap: 5px;
 }
 
-.item1 {
-  border-radius: 20px;
-  background-color: lightblue;
+.Container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 30%;
 }
 
-.item2 {
-  border-radius: 20px;
-  background-color: lightgreen;
+:root {
+  background-color: #000;
+  --color-text: #fff;
 }
 
-.item3 {
-  border-radius: 20px;
-  background-color: pink;
+.Background {
+  position: fixed;
+  background: radial-gradient(
+    71.43% 62.3% at 46.43% 36.43%,
+    rgba(18, 229, 229, 0) 15%,
+    rgba(239, 155, 255, 0.3) 56.35%,
+    #ff6448 100%
+  );
+  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  top: -60vw;
+  left: -14.27vw;
+  transform: rotate(15.25deg);
 }
 
-.item4 {
-  border-radius: 20px;
-  background-color: lightyellow;
+text {
+  color: var(--color-text);
 }
 
-.item5 {
-  border-radius: 20px;
-  grid-column-start: span 2;
-  background-color: purple;
+.Logo {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
-.item6 {
-  border-radius: 20px;
-  grid-column-start: span 2;
-  background-color: black;
+.Logo--react {
+  width: 100%;
+  aspect-ratio: 1;
+  animation: Logo--spin infinite 20s linear;
 }
 
-.item7 {
-  border-radius: 20px;
-  grid-column-start: span 3;
-  background-color: yellow;
+.Logo--lynx {
+  width: 100%;
+  aspect-ratio: 1;
+  animation: Logo--shake infinite 0.5s ease;
+}
+
+@keyframes Logo--spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes Logo--shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Content {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.Title {
+  font-size: 27px;
+  border-radius: 10%;
+  border: 2px solid rgb(255, 53, 26);
+  font-weight: 600;
+}
+
+.Subtitle {
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 10%;
+  border: 2px solid rgb(255, 53, 26);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.Description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 15rpx;
+}
+
+.Hint {
+  font-size: 12px;
+  margin: 5px;
+  color: rgba(255, 255, 255, 0.65);
 }

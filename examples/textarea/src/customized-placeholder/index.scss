@@ -1,0 +1,10 @@
+.textarea {
+  color: purple;
+  font-size: 20px;
+  min-height: 100px;
+  caret-color: greenyellow;
+}
+
+.textarea::placeholder {
+  color: orange;
+}

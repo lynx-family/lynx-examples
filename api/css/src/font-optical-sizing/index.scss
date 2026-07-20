@@ -1,0 +1,14 @@
+@font-face {
+  font-family: FiraCode;
+  src: url("./../../resource/FiraCode-VF.ttf");
+}
+
+.variable-font-normal {
+  font-family: FiraCode;
+  font-variation-settings: "wght" 400;
+  font-size: 16px;
+}
+
+.font-optical-sizing {
+  font-optical-sizing: auto;
+}

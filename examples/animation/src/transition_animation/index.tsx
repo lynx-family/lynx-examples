@@ -17,27 +17,27 @@ const TransitionAnimationExample = () => {
       <text style={{ fontSize: "20px" }}>transform(Click box!)</text>
       <view
         className={isActive1 ? "box active1" : "box"}
-        bindtap={() => setIsActive1(!isActive1)}
+        bindtap={(active) => setIsActive1(!active)}
         style={{ transition: "transform 3s ease" }}
       />
 
       <text
         className={isActive2 ? "active2" : ""}
-        bindtap={setIsActive2}
+        bindtap={(active) => setIsActive2(!active)}
         style={{ fontSize: "20px", transition: "color 3s ease" }}
       >
         color-opacity(Click me or click box!)
       </text>
       <view
         className={isActive3 ? "active3" : "box-color"}
-        bindtap={() => setIsActive3(!isActive3)}
+        bindtap={(active) => setIsActive3(!active)}
         style={{ transition: "opacity 3s ease, background-color 3s ease" }}
       />
 
       <text style={{ fontSize: "20px" }}>layout(Click box!)</text>
       <view
         className={isActive4 ? "layout-box active4" : "layout-box"}
-        bindtap={() => setIsActive4(!isActive4)}
+        bindtap={(active) => setIsActive4(!active)}
         style={{ transition: "width 3s ease, height 3s ease" }}
       />
 
@@ -48,7 +48,7 @@ const TransitionAnimationExample = () => {
         className={isActive5
           ? "border-margin-padding-box active5"
           : "border-margin-padding-box"}
-        bindtap={() => setIsActive5(!isActive5)}
+        bindtap={(active) => setIsActive5(!active)}
         style={{ transition: "border-color 3s ease, border-width 3s ease" }}
       />
     </view>
