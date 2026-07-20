@@ -1,5 +1,11 @@
 # @lynx-example/bankcards
 
+## 0.6.7
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.6.6
 
 ### Patch Changes

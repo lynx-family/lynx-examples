@@ -1,5 +1,11 @@
 # @lynx-example/frame
 
+## 0.1.4
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.1.3
 
 ### Patch Changes

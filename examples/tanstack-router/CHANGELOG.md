@@ -1,5 +1,11 @@
 # @lynx-example/tanstack-router
 
+## 0.6.10
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.6.9
 
 ### Patch Changes

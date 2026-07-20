@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.5.2
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.5.1
 
 ### Patch Changes

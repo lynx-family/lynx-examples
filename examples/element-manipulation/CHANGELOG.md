@@ -1,5 +1,11 @@
 # @lynx-example/element-manipulation
 
+## 0.6.8
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.6.7
 
 ### Patch Changes

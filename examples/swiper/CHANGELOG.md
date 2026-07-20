@@ -1,5 +1,11 @@
 # @lynx-example/swiper
 
+## 0.5.8
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.5.7
 
 ### Patch Changes
