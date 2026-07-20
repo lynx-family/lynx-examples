@@ -1,5 +1,11 @@
 # @lynx-example/react-devtool
 
+## 0.2.3
+
+### Patch Changes
+
+- ce7caf0: Upgrade `@lynx-js/preact-devtools` to `5.0.1-20260716151326-abdb87c` which no longer gates setup behind `__DEV__`, fixing production builds with `REACT_DEVTOOL=true`.
+
 ## 0.2.2
 
 ### Patch Changes
