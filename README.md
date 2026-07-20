@@ -38,6 +38,10 @@ This repository is intended to showcase examples of Lynx.
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
+  - [`css-global`]: An example shows how to use global CSS in Lynx
+  - [`css-modules`]: An example shows how to use CSS Modules in Lynx
+  - [`css-postcss`]: An example shows how to use PostCSS in Lynx
+  - [`css-preprocessors`]: An example shows how to use Sass, Less and Stylus in Lynx
   - [`tailwindcss`]: A settings UI with runtime theme switching using Tailwind CSS and CSS variables
 - API
   - [`fetch`]: An example shows how to use fetch API
@@ -76,6 +80,10 @@ This repository is intended to showcase examples of Lynx.
 [`animation`]: ./examples/animation
 [`blur-view`]: ./examples/blur-view
 [`css`]: ./examples/css
+[`css-global`]: ./examples/css-global
+[`css-modules`]: ./examples/css-modules
+[`css-postcss`]: ./examples/css-postcss
+[`css-preprocessors`]: ./examples/css-preprocessors
 [`desktop`]: ./examples/desktop
 [`design-guide`]: ./examples/design-guide
 [`element-manipulation`]: ./examples/element-manipulation

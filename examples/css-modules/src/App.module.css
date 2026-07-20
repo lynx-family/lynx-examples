@@ -1,0 +1,82 @@
+.page {
+  height: 100%;
+  padding: 24px;
+  background-color: #0b0b0f;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #2a2a33;
+  border-radius: 16px;
+  background-color: #17171d;
+}
+
+/*
+ * `display: flex` is required. Lynx lays elements out with linear layout by
+ * default, and `flex-direction` has no effect there.
+ * See https://lynxjs.org/api/css/properties/display.html
+ */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  border-radius: 22px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6448;
+}
+
+.initial {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title {
+  color: #fafafa;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 2px;
+  color: #a1a1aa;
+  font-size: 13px;
+}
+
+.divider {
+  height: 1px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #2a2a33;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #a1a1aa;
+  font-size: 13px;
+}
+
+.value {
+  color: #fafafa;
+  font-size: 13px;
+}

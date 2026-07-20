@@ -1,0 +1,77 @@
+@accent: #2a6df4;
+@surface: #17171d;
+@line: #2a2a33;
+@muted: #a1a1aa;
+@foreground: #fafafa;
+
+.less {
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid @line;
+  border-radius: 16px;
+  background-color: @surface;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .avatar {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    background-color: @accent;
+  }
+
+  .initial {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .title {
+    color: @foreground;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    margin-top: 2px;
+    color: @muted;
+    font-size: 13px;
+  }
+
+  .divider {
+    height: 1px;
+    margin: 16px 0;
+    background-color: @line;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label {
+    color: @muted;
+    font-size: 13px;
+  }
+
+  .value {
+    color: @foreground;
+    font-size: 13px;
+  }
+}
