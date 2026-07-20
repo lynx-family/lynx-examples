@@ -1,5 +1,11 @@
 # @lynx-example/external-bundle
 
+## 0.0.6
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.0.5
 
 ### Patch Changes

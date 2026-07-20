@@ -1,5 +1,11 @@
 # @lynx-example/title-bar-view
 
+## 0.6.13
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.6.12
 
 ### Patch Changes

@@ -1,6 +1,6 @@
-# @lynx-example/openui
+# @lynx-example/webassembly
 
-## 0.1.1
+## 0.2.1
 
 ### Patch Changes
 

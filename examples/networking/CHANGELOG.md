@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.9
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.4.8
 
 ### Patch Changes

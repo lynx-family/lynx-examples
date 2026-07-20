@@ -1,5 +1,11 @@
 # @lynx-example/motion
 
+## 0.2.3
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.2.1
 
 ### Patch Changes

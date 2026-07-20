@@ -1,5 +1,11 @@
 # @lynx-example/a2ui
 
+## 0.1.1
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.10.1
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.10.0
 
 ### Minor Changes

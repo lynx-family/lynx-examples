@@ -1,5 +1,11 @@
 # @lynx-example/svg
 
+## 0.6.11
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.6.10
 
 ### Patch Changes

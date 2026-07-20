@@ -1,5 +1,14 @@
 # @lynx-example/react-devtool
 
+## 0.2.2
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+- d0902fc: Use `REACT_DEVTOOL` to replace `REACT_DEV`
+- Updated dependencies [4d01baa]
+  - @lynx-example/lynx-ui-gallery@0.2.1
+
 ## 0.2.1
 
 ### Patch Changes

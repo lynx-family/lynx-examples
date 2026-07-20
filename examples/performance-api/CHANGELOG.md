@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.7.2
+
+### Patch Changes
+
+- 4d01baa: Update Lynx Dependencies
+
 ## 0.7.1
 
 ### Patch Changes

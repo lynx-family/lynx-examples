@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/markdown",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An example shows how to use `<markdown>` in Lynx",
   "repository": {
     "type": "git",
