@@ -10,14 +10,25 @@
   "type": "module",
   "files": [
     "dist/",
+    "dist-fetchbundle/",
     "src/",
+    "scripts/",
     "lynx.config.ts",
+    "lynx.config.producer.js",
+    "demo-config.js",
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "build": "pnpm run build:querycomponent && pnpm run build:fetchbundle",
+    "build:app": "rspeedy build",
+    "build:fetchbundle": "node scripts/run-both.mjs build --fetchbundle",
+    "build:local": "node scripts/run-both.mjs build --local",
+    "build:producer": "rspeedy build --config lynx.config.producer.js",
+    "build:querycomponent": "node scripts/run-both.mjs build",
+    "dev": "node scripts/run-both.mjs dev",
+    "dev:fetchbundle": "node scripts/run-both.mjs dev --fetchbundle",
+    "preview": "node scripts/run-both.mjs preview",
+    "preview:fetchbundle": "node scripts/run-both.mjs preview --fetchbundle"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"

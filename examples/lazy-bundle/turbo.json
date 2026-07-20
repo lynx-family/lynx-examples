@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "inputs": [
+        "src",
+        "lynx.config.ts",
+        "lynx.config.producer.js",
+        "demo-config.js",
+        "scripts",
+        "package.json",
+        "tsconfig.json"
+      ],
+      "outputs": [
+        "dist",
+        "dist-fetchbundle"
+      ]
+    }
+  }
+}
