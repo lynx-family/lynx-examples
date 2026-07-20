@@ -1,0 +1,45 @@
+{
+  "name": "@lynx-example/lazy-bundle-standalone",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/lazy-bundle-standalone"
+  },
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "scripts/",
+    "lynx.config.producer.js",
+    "lynx.config.consumer.js",
+    "demo-ports.js",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "pnpm run --parallel \"/^build:(producer|consumer)$/\"",
+    "build:consumer": "rspeedy build --config lynx.config.consumer.js",
+    "build:producer": "rspeedy build --config lynx.config.producer.js",
+    "dev": "node scripts/serve.mjs dev",
+    "dev:consumer": "rspeedy dev --config lynx.config.consumer.js",
+    "dev:producer": "rspeedy dev --config lynx.config.producer.js",
+    "preview": "node scripts/serve.mjs preview",
+    "preview:consumer": "rspeedy preview --config lynx.config.consumer.js",
+    "preview:producer": "rspeedy preview --config lynx.config.producer.js"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

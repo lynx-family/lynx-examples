@@ -1,0 +1,26 @@
+.root {
+  display: linear;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  border: 6px solid rgb(255, 53, 26);
+  border-radius: 50px;
+  linear-cross-gravity: center;
+}
+
+.text {
+  font-size: 32px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: linear-gradient(to right top, rgb(0, 235, 235), rgb(255, 53, 26));
+}
+
+.sub-text {
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: linear-gradient(to left bottom, rgb(0, 235, 235), rgb(255, 53, 26));
+}
