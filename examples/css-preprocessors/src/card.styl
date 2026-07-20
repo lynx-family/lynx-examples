@@ -1,0 +1,82 @@
+accent = #6b8f00
+surface = #17171d
+line = #2a2a33
+muted = #a1a1aa
+foreground = #fafafa
+
+.stylus
+  padding 20px
+  margin-bottom 16px
+  border 1px solid line
+  border-radius 16px
+  background-color surface
+
+  .header
+    flex-direction row
+    align-items center
+
+  .avatar
+    width 44px
+    height 44px
+    margin-right 12px
+    border-radius 22px
+    align-items center
+    justify-content center
+    background-color accent
+
+  .initial
+    color #ffffff
+    font-size 20px
+    font-weight 600
+
+  .title
+    color foreground
+    font-size 17px
+    font-weight 600
+
+  .subtitle
+    color muted
+    font-size 13px
+
+  .divider
+    height 1px
+    margin 16px 0
+    background-color line
+
+  .row
+    flex-direction row
+    align-items center
+    justify-content space-between
+    margin-bottom 10px
+
+  .label
+    color muted
+    font-size 13px
+
+  .value
+    color foreground
+    font-size 13px
+
+  .actions
+    flex-direction row
+    margin-top 10px
+
+  .button
+    flex 1
+    height 40px
+    border-radius 10px
+    align-items center
+    justify-content center
+
+  .primary
+    margin-right 10px
+    background-color accent
+
+  .secondary
+    border 1px solid #3f3f46
+    background-color #27272a
+
+  .caption
+    color #ffffff
+    font-size 14px
+    font-weight 500

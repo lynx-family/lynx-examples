@@ -4,6 +4,9 @@ import { defineConfig } from "@lynx-js/rspeedy";
 
 export default defineConfig({
   plugins: [pluginReactLynx(), pluginQRCode()],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   environments: {
     web: {},
     lynx: {},

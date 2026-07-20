@@ -6,7 +6,10 @@ import { pluginSass } from "@rsbuild/plugin-sass";
 import { pluginStylus } from "@rsbuild/plugin-stylus";
 
 export default defineConfig({
-  plugins: [pluginReactLynx(), pluginQRCode(), pluginSass({}), pluginLess({}), pluginStylus({})],
+  plugins: [pluginReactLynx(), pluginQRCode(), pluginSass(), pluginLess(), pluginStylus()],
+  output: {
+    filename: "[name].[platform].bundle",
+  },
   environments: {
     web: {},
     lynx: {},
