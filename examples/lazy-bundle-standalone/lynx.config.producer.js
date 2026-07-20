@@ -4,10 +4,9 @@ import { fileURLToPath } from "node:url";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 
-import { detectLanHost, producerDevPort } from "./demo-ports.js";
+import { detectLanHost, producerDevPort, producerPublishedBaseUrl } from "./demo-config.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
-const producerPublicPath = `http://${detectLanHost()}:${producerDevPort}/`;
 
 export default defineConfig({
   source: {
@@ -16,13 +15,13 @@ export default defineConfig({
     },
   },
   output: {
-    assetPrefix: producerPublicPath,
+    assetPrefix: producerPublishedBaseUrl,
     distPath: {
       root: path.join(projectRoot, "dist/producer"),
     },
   },
   dev: {
-    assetPrefix: producerPublicPath,
+    assetPrefix: `http://${detectLanHost()}:${producerDevPort}/`,
   },
   server: {
     port: producerDevPort,

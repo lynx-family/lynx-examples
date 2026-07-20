@@ -14,7 +14,7 @@
     "scripts/",
     "lynx.config.producer.js",
     "lynx.config.consumer.js",
-    "demo-ports.js",
+    "demo-config.js",
     "CHANGELOG.md"
   ],
   "scripts": {

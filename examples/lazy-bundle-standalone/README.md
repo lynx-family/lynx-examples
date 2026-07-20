@@ -29,4 +29,14 @@ You can start editing the page by modifying `src/App.tsx`, or the lazy bundle by
 pnpm run build
 ```
 
-This produces `dist/producer/MyLazyBundle.lynx.bundle` and `dist/consumer/main.lynx.bundle`. The consumer bundle references the producer bundle via `http://<LAN host>:43721/`, so serve `dist/producer` on that port (or set `LYNX_STANDALONE_PRODUCER_HOST` / `LYNX_STANDALONE_PRODUCER_PORT` before building to point elsewhere).
+This produces `dist/producer/MyLazyBundle.lynx.bundle` and `dist/consumer/main.lynx.bundle`.
+
+The consumer bundle loads the producer bundle from unpkg, pinned to this package's version:
+
+```
+https://unpkg.com/@lynx-example/lazy-bundle-standalone@<version>/dist/producer/MyLazyBundle.lynx.bundle
+```
+
+The version is read from `package.json` at build time (see `demo-config.js`), so a published consumer bundle always loads the producer bundle it was built against rather than whatever happens to be latest.
+
+The `LYNX_STANDALONE_PRODUCER_HOST` / `LYNX_STANDALONE_PRODUCER_PORT` environment variables only affect the development servers; they do not change the published URL.
