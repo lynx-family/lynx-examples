@@ -7,6 +7,19 @@ export const producerDevPort = Number(
 );
 
 /**
+ * Whether to build the FetchBundle variant. `engineVersion: '3.9'` switches
+ * how the engine loads a lazy bundle; the sources are identical either way.
+ */
+export const fetchBundle = !!process.env["LAZY_BUNDLE_FETCHBUNDLE"];
+
+/**
+ * Each loader variant needs its own output root: Rspeedy cleans the output
+ * directory before every build, so `pnpm build`'s second pass would otherwise
+ * wipe the first one's artifacts.
+ */
+export const distRoot = fetchBundle ? "dist-fetchbundle" : "dist";
+
+/**
  * Where the consumer resolves the producer bundle from in a production build.
  *
  * Defaults to unpkg, pinned to the current version so a published consumer
@@ -21,7 +34,7 @@ export const producerDevPort = Number(
  */
 export const producerBaseUrl = process.env["LYNX_PRODUCER_LOCAL"]
   ? `http://${detectLanHost()}:${producerDevPort}`
-  : `https://unpkg.com/${pkg.name}@${pkg.version}/dist/producer`;
+  : `https://unpkg.com/${pkg.name}@${pkg.version}/${distRoot}/producer`;
 
 export function detectLanHost() {
   if (process.env["LYNX_STANDALONE_PRODUCER_HOST"]) {

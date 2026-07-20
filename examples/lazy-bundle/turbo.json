@@ -13,7 +13,8 @@
         "tsconfig.json"
       ],
       "outputs": [
-        "dist"
+        "dist",
+        "dist-fetchbundle"
       ]
     }
   }

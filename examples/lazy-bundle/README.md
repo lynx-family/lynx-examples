@@ -30,6 +30,23 @@ The standalone variant solves the same problem differently: its URL points at un
 https://unpkg.com/@lynx-example/lazy-bundle@<version>/dist/producer/MyLazyBundle.lynx.bundle
 ```
 
+## Loader variants: QueryComponent and FetchBundle
+
+The engine has two ways of loading a lazy bundle, selected by `engineVersion`. The sources are identical; only the config differs, so each variant gets its own output root — Rspeedy cleans the output directory before every build, and the second pass would otherwise wipe the first.
+
+| Variant                  | `engineVersion`        | Output root         |
+| ------------------------ | ---------------------- | ------------------- |
+| QueryComponent (default) | `3.2` (plugin default) | `dist/`             |
+| FetchBundle              | `3.9`                  | `dist-fetchbundle/` |
+
+`pnpm run build` produces both. To build just one, use `build:querycomponent` or `build:fetchbundle`; `dev:fetchbundle` and `preview:fetchbundle` run the FetchBundle variant locally.
+
+Both roots are published, so the FetchBundle artifacts are reachable at the matching paths:
+
+```
+https://unpkg.com/@lynx-example/lazy-bundle@<version>/dist-fetchbundle/producer/MyLazyBundle.lynx.bundle
+```
+
 ## Getting Started
 
 First, install the dependencies:

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 
-import { detectLanHost, producerBaseUrl, producerDevPort } from "./demo-config.js";
+import { detectLanHost, distRoot, fetchBundle, producerBaseUrl, producerDevPort } from "./demo-config.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -17,7 +17,7 @@ export default defineConfig({
   output: {
     assetPrefix: producerBaseUrl,
     distPath: {
-      root: path.join(projectRoot, "dist/producer"),
+      root: path.join(projectRoot, distRoot, "producer"),
     },
   },
   dev: {
@@ -30,6 +30,7 @@ export default defineConfig({
   plugins: [
     pluginReactLynx({
       experimental_isLazyBundle: true,
+      ...(fetchBundle ? { engineVersion: "3.9" } : {}),
     }),
   ],
 });

@@ -3,7 +3,7 @@ import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
-import { producerBaseUrl, producerDevPort } from "./demo-config.js";
+import { distRoot, fetchBundle, producerBaseUrl, producerDevPort } from "./demo-config.js";
 
 export default defineConfig({
   source: {
@@ -20,7 +20,7 @@ export default defineConfig({
   },
   plugins: [
     pluginQRCode(),
-    pluginReactLynx(),
+    pluginReactLynx(fetchBundle ? { engineVersion: "3.9" } : {}),
     pluginTypeCheck(),
   ],
   dev: {
@@ -37,9 +37,12 @@ export default defineConfig({
     },
   },
   output: {
+    distPath: {
+      root: distRoot,
+    },
     assetPrefix: process.env.ENV === "lynx-explorer"
       ? "file://lynx?local://showcase/lazy-bundle/"
-      : `https://lynxjs.org/lynx-examples/lazy-bundle/dist/`,
+      : `https://lynxjs.org/lynx-examples/lazy-bundle/${distRoot}/`,
     minify: {
       jsOptions: {
         exclude: [/async[\\/].*[\\/]template(\.[a-z0-9]+)?\.js$/],

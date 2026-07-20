@@ -4,7 +4,7 @@ import { createInterface } from "node:readline";
 const subcommand = process.argv[2];
 if (!["dev", "preview", "build"].includes(subcommand)) {
   process.stderr.write(
-    `Usage: node scripts/run-both.mjs <dev|preview|build> [--local]\n`,
+    `Usage: node scripts/run-both.mjs <dev|preview|build> [--local] [--fetchbundle]\n`,
   );
   process.exitCode = 1;
   throw new Error(`unknown subcommand: ${subcommand ?? "(none)"}`);
@@ -12,10 +12,16 @@ if (!["dev", "preview", "build"].includes(subcommand)) {
 
 // `--local` makes the standalone entry resolve the producer bundle from the local
 // producer server instead of unpkg, so the production output can be exercised
-// end to end before the package is published. See demo-config.js.
-const env = process.argv.includes("--local")
-  ? { ...process.env, LYNX_PRODUCER_LOCAL: "1" }
-  : process.env;
+// end to end before the package is published.
+// `--fetchbundle` builds the FetchBundle loader variant into its own output
+// root. See demo-config.js for both.
+const env = {
+  ...process.env,
+  ...(process.argv.includes("--local") ? { LYNX_PRODUCER_LOCAL: "1" } : {}),
+  ...(process.argv.includes("--fetchbundle")
+    ? { LAZY_BUNDLE_FETCHBUNDLE: "1" }
+    : {}),
+};
 
 const rspeedy = process.platform === "win32" ? "rspeedy.cmd" : "rspeedy";
 
