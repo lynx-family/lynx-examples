@@ -1192,8 +1192,8 @@ importers:
         specifier: 3.133.1
         version: 3.133.1(@lynx-js/react@0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28))(@lynx-js/types@4.0.0)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@lynx-js/preact-devtools':
-        specifier: 5.0.1-20260525112551-dfe2d03
-        version: 5.0.1-20260525112551-dfe2d03
+        specifier: 5.0.1-20260716151326-abdb87c
+        version: 5.0.1-20260716151326-abdb87c
       '@lynx-js/react':
         specifier: 'catalog:'
         version: 0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28)
@@ -2750,8 +2750,8 @@ packages:
       '@lynx-js/types':
         optional: true
 
-  '@lynx-js/preact-devtools@5.0.1-20260525112551-dfe2d03':
-    resolution: {integrity: sha512-q6zlNTtYIA8jCGmnGE6umf6/caTiMa/tkjk+omaBX3Uj4JyIDuV/oWRi/UPDYS9VodBe4Fl6kWsZBQNAK9f9gQ==}
+  '@lynx-js/preact-devtools@5.0.1-20260716151326-abdb87c':
+    resolution: {integrity: sha512-a0k5zLVykaSx2SwoNhyHYkj94VI/Qx5irv2Xf9leJP4Mcb/7uP2g/bJLpijRPrfeLCDvKy5t6WmEWSucKZ7cug==}
 
   '@lynx-js/qrcode-rsbuild-plugin@0.6.0':
     resolution: {integrity: sha512-AjRhjQH5xEJKo5VUIIsjdk6zc6qXMf4QsGvKTDuwBjuGr01sDkLLpAt+wbu9GCJvDlGA7ygNTEsxaPJPYHPmIw==}
@@ -9358,7 +9358,7 @@ snapshots:
       - react
       - react-dom
 
-  '@lynx-js/preact-devtools@5.0.1-20260525112551-dfe2d03':
+  '@lynx-js/preact-devtools@5.0.1-20260716151326-abdb87c':
     dependencies:
       errorstacks: 2.4.2
       htm: 3.1.1
