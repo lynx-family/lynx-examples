@@ -1,6 +1,12 @@
 {
   "name": "@lynx-example/global-css",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/global-css"
+  },
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
@@ -19,10 +25,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "directory": "examples/global-css",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   }
 }

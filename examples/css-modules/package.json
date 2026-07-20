@@ -1,6 +1,12 @@
 {
   "name": "@lynx-example/css-modules",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/css-modules"
+  },
+  "author": "Lynx Authors",
   "type": "module",
   "scripts": {
     "build": "rspeedy build",
@@ -20,10 +26,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "repository": {
-    "directory": "examples/css-modules",
-    "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "type": "git"
   }
 }
