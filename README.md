@@ -41,8 +41,7 @@ This repository is intended to showcase examples of Lynx.
   - [`tailwindcss`]: A settings UI with runtime theme switching using Tailwind CSS and CSS variables
 - API
   - [`fetch`]: An example shows how to use fetch API
-  - [`lazy-bundle`]: An example shows how code-splitting and lazy bundle works
-  - [`lazy-bundle-standalone`]: The same page as [`lazy-bundle`], with the lazy bundle built standalone and loaded by URL
+  - [`lazy-bundle`]: An example shows how code-splitting and lazy bundle works, both code-split and built standalone
   - [`external-bundle`]: An example shows how to use external bundle in Lynx
   - [`element-manipulation`]: An example shows how to manipulate elements in Lynx
   - [`lynx-api`]: An example shows how to use Lynx APIs
@@ -91,7 +90,6 @@ This repository is intended to showcase examples of Lynx.
 [`i18n`]: ./examples/i18n
 [`layout`]: ./examples/layout
 [`lazy-bundle`]: ./examples/lazy-bundle
-[`lazy-bundle-standalone`]: ./examples/lazy-bundle-standalone
 [`list`]: ./examples/list
 [`local-storage`]: ./examples/local-storage
 [`lynx-api`]: ./examples/lynx-api

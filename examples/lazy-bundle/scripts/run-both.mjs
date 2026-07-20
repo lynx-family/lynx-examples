@@ -10,7 +10,7 @@ if (!["dev", "preview", "build"].includes(subcommand)) {
   throw new Error(`unknown subcommand: ${subcommand ?? "(none)"}`);
 }
 
-// `--local` makes the consumer resolve the producer bundle from the local
+// `--local` makes the standalone entry resolve the producer bundle from the local
 // producer server instead of unpkg, so the production output can be exercised
 // end to end before the package is published. See demo-config.js.
 const env = process.argv.includes("--local")
@@ -41,7 +41,7 @@ if (subcommand === "build") {
 
   const codes = await Promise.all([
     run("lynx.config.producer.js", "producer"),
-    run("lynx.config.consumer.js", "consumer"),
+    run("lynx.config.ts", "app"),
   ]);
   process.exitCode = codes.find((code) => code !== 0) ?? 0;
 } else {
@@ -49,15 +49,15 @@ if (subcommand === "build") {
   prefix(producer.stdout, "producer");
   prefix(producer.stderr, "producer");
 
-  const consumer = start("lynx.config.consumer.js", "inherit");
+  const app = start("lynx.config.ts", "inherit");
 
   const shutdown = (code) => {
     if (typeof code === "number") process.exitCode = code;
     if (!producer.killed) producer.kill("SIGTERM");
-    if (!consumer.killed) consumer.kill("SIGTERM");
+    if (!app.killed) app.kill("SIGTERM");
   };
 
-  consumer.on("exit", (code) => shutdown(code ?? 0));
+  app.on("exit", (code) => shutdown(code ?? 0));
   producer.on("exit", (code) => {
     if (code !== 0 && code !== null) shutdown(code);
   });

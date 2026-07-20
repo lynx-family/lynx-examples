@@ -5,8 +5,8 @@
     "build": {
       "inputs": [
         "src",
+        "lynx.config.ts",
         "lynx.config.producer.js",
-        "lynx.config.consumer.js",
         "demo-config.js",
         "scripts",
         "package.json",

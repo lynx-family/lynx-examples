@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect } from "@lynx-js/react";
 
 import { createProducerBundleUrl } from "./entry-url.js";
 
-import "./App.css";
+import "../App.css";
 
 const MyLazyBundle = lazy(() =>
   import(createProducerBundleUrl("MyLazyBundle.lynx.bundle"), {

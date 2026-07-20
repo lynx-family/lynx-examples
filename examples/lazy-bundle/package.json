@@ -11,13 +11,19 @@
   "files": [
     "dist/",
     "src/",
+    "scripts/",
     "lynx.config.ts",
+    "lynx.config.producer.js",
+    "demo-config.js",
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "build": "node scripts/run-both.mjs build",
+    "build:app": "rspeedy build",
+    "build:local": "node scripts/run-both.mjs build --local",
+    "build:producer": "rspeedy build --config lynx.config.producer.js",
+    "dev": "node scripts/run-both.mjs dev",
+    "preview": "node scripts/run-both.mjs preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
