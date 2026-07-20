@@ -38,10 +38,10 @@ This repository is intended to showcase examples of Lynx.
   - [`animation`]: Examples for using animation
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
-  - [`global-css`]: An example shows how to use global CSS in Lynx
+  - [`css-global`]: An example shows how to use global CSS in Lynx
   - [`css-modules`]: An example shows how to use CSS Modules in Lynx
+  - [`css-postcss`]: An example shows how to use PostCSS in Lynx
   - [`css-preprocessors`]: An example shows how to use Sass, Less and Stylus in Lynx
-  - [`postcss`]: An example shows how to use PostCSS in Lynx
   - [`tailwindcss`]: A settings UI with runtime theme switching using Tailwind CSS and CSS variables
 - API
   - [`fetch`]: An example shows how to use fetch API
@@ -80,7 +80,9 @@ This repository is intended to showcase examples of Lynx.
 [`animation`]: ./examples/animation
 [`blur-view`]: ./examples/blur-view
 [`css`]: ./examples/css
+[`css-global`]: ./examples/css-global
 [`css-modules`]: ./examples/css-modules
+[`css-postcss`]: ./examples/css-postcss
 [`css-preprocessors`]: ./examples/css-preprocessors
 [`desktop`]: ./examples/desktop
 [`design-guide`]: ./examples/design-guide
@@ -89,7 +91,6 @@ This repository is intended to showcase examples of Lynx.
 [`external-bundle`]: ./examples/external-bundle
 [`fetch`]: ./examples/fetch
 [`frame`]: ./examples/frame
-[`global-css`]: ./examples/global-css
 [`hello-world`]: ./examples/hello-world
 [`ifr`]: ./examples/ifr
 [`image`]: ./examples/image
@@ -108,7 +109,6 @@ This repository is intended to showcase examples of Lynx.
 [`openui`]: ./examples/openui
 [`page`]: ./examples/page
 [`performance-apis`]: ./examples/performance-api
-[`postcss`]: ./examples/postcss
 [`react-lifecycle`]: ./examples/react-lifecycle
 [`refresh`]: ./examples/refresh
 [`scroll-coordinator`]: ./examples/scroll-coordinator

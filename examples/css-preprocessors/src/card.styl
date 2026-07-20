@@ -12,10 +12,12 @@ foreground = #fafafa
   background-color surface
 
   .header
+    display flex
     flex-direction row
     align-items center
 
   .avatar
+    display flex
     width 44px
     height 44px
     margin-right 12px
@@ -35,6 +37,7 @@ foreground = #fafafa
     font-weight 600
 
   .subtitle
+    margin-top 2px
     color muted
     font-size 13px
 
@@ -44,10 +47,11 @@ foreground = #fafafa
     background-color line
 
   .row
+    display flex
     flex-direction row
     align-items center
     justify-content space-between
-    margin-bottom 10px
+    margin-bottom 12px
 
   .label
     color muted
@@ -57,26 +61,21 @@ foreground = #fafafa
     color foreground
     font-size 13px
 
-  .actions
+  .tags
+    display flex
     flex-direction row
-    margin-top 10px
 
-  .button
-    flex 1
-    height 40px
-    border-radius 10px
+  .tag
+    display flex
+    height 24px
+    margin-right 8px
+    padding 0 10px
+    border 1px solid #3f3f46
+    border-radius 12px
     align-items center
     justify-content center
-
-  .primary
-    margin-right 10px
-    background-color accent
-
-  .secondary
-    border 1px solid #3f3f46
     background-color #27272a
 
   .caption
-    color #ffffff
-    font-size 14px
-    font-weight 500
+    color #d4d4d8
+    font-size 12px

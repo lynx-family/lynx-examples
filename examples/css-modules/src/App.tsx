@@ -6,31 +6,33 @@ export function App() {
       <view className={styles.card}>
         <view className={styles.header}>
           <view className={styles.avatar}>
-            <text className={styles.initial}>L</text>
+            <text className={styles.initial}>M</text>
           </view>
           <view>
-            <text className={styles.title}>Lynx Explorer</text>
-            <text className={styles.subtitle}>Styled with CSS Modules</text>
+            <text className={styles.title}>CSS Modules</text>
+            <text className={styles.subtitle}>src/App.module.css</text>
           </view>
         </view>
 
         <view className={styles.divider} />
 
         <view className={styles.row}>
-          <text className={styles.label}>Stylesheet</text>
-          <text className={styles.value}>src/App.module.css</text>
-        </view>
-        <view className={styles.row}>
           <text className={styles.label}>Scope</text>
           <text className={styles.value}>Local</text>
         </view>
+        <view className={styles.row}>
+          <text className={styles.label}>Selector</text>
+          <text className={styles.value}>{styles.card}</text>
+        </view>
 
-        <view className={styles.actions}>
-          <view className={`${styles.button} ${styles.primary}`}>
-            <text className={styles.caption}>Open</text>
+        <view className={styles.divider} />
+
+        <view className={styles.tags}>
+          <view className={styles.tag}>
+            <text className={styles.caption}>Lynx</text>
           </view>
-          <view className={`${styles.button} ${styles.secondary}`}>
-            <text className={styles.caption}>Share</text>
+          <view className={styles.tag}>
+            <text className={styles.caption}>Web</text>
           </view>
         </view>
       </view>

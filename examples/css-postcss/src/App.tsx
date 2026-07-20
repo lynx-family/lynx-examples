@@ -6,11 +6,11 @@ export function App() {
       <view className="card">
         <view className="header">
           <view className="avatar">
-            <text className="initial">L</text>
+            <text className="initial">P</text>
           </view>
           <view>
-            <text className="title">Lynx Explorer</text>
-            <text className="subtitle">Styled with PostCSS</text>
+            <text className="title">PostCSS</text>
+            <text className="subtitle">src/App.css</text>
           </view>
         </view>
 
@@ -22,15 +22,21 @@ export function App() {
         </view>
         <view className="row">
           <text className="label">Shipped as</text>
-          <text className="value">vw (375px base)</text>
+          <text className="value">vw</text>
+        </view>
+        <view className="row">
+          <text className="label">Design width</text>
+          <text className="value">375px</text>
         </view>
 
-        <view className="actions">
-          <view className="button primary">
-            <text className="caption">Open</text>
+        <view className="divider" />
+
+        <view className="tags">
+          <view className="tag">
+            <text className="caption">Lynx</text>
           </view>
-          <view className="button secondary">
-            <text className="caption">Share</text>
+          <view className="tag">
+            <text className="caption">Web</text>
           </view>
         </view>
       </view>

@@ -1,6 +1,6 @@
 # PostCSS Example
 
-The same profile card as [`global-css`](../global-css), but every length is authored in `px`
+The same info card as [`css-global`](../css-global), but every length is authored in `px`
 against a 375px design width and converted to `vw` at build time by PostCSS, so the card
 scales with the viewport.
 

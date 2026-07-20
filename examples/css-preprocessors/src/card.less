@@ -1,22 +1,24 @@
 @accent: #2a6df4;
 @surface: #17171d;
-@border: #2a2a33;
+@line: #2a2a33;
 @muted: #a1a1aa;
 @foreground: #fafafa;
 
 .less {
   padding: 20px;
   margin-bottom: 16px;
-  border: 1px solid @border;
+  border: 1px solid @line;
   border-radius: 16px;
   background-color: @surface;
 
   .header {
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
 
   .avatar {
+    display: flex;
     width: 44px;
     height: 44px;
     margin-right: 12px;
@@ -39,6 +41,7 @@
   }
 
   .subtitle {
+    margin-top: 2px;
     color: @muted;
     font-size: 13px;
   }
@@ -46,14 +49,15 @@
   .divider {
     height: 1px;
     margin: 16px 0;
-    background-color: @border;
+    background-color: @line;
   }
 
   .row {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .label {
@@ -66,32 +70,25 @@
     font-size: 13px;
   }
 
-  .actions {
+  .tags {
+    display: flex;
     flex-direction: row;
-    margin-top: 10px;
   }
 
-  .button {
-    flex: 1;
-    height: 40px;
-    border-radius: 10px;
+  .tag {
+    display: flex;
+    height: 24px;
+    margin-right: 8px;
+    padding: 0 10px;
+    border: 1px solid #3f3f46;
+    border-radius: 12px;
     align-items: center;
     justify-content: center;
-  }
-
-  .primary {
-    margin-right: 10px;
-    background-color: @accent;
-  }
-
-  .secondary {
-    border: 1px solid #3f3f46;
     background-color: #27272a;
   }
 
   .caption {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
+    color: #d4d4d8;
+    font-size: 12px;
   }
 }

@@ -7,9 +7,11 @@ interface CardProps {
   flavor: "sass" | "less" | "stylus";
   language: string;
   file: string;
+  /** How the language declares a variable. */
+  variable: string;
 }
 
-function Card({ flavor, language, file }: CardProps) {
+function Card({ flavor, language, file, variable }: CardProps) {
   return (
     <view className={flavor}>
       <view className="header">
@@ -17,28 +19,30 @@ function Card({ flavor, language, file }: CardProps) {
           <text className="initial">{language[0]}</text>
         </view>
         <view>
-          <text className="title">Lynx Explorer</text>
-          <text className="subtitle">Styled with {language}</text>
+          <text className="title">{language}</text>
+          <text className="subtitle">{file}</text>
         </view>
       </view>
 
       <view className="divider" />
 
       <view className="row">
-        <text className="label">Stylesheet</text>
-        <text className="value">{file}</text>
-      </view>
-      <view className="row">
         <text className="label">Scope</text>
         <text className="value">.{flavor}</text>
       </view>
+      <view className="row">
+        <text className="label">Variable</text>
+        <text className="value">{variable}</text>
+      </view>
 
-      <view className="actions">
-        <view className="button primary">
-          <text className="caption">Open</text>
+      <view className="divider" />
+
+      <view className="tags">
+        <view className="tag">
+          <text className="caption">Nesting</text>
         </view>
-        <view className="button secondary">
-          <text className="caption">Share</text>
+        <view className="tag">
+          <text className="caption">Variables</text>
         </view>
       </view>
     </view>
@@ -48,9 +52,9 @@ function Card({ flavor, language, file }: CardProps) {
 export function App() {
   return (
     <scroll-view className="page" scroll-orientation="vertical">
-      <Card flavor="sass" language="Sass" file="src/card.scss" />
-      <Card flavor="less" language="Less" file="src/card.less" />
-      <Card flavor="stylus" language="Stylus" file="src/card.styl" />
+      <Card flavor="sass" language="Sass" file="src/card.scss" variable="$accent" />
+      <Card flavor="less" language="Less" file="src/card.less" variable="@accent" />
+      <Card flavor="stylus" language="Stylus" file="src/card.styl" variable="accent =" />
     </scroll-view>
   );
 }

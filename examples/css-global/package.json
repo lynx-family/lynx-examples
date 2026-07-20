@@ -1,11 +1,11 @@
 {
-  "name": "@lynx-example/global-css",
+  "name": "@lynx-example/css-global",
   "version": "0.0.0",
   "description": "An example shows how to use global CSS in Lynx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/global-css"
+    "directory": "examples/css-global"
   },
   "license": "Apache-2.0",
   "author": "Lynx Authors",

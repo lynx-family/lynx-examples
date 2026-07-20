@@ -1,10 +1,10 @@
 # CSS Pre-Processors Example
 
-The same profile card as [`global-css`](../global-css), rendered three times and styled by
+The same info card as [`css-global`](../css-global), rendered three times and styled by
 Sass, Less and Stylus respectively — one card per language, so the three syntaxes can be
 diffed against each other and against the plain-CSS version.
 
-The card is also rebuilt in [`css-modules`](../css-modules), [`postcss`](../postcss) and
+The card is also rebuilt in [`css-modules`](../css-modules), [`css-postcss`](../css-postcss) and
 [`tailwindcss`](../tailwindcss), so the five examples can be compared side by side —
 same UI, different styling pipeline.
 

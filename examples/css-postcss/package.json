@@ -1,11 +1,11 @@
 {
-  "name": "@lynx-example/postcss",
+  "name": "@lynx-example/css-postcss",
   "version": "0.0.0",
   "description": "An example shows how to use PostCSS in Lynx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/postcss"
+    "directory": "examples/css-postcss"
   },
   "license": "Apache-2.0",
   "author": "Lynx Authors",
