@@ -18,13 +18,14 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "pnpm run --parallel \"/^build:(producer|consumer)$/\"",
+    "build": "node scripts/run-both.mjs build",
     "build:consumer": "rspeedy build --config lynx.config.consumer.js",
+    "build:local": "node scripts/run-both.mjs build --local",
     "build:producer": "rspeedy build --config lynx.config.producer.js",
-    "dev": "node scripts/serve.mjs dev",
+    "dev": "node scripts/run-both.mjs dev",
     "dev:consumer": "rspeedy dev --config lynx.config.consumer.js",
     "dev:producer": "rspeedy dev --config lynx.config.producer.js",
-    "preview": "node scripts/serve.mjs preview",
+    "preview": "node scripts/run-both.mjs preview",
     "preview:consumer": "rspeedy preview --config lynx.config.consumer.js",
     "preview:producer": "rspeedy preview --config lynx.config.producer.js"
   },

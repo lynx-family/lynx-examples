@@ -6,7 +6,7 @@ import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
-import { producerDevPort, producerPublishedBaseUrl } from "./demo-config.js";
+import { producerBaseUrl, producerDevPort } from "./demo-config.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
@@ -14,9 +14,7 @@ export default defineConfig({
   source: {
     entry: "./src/index.tsx",
     define: {
-      "process.env.LYNX_PRODUCER_BASE_URL": JSON.stringify(
-        producerPublishedBaseUrl,
-      ),
+      "process.env.LYNX_PRODUCER_BASE_URL": JSON.stringify(producerBaseUrl),
     },
   },
   output: {

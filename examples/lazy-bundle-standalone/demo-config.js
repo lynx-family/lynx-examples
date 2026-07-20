@@ -7,11 +7,21 @@ export const producerDevPort = Number(
 );
 
 /**
- * Where the producer bundle lives once this example is published to npm.
- * Pinned to the current version so a consumer bundle always loads the
- * producer bundle it was built against.
+ * Where the consumer resolves the producer bundle from in a production build.
+ *
+ * Defaults to unpkg, pinned to the current version so a published consumer
+ * bundle always loads the producer bundle it was built against. `pnpm
+ * build:local` sets `LYNX_PRODUCER_LOCAL` to point at the local producer
+ * server instead, which is what makes `pnpm preview` work before the package
+ * is published — unpkg 404s until then.
+ *
+ * The default has to be the published URL: CI releases run a plain `pnpm
+ * build`, so anything else here would bake a LAN address into the artifact
+ * that ships to npm.
  */
-export const producerPublishedBaseUrl = `https://unpkg.com/${pkg.name}@${pkg.version}/dist/producer`;
+export const producerBaseUrl = process.env["LYNX_PRODUCER_LOCAL"]
+  ? `http://${detectLanHost()}:${producerDevPort}`
+  : `https://unpkg.com/${pkg.name}@${pkg.version}/dist/producer`;
 
 export function detectLanHost() {
   if (process.env["LYNX_STANDALONE_PRODUCER_HOST"]) {

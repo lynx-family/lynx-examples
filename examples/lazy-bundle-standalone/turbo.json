@@ -8,6 +8,7 @@
         "lynx.config.producer.js",
         "lynx.config.consumer.js",
         "demo-config.js",
+        "scripts",
         "package.json",
         "tsconfig.json"
       ],

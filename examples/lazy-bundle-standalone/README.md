@@ -39,4 +39,15 @@ https://unpkg.com/@lynx-example/lazy-bundle-standalone@<version>/dist/producer/M
 
 The version is read from `package.json` at build time (see `demo-config.js`), so a published consumer bundle always loads the producer bundle it was built against rather than whatever happens to be latest.
 
-The `LYNX_STANDALONE_PRODUCER_HOST` / `LYNX_STANDALONE_PRODUCER_PORT` environment variables only affect the development servers; they do not change the published URL.
+## Previewing a production build
+
+That unpkg URL only resolves once this package is published, so a plain `pnpm run build` cannot be previewed locally. Build with `build:local` instead, which points the consumer at the local producer server:
+
+```bash
+pnpm run build:local
+pnpm run preview
+```
+
+`build:local` is the only difference; `preview` just serves whatever was built. Use plain `pnpm run build` for anything you intend to publish — the default has to stay unpkg, because releases run a plain `build` and a LAN address must never end up in a published bundle.
+
+The `LYNX_STANDALONE_PRODUCER_HOST` / `LYNX_STANDALONE_PRODUCER_PORT` environment variables affect the development servers and `build:local`; they do not change the published URL.
