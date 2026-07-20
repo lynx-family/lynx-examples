@@ -2,7 +2,6 @@
 // Please do not change this file!
 interface CssExports {
   avatar: string;
-  caption: string;
   card: string;
   divider: string;
   header: string;
@@ -10,9 +9,8 @@ interface CssExports {
   label: string;
   page: string;
   row: string;
+  rows: string;
   subtitle: string;
-  tag: string;
-  tags: string;
   title: string;
   value: string;
 }

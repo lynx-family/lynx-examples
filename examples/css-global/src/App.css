@@ -58,12 +58,17 @@
   background-color: #2a2a33;
 }
 
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
 }
 
 .label {
@@ -74,27 +79,4 @@
 .value {
   color: #fafafa;
   font-size: 13px;
-}
-
-.tags {
-  display: flex;
-  flex-direction: row;
-}
-
-.tag {
-  display: flex;
-  height: 24px;
-  margin-right: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #3f3f46;
-  border-radius: 12px;
-  align-items: center;
-  justify-content: center;
-  background-color: #27272a;
-}
-
-.caption {
-  color: #d4d4d8;
-  font-size: 12px;
 }

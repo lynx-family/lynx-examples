@@ -16,23 +16,14 @@ export function App() {
 
         <view className="divider" />
 
-        <view className="row">
-          <text className="label">Scope</text>
-          <text className="value">Global</text>
-        </view>
-        <view className="row">
-          <text className="label">Selector</text>
-          <text className="value">.card</text>
-        </view>
-
-        <view className="divider" />
-
-        <view className="tags">
-          <view className="tag">
-            <text className="caption">Lynx</text>
+        <view className="rows">
+          <view className="row">
+            <text className="label">Scope</text>
+            <text className="value">Global</text>
           </view>
-          <view className="tag">
-            <text className="caption">Web</text>
+          <view className="row">
+            <text className="label">Selector</text>
+            <text className="value">.card</text>
           </view>
         </view>
       </view>

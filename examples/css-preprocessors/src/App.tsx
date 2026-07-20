@@ -26,23 +26,14 @@ function Card({ flavor, language, file, variable }: CardProps) {
 
       <view className="divider" />
 
-      <view className="row">
-        <text className="label">Scope</text>
-        <text className="value">.{flavor}</text>
-      </view>
-      <view className="row">
-        <text className="label">Variable</text>
-        <text className="value">{variable}</text>
-      </view>
-
-      <view className="divider" />
-
-      <view className="tags">
-        <view className="tag">
-          <text className="caption">Nesting</text>
+      <view className="rows">
+        <view className="row">
+          <text className="label">Scope</text>
+          <text className="value">.{flavor}</text>
         </view>
-        <view className="tag">
-          <text className="caption">Variables</text>
+        <view className="row">
+          <text className="label">Variable</text>
+          <text className="value">{variable}</text>
         </view>
       </view>
     </view>
