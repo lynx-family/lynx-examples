@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@lynx-js/config-rsbuild-plugin':
-      specifier: 0.1.0
-      version: 0.1.0
+      specifier: 0.1.1
+      version: 0.1.1
     '@lynx-js/external-bundle-rsbuild-plugin':
       specifier: 0.4.0
       version: 0.4.0
@@ -34,8 +34,8 @@ catalogs:
       specifier: 0.16.0
       version: 0.16.0
     '@lynx-js/runtime-wrapper-webpack-plugin':
-      specifier: 0.2.1
-      version: 0.2.1
+      specifier: 0.2.2
+      version: 0.2.2
     '@lynx-js/template-webpack-plugin':
       specifier: 0.13.0
       version: 0.13.0
@@ -201,7 +201,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -528,7 +528,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -556,7 +556,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -992,7 +992,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -1163,7 +1163,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -1315,7 +1315,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -1650,7 +1650,7 @@ importers:
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
+        version: 0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
         version: 0.6.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))
@@ -1659,7 +1659,7 @@ importers:
         version: 0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/runtime-wrapper-webpack-plugin':
         specifier: 'catalog:'
-        version: 0.2.1
+        version: 0.2.2
       '@lynx-js/template-webpack-plugin':
         specifier: 'catalog:'
         version: 0.13.0(tslib@2.8.1)
@@ -2623,11 +2623,11 @@ packages:
     resolution: {integrity: sha512-vZb2HiZdkVdexs2OhRVZE3FkSUPYRvdnaAKG8y47WW2NlVFj6PHzqEhkqfO1L3dm5CIEsPgOMwzgSs3BHZZ8ig==}
     engines: {node: '>=18'}
 
-  '@lynx-js/config-rsbuild-plugin@0.1.0':
-    resolution: {integrity: sha512-fX1kRvfEQwJL8HfOt/EO5IFMU4wzE8D5CxN9Ou43p6iHAwSJeAEzaURNQdfW/scydj0inxC7aUG+7w0fZ0MZpg==}
+  '@lynx-js/config-rsbuild-plugin@0.1.1':
+    resolution: {integrity: sha512-28P3eKyZWasn8nlIyjJ5dDwa7x5oj0F/2g+SEE+nzXzSC/yFfE5Jb/ce7c+lA85OkMI0AHt2tfVo5x8Yl9bPJw==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@lynx-js/rspeedy': ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0
+      '@lynx-js/rspeedy': ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0
 
   '@lynx-js/css-extract-webpack-plugin@0.9.0':
     resolution: {integrity: sha512-bWNaFeCBCa091BTZuFuAxQaqr/u/bE6xAiY5T6O8FBr5mIglBbLePQOftp/vsB92D30INjp8EwqB184PC+IXzg==}
@@ -2929,10 +2929,6 @@ packages:
       typescript:
         optional: true
 
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.2.1':
-    resolution: {integrity: sha512-Igx1LIx1Tlk8ioNLmOawJoPrEPGiUHeDAYqnzwlOViXXeKqLBTB23VVPyDrYQdMzZg53SLUZDBVhYqWzD4u++Q==}
-    engines: {node: '>=18'}
-
   '@lynx-js/runtime-wrapper-webpack-plugin@0.2.2':
     resolution: {integrity: sha512-q/T89kpxkZIQgSk2yhTXFYlH1XqE2UzPr/vKhWOk4PBZ8v9gyUco80xCvn4YyA6iSYrd7bO65MBK73gkqIlsng==}
     engines: {node: '>=18'}
@@ -3013,10 +3009,6 @@ packages:
 
   '@lynx-js/webpack-dev-transport@0.3.0':
     resolution: {integrity: sha512-vpa0X/eqb50DhNhXEEfCi6gEd/ti32bFJtkt9zkPv6dTTsd2HJkYnCiKSUWpHpqPbnRbVLf/UacAY6h1uTtZeA==}
-    engines: {node: '>=18'}
-
-  '@lynx-js/webpack-runtime-globals@0.0.6':
-    resolution: {integrity: sha512-VzpJc/w7v38/SHaZ+f3WBVBrsgXOG13YX9mRRxRrCgJQa+wZ6waRz7OIjntuTYJk2p7rQ0wKRGzsMgMfRBs/3g==}
     engines: {node: '>=18'}
 
   '@lynx-js/webpack-runtime-globals@0.0.7':
@@ -9128,7 +9120,7 @@ snapshots:
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.7
 
-  '@lynx-js/config-rsbuild-plugin@0.1.0(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))':
+  '@lynx-js/config-rsbuild-plugin@0.1.1(@lynx-js/rspeedy@0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3))':
     dependencies:
       '@lynx-js/rspeedy': 0.16.0(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.4(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/type-config': 3.6.0
@@ -9630,10 +9622,6 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.2.1':
-    dependencies:
-      '@lynx-js/webpack-runtime-globals': 0.0.6
-
   '@lynx-js/runtime-wrapper-webpack-plugin@0.2.2':
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.7
@@ -9709,8 +9697,6 @@ snapshots:
   '@lynx-js/web-worker-rpc@0.22.2': {}
 
   '@lynx-js/webpack-dev-transport@0.3.0': {}
-
-  '@lynx-js/webpack-runtime-globals@0.0.6': {}
 
   '@lynx-js/webpack-runtime-globals@0.0.7': {}
 
