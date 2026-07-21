@@ -32,7 +32,7 @@
     "@lynx-js/types": "catalog:",
     "@types/react": "^18.3.28",
     "postcss-px-to-viewport": "^1.1.1",
-    "typescript": "~5.9.3"
+    "typescript": "~7.0.2"
   },
   "engines": {
     "node": ">=18"
