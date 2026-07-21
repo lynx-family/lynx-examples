@@ -28,8 +28,8 @@ catalogs:
       specifier: 0.123.0
       version: 0.123.0
     '@lynx-js/react-use':
-      specifier: 0.2.1
-      version: 0.2.1
+      specifier: 0.2.2
+      version: 0.2.2
     '@lynx-js/rspeedy':
       specifier: 0.16.0
       version: 0.16.0
@@ -524,7 +524,7 @@ importers:
         version: 0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28)
       '@lynx-js/react-use':
         specifier: 'catalog:'
-        version: 0.2.1(@lynx-js/react@0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 0.2.2(@lynx-js/react@0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
     devDependencies:
       '@lynx-js/config-rsbuild-plugin':
         specifier: 'catalog:'
@@ -2895,8 +2895,8 @@ packages:
     peerDependencies:
       '@lynx-js/react': '>=0.105.1'
 
-  '@lynx-js/react-use@0.2.1':
-    resolution: {integrity: sha512-WBp4g/sDGUETxX9m6QbG2lNfFcac6LrEF2OZkaDZVmIHXfRYpJA1ThBbfH2Cxp5trvtsWbOP4raSoVJSfqvOhA==}
+  '@lynx-js/react-use@0.2.2':
+    resolution: {integrity: sha512-+cFNtHNraLojSWwZL0uHFLHqoh/bCQU1fT7L2gSOqkwnKYmyDbtZOj+CXtHyDPVHEaGTYqqRt93ZuYA2jztD2Q==}
     peerDependencies:
       '@lynx-js/react': '>=0.105.1'
 
@@ -9536,7 +9536,7 @@ snapshots:
       - react
       - react-dom
 
-  '@lynx-js/react-use@0.2.1(@lynx-js/react@0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@lynx-js/react-use@0.2.2(@lynx-js/react@0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@lynx-js/react': 0.123.0(@lynx-js/types@4.0.0)(@types/react@18.3.28)
       immer: 10.1.1

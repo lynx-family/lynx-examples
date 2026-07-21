@@ -14,7 +14,7 @@ catalog:
   "@lynx-js/lynx-bundle-rslib-config": "0.6.0"
   "@lynx-js/react-umd": "0.123.0"
   "@lynx-js/qrcode-rsbuild-plugin": "0.6.0"
-  "@lynx-js/react-use": "0.2.1"
+  "@lynx-js/react-use": "0.2.2"
   "@lynx-js/react": "0.123.0"
   "@lynx-js/react-rsbuild-plugin": "0.18.0"
   "@lynx-js/rspeedy": "0.16.0"
