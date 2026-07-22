@@ -130,10 +130,42 @@ const Position = () => {
       height: "50px",
       backgroundColor: "blue",
     },
+    leadIn: {
+      height: "72px",
+      justifyContent: "center" as const,
+      alignItems: "center" as const,
+      backgroundColor: "#f4f4f5",
+    },
+    stickyHeader: {
+      position: "sticky" as const,
+      top: "0px",
+      zIndex: 1,
+      width: "750rpx",
+      height: "44px",
+      justifyContent: "center" as const,
+      alignItems: "center" as const,
+      backgroundColor: "#111827",
+    },
+    stickyText: {
+      color: "#ffffff",
+      fontSize: "14px",
+    },
+    tail: {
+      height: "260px",
+      justifyContent: "center" as const,
+      alignItems: "center" as const,
+      backgroundColor: "#f4f4f5",
+    },
   };
 
   return (
     <scroll-view className="root" scroll-orientation="vertical">
+      <view style={boxStyles.leadIn}>
+        <text>Scroll to see position: sticky</text>
+      </view>
+      <view style={boxStyles.stickyHeader}>
+        <text style={boxStyles.stickyText}>position: sticky; top: 0</text>
+      </view>
       <view className="fixed_area">
         <view className="container">
           <view style={boxStyles.fixed1}></view>
@@ -153,6 +185,9 @@ const Position = () => {
           <view style={boxStyles.absolute10}></view>
           <view style={boxStyles.fixed6}></view>
         </view>
+      </view>
+      <view style={boxStyles.tail}>
+        <text>The sticky bar stays at the top while scrolling.</text>
       </view>
     </scroll-view>
   );
