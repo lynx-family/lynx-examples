@@ -7,8 +7,8 @@ import { spawnSync } from "node:child_process";
 const command = process.platform === "win32" ? "rspeedy.cmd" : "rspeedy";
 const chunks = Number(process.env.CSS_API_BUILD_CHUNKS ?? 8);
 
-function runBuild(env = {}) {
-  const result = spawnSync(command, ["build"], {
+function runBuild(args = ["build"], env = {}) {
+  const result = spawnSync(command, args, {
     env: {
       ...process.env,
       ...env,
@@ -23,13 +23,16 @@ function runBuild(env = {}) {
 
 if (process.env.CI !== "1") {
   runBuild();
+  runBuild(["build", "--config", "lynx.web.config.mjs"]);
   process.exit(0);
 }
 
 for (let index = 0; index < chunks; index++) {
   console.log(`Building CSS API entries chunk ${index + 1}/${chunks}`);
-  runBuild({
+  runBuild(["build"], {
     CSS_API_BUILD_CHUNK_INDEX: String(index),
     CSS_API_BUILD_CHUNKS: String(chunks),
   });
 }
+
+runBuild(["build", "--config", "lynx.web.config.mjs"]);
