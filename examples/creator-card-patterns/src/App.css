@@ -1,0 +1,311 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f6fa;
+}
+
+.PageScroll {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 36px;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #20263a 0%, #495673 100%);
+}
+
+.Eyebrow {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.Title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.Description {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SectionTitle {
+  color: #1f2433;
+  font-size: 19px;
+  font-weight: 760;
+}
+
+.SectionSubtitle {
+  color: #5d6577;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.CardHeaderRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ToggleText,
+.ResetText,
+.LinkButton {
+  color: #2864d7;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Panel,
+.StatusPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+.AdaptiveHeadline {
+  color: #111827;
+  font-weight: 800;
+}
+
+.SmallNote {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.MediaCard {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+.MediaCardSelected {
+  border-color: #4f7cff;
+  background-color: #f4f7ff;
+}
+
+.MediaCoverSlot {
+  display: flex;
+}
+
+.Cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: #d9dee8;
+}
+
+.CoverImage,
+.AvatarImage,
+.InfoImage {
+  width: 100%;
+  height: 100%;
+}
+
+.CoverGradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 24, 40, 0) 0%,
+    rgba(16, 24, 40, 0.58) 100%
+  );
+}
+
+.PhotoBadge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: rgba(17, 24, 39, 0.72);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.MediaBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 110px;
+}
+
+.MediaTitle {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 20px;
+}
+
+.MediaSubtitle,
+.MediaTime,
+.AuthorName,
+.InfoDescription,
+.StatusText {
+  color: #667085;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.MediaSubtitle {
+  margin-top: 4px;
+}
+
+.MediaTime {
+  margin-bottom: 6px;
+}
+
+.AuthorRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.Avatar {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  border-radius: 9px;
+  background-color: #e5e7eb;
+}
+
+.InfoCard {
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e7eaf0;
+}
+
+.InfoMainRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.InfoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #eef4ff;
+}
+
+.InfoIconText {
+  color: #2f65d7;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.InfoImage {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #edf0f5;
+}
+
+.InfoBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.InfoTitle {
+  color: #172033;
+  font-size: 15px;
+  font-weight: 760;
+  line-height: 20px;
+}
+
+.StrongButton {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background-color: #111827;
+}
+
+.StrongButtonText {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.CloseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: #f2f4f7;
+}
+
+.CloseButtonText {
+  color: #667085;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.EmptyState {
+  padding: 16px;
+  margin-top: 8px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+}
+
+.EmptyStateText {
+  color: #667085;
+  font-size: 14px;
+  text-align: center;
+}
+
+.StatusLabel {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 800;
+}
