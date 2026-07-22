@@ -29,9 +29,9 @@
     "sort-package-json": "^4.0.0",
     "turbo": "^2.8.13"
   },
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@11.14.0",
   "engines": {
     "node": ">=22",
-    "pnpm": "11.13.0"
+    "pnpm": "11.14.0"
   }
 }
