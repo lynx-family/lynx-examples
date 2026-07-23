@@ -49,6 +49,22 @@ const App = () => {
     });
   };
 
+  const handleButtonClickSSE = async () => {
+    setError(null);
+    // @ts-ignore
+    const eventSource = new lynx.EventSource("https://sse.dev/test");
+
+    // @ts-ignore
+    eventSource.onmessage = (event) => {
+      setData(event.data);
+    };
+
+    // @ts-ignore
+    eventSource.onerror = (error) => {
+      setError(error);
+    };
+  };
+
   return (
     <view className="container">
       <view className="btn" bindtap={handleButtonClick}>
@@ -56,6 +72,9 @@ const App = () => {
       </view>
       <view className="btn" bindtap={handleButtonClickStreaming}>
         <text>fetchChunk</text>
+      </view>
+      <view className="btn" bindtap={handleButtonClickSSE}>
+        <text>fetch sse</text>
       </view>
       <scroll-view className="box" scroll-orientation="vertical">
         {error && <text className="error">Error: {error}</text>}
