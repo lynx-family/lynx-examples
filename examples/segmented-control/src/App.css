@@ -1,0 +1,144 @@
+:root {
+  background-color: #eef2ff;
+}
+
+.Page {
+  min-height: 100vh;
+  padding: 48rpx 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card {
+  width: 100%;
+  padding: 32rpx;
+  border-radius: 28rpx;
+  background-color: #ffffff;
+  box-shadow: 0 18rpx 48rpx rgba(35, 47, 98, 0.14);
+}
+
+.Eyebrow {
+  color: #635bff;
+  font-size: 20rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.Title {
+  margin-top: 12rpx;
+  color: #171a2d;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
+.Description {
+  margin-top: 12rpx;
+  margin-bottom: 32rpx;
+  color: #646b85;
+  font-size: 26rpx;
+  line-height: 38rpx;
+}
+
+.SegmentedControl {
+  width: 100%;
+  height: 64rpx;
+  padding: 4rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 32rpx;
+  background-color: #edf0f6;
+}
+
+.SegmentedControl__item {
+  min-width: 128rpx;
+  padding: 11rpx 20rpx;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28rpx;
+}
+
+.SegmentedControl__item--selected {
+  background-color: #ffffff;
+  box-shadow: 0 4rpx 14rpx rgba(34, 43, 78, 0.12);
+}
+
+.SegmentedControl__label {
+  color: #7a8198;
+  font-size: 22rpx;
+  font-weight: 600;
+  text-overflow: ellipsis;
+}
+
+.SegmentedControl__label--selected {
+  color: #1e2440;
+}
+
+.SegmentedControl__indicator {
+  margin-left: 4rpx;
+  color: #7a8198;
+  font-size: 20rpx;
+}
+
+.SegmentedControl__indicator--selected {
+  color: #1e2440;
+}
+
+.Status {
+  margin-top: 28rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 18rpx;
+  background-color: #f7f8fc;
+}
+
+.Status__label {
+  color: #777e95;
+  font-size: 24rpx;
+}
+
+.Status__value {
+  color: #635bff;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.Actions {
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: row;
+  gap: 16rpx;
+}
+
+.Button {
+  height: 76rpx;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+}
+
+.Button--secondary {
+  background-color: #edf0f6;
+}
+
+.Button--primary {
+  background-color: #635bff;
+}
+
+.Button__text {
+  color: #343a55;
+  font-size: 23rpx;
+  font-weight: 600;
+}
+
+.Button__text--primary {
+  color: #ffffff;
+}
