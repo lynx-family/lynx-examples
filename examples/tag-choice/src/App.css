@@ -1,0 +1,102 @@
+:root {
+  background-color: #fff7ed;
+}
+
+.Page {
+  min-height: 100vh;
+  padding: 48rpx 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card {
+  width: 100%;
+  padding: 34rpx 24rpx 28rpx;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  box-shadow: 0 18rpx 50rpx rgba(119, 69, 19, 0.13);
+}
+
+.Eyebrow {
+  margin-left: 8rpx;
+  color: #ea580c;
+  font-size: 20rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.Title {
+  margin: 12rpx 8rpx 0;
+  color: #292018;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
+.Description {
+  margin: 12rpx 8rpx 20rpx;
+  color: #776b61;
+  font-size: 26rpx;
+  line-height: 38rpx;
+}
+
+.TagChoice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8rpx 16rpx 0;
+}
+
+.TagChoice__item {
+  margin: 16rpx 16rpx 0 0;
+  padding: 16rpx 14rpx;
+  border: 2rpx solid transparent;
+  border-radius: 16rpx;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.TagChoice__item--selected {
+  border-color: #292018;
+  background-color: #ffedd5;
+}
+
+.TagChoice__text {
+  color: #292018;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 36rpx;
+}
+
+.Summary {
+  margin: 34rpx 8rpx 0;
+  padding-top: 24rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 2rpx solid #f2e8de;
+}
+
+.Summary__count {
+  color: #ea580c;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.Summary__label {
+  margin-left: 8rpx;
+  color: #776b61;
+  font-size: 24rpx;
+}
+
+.Reset {
+  margin-left: auto;
+  padding: 14rpx 20rpx;
+  border-radius: 18rpx;
+  background-color: #292018;
+}
+
+.Reset__text {
+  color: #ffffff;
+  font-size: 23rpx;
+  font-weight: 600;
+}
