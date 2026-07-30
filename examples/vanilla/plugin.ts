@@ -8,6 +8,8 @@ import { LynxEncodePlugin, LynxTemplatePlugin } from "@lynx-js/template-webpack-
 const PLUGIN_NAME = "vanilla-template-webpack";
 const LYNX_ENGINE_VERSION = "3.5";
 
+type LynxCompilation = Parameters<typeof LynxTemplatePlugin.getLynxTemplatePluginHooks>[0];
+
 export function pluginVanillaTemplateWebpack(): RsbuildPlugin {
   return {
     name: PLUGIN_NAME,
@@ -80,7 +82,13 @@ export function pluginVanillaTemplateWebpack(): RsbuildPlugin {
         chain.plugin("before-encode").use({
           apply(compiler: Rspack.Compiler) {
             compiler.hooks.thisCompilation.tap(PLUGIN_NAME, (compilation) => {
-              const hooks = LynxTemplatePlugin.getLynxTemplatePluginHooks(compilation);
+              // `@lynx-js/template-webpack-plugin` and rspeedy pin different
+              // `@rspack/core` versions, so their `Compilation` types aren't
+              // mutually assignable. The object is one and the same at runtime;
+              // reach the hooks through the type the plugin itself expects.
+              const hooks = LynxTemplatePlugin.getLynxTemplatePluginHooks(
+                compilation as unknown as LynxCompilation,
+              );
               hooks.beforeEncode.tap(PLUGIN_NAME, (args) => {
                 // The default grouping only routes a chunk to lepus (main thread)
                 // when its asset carries `lynx:main-thread`. These hand-built
@@ -102,6 +110,12 @@ export function pluginVanillaTemplateWebpack(): RsbuildPlugin {
 
                 args.encodeData.compilerOptions.targetSdkVersion = LYNX_ENGINE_VERSION;
                 args.encodeData.compilerOptions.enableEventRefactor = true;
+
+                // Route tap/gesture events through the refactored main-thread
+                // path so `__AddEventListener` handlers fire. This page-config
+                // flag was dropped from `@lynx-js/config-rsbuild-plugin` 0.2.0's
+                // schema, so set it on the page config directly.
+                args.encodeData.sourceContent.config.enableEventHandleRefactor = true;
 
                 args.encodeData.manifest = backgroundAsset
                   ? {
