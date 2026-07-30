@@ -13,7 +13,8 @@
   "files": [
     "dist",
     "src",
-    "lynx.config.js"
+    "lynx.config.ts",
+    "plugin.ts"
   ],
   "scripts": {
     "build": "rspeedy build",

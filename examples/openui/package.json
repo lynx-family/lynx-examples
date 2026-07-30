@@ -23,8 +23,8 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/genui": "0.0.6",
-    "@lynx-js/lynx-ui": "3.133.1",
+    "@lynx-js/genui": "0.2.0",
+    "@lynx-js/lynx-ui": "3.135.3",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {

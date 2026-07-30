@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 import { pluginVanillaTemplateWebpack } from "./plugin.js";
 
@@ -31,13 +32,12 @@ export default defineConfig({
   },
   plugins: [
     pluginVanillaTemplateWebpack(),
-    pluginLynxConfig({
-      enableEventHandleRefactor: true,
-    }),
+    pluginLynxConfig({}),
     pluginQRCode({
       schema(url) {
         return `${url}?fullscreen=true`;
       },
     }),
+    pluginTypeCheck(),
   ],
 });

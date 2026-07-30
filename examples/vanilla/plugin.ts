@@ -1,13 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import type { RsbuildPlugin, Rspack } from "@lynx-js/rspeedy";
 import { RuntimeWrapperWebpackPlugin } from "@lynx-js/runtime-wrapper-webpack-plugin";
 import { LynxEncodePlugin, LynxTemplatePlugin } from "@lynx-js/template-webpack-plugin";
 
 const PLUGIN_NAME = "vanilla-template-webpack";
 const LYNX_ENGINE_VERSION = "3.5";
 
-export function pluginVanillaTemplateWebpack() {
+type LynxCompilation = Parameters<typeof LynxTemplatePlugin.getLynxTemplatePluginHooks>[0];
+
+export function pluginVanillaTemplateWebpack(): RsbuildPlugin {
   return {
     name: PLUGIN_NAME,
     setup(api) {
@@ -18,9 +21,10 @@ export function pluginVanillaTemplateWebpack() {
         chain.entryPoints.clear();
 
         for (const [name, entry] of rawEntries) {
-          const first = entry.values()?.[0];
-          const mtSource = typeof first === "string" ? first : first?.import;
-          if (!mtSource) continue;
+          const value = entry.values()?.[0];
+          const imports = typeof value === "string" || Array.isArray(value) ? value : value?.import;
+          const mtSource = Array.isArray(imports) ? imports[0] : imports;
+          if (typeof mtSource !== "string") continue;
 
           const dir = path.dirname(mtSource);
           const bgSource = path.join(dir, "background.ts");
@@ -76,28 +80,29 @@ export function pluginVanillaTemplateWebpack() {
         chain.plugin("encode").use(LynxEncodePlugin, []);
 
         chain.plugin("before-encode").use({
-          apply(compiler) {
+          apply(compiler: Rspack.Compiler) {
             compiler.hooks.thisCompilation.tap(PLUGIN_NAME, (compilation) => {
-              const hooks = LynxTemplatePlugin.getLynxTemplatePluginHooks(compilation);
+              // `@lynx-js/template-webpack-plugin` and rspeedy pin different
+              // `@rspack/core` versions, so their `Compilation` types aren't
+              // mutually assignable. The object is one and the same at runtime;
+              // reach the hooks through the type the plugin itself expects.
+              const hooks = LynxTemplatePlugin.getLynxTemplatePluginHooks(
+                compilation as unknown as LynxCompilation,
+              );
               hooks.beforeEncode.tap(PLUGIN_NAME, (args) => {
-                // Re-map the generated assets into the template payload shape:
-                // background JS goes to manifest, main-thread JS goes to lepus,
-                // and extracted CSS is converted into Lynx CSS chunks.
-                const firstEntry = args.entryNames?.[0] ?? "";
-                const pageName = firstEntry.replace(/__.*$/, "");
+                // The default grouping only routes a chunk to lepus (main thread)
+                // when its asset carries `lynx:main-thread`. These hand-built
+                // entries don't, so main-thread JS lands in `manifest` and lepus
+                // stays empty. Re-map it here: background JS to manifest, the
+                // main-thread chunk to lepus. CSS is already grouped correctly.
+                const pageName = args.intermediate ? path.basename(args.intermediate) : "";
                 if (!pageName) return args;
 
                 const bgAsset = `.rspeedy/${pageName}/background.js`;
                 const mtAsset = `.rspeedy/${pageName}/main-thread.js`;
-                const mtEntry = `${pageName}__main-thread`;
 
                 const backgroundAsset = compilation.getAsset(bgAsset);
                 const mainThreadAsset = compilation.getAsset(mtAsset);
-                const cssChunk = compilation.namedChunks.get(mtEntry);
-                const cssAssets = [...(cssChunk?.files ?? [])]
-                  .filter((file) => file.endsWith(".css"))
-                  .map((file) => compilation.getAsset(file))
-                  .filter((asset) => asset !== undefined);
 
                 if (!mainThreadAsset) {
                   return args;
@@ -105,6 +110,12 @@ export function pluginVanillaTemplateWebpack() {
 
                 args.encodeData.compilerOptions.targetSdkVersion = LYNX_ENGINE_VERSION;
                 args.encodeData.compilerOptions.enableEventRefactor = true;
+
+                // Route tap/gesture events through the refactored main-thread
+                // path so `__AddEventListener` handlers fire. This page-config
+                // flag was dropped from `@lynx-js/config-rsbuild-plugin` 0.2.0's
+                // schema, so set it on the page config directly.
+                args.encodeData.sourceContent.config.enableEventHandleRefactor = true;
 
                 args.encodeData.manifest = backgroundAsset
                   ? {
@@ -117,16 +128,6 @@ export function pluginVanillaTemplateWebpack() {
                   root: mainThreadAsset,
                   chunks: [],
                   filename: mainThreadAsset.name,
-                };
-                args.encodeData.css = {
-                  ...LynxTemplatePlugin.convertCSSChunksToMap(
-                    cssAssets.map((asset) => asset.source.source().toString()),
-                    [],
-                    Boolean(
-                      args.encodeData.compilerOptions.enableCSSSelector,
-                    ),
-                  ),
-                  chunks: cssAssets,
                 };
 
                 return args;
