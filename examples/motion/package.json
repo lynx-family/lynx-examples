@@ -22,8 +22,8 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/luna-styles": "^0.1.0",
-    "@lynx-js/motion": "^0.0.3",
+    "@lynx-js/luna-styles": "^0.2.0",
+    "@lynx-js/motion": "^0.0.4",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
