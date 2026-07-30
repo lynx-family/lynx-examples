@@ -1,5 +1,11 @@
 # @lynx-example/lazy-bundle
 
+## 0.6.8
+
+### Patch Changes
+
+- ad621e8: Add a `standalone` entry that loads the same lazy component from a separately built producer bundle, and drop the hash from lazy bundle filenames so the lazy bundle URL stays stable across releases.
+
 ## 0.6.7
 
 ### Patch Changes

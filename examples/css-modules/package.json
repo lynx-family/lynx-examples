@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/css-modules",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An example shows how to use CSS Modules in Lynx",
   "repository": {
     "type": "git",
