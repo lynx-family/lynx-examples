@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.10.2
+
+### Patch Changes
+
+- 6193d85: Add a `position: sticky` case to the `position` API example and build a Web bundle for that entry.
+
 ## 0.10.1
 
 ### Patch Changes
