@@ -39,7 +39,7 @@ export function setupMainThread<TInput, TData>(
   const processDataFromEngine = (data: TInput): TData => {
     const processedData = (lifecycle.processData?.(data) ?? {}) as TData;
     if (enableBackgroundSync) {
-      lynx.getCoreContext().dispatchEvent({
+      lynx.getJSContext().dispatchEvent({
         type: updateDataFromMainThreadEventName,
         data: processedData,
       });
@@ -79,7 +79,7 @@ export function setupMainThread<TInput, TData>(
   // remove event listeners when lynx view is destroyed
   const cleanup = (): void => {
     if (enableBackgroundSync) {
-      lynx.getCoreContext().dispatchEvent({
+      lynx.getJSContext().dispatchEvent({
         type: destroyLifetimeEventName,
         data: undefined,
       });
