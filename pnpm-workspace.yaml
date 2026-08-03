@@ -5,6 +5,7 @@ packages:
   - examples/with-solidjs/packages/*
 
 allowBuilds:
+  "@parcel/watcher": true
   core-js: false
   dprint: true
   esbuild: true

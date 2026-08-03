@@ -32,7 +32,7 @@ export function bindBackgroundEvent(
   data?: unknown,
 ): void {
   bindMainThreadEvent(node, name, () => {
-    lynx.getCoreContext().dispatchEvent({
+    lynx.getJSContext().dispatchEvent({
       type: dispatchEventToBackgroundEventName,
       data: { handlerName, data },
     });

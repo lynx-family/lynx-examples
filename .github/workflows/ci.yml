@@ -39,6 +39,10 @@ jobs:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
           NODE_OPTIONS: --max-old-space-size=8192
         run: pnpm turbo run build --affected --concurrency=4
+      - name: Test
+        env:
+          TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
+        run: pnpm turbo run test --affected --concurrency=4
       # Publish PR previews to pkg.pr.new, but only when the PR adds a
       # changeset that actually bumps a publishable package. Fork PRs are
       # included: this is a `pull_request` (not `pull_request_target`)

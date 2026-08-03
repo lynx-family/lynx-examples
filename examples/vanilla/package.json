@@ -19,7 +19,8 @@
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "preview": "rspeedy preview",
+    "test": "rstest run"
   },
   "devDependencies": {
     "@lynx-js/config-rsbuild-plugin": "catalog:",
@@ -27,8 +28,11 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",
     "@lynx-js/template-webpack-plugin": "catalog:",
+    "@lynx-js/testing-environment": "file:vendor/lynx-js-testing-environment-0.3.1.tgz",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rstest/core": "^0.11.3",
+    "jsdom": "^28.0.0",
     "typescript": "~5.9.3"
   },
   "engines": {
