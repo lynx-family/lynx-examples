@@ -7,7 +7,9 @@ setupBackground();
 const data = getData<RenderData>();
 
 function addTodo(): void {
-  const nextId = String(data.todos?.length ?? 0 + 1);
+  const nextId = String(
+    Math.max(0, ...(data.todos ?? []).map((todo) => Number(todo.id))) + 1,
+  );
   setData({
     todos: [
       ...(data.todos ?? []),
