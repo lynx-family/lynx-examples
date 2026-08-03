@@ -152,3 +152,7 @@ dist
 # IDEA
 .idea
 
+
+# vendored prerelease of @lynx-js/testing-environment (temporary, until
+# lynx-family/lynx-stack#3351 is released)
+!examples/vanilla/vendor/*.tgz

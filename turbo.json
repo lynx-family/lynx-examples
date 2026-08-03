@@ -19,6 +19,15 @@
       "passThroughEnv": [
         "NODE_OPTIONS"
       ]
+    },
+    "test": {
+      "dependsOn": [],
+      "inputs": [
+        "src",
+        "test",
+        "rstest.config.ts",
+        "tsconfig.json"
+      ]
     }
   }
 }
