@@ -28,7 +28,7 @@
     "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",
     "@lynx-js/template-webpack-plugin": "catalog:",
-    "@lynx-js/testing-environment": "file:vendor/lynx-js-testing-environment-0.3.1.tgz",
+    "@lynx-js/testing-environment": "npm:@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
     "@rstest/core": "^0.11.3",
