@@ -117,6 +117,14 @@ export function pluginVanillaTemplateWebpack(): RsbuildPlugin {
                 // schema, so set it on the page config directly.
                 args.encodeData.sourceContent.config.enableEventHandleRefactor = true;
 
+                // Opt the shared-counter demo pages into cross-card module
+                // sharing: cards in one shared-context LynxGroup receive the
+                // same `lynx.requireModuleAsync` module instance. Off for all
+                // other pages (engine default).
+                if (pageName.startsWith("shared-page-")) {
+                  args.encodeData.sourceContent.config.enableSharedContextModules = true;
+                }
+
                 args.encodeData.manifest = backgroundAsset
                   ? {
                     [backgroundAsset.name]: backgroundAsset.source
