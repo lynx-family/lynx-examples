@@ -1,6 +1,6 @@
 import "../index.scss";
 import { useEffect, useRef } from "@lynx-js/react";
-import type { ScrollEvent } from "@lynx-js/types";
+import type { ListScrollEvent } from "@lynx-js/types";
 import type { NodesRef } from "@lynx-js/types";
 import LikeImageCard from "../Components/LikeImageCard.jsx";
 import type { Picture } from "../Pictures/furnitures/furnituresPictures.jsx";
@@ -11,10 +11,14 @@ export const Gallery = (props: { pictureData: Picture[] }) => {
   const { pictureData } = props;
   const scrollbarRef = useRef<NiceScrollbarRef>(null);
 
-  const onScroll = (event: ScrollEvent) => {
+  const onScroll = (event: ListScrollEvent) => {
+    // `listHeight` is the list's own box. Native engines report it; Lynx for
+    // Web does not, and there the list fills the page, so the page height is
+    // the same number.
     scrollbarRef.current?.adjustScrollbar(
       event.detail.scrollTop,
       event.detail.scrollHeight,
+      event.detail.listHeight || SystemInfo.pixelHeight / SystemInfo.pixelRatio,
     );
   };
 
