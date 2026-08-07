@@ -1,6 +1,6 @@
 import "../index.scss";
 import { useEffect, useMainThreadRef, useRef } from "@lynx-js/react";
-import { MainThread, type ScrollEvent } from "@lynx-js/types";
+import { type ListScrollEvent, MainThread } from "@lynx-js/types";
 import type { NodesRef } from "@lynx-js/types";
 import LikeImageCard from "../Components/LikeImageCard.jsx";
 import type { Picture } from "../Pictures/furnitures/furnituresPictures.jsx";
@@ -14,19 +14,21 @@ export const Gallery = (props: { pictureData: Picture[] }) => {
   const scrollbarMTSRef = useMainThreadRef<MainThread.Element>(null);
   const galleryRef = useRef<NodesRef>(null);
 
-  const onScrollMTS = (event: ScrollEvent) => {
+  const onScrollMTS = (event: ListScrollEvent) => {
     "main thread";
     adjustScrollbarMTS(
       event.detail.scrollTop,
       event.detail.scrollHeight,
+      event.detail.listHeight || SystemInfo.pixelHeight / SystemInfo.pixelRatio,
       scrollbarMTSRef,
     );
   };
 
-  const onScroll = (event: ScrollEvent) => {
+  const onScroll = (event: ListScrollEvent) => {
     scrollbarRef.current?.adjustScrollbar(
       event.detail.scrollTop,
       event.detail.scrollHeight,
+      event.detail.listHeight || SystemInfo.pixelHeight / SystemInfo.pixelRatio,
     );
   };
 

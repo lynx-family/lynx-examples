@@ -2,9 +2,13 @@ import "../index.scss";
 import { type MainThreadRef, type RefObject } from "@lynx-js/react";
 import { MainThread } from "@lynx-js/types";
 
-export const adjustScrollbarMTS = (scrollTop: number, scrollHeight: number, ref: RefObject<MainThread.Element>) => {
+export const adjustScrollbarMTS = (
+  scrollTop: number,
+  scrollHeight: number,
+  listHeight: number,
+  ref: RefObject<MainThread.Element>,
+) => {
   "main thread";
-  const listHeight = SystemInfo.pixelHeight / SystemInfo.pixelRatio - 48;
   const scrollbarHeight = listHeight * (listHeight / scrollHeight);
   const scrollbarTop = listHeight * (scrollTop / scrollHeight);
   ref.current?.setStyleProperties({

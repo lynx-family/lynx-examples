@@ -1,6 +1,6 @@
 import "../index.scss";
 import { useEffect, useMainThreadRef, useRef } from "@lynx-js/react";
-import { MainThread, type NodesRef, type ScrollEvent } from "@lynx-js/types";
+import { type ListScrollEvent, MainThread, type NodesRef } from "@lynx-js/types";
 import LikeImageCard from "../Components/LikeImageCard.jsx";
 import type { Picture } from "../Pictures/furnitures/furnituresPictures.jsx";
 import { calculateEstimatedSize } from "../utils.jsx";
@@ -13,9 +13,13 @@ export const Gallery = (
   const scrollbarMTSRef = useMainThreadRef<MainThread.Element>(null);
   const galleryRef = useRef<NodesRef>(null);
 
-  const onScrollMTS = (event: ScrollEvent) => {
+  const onScrollMTS = (event: ListScrollEvent) => {
     "main thread";
-    adjustScrollbarMTS(event.detail.scrollTop, event.detail.scrollHeight, scrollbarMTSRef);
+    // `listHeight` is the list's own box. Native engines report it; Lynx for
+    // Web does not, and there the list fills the page, so the page height is
+    // the same number.
+    const listHeight = event.detail.listHeight || SystemInfo.pixelHeight / SystemInfo.pixelRatio;
+    adjustScrollbarMTS(event.detail.scrollTop, event.detail.scrollHeight, listHeight, scrollbarMTSRef);
   };
 
   useEffect(() => {

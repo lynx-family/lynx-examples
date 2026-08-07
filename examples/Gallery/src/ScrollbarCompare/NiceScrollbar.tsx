@@ -2,7 +2,7 @@ import "../index.scss";
 import { forwardRef, useImperativeHandle, useState } from "@lynx-js/react";
 
 export interface NiceScrollbarRef {
-  adjustScrollbar: (scrollTop: number, scrollHeight: number) => void;
+  adjustScrollbar: (scrollTop: number, scrollHeight: number, listHeight: number) => void;
 }
 
 export const NiceScrollbar = forwardRef((_, ref) => {
