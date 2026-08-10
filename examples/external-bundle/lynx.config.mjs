@@ -34,6 +34,12 @@ export default defineConfig({
           async: false,
           timeout: 10000,
         },
+        "./utils": {
+          bundlePath: "utils.lynx.bundle",
+          background: { sectionPath: "utils" },
+          async: false,
+          timeout: 10000,
+        },
         "./components": {
           bundlePath: "comp.lynx.bundle",
           background: { sectionPath: "component" },
