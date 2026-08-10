@@ -9,6 +9,7 @@ export default defineConfig({
       "clone-element": "./src/clone-element/index.tsx",
       "create-element": "./src/create-element/index.tsx",
       "create-portal": "./src/create-portal/index.tsx",
+      "thread-macros": "./src/thread-macros/index.tsx",
     },
   },
   plugins: [
