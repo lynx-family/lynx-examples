@@ -15,6 +15,7 @@
     "src/",
     "lynx.config.mjs",
     "*.rslib.config.js",
+    "README.md",
     "CHANGELOG.md"
   ],
   "scripts": {
@@ -22,6 +23,7 @@
     "build:bundle": "rm -rf dist-external-bundle && pnpm run --stream '/^build:bundle:.*/'",
     "build:bundle:comp": "rslib build --config comp.rslib.config.js",
     "build:bundle:lodash": "rslib build --config lodash.rslib.config.js",
+    "build:bundle:utils": "rslib build --config utils.rslib.config.js",
     "dev": "pnpm build:bundle && rspeedy dev",
     "preview": "rspeedy preview"
   },

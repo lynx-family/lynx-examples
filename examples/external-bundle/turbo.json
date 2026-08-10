@@ -6,7 +6,7 @@
       "dependsOn": ["build:bundle"]
     },
     "build:bundle": {
-      "dependsOn": ["build:bundle:lodash", "build:bundle:react", "build:bundle:comp"],
+      "dependsOn": ["build:bundle:lodash", "build:bundle:react", "build:bundle:comp", "build:bundle:utils"],
       "outputs": []
     },
     "build:bundle:lodash": {
@@ -34,6 +34,15 @@
       ],
       "outputs": [
         "dist/comp.lynx.bundle"
+      ]
+    },
+    "build:bundle:utils": {
+      "inputs": [
+        "utils.rslib.config.js",
+        "src/utils/**"
+      ],
+      "outputs": [
+        "dist-external-bundle/utils.lynx.bundle"
       ]
     }
   }

@@ -1,7 +1,4 @@
 import { defineExternalBundleRslibConfig } from "@lynx-js/lynx-bundle-rslib-config";
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
 
 const LAYERS = {
   BACKGROUND: "rslib:background",
@@ -16,10 +13,13 @@ const pluginRslibLayers = () => ({
 });
 
 export default defineExternalBundleRslibConfig({
-  id: "lodash-es",
+  id: "utils",
   source: {
     entry: {
-      "lodash-es": require.resolve("lodash-es"),
+      utils: {
+        import: "./src/utils/index.ts",
+        layer: LAYERS.BACKGROUND,
+      },
     },
   },
   plugins: [
