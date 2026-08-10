@@ -1,5 +1,11 @@
 # @lynx-example/external-bundle
 
+## 0.0.7
+
+### Patch Changes
+
+- d14c49f: Add a background-only utils external bundle, build the plain JavaScript lodash bundle without depending on `pluginReactLynx`, and document the supported external bundle scenarios.
+
 ## 0.0.6
 
 ### Patch Changes
