@@ -2,7 +2,7 @@
 
 ## Toolchain and setup
 
-- Use Node `>=22` and pnpm `10.30.3` (enforced by `package.json` engines and `packageManager`).
+- Use Node `>=22` and pnpm `11.13.0` (enforced by `package.json` engines and `packageManager`).
 - Enable pnpm via Corepack before install: `corepack enable && pnpm install`.
 - Formatting and manifest checks are part of CI; keep local tooling aligned with root configs (`.dprint.jsonc`, `.meta-updater/main.mjs`).
 
