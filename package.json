@@ -11,8 +11,7 @@
   "author": "Lynx Authors",
   "scripts": {
     "build": "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE=false turbo run build",
-    "prepare": "husky",
-    "release": "npm run build && pnpm changeset publish"
+    "prepare": "husky"
   },
   "nano-staged": {
     "*.{css,scss,js,jsx,ts,tsx,mjs,cjs,json,jsonc,md}": [
