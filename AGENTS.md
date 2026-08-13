@@ -29,7 +29,7 @@
 
 - Changesets are required for publishable package changes; follow existing `.changeset/*.md` format.
 - `.changeset/config.json` tracks changes under `src/**`, `lynx.config.ts`, and `lynx.config.mjs`; edits there are what CI uses for change detection.
-- Release flow on `main` runs `pnpm run release` (`build` then `changeset publish`).
+- Release flow on `main` uses Changesets Action v2 sub-actions: it creates or updates the version PR when changesets exist; after that PR is merged, it builds and packs publishable packages before publishing the tarballs with npm Trusted Publishing.
 
 ## Repo-specific gotchas
 
