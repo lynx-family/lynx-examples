@@ -19,6 +19,7 @@ This repository is intended to showcase examples of Lynx.
   - [`list`]: An example shows how to use reusable and scrollable container
   - [`scroll-view`]: An example shows how to use scrollable container
   - [`text`]: An example shows how to use text and inline-text
+  - [`text-composition`]: An example shows how to compose naturally wrapping text with inline text, images, views, and truncation
   - [`view`]: An example shows how to use view
   - [`frame`]: An example shows how to use frame
   - [`page`]: An example shows how to use page in Lynx
@@ -118,6 +119,7 @@ This repository is intended to showcase examples of Lynx.
 [`tailwindcss`]: ./examples/tailwindcss
 [`tanstack-router`]: ./examples/tanstack-router
 [`text`]: ./examples/text
+[`text-composition`]: ./examples/text-composition
 [`webview`]: ./examples/webview
 [`webassembly`]: ./examples/webassembly
 [`textarea`]: ./examples/textarea
