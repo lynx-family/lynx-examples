@@ -13,8 +13,7 @@
   "files": [
     "dist",
     "src",
-    "lynx.config.ts",
-    "plugin.ts"
+    "lynx.config.ts"
   ],
   "scripts": {
     "build": "rspeedy build",
@@ -26,11 +25,10 @@
     "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",
-    "@lynx-js/template-webpack-plugin": "catalog:",
     "@lynx-js/testing-environment": "npm:@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@lynx-js/vanilla-rsbuild-plugin": "catalog:",
     "@rstest/core": "^0.11.3",
     "jsdom": "^28.0.0",
     "typescript": "~5.9.3"

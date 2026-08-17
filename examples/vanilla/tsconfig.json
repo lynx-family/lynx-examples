@@ -10,5 +10,5 @@
     "strict": true,
     "target": "ES2022",
   },
-  "include": ["src", "test", "plugin.ts", "lynx.config.ts", "rstest.config.ts"],
+  "include": ["src", "test", "lynx.config.ts", "rstest.config.ts"],
 }
