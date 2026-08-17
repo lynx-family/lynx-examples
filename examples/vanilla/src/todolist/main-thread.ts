@@ -1,16 +1,23 @@
 import type { ElementRef } from "@lynx-js/type-element-api";
 
+import type { PerformancePatch, UpdateRenderOptions } from "../common/background/performance.js";
+import { performanceUpdatedEventName } from "../common/constant.js";
 import { createPage, createText, createView, replaceChildren } from "../common/main-thread/element.js";
 import { bindBackgroundEvent } from "../common/main-thread/event.js";
+import { type PerformancePanel, renderPerformancePanel } from "../common/main-thread/performance.js";
 import { setupMainThread } from "../common/main-thread/setup.js";
 import type { Filter, RenderData, Todo } from "./types.js";
 
 const { page, pageId } = createPage("page");
+const backgroundThread = lynx.getJSContext();
+const engine = lynx.getEngine();
 
 let summarySlot: ElementRef | undefined;
 let filtersSlot: ElementRef | undefined;
 let repeatSlot: ElementRef | undefined;
+let performancePanel: PerformancePanel | undefined;
 let currentData: Required<RenderData> | undefined;
+const performanceSummaries: Partial<Record<PerformancePatch["kind"], string>> = {};
 const defaultTodos: Todo[] = [
   { id: "1", title: "Create the vanilla project", completed: true },
   {
@@ -203,19 +210,53 @@ function renderPage(data: RenderData): void {
   __AppendElement(page, summarySlot);
   __AppendElement(page, filtersSlot);
   __AppendElement(page, repeatSlot);
+  performancePanel = renderPerformancePanel(
+    page,
+    pageId,
+    performanceSummaries,
+  );
 
   renderData(data as Required<RenderData>);
 }
 
-function updatePage(patch: RenderData): void {
+function updatePage(
+  patch: RenderData,
+  options?: UpdateRenderOptions,
+): void {
   if (!currentData) return;
   currentData = {
     ...currentData,
     ...patch,
   };
   renderData(currentData, patch);
-  __FlushElementTree();
+  __FlushElementTree(page, { pipelineOptions: options?.pipelineOptions ?? {} });
 }
+
+function onPerformanceUpdated(event: { data: unknown }): void {
+  const patch = event.data as Partial<PerformancePatch> | undefined;
+  if (
+    typeof patch?.summary !== "string"
+    || (patch.kind !== "initialRender" && patch.kind !== "update")
+  ) return;
+  performanceSummaries[patch.kind] = patch.summary;
+  performancePanel?.update(patch as PerformancePatch);
+}
+
+function cleanupPerformancePanel(): void {
+  backgroundThread.removeEventListener(
+    performanceUpdatedEventName,
+    onPerformanceUpdated,
+  );
+  engine.removeEventListener("__DestroyLifetime", cleanupPerformancePanel);
+  performancePanel?.destroy();
+  performancePanel = undefined;
+}
+
+backgroundThread.addEventListener(
+  performanceUpdatedEventName,
+  onPerformanceUpdated,
+);
+engine.addEventListener("__DestroyLifetime", cleanupPerformancePanel);
 
 setupMainThread({
   processData,
