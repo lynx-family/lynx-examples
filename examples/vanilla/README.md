@@ -7,8 +7,16 @@ This example builds Lynx bundles directly with Element PAPI and TypeScript, with
 - `counter`: a main-thread-only counter. It has no background thread entry; tap events are handled directly on the main thread.
 - `event-card`: a standalone main-thread event card with reminder and join-schedule interactions.
 - `product-card`: a standalone main-thread product card with save and add-to-cart interactions.
-- `todolist`: a double-thread todo list. The main thread renders Element PAPI nodes and forwards tap events to the background thread, while the background thread updates data and sends patches back to the main thread.
+- `todolist`: a double-thread todo list. The main thread renders Element PAPI nodes and forwards tap events to the background thread, while the background thread updates data, measures its rendering pipeline, and sends patches back to the main thread.
 - `weather-card`: a standalone main-thread weather card with refreshable local conditions.
+
+## Performance Evaluation
+
+The `todolist` entry registers a `PerformanceObserver` on the background
+thread as early as possible. Tap the floating `Perf` button to expand a panel
+with the initial `loadBundle` Lynx FCP and each user-triggered update pipeline.
+Every measured update has a unique timing flag and forwards the generated pipeline options to
+`__FlushElementTree`; full entries remain in the background-thread logs.
 
 ## Getting Started
 

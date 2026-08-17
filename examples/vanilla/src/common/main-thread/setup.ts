@@ -1,5 +1,6 @@
 import type { LynxMessageEvent, MessageEvent } from "@lynx-js/types";
 
+import type { UpdateRenderOptions } from "../background/performance.js";
 import {
   destroyLifetimeEventName,
   renderPageEventName,
@@ -18,11 +19,16 @@ type UpdatePageEvent = Extract<
   { type: typeof updatePageEventName }
 >;
 
+type BackgroundDataEvent = {
+  data?: unknown;
+  pipelineOptions?: UpdateRenderOptions["pipelineOptions"];
+};
+
 export function setupMainThread<TInput, TData>(
   lifecycle: {
     processData?: (data: TInput) => TData;
     renderPage: (data: TData) => void;
-    updatePage?: (data: TData) => void;
+    updatePage?: (data: TData, options?: UpdateRenderOptions) => void;
   },
   options: {
     enableBackgroundSync?: boolean;
@@ -62,8 +68,11 @@ export function setupMainThread<TInput, TData>(
   // get update data from background thread
   const onUpdateDataFromBackground = (event: MessageEvent): void => {
     if (!lifecycle.updatePage) return;
-    const { data } = event;
-    lifecycle.updatePage(data as TData);
+    const update = event.data as BackgroundDataEvent | undefined;
+    if (!update || typeof update !== "object" || Array.isArray(update)) return;
+    lifecycle.updatePage(update.data as TData, {
+      pipelineOptions: update.pipelineOptions,
+    });
   };
 
   // add listener for render and update page

@@ -3,7 +3,7 @@ import { setBackgroundEventHandler } from "../common/background/event.js";
 import { setupBackground } from "../common/background/setup.js";
 import type { Filter, RenderData } from "./types.js";
 
-setupBackground();
+setupBackground({ enablePerformanceObserver: true });
 const data = getData<RenderData>();
 
 function addTodo(): void {
@@ -15,29 +15,29 @@ function addTodo(): void {
       ...(data.todos ?? []),
       { id: nextId, title: `New task ${nextId}`, completed: false },
     ],
-  });
+  }, true);
 }
 
 function clearCompleted(): void {
   setData({
     todos: data.todos?.filter((todo) => !todo.completed) ?? [],
-  });
+  }, true);
 }
 
 function setFilter(filter: Filter): void {
-  setData({ filter });
+  setData({ filter }, true);
 }
 
 function toggleTodo(id: string): void {
   setData({
     todos: data.todos?.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo) ?? [],
-  });
+  }, true);
 }
 
 function reloadTodos(): void {
-  setData({ loading: true });
+  setData({ loading: true }, true);
   setTimeout(() => {
-    setData({ loading: false });
+    setData({ loading: false }, true);
   }, 600);
 }
 
