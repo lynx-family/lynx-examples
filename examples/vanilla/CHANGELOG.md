@@ -1,5 +1,11 @@
 # @lynx-example/vanilla
 
+## 0.1.4
+
+### Patch Changes
+
+- 1d89109: Replace the custom Vanilla Rspeedy plugin with `@lynx-js/vanilla-rsbuild-plugin` and add performance pipeline measurements to the Todo List entry.
+
 ## 0.1.3
 
 ### Patch Changes
