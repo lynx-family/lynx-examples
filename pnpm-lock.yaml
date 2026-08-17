@@ -33,9 +33,6 @@ catalogs:
     '@lynx-js/rspeedy':
       specifier: 0.16.1
       version: 0.16.1
-    '@lynx-js/runtime-wrapper-webpack-plugin':
-      specifier: 0.2.3
-      version: 0.2.3
     '@lynx-js/template-webpack-plugin':
       specifier: 0.14.0
       version: 0.14.0
@@ -45,6 +42,9 @@ catalogs:
     '@lynx-js/types':
       specifier: 4.1.0
       version: 4.1.0
+    '@lynx-js/vanilla-rsbuild-plugin':
+      specifier: 0.0.1
+      version: 0.0.1
     '@rsbuild/plugin-sass':
       specifier: 2.0.1
       version: 2.0.1
@@ -1657,12 +1657,6 @@ importers:
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
         version: 0.16.1(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@rspack/core@2.1.7(@swc/helpers@0.5.23))(core-js@3.47.0)(typescript@5.9.3)(webpack@5.101.3)
-      '@lynx-js/runtime-wrapper-webpack-plugin':
-        specifier: 'catalog:'
-        version: 0.2.3
-      '@lynx-js/template-webpack-plugin':
-        specifier: 'catalog:'
-        version: 0.14.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
       '@lynx-js/testing-environment':
         specifier: npm:@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73
         version: '@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73'
@@ -1672,6 +1666,9 @@ importers:
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.1.0
+      '@lynx-js/vanilla-rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.0.1(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
       '@rstest/core':
         specifier: ^0.11.3
         version: 0.11.5(core-js@3.47.0)(jsdom@28.1.0)
@@ -2867,6 +2864,9 @@ packages:
   '@lynx-js/css-serializer@0.1.7':
     resolution: {integrity: sha512-k8J/zZdYvsxqSZxT25dWBT4leOvYSpAanC5NmpYmf0EkSDWbQohensPSMOnEvEmP9R97gDO7K+eA6vgv8IYWGg==}
 
+  '@lynx-js/css-serializer@0.1.8':
+    resolution: {integrity: sha512-gvK6vNB/Lyr7mCBLwlXIBu7IcaJXYsxx/no3U9wBREaB5nxMwkI3Yaj3I8Q6jTEiT08AXscvJ/nUZk5ZYewh6A==}
+
   '@lynx-js/debug-metadata-rsbuild-plugin@0.2.1':
     resolution: {integrity: sha512-uvpX41tk7TxkIs8fJqIHqOUyOhRC5BVTH4ri+B1rZI6k3yclYIKA7lSnDirgEL+92GmkInerO3Zwg9y3Zyg5hA==}
     engines: {node: '>=18'}
@@ -3164,8 +3164,16 @@ packages:
     resolution: {integrity: sha512-6JeySjqS9A424+KdBhI08Km6tdbZ/eLEpqbbLOjzwmY8VhitHOeWoU1bOpfafxYWmEpie/ip7F3IaN/6K3mmjw==}
     hasBin: true
 
+  '@lynx-js/tasm@0.0.49':
+    resolution: {integrity: sha512-sI+xmLXaMvXWFN5n47kYNHFEMIEpkrz/bVvU2GwvhB26lXfYPdSNedE3bh85vfW/vAmYsB/TbKwtiNhXgN3LDw==}
+    hasBin: true
+
   '@lynx-js/template-webpack-plugin@0.14.0':
     resolution: {integrity: sha512-JIECM9FhPzNjYvxsAH4prRpfcYD2TYVcbs/73GOUAgF08EReAg/6XHupG5eAfSVSyKCatKx9NdsfqtAo5KOCxA==}
+    engines: {node: ^18.14 || >=19.4}
+
+  '@lynx-js/template-webpack-plugin@0.15.1':
+    resolution: {integrity: sha512-puDjVSFLBcqGJ+D59NDx13oESRR5zGTgvlwddDNtQEH/4IkRMsLo0cD44HrBX3MAp4Rdkuw6eHLL6RVCXFCJoQ==}
     engines: {node: ^18.14 || >=19.4}
 
   '@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73':
@@ -3185,10 +3193,28 @@ packages:
     peerDependencies:
       '@lynx-js/react': '*'
 
+  '@lynx-js/vanilla-rsbuild-plugin@0.0.1':
+    resolution: {integrity: sha512-V0myuuPP2YFMibgKEbVC/o8QKoTKs/BruGHfuRFDon/5LquTVYLY56HYFzfKWVVi56vBcjahL5Vdr8o0rMyGzw==}
+    engines: {node: '>=18'}
+
   '@lynx-js/web-core@0.23.0':
     resolution: {integrity: sha512-ip/yMNgWzdaFOEA7HPrBGH8m278EAmJF7Z1Npcnobtci9i/yz4UaSOYhF2ruDFYKNU9AauHAgvSYRg3PngyqhQ==}
     peerDependencies:
       '@lynx-js/css-serializer': 0.1.7
+      '@lynx-js/lynx-core': 0.1.4
+      tslib: ^2.5.0
+    peerDependenciesMeta:
+      '@lynx-js/css-serializer':
+        optional: true
+      '@lynx-js/lynx-core':
+        optional: true
+      tslib:
+        optional: true
+
+  '@lynx-js/web-core@0.24.1':
+    resolution: {integrity: sha512-+HP8Pjqj56M0i5vnmvqk2IPmSaRwUdyBWSfVLZ9elFqYszXMwr9uwqitDIh4wcQBoKgJjLNcRxhPPQCcx7trMw==}
+    peerDependencies:
+      '@lynx-js/css-serializer': 0.1.8
       '@lynx-js/lynx-core': 0.1.4
       tslib: ^2.5.0
     peerDependenciesMeta:
@@ -3204,11 +3230,19 @@ packages:
     peerDependencies:
       tslib: ^2.5.0
 
+  '@lynx-js/web-elements@0.12.8':
+    resolution: {integrity: sha512-n3cXrlvwZZg917MdrGmWFdGyMjBfNUyBCXzEobk0AvF4KeBoIaiq9XpbNJPmbbOwWZNtDmywEgWoHLfmApok0A==}
+    peerDependencies:
+      tslib: ^2.5.0
+
   '@lynx-js/web-rsbuild-server-middleware@0.23.0':
     resolution: {integrity: sha512-0obM4CLuQESQNZ58s/1TB/OxjQ/BlJHWOM70rZHNRA5jfic1BnH0i8CeZPOg9MNGClvOVv9Bbcq/2JoUqDZ5RA==}
 
   '@lynx-js/web-worker-rpc@0.23.0':
     resolution: {integrity: sha512-nrWLMjjOmb4uMg9MITX3nyaEPO61QGGUvCvl0IIH/yxgQKtzS7qITVQlzxaBHbajZqXtRr8vnzPYBFGfUSr6dw==}
+
+  '@lynx-js/web-worker-rpc@0.24.1':
+    resolution: {integrity: sha512-iDXiRxVKJ7FrahwhqhRorLZDo5K7HlXCbWFY5z0iY5HnBziDnRyyedioCgp9GqpEd353l4NyPsvbY8/jo5XHkg==}
 
   '@lynx-js/webpack-dev-transport@0.3.0':
     resolution: {integrity: sha512-vpa0X/eqb50DhNhXEEfCi6gEd/ti32bFJtkt9zkPv6dTTsd2HJkYnCiKSUWpHpqPbnRbVLf/UacAY6h1uTtZeA==}
@@ -4365,6 +4399,9 @@ packages:
   '@rspack/lite-tapable@1.1.2':
     resolution: {integrity: sha512-1OnyWChLGE46YzWyjlmYJssOu/Y0STAnnr2ueKPqDCYTf63GJMs0mxNnCul4dNiVqHYPKv3/fxrTY3IpqoVwZQ==}
 
+  '@rspack/lite-tapable@1.1.5':
+    resolution: {integrity: sha512-uzB782zJbFTM3ta+e2Glikx36dca/6Y+DXyvFN+wb0Tx5ItIW+g03A0t3amP3LGzPHSkb0k81VHCm4jxLQwfag==}
+
   '@rspack/plugin-react-refresh@2.0.2':
     resolution: {integrity: sha512-dGNZiCxQxgAUI9sah7gd8u+O7OJZRCmqtEJNDOd8xW5RqcieC86F7p5qcShyw6onH5pKf57evpr2VjGbaFGkZg==}
     peerDependencies:
@@ -4865,6 +4902,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  argparse@3.0.0:
+    resolution: {integrity: sha512-BOp5NMrHqKxmq/OLr+clzzrRxgOKSLkcjmkWuChp7Irqwn4s74WjOBPIgWfA/HMcBnVkZ5XEuf9uUqzlpfCQ6A==}
 
   array-buffer-byte-length@1.0.2:
     resolution: {integrity: sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==}
@@ -5444,6 +5484,9 @@ packages:
 
   dompurify@3.4.12:
     resolution: {integrity: sha512-zQvGet8Z2sWbQhCmfFz/T5QWH2oBmjnqK3qvOjaqaNLrLEF912WamU+ohnTp0TCep/MFVHpdJuCZEdFOdTnEFg==}
+
+  dompurify@3.4.13:
+    resolution: {integrity: sha512-2vmYIoqjze2d+kakP8S/nS5shfsl587kzwEjcGlTdiksUVgFHnFCsLYDVj/JNqJVOQZGSYBTmuycv0PodwmnMQ==}
 
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
@@ -6294,6 +6337,9 @@ packages:
   linkify-it@5.0.2:
     resolution: {integrity: sha512-ONTm2jCMAVZjgQa/Fy1kScXsuOoF5NPTsoFBdE1KVIZ2vAh/r9+Bqo+0jINCBYnavTPQZz38QzFTme79ENoN3Q==}
 
+  linkify-it@6.1.0:
+    resolution: {integrity: sha512-wJ/TwpSDTLepCrQoYWYIExIKg5Zchex2Nn5yk2mFnB+6PtdkHtyLx742md9csRjjOnGkKIS/RrbY7l8D6gT9Vw==}
+
   load-json-file@6.2.0:
     resolution: {integrity: sha512-gUD/epcRms75Cw8RT1pUdHugZYM5ce64ucs2GEISABwkRsOQr0q2wm/MV2TKThycIe5e0ytRweW2RZxclogCdQ==}
     engines: {node: '>=8'}
@@ -6393,6 +6439,10 @@ packages:
     resolution: {integrity: sha512-RCEsPjR+sr0x+AuYp601tKTkgFG4YEPLCzHST3cQ/fhlJkqAkz1L2/Qbp1j9qw5SBwQHFBoW8+hoN5xssOF0Tw==}
     hasBin: true
 
+  markdown-it@15.0.0:
+    resolution: {integrity: sha512-Lf8ajvVNdRpzSNB4VegxNy7gjs8gU35l4b4+ET49LrQC5PKYwLZ72u60LeJ9gv3qiaesuYjJWCyVeQmv/QWKQw==}
+    hasBin: true
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -6408,6 +6458,9 @@ packages:
 
   mdurl@2.0.0:
     resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
+
+  mdurl@2.1.0:
+    resolution: {integrity: sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg==}
 
   mem@6.1.1:
     resolution: {integrity: sha512-Ci6bIfq/UgcxPTYa8dQQ5FY3BzKkT894bwXWXxC/zqs0XgMO2cT20CGkOqda7gZNkmK5VP4x89IGZ6K7hfbn3Q==}
@@ -8103,6 +8156,9 @@ packages:
   uc.micro@2.1.0:
     resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
 
+  uc.micro@3.0.0:
+    resolution: {integrity: sha512-U3PppEkleoTnIfi8BozMx3yju3qc/L6SwqWo2Sw+54PX+PX0q9I+r1Um5HCmqD7n9VDX5/v3vQH/AjA6deDdtw==}
+
   uid-number@0.0.6:
     resolution: {integrity: sha512-c461FXIljswCuscZn67xq9PpszkPT6RjheWFQTgCyabJrTUozElanb0YEqv2UGgk247YpcJkFBuSGNvBlpXM9w==}
     deprecated: This package is no longer supported.
@@ -9242,6 +9298,11 @@ snapshots:
     dependencies:
       css-tree: 3.2.1
 
+  '@lynx-js/css-serializer@0.1.8':
+    dependencies:
+      css-tree: 3.2.1
+      pathe: 2.0.3
+
   '@lynx-js/debug-metadata-rsbuild-plugin@0.2.1':
     dependencies:
       '@lynx-js/debug-metadata': 0.1.0
@@ -9729,6 +9790,8 @@ snapshots:
 
   '@lynx-js/tasm@0.0.48': {}
 
+  '@lynx-js/tasm@0.0.49': {}
+
   '@lynx-js/template-webpack-plugin@0.14.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
@@ -9737,6 +9800,21 @@ snapshots:
       '@lynx-js/web-core': 0.23.0(@lynx-js/css-serializer@0.1.7)(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
       '@lynx-js/webpack-runtime-globals': 0.0.7
       '@rspack/lite-tapable': 1.1.2
+      css-tree: 3.2.1
+      object.groupby: 1.0.3
+      tinypool: 2.1.0
+    transitivePeerDependencies:
+      - '@lynx-js/lynx-core'
+      - tslib
+
+  '@lynx-js/template-webpack-plugin@0.15.1(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.31
+      '@lynx-js/css-serializer': 0.1.8
+      '@lynx-js/tasm': 0.0.49
+      '@lynx-js/web-core': 0.24.1(@lynx-js/css-serializer@0.1.8)(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
+      '@lynx-js/webpack-runtime-globals': 0.0.7
+      '@rspack/lite-tapable': 1.1.5
       css-tree: 3.2.1
       object.groupby: 1.0.3
       tinypool: 2.1.0
@@ -9758,6 +9836,14 @@ snapshots:
     dependencies:
       '@lynx-js/react': 0.123.1(@lynx-js/types@4.1.0)(@types/react@18.3.28)
 
+  '@lynx-js/vanilla-rsbuild-plugin@0.0.1(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
+    dependencies:
+      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.3
+      '@lynx-js/template-webpack-plugin': 0.15.1(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
+    transitivePeerDependencies:
+      - '@lynx-js/lynx-core'
+      - tslib
+
   '@lynx-js/web-core@0.23.0(@lynx-js/css-serializer@0.1.7)(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
     dependencies:
       '@lynx-js/web-elements': 0.12.7(tslib@2.8.1)
@@ -9768,15 +9854,33 @@ snapshots:
       '@lynx-js/lynx-core': 0.1.4
       tslib: 2.8.1
 
+  '@lynx-js/web-core@0.24.1(@lynx-js/css-serializer@0.1.8)(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
+    dependencies:
+      '@lynx-js/web-elements': 0.12.8(tslib@2.8.1)
+      '@lynx-js/web-worker-rpc': 0.24.1
+      wasm-feature-detect: 1.8.0
+    optionalDependencies:
+      '@lynx-js/css-serializer': 0.1.8
+      '@lynx-js/lynx-core': 0.1.4
+      tslib: 2.8.1
+
   '@lynx-js/web-elements@0.12.7(tslib@2.8.1)':
     dependencies:
       dompurify: 3.4.12
       markdown-it: 14.3.0
       tslib: 2.8.1
 
+  '@lynx-js/web-elements@0.12.8(tslib@2.8.1)':
+    dependencies:
+      dompurify: 3.4.13
+      markdown-it: 15.0.0
+      tslib: 2.8.1
+
   '@lynx-js/web-rsbuild-server-middleware@0.23.0': {}
 
   '@lynx-js/web-worker-rpc@0.23.0': {}
+
+  '@lynx-js/web-worker-rpc@0.24.1': {}
 
   '@lynx-js/webpack-dev-transport@0.3.0': {}
 
@@ -11471,6 +11575,8 @@ snapshots:
 
   '@rspack/lite-tapable@1.1.2': {}
 
+  '@rspack/lite-tapable@1.1.5': {}
+
   '@rspack/plugin-react-refresh@2.0.2(@rspack/core@2.1.7(@swc/helpers@0.5.23))(react-refresh@0.18.0)':
     dependencies:
       react-refresh: 0.18.0
@@ -12003,6 +12109,8 @@ snapshots:
       sprintf-js: 1.0.3
 
   argparse@2.0.1: {}
+
+  argparse@3.0.0: {}
 
   array-buffer-byte-length@1.0.2:
     dependencies:
@@ -12582,6 +12690,10 @@ snapshots:
       domelementtype: 2.3.0
 
   dompurify@3.4.12:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
+
+  dompurify@3.4.13:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
@@ -13527,6 +13639,10 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
+  linkify-it@6.1.0:
+    dependencies:
+      uc.micro: 3.0.0
+
   load-json-file@6.2.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -13632,6 +13748,15 @@ snapshots:
       punycode.js: 2.3.1
       uc.micro: 2.1.0
 
+  markdown-it@15.0.0:
+    dependencies:
+      argparse: 3.0.0
+      entities: 8.0.0
+      linkify-it: 6.1.0
+      mdurl: 2.1.0
+      punycode.js: 2.3.1
+      uc.micro: 3.0.0
+
   math-intrinsics@1.1.0: {}
 
   mdn-data@2.0.14: {}
@@ -13641,6 +13766,8 @@ snapshots:
   mdn-data@2.27.1: {}
 
   mdurl@2.0.0: {}
+
+  mdurl@2.1.0: {}
 
   mem@6.1.1:
     dependencies:
@@ -15351,6 +15478,8 @@ snapshots:
 
   uc.micro@2.1.0: {}
 
+  uc.micro@3.0.0: {}
+
   uid-number@0.0.6: {}
 
   umask@1.1.0: {}
@@ -15425,11 +15554,11 @@ snapshots:
   vite@7.3.6(@types/node@26.1.1)(jiti@1.21.7)(less@4.7.0)(sass-embedded@1.100.0)(sass@1.100.0)(stylus@0.64.0)(terser@5.49.0)(tsx@4.20.4)(yaml@2.9.0):
     dependencies:
       esbuild: 0.28.1
-      fdir: 6.5.0(picomatch@4.0.3)
-      picomatch: 4.0.3
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
       postcss: 8.5.19
       rollup: 4.62.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 26.1.1
       fsevents: 2.3.3

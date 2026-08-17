@@ -4,17 +4,12 @@ import { fileURLToPath } from "node:url";
 import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
+import { pluginVanillaLynx } from "@lynx-js/vanilla-rsbuild-plugin";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
-
-import { pluginVanillaTemplateWebpack } from "./plugin.js";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  dev: {
-    hmr: false,
-    liveReload: false,
-  },
   source: {
     entry: {
       counter: path.join(projectRoot, "src/counter/main-thread.ts"),
@@ -31,7 +26,7 @@ export default defineConfig({
     filename: "[name].bundle",
   },
   plugins: [
-    pluginVanillaTemplateWebpack(),
+    pluginVanillaLynx(),
     pluginLynxConfig({}),
     pluginQRCode({
       schema(url) {

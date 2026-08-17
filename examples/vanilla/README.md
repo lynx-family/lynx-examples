@@ -34,7 +34,7 @@ pnpm --filter @lynx-example/vanilla run build
 
 The build outputs `dist/counter.bundle`, `dist/event-card.bundle`, `dist/product-card.bundle`, `dist/todolist.bundle`, and `dist/weather-card.bundle`.
 
-The custom template plugin targets Lynx Engine `3.5`, and `lynx.config.js` enables the event listener refactor with `pluginLynxConfig`.
+`@lynx-js/vanilla-rsbuild-plugin` targets Lynx Engine `3.5` and enables the event listener refactor.
 
 ## Project Structure
 
@@ -45,7 +45,7 @@ The custom template plugin targets Lynx Engine `3.5`, and `lynx.config.js` enabl
 - `src/product-card`: standalone main-thread product card entry and styles.
 - `src/todolist`: double-thread todo list entry, background event logic, types, and styles.
 - `src/weather-card`: standalone main-thread weather card entry and styles.
-- `plugin.js`: custom Rspeedy/Rspack wiring for main-thread bundles, optional background bundles, CSS, and Lynx template encoding.
+- `lynx.config.ts`: configures Rspeedy and `@lynx-js/vanilla-rsbuild-plugin` for main-thread bundles, optional background bundles, CSS, and Lynx template encoding.
 
 ## Shared Helpers
 
