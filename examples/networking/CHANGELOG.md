@@ -1,5 +1,11 @@
 # @lynx-example/networking
 
+## 0.4.10
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.4.9
 
 ### Patch Changes

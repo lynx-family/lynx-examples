@@ -1,5 +1,11 @@
 # @lynx-example/swiper
 
+## 0.5.9
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.5.8
 
 ### Patch Changes

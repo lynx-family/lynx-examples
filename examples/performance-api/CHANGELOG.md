@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.7.3
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.7.2
 
 ### Patch Changes

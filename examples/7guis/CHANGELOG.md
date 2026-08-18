@@ -1,5 +1,11 @@
 # @lynx-example/7guis
 
+## 0.2.3
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.2.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @lynx-example/native-element
 
+## 0.6.10
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.6.9
 
 ### Patch Changes
