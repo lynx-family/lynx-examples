@@ -1,5 +1,11 @@
 # @lynx-example/scroll-coordinator
 
+## 0.6.16
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.6.15
 
 ### Patch Changes

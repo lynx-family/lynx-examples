@@ -1,5 +1,13 @@
 # @lynx-example/react-devtool
 
+## 0.2.4
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+- Updated dependencies [8bbdca3]
+  - @lynx-example/lynx-ui-gallery@0.2.2
+
 ## 0.2.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @lynx-example/external-bundle
 
+## 0.0.8
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.0.7
 
 ### Patch Changes

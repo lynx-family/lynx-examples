@@ -1,5 +1,11 @@
 # @lynx-example/with-solidjs
 
+## 0.4.7
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.4.6
 
 ### Patch Changes

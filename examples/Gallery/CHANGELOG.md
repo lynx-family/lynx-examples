@@ -1,5 +1,11 @@
 # @lynx-example/discover-page
 
+## 0.6.11
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.6.10
 
 ### Patch Changes

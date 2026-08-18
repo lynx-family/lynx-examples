@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.5.3
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.5.2
 
 ### Patch Changes

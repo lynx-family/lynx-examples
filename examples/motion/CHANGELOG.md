@@ -1,5 +1,11 @@
 # @lynx-example/motion
 
+## 0.2.4
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.2.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @lynx-example/list
 
+## 0.6.9
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.6.8
 
 ### Patch Changes

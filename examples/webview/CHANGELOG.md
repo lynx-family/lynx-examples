@@ -1,5 +1,11 @@
 # @lynx-example/webview
 
+## 0.1.3
+
+### Patch Changes
+
+- 8bbdca3: Upgrade shared Lynx and Rspeedy build dependencies.
+
 ## 0.1.2
 
 ### Patch Changes
