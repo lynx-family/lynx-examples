@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/text-composition",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Lynx text-composition example covering natural wrapping, inline text, images, views, and truncation",
   "repository": {
     "type": "git",
