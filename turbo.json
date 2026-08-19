@@ -5,6 +5,8 @@
     "build": {
       "dependsOn": [],
       "inputs": [
+        "bundle",
+        "runtime",
         "src",
         "lynx.config.ts",
         "lynx.config.mjs",
@@ -23,6 +25,8 @@
     "test": {
       "dependsOn": [],
       "inputs": [
+        "bundle",
+        "runtime",
         "src",
         "test",
         "rstest.config.ts",

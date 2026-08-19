@@ -1,0 +1,21 @@
+:root {
+  background-color: #f5f7fa;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.title {
+  padding: 16px 24px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ff351a;
+  border-radius: 12px;
+}
