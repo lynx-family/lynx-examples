@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "@lynx-js/react-canary";
+import { useCallback, useEffect, useState } from "@lynx-js/react";
 
 import "./App.css";
 import arrow from "./assets/arrow.png";

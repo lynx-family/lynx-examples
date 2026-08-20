@@ -12,11 +12,12 @@ plugins: [pluginLynx(), pluginReactLynx()]
 
 ## Canary packages
 
-The engine is not in a stable release yet, so this example pins the canary
-builds — `@lynx-js/rsbuild-plugin-canary` and
-`@lynx-js/react-rsbuild-plugin-canary`. `@lynx-js/react` is here as well because
-the alias plugin resolves `@lynx-js/react/jsx-runtime` by that name. Once the
-engine ships in a stable release, all three go back to the catalog entries.
+The engine is not in a stable release yet, so this example pins two canary
+builds: `@lynx-js/rsbuild-plugin-canary` and
+`@lynx-js/react-rsbuild-plugin-canary`. Both are needed — the released
+`@lynx-js/react-rsbuild-plugin` predates the engine and leaves JSX untransformed
+against the canary engine. The runtime, `@lynx-js/react`, stays on the released
+version. Both canary pins go back to the catalog once the engine ships.
 
 ## Scripts
 

@@ -1,1 +1,1 @@
-/// <reference types="@lynx-js/react-canary/rsbuild-env" />
+/// <reference types="@lynx-js/react/rsbuild-env" />

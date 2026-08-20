@@ -19,8 +19,7 @@
     "dev": "rsbuild dev"
   },
   "dependencies": {
-    "@lynx-js/react": "catalog:",
-    "@lynx-js/react-canary": "0.125.0-canary-20260820-d8f80cd0"
+    "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
     "@lynx-js/react-rsbuild-plugin-canary": "0.19.1-canary-20260820-d8f80cd0",

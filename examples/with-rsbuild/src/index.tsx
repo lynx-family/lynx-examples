@@ -1,4 +1,4 @@
-import { root } from "@lynx-js/react-canary";
+import { root } from "@lynx-js/react";
 
 import { App } from "./App.jsx";
 
