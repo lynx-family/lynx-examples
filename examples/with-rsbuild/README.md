@@ -3,21 +3,20 @@
 The same app as `hello-world`, built by the Rsbuild CLI instead of the Rspeedy
 CLI.
 
-`pluginLynx` carries the Lynx build engine, so `rsbuild.config.ts` needs nothing
-beyond it and the framework plugin:
+`pluginReactLynx` applies the Lynx build engine when it is not already there, so
+this is the whole plugin list:
 
 ```
-plugins: [pluginLynx(), pluginReactLynx()]
+plugins: [pluginReactLynx()]
 ```
 
-## Canary packages
+## Canary package
 
-The engine is not in a stable release yet, so this example pins two canary
-builds: `@lynx-js/rsbuild-plugin-canary` and
-`@lynx-js/react-rsbuild-plugin-canary`. Both are needed — the released
-`@lynx-js/react-rsbuild-plugin` predates the engine and leaves JSX untransformed
-against the canary engine. The runtime, `@lynx-js/react`, stays on the released
-version. Both canary pins go back to the catalog once the engine ships.
+The engine is not in a stable release yet, so this example pins
+`@lynx-js/react-rsbuild-plugin-canary`; the released
+`@lynx-js/react-rsbuild-plugin` predates the engine and leaves JSX
+untransformed. Everything else, the React runtime included, is on its released
+version. The pin goes back to the catalog entry once the engine ships.
 
 ## Scripts
 
