@@ -1,0 +1,37 @@
+{
+  "name": "@lynx-example/with-rsbuild",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/with-rsbuild"
+  },
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "rsbuild.config.ts",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:",
+    "@lynx-js/react-canary": "0.125.0-canary-20260820-d8f80cd0"
+  },
+  "devDependencies": {
+    "@lynx-js/react-rsbuild-plugin-canary": "0.19.1-canary-20260820-d8f80cd0",
+    "@lynx-js/rsbuild-plugin-canary": "0.0.3-canary-20260820-d8f80cd0",
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "^2.0.0",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
