@@ -1,5 +1,0 @@
----
-"@lynx-example/with-rsbuild": minor
----
-
-Add an example that builds through the Rsbuild CLI.
