@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "types": ["node", "@lynx-js/types", "@lynx-js/type-element-api"],
+    "verbatimModuleSyntax": true,
+  },
+  "include": ["bundle", "runtime", "src", "test", "lynx.config.ts"],
+  "exclude": ["dist"],
+}

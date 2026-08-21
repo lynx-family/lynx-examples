@@ -12,9 +12,18 @@ const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   source: {
     entry: {
+      "background-interaction": path.join(
+        projectRoot,
+        "src/background-interaction/main-thread.ts",
+      ),
       counter: path.join(projectRoot, "src/counter/main-thread.ts"),
       "event-card": path.join(projectRoot, "src/event-card/main-thread.ts"),
+      "hello-lynx": path.join(projectRoot, "src/hello-lynx/main-thread.ts"),
       "product-card": path.join(projectRoot, "src/product-card/main-thread.ts"),
+      "simple-interaction": path.join(
+        projectRoot,
+        "src/simple-interaction/main-thread.ts",
+      ),
       todolist: path.join(projectRoot, "src/todolist/main-thread.ts"),
       "weather-card": path.join(projectRoot, "src/weather-card/main-thread.ts"),
     },
@@ -23,7 +32,7 @@ export default defineConfig({
     distPath: {
       root: path.join(projectRoot, "dist"),
     },
-    filename: "[name].bundle",
+    filename: "[name].[platform].bundle",
   },
   plugins: [
     pluginVanillaLynx(),
@@ -35,4 +44,8 @@ export default defineConfig({
     }),
     pluginTypeCheck(),
   ],
+  environments: {
+    web: {},
+    lynx: {},
+  },
 });

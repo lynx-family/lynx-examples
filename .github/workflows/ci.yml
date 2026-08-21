@@ -38,6 +38,7 @@ jobs:
         env:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
           NODE_OPTIONS: --max-old-space-size=8192
+          EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE: "false"
         run: pnpm turbo run build --affected --concurrency=4
       - name: Test
         env:

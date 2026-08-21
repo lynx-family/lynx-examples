@@ -1,0 +1,45 @@
+{
+  "name": "@lynx-example/custom-framework",
+  "version": "0.0.0",
+  "description": "A minimal custom Lynx UI framework that compiles Greeting.lynx into dual-thread Lynx and Web bundles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/custom-framework"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "bundle",
+    "dist",
+    "runtime",
+    "src",
+    "lynx.config.ts"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview",
+    "test": "rstest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/runtime-wrapper-webpack-plugin": "catalog:",
+    "@lynx-js/template-webpack-plugin": "catalog:",
+    "@lynx-js/type-element-api": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@rspack/core": "2.1.10",
+    "@rstest/core": "^0.11.3",
+    "@types/node": "26.1.1",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

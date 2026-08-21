@@ -4,9 +4,12 @@ This example builds Lynx bundles directly with Element PAPI and TypeScript, with
 
 ## Examples
 
-- `counter`: a main-thread-only counter. It has no background thread entry; tap events are handled directly on the main thread.
+- `background-interaction`: a double-thread page that sends a title update to background state and applies the returned Element Patch on the main thread.
+- `counter`: a counter whose tap events and UI updates are handled directly on the main thread.
 - `event-card`: a standalone main-thread event card with reminder and join-schedule interactions.
+- `hello-lynx`: a minimal main-thread page that handles Lynx render, update, and destroy lifecycle events directly.
 - `product-card`: a standalone main-thread product card with save and add-to-cart interactions.
+- `simple-interaction`: a main-thread page with a minimal `useState` implementation that updates its greeting when the title is tapped.
 - `todolist`: a double-thread todo list. The main thread renders Element PAPI nodes and forwards tap events to the background thread, while the background thread updates data, measures its rendering pipeline, and sends patches back to the main thread.
 - `weather-card`: a standalone main-thread weather card with refreshable local conditions.
 
@@ -40,7 +43,7 @@ Scan the QR code in the terminal with LynxExplorer to preview the entries.
 pnpm --filter @lynx-example/vanilla run build
 ```
 
-The build outputs `dist/counter.bundle`, `dist/event-card.bundle`, `dist/product-card.bundle`, `dist/todolist.bundle`, and `dist/weather-card.bundle`.
+The build outputs `dist/<entry>.lynx.bundle` and `dist/<entry>.web.bundle` for every entry.
 
 `@lynx-js/vanilla-rsbuild-plugin` targets Lynx Engine `3.5` and enables the event listener refactor.
 
@@ -48,12 +51,17 @@ The build outputs `dist/counter.bundle`, `dist/event-card.bundle`, `dist/product
 
 - `src/common/main-thread`: shared main-thread lifecycle, Element PAPI, and event helpers.
 - `src/common/background`: shared background-thread event and data helpers.
+- `src/background-interaction`: minimal double-thread state, Patch, and Element PAPI entry for documentation.
 - `src/counter`: main-thread-only counter entry and styles.
 - `src/event-card`: standalone main-thread event card entry and styles.
+- `src/hello-lynx`: minimal main-thread lifecycle and Element PAPI entry for documentation.
 - `src/product-card`: standalone main-thread product card entry and styles.
+- `src/simple-interaction`: minimal main-thread event and UI update entry for documentation.
 - `src/todolist`: double-thread todo list entry, background event logic, types, and styles.
 - `src/weather-card`: standalone main-thread weather card entry and styles.
-- `lynx.config.ts`: configures Rspeedy and `@lynx-js/vanilla-rsbuild-plugin` for main-thread bundles, optional background bundles, CSS, and Lynx template encoding.
+- `lynx.config.ts`: configures Rspeedy and `@lynx-js/vanilla-rsbuild-plugin` for Lynx and Web main-thread bundles, optional background bundles, CSS, and template encoding.
+
+Entries that do not need background-thread logic still include an empty `background.ts`. This temporarily supplies the app-service entry required by the current Web encoder while keeping all business and UI work on the main thread.
 
 ## Shared Helpers
 

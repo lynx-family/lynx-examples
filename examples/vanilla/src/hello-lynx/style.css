@@ -1,0 +1,16 @@
+:root {
+  background-color: #f5f7fa;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #111827;
+  font-size: 36px;
+  font-weight: 700;
+}
