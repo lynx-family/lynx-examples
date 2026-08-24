@@ -5,6 +5,11 @@ packages:
   - examples/with-solidjs/packages/*
 
 strictPeerDependencies: true
+engineStrict: true
+
+# We are using flatten config of eslint and not using prettier
+# Disable the default publicHoistPattern(*-eslint-*, *-prettier-*)
+publicHoistPattern: []
 
 allowBuilds:
   "@parcel/watcher": true
