@@ -25,7 +25,7 @@
     "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/testing-environment": "npm:@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73",
+    "@lynx-js/testing-environment": "catalog:",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
     "@lynx-js/vanilla-rsbuild-plugin": "catalog:",
