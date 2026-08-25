@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/native-element",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "description": "An example about using native element in Lynx",
   "repository": {
     "type": "git",
