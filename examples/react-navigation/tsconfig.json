@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+
     "jsx": "preserve",
     "jsxImportSource": "@lynx-js/react",
 

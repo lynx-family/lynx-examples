@@ -1,14 +1,11 @@
 import { useState } from "@lynx-js/react";
-import { createStaticNavigation, useNavigation, usePreventRemove, useRoute } from "@react-navigation/lynx";
-import { createLynxStackNavigator, type LynxStackNavigationProp } from "@react-navigation/lynx/stack";
-
-type ParamList = {
-  Home: undefined;
-  Details: { title: string };
-  Draft: undefined;
-};
-
-type Navigation = LynxStackNavigationProp<ParamList>;
+import {
+  createStaticNavigation,
+  type StaticScreenProps,
+  useNavigation,
+  usePreventRemove,
+} from "@react-navigation/lynx";
+import { createLynxStackNavigator } from "@react-navigation/lynx/stack";
 
 function Screen(
   { title, children }: { title: string; children?: React.ReactNode },
@@ -38,7 +35,7 @@ function Button({ label, onTap }: { label: string; onTap: () => void }) {
 }
 
 function HomeScreen() {
-  const navigation = useNavigation<Navigation>();
+  const navigation = useNavigation("Home");
 
   return (
     <Screen title="Home">
@@ -54,14 +51,14 @@ function HomeScreen() {
   );
 }
 
-function DetailsScreen() {
-  const navigation = useNavigation<Navigation>();
-  const route = useRoute();
-  const { title } = route.params as ParamList["Details"];
+function DetailsScreen({ route }: StaticScreenProps<{ title: string }>) {
+  const navigation = useNavigation("Details");
 
   return (
     <Screen title="Details">
-      <text style={{ marginTop: "8px", color: "#5a5a5a" }}>{title}</text>
+      <text style={{ marginTop: "8px", color: "#5a5a5a" }}>
+        {route.params.title}
+      </text>
       <Button label="Go back" onTap={() => navigation.goBack()} />
       <Button
         label="Back to the first screen"
@@ -72,7 +69,7 @@ function DetailsScreen() {
 }
 
 function DraftScreen() {
-  const navigation = useNavigation<Navigation>();
+  const navigation = useNavigation("Draft");
   const [unsaved, setUnsaved] = useState(true);
 
   usePreventRemove(unsaved, () => {});
@@ -98,6 +95,12 @@ const Stack = createLynxStackNavigator({
     Draft: DraftScreen,
   },
 });
+
+type RootStackType = typeof Stack;
+
+declare module "@react-navigation/lynx" {
+  interface RootNavigator extends RootStackType {}
+}
 
 const Navigation = createStaticNavigation(Stack);
 

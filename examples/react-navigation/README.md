@@ -23,7 +23,28 @@ does not carry it. Open the bundle in an app that links `lynx-screens` — the
 - `usePreventRemove`, which blocks the system back gesture while a screen has
   unsaved work
 
+## Types
+
+The navigator is registered with the type system once, and every hook picks it
+up from there:
+
+```tsx
+type RootStackType = typeof Stack;
+
+declare module "@react-navigation/lynx" {
+  interface RootNavigator extends RootStackType {}
+}
+```
+
+After that `useNavigation("Details")` is typed, `navigate` rejects unknown route
+names and checks params, and a screen reads its own params through
+`StaticScreenProps` rather than a cast.
+
 ## Configuration worth copying
+
+`tsconfig.json` needs a `target` past ES5. `@react-navigation/lynx` and
+`lynx-screens` publish TypeScript sources, so they are compiled by this app's
+config, and they use `Map`, `Set` and `Object.fromEntries`.
 
 Two things in `lynx.config.mjs` are not optional.
 
@@ -31,7 +52,7 @@ Two things in `lynx.config.mjs` are not optional.
 onto the compat layer that `@react-navigation/lynx` ships. It fills in what
 ReactLynx does not have yet — `use`, `useInsertionEffect`, `startTransition`.
 
-`@react-navigation/lynx` and `lynx-screens` both publish TypeScript sources
-rather than compiled output, and `@react-navigation/core`'s published bundle
-uses `??=`, which the main thread's compiler cannot parse. All three go through
+`@react-navigation/lynx` and `lynx-screens` publish TypeScript sources rather
+than compiled output, and `@react-navigation/core`'s published bundle uses
+`??=`, which the main thread's compiler cannot parse. All three go through
 `source.include` so they are transpiled with the app.
