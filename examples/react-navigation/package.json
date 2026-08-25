@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@lynx-js/react": "catalog:",
-    "@react-navigation/lynx": "^0.1.0",
+    "@react-navigation/lynx": "^0.2.0",
     "lynx-screens": "^0.1.0"
   },
   "devDependencies": {
