@@ -1,5 +1,12 @@
 # @lynx-example/react-apis
 
+## 0.1.4
+
+### Patch Changes
+
+- faf0125: Add an interactive example demonstrating the `__MAIN_THREAD__` built-in macro.
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+
 ## 0.1.3
 
 ### Patch Changes

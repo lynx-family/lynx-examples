@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/with-rsbuild",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",

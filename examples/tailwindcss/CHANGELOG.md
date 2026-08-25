@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.5.4
+
+### Patch Changes
+
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+
 ## 0.5.3
 
 ### Patch Changes

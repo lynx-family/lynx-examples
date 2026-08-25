@@ -1,5 +1,11 @@
 # @lynx-example/motion
 
+## 0.2.5
+
+### Patch Changes
+
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+
 ## 0.2.4
 
 ### Patch Changes
