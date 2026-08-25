@@ -1,0 +1,37 @@
+{
+  "name": "@lynx-example/react-navigation",
+  "version": "0.0.0",
+  "description": "An example shows how to use React Navigation in Lynx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/react-navigation"
+  },
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "type": "module",
+  "files": [
+    "dist/",
+    "src/",
+    "lynx.config.mjs",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:",
+    "@react-navigation/lynx": "^0.1.0",
+    "lynx-screens": "^0.1.0"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@types/react": "~19.2.17",
+    "typescript": "~5.9.3"
+  }
+}
