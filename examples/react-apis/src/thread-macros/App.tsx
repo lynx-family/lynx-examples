@@ -21,7 +21,7 @@ export function App({ initialCount = 0 }: { initialCount?: number }) {
     <view className="card" bindtap={handleTap}>
       <text className="cardText title">ReactLynx</text>
       <text className="cardText">{count}</text>
-      {/* 仅示例使用。实际代码应让主线程和后台线程结构一致。 */}
+      {/* For demonstration only. In practice, keep the structure identical across both threads. */}
       {__MAIN_THREAD__ ? <text className="cardText">main</text> : <text className="cardText">background</text>}
     </view>
   );
