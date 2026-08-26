@@ -7,6 +7,7 @@ function fetchProfile() {
 
 export function App() {
   const [count, setCount] = useState(0);
+  const [isMainThreadRender, setIsMainThreadRender] = useState(__MAIN_THREAD__);
 
   useEffect(() => {
     fetchProfile();
@@ -15,14 +16,18 @@ export function App() {
   function handleTap() {
     "background only";
     setCount(count + 1);
+    setIsMainThreadRender(!isMainThreadRender);
   }
 
   return (
     <view className="container">
       <view className="card" bindtap={handleTap}>
-        <text>ReactLynx</text>
-        <text>{count}</text>
-        {__MAIN_THREAD__ ? <text>main</text> : <text>background</text>}
+        <text className="cardText title">ReactLynx</text>
+        <text className="cardText">{count}</text>
+        <text className="cardText">
+          {isMainThreadRender ? "MT render" : "BT render"}
+        </text>
+        <text className="cardText hint">Tap to simulate MT / BT</text>
       </view>
     </view>
   );
