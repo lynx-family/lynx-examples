@@ -1,5 +1,11 @@
 # @lynx-example/react-apis
 
+## 0.1.5
+
+### Patch Changes
+
+- 18be8e8: Make the thread macros example text self-contained and allow switching between simulated main- and background-thread render results.
+
 ## 0.1.4
 
 ### Patch Changes
