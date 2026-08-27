@@ -8,6 +8,39 @@ page {
   box-sizing: border-box;
 }
 
+.threadMacrosDemo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.phaseSelector {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.phaseButton {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.phaseButtonText {
+  color: #1f2937;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.phaseNote {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .card {
   padding: 24px;
   background-color: white;
