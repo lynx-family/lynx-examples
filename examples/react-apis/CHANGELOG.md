@@ -1,5 +1,11 @@
 # @lynx-example/react-apis
 
+## 0.1.7
+
+### Patch Changes
+
+- 7949ad2: Balance the thread macros phase controls at narrow preview widths.
+
 ## 0.1.6
 
 ### Patch Changes
