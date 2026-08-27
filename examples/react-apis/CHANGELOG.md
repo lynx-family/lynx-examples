@@ -1,5 +1,12 @@
 # @lynx-example/react-apis
 
+## 0.1.6
+
+### Patch Changes
+
+- 17a9093: Align thread macros example with the ReactLynx first-frame deep dive blog post.
+- bf23e42: Keep the blog's thread macros component unchanged while adding an interactive phase preview around it.
+
 ## 0.1.5
 
 ### Patch Changes
