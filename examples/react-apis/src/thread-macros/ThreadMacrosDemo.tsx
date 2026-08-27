@@ -31,7 +31,7 @@ export function ThreadMacrosDemo() {
           className="phaseButton"
           bindtap={() => setPreviewPhase("background")}
         >
-          <text className="phaseButtonText">After background takeover</text>
+          <text className="phaseButtonText">Background takeover</text>
         </view>
       </view>
 

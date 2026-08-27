@@ -17,28 +17,42 @@ page {
 }
 
 .phaseSelector {
+  width: 100%;
+  max-width: 320px;
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
 
 .phaseButton {
-  padding: 8px 12px;
+  flex: 1;
+  min-height: 56px;
+  padding: 10px 8px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .phaseButtonText {
+  width: 100%;
   color: #1f2937;
   font-size: 13px;
+  font-weight: 500;
   line-height: 18px;
+  text-align: center;
 }
 
 .phaseNote {
+  width: 100%;
+  max-width: 320px;
   color: #64748b;
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
 }
 
 .card {
