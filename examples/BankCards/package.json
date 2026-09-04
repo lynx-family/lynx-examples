@@ -2,20 +2,20 @@
   "name": "@lynx-example/bankcards",
   "version": "0.6.9",
   "description": "An demo implements bankcards",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/BankCards"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",

@@ -2,19 +2,22 @@
   "name": "@lynx-example/vanilla",
   "version": "0.1.6",
   "description": "An example of building Lynx apps with Element PAPI",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/vanilla"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist",
     "src",
     "lynx.config.ts"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -35,8 +38,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

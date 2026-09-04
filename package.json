@@ -3,20 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "description": "The examples for Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
   "scripts": {
     "build": "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE=false turbo run build",
     "prepare": "husky"
-  },
-  "nano-staged": {
-    "*.{css,scss,js,jsx,ts,tsx,mjs,cjs,json,jsonc,md}": [
-      "dprint fmt --allow-no-files --"
-    ]
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.0",
@@ -25,12 +20,16 @@
     "dprint": "^0.52.0",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
-    "sort-package-json": "^4.0.0",
     "turbo": "^2.8.13"
   },
-  "packageManager": "pnpm@11.13.0",
+  "nano-staged": {
+    "*.{css,scss,js,jsx,ts,tsx,mjs,cjs,json,jsonc,md}": [
+      "dprint fmt --allow-no-files --"
+    ]
+  },
   "engines": {
     "node": ">=22",
     "pnpm": "11.13.0"
-  }
+  },
+  "packageManager": "pnpm@11.13.0"
 }

@@ -2,19 +2,22 @@
   "name": "@lynx-example/react-devtool",
   "version": "0.2.5",
   "description": "lynx-ui-gallery with @lynx-js/preact-devtools enabled",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/react-devtool"
   },
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "REACT_DEVTOOL=true rspeedy build",
     "dev": "rspeedy dev",
@@ -38,8 +41,5 @@
   },
   "engines": {
     "node": ">=22"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
