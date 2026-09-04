@@ -2,20 +2,20 @@
   "name": "@lynx-example/markdown",
   "version": "0.1.3",
   "description": "An example shows how to use `<markdown>` in Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/markdown"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",

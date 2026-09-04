@@ -8,6 +8,8 @@
       ".vscode/settings.json",
     ],
   },
+  "sortPackageJson": {
+  },
   "markdown": {
   },
   "toml": {
@@ -25,6 +27,7 @@
     "**/routeTree.gen.ts",
   ],
   "plugins": [
+    "https://github.com/colinaaa/dprint-plugin-sort-package-json/releases/download/0.2.1/plugin.wasm",
     "https://plugins.dprint.dev/typescript-0.95.15.wasm",
     "https://plugins.dprint.dev/json-0.21.3.wasm",
     "https://plugins.dprint.dev/markdown-0.21.1.wasm",
