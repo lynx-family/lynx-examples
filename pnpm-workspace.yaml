@@ -37,3 +37,5 @@ catalog:
 
 minimumReleaseAgeExclude:
   - "@lynx-js/*"
+  - "@dprint/*"
+  - dprint@0.57.1

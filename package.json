@@ -17,7 +17,7 @@
     "@changesets/cli": "^3.0.0",
     "@pnpm/meta-updater": "^2.0.6",
     "@rsbuild/plugin-type-check": "1.5.0",
-    "dprint": "^0.52.0",
+    "dprint": "^0.57.1",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
     "turbo": "^2.8.13"
