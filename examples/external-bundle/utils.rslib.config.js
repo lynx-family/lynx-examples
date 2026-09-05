@@ -1,7 +1,4 @@
-import {
-  defineExternalBundleRslibConfig,
-  LAYERS,
-} from "@lynx-js/lynx-bundle-rslib-config";
+import { defineExternalBundleRslibConfig, LAYERS } from "@lynx-js/lynx-bundle-rslib-config";
 import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 
 export default defineExternalBundleRslibConfig({
