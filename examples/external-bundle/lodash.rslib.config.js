@@ -1,19 +1,9 @@
-import { defineExternalBundleRslibConfig } from "@lynx-js/lynx-bundle-rslib-config";
 import { createRequire } from "node:module";
 
+import { defineExternalBundleRslibConfig } from "@lynx-js/lynx-bundle-rslib-config";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
+
 const require = createRequire(import.meta.url);
-
-const LAYERS = {
-  BACKGROUND: "rslib:background",
-  MAIN_THREAD: "rslib:main-thread",
-};
-
-const pluginRslibLayers = () => ({
-  name: "example:rslib-layers",
-  setup(api) {
-    api.expose(Symbol.for("LAYERS"), LAYERS);
-  },
-});
 
 export default defineExternalBundleRslibConfig({
   id: "lodash-es",
@@ -22,9 +12,7 @@ export default defineExternalBundleRslibConfig({
       "lodash-es": require.resolve("lodash-es"),
     },
   },
-  plugins: [
-    pluginRslibLayers(),
-  ],
+  plugins: [pluginLynx()],
   output: {
     cleanDistPath: false,
     distPath: {
