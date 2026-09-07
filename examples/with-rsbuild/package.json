@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
     "@rsbuild/core": "^2.0.0",
     "@types/react": "^18.3.28",
