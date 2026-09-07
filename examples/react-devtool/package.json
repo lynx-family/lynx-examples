@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "@lynx-example/lynx-ui-gallery": "workspace:*",
-    "@lynx-js/luna-styles": "0.2.0",
-    "@lynx-js/lynx-ui": "3.135.3",
-    "@lynx-js/preact-devtools": "5.0.1-20260721114100-d7da994",
+    "@lynx-js/luna-styles": "0.2.2",
+    "@lynx-js/lynx-ui": "3.137.0",
+    "@lynx-js/preact-devtools": "5.0.1-20260827072047-5f77e12",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
