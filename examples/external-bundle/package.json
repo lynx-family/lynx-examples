@@ -36,6 +36,7 @@
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/react-umd": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/rspeedy": "catalog:",
     "@rslib/core": "1.0.0-rc.0",
     "@types/react": "^18.3.28",

@@ -13,8 +13,8 @@ catalogs:
       specifier: 0.4.2
       version: 0.4.2
     '@lynx-js/lynx-bundle-rslib-config':
-      specifier: 0.7.1
-      version: 0.7.1
+      specifier: 0.8.1
+      version: 0.8.1
     '@lynx-js/qrcode-rsbuild-plugin':
       specifier: 0.7.1
       version: 0.7.1
@@ -30,6 +30,9 @@ catalogs:
     '@lynx-js/react-use':
       specifier: 0.2.2
       version: 0.2.2
+    '@lynx-js/rsbuild-plugin':
+      specifier: 0.1.1
+      version: 0.1.1
     '@lynx-js/rspeedy':
       specifier: 0.17.1
       version: 0.17.1
@@ -86,13 +89,13 @@ importers:
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.3(core-js@3.47.0))
+        version: 0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))
+        version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -120,7 +123,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -145,7 +148,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -170,7 +173,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -210,7 +213,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -235,7 +238,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -260,7 +263,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -285,7 +288,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -313,7 +316,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -338,7 +341,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -363,7 +366,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -388,7 +391,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -416,7 +419,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -441,7 +444,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -469,7 +472,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -497,7 +500,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -537,7 +540,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -565,7 +568,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -590,7 +593,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -615,7 +618,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -637,22 +640,25 @@ importers:
     devDependencies:
       '@lynx-js/external-bundle-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.4.2(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
+        version: 0.4.2(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
       '@lynx-js/lynx-bundle-rslib-config':
         specifier: 'catalog:'
-        version: 0.7.1(@lynx-js/lynx-core@0.1.4)(@rslib/core@1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3))(tslib@2.8.1)
+        version: 0.8.1(@rslib/core@1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3))
       '@lynx-js/qrcode-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
+        version: 0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
       '@lynx-js/react-rsbuild-plugin':
         specifier: 'catalog:'
-        version: 0.20.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
+        version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))
       '@lynx-js/react-umd':
         specifier: 'catalog:'
         version: 0.126.0
+      '@lynx-js/rsbuild-plugin':
+        specifier: 'catalog:'
+        version: 0.1.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
       '@rslib/core':
         specifier: 1.0.0-rc.0
         version: 1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3)
@@ -677,7 +683,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -702,7 +708,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -727,7 +733,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -755,7 +761,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -783,7 +789,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -808,7 +814,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -833,7 +839,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -861,7 +867,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -889,7 +895,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -914,7 +920,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -942,7 +948,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -967,7 +973,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1001,7 +1007,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1026,7 +1032,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1051,7 +1057,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1082,7 +1088,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1107,7 +1113,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1135,7 +1141,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1172,7 +1178,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1200,7 +1206,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1228,7 +1234,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1256,7 +1262,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1284,7 +1290,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1324,7 +1330,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1349,7 +1355,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1374,7 +1380,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1402,7 +1408,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1430,7 +1436,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1458,7 +1464,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1486,7 +1492,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1551,7 +1557,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1576,7 +1582,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1604,7 +1610,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1629,7 +1635,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1657,7 +1663,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1681,7 +1687,7 @@ importers:
         version: 0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/testing-environment':
         specifier: 'catalog:'
         version: 0.3.4
@@ -1718,7 +1724,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1743,7 +1749,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1768,7 +1774,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1798,7 +1804,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1860,7 +1866,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1885,7 +1891,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -1972,7 +1978,7 @@ importers:
         version: 0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/rspeedy':
         specifier: 'catalog:'
-        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+        version: 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@lynx-js/types':
         specifier: 'catalog:'
         version: 4.2.1
@@ -3006,8 +3012,8 @@ packages:
   '@lynx-js/luna-styles@0.2.2':
     resolution: {integrity: sha512-D3/5EATX4whcVCRS3WHQL40oNb6JqHG0oYRSsVgGGG+FDQJ3kVQPOLwjTylbzMV1wkTJXe8M9B4mkWcjHlWYqA==}
 
-  '@lynx-js/lynx-bundle-rslib-config@0.7.1':
-    resolution: {integrity: sha512-2G/sP4gqhwCu3D/LXXi9peuB0+FuNDlwIsA7pkSblt7qDQz0zFZjncJFl431CwHxIIfVTMP2cIawzaJ71taRIw==}
+  '@lynx-js/lynx-bundle-rslib-config@0.8.1':
+    resolution: {integrity: sha512-l691WzXzhNtiBNgAfkEi53u12QK3mN29jP4v/9sKRqi2kwVGHTXIKwQkex1ESz3/84IecZiW2DPUv4ATBBfutQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@rslib/core': ^1.0.0-beta.1
@@ -3299,10 +3305,6 @@ packages:
     resolution: {integrity: sha512-4ligJLiYGwQ6gVqizl1ULwF4/VrogkzymA1k1Tm+3NDlFUHPyyU/HXgmEUXi8xKnh08pe+TVyl6nu97AAB1sxg==}
     engines: {node: '>=18'}
 
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.2.3':
-    resolution: {integrity: sha512-xqBQ+g8fJn1kPJN+7tgzypPj+FK9+8ifDVhXu9i0S6630XebdZ7ZKPehlGMNdfZPnS96Wo0EBCoEaAwJ6c9UpA==}
-    engines: {node: '>=18'}
-
   '@lynx-js/runtime-wrapper-webpack-plugin@0.2.4':
     resolution: {integrity: sha512-u+1d/V3PiegtfS5CSDkppEVXLjZtvNnAsfRRuWk/sayAML6zUGDBeJrAwJLYujv20Zlq5S3AgdUt7DYxeqlgTw==}
     engines: {node: '>=18'}
@@ -3349,17 +3351,6 @@ packages:
       '@rsbuild/core':
         optional: true
 
-  '@lynx-js/web-core@0.25.0':
-    resolution: {integrity: sha512-IyKG1kWTQZEMI+FtkejFVizer2omTpbN5ISmRWZBM4QYMWvcIaBvAwy8TZ7kYHb7lm2+exwkNVUjCuL2jGE+Tw==}
-    peerDependencies:
-      '@lynx-js/lynx-core': 0.1.4
-      tslib: ^2.5.0
-    peerDependenciesMeta:
-      '@lynx-js/lynx-core':
-        optional: true
-      tslib:
-        optional: true
-
   '@lynx-js/web-core@0.26.0':
     resolution: {integrity: sha512-ZX1Ex1tne+8hpPgUDPl/1YuFaigW5jsuDT3bSMcgSNY71Oxuiv+v19QZ7eReBFIam8D4+X4UWIpqf1i9p992dw==}
     peerDependencies:
@@ -3379,26 +3370,14 @@ packages:
     peerDependencies:
       tslib: ^2.5.0
 
-  '@lynx-js/web-elements@0.12.9':
-    resolution: {integrity: sha512-MbyLnZxBZ81Mu8UIgLq6Uuy4RtXC5XdnEyj0kU4ysnF7mqMb/DcRZtvfzWVNoAKF2jlhOXNaLKSGVYuRRTJzHw==}
-    peerDependencies:
-      tslib: ^2.5.0
-
   '@lynx-js/web-rsbuild-server-middleware@0.26.0':
     resolution: {integrity: sha512-3ubZn8NA0V/O6Z0UJK9KKBmPWl9YOJXXc2UsDu1b2/woVFN+j7smArd8zk40Ht1p7Fquy3uhr2Ncl0pOcluxDg==}
-
-  '@lynx-js/web-worker-rpc@0.25.0':
-    resolution: {integrity: sha512-2WjGSgUFx6HxluFbmCfXv1ToKelh26hVsS56G8AlhM8bCoRUcilOyB0d91/EUMOxFDTNm9ONLhkXjxsJKV15Hg==}
 
   '@lynx-js/web-worker-rpc@0.26.0':
     resolution: {integrity: sha512-89sNjLOZEFjhf4N5/iQ+ewzeljk7/r0BoZ2thycz+RfLfk6wDUji8dQ/2oAYuQxWJD5wN3QUhVP5FjhgHnGk9Q==}
 
   '@lynx-js/webpack-dev-transport@0.4.0':
     resolution: {integrity: sha512-+XeG9yUGM7oCWeXe/Pbxl6cBmF6JQ6jQ08rm9w8zbV6Liq1THghlcKPdj2DAS1u1WU3llSi1RGzGQabWlDwR1w==}
-    engines: {node: '>=18'}
-
-  '@lynx-js/webpack-runtime-globals@0.0.7':
-    resolution: {integrity: sha512-HGWCIX8FMeoeCfUZpijrZO20UVp8wVHj7f+aEiMbx94H2iqIVxLzrCLZudBfvo4+WZ3kdgM8CqhU1EERKhLi0w==}
     engines: {node: '>=18'}
 
   '@lynx-js/webpack-runtime-globals@0.0.8':
@@ -9622,7 +9601,7 @@ snapshots:
     dependencies:
       '@lynx-js/type-config': 4.2.0
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.2.3(core-js@3.47.0)
 
   '@lynx-js/css-extract-webpack-plugin@0.11.0(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1))':
@@ -9654,11 +9633,11 @@ snapshots:
 
   '@lynx-js/debug-metadata@0.1.0': {}
 
-  '@lynx-js/external-bundle-rsbuild-plugin@0.4.2(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
+  '@lynx-js/external-bundle-rsbuild-plugin@0.4.2(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
     dependencies:
       '@lynx-js/externals-loading-webpack-plugin': 0.2.1
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
       '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
 
   '@lynx-js/externals-loading-webpack-plugin@0.2.1': {}
@@ -9687,16 +9666,9 @@ snapshots:
 
   '@lynx-js/luna-styles@0.2.2': {}
 
-  '@lynx-js/lynx-bundle-rslib-config@0.7.1(@lynx-js/lynx-core@0.1.4)(@rslib/core@1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3))(tslib@2.8.1)':
+  '@lynx-js/lynx-bundle-rslib-config@0.8.1(@rslib/core@1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3))':
     dependencies:
-      '@lynx-js/css-serializer': 0.1.9
-      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.3
-      '@lynx-js/tasm': 0.0.49
-      '@lynx-js/web-core': 0.25.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
       '@rslib/core': 1.0.0-rc.0(core-js@3.47.0)(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@lynx-js/lynx-core'
-      - tslib
 
   '@lynx-js/lynx-core@0.1.4': {}
 
@@ -10022,9 +9994,9 @@ snapshots:
       errorstacks: 2.4.2
       htm: 3.1.1
 
-  '@lynx-js/qrcode-rsbuild-plugin@0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
+  '@lynx-js/qrcode-rsbuild-plugin@0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
       '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
 
   '@lynx-js/qrcode-rsbuild-plugin@0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.3(core-js@3.47.0))':
@@ -10034,12 +10006,12 @@ snapshots:
 
   '@lynx-js/qrcode-rsbuild-plugin@0.7.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))':
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.2.3(core-js@3.47.0)
 
-  '@lynx-js/react-alias-rsbuild-plugin@0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
+  '@lynx-js/react-alias-rsbuild-plugin@0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))':
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
       '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
 
   '@lynx-js/react-alias-rsbuild-plugin@0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.3(core-js@3.47.0))':
@@ -10049,25 +10021,25 @@ snapshots:
 
   '@lynx-js/react-alias-rsbuild-plugin@0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.1.6(core-js@3.47.0))':
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.1.6(core-js@3.47.0)
 
   '@lynx-js/react-alias-rsbuild-plugin@0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))':
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.2.3(core-js@3.47.0)
 
   '@lynx-js/react-refresh-webpack-plugin@0.4.2(@lynx-js/react-webpack-plugin@0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1)))':
     dependencies:
       '@lynx-js/react-webpack-plugin': 0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1))
 
-  '@lynx-js/react-rsbuild-plugin@0.20.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)':
+  '@lynx-js/react-rsbuild-plugin@0.20.1(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))':
     dependencies:
       '@lynx-js/css-extract-webpack-plugin': 0.11.0(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1))
-      '@lynx-js/react-alias-rsbuild-plugin': 0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
+      '@lynx-js/react-alias-rsbuild-plugin': 0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19)))(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
       '@lynx-js/react-refresh-webpack-plugin': 0.4.2(@lynx-js/react-webpack-plugin@0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1)))
       '@lynx-js/react-webpack-plugin': 0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1))
-      '@lynx-js/rsbuild-plugin': 0.1.1(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
+      '@lynx-js/rsbuild-plugin': 0.1.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))
       '@lynx-js/runtime-config-webpack-plugin': 0.0.1
       '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
       '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
@@ -10076,7 +10048,7 @@ snapshots:
       tiny-invariant: 1.3.3
     optionalDependencies:
       '@lynx-js/react': 0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28)
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))
       '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
     transitivePeerDependencies:
       - '@lynx-js/animax'
@@ -10134,7 +10106,7 @@ snapshots:
       tiny-invariant: 1.3.3
     optionalDependencies:
       '@lynx-js/react': 0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28)
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.1.6(core-js@3.47.0)
     transitivePeerDependencies:
       - '@lynx-js/animax'
@@ -10154,7 +10126,7 @@ snapshots:
       '@lynx-js/react-alias-rsbuild-plugin': 0.20.1(@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3))(@rsbuild/core@2.2.3(core-js@3.47.0))
       '@lynx-js/react-refresh-webpack-plugin': 0.4.2(@lynx-js/react-webpack-plugin@0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1)))
       '@lynx-js/react-webpack-plugin': 0.11.3(@lynx-js/react@0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/template-webpack-plugin@0.16.0(tslib@2.8.1))
-      '@lynx-js/rsbuild-plugin': 0.1.1(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
+      '@lynx-js/rsbuild-plugin': 0.1.1(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
       '@lynx-js/runtime-config-webpack-plugin': 0.0.1
       '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
       '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
@@ -10163,7 +10135,7 @@ snapshots:
       tiny-invariant: 1.3.3
     optionalDependencies:
       '@lynx-js/react': 0.126.0(@lynx-js/types@4.2.1)(@types/react@18.3.28)
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.2.3(core-js@3.47.0)
     transitivePeerDependencies:
       - '@lynx-js/animax'
@@ -10214,56 +10186,6 @@ snapshots:
     transitivePeerDependencies:
       - preact-render-to-string
 
-  '@lynx-js/rsbuild-plugin@0.1.1(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)':
-    dependencies:
-      '@lynx-js/cache-events-webpack-plugin': 0.2.1
-      '@lynx-js/chunk-loading-webpack-plugin': 0.4.2
-      '@lynx-js/debug-metadata-rsbuild-plugin': 0.2.2(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
-      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
-      '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
-      '@lynx-js/web-rsbuild-server-middleware': 0.26.0
-      '@lynx-js/webpack-dev-transport': 0.4.0
-      '@lynx-js/websocket': 0.0.4
-      '@rsbuild/plugin-css-minimizer': 2.0.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(webpack@5.101.3)
-    optionalDependencies:
-      '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
-    transitivePeerDependencies:
-      - '@lynx-js/animax'
-      - '@lynx-js/lynx-core'
-      - '@parcel/css'
-      - '@swc/css'
-      - clean-css
-      - csso
-      - esbuild
-      - lightningcss
-      - tslib
-      - webpack
-
-  '@lynx-js/rsbuild-plugin@0.1.1(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)':
-    dependencies:
-      '@lynx-js/cache-events-webpack-plugin': 0.2.1
-      '@lynx-js/chunk-loading-webpack-plugin': 0.4.2
-      '@lynx-js/debug-metadata-rsbuild-plugin': 0.2.2(@rsbuild/core@2.2.3(core-js@3.47.0))
-      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
-      '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
-      '@lynx-js/web-rsbuild-server-middleware': 0.26.0
-      '@lynx-js/webpack-dev-transport': 0.4.0
-      '@lynx-js/websocket': 0.0.4
-      '@rsbuild/plugin-css-minimizer': 2.0.1(@rsbuild/core@2.2.3(core-js@3.47.0))(webpack@5.101.3)
-    optionalDependencies:
-      '@rsbuild/core': 2.2.3(core-js@3.47.0)
-    transitivePeerDependencies:
-      - '@lynx-js/animax'
-      - '@lynx-js/lynx-core'
-      - '@parcel/css'
-      - '@swc/css'
-      - clean-css
-      - csso
-      - esbuild
-      - lightningcss
-      - tslib
-      - webpack
-
   '@lynx-js/rsbuild-plugin@0.1.1(@rsbuild/core@2.1.6(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)':
     dependencies:
       '@lynx-js/cache-events-webpack-plugin': 0.2.1
@@ -10277,6 +10199,31 @@ snapshots:
       '@rsbuild/plugin-css-minimizer': 2.0.1(@rsbuild/core@2.1.6(core-js@3.47.0))(webpack@5.101.3)
     optionalDependencies:
       '@rsbuild/core': 2.1.6(core-js@3.47.0)
+    transitivePeerDependencies:
+      - '@lynx-js/animax'
+      - '@lynx-js/lynx-core'
+      - '@parcel/css'
+      - '@swc/css'
+      - clean-css
+      - csso
+      - esbuild
+      - lightningcss
+      - tslib
+      - webpack
+
+  '@lynx-js/rsbuild-plugin@0.1.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3(postcss@8.5.19))':
+    dependencies:
+      '@lynx-js/cache-events-webpack-plugin': 0.2.1
+      '@lynx-js/chunk-loading-webpack-plugin': 0.4.2
+      '@lynx-js/debug-metadata-rsbuild-plugin': 0.2.2(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))
+      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
+      '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
+      '@lynx-js/web-rsbuild-server-middleware': 0.26.0
+      '@lynx-js/webpack-dev-transport': 0.4.0
+      '@lynx-js/websocket': 0.0.4
+      '@rsbuild/plugin-css-minimizer': 2.0.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(webpack@5.101.3(postcss@8.5.19))
+    optionalDependencies:
+      '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
     transitivePeerDependencies:
       - '@lynx-js/animax'
       - '@lynx-js/lynx-core'
@@ -10314,31 +10261,29 @@ snapshots:
       - tslib
       - webpack
 
-  '@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)':
+  '@lynx-js/rsbuild-plugin@0.1.1(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)':
     dependencies:
-      '@lynx-js/rsbuild-plugin': 0.1.1(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
-      '@rsbuild/core': 2.2.3(core-js@3.47.0)
-      '@rsdoctor/rspack-plugin': 1.6.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rsbuild/core@2.2.3(core-js@3.47.0))(@rspack/core@2.2.2(@swc/helpers@0.5.23))(webpack@5.101.3)
+      '@lynx-js/cache-events-webpack-plugin': 0.2.1
+      '@lynx-js/chunk-loading-webpack-plugin': 0.4.2
+      '@lynx-js/debug-metadata-rsbuild-plugin': 0.2.2(@rsbuild/core@2.2.3(core-js@3.47.0))
+      '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
+      '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
+      '@lynx-js/web-rsbuild-server-middleware': 0.26.0
+      '@lynx-js/webpack-dev-transport': 0.4.0
+      '@lynx-js/websocket': 0.0.4
+      '@rsbuild/plugin-css-minimizer': 2.0.1(@rsbuild/core@2.2.3(core-js@3.47.0))(webpack@5.101.3)
     optionalDependencies:
-      typescript: 5.9.3
+      '@rsbuild/core': 2.2.3(core-js@3.47.0)
     transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
       - '@lynx-js/animax'
       - '@lynx-js/lynx-core'
-      - '@module-federation/runtime-tools'
       - '@parcel/css'
-      - '@rspack/core'
       - '@swc/css'
-      - bufferutil
       - clean-css
-      - core-js
       - csso
       - esbuild
       - lightningcss
-      - supports-color
       - tslib
-      - utf-8-validate
       - webpack
 
   '@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(postcss@8.5.19))':
@@ -10368,13 +10313,36 @@ snapshots:
       - utf-8-validate
       - webpack
 
+  '@lynx-js/rspeedy@0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)':
+    dependencies:
+      '@lynx-js/rsbuild-plugin': 0.1.1(@rsbuild/core@2.2.3(core-js@3.47.0))(tslib@2.8.1)(webpack@5.101.3)
+      '@rsbuild/core': 2.2.3(core-js@3.47.0)
+      '@rsdoctor/rspack-plugin': 1.6.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rsbuild/core@2.2.3(core-js@3.47.0))(@rspack/core@2.2.2(@swc/helpers@0.5.23))(webpack@5.101.3)
+    optionalDependencies:
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@lynx-js/animax'
+      - '@lynx-js/lynx-core'
+      - '@module-federation/runtime-tools'
+      - '@parcel/css'
+      - '@rspack/core'
+      - '@swc/css'
+      - bufferutil
+      - clean-css
+      - core-js
+      - csso
+      - esbuild
+      - lightningcss
+      - supports-color
+      - tslib
+      - utf-8-validate
+      - webpack
+
   '@lynx-js/runtime-config-webpack-plugin@0.0.1':
     dependencies:
       '@lynx-js/webpack-runtime-globals': 0.0.8
-
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.2.3':
-    dependencies:
-      '@lynx-js/webpack-runtime-globals': 0.0.7
 
   '@lynx-js/runtime-wrapper-webpack-plugin@0.2.4':
     dependencies:
@@ -10421,22 +10389,12 @@ snapshots:
       '@lynx-js/runtime-wrapper-webpack-plugin': 0.2.4
       '@lynx-js/template-webpack-plugin': 0.16.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)
     optionalDependencies:
-      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
+      '@lynx-js/rspeedy': 0.17.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@rspack/core@2.2.2(@swc/helpers@0.5.23))(core-js@3.47.0)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3)
       '@rsbuild/core': 2.2.3(core-js@3.47.0)
     transitivePeerDependencies:
       - '@lynx-js/animax'
       - '@lynx-js/lynx-core'
       - tslib
-
-  '@lynx-js/web-core@0.25.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
-    dependencies:
-      '@lynx-js/css-serializer': 0.1.9
-      '@lynx-js/web-elements': 0.12.9(tslib@2.8.1)
-      '@lynx-js/web-worker-rpc': 0.25.0
-      wasm-feature-detect: 1.8.0
-    optionalDependencies:
-      '@lynx-js/lynx-core': 0.1.4
-      tslib: 2.8.1
 
   '@lynx-js/web-core@0.26.0(@lynx-js/lynx-core@0.1.4)(tslib@2.8.1)':
     dependencies:
@@ -10454,21 +10412,11 @@ snapshots:
       markdown-it: 15.0.1
       tslib: 2.8.1
 
-  '@lynx-js/web-elements@0.12.9(tslib@2.8.1)':
-    dependencies:
-      dompurify: 3.4.13
-      markdown-it: 15.0.1
-      tslib: 2.8.1
-
   '@lynx-js/web-rsbuild-server-middleware@0.26.0': {}
-
-  '@lynx-js/web-worker-rpc@0.25.0': {}
 
   '@lynx-js/web-worker-rpc@0.26.0': {}
 
   '@lynx-js/webpack-dev-transport@0.4.0': {}
-
-  '@lynx-js/webpack-runtime-globals@0.0.7': {}
 
   '@lynx-js/webpack-runtime-globals@0.0.8': {}
 
@@ -11734,9 +11682,9 @@ snapshots:
       - lightningcss
       - webpack
 
-  '@rsbuild/plugin-css-minimizer@2.0.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(webpack@5.101.3)':
+  '@rsbuild/plugin-css-minimizer@2.0.1(@rsbuild/core@2.2.0-beta.1(core-js@3.47.0))(webpack@5.101.3(postcss@8.5.19))':
     dependencies:
-      css-minimizer-webpack-plugin: 8.0.0(webpack@5.101.3)
+      css-minimizer-webpack-plugin: 8.0.0(webpack@5.101.3(postcss@8.5.19))
       reduce-configs: 1.1.2
     optionalDependencies:
       '@rsbuild/core': 2.2.0-beta.1(core-js@3.47.0)
