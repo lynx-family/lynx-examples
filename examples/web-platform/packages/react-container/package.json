@@ -2,12 +2,12 @@
   "name": "@lynx-example/react-container",
   "version": "0.0.0",
   "private": true,
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/web-platform/packages/react-container"
   },
-  "author": "Lynx Authors",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@lynx-js/lynx-core": "^0.1.4",
-    "@lynx-js/web-core": "^0.23.0",
-    "@lynx-js/web-elements": "^0.12.7",
+    "@lynx-js/web-core": "^0.26.0",
+    "@lynx-js/web-elements": "^0.12.10",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

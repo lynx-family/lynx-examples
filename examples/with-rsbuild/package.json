@@ -1,19 +1,19 @@
 {
   "name": "@lynx-example/with-rsbuild",
   "version": "0.1.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/with-rsbuild"
   },
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist",
     "src",
     "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev"

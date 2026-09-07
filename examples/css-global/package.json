@@ -2,20 +2,23 @@
   "name": "@lynx-example/css-global",
   "version": "0.1.2",
   "description": "An example shows how to use global CSS in Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/css-global"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -34,8 +37,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

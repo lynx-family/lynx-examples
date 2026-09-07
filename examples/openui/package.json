@@ -2,14 +2,13 @@
   "name": "@lynx-example/openui",
   "version": "0.1.4",
   "description": "An example shows how to render streaming OpenUI responses in Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/openui"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
@@ -17,14 +16,18 @@
     "tsconfig.json",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/genui": "0.2.0",
-    "@lynx-js/lynx-ui": "3.135.3",
+    "@lynx-js/genui": "0.4.0",
+    "@lynx-js/lynx-ui": "3.137.0",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
@@ -39,8 +42,5 @@
   },
   "engines": {
     "node": ">=22"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

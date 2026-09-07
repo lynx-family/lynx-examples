@@ -2,14 +2,13 @@
   "name": "@lynx-example/text-composition",
   "version": "0.2.1",
   "description": "A Lynx text-composition example covering natural wrapping, inline text, images, views, and truncation",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/text-composition"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
@@ -18,6 +17,10 @@
     "CHANGELOG.md",
     "SKILL.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -36,8 +39,5 @@
   },
   "engines": {
     "node": ">=22"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

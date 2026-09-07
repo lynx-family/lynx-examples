@@ -2,27 +2,30 @@
   "name": "@lynx-example/lynx-ui-gallery",
   "version": "0.2.3",
   "description": "A Kitchen Sink gallery showcasing all lynx-ui components",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/lynx-ui-gallery"
   },
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/luna-styles": "0.2.0",
-    "@lynx-js/lynx-ui": "3.135.3",
+    "@lynx-js/luna-styles": "0.2.2",
+    "@lynx-js/lynx-ui": "3.137.0",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
@@ -36,8 +39,5 @@
   },
   "engines": {
     "node": ">=22"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

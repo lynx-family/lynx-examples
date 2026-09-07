@@ -2,14 +2,13 @@
   "name": "@lynx-example/with-solidjs",
   "version": "0.4.8",
   "description": "An example shows how to use Lynx with SolidJS",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/with-solidjs"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
@@ -17,6 +16,7 @@
     "README.md",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rspack build",
     "dev": "rspack dev"

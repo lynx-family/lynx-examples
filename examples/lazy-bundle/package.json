@@ -1,13 +1,12 @@
 {
   "name": "@lynx-example/lazy-bundle",
   "version": "0.6.10",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/lazy-bundle"
   },
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "dist-fetchbundle/",
@@ -18,6 +17,7 @@
     "demo-config.js",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "pnpm run build:querycomponent && pnpm run build:fetchbundle",
     "build:app": "rspeedy build",

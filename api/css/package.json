@@ -2,14 +2,13 @@
   "name": "@lynx-example/css-api",
   "version": "0.10.4",
   "description": "CSS properties API demo",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "api/css"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
@@ -17,6 +16,7 @@
     "lynx.web.config.mjs",
     "lynx.config.mjs"
   ],
+  "type": "module",
   "scripts": {
     "build": "node ./scripts/build.mjs",
     "dev": "rspeedy dev",

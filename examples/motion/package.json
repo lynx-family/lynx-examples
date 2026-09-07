@@ -2,28 +2,28 @@
   "name": "@lynx-example/motion",
   "version": "0.2.5",
   "description": "Examples for @lynx-js/motion and @lynx-js/motion/mini",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/motion"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/luna-styles": "^0.2.0",
-    "@lynx-js/motion": "^0.0.4",
+    "@lynx-js/luna-styles": "^0.2.2",
+    "@lynx-js/motion": "^0.0.6",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {

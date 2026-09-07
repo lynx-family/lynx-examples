@@ -2,19 +2,22 @@
   "name": "@lynx-example/webassembly",
   "version": "0.2.3",
   "description": "An example shows how to run WebAssembly in Lynx",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/webassembly"
   },
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist",
     "src",
     "lynx.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -33,8 +36,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

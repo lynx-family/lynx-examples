@@ -2,20 +2,20 @@
   "name": "@lynx-example/overlay",
   "version": "0.6.11",
   "description": "An example shows how to use `<overlay>` in Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/overlay"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
     "lynx.config.mjs",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
