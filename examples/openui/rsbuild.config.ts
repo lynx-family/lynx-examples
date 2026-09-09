@@ -1,0 +1,42 @@
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
+import { defineConfig } from "@rsbuild/core";
+
+import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
+import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
+import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
+
+export default defineConfig({
+  plugins: [
+    pluginLynx({
+      output: {
+        filename: {
+          bundle: "[name].[platform].bundle",
+        },
+      },
+    }),
+    pluginQRCode(),
+    pluginReactLynx({
+      defaultDisplayLinear: false,
+    }),
+    pluginTypeCheck(),
+    pluginLynxConfig({
+      enableCSSInlineVariables: true,
+    }),
+  ],
+  source: {
+    entry: {
+      openui: "./src/index.tsx",
+    },
+  },
+  environments: {
+    web: {},
+    lynx: {},
+  },
+  server: {
+    port: 8080,
+  },
+  output: {
+    assetPrefix: "https://lynxjs.org/lynx-examples/openui/dist",
+  },
+});

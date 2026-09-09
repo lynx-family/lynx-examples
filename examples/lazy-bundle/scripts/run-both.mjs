@@ -46,16 +46,16 @@ if (subcommand === "build") {
     });
 
   const codes = await Promise.all([
-    run("lynx.config.producer.js", "producer"),
-    run("lynx.config.ts", "app"),
+    run("rsbuild.config.producer.js", "producer"),
+    run("rsbuild.config.ts", "app"),
   ]);
   process.exitCode = codes.find((code) => code !== 0) ?? 0;
 } else {
-  const producer = start("lynx.config.producer.js", ["ignore", "pipe", "pipe"]);
+  const producer = start("rsbuild.config.producer.js", ["ignore", "pipe", "pipe"]);
   prefix(producer.stdout, "producer");
   prefix(producer.stderr, "producer");
 
-  const app = start("lynx.config.ts", "inherit");
+  const app = start("rsbuild.config.ts", "inherit");
 
   const shutdown = (code) => {
     if (typeof code === "number") process.exitCode = code;

@@ -11,7 +11,7 @@
   "files": [
     "dist/",
     "src/",
-    "lynx.config.ts",
+    "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
   "type": "module",
@@ -19,10 +19,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run catalog && rspeedy build",
+    "build": "npm run catalog && rsbuild build",
     "catalog": "genui-cli a2ui generate catalog --source src/catalog --out-dir src/catalog",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "@lynx-js/genui": "0.4.0",
@@ -34,8 +34,9 @@
     "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "^2.0.0",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },

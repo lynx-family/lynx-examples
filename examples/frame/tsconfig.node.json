@@ -14,5 +14,5 @@
 
     "noEmit": true
   },
-  "include": ["./lynx.config.ts"]
+  "include": ["./rsbuild.config.ts"]
 }

@@ -12,5 +12,5 @@
     "types": ["@lynx-js/types"],
     "noEmit": true,
   },
-  "include": ["src", "lynx.config.mjs"],
+  "include": ["src", "rsbuild.config.mjs"],
 }
