@@ -23,9 +23,9 @@ const env = {
     : {}),
 };
 
-const rspeedy = process.platform === "win32" ? "rspeedy.cmd" : "rspeedy";
+const rsbuild = process.platform === "win32" ? "rsbuild.cmd" : "rsbuild";
 
-const start = (config, stdio) => spawn(rspeedy, [subcommand, "--config", config], { stdio, env });
+const start = (config, stdio) => spawn(rsbuild, [subcommand, "--config", config], { stdio, env });
 
 const prefix = (stream, label) => {
   const rl = createInterface({ input: stream });
