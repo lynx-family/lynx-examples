@@ -2,7 +2,6 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
@@ -33,13 +32,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    pluginLynx({
-      output: {
-        filename: {
-          bundle: "[name].[platform].bundle",
-        },
-      },
-    }),
     pluginQRCode(),
     pluginReactLynx(),
     pluginTypeCheck(),

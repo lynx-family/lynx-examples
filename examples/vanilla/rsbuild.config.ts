@@ -11,6 +11,9 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  environments: {
+    lynx: {},
+  },
   source: {
     entry: {
       counter: path.join(projectRoot, "src/counter/main-thread.ts"),

@@ -1,5 +1,4 @@
 import { type Config as LynxConfig, pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
-import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
@@ -18,13 +17,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    pluginLynx({
-      output: {
-        filename: {
-          bundle: "[name].[platform].bundle",
-        },
-      },
-    }),
     pluginLynxConfig(
       {
         alignMouseEventWithW3C: true,

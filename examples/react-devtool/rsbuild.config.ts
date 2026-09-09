@@ -1,4 +1,3 @@
-import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 
 import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
@@ -12,13 +11,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    pluginLynx({
-      output: {
-        filename: {
-          bundle: "[name].[platform].bundle",
-        },
-      },
-    }),
     pluginQRCode(),
     pluginReactLynx({
       enableNewGesture: true,

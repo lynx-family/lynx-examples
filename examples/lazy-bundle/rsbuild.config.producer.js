@@ -9,6 +9,9 @@ import { detectLanHost, distRoot, fetchBundle, producerBaseUrl, producerDevPort 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  environments: {
+    lynx: {},
+  },
   source: {
     entry: {
       MyLazyBundle: "./src/MyLazyBundle.tsx",

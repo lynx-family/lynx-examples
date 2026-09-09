@@ -1,4 +1,3 @@
-import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
@@ -6,6 +5,9 @@ import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 
 export default defineConfig({
+  environments: {
+    lynx: {},
+  },
   source: {
     entry: {
       "ref-background": "./src/ref-background/index.tsx",
@@ -15,15 +17,7 @@ export default defineConfig({
       "event-main-thread": "./src/event-main-thread/index.tsx",
     },
   },
-  output: {},
   plugins: [
-    pluginLynx({
-      output: {
-        filename: {
-          bundle: "[name].[platform].bundle",
-        },
-      },
-    }),
     pluginQRCode(),
     pluginReactLynx(),
     pluginTypeCheck(),

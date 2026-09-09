@@ -7,6 +7,9 @@ import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
 import { distRoot, fetchBundle, producerBaseUrl, producerDevPort } from "./demo-config.js";
 
 export default defineConfig({
+  environments: {
+    lynx: {},
+  },
   source: {
     entry: {
       // Two ways to load the same `src/MyLazyBundle.tsx`:
