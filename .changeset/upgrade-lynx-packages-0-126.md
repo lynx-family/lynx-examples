@@ -62,7 +62,7 @@
 "@lynx-example/viewpager": patch
 "@lynx-example/webassembly": patch
 "@lynx-example/webview": patch
-"@lynx-example/with-rsbuild": patch
+"@lynx-example/with-rspeedy": patch
 "@lynx-example/with-solidjs": patch
 "@lynx-example/zustand": patch
 ---

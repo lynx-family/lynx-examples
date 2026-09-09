@@ -1,31 +1,31 @@
 {
-  "name": "@lynx-example/with-rsbuild",
+  "name": "@lynx-example/with-rspeedy",
   "version": "0.1.0",
   "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
-    "directory": "examples/with-rsbuild"
+    "directory": "examples/with-rspeedy"
   },
   "files": [
     "dist",
     "src",
-    "rsbuild.config.ts",
+    "lynx.config.ts",
     "CHANGELOG.md"
   ],
   "type": "module",
   "scripts": {
-    "build": "rsbuild build",
-    "dev": "rsbuild dev"
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "preview": "rspeedy preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rsbuild-plugin": "catalog:",
+    "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "catalog:",
-    "@rsbuild/core": "^2.0.0",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },
