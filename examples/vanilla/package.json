@@ -33,7 +33,7 @@
     "@lynx-js/types": "catalog:",
     "@lynx-js/vanilla-rsbuild-plugin": "catalog:",
     "@rstest/core": "^0.11.3",
-    "jsdom": "^28.0.0",
+    "jsdom": "^30.0.1",
     "typescript": "~5.9.3"
   },
   "engines": {
