@@ -6,7 +6,12 @@ const memoryHistory = createMemoryHistory({
   initialEntries: ["/"],
 });
 
-const router = createRouter({ routeTree, history: memoryHistory, isServer: false });
+const router = createRouter({
+  routeTree,
+  history: memoryHistory,
+  isServer: false,
+  origin: "http://localhost",
+});
 
 export function App() {
   return <RouterProvider router={router} />;
