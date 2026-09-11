@@ -1,5 +1,11 @@
 # @lynx-example/motion
 
+## 0.2.6
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.2.5
 
 ### Patch Changes

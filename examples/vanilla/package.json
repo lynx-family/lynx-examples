@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/vanilla",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "An example of building Lynx apps with Element PAPI",
   "license": "Apache-2.0",
   "author": "Lynx Authors",

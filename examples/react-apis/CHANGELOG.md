@@ -1,5 +1,11 @@
 # @lynx-example/react-apis
 
+## 0.1.8
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.1.7
 
 ### Patch Changes

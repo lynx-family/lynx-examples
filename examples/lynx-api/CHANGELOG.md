@@ -1,5 +1,11 @@
 # @lynx-example/lynx-api
 
+## 0.1.12
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.1.11
 
 ### Patch Changes

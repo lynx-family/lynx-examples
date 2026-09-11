@@ -1,5 +1,11 @@
 # @lynx-example/frame
 
+## 0.1.7
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.1.6
 
 ### Patch Changes

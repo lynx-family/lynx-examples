@@ -1,5 +1,11 @@
 # @lynx-example/css-api
 
+## 0.10.5
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.10.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @lynx-example/blur-view
 
+## 0.1.5
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.1.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @lynx-example/css-postcss
 
+## 0.1.3
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.1.2
 
 ### Patch Changes

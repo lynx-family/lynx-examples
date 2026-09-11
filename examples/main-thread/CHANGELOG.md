@@ -1,5 +1,11 @@
 # @lynx-example/main-thread
 
+## 0.4.12
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.4.11
 
 ### Patch Changes
