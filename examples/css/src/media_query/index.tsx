@@ -32,6 +32,14 @@ function MediaQueryDemo() {
         <view className="media-query-demo__density">
           <text>High-density display: 2dppx or higher</text>
         </view>
+        <view className="media-query-demo__color-scheme">
+          <text className="media-query-demo__color-scheme-light">
+            Color scheme: prefers-color-scheme: light
+          </text>
+          <text className="media-query-demo__color-scheme-dark">
+            Color scheme: prefers-color-scheme: dark
+          </text>
+        </view>
       </view>
 
       <view className="media-query-demo__panels">

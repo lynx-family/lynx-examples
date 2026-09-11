@@ -64,7 +64,8 @@
 .media-query-demo__regular,
 .media-query-demo__large,
 .media-query-demo__tall,
-.media-query-demo__density {
+.media-query-demo__density,
+.media-query-demo__color-scheme-dark {
   display: none;
 }
 
@@ -141,5 +142,47 @@
 
   .media-query-demo__tall text {
     color: #2271b3;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .media-query-demo {
+    background-color: #111318;
+  }
+
+  .media-query-demo__eyebrow {
+    color: #84adff;
+  }
+
+  .media-query-demo__title,
+  .media-query-demo__panel-title {
+    color: #f9fafb;
+  }
+
+  .media-query-demo__description,
+  .media-query-demo__panel-copy {
+    color: #d0d5dd;
+  }
+
+  .media-query-demo__status,
+  .media-query-demo__panel {
+    border-color: #344054;
+    background-color: #1d212a;
+  }
+
+  .media-query-demo__indicator {
+    background-color: #6ce9a6;
+  }
+
+  .media-query-demo__status text {
+    color: #b2ccff;
+  }
+
+  .media-query-demo__color-scheme-light {
+    display: none;
+  }
+
+  .media-query-demo__color-scheme-dark {
+    display: flex;
   }
 }
