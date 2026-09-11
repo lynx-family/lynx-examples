@@ -2,6 +2,7 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
+import { pluginLynxConfig } from "@lynx-js/config-rsbuild-plugin";
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 import { defineConfig } from "@lynx-js/rspeedy";
@@ -31,6 +32,7 @@ export default defineConfig({
       css_variable_theme: "./src/css_variable_theme",
       class_guide: "./src/class_guide",
       cascade_guide: "./src/cascade_guide",
+      media_query: "./src/media_query/index.tsx",
     },
   },
   output: {
@@ -40,6 +42,9 @@ export default defineConfig({
   plugins: [
     pluginReactLynx({
       defaultDisplayLinear: false,
+    }),
+    pluginLynxConfig({
+      enableCSSRule: true,
     }),
     pluginSass(),
     pluginQRCode(),
