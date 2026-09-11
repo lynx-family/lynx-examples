@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.5.5
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.5.4
 
 ### Patch Changes

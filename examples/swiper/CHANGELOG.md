@@ -1,5 +1,11 @@
 # @lynx-example/swiper
 
+## 0.5.11
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.5.10
 
 ### Patch Changes

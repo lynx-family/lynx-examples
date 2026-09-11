@@ -1,5 +1,12 @@
 # @lynx-example/tanstack-router
 
+## 0.6.13
+
+### Patch Changes
+
+- 8dbd998: Pass `origin` to `createRouter` so `@tanstack/router-core` stops reading `window.origin` on the Lynx main thread.
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.6.12
 
 ### Patch Changes

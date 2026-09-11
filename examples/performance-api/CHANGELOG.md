@@ -1,5 +1,11 @@
 # @lynx-example/performance-api
 
+## 0.7.5
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.7.4
 
 ### Patch Changes

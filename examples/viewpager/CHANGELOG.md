@@ -1,5 +1,11 @@
 # @lynx-example/viewpager
 
+## 0.6.17
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.6.16
 
 ### Patch Changes

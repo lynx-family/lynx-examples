@@ -1,5 +1,11 @@
 # @lynx-example/text-composition
 
+## 0.2.2
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.2.1
 
 ### Patch Changes

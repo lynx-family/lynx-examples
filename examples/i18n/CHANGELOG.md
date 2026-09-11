@@ -1,5 +1,11 @@
 # @lynx-example/i18n
 
+## 0.5.10
+
+### Patch Changes
+
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.5.9
 
 ### Patch Changes
