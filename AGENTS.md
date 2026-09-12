@@ -9,7 +9,7 @@
 ## Workspace layout (pnpm + turbo)
 
 - Monorepo packages are defined in `pnpm-workspace.yaml`: `api/*`, `examples/*`, plus nested workspaces under `examples/web-platform/packages/*` and `examples/with-solidjs/packages/*`.
-- Most examples are standalone packages with `src/`, `lynx.config.ts|mjs`, and scripts `build/dev/preview`.
+- Most examples are standalone packages with `src/`, `rsbuild.config.ts|mjs`, and scripts `build/dev/preview`.
 - Two notable multi-package examples:
   - `examples/web-platform`: container package delegates to `react-container` (dev) and `lynx-project` (build).
   - `examples/with-solidjs`: app package depends on local workspace package `@lynx-js/solid`.
@@ -28,12 +28,12 @@
 ## Release and changeset expectations
 
 - Changesets are required for publishable package changes; follow existing `.changeset/*.md` format.
-- `.changeset/config.json` tracks changes under `src/**`, `lynx.config.ts`, and `lynx.config.mjs`; edits there are what CI uses for change detection.
+- `.changeset/config.json` tracks changes under `src/**`, `rsbuild.config.ts`, `rsbuild.config.mjs`, `lynx.config.ts`, and `lynx.config.mjs`; edits there are what CI uses for change detection.
 - Release flow on `main` uses Changesets Action v2 sub-actions: it creates or updates the version PR when changesets exist; after that PR is merged, it builds and packs publishable packages before publishing the tarballs with npm Trusted Publishing.
 
 ## Repo-specific gotchas
 
 - Pre-commit hook runs `nano-staged`, which runs `dprint fmt` on staged code/docs/json files.
 - `meta-updater --test` fails if `package.json` metadata/order diverges from `.meta-updater/main.mjs` (for example `author` and sorted keys).
-- `examples/external-bundle` must build bundle artifacts first; rely on its package scripts (`build`/`dev`) instead of calling `rspeedy` directly.
+- `examples/external-bundle` must build bundle artifacts first; rely on its package scripts (`build`/`dev`) instead of calling `rsbuild` directly.
 - `examples/web-platform` dev workflow is ordered: build Lynx package first, then start React container (as documented in `examples/web-platform/README.md`).

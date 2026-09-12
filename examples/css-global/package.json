@@ -12,7 +12,7 @@
   "files": [
     "dist/",
     "src/",
-    "lynx.config.ts",
+    "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
   "type": "module",
@@ -20,9 +20,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "build": "rsbuild build",
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
@@ -30,8 +30,9 @@
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "catalog:",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },

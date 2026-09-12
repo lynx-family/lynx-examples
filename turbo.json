@@ -8,6 +8,8 @@
         "src",
         "lynx.config.ts",
         "lynx.config.mjs",
+        "rsbuild.config.ts",
+        "rsbuild.config.mjs",
         "tsconfig.json"
       ],
       "outputs": [
