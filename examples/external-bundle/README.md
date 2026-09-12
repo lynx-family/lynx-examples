@@ -14,13 +14,13 @@ transforms.
 | `./utils`        | `utils.rslib.config.js`           | `utils`                               | Layer declarations only | Synchronous    | Load business logic only in the background thread                   |
 | `./components`   | `comp.rslib.config.js`            | `component`, `component__main-thread` | `pluginReactLynx`       | Asynchronous   | Ship ReactLynx components and their CSS in a separate bundle        |
 
-The `pluginReactLynx()` call in `lynx.config.mjs` is still required because the
+The `pluginReactLynx()` call in `rsbuild.config.mjs` is still required because the
 consumer application is written with ReactLynx. The lodash and utils producer
 configs do not depend on that plugin.
 
 ## ReactLynx runtime preset
 
-The consumer enables the built-in preset in `lynx.config.mjs`:
+The consumer enables the built-in preset in `rsbuild.config.mjs`:
 
 ```js
 pluginExternalBundle({

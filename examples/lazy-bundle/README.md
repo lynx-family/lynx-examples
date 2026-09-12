@@ -7,13 +7,13 @@ This example loads the same lazy component, `src/MyLazyBundle.tsx`, in the two w
 | `main`       | `dist/main.lynx.bundle`       | Code-split out of this build by the bundler, via `import("./MyLazyBundle.jsx")`                     |
 | `standalone` | `dist/standalone.lynx.bundle` | Fetched at runtime by URL from a separate build, via `import(url, { with: { type: "component" } })` |
 
-The standalone variant is built by `lynx.config.producer.js`, which compiles `src/MyLazyBundle.tsx` as its own entry with `pluginReactLynx({ experimental_isLazyBundle: true })` into `dist/producer/`.
+The standalone variant is built by `rsbuild.config.producer.js`, which compiles `src/MyLazyBundle.tsx` as its own entry with `pluginReactLynx({ experimental_isLazyBundle: true })` into `dist/producer/`.
 
 ## Keeping the lazy bundle URL stable
 
 The code-split lazy bundle URL is baked into `main.lynx.bundle`. By default its filename carries a hash (`async/src/MyLazyBundle.tsx.<hash>.bundle`), which changes whenever the component changes — so anything pinning that URL has to be updated on every release.
 
-`lynx.config.ts` drops the hash by passing a function to `output.filename.bundle`, which controls the main bundle and the lazy bundles separately:
+`rsbuild.config.ts` drops the hash by passing a function to `output.filename.bundle`, which controls the main bundle and the lazy bundles separately:
 
 ```ts
 filename: {
