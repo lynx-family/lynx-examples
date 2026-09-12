@@ -1,5 +1,6 @@
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 import { tanstackRouter } from "@tanstack/router-plugin/rspack";
 import { createRequire } from "node:module";
@@ -13,6 +14,13 @@ export default defineConfig({
     },
   },
   plugins: [
+    pluginLynx({
+      output: {
+        filename: {
+          bundle: "[name].[platform].bundle",
+        },
+      },
+    }),
     pluginReactLynx(),
     pluginQRCode({
       schema(url) {

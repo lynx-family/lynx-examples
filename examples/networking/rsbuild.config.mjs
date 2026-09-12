@@ -4,6 +4,7 @@
 
 import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 import { pluginSass } from "@rsbuild/plugin-sass";
 import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
@@ -20,6 +21,13 @@ export default defineConfig({
     assetPrefix: "https://lynxjs.org/lynx-examples/networking/dist",
   },
   plugins: [
+    pluginLynx({
+      output: {
+        filename: {
+          bundle: "[name].[platform].bundle",
+        },
+      },
+    }),
     pluginReactLynx({
       defaultDisplayLinear: false,
     }),
