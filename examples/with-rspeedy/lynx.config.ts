@@ -8,5 +8,6 @@ export default defineConfig({
   ],
   output: {
     dataUriLimit: Infinity,
+    filename: "[name].[platform].bundle",
   },
 });
