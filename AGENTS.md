@@ -35,5 +35,5 @@
 
 - Pre-commit hook runs `nano-staged`, which runs `dprint fmt` on staged code/docs/json files.
 - `meta-updater --test` fails if `package.json` metadata/order diverges from `.meta-updater/main.mjs` (for example `author` and sorted keys).
-- `examples/external-bundle` must build bundle artifacts first; rely on its package scripts (`build`/`dev`) instead of calling `rspeedy` directly.
+- `examples/external-bundle` must build bundle artifacts first; rely on its package scripts (`build`/`dev`) instead of calling `rsbuild` directly.
 - `examples/web-platform` dev workflow is ordered: build Lynx package first, then start React container (as documented in `examples/web-platform/README.md`).

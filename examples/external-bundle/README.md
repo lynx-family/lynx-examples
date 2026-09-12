@@ -97,7 +97,7 @@ From the repository root:
 pnpm --filter @lynx-example/external-bundle run dev
 ```
 
-The package builds all external bundles before starting Rspeedy. To create a
+The package builds all external bundles before starting Rsbuild. To create a
 production build:
 
 ```bash
@@ -110,7 +110,7 @@ The build has two output stages:
 2. `pluginExternalBundle` emits those managed assets with the application into
    `dist/`.
 
-Use the package scripts instead of invoking Rspeedy directly. The
+Use the package scripts instead of invoking Rsbuild directly. The
 `build:bundle` script cleans `dist-external-bundle/` once and then runs the
 individual bundle builds in parallel with `cleanDistPath: false`, preventing
 one producer from deleting another producer's output.

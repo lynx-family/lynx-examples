@@ -32,7 +32,7 @@ https://unpkg.com/@lynx-example/lazy-bundle@<version>/dist/producer/MyLazyBundle
 
 ## Loader variants: QueryComponent and FetchBundle
 
-The engine has two ways of loading a lazy bundle, selected by `engineVersion`. The sources are identical; only the config differs, so each variant gets its own output root — Rspeedy cleans the output directory before every build, and the second pass would otherwise wipe the first.
+The engine has two ways of loading a lazy bundle, selected by `engineVersion`. The sources are identical; only the config differs, so each variant gets its own output root — Rsbuild cleans the output directory before every build, and the second pass would otherwise wipe the first.
 
 | Variant                  | `engineVersion`        | Output root         |
 | ------------------------ | ---------------------- | ------------------- |

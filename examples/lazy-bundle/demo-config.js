@@ -13,7 +13,7 @@ export const producerDevPort = Number(
 export const fetchBundle = !!process.env["LAZY_BUNDLE_FETCHBUNDLE"];
 
 /**
- * Each loader variant needs its own output root: Rspeedy cleans the output
+ * Each loader variant needs its own output root: Rsbuild cleans the output
  * directory before every build, so `pnpm build`'s second pass would otherwise
  * wipe the first one's artifacts.
  */

@@ -1,6 +1,6 @@
-## Rspeedy project
+## ReactLynx project
 
-This is a ReactLynx project bootstrapped with `create-rspeedy`.
+This is a ReactLynx project bootstrapped with `@lynx-js/create-lynx`.
 
 ## Getting Started
 
