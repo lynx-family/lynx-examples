@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["@lynx-js/types"],
+    "types": ["@lynx-js/types", "@rsbuild/core/types"],
   },
   "include": ["src"],
 }

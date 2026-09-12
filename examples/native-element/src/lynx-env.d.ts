@@ -1,5 +1,3 @@
-/// <reference types="@rsbuild/core/types" />
-
 import * as ReactLynx from "@lynx-js/react";
 import * as Lynx from "@lynx-js/types";
 

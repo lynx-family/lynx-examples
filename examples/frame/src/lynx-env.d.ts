@@ -1,5 +1,3 @@
-/// <reference types="@rsbuild/core/types" />
-
 declare module "@lynx-js/types" {
   interface GlobalProps {
     message: string;

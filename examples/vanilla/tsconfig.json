@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["@rsbuild/core/types"],
     "allowJs": true,
     "isolatedModules": true,
     "lib": ["ES2022"],
