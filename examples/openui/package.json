@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@lynx-js/genui": "0.4.0",
-    "@lynx-js/lynx-ui": "3.137.0",
+    "@lynx-js/lynx-ui": "3.138.0",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {

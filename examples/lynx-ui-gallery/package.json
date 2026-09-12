@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@lynx-js/luna-styles": "0.2.2",
-    "@lynx-js/lynx-ui": "3.137.0",
+    "@lynx-js/lynx-ui": "3.138.0",
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
