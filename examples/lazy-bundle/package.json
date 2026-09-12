@@ -13,7 +13,7 @@
     "src/",
     "scripts/",
     "rsbuild.config.ts",
-    "rsbuild.config.ts.js",
+    "rsbuild.config.producer.js",
     "demo-config.js",
     "CHANGELOG.md"
   ],
