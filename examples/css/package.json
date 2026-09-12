@@ -26,6 +26,7 @@
     "@lynx-js/react": "catalog:"
   },
   "devDependencies": {
+    "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
     "@lynx-js/rsbuild-plugin": "catalog:",
