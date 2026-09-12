@@ -36,6 +36,7 @@ catalog:
   "@lynx-js/vanilla-rsbuild-plugin": "0.1.1"
   "@lynx-js/runtime-wrapper-webpack-plugin": "0.2.4"
   "@lynx-js/config-rsbuild-plugin": "0.2.3"
+  "@rsbuild/core": "2.1.6"
   "@rsbuild/plugin-sass": "2.0.1"
 
 minimumReleaseAgeExclude:
