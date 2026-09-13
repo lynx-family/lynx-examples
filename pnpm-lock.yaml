@@ -80,6 +80,9 @@ importers:
       turbo:
         specifier: ^2.8.13
         version: 2.9.14
+      yaml:
+        specifier: ^2.9.0
+        version: 2.9.0
 
   api/css:
     dependencies:

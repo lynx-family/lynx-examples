@@ -146,6 +146,9 @@ dist
 # Turborepo
 .turbo/
 
+# npm Trusted Publishing bootstrap output
+tools/bootstrap-package/output/
+
 # macOS
 .DS_Store
 

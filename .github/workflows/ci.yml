@@ -13,7 +13,10 @@ concurrency:
 
 jobs:
   test:
+    name: test
     runs-on: lynx-ubuntu-24.04-xlarge
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -34,6 +37,12 @@ jobs:
           pnpm meta-updater --test
           pnpm dprint check
           pnpm changeset status --verbose --since $CHANGESET_BASE_SHA
+      - name: Test Repository Tooling
+        run: pnpm test
+      - name: Check New Publishable Packages
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node .github/scripts/check-new-packages.mjs --base "$BASE_SHA"
       - name: Build
         env:
           TURBO_SCM_BASE: ${{ github.event.pull_request.base.sha }}
@@ -74,3 +83,16 @@ jobs:
         env:
           PACKAGE_DIRS: ${{ steps.changeset.outputs.package-dirs }}
         run: pnpm dlx pkg-pr-new publish --compact --pnpm $PACKAGE_DIRS
+  # Branch protection requires Done as the aggregate status. Add every new
+  # required CI job to needs so its result cannot bypass this gate.
+  done:
+    name: Done
+    needs:
+      - test
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Fail If Any Job Did Not Succeed
+        if: ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'skipped') || contains(needs.*.result, 'cancelled') }}
+        run: exit 1
