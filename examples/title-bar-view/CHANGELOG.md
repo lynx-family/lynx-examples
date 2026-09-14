@@ -1,5 +1,12 @@
 # @lynx-example/title-bar-view
 
+## 0.6.16
+
+### Patch Changes
+
+- 1553efd: Build with Rsbuild and `pluginLynx` instead of Rspeedy. The entry keeps its `main` name, so the artifact names are unchanged.
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.6.15
 
 ### Patch Changes
