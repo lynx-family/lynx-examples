@@ -1,26 +1,26 @@
 {
   "name": "@lynx-example/7guis",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "description": "7 GUIs benchmark — Counter, Temperature Converter, Flight Booker, Timer, CRUD, Circle Drawer, Cells",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/7guis"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist",
     "src",
-    "lynx.config.ts",
+    "rsbuild.config.ts",
     "tsconfig.json",
     "CHANGELOG.md"
   ],
+  "type": "module",
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev"
+    "build": "rsbuild build",
+    "dev": "rsbuild dev"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
@@ -28,8 +28,8 @@
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "catalog:",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },

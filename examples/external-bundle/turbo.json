@@ -1,12 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "extends": ["//"],
+  "extends": [
+    "//"
+  ],
   "tasks": {
     "build": {
-      "dependsOn": ["build:bundle"]
+      "dependsOn": [
+        "build:bundle"
+      ]
     },
     "build:bundle": {
-      "dependsOn": ["build:bundle:lodash", "build:bundle:react", "build:bundle:comp", "build:bundle:utils"],
+      "dependsOn": [
+        "build:bundle:lodash",
+        "build:bundle:comp",
+        "build:bundle:utils"
+      ],
       "outputs": []
     },
     "build:bundle:lodash": {
@@ -16,15 +24,6 @@
       ],
       "outputs": [
         "dist/lodash-es.lynx.bundle"
-      ]
-    },
-    "build:bundle:react": {
-      "inputs": [
-        "react.rslib.config.js",
-        "node_modules/@lynx-js/react/**"
-      ],
-      "outputs": [
-        "dist/react.lynx.bundle"
       ]
     },
     "build:bundle:comp": {

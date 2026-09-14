@@ -1,42 +1,43 @@
 {
   "name": "@lynx-example/vanilla",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "An example of building Lynx apps with Element PAPI",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/vanilla"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist",
     "src",
-    "lynx.config.ts"
+    "rsbuild.config.ts"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview",
+    "build": "rsbuild build",
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview",
     "test": "rstest run"
   },
   "devDependencies": {
     "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
-    "@lynx-js/testing-environment": "npm:@lynx-js/testing-environment-canary@0.3.2-canary-20260803-5a891c73",
+    "@lynx-js/rsbuild-plugin": "catalog:",
+    "@lynx-js/testing-environment": "catalog:",
     "@lynx-js/type-element-api": "catalog:",
     "@lynx-js/types": "catalog:",
     "@lynx-js/vanilla-rsbuild-plugin": "catalog:",
+    "@rsbuild/core": "catalog:",
     "@rstest/core": "^0.11.3",
     "jsdom": "^28.0.0",
     "typescript": "~5.9.3"
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

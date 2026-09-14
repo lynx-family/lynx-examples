@@ -1,16 +1,5 @@
-import { defineExternalBundleRslibConfig } from "@lynx-js/lynx-bundle-rslib-config";
-
-const LAYERS = {
-  BACKGROUND: "rslib:background",
-  MAIN_THREAD: "rslib:main-thread",
-};
-
-const pluginRslibLayers = () => ({
-  name: "example:rslib-layers",
-  setup(api) {
-    api.expose(Symbol.for("LAYERS"), LAYERS);
-  },
-});
+import { defineExternalBundleRslibConfig, LAYERS } from "@lynx-js/lynx-bundle-rslib-config";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 
 export default defineExternalBundleRslibConfig({
   id: "utils",
@@ -22,9 +11,10 @@ export default defineExternalBundleRslibConfig({
       },
     },
   },
-  plugins: [
-    pluginRslibLayers(),
-  ],
+  plugins: [pluginLynx()],
+  performance: {
+    buildCache: false,
+  },
   output: {
     cleanDistPath: false,
     distPath: {

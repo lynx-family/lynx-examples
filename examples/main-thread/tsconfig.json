@@ -2,6 +2,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "@lynx-js/react",
+    "types": ["@rsbuild/core/types"],
 
     "module": "nodenext",
     "moduleResolution": "nodenext",

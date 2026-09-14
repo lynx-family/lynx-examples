@@ -1,25 +1,28 @@
 {
   "name": "@lynx-example/css-global",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An example shows how to use global CSS in Lynx",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/css-global"
   },
-  "license": "Apache-2.0",
-  "author": "Lynx Authors",
-  "type": "module",
   "files": [
     "dist/",
     "src/",
-    "lynx.config.ts",
+    "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "build": "rsbuild build",
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "@lynx-js/react": "catalog:"
@@ -27,15 +30,13 @@
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "catalog:",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

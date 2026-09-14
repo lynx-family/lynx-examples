@@ -1,5 +1,11 @@
 # @lynx-example/i18n
 
+## 0.5.9
+
+### Patch Changes
+
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+
 ## 0.5.8
 
 ### Patch Changes

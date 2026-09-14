@@ -2,7 +2,6 @@
 
 import { createUpdateOptions } from "@pnpm/meta-updater";
 import path from "node:path";
-import { sortPackageJson } from "sort-package-json";
 
 const REPOSITORY_TYPE = "git";
 const REPOSITORY_URL = "git+https://github.com/lynx-family/lynx-examples.git";
@@ -54,7 +53,7 @@ const normalizeRepository = (repository, dirOrOptions, workspaceDir) => {
 export default (workspaceDir) => {
   return createUpdateOptions({
     "package.json": (manifest, options) => {
-      return sortPackageJson({
+      return {
         ...manifest,
         author: "Lynx Authors",
         repository: normalizeRepository(
@@ -62,7 +61,7 @@ export default (workspaceDir) => {
           options,
           workspaceDir,
         ),
-      });
+      };
     },
   });
 };

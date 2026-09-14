@@ -1,5 +1,13 @@
 # @lynx-example/react-devtool
 
+## 0.2.5
+
+### Patch Changes
+
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+- Updated dependencies [39c8c27]
+  - @lynx-example/lynx-ui-gallery@0.2.3
+
 ## 0.2.4
 
 ### Patch Changes

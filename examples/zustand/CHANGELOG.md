@@ -1,5 +1,11 @@
 # @lynx-example/zustand
 
+## 0.6.9
+
+### Patch Changes
+
+- 39c8c27: Upgrade Lynx packages to the latest release and move the remaining canary pins onto the catalog.
+
 ## 0.6.8
 
 ### Patch Changes
