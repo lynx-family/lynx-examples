@@ -50,9 +50,9 @@ Options:
   -h, --help     Show this help
 
 Examples:
-  pnpm bootstrap:package examples/with-rsbuild
-  pnpm bootstrap:package examples/with-rsbuild --dry-run
-  pnpm bootstrap:package examples/with-rsbuild --force
+  pnpm bootstrap:package examples/hello-world
+  pnpm bootstrap:package examples/hello-world --dry-run
+  pnpm bootstrap:package examples/hello-world --force
 `.trimStart();
 
 function parseArguments() {
