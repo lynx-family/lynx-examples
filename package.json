@@ -10,8 +10,10 @@
     "url": "git+https://github.com/lynx-family/lynx-examples.git"
   },
   "scripts": {
+    "bootstrap:package": "node tools/bootstrap-package/index.mjs",
     "build": "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE=false turbo run build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "node --test tools/*/*.test.mjs .github/scripts/*.test.mjs"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.0",
@@ -20,7 +22,8 @@
     "dprint": "^0.57.1",
     "husky": "^9.1.7",
     "nano-staged": "^1.0.2",
-    "turbo": "^2.8.13"
+    "turbo": "^2.8.13",
+    "yaml": "^2.9.0"
   },
   "nano-staged": {
     "*.{css,scss,js,jsx,ts,tsx,mjs,cjs,json,jsonc,md}": [
