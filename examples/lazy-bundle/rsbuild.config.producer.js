@@ -2,6 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
 import { defineConfig } from "@rsbuild/core";
 
 import { detectLanHost, distRoot, fetchBundle, producerBaseUrl, producerDevPort } from "./demo-config.js";
@@ -31,6 +32,13 @@ export default defineConfig({
     strictPort: true,
   },
   plugins: [
+    pluginLynx({
+      output: {
+        filename: {
+          bundle: "[name].[platform].bundle",
+        },
+      },
+    }),
     pluginReactLynx({
       experimental_isLazyBundle: true,
       ...(fetchBundle ? { engineVersion: "3.9" } : {}),
