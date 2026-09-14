@@ -1,5 +1,12 @@
 # @lynx-example/element-manipulation
 
+## 0.6.11
+
+### Patch Changes
+
+- 1553efd: Build with Rsbuild and `pluginLynx` instead of Rspeedy. The entry keeps its `main` name, so the artifact names are unchanged.
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.6.10
 
 ### Patch Changes

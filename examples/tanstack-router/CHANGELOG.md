@@ -1,5 +1,13 @@
 # @lynx-example/tanstack-router
 
+## 0.6.13
+
+### Patch Changes
+
+- 1553efd: Build with Rsbuild and `pluginLynx` instead of Rspeedy. The entry keeps its `main` name, so the artifact names are unchanged.
+- 8dbd998: Pass `origin` to `createRouter` so `@tanstack/router-core` stops reading `window.origin` on the Lynx main thread.
+- 1553efd: Upgrade the Lynx dependencies to their latest releases.
+
 ## 0.6.12
 
 ### Patch Changes

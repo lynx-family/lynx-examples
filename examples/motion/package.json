@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/motion",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Examples for @lynx-js/motion and @lynx-js/motion/mini",
   "license": "Apache-2.0",
   "author": "Lynx Authors",
