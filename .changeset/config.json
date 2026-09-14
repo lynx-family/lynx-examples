@@ -10,6 +10,8 @@
   },
   "changedFilePatterns": [
     "src/**",
+    "rsbuild.config.ts",
+    "rsbuild.config.mjs",
     "lynx.config.ts",
     "lynx.config.mjs"
   ],

@@ -53,7 +53,7 @@ The build outputs `dist/counter.bundle`, `dist/event-card.bundle`, `dist/product
 - `src/product-card`: standalone main-thread product card entry and styles.
 - `src/todolist`: double-thread todo list entry, background event logic, types, and styles.
 - `src/weather-card`: standalone main-thread weather card entry and styles.
-- `lynx.config.ts`: configures Rspeedy and `@lynx-js/vanilla-rsbuild-plugin` for main-thread bundles, optional background bundles, CSS, and Lynx template encoding.
+- `rsbuild.config.ts`: configures Rsbuild and `@lynx-js/vanilla-rsbuild-plugin` for main-thread bundles, optional background bundles, CSS, and Lynx template encoding.
 
 ## Shared Helpers
 

@@ -2,6 +2,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "@lynx-js/react",
+    "types": ["@rsbuild/core/types"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ESNext",
@@ -12,7 +13,7 @@
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    // lynx.config.ts imports demo-config.js; infer its types instead of
+    // rsbuild.config.ts imports demo-config.js; infer its types instead of
     // treating the module as untyped, but do not type-check the JS itself.
     "allowJs": true,
     "checkJs": false,

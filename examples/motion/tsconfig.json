@@ -9,8 +9,8 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["@lynx-js/types"],
+    "types": ["@lynx-js/types", "@rsbuild/core/types"],
     "noEmit": true,
   },
-  "include": ["src", "lynx.config.mjs"],
+  "include": ["src", "rsbuild.config.mjs"],
 }

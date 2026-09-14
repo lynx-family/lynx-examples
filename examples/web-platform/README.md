@@ -2,7 +2,7 @@
 
 This is a pnpm workspace project, consisting of two packages:
 
-- lynx-project: a ReactLynx project bootstrapped with `create-rspeedy`.
+- lynx-project: a ReactLynx project bootstrapped with `@lynx-js/create-lynx`.
 - react-container: a React project bootstrapped with `create-rsbuild`.
 
 ## Getting Started

@@ -13,6 +13,9 @@ export default defineExternalBundleRslibConfig({
     },
   },
   plugins: [pluginLynx()],
+  performance: {
+    buildCache: false,
+  },
   output: {
     cleanDistPath: false,
     distPath: {

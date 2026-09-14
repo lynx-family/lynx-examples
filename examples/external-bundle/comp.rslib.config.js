@@ -11,6 +11,9 @@ export default defineExternalBundleRslibConfig({
   plugins: [
     pluginReactLynx(),
   ],
+  performance: {
+    buildCache: false,
+  },
   output: {
     cleanDistPath: false,
     distPath: {

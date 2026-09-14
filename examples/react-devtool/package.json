@@ -11,7 +11,7 @@
   "files": [
     "dist/",
     "src/",
-    "lynx.config.ts",
+    "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
   "type": "module",
@@ -19,14 +19,14 @@
     "access": "public"
   },
   "scripts": {
-    "build": "REACT_DEVTOOL=true rspeedy build",
-    "dev": "rspeedy dev",
-    "preview": "rspeedy preview"
+    "build": "REACT_DEVTOOL=true rsbuild build",
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "@lynx-example/lynx-ui-gallery": "workspace:*",
     "@lynx-js/luna-styles": "0.2.2",
-    "@lynx-js/lynx-ui": "3.137.0",
+    "@lynx-js/lynx-ui": "3.138.0",
     "@lynx-js/preact-devtools": "5.0.1-20260827072047-5f77e12",
     "@lynx-js/react": "catalog:"
   },
@@ -34,8 +34,9 @@
     "@lynx-js/config-rsbuild-plugin": "catalog:",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
     "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rspeedy": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
     "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "catalog:",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },
