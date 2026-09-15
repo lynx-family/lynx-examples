@@ -46,13 +46,8 @@ names and checks params, and a screen reads its own params through
 `lynx-screens` publish TypeScript sources, so they are compiled by this app's
 config, and they use `Map`, `Set` and `Object.fromEntries`.
 
-Two things in `lynx.config.mjs` are not optional.
-
-`@react-navigation/core` is written against React, so `react` has to be aliased
-onto the compat layer that `@react-navigation/lynx` ships. It fills in what
-ReactLynx does not have yet — `use`, `useInsertionEffect`, `startTransition`.
-
-`@react-navigation/lynx` and `lynx-screens` publish TypeScript sources rather
-than compiled output, and `@react-navigation/core`'s published bundle uses
-`??=`, which the main thread's compiler cannot parse. All three go through
-`source.include` so they are transpiled with the app.
+One thing in `rsbuild.config.mjs` is not optional: `@react-navigation/core` is
+written against React, so `react` has to be aliased onto ReactLynx's compat
+entry, `@lynx-js/react/compat`. It adds `use`, `useInsertionEffect` and
+`startTransition` on top of the core API; `use` needs `@lynx-js/react` 0.126.1
+or later to work on the main thread.

@@ -1,0 +1,37 @@
+import { defineConfig } from "@rsbuild/core";
+import { createRequire } from "node:module";
+
+import { pluginQRCode } from "@lynx-js/qrcode-rsbuild-plugin";
+import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
+import { pluginLynx } from "@lynx-js/rsbuild-plugin";
+import { pluginTypeCheck } from "@rsbuild/plugin-type-check";
+
+const require = createRequire(import.meta.url);
+
+export default defineConfig({
+  source: {
+    entry: {
+      main: "./src/index.tsx",
+    },
+  },
+  resolve: {
+    alias: {
+      react$: require.resolve("@lynx-js/react/compat"),
+    },
+  },
+  plugins: [
+    pluginLynx({
+      output: {
+        filename: {
+          bundle: "[name].[platform].bundle",
+        },
+      },
+    }),
+    pluginQRCode(),
+    pluginReactLynx(),
+    pluginTypeCheck(),
+  ],
+  environments: {
+    lynx: {},
+  },
+});
