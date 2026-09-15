@@ -11,7 +11,7 @@
   },
   "scripts": {
     "bootstrap:package": "node tools/bootstrap-package/index.mjs",
-    "build": "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE=false turbo run build",
+    "build": "turbo run build",
     "prepare": "husky",
     "test": "node --test tools/*/*.test.mjs .github/scripts/*.test.mjs"
   },
