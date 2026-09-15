@@ -12,7 +12,7 @@
   "files": [
     "dist/",
     "src/",
-    "rsbuild.config.mjs",
+    "rsbuild.config.ts",
     "CHANGELOG.md"
   ],
   "type": "module",

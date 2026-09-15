@@ -46,7 +46,7 @@ names and checks params, and a screen reads its own params through
 `lynx-screens` publish TypeScript sources, so they are compiled by this app's
 config, and they use `Map`, `Set` and `Object.fromEntries`.
 
-One thing in `rsbuild.config.mjs` is not optional: `@react-navigation/core` is
+One thing in `rsbuild.config.ts` is not optional: `@react-navigation/core` is
 written against React, so `react` has to be aliased onto ReactLynx's compat
 entry, `@lynx-js/react/compat`. It adds `use`, `useInsertionEffect` and
 `startTransition` on top of the core API; `use` needs `@lynx-js/react` 0.126.1
