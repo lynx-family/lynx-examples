@@ -15,9 +15,6 @@
       "outputs": [
         "dist"
       ],
-      "env": [
-        "EXPERIMENTAL_USE_WEB_BINARY_TEMPLATE"
-      ],
       "passThroughEnv": [
         "NODE_OPTIONS"
       ]
