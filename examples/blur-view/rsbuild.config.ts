@@ -20,7 +20,11 @@ export default defineConfig({
         },
       },
     }),
-    pluginQRCode(),
+    pluginQRCode({
+      schema(url) {
+        return `${url}?fullscreen=true`;
+      },
+    }),
     pluginReactLynx(),
     pluginTypeCheck(),
   ],
