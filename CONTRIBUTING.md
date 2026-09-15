@@ -13,6 +13,8 @@ Thank you for your interest in contributing to Lynx Examples! Contributions are 
   - [Creating a New Example](#creating-a-new-example)
 - [Contribution Guidelines](#contribution-guidelines)
   - [Pull Requests](#pull-requests)
+  - [Merge Requirements](#merge-requirements)
+  - [Commits](#commits)
   - [Code Style](#code-style)
 - [Project Structure](#project-structure)
 - [Publishing a New Package](#publishing-a-new-package)
@@ -90,6 +92,37 @@ pnpm --filter css run dev
 3. Add or update tests if necessary
 4. Ensure your code passes all tests and builds successfully
 5. Submit a pull request with a clear description of the changes
+
+### Merge Requirements
+
+> **Important**
+>
+> This repository has enabled GitHub's **Require branches to be up to date
+> before merging** setting. Do not merge an out-of-date branch. Update it with
+> the latest `main` and wait for all required checks to pass again. This
+> repository builds the entire workspace together, so shared dependencies and
+> build configuration can affect packages outside the files changed by a pull
+> request.
+
+### Commits
+
+- Follow [Conventional Commits] for commit subjects
+- Keep the subject focused, and limit every commit message line to 72
+  characters
+- Use concise, direct English
+- Use the body to explain what changed, why it was needed, and how it was
+  verified or affects users. Use clear paragraphs or bullets; fixed subsection
+  headings are not required
+- Use optional footers in the following form:
+
+```text
+issue: #12345
+doc: `https://example.com`
+TEST: Relevant test cases
+```
+
+Use lowercase `issue` and `doc`. Summarize verification in one concise `TEST`
+footer; do not list every command as a separate footer.
 
 ### Code Style
 
@@ -178,4 +211,5 @@ Trusted Publisher setup are complete.
 
 Thank you for contributing to Lynx Examples!
 
+[Conventional Commits]: https://www.conventionalcommits.org/
 [npm Trusted Publisher]: https://docs.npmjs.com/trusted-publishers

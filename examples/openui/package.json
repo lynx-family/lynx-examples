@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/openui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An example shows how to render streaming OpenUI responses in Lynx",
   "license": "Apache-2.0",
   "author": "Lynx Authors",
