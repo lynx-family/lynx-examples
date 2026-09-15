@@ -43,3 +43,5 @@ minimumReleaseAgeExclude:
   - "@lynx-js/*"
   - "@dprint/*"
   - dprint@0.57.1
+  - "@react-navigation/lynx@0.4.2"
+  - lynx-screens@0.1.0-alpha.1
