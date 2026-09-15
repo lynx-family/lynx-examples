@@ -23,7 +23,7 @@
   "devDependencies": {
     "@rsbuild/core": "catalog:",
     "@rsbuild/plugin-react": "2.1.0",
-    "@rsbuild/plugin-type-check": "1.5.0",
+    "@rsbuild/plugin-type-check": "1.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
