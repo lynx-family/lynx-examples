@@ -1,5 +1,13 @@
 # @lynx-example/lynx-api
 
+## 0.2.0
+
+### Minor Changes
+
+- 74c7cb1: Use the binary template for web platform bundle
+
+  Since https://github.com/lynx-family/lynx-website/pull/1235 upgraded the @lynx-js/web-core of the lynx website, now we are able to use the new binary template for web platform.
+
 ## 0.1.12
 
 ### Patch Changes

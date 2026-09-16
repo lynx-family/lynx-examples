@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/bankcards",
-  "version": "0.6.10",
+  "version": "0.7.0",
   "description": "An demo implements bankcards",
   "license": "Apache-2.0",
   "author": "Lynx Authors",

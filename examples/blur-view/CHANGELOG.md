@@ -1,5 +1,18 @@
 # @lynx-example/blur-view
 
+## 0.2.0
+
+### Minor Changes
+
+- 74c7cb1: Use the binary template for web platform bundle
+
+  Since https://github.com/lynx-family/lynx-website/pull/1235 upgraded the @lynx-js/web-core of the lynx website, now we are able to use the new binary template for web platform.
+
+### Patch Changes
+
+- 75294a9: Inline the background image and refresh the blur-view example layouts.
+- 2129c20: Refine the blur-view captions and prevent layout overlap on small screens.
+
 ## 0.1.5
 
 ### Patch Changes
