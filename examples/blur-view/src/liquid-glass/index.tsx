@@ -4,6 +4,7 @@
 
 import { root } from "@lynx-js/react";
 
+import { Caption } from "../components/caption/index.jsx";
 import "../styles.css";
 
 const App = () => {
@@ -29,8 +30,11 @@ const App = () => {
           </blur-view>
         </view>
       </view>
-      <text className="title">Hello Lynx</text>
-      <text className="subtitle">blur-view, Lynx SDK 4.0+</text>
+      <Caption
+        title="Liquid Glass"
+        subtitle="Powered by <blur-view>"
+        footnote="Requires Lynx SDK 4.0+"
+      />
     </view>
   );
 };
