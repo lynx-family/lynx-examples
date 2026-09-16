@@ -28,8 +28,8 @@ repository:
   verified or affects users.
 - The `issue`, `doc`, and `TEST` footers are optional. Keep `issue` and `doc`
   lowercase and `TEST` uppercase.
-- When including `TEST`, use exactly one footer and combine multiple checks on
-  that line with semicolons. Never emit one `TEST` footer per command.
+- When including `TEST`, use exactly one `TEST` footer and combine multiple
+  checks on that line with semicolons. Never emit one `TEST` footer per command.
 
 ## Toolchain and setup
 
@@ -44,6 +44,18 @@ repository:
 - Two notable multi-package examples:
   - `examples/web-platform`: container package delegates to `react-container` (dev) and `lynx-project` (build).
   - `examples/with-solidjs`: app package depends on local workspace package `@lynx-js/solid`.
+
+## Example maintenance
+
+- When adding, removing, or renaming an example, update both the categorized
+  example list and its reference link in the root `README.md` in the same
+  change.
+- When adding local images, fonts, or media, decide explicitly whether each
+  asset should be inlined. Use `?inline` for small assets that must remain
+  self-contained when bundles are relocated. Otherwise, verify that emitted
+  assets are packaged and reachable from the final `output.assetPrefix`. Do
+  not rely on a hard-coded asset prefix for variable or versioned deployment
+  paths.
 
 ## Commands that match CI
 

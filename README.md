@@ -34,9 +34,11 @@ This repository is intended to showcase examples of Lynx.
   - [`animax`]: An example shows how to use `<animax-view>` in Lynx
   - [`svg`]: An example shows how to use svg
   - [`video`]: An example shows how to use `<video>` in Lynx
-  - [`markdown`]: An example show how to use markdown
+  - [`webview`]: An example shows how to use `<x-webview>` in Lynx
+  - [`markdown`]: An example showing how to use Markdown
 - Styling
   - [`animation`]: Examples for using animation
+  - [`motion`]: Examples for `@lynx-js/motion` and `@lynx-js/motion/mini`
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
   - [`css-global`]: An example shows how to use global CSS in Lynx
@@ -55,12 +57,14 @@ This repository is intended to showcase examples of Lynx.
   - [`local-storage`]: An example shows how to use local storage in Lynx
   - [`networking`]: An example shows Lynx networking abilities
   - [`react-lifecycle`]: An example shows ReactLynx lifecycle
+  - [`vanilla`]: An example of building Lynx apps directly with Element PAPI
   - [`webassembly`]: An example shows how to run WebAssembly in Lynx
 - Web Platform
   - [`basic-usage`]: An example shows how to use Lynx Web Platform
 - UI Components
   - [`action-sheet`]: An example shows how to make an ActionSheet
   - [`desktop`]: Desktop-oriented cursor demos with `cursor` and `mouse-cursor` entries
+  - [`lynx-ui-gallery`]: A gallery showcasing Lynx UI components
   - [`swiper`]: An example shows how to use main thread script for interaction
 - A11y
   - [`accessibility`]: An example shows how to make App accessibility
@@ -70,12 +74,18 @@ This repository is intended to showcase examples of Lynx.
 - I18n
   - [`i18n`]: An example shows how to use i18n in Lynx
 - Third-party Integrations
+  - [`a2ui`]: An example shows how to use A2UI in Lynx
   - [`openui`]: An example shows how to render streaming OpenUI responses in Lynx
+  - [`react-navigation`]: An example shows how to use React Navigation in Lynx
   - [`with-solidjs`]: An example shows how to use Lynx with SolidJS
   - [`zustand`]: An example shows how to use zustand in Lynx
   - [`tanstack-router`]: An example shows how to use TanStack Router in Lynx
+- Developer Tooling
+  - [`react-devtool`]: The Lynx UI gallery with Preact DevTools enabled
+  - [`with-rspeedy`]: The hello-world example built with the Rspeedy CLI
 
 [`7guis`]: ./examples/7guis
+[`a2ui`]: ./examples/a2ui
 [`action-sheet`]: ./examples/action-sheet
 [`animax`]: ./examples/animax
 [`animation`]: ./examples/animation
@@ -102,15 +112,20 @@ This repository is intended to showcase examples of Lynx.
 [`list`]: ./examples/list
 [`local-storage`]: ./examples/local-storage
 [`lynx-api`]: ./examples/lynx-api
+[`lynx-ui-gallery`]: ./examples/lynx-ui-gallery
+[`markdown`]: ./examples/markdown
 [`react-apis`]: ./examples/react-apis
 [`main-thread`]: ./examples/main-thread
+[`motion`]: ./examples/motion
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking
 [`overlay`]: ./examples/overlay
 [`openui`]: ./examples/openui
 [`page`]: ./examples/page
 [`performance-apis`]: ./examples/performance-api
+[`react-devtool`]: ./examples/react-devtool
 [`react-lifecycle`]: ./examples/react-lifecycle
+[`react-navigation`]: ./examples/react-navigation
 [`refresh`]: ./examples/refresh
 [`scroll-coordinator`]: ./examples/scroll-coordinator
 [`scroll-view`]: ./examples/scroll-view
@@ -127,42 +142,58 @@ This repository is intended to showcase examples of Lynx.
 [`tutorial-gallery`]: ./examples/Gallery
 [`tutorial-bankcards`]: ./examples/BankCards
 [`composing-elements`]: ./examples/composing-elements
+[`vanilla`]: ./examples/vanilla
 [`view`]: ./examples/view
 [`video`]: ./examples/video
 [`viewpager`]: ./examples/viewpager
 [`basic-usage`]: ./examples/web-platform
+[`with-rspeedy`]: ./examples/with-rspeedy
 [`with-solidjs`]: ./examples/with-solidjs
 [`zustand`]: ./examples/zustand
 [`accessibility`]: ./examples/accessibility
 
 ## How to use
 
-1. First, clone the current repository to your local:
+1. Clone the repository with SSH (recommended after [connecting to GitHub
+   with SSH]):
 
 ```bash
 git clone git@github.com:lynx-family/lynx-examples.git
 ```
 
-2. Then, choose the example you need, such as the image example:
+Alternatively, clone with HTTPS:
 
 ```bash
-cd examples/image
+git clone https://github.com/lynx-family/lynx-examples.git
 ```
 
-3. Install the dependencies using `pnpm` or other package manager, then start the project:
+Then enter the repository root:
 
 ```bash
-# Use corepack to enable pnpm
+cd lynx-examples
+```
+
+2. With Node.js `>=22` installed, enable Corepack and install the workspace
+   dependencies:
+
+```bash
 corepack enable
-pnpm i
-pnpm run dev
+pnpm install
 ```
 
-4. You can fork the current project or copy the code from the current project to use it.
+3. Start an example from the repository root. For example:
+
+```bash
+pnpm --filter @lynx-example/image run dev
+```
+
+See the [contributor guide] for build commands and the full development
+workflow.
 
 ## How to use examples on the lynx-website
 
-1. Publish your example to the npm registry.
+1. Ensure the example has been published to the npm registry. Maintainers
+   adding a new package must follow the [package publishing guide].
 
 2. Go to the project "packages/lynx-example-packages" directory on the lynx-website.
 
@@ -174,10 +205,11 @@ pnpm run dev
 }
 ```
 
-4. Install dependencies in the lynx-website root directory, then start the project:
+4. Install dependencies in the lynx-website root directory, then start the
+   project:
 
 ```bash
-pnpm i
+pnpm install
 pnpm run dev
 ```
 
@@ -194,3 +226,7 @@ import { Go } from "@lynx";
 ```
 
 For more details please see [`<Go/>`](https://github.com/lynx-family/lynx-website/blob/main/src/components/go/README.md)
+
+[contributor guide]: ./CONTRIBUTING.md
+[connecting to GitHub with SSH]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+[package publishing guide]: ./CONTRIBUTING.md#publishing-a-new-package

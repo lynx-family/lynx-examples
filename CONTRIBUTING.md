@@ -31,14 +31,23 @@ Before you begin, ensure you have the following installed:
 
 ### Setup
 
-To set up the project, run:
+Clone the repository with SSH (recommended after [connecting to GitHub with
+SSH]):
 
 ```sh
-# Clone the repository
-git clone https://github.com/lynx-family/lynx-examples.git
-cd lynx-examples
+git clone git@github.com:lynx-family/lynx-examples.git
+```
 
-# Install dependencies
+Alternatively, clone with HTTPS:
+
+```sh
+git clone https://github.com/lynx-family/lynx-examples.git
+```
+
+Then enter the repository root and install dependencies:
+
+```sh
+cd lynx-examples
 pnpm install
 ```
 
@@ -49,7 +58,7 @@ pnpm install
 To build all projects in the workspace:
 
 ```sh
-pnpm turbo build
+pnpm build
 ```
 
 To build a specific example:
@@ -117,15 +126,15 @@ pnpm --filter css run dev
 
 ```text
 issue: #12345
-doc: `https://example.com`
+doc: https://example.com
 TEST: Relevant test cases
 ```
 
 All three footers are optional. Footer names are case-sensitive: use lowercase
 `issue` and `doc`, and uppercase `TEST`.
 
-When including `TEST`, use exactly one footer. Combine multiple checks on that
-line with semicolons, and keep the line within the 72-character limit.
+When including `TEST`, use exactly one `TEST` footer. Combine multiple checks
+on that line with semicolons, and keep the line within the 72-character limit.
 Summarize the checks if listing every command would exceed the limit. Do not
 add one `TEST` footer per command.
 
@@ -231,4 +240,5 @@ Trusted Publisher setup are complete.
 Thank you for contributing to Lynx Examples!
 
 [Conventional Commits]: https://www.conventionalcommits.org/
+[connecting to GitHub with SSH]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 [npm Trusted Publisher]: https://docs.npmjs.com/trusted-publishers
