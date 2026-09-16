@@ -121,8 +121,27 @@ doc: `https://example.com`
 TEST: Relevant test cases
 ```
 
-Use lowercase `issue` and `doc`. Summarize verification in one concise `TEST`
-footer; do not list every command as a separate footer.
+All three footers are optional. Footer names are case-sensitive: use lowercase
+`issue` and `doc`, and uppercase `TEST`.
+
+When including `TEST`, use exactly one footer. Combine multiple checks on that
+line with semicolons, and keep the line within the 72-character limit.
+Summarize the checks if listing every command would exceed the limit. Do not
+add one `TEST` footer per command.
+
+Correct:
+
+```text
+TEST: pnpm test; pnpm dprint check; pnpm meta-updater --test
+```
+
+Incorrect:
+
+```text
+TEST: pnpm test
+TEST: pnpm dprint check
+TEST: pnpm meta-updater --test
+```
 
 ### Code Style
 
