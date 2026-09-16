@@ -38,12 +38,24 @@ const ansi = {
   yellow: "\u001b[33m",
 };
 
-function styleOutput(value, ...styles) {
-  if (!process.stdout.isTTY || "NO_COLOR" in process.env) {
+export function supportsColor(stream, env = process.env) {
+  return Boolean(stream.isTTY) && !("NO_COLOR" in env);
+}
+
+function styleStream(value, stream, ...styles) {
+  if (!supportsColor(stream)) {
     return value;
   }
 
   return `${styles.join("")}${value}${ansi.reset}`;
+}
+
+function styleOutput(value, ...styles) {
+  return styleStream(value, process.stdout, ...styles);
+}
+
+function styleWarning(value, ...styles) {
+  return styleStream(value, process.stderr, ...styles);
 }
 
 function printHeading(value) {
@@ -59,6 +71,20 @@ function formatPathForHelp(filePath) {
   return relativePath && !relativePath.startsWith("..")
     ? relativePath
     : filePath;
+}
+
+export function quoteShellArgument(value) {
+  return `'${value.replaceAll("'", "'\\''")}'`;
+}
+
+export function getBootstrapPublishCommands(outDir) {
+  const outputPath = quoteShellArgument(formatPathForHelp(outDir));
+
+  return [
+    "npm login --registry=https://registry.npmjs.org/",
+    `cd ${outputPath} && \\`,
+    "  npm publish --access public --tag oidc-bootstrap --registry=https://registry.npmjs.org/",
+  ];
 }
 
 const helpText = `
@@ -77,14 +103,14 @@ Options:
   --private      Allow bootstrapping a package with "private": true
   --no-private   Disallow bootstrapping a package with "private": true (default)
   --show-publish-commands
-                 Preview the unpublished-package flow for an existing package
+                 Show publish commands for an existing package
   -h, --help     Show this help
 
 Examples:
   pnpm bootstrap:package examples/hello-world
   pnpm bootstrap:package examples/hello-world --dry-run
   pnpm bootstrap:package examples/hello-world --force
-  pnpm bootstrap:package examples/hello-world --dry-run --show-publish-commands
+  pnpm bootstrap:package examples/hello-world --force --show-publish-commands
 `.trimStart();
 
 export function parseArguments(args = process.argv.slice(2)) {
@@ -280,15 +306,20 @@ function printSummary({ dryRun, files, inputDir, name, outDir, publication }) {
 }
 
 function printPublishedWarning(name) {
-  const highlight = process.stderr.isTTY ? "\u001b[1;33m" : "";
-  const reset = process.stderr.isTTY ? "\u001b[0m" : "";
-
   console.warn();
   console.warn(
-    `${highlight}WARNING: ${name} already exists on the public npm registry.${reset}`,
+    styleWarning(
+      `WARNING: ${name} already exists on the public npm registry.`,
+      ansi.bold,
+      ansi.yellow,
+    ),
   );
   console.warn(
-    `${highlight}Do not publish the generated placeholder. Bootstrap publishing is not required.${reset}`,
+    styleWarning(
+      "Do not publish the generated placeholder. Bootstrap publishing is not required.",
+      ansi.bold,
+      ansi.yellow,
+    ),
   );
 }
 
@@ -314,8 +345,9 @@ export function getTrustedPublisherInstructions(name) {
     `  npm trust github ${name} \\`,
     `    --repo ${trustedPublisher.repository} \\`,
     `    --file ${trustedPublisher.workflow} \\`,
-    `    --env ${trustedPublisher.environment} \\`,
+    `    --environment ${trustedPublisher.environment} \\`,
     "    --allow-publish \\",
+    `    --registry=${npmRegistry} \\`,
     "    --otp=YOUR_OTP",
   ];
 }
@@ -339,21 +371,18 @@ function printTrustedPublisherInstructions(name, indentation) {
   }
 }
 
-function printBootstrapPublishCommands(outputPath) {
+function printBootstrapPublishCommands(outDir) {
   printHeading(
     "Next steps (requires @lynx-example package publish access):",
   );
   console.log();
-  printCommand("npm login --registry=https://registry.npmjs.org/");
-  printCommand(`cd ${outputPath}`);
-  printCommand(
-    "npm publish --access public --tag oidc-bootstrap --registry=https://registry.npmjs.org/",
-  );
+
+  for (const command of getBootstrapPublishCommands(outDir)) {
+    printCommand(command);
+  }
 }
 
 function printNextSteps(name, outDir, publication, showPublishCommands) {
-  const outputPath = path.relative(repoRoot, outDir);
-
   console.log();
 
   if (publication.published && !showPublishCommands) {
@@ -378,7 +407,7 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
     console.log();
   }
 
-  printBootstrapPublishCommands(outputPath);
+  printBootstrapPublishCommands(outDir);
   console.log();
   printHeading("After publish:");
   console.log();
@@ -393,7 +422,10 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
   printTrustedPublisherInstructions(name, "  ");
 }
 
-async function main() {
+export async function main(
+  args = process.argv.slice(2),
+  fetchImpl = fetch,
+) {
   const {
     allowPrivate,
     dryRun,
@@ -402,7 +434,7 @@ async function main() {
     input,
     out,
     showPublishCommands,
-  } = parseArguments();
+  } = parseArguments(args);
 
   if (help || !input) {
     process.stdout.write(helpText);
@@ -427,7 +459,10 @@ async function main() {
   }
 
   validatePackageName(sourcePackage.name);
-  const publication = await getPackagePublication(sourcePackage.name);
+  const publication = await getPackagePublication(
+    sourcePackage.name,
+    fetchImpl,
+  );
 
   const description = typeof sourcePackage.description === "string"
     ? sourcePackage.description.trim()
@@ -453,15 +488,6 @@ async function main() {
     console.log();
     console.log("--- package.json (preview) ---");
     console.log(packageJson.content);
-
-    if (showPublishCommands) {
-      printNextSteps(
-        sourcePackage.name,
-        outDir,
-        publication,
-        showPublishCommands,
-      );
-    }
 
     return;
   }

@@ -3,21 +3,48 @@
 // LICENSE file in the root directory of this source tree.
 
 import assert from "node:assert/strict";
+import path from "node:path";
 import { describe, it } from "node:test";
 
 import {
+  getBootstrapPublishCommands,
   getPackagePublication,
   getTrustedPublisherInstructions,
+  main,
   parseArguments,
+  quoteShellArgument,
+  supportsColor,
   validatePackageName,
 } from "./index.mjs";
+
+async function captureConsole(callback) {
+  const stdout = [];
+  const stderr = [];
+  const originalLog = console.log;
+  const originalWarn = console.warn;
+
+  console.log = (...args) => stdout.push(args.join(" "));
+  console.warn = (...args) => stderr.push(args.join(" "));
+
+  try {
+    await callback();
+  } finally {
+    console.log = originalLog;
+    console.warn = originalWarn;
+  }
+
+  return {
+    stderr: stderr.join("\n"),
+    stdout: stdout.join("\n"),
+  };
+}
 
 describe("parseArguments", () => {
   it("enables publish command output for inspection", () => {
     assert.equal(
       parseArguments([
         "examples/design-guide",
-        "--dry-run",
+        "--force",
         "--show-publish-commands",
       ]).showPublishCommands,
       true,
@@ -92,6 +119,43 @@ describe("getPackagePublication", () => {
   });
 });
 
+describe("supportsColor", () => {
+  it("disables color for non-TTY streams and NO_COLOR", () => {
+    assert.equal(supportsColor({ isTTY: false }, {}), false);
+    assert.equal(supportsColor({ isTTY: true }, { NO_COLOR: "" }), false);
+    assert.equal(supportsColor({ isTTY: true }, {}), true);
+  });
+});
+
+describe("getBootstrapPublishCommands", () => {
+  it("quotes the output path and stops if changing directory fails", () => {
+    const outDir = path.join(
+      process.cwd(),
+      "bootstrap output",
+      "package's files",
+    );
+
+    assert.deepEqual(
+      getBootstrapPublishCommands(outDir),
+      [
+        "npm login --registry=https://registry.npmjs.org/",
+        "cd 'bootstrap output/package'\\''s files' && \\",
+        "  npm publish --access public --tag oidc-bootstrap --registry=https://registry.npmjs.org/",
+      ],
+    );
+  });
+
+  it("keeps output paths outside the working directory absolute", () => {
+    const outDir = path.resolve(process.cwd(), "../bootstrap output");
+    const commands = getBootstrapPublishCommands(outDir);
+
+    assert.equal(
+      commands[1],
+      `cd ${quoteShellArgument(outDir)} && \\`,
+    );
+  });
+});
+
 describe("getTrustedPublisherInstructions", () => {
   it("provides CLI and npmjs.com setup methods", () => {
     const instructions = getTrustedPublisherInstructions(
@@ -101,7 +165,7 @@ describe("getTrustedPublisherInstructions", () => {
     assert.match(instructions, /Method 1: npmjs\.com/u);
     assert.match(
       instructions,
-      /npm trust github @lynx-example\/new-package \\\n    --repo lynx-family\/lynx-examples \\\n    --file release\.yml \\\n    --env npm \\\n    --allow-publish \\\n    --otp=YOUR_OTP/u,
+      /npm trust github @lynx-example\/new-package \\\n    --repo lynx-family\/lynx-examples \\\n    --file release\.yml \\\n    --environment npm \\\n    --allow-publish \\\n    --registry=https:\/\/registry\.npmjs\.org\/ \\\n    --otp=YOUR_OTP/u,
     );
     assert.match(
       instructions,
@@ -116,5 +180,29 @@ describe("getTrustedPublisherInstructions", () => {
       instructions.indexOf("Method 1: npmjs.com")
         < instructions.indexOf("Method 2: npm CLI"),
     );
+  });
+});
+
+describe("main", () => {
+  it("does not print executable commands during a published-package dry run", async () => {
+    const { stderr, stdout } = await captureConsole(() =>
+      main(
+        [
+          "examples/design-guide",
+          "--dry-run",
+          "--show-publish-commands",
+        ],
+        async () => ({
+          json: async () => ({ versions: { "1.0.0": {} } }),
+          ok: true,
+          status: 200,
+        }),
+      )
+    );
+
+    assert.match(stderr, /already exists on the public npm registry/u);
+    assert.match(stdout, /--- package\.json \(preview\) ---/u);
+    assert.doesNotMatch(stdout, /npm publish --access/u);
+    assert.doesNotMatch(stdout, /npm trust github/u);
   });
 });
