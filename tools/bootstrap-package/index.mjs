@@ -383,7 +383,7 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
   printHeading("After publish:");
   console.log();
   console.log(
-    "  1. Configure Trusted Publisher on npmjs.com with this repo and workflow filename.",
+    "  1. Configure Trusted Publisher on npmjs.com (see setup details below).",
   );
   console.log("  2. Delete the generated output directory.");
   console.log("  3. Future releases should use OIDC Trusted Publishing.");
