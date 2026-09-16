@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/composing-elements",
-  "version": "0.6.10",
+  "version": "0.7.0",
   "description": "An example shows how to composing elements in ReactLynx",
   "author": "Lynx Authors",
   "repository": {

@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/react-navigation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An example shows how to use React Navigation in Lynx",
   "license": "Apache-2.0",
   "author": "Lynx Authors",
