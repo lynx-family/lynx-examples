@@ -5,7 +5,25 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { getPackagePublication, validatePackageName } from "./index.mjs";
+import {
+  getPackagePublication,
+  getTrustedPublisherInstructions,
+  parseArguments,
+  validatePackageName,
+} from "./index.mjs";
+
+describe("parseArguments", () => {
+  it("enables publish command output for inspection", () => {
+    assert.equal(
+      parseArguments([
+        "examples/design-guide",
+        "--dry-run",
+        "--show-publish-commands",
+      ]).showPublishCommands,
+      true,
+    );
+  });
+});
 
 describe("validatePackageName", () => {
   it("accepts packages in the supported npm scope", () => {
@@ -70,6 +88,33 @@ describe("getPackagePublication", () => {
         async () => ({ ok: false, status: 503 }),
       ),
       /HTTP 503/u,
+    );
+  });
+});
+
+describe("getTrustedPublisherInstructions", () => {
+  it("provides CLI and npmjs.com setup methods", () => {
+    const instructions = getTrustedPublisherInstructions(
+      "@lynx-example/new-package",
+    ).join("\n");
+
+    assert.match(instructions, /Method 1: npmjs\.com/u);
+    assert.match(
+      instructions,
+      /npm trust github @lynx-example\/new-package \\\n    --repo lynx-family\/lynx-examples \\\n    --file release\.yml \\\n    --env npm \\\n    --allow-publish \\\n    --otp=YOUR_OTP/u,
+    );
+    assert.match(
+      instructions,
+      /Method 2: npm CLI \(requires npm >= 11\.15\.0\)/u,
+    );
+    assert.match(
+      instructions,
+      /https:\/\/www\.npmjs\.com\/package\/@lynx-example\/new-package\/access/u,
+    );
+    assert.match(instructions, /Publisher: GitHub Actions/u);
+    assert.ok(
+      instructions.indexOf("Method 1: npmjs.com")
+        < instructions.indexOf("Method 2: npm CLI"),
     );
   });
 });
