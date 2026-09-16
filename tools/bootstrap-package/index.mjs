@@ -380,16 +380,17 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
 
   printBootstrapPublishCommands(outputPath);
   console.log();
-  printHeading("After publishing:");
+  printHeading("After publish:");
   console.log();
   console.log(
-    "  1. Configure the package's Trusted Publisher using either method:",
+    "  1. Configure Trusted Publisher on npmjs.com with this repo and workflow filename.",
   );
-  console.log();
-  printTrustedPublisherInstructions(name, "     ");
-  console.log();
   console.log("  2. Delete the generated output directory.");
-  console.log("  3. Publish real versions through the release workflow.");
+  console.log("  3. Future releases should use OIDC Trusted Publishing.");
+  console.log();
+  printHeading("Trusted Publisher setup details (choose one method):");
+  console.log();
+  printTrustedPublisherInstructions(name, "  ");
 }
 
 async function main() {
