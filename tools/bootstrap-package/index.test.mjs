@@ -178,6 +178,17 @@ describe("getTrustedPublisherInstructions", () => {
       /https:\/\/www\.npmjs\.com\/package\/@lynx-example\/new-package\/access/u,
     );
     assert.match(instructions, /Publisher: GitHub Actions/u);
+    assert.match(
+      instructions,
+      /^  Allowed action: npm publish$/mu,
+    );
+    assert.doesNotMatch(instructions, /Allowed action:.*createPackage/u);
+    assert.match(
+      instructions,
+      /npm trust list @lynx-example\/new-package --json \\\n    --registry=https:\/\/registry\.npmjs\.org\//u,
+    );
+    assert.match(instructions, /permissions.*createPackage/u);
+    assert.match(instructions, /createStagedPackage alone is insufficient/u);
     assert.ok(
       instructions.indexOf("Method 1: npmjs.com")
         < instructions.indexOf("Method 2: npm CLI"),

@@ -27,6 +27,7 @@ const npmWebsite = "https://www.npmjs.com/";
 const npmScope = "@lynx-example/";
 const trustedPublisher = {
   environment: "npm",
+  permission: "createPackage",
   repository: "lynx-family/lynx-examples",
   workflow: "release.yml",
 };
@@ -379,6 +380,13 @@ export function getTrustedPublisherInstructions(name) {
     "    --allow-publish \\",
     `    --registry=${npmRegistry} \\`,
     "    --otp=YOUR_OTP",
+    "",
+    "Verify the configuration:",
+    "",
+    `  npm trust list ${name} --json \\`,
+    `    --registry=${npmRegistry}`,
+    `  Confirm permissions includes ${trustedPublisher.permission}.`,
+    "  createStagedPackage alone is insufficient for this release workflow.",
   ];
 }
 
