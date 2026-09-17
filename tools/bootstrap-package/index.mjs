@@ -23,13 +23,82 @@ const defaultOut = path.join(repoRoot, "tools/bootstrap-package/output");
 const licensePath = path.join(repoRoot, "LICENSE");
 const bootstrapVersion = "0.0.0-oidc-bootstrap.0";
 const npmRegistry = "https://registry.npmjs.org/";
+const npmWebsite = "https://www.npmjs.com/";
 const npmScope = "@lynx-example/";
+const trustedPublisher = {
+  environment: "npm",
+  permission: "createPackage",
+  repository: "lynx-family/lynx-examples",
+  workflow: "release.yml",
+};
+const ansi = {
+  bold: "\u001b[1m",
+  cyan: "\u001b[36m",
+  green: "\u001b[32m",
+  reset: "\u001b[0m",
+  yellow: "\u001b[33m",
+};
+
+/**
+ * Determine whether a stream supports ANSI styling without violating
+ * NO_COLOR.
+ */
+export function supportsColor(stream, env = process.env) {
+  return Boolean(stream.isTTY) && !("NO_COLOR" in env);
+}
+
+function styleStream(value, stream, ...styles) {
+  if (!supportsColor(stream)) {
+    return value;
+  }
+
+  return `${styles.join("")}${value}${ansi.reset}`;
+}
+
+function styleOutput(value, ...styles) {
+  return styleStream(value, process.stdout, ...styles);
+}
+
+function styleWarning(value, ...styles) {
+  return styleStream(value, process.stderr, ...styles);
+}
+
+function printHeading(value) {
+  console.log(styleOutput(value, ansi.bold));
+}
+
+function printCommand(value) {
+  console.log(`  ${styleOutput(value, ansi.green)}`);
+}
 
 function formatPathForHelp(filePath) {
   const relativePath = path.relative(process.cwd(), filePath);
   return relativePath && !relativePath.startsWith("..")
     ? relativePath
     : filePath;
+}
+
+/**
+ * Quote one argument for safe reuse in a POSIX-compatible shell command.
+ */
+export function quoteShellArgument(value) {
+  return `'${value.replaceAll("'", "'\\''")}'`;
+}
+
+/**
+ * Build the commands shown after the placeholder files exist on disk.
+ *
+ * The directory change is chained to npm publish so a failed cd cannot publish
+ * whichever package happens to be in the caller's current directory.
+ */
+export function getBootstrapPublishCommands(outDir) {
+  const outputPath = quoteShellArgument(formatPathForHelp(outDir));
+
+  return [
+    "npm login --registry=https://registry.npmjs.org/",
+    `cd ${outputPath} && \\`,
+    "  npm publish --access public --tag oidc-bootstrap --registry=https://registry.npmjs.org/",
+  ];
 }
 
 const helpText = `
@@ -47,22 +116,30 @@ Options:
   --force        Overwrite an existing output directory
   --private      Allow bootstrapping a package with "private": true
   --no-private   Disallow bootstrapping a package with "private": true (default)
+  --show-publish-commands
+                 Show publish commands for an existing package
   -h, --help     Show this help
 
 Examples:
   pnpm bootstrap:package examples/hello-world
   pnpm bootstrap:package examples/hello-world --dry-run
   pnpm bootstrap:package examples/hello-world --force
+  pnpm bootstrap:package examples/hello-world --force --show-publish-commands
 `.trimStart();
 
-function parseArguments() {
+/**
+ * Parse bootstrap-package CLI arguments into normalized runtime options.
+ */
+export function parseArguments(args = process.argv.slice(2)) {
   const { positionals, values } = parseArgs({
+    args,
     options: {
       "dry-run": { type: "boolean" },
       force: { type: "boolean" },
       help: { type: "boolean", short: "h" },
       out: { type: "string", default: defaultOut },
       private: { type: "boolean", default: false },
+      "show-publish-commands": { type: "boolean", default: false },
     },
     allowNegative: true,
     allowPositionals: true,
@@ -75,6 +152,7 @@ function parseArguments() {
     help: values.help,
     input: positionals[0] ?? null,
     out: path.resolve(values.out),
+    showPublishCommands: values["show-publish-commands"],
   };
 }
 
@@ -97,6 +175,10 @@ function safeFolderName(packageName) {
   return packageName.replace(/^@/u, "").replaceAll("/", "__");
 }
 
+/**
+ * Validate that a package name is npm-compatible and uses the public examples
+ * scope managed by this repository.
+ */
 export function validatePackageName(packageName) {
   const npmPackageNamePattern = /^(?:@[-a-z0-9~][a-z0-9._~-]*\/)?[-a-z0-9~][a-z0-9._~-]*$/u;
 
@@ -125,6 +207,12 @@ function validateInput(inputDir, packageJsonPath) {
   }
 }
 
+/**
+ * Check whether a package and its versions exist on the public npm registry.
+ *
+ * The fetch implementation is injectable so callers can test registry
+ * outcomes without network access.
+ */
 export async function getPackagePublication(
   packageName,
   fetchImpl = fetch,
@@ -245,49 +333,152 @@ function printSummary({ dryRun, files, inputDir, name, outDir, publication }) {
 }
 
 function printPublishedWarning(name) {
-  const highlight = process.stderr.isTTY ? "\u001b[1;33m" : "";
-  const reset = process.stderr.isTTY ? "\u001b[0m" : "";
-
   console.warn();
   console.warn(
-    `${highlight}WARNING: ${name} already exists on the public npm registry.${reset}`,
+    styleWarning(
+      `WARNING: ${name} already exists on the public npm registry.`,
+      ansi.bold,
+      ansi.yellow,
+    ),
   );
   console.warn(
-    `${highlight}Do not publish the generated placeholder. Bootstrap publishing is not required.${reset}`,
+    styleWarning(
+      "Do not publish the generated placeholder. Bootstrap publishing is not required.",
+      ansi.bold,
+      ansi.yellow,
+    ),
   );
 }
 
-function printNextSteps(outDir, publication) {
-  const outputPath = path.relative(repoRoot, outDir);
+/**
+ * Build the npmjs.com and npm CLI alternatives for configuring the package's
+ * Trusted Publisher.
+ */
+export function getTrustedPublisherInstructions(name) {
+  const packageSettingsUrl = new URL(
+    `/package/${name}/access`,
+    npmWebsite,
+  );
 
+  return [
+    "Method 1: npmjs.com",
+    "",
+    `  URL: ${packageSettingsUrl}`,
+    "  Publisher: GitHub Actions",
+    "  Organization or user: lynx-family",
+    "  Repository: lynx-examples",
+    `  Workflow: ${trustedPublisher.workflow}`,
+    `  Environment: ${trustedPublisher.environment}`,
+    "  Allowed action: npm publish",
+    "",
+    "Method 2: npm CLI (requires npm >= 11.15.0)",
+    "",
+    `  npm trust github ${name} \\`,
+    `    --repo ${trustedPublisher.repository} \\`,
+    `    --file ${trustedPublisher.workflow} \\`,
+    `    --environment ${trustedPublisher.environment} \\`,
+    "    --allow-publish \\",
+    `    --registry=${npmRegistry} \\`,
+    "    --otp=YOUR_OTP",
+    "",
+    "Verify the configuration:",
+    "",
+    `  npm trust list ${name} --json \\`,
+    `    --registry=${npmRegistry}`,
+    `  Confirm permissions includes ${trustedPublisher.permission}.`,
+    "  createStagedPackage alone is insufficient for this release workflow.",
+  ];
+}
+
+function printTrustedPublisherInstructions(name, indentation) {
+  for (const line of getTrustedPublisherInstructions(name)) {
+    if (!line) {
+      console.log();
+    } else if (line.startsWith("Method ")) {
+      console.log(`${indentation}${styleOutput(line, ansi.bold, ansi.cyan)}`);
+    } else if (
+      line.startsWith("  npm ")
+      || line.startsWith("    --")
+    ) {
+      console.log(`${indentation}${styleOutput(line, ansi.green)}`);
+    } else if (line.startsWith("  URL: ")) {
+      console.log(`${indentation}${styleOutput(line, ansi.cyan)}`);
+    } else {
+      console.log(`${indentation}${line}`);
+    }
+  }
+}
+
+function printBootstrapPublishCommands(outDir) {
+  printHeading(
+    "Next steps (requires @lynx-example package publish access):",
+  );
   console.log();
 
-  if (publication.published) {
-    console.log(
-      "Configure or verify the package's Trusted Publisher instead of publishing the placeholder.",
+  for (const command of getBootstrapPublishCommands(outDir)) {
+    printCommand(command);
+  }
+}
+
+function printNextSteps(name, outDir, publication, showPublishCommands) {
+  console.log();
+
+  if (publication.published && !showPublishCommands) {
+    printHeading(
+      "Trusted Publisher setup (choose one method):",
     );
+    console.log();
+    printTrustedPublisherInstructions(name, "  ");
     return;
   }
 
-  console.log(
-    "Maintainer steps (requires @lynx-example package publish access):",
-  );
-  console.log("  npm login --registry=https://registry.npmjs.org/");
-  console.log(`  cd ${outputPath}`);
-  console.log(
-    "  npm publish --access public --tag oidc-bootstrap --registry=https://registry.npmjs.org/",
-  );
+  if (publication.published) {
+    printHeading("Unpublished-package flow preview:");
+    console.log(
+      `  ${
+        styleOutput(
+          "The package already exists. Do not run these publish commands.",
+          ansi.yellow,
+        )
+      }`,
+    );
+    console.log();
+  }
+
+  printBootstrapPublishCommands(outDir);
   console.log();
-  console.log("After publishing:");
+  printHeading("After publish:");
+  console.log();
   console.log(
-    "  1. Configure the package's Trusted Publisher for release.yml and the npm environment.",
+    "  1. Configure npm Trusted Publishing (see setup details below).",
   );
   console.log("  2. Delete the generated output directory.");
-  console.log("  3. Publish real versions through the release workflow.");
+  console.log("  3. Future releases should use OIDC Trusted Publishing.");
+  console.log();
+  printHeading("Trusted Publisher setup details (choose one method):");
+  console.log();
+  printTrustedPublisherInstructions(name, "  ");
 }
 
-async function main() {
-  const { allowPrivate, dryRun, force, help, input, out } = parseArguments();
+/**
+ * Run the bootstrap-package CLI.
+ *
+ * Arguments and registry access are injectable for integration tests. Dry-run
+ * mode only previews generated files and never prints executable commands.
+ */
+export async function main(
+  args = process.argv.slice(2),
+  fetchImpl = fetch,
+) {
+  const {
+    allowPrivate,
+    dryRun,
+    force,
+    help,
+    input,
+    out,
+    showPublishCommands,
+  } = parseArguments(args);
 
   if (help || !input) {
     process.stdout.write(helpText);
@@ -312,7 +503,10 @@ async function main() {
   }
 
   validatePackageName(sourcePackage.name);
-  const publication = await getPackagePublication(sourcePackage.name);
+  const publication = await getPackagePublication(
+    sourcePackage.name,
+    fetchImpl,
+  );
 
   const description = typeof sourcePackage.description === "string"
     ? sourcePackage.description.trim()
@@ -338,13 +532,19 @@ async function main() {
     console.log();
     console.log("--- package.json (preview) ---");
     console.log(packageJson.content);
+
     return;
   }
 
   writeFiles(outDir, files, { force });
   console.log();
   console.log("Bootstrap package generated.");
-  printNextSteps(outDir, publication);
+  printNextSteps(
+    sourcePackage.name,
+    outDir,
+    publication,
+    showPublishCommands,
+  );
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
