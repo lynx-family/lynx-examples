@@ -38,6 +38,10 @@ const ansi = {
   yellow: "\u001b[33m",
 };
 
+/**
+ * Determine whether a stream supports ANSI styling without violating
+ * NO_COLOR.
+ */
 export function supportsColor(stream, env = process.env) {
   return Boolean(stream.isTTY) && !("NO_COLOR" in env);
 }
@@ -73,10 +77,19 @@ function formatPathForHelp(filePath) {
     : filePath;
 }
 
+/**
+ * Quote one argument for safe reuse in a POSIX-compatible shell command.
+ */
 export function quoteShellArgument(value) {
   return `'${value.replaceAll("'", "'\\''")}'`;
 }
 
+/**
+ * Build the commands shown after the placeholder files exist on disk.
+ *
+ * The directory change is chained to npm publish so a failed cd cannot publish
+ * whichever package happens to be in the caller's current directory.
+ */
 export function getBootstrapPublishCommands(outDir) {
   const outputPath = quoteShellArgument(formatPathForHelp(outDir));
 
@@ -113,6 +126,9 @@ Examples:
   pnpm bootstrap:package examples/hello-world --force --show-publish-commands
 `.trimStart();
 
+/**
+ * Parse bootstrap-package CLI arguments into normalized runtime options.
+ */
 export function parseArguments(args = process.argv.slice(2)) {
   const { positionals, values } = parseArgs({
     args,
@@ -158,6 +174,10 @@ function safeFolderName(packageName) {
   return packageName.replace(/^@/u, "").replaceAll("/", "__");
 }
 
+/**
+ * Validate that a package name is npm-compatible and uses the public examples
+ * scope managed by this repository.
+ */
 export function validatePackageName(packageName) {
   const npmPackageNamePattern = /^(?:@[-a-z0-9~][a-z0-9._~-]*\/)?[-a-z0-9~][a-z0-9._~-]*$/u;
 
@@ -186,6 +206,12 @@ function validateInput(inputDir, packageJsonPath) {
   }
 }
 
+/**
+ * Check whether a package and its versions exist on the public npm registry.
+ *
+ * The fetch implementation is injectable so callers can test registry
+ * outcomes without network access.
+ */
 export async function getPackagePublication(
   packageName,
   fetchImpl = fetch,
@@ -323,6 +349,10 @@ function printPublishedWarning(name) {
   );
 }
 
+/**
+ * Build the npmjs.com and npm CLI alternatives for configuring the package's
+ * Trusted Publisher.
+ */
 export function getTrustedPublisherInstructions(name) {
   const packageSettingsUrl = new URL(
     `/package/${name}/access`,
@@ -412,7 +442,7 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
   printHeading("After publish:");
   console.log();
   console.log(
-    "  1. Configure Trusted Publisher on npmjs.com (see setup details below).",
+    "  1. Configure npm Trusted Publishing (see setup details below).",
   );
   console.log("  2. Delete the generated output directory.");
   console.log("  3. Future releases should use OIDC Trusted Publishing.");
@@ -422,6 +452,12 @@ function printNextSteps(name, outDir, publication, showPublishCommands) {
   printTrustedPublisherInstructions(name, "  ");
 }
 
+/**
+ * Run the bootstrap-package CLI.
+ *
+ * Arguments and registry access are injectable for integration tests. Dry-run
+ * mode only previews generated files and never prints executable commands.
+ */
 export async function main(
   args = process.argv.slice(2),
   fetchImpl = fetch,

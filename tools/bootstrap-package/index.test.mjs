@@ -3,6 +3,8 @@
 // LICENSE file in the root directory of this source tree.
 
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { describe, it } from "node:test";
 
@@ -204,5 +206,48 @@ describe("main", () => {
     assert.match(stdout, /--- package\.json \(preview\) ---/u);
     assert.doesNotMatch(stdout, /npm publish --access/u);
     assert.doesNotMatch(stdout, /npm trust github/u);
+  });
+
+  it("writes files and prints commands for published-package inspection", async () => {
+    const outputRoot = fs.mkdtempSync(
+      path.join(os.tmpdir(), "bootstrap-package-test-"),
+    );
+    const outDir = path.join(
+      outputRoot,
+      "lynx-example__design-guide",
+    );
+
+    try {
+      const { stderr, stdout } = await captureConsole(() =>
+        main(
+          [
+            "examples/design-guide",
+            "--out",
+            outputRoot,
+            "--show-publish-commands",
+          ],
+          async () => ({
+            json: async () => ({ versions: { "1.0.0": {} } }),
+            ok: true,
+            status: 200,
+          }),
+        )
+      );
+
+      const packageJson = JSON.parse(
+        fs.readFileSync(path.join(outDir, "package.json"), "utf8"),
+      );
+
+      assert.equal(packageJson.name, "@lynx-example/design-guide");
+      assert.match(stderr, /already exists on the public npm registry/u);
+      assert.match(stdout, /Unpublished-package flow preview:/u);
+      assert.match(stdout, /Configure npm Trusted Publishing/u);
+
+      for (const command of getBootstrapPublishCommands(outDir)) {
+        assert.ok(stdout.includes(command));
+      }
+    } finally {
+      fs.rmSync(outputRoot, { force: true, recursive: true });
+    }
   });
 });
