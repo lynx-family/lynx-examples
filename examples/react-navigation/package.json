@@ -33,6 +33,6 @@
     "@lynx-js/types": "catalog:",
     "@rsbuild/core": "catalog:",
     "@types/react": "~19.2.17",
-    "typescript": "~5.9.3"
+    "typescript": "~7.0.2"
   }
 }
