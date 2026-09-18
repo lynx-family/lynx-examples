@@ -82,7 +82,7 @@ jobs:
         if: steps.changeset.outputs.skip == 'false'
         env:
           PACKAGE_DIRS: ${{ steps.changeset.outputs.package-dirs }}
-        run: pnpm exec pkg-pr-new publish --pnpm --commentWithSha --packageManager=pnpm $PACKAGE_DIRS
+        run: pnpm exec pkg-pr-new publish --pnpm --no-template --commentWithSha --packageManager=pnpm $PACKAGE_DIRS
   # Branch protection requires Done as the aggregate status. Add every new
   # required CI job to needs so its result cannot bypass this gate.
   done:
