@@ -7,6 +7,12 @@
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/i18n"
   },
+  "files": [
+    "dist/",
+    "src/",
+    "rsbuild.config.ts",
+    "CHANGELOG.md"
+  ],
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
