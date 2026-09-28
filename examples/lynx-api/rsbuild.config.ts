@@ -32,5 +32,8 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/lynx-api/dist",
+    filename: {
+      image: "[name].[contenthash:8][ext]",
+    },
   },
 });
