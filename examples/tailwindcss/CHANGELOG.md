@@ -1,5 +1,11 @@
 # @lynx-example/tailwindcss
 
+## 0.6.1
+
+### Patch Changes
+
+- 1f035e0: Publish `dist/` so the built bundles reach npm again. Without a `files` field npm falls back to the ignore rules, which exclude `dist/`, so the last releases shipped no `.lynx.bundle` and any consumer rendering the example had nothing to load.
+
 ## 0.6.0
 
 ### Minor Changes
