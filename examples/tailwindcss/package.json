@@ -7,6 +7,14 @@
     "url": "git+https://github.com/lynx-family/lynx-examples.git",
     "directory": "examples/tailwindcss"
   },
+  "files": [
+    "dist/",
+    "src/",
+    "rsbuild.config.ts",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "CHANGELOG.md"
+  ],
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
