@@ -1,5 +1,11 @@
 # @lynx-example/swiper
 
+## 0.6.1
+
+### Patch Changes
+
+- 3864984: Pin asset filename content hash to 8 characters so prebuilt bundles reference the same asset URLs published on lynxjs.org.
+
 ## 0.6.0
 
 ### Minor Changes

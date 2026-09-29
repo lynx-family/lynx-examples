@@ -1,5 +1,11 @@
 # @lynx-example/scroll-coordinator
 
+## 0.7.1
+
+### Patch Changes
+
+- 3864984: Pin asset filename content hash to 8 characters so prebuilt bundles reference the same asset URLs published on lynxjs.org.
+
 ## 0.7.0
 
 ### Minor Changes
