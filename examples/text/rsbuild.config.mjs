@@ -51,5 +51,8 @@ export default defineConfig({
   },
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/text/dist",
+    filename: {
+      font: "[name].[contenthash:8][ext]",
+    },
   },
 });

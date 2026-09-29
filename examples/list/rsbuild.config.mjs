@@ -41,6 +41,9 @@ export default defineConfig({
   ],
   output: {
     assetPrefix: "https://lynxjs.org/lynx-examples/list/dist",
+    filename: {
+      image: "[name].[contenthash:8][ext]",
+    },
   },
   environments: {
     lynx: {},
