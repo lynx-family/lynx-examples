@@ -58,6 +58,8 @@ catalogs:
       specifier: 2.0.1
       version: 2.0.1
 
+packageExtensionsChecksum: sha256-DNSaXdJazJijB/5i5y96MJo5pRLmboLUZjoYDsSM/pE=
+
 importers:
 
   .:
@@ -209,7 +211,7 @@ importers:
     dependencies:
       '@lynx-js/genui':
         specifier: 0.4.0
-        version: 0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)
+        version: 0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@types/react@18.3.28)(preact@10.29.2)(typescript@5.9.3)
       '@lynx-js/luna-styles':
         specifier: 0.2.2
         version: 0.2.2
@@ -1282,7 +1284,7 @@ importers:
     dependencies:
       '@lynx-js/genui':
         specifier: 0.4.0
-        version: 0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)
+        version: 0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@types/react@18.3.28)(preact@10.29.2)(typescript@5.9.3)
       '@lynx-js/lynx-ui':
         specifier: 3.138.0
         version: 3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -3226,6 +3228,7 @@ packages:
     peerDependencies:
       '@lynx-js/lynx-ui': '>=3.133.0'
       '@lynx-js/react': '>=0.121.0'
+      '@types/react': ^18 || ^19.0.0
     peerDependenciesMeta:
       '@lynx-js/lynx-ui':
         optional: true
@@ -9756,12 +9759,13 @@ snapshots:
 
   '@lynx-js/externals-loading-webpack-plugin@0.2.1': {}
 
-  '@lynx-js/genui@0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(preact@10.29.2)(typescript@5.9.3)':
+  '@lynx-js/genui@0.4.0(@lynx-js/lynx-ui@3.138.0(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@types/react@18.3.28)(preact@10.29.2)(typescript@5.9.3)':
     dependencies:
       '@a2ui/web_core': 0.10.6
       '@lynx-js/react': 0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28)
       '@lynx-js/react-signals': 0.0.3(@lynx-js/react@0.126.1(@lynx-js/types@4.2.1)(@types/react@18.3.28))(preact@10.29.2)
       '@openuidev/lang-core': 0.2.17(zod@3.25.76)
+      '@types/react': 18.3.28
       typedoc: 0.28.20(typescript@5.9.3)
       zod: 3.25.76
     optionalDependencies:

@@ -11,6 +11,11 @@ engineStrict: true
 # Disable the default publicHoistPattern(*-eslint-*, *-prettier-*)
 publicHoistPattern: []
 
+packageExtensions:
+  "@lynx-js/genui@*":
+    peerDependencies:
+      "@types/react": "^18 || ^19.0.0"
+
 allowBuilds:
   "@parcel/watcher": true
   core-js: false
