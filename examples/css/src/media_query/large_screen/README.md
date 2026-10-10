@@ -1,4 +1,4 @@
-# Media Query
+# Media Query: Large Screens
 
 A responsive ReactLynx page for adapting to large screens with CSS `@media`.
 The same content reflows from a phone layout into a tablet or desktop layout.
@@ -14,17 +14,20 @@ separately; this is a comparison of layouts, not a recording of live resizing.
 From the repository root:
 
 ```sh
-pnpm --filter @lynx-example/media-query run dev
+pnpm --filter @lynx-example/css run dev
 ```
 
-Open the QR code in Lynx Explorer, or open the Web preview and resize its window.
+Select the `media_query_large_screen` entry in the dev server. Open its QR code
+in Lynx Explorer, or open the Web preview and resize its window.
 To build both targets:
 
 ```sh
-pnpm --filter @lynx-example/media-query run build
+pnpm --filter @lynx-example/css run build
 ```
 
-The native bundle is `dist/main.lynx.bundle`; the Web entry is `dist/main.web.bundle`.
+The CSS package builds this entry as `dist/media_query_large_screen.lynx.bundle`
+and `dist/media_query_large_screen.web.bundle`. The existing `media_query` entry
+continues to demonstrate portrait widths, viewport height, density, and color scheme.
 
 ## Responsive behavior
 
@@ -42,13 +45,13 @@ At widths of at least 1024px and heights of at most 700px, an `and` query reduce
 vertical padding. The page scrolls vertically in every layout. Content is centered
 and capped at 1440px on extra-wide viewports.
 
-[`src/App.css`](./src/App.css) demonstrates mobile-first `min-width` rules,
+[`index.scss`](./index.scss) demonstrates mobile-first `min-width` rules,
 Level 4 range syntax for mutually exclusive indicators, and a combined width/height
 condition. Resize across 599/600px and 1023/1024px to inspect the boundaries.
 
 ## Lynx requirements
 
-Use **Lynx SDK 4.0 or later**. [`rsbuild.config.ts`](./rsbuild.config.ts) registers
+Use **Lynx SDK 4.0 or later**. [`rsbuild.config.mjs`](../../../rsbuild.config.mjs) registers
 `pluginLynxConfig({ enableCSSRule: true })`; without CSS Rule encoding, media queries
 will not take effect in the native bundle. When embedding the page, the host must
 update the Lynx viewport when the window size changes.

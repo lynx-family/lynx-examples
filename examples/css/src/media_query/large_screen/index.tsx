@@ -2,7 +2,9 @@
 // Licensed under the Apache License Version 2.0 that can be found in the
 // LICENSE file in the root directory of this source tree.
 
-import "./App.css";
+import { root } from "@lynx-js/react";
+
+import "./index.scss";
 
 const cards = [
   {
@@ -28,7 +30,7 @@ const cards = [
   },
 ];
 
-export function App() {
+function MediaQueryLargeScreenDemo() {
   return (
     <scroll-view className="page" scroll-orientation="vertical">
       <view className="shell">
@@ -121,4 +123,10 @@ export function App() {
       </view>
     </scroll-view>
   );
+}
+
+root.render(<MediaQueryLargeScreenDemo />);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept();
 }

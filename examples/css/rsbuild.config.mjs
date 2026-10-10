@@ -34,6 +34,7 @@ export default defineConfig({
       class_guide: "./src/class_guide",
       cascade_guide: "./src/cascade_guide",
       media_query: "./src/media_query/index.tsx",
+      media_query_large_screen: "./src/media_query/large_screen/index.tsx",
     },
   },
   output: {
