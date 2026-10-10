@@ -8,6 +8,15 @@
   background-color: #f5f6f8;
 }
 
+.shell,
+.main,
+.hero,
+.breakpoint,
+.section-heading {
+  display: flex;
+  flex-direction: column;
+}
+
 .shell {
   width: 100%;
   max-width: 1440px;

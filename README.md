@@ -117,7 +117,7 @@ This repository is intended to showcase examples of Lynx.
 [`markdown`]: ./examples/markdown
 [`react-apis`]: ./examples/react-apis
 [`main-thread`]: ./examples/main-thread
-[`media-query`]: ./examples/media-query
+[`media-query`]: ./examples/css/src/media_query/large_screen
 [`motion`]: ./examples/motion
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking

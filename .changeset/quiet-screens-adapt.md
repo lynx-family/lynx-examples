@@ -1,5 +1,5 @@
 ---
-"@lynx-example/media-query": minor
+"@lynx-example/css": minor
 ---
 
-Add a media query example with responsive phone, tablet, and desktop layouts, including a large-screen sidebar and CSS-only breakpoint indicators.
+Add a large-screen media query entry with responsive phone, tablet, and desktop layouts, a desktop sidebar, and CSS-only breakpoint indicators.
