@@ -1,0 +1,45 @@
+{
+  "name": "@lynx-example/media-query",
+  "version": "0.0.0",
+  "description": "A responsive Lynx layout adapting from phones to tablets and large screens with CSS media queries",
+  "license": "Apache-2.0",
+  "author": "Lynx Authors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lynx-family/lynx-examples.git",
+    "directory": "examples/media-query"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "rsbuild.config.ts",
+    "README.md",
+    "preview.gif",
+    "CHANGELOG.md"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "catalog:"
+  },
+  "devDependencies": {
+    "@lynx-js/config-rsbuild-plugin": "catalog:",
+    "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "catalog:",
+    "@lynx-js/rsbuild-plugin": "catalog:",
+    "@lynx-js/types": "catalog:",
+    "@rsbuild/core": "catalog:",
+    "@types/react": "^18.3.28",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

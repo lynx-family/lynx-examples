@@ -1,0 +1,404 @@
+/* Copyright 2026 The Lynx Authors. All rights reserved.
+ * Licensed under the Apache License Version 2.0 that can be found in the
+ * LICENSE file in the root directory of this source tree. */
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f6f8;
+}
+
+.shell {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topbar,
+.brand,
+.workspace,
+.mode,
+.breakpoints,
+.cards,
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.brand {
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background-color: #172d32;
+}
+
+.brand-letter {
+  color: #c5f4df;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand-name {
+  color: #172d32;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.topbar-note {
+  color: #707d82;
+  font-size: 11px;
+}
+
+.workspace {
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.sidebar {
+  display: none;
+  width: 216px;
+  flex-shrink: 0;
+  padding: 28px 20px;
+  border: 1px solid #dce3e5;
+  border-radius: 20px;
+  background-color: #edf1f2;
+}
+
+.sidebar-eyebrow,
+.sidebar-label {
+  color: #687b80;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.sidebar-title {
+  margin-top: 22px;
+  color: #172d32;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.sidebar-copy {
+  margin-top: 16px;
+  color: #5f747a;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.sidebar-divider {
+  height: 1px;
+  margin: 28px 0;
+  background-color: #d5dfe1;
+}
+
+.sidebar-item {
+  margin-top: 20px;
+  color: #324f56;
+  font-size: 13px;
+}
+
+.sidebar-rule {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid #d5dfe1;
+}
+
+.sidebar-rule-text {
+  color: #687b80;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero {
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #172d32;
+}
+
+.eyebrow {
+  color: #a4c8bd;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.hero-title {
+  margin-top: 14px;
+  color: #f4fcf8;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.hero-copy {
+  max-width: 470px;
+  margin-top: 10px;
+  color: #b6c9cc;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.mode {
+  align-items: center;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.mode-medium,
+.mode-expanded {
+  display: none;
+}
+
+.status-dot,
+.footer-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background-color: #b6f1d4;
+}
+
+.mode-text {
+  color: #b6f1d4;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.breakpoints {
+  margin-top: 16px;
+  padding: 5px;
+  border: 1px solid #e0e6e8;
+  border-radius: 14px;
+  background-color: #ffffff;
+  gap: 4px;
+}
+
+.breakpoint {
+  flex: 1;
+  padding: 12px 6px;
+  border-radius: 9px;
+}
+
+.breakpoint-name {
+  color: #243b42;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.breakpoint-range {
+  margin-top: 5px;
+  color: #61747c;
+  font-size: 11px;
+  text-align: center;
+}
+
+.section-heading {
+  margin: 28px 0 16px;
+}
+
+.section-title {
+  color: #172d32;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.section-caption {
+  margin-top: 6px;
+  color: #74838a;
+  font-size: 12px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.mint {
+  background-color: #e0f1e9;
+}
+
+.lavender {
+  background-color: #eae7f5;
+}
+
+.peach {
+  background-color: #f6eade;
+}
+
+.card-number {
+  color: #536a6a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-title {
+  margin-top: 18px;
+  color: #172d32;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-copy {
+  margin-top: 10px;
+  color: #53666e;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.card-detail {
+  margin-top: 24px;
+  color: #53666e;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.footer {
+  align-items: center;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.footer-dot {
+  background-color: #66887b;
+}
+
+.footer-text {
+  flex: 1;
+  color: #74838a;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+/* Highlight the actual viewport range, independently of the content width. */
+@media (width < 600px) {
+  .breakpoint-compact {
+    background-color: #ddf2e8;
+  }
+}
+
+@media (600px <= width < 1024px) {
+  .breakpoint-medium {
+    background-color: #ddf2e8;
+  }
+
+  .mode-medium {
+    display: flex;
+  }
+}
+
+/* Tablet: two equal columns; the third card wraps onto the next row. */
+@media (min-width: 600px) {
+  .shell {
+    padding: 32px;
+  }
+
+  .hero {
+    padding: 32px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .mode-compact {
+    display: none;
+  }
+
+  .card {
+    width: calc((100% - 16px) / 2);
+    min-height: 224px;
+    padding: 24px;
+  }
+}
+
+/* Desktop: reveal supporting content and use three columns. */
+@media (min-width: 1024px) {
+  .shell {
+    padding: 40px;
+  }
+
+  .topbar {
+    margin-bottom: 32px;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 40px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .hero-copy {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .mode-expanded {
+    display: flex;
+  }
+
+  .breakpoint-expanded {
+    background-color: #ddf2e8;
+  }
+
+  .card {
+    width: calc((100% - 32px) / 3);
+    padding: 20px;
+  }
+}
+
+/* Keep wide, short windows useful without giving up the desktop layout. */
+@media (min-width: 1024px) and (max-height: 700px) {
+  .shell {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .hero {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .section-heading {
+    margin-top: 20px;
+  }
+}

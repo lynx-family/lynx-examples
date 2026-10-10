@@ -41,6 +41,7 @@ This repository is intended to showcase examples of Lynx.
   - [`motion`]: Examples for `@lynx-js/motion` and `@lynx-js/motion/mini`
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
+  - [`media-query`]: A responsive layout adapting from phones to tablets and large screens with CSS media queries
   - [`css-global`]: An example shows how to use global CSS in Lynx
   - [`css-modules`]: An example shows how to use CSS Modules in Lynx
   - [`css-postcss`]: An example shows how to use PostCSS in Lynx
@@ -116,6 +117,7 @@ This repository is intended to showcase examples of Lynx.
 [`markdown`]: ./examples/markdown
 [`react-apis`]: ./examples/react-apis
 [`main-thread`]: ./examples/main-thread
+[`media-query`]: ./examples/media-query
 [`motion`]: ./examples/motion
 [`native-element`]: ./examples/native-element
 [`networking`]: ./examples/networking
