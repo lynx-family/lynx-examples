@@ -14,7 +14,7 @@ const AlignExample = () => {
         <text>linear item 3</text>
       </view>
       <view
-        className="flex  box"
+        className="flex box"
         style={{ justifyContent: "center", alignContent: "center" }}
       >
         <text>flex item 1</text>
@@ -30,7 +30,7 @@ const AlignExample = () => {
         >
           grid item 2
         </text>
-        <text>gird item 3</text>
+        <text>grid item 3</text>
       </view>
     </view>
   );
