@@ -1,5 +1,11 @@
 # @lynx-example/layout
 
+## 0.7.1
+
+### Patch Changes
+
+- 933d1e9: Fix typos in the alignment example.
+
 ## 0.7.0
 
 ### Minor Changes
