@@ -1,5 +1,11 @@
 # @lynx-example/css
 
+## 0.8.0
+
+### Minor Changes
+
+- a4df01c: Add a large-screen media query entry with responsive phone, tablet, and desktop layouts, a desktop sidebar, and CSS-only breakpoint indicators.
+
 ## 0.7.0
 
 ### Minor Changes
