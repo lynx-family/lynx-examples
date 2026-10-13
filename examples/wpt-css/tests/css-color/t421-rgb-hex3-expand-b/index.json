@@ -1,0 +1,6 @@
+{
+  "name": "t421-rgb-hex3-expand-b",
+  "description": "CSS Color 3: expansion of #rgb colors to #rrggbb",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "initial-color-background-001",
+  "description": "CSS Cascade: the \"initial\" value",
+  "component": true,
+  "entry": "index.tsx"
+}

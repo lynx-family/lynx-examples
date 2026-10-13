@@ -1,0 +1,28 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1 {
+  /* Shorthand under test (verbatim). */
+  background: green url("support/cat.png") right top;
+  height: 198px;
+}
+
+/* Browser-default block spacing for the instruction paragraph; the top
+   margin reproduces Web body/first-paragraph margin collapsing. */
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

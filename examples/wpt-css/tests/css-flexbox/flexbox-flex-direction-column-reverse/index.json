@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-direction-column-reverse",
+  "description": "CSS Flexbox Test: Flex-direction = column-reverse",
+  "component": true,
+  "entry": "index.tsx"
+}

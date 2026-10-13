@@ -1,0 +1,6 @@
+{
+  "name": "transform-translate-001",
+  "description": "CSS Test (Transforms): translate(50px, 50px)",
+  "component": true,
+  "entry": "index.tsx"
+}

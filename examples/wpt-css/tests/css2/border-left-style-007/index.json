@@ -1,0 +1,6 @@
+{
+  "name": "border-left-style-007",
+  "description": "CSS Test: Border-left-style set to 'groove'",
+  "component": true,
+  "entry": "index.tsx"
+}

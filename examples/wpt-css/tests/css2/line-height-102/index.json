@@ -1,0 +1,6 @@
+{
+  "name": "line-height-102",
+  "description": "CSS Test: Line-height using pixels with a minimum plus one value, 1",
+  "component": true,
+  "entry": "index.tsx"
+}

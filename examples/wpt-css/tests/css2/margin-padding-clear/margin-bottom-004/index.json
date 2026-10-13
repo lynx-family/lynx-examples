@@ -1,0 +1,6 @@
+{
+  "name": "margin-bottom-004",
+  "description": "CSS Test: Margin-bottom using pixels with a negative zero value, -0px",
+  "component": true,
+  "entry": "index.tsx"
+}

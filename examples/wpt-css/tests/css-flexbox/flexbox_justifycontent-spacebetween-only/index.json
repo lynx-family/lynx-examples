@@ -1,0 +1,6 @@
+{
+  "name": "flexbox_justifycontent-spacebetween-only",
+  "description": "flexbox | justify-content: space-between | single item",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-style-dotted-visual",
+  "description": "WPT visual oracle for text-decoration-style: dotted",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "left-applies-to-002",
+  "description": "CSS Test: Left applied to element with 'display' set to 'table-header-group'",
+  "component": true,
+  "entry": "index.tsx"
+}

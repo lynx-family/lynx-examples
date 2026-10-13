@@ -1,0 +1,6 @@
+{
+  "name": "font-style-002",
+  "description": "CSS Test: Font-style set to 'italic'",
+  "component": true,
+  "entry": "index.tsx"
+}

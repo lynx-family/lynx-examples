@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-justify-content-space-around",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_justify-content-space-around.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "71f88be8580ca4c16c8ce42fb5ee0354904f96175d1a5318ccb7be8b6f6f88fe"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "justify-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-justify-content-value-space-around",
+      "ordinal": 1,
+      "title": "Property justify-content value 'space-around'",
+      "sectionKey": "property-justify-content-value-space-around",
+      "cssFile": "cases/property-justify-content-value-space-around.css",
+      "cssSha256": "8853feae09ed58dd2ebe3a5c5f2d34c259aa7e65dbfbf7f09e104a255df2d0e9",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "justify-content",
+          "expected": "space-around"
+        }
+      ]
+    }
+  ]
+}

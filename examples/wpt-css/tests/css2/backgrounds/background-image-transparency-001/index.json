@@ -1,0 +1,6 @@
+{
+  "name": "background-image-transparency-001",
+  "description": "CSS Test: Transparent background-image with background-color",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "flex-minimum-height-flex-items-013",
+  "description": "CSS Flexbox: min-height: auto with nested flexboxes",
+  "component": true,
+  "entry": "index.tsx"
+}

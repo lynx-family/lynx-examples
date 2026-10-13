@@ -1,0 +1,6 @@
+{
+  "name": "multi-line-wrap-reverse-row-reverse",
+  "description": "CSS Test: flex container multiline wrapping-reverse in row-reverse direction.",
+  "component": true,
+  "entry": "index.tsx"
+}

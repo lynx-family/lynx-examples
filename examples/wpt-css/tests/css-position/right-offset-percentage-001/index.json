@@ -1,0 +1,6 @@
+{
+  "name": "right-offset-percentage-001",
+  "description": "CSS Test: Right offset using percentage",
+  "component": true,
+  "entry": "index.tsx"
+}

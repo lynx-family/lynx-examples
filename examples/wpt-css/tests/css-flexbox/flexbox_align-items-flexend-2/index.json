@@ -1,0 +1,6 @@
+{
+  "name": "flexbox_align-items-flexend-2",
+  "description": "flexbox | align-items: flex-end",
+  "component": true,
+  "entry": "index.tsx"
+}

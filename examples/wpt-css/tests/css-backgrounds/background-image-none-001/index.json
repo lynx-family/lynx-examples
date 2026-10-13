@@ -1,0 +1,6 @@
+{
+  "name": "background-image-none-001",
+  "description": "CSS Test: background-image",
+  "component": true,
+  "entry": "index.tsx"
+}

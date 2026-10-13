@@ -1,0 +1,6 @@
+{
+  "name": "flex-grow-006",
+  "description": "CSS Flexbox Test: flex-grow - positive number(fill all space)",
+  "component": true,
+  "entry": "index.tsx"
+}

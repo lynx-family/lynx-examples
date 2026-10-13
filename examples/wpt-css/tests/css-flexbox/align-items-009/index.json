@@ -1,0 +1,6 @@
+{
+  "name": "align-items-009",
+  "description": "CSS flexbox: centered Ahem text item in a column flex container",
+  "component": true,
+  "entry": "index.tsx"
+}

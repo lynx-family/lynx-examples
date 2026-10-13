@@ -1,0 +1,6 @@
+{
+  "name": "align-items-005",
+  "description": "CSS Test: A flex container with the 'align-items' property set to 'stretch'",
+  "component": true,
+  "entry": "index.tsx"
+}

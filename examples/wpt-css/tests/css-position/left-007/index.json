@@ -1,0 +1,6 @@
+{
+  "name": "left-007",
+  "description": "CSS Test: Left using pixels with a nominal value, 96px",
+  "component": true,
+  "entry": "index.tsx"
+}

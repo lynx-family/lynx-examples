@@ -1,0 +1,13 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  transform: translate(50px, 50px);
+}
+
+page {
+  padding: 8px;
+  font-size: 16px;
+  background-color: white;
+}

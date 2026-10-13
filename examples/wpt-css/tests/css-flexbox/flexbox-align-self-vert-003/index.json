@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-vert-003",
+  "description": "CSS Test: Testing the behavior of 'align-self' with a vertical flex container that's skinnier than its items",
+  "component": true,
+  "entry": "index.tsx"
+}

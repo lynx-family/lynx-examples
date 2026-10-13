@@ -1,0 +1,6 @@
+{
+  "name": "padding-top-089",
+  "description": "CSS Test: Padding-top using percentage with a minimum minus one value, -1%",
+  "component": true,
+  "entry": "index.tsx"
+}

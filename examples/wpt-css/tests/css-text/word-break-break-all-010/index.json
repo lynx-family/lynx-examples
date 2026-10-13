@@ -1,0 +1,6 @@
+{
+  "name": "word-break-break-all-010",
+  "description": "CSS Text Test: word-break: break-all",
+  "component": true,
+  "entry": "index.tsx"
+}

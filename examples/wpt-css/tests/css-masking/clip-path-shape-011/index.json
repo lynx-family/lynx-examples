@@ -1,0 +1,6 @@
+{
+  "name": "clip-path-shape-011",
+  "description": "CSS Masking: Test clip-path property and shape function with single-value arc radius",
+  "component": true,
+  "entry": "index.tsx"
+}

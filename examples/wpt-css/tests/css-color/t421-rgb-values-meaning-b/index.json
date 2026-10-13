@@ -1,0 +1,6 @@
+{
+  "name": "t421-rgb-values-meaning-b",
+  "description": "CSS Test: rgb values",
+  "component": true,
+  "entry": "index.tsx"
+}

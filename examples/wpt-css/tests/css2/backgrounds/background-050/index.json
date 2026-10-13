@@ -1,0 +1,6 @@
+{
+  "name": "background-050",
+  "description": "CSS Test: Background with (repeat color image)",
+  "component": true,
+  "entry": "index.tsx"
+}

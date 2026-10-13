@@ -1,0 +1,6 @@
+{
+  "name": "margin-bottom-019",
+  "description": "CSS Test: Margin-bottom using points with a nominal value, 72pt",
+  "component": true,
+  "entry": "index.tsx"
+}

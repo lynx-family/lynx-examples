@@ -1,0 +1,160 @@
+* {
+  box-sizing: content-box;
+}
+
+view.flexbox {
+        width: 20px; /* Skinny, to force us to wrap */
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex: none;
+        margin-right: 2px;
+        background: lightgray;
+      }
+      view.a {
+        width: 20px;
+        height: 10px;
+        flex: none;
+        background: lightgreen;
+      }
+      view.b {
+        width: 20px;
+        height: auto; /* height comes from contents */
+        flex: none;
+        background: pink;
+      }
+      view.c {
+        width: 20px;
+        height: 40px;
+        flex: none;
+        background: orange;
+      }
+
+      /* Inside of 'b': */
+      view.fixedSizeChild {
+        width: 10px;
+        height: 30px;
+        background: purple;
+      }
+
+.__inline-001 {
+  align-content: flex-start;
+}
+
+.__inline-002 {
+  align-content: flex-start;
+}
+
+.__inline-003 {
+  align-content: flex-start;
+}
+
+.__inline-004 {
+  align-content: flex-end;
+}
+
+.__inline-005 {
+  align-content: flex-end;
+}
+
+.__inline-006 {
+  align-content: flex-end;
+}
+
+.__inline-007 {
+  align-content: center;
+}
+
+.__inline-008 {
+  align-content: center;
+}
+
+.__inline-009 {
+  align-content: center;
+}
+
+.__inline-010 {
+  align-content: space-between;
+}
+
+.__inline-011 {
+  align-content: space-between;
+}
+
+.__inline-012 {
+  align-content: space-between;
+}
+
+.__inline-013 {
+  align-content: space-around;
+}
+
+.__inline-014 {
+  align-content: space-around;
+}
+
+.__inline-015 {
+  align-content: space-around;
+}
+
+.__inline-016 {
+  align-content: space-evenly;
+}
+
+.__inline-017 {
+  align-content: space-evenly;
+}
+
+.__inline-018 {
+  align-content: space-evenly;
+}
+
+.__inline-019 {
+  align-content: start;
+}
+
+.__inline-020 {
+  align-content: start;
+}
+
+.__inline-021 {
+  align-content: start;
+}
+
+.__inline-022 {
+  align-content: end;
+}
+
+.__inline-023 {
+  align-content: end;
+}
+
+.__inline-024 {
+  align-content: end;
+}
+
+.body {
+  /* Reproduce the source's non-shrinking, viewport-wrapping float flow. */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

@@ -1,0 +1,5 @@
+{
+  "name": "background-326",
+  "description": "CSS Test: Background with inherit inheriting one value",
+  "entry": "index.tsx"
+}

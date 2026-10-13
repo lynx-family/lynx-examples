@@ -1,0 +1,11 @@
+# Source-derived semantics
+
+- Both source divs are 96px high. The inner background positioning area is deliberately 212px wide inside a bordered 116px outer content box.
+- `background-position: +50%` computes the horizontal offset from remaining space: `(212px - 20px) * 50% = 96px`. The 20px black image therefore ends at the orange box's right inner edge.
+- The omitted vertical component centers the image at `(96px - 20px) / 2 = 38px`; neither component is hard-coded in the card.
+
+# Compatibility adjustments
+
+- The tested `+50%` token and deliberate inner overflow are preserved verbatim. Broad `div` / `div div` selectors map to `.position-box` / `.test-image`.
+- Web content-box sizing, the 8px horizontal body inset, one-em paragraph spacing, normal wrapping, and source child order are explicit.
+- The card-local black PNG is byte-identical to the pinned source asset.

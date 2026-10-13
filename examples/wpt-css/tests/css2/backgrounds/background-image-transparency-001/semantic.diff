@@ -1,0 +1,16 @@
+# Source-derived semantics
+
+- One source element has a transparent green background image over `background-color: #008000` and an authored 50px height.
+- The assertion requires the background color to remain visible through transparent image pixels as a filled green rectangle across the available width.
+
+# Compatibility adjustments
+
+- The broad source `div` selector is scoped to `.test-box` so the generated body wrapper is not styled as test content.
+- The test element remains an empty Lynx `<view>`; visible instruction text is preserved in `<text>`.
+- Explicit `width: 100%` preserves the source block element's available-width geometry in Lynx's Linear layout; content-box sizing and explicit body/paragraph spacing reproduce the remaining Web setup without relying on margin collapse.
+- The card-local `transparent_green.png` is copied byte-for-byte from the pinned, reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents background images, background colors, fixed px height, and backgrounds on `<view>`.
+- Two final-device runs are byte-stable native passes at 0.0161%; the background color remains visible through the transparent image across the full-width 50px box, and the original Web test matches its pinned official reference exactly.

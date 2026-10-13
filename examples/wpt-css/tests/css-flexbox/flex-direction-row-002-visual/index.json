@@ -1,0 +1,6 @@
+{
+  "name": "flex-direction-row-002-visual",
+  "description": "CSS Test: flex-direction:row axis matches that of writing mode inline axis",
+  "component": true,
+  "entry": "index.tsx"
+}

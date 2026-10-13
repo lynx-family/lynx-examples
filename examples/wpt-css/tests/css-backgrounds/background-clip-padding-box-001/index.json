@@ -1,0 +1,6 @@
+{
+  "name": "background-clip-padding-box-001",
+  "description": "background-clip: padding-box with fractional border-width",
+  "component": true,
+  "entry": "index.tsx"
+}

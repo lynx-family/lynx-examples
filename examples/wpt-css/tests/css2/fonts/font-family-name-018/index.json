@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-018",
+  "description": "CSS Test: unknown quoted font family falls back instead of inheriting body family",
+  "component": true,
+  "entry": "index.tsx"
+}

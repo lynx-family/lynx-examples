@@ -1,0 +1,6 @@
+{
+  "name": "box-sizing-content-box-003",
+  "description": "CSS Test: Box Sizing - Content-Box with min/max width",
+  "component": true,
+  "entry": "index.tsx"
+}

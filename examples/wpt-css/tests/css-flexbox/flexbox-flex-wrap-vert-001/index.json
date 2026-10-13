@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-wrap-vert-001",
+  "description": "CSS Test: Testing flex-wrap in vertical flex containers",
+  "component": true,
+  "entry": "index.tsx"
+}

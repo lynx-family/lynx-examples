@@ -1,0 +1,40 @@
+* {
+  box-sizing: content-box;
+}
+
+.sample {
+  font-family: Arial, sans-serif;
+  font-size: 92px;
+  line-height: 110px;
+  text-decoration: dotted red underline;
+  margin: 46px;
+}
+
+.test1 {
+  text-decoration-thickness: 10px;
+}
+
+.test2 {
+  text-decoration-thickness: 20px;
+}
+
+.test3 {
+  text-decoration-thickness: 30px;
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

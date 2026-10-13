@@ -1,0 +1,6 @@
+{
+  "name": "lch-001",
+  "description": "CSS Color 4: Specifying Lab and LCH",
+  "component": true,
+  "entry": "index.tsx"
+}

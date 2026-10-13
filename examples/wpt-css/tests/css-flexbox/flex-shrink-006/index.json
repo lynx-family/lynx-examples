@@ -1,0 +1,6 @@
+{
+  "name": "flex-shrink-006",
+  "description": "CSS Flexbox Test: flex-shrink - 0(one of flex-shrinks sets 0, another not)",
+  "component": true,
+  "entry": "index.tsx"
+}

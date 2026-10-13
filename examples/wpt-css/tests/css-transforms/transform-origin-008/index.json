@@ -1,0 +1,6 @@
+{
+  "name": "transform-origin-008",
+  "description": "CSS Transforms Test: transform-origin - center 0%('center' computes to '50%' in horizontal position)",
+  "component": true,
+  "entry": "index.tsx"
+}

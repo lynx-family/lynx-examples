@@ -1,0 +1,6 @@
+{
+  "name": "box-offsets-abs-pos-001",
+  "description": "CSS Test: box offsets - containing block for absolute positioned boxes",
+  "component": true,
+  "entry": "index.tsx"
+}

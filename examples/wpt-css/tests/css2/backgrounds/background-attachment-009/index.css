@@ -1,0 +1,34 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  background: url('support/swatch-red.png') 1em repeat-y;
+}
+
+.lime-swatch {
+  display: block;
+  margin: 0 0 0 1em;
+  width: 4em;
+  height: 4em;
+}
+
+.instruction {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "border-left-width-006",
+  "description": "CSS Test: Border-left-width using pixels with a nominal value, 96px",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "border-top-style-001",
+  "description": "CSS Test: Border-top-style set to 'none'",
+  "component": true,
+  "entry": "index.tsx"
+}

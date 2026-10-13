@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-definite-sizes-004",
+  "description": "CSS Test: nested flex containers with definite max-height",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "auto-height-column-with-border-and-padding",
+  "description": "CSS Flexbox: auto-height with border and padding",
+  "component": true,
+  "entry": "index.tsx"
+}

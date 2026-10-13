@@ -1,0 +1,6 @@
+{
+  "name": "font-family-generic-002",
+  "description": "CSS Test: Font-family set to the keyword 'serif'",
+  "component": true,
+  "entry": "index.tsx"
+}

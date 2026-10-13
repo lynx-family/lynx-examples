@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-012",
+  "description": "CSS Test: font family name with escaped characters",
+  "component": true,
+  "entry": "index.tsx"
+}

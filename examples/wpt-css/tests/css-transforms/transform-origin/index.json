@@ -1,0 +1,6 @@
+{
+  "name": "transform-origin",
+  "description": "CSS Transforms API Test: transform-origin",
+  "component": true,
+  "entry": "index.tsx"
+}

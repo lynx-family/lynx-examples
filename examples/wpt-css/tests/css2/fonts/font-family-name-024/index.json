@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-024",
+  "description": "CSS Test: system font names are not special in font-family lists",
+  "component": true,
+  "entry": "index.tsx"
+}

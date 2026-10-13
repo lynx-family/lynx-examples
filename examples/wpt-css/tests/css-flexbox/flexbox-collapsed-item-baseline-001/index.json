@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-collapsed-item-baseline-001",
+  "description": "CSS Test: Testing that a collapsed flex item participates in baseline alignment only for the purpose of establishing container's cross size",
+  "component": true,
+  "entry": "index.tsx"
+}

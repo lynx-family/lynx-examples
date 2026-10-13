@@ -1,0 +1,6 @@
+{
+  "name": "margin-right-091",
+  "description": "CSS Test: Margin-right using 'ex' units with a nominal value, 7.5ex",
+  "component": true,
+  "entry": "index.tsx"
+}

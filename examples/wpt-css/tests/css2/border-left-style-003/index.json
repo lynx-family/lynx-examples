@@ -1,0 +1,6 @@
+{
+  "name": "border-left-style-003",
+  "description": "CSS Test: Border-left-style set to 'dotted'",
+  "component": true,
+  "entry": "index.tsx"
+}

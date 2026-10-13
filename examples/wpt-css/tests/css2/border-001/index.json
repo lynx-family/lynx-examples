@@ -1,0 +1,6 @@
+{
+  "name": "border-001",
+  "description": "CSS Test: Border set using border-width",
+  "component": true,
+  "entry": "index.tsx"
+}

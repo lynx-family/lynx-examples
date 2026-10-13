@@ -1,0 +1,6 @@
+{
+  "name": "transform-origin-007",
+  "description": "CSS Transforms Test: transform-origin - 50% bottom('bottom' computes to '100%' in vertical position)",
+  "component": true,
+  "entry": "index.tsx"
+}

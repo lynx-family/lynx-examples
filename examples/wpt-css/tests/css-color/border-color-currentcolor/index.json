@@ -1,0 +1,6 @@
+{
+  "name": "border-color-currentcolor",
+  "description": "`border-color: currentColor` resolves to `color` value",
+  "component": true,
+  "entry": "index.tsx"
+}

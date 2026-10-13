@@ -1,0 +1,6 @@
+{
+  "name": "background-color-hsl-001",
+  "description": "CSS-Color-4: hsla() syntax accepts comma-less expressions (and comments as separators), percentage alpha and omitting of alpha component - test",
+  "component": true,
+  "entry": "index.tsx"
+}

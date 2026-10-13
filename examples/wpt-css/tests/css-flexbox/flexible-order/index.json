@@ -1,0 +1,6 @@
+{
+  "name": "flexible-order",
+  "description": "CSS Test: Change the value of 'order' property",
+  "component": true,
+  "entry": "index.tsx"
+}

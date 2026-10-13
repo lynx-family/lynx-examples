@@ -1,0 +1,6 @@
+{
+  "name": "flex-order-last-baseline",
+  "description": "CSS Test: flex last baseline with order property",
+  "component": true,
+  "entry": "index.tsx"
+}

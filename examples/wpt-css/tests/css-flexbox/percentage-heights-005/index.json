@@ -1,0 +1,6 @@
+{
+  "name": "percentage-heights-005",
+  "description": "Tests that we consider main axis sizes to be definite in column flexboxes\nwhen the height is an explicit definite height, even if the container does\nnot have a definite main axis size.",
+  "component": true,
+  "entry": "index.tsx"
+}

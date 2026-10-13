@@ -1,0 +1,6 @@
+{
+  "name": "right-019",
+  "description": "CSS Test: Right using points with a nominal value, 72pt",
+  "component": true,
+  "entry": "index.tsx"
+}

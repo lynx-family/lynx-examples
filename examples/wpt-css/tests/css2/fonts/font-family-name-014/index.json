@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-014",
+  "description": "CSS Test: font family name should not match Postscript name",
+  "component": true,
+  "entry": "index.tsx"
+}

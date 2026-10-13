@@ -1,0 +1,6 @@
+{
+  "name": "background-shorthand-repeat-y",
+  "description": "CSS Test: Repeating Backgrounds: Y",
+  "component": true,
+  "entry": "index.tsx"
+}

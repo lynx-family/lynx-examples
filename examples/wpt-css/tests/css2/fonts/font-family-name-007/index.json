@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-007",
+  "description": "CSS Test: double quoted font family name with extra spaces should not match",
+  "component": true,
+  "entry": "index.tsx"
+}

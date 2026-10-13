@@ -1,0 +1,6 @@
+{
+  "name": "border-bottom-style-007",
+  "description": "CSS Test: Border-bottom-style set to 'groove'",
+  "component": true,
+  "entry": "index.tsx"
+}

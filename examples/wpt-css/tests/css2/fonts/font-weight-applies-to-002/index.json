@@ -1,0 +1,6 @@
+{
+  "name": "font-weight-applies-to-002",
+  "description": "CSS Test: Font-weight and 'display: block' elements",
+  "component": true,
+  "entry": "index.tsx"
+}

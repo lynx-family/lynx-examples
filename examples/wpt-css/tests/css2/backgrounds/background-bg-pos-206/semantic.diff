@@ -1,0 +1,17 @@
+# Source-derived semantics
+
+- The Web document root sets `background: bottom right url("support/diamond.png") fixed white no-repeat` with black text.
+- The assertion is that exactly one fuchsia diamond paints at the bottom-right viewport edge.
+
+# Compatibility adjustments
+
+- Web root-canvas ownership maps to Lynx `page`; the complete shorthand, including unsupported `fixed`, remains verbatim so a mismatch is an honest conformance result.
+- `page` and the generated body wrapper use explicit 100% viewport sizing with zero margin, border, and padding.
+- The instruction keeps its authored `2em` margin, uses a wrapping text element, and the card declares Web-compatible content-box sizing.
+- The card-local `diamond.png` is copied byte-for-byte from the approved reference-clean source cache.
+
+# Validated result
+
+- Stable failing on the final Samsung device: four byte-identical Lynx captures omit the required diamond while WebView paints it at the bottom-right edge.
+- The 841-pixel assertion mismatch is only 0.0333% of the full screen, so the canonical failure uses an assertion-sensitive 0.03% limit; the generic 0.5% limit would be a false pass.
+- The original Web test matches its pinned official reference exactly. Removing `fixed` would change the tested behavior, so no card-level repair is applied.

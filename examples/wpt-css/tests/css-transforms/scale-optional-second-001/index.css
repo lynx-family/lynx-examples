@@ -1,0 +1,36 @@
+* {
+  box-sizing: content-box;
+}
+
+.greenSquare {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: green;
+  transform: scale(2);
+}
+
+.redSquare {
+  position: absolute;
+  top: 52px;
+  left: 52px;
+  width: 196px;
+  height: 196px;
+  background: red;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

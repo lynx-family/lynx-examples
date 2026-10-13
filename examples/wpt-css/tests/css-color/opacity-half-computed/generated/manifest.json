@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "opacity-half-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-color/parsing/opacity-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "28f572ecec41dde036b79b8708b40d1dcefe04ffe000cf7901da35ee8763b663"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "opacity",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-opacity-value-0-5",
+      "ordinal": 1,
+      "title": "Property opacity value '0.5'",
+      "sectionKey": "property-opacity-value-0-5",
+      "cssFile": "cases/property-opacity-value-0-5.css",
+      "cssSha256": "769026f268721e3372ec11adad3687cf00923398c3a9d4e860d1cbd650e94c9d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "opacity",
+          "expected": "0.5"
+        }
+      ]
+    }
+  ]
+}

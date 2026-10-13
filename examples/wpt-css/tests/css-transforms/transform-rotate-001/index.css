@@ -1,0 +1,15 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  transform: rotate(45deg) rotate(360deg);
+  width: 100px;
+  height: 100px;
+}
+
+page {
+  padding: 8px;
+  font-size: 16px;
+  background-color: white;
+}

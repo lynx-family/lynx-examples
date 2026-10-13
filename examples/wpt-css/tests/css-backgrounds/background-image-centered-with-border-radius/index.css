@@ -1,0 +1,28 @@
+* {
+  box-sizing: content-box;
+}
+
+#box {
+  /* Shorthand under test (verbatim); box-sizing: border-box is also
+     verbatim from the source and overrides the global reset above. */
+  background: url("support/green-60x60-red-5px-border.png") no-repeat center;
+  border: 5px solid green;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+}
+
+/* Source body margin is the browser default (8px) on all sides; the box
+   has no margins so there is no collapsing to reproduce. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

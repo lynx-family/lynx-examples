@@ -1,0 +1,6 @@
+{
+  "name": "position-fixed-root-element-flex",
+  "description": "CSS Position: Box inset properties & position:fixed flex container as the root element",
+  "component": true,
+  "entry": "index.tsx"
+}

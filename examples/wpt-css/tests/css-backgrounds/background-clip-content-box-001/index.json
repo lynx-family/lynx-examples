@@ -1,0 +1,6 @@
+{
+  "name": "background-clip-content-box-001",
+  "description": "CSS Backgrounds and Borders Test: background-clip Reference",
+  "component": true,
+  "entry": "index.tsx"
+}

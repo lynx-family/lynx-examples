@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-justify-content-horiz-003",
+  "description": "CSS Test: Testing 'justify-content' in a horizontal flex container, and its effects on flex items that overflow",
+  "component": true,
+  "entry": "index.tsx"
+}

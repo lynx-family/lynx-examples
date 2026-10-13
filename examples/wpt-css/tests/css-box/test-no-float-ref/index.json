@@ -1,0 +1,5 @@
+{
+  "name": "test-no-float-ref",
+  "description": "Test non-float rendering in x-webview",
+  "entry": "index.tsx"
+}

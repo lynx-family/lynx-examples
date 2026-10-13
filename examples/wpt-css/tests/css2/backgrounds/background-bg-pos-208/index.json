@@ -1,0 +1,6 @@
+{
+  "name": "background-bg-pos-208",
+  "description": "CSS Test: Background Position: bottom right and the viewport",
+  "component": true,
+  "entry": "index.tsx"
+}

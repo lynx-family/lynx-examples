@@ -1,0 +1,6 @@
+{
+  "name": "align-content-horiz-001a",
+  "description": "CSS Test: Testing 'align-content' in a horizontal flex container",
+  "component": true,
+  "entry": "index.tsx"
+}

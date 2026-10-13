@@ -1,0 +1,6 @@
+{
+  "name": "flex-order-wrap-reverse-baseline",
+  "description": "CSS Test: flex first baseline with wrap-reverse and order property",
+  "component": true,
+  "entry": "index.tsx"
+}

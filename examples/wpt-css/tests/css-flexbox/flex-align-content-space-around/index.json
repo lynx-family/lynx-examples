@@ -1,0 +1,6 @@
+{
+  "name": "flex-align-content-space-around",
+  "description": "CSS Flexible Box Test: align-content property - space-around",
+  "component": true,
+  "entry": "index.tsx"
+}

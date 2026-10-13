@@ -1,0 +1,6 @@
+{
+  "name": "flex-flow-007",
+  "description": "CSS Flexbox Test: flex-flow - column nowrap",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "align-items-006",
+  "description": "CSS Test: A flex container with 'column' direction and 'align-items' property set to 'flex-start'",
+  "component": true,
+  "entry": "index.tsx"
+}

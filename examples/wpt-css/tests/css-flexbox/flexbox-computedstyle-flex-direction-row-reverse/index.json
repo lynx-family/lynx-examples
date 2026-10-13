@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-computedstyle-flex-direction-row-reverse",
+  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-022",
+  "description": "CSS Test: font shorthand-like tokens do not cause font-family matching",
+  "component": true,
+  "entry": "index.tsx"
+}

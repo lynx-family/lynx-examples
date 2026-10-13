@@ -1,0 +1,6 @@
+{
+  "name": "flex-direction-column-reverse-002-visual",
+  "description": "CSS Test: flex-direction: column-reverse swaps main start and end directions",
+  "component": true,
+  "entry": "index.tsx"
+}

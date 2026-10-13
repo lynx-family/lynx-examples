@@ -1,0 +1,6 @@
+{
+  "name": "background-color-clip",
+  "description": "Background Color Clip",
+  "component": true,
+  "entry": "index.tsx"
+}

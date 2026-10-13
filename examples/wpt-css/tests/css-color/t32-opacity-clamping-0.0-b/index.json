@@ -1,0 +1,6 @@
+{
+  "name": "t32-opacity-clamping-0-0-b",
+  "description": "CSS Test: opacity",
+  "component": true,
+  "entry": "index.tsx"
+}

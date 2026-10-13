@@ -1,0 +1,6 @@
+{
+  "name": "t422-rgba-a0-6-a",
+  "description": "CSS Test: rgba() colors",
+  "component": true,
+  "entry": "index.tsx"
+}

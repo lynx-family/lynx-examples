@@ -1,0 +1,6 @@
+{
+  "name": "filter-hue_rotate-002-test",
+  "description": "CSS filter: hue-rotate turns red to green",
+  "component": true,
+  "entry": "index.tsx"
+}

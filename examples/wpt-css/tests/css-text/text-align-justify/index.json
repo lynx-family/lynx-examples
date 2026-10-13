@@ -1,0 +1,5 @@
+{
+  "name": "text-align-justify",
+  "bundle": "dist/text-align-justify/template.js",
+  "entry": "index.tsx"
+}

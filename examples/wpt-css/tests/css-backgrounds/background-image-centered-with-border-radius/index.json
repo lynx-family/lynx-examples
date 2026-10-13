@@ -1,0 +1,6 @@
+{
+  "name": "background-image-centered-with-border-radius",
+  "description": "CSS Background Test: Centered background image with border radius",
+  "component": true,
+  "entry": "index.tsx"
+}

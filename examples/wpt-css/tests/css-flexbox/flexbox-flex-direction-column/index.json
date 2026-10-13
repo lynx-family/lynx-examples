@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-direction-column",
+  "description": "CSS Flexbox Test: Flex-direction = column",
+  "component": true,
+  "entry": "index.tsx"
+}

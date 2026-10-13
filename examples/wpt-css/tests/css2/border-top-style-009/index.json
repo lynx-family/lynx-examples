@@ -1,0 +1,6 @@
+{
+  "name": "border-top-style-009",
+  "description": "CSS Test: Border-top-style set to 'inset'",
+  "component": true,
+  "entry": "index.tsx"
+}

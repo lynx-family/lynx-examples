@@ -1,0 +1,6 @@
+{
+  "name": "line-height-094",
+  "description": "CSS Test: Line-height using percentages with a nominal value, 100%",
+  "component": true,
+  "entry": "index.tsx"
+}

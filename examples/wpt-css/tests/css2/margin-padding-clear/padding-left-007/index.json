@@ -1,0 +1,6 @@
+{
+  "name": "padding-left-007",
+  "description": "CSS Test: Padding-left using pixels with a nominal value with a plus sign, +96px",
+  "component": true,
+  "entry": "index.tsx"
+}

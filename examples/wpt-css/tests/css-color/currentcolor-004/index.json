@@ -1,0 +1,6 @@
+{
+  "name": "currentcolor-004",
+  "description": "currentcolor and visited inherited parent color",
+  "component": true,
+  "entry": "index.tsx"
+}

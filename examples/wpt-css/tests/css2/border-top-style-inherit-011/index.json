@@ -1,0 +1,6 @@
+{
+  "name": "border-top-style-inherit-011",
+  "description": "CSS Test: Border-top-style set to 'inherit'",
+  "component": true,
+  "entry": "index.tsx"
+}

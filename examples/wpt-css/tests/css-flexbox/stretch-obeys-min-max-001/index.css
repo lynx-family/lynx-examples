@@ -1,0 +1,56 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: #reference-overlapped-red { position: absolute; background-color: red; width: 100px; height: 100px; z-index: -1; } */
+#reference-overlapped-red {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+/* Source: <div style="display:flex; flex-direction: column; width: 100px; background: green"> */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  background: green;
+}
+
+/* Source: <div style="max-width: 50px; line-height: 0px;"> containing two inline-block boxes.
+   display: inline-block is unsupported in Lynx; the item is a flex row-wrap container
+   with the same max-width clamp under cross-axis stretch (the property under test).
+   line-height: 0 is not needed because the flex equivalent has no inline line boxes. */
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 50px;
+}
+
+/* Source: .inline-block { display: inline-block; width: 40px; height: 50px; } */
+.block {
+  width: 40px;
+  height: 50px;
+  flex: 0 0 auto;
+}
+
+/* Web: body margin 8px collapses with p margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

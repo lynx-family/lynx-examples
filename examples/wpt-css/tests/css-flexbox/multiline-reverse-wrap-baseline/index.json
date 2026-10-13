@@ -1,0 +1,6 @@
+{
+  "name": "multiline-reverse-wrap-baseline",
+  "description": "CSS Flexbox: multiline reverse wrap baseline.",
+  "component": true,
+  "entry": "index.tsx"
+}

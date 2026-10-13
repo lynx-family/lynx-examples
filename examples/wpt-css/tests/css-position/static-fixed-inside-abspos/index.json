@@ -1,0 +1,6 @@
+{
+  "name": "static-fixed-inside-abspos",
+  "description": "Static position fixed inside static position absolute",
+  "component": true,
+  "entry": "index.tsx"
+}

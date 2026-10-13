@@ -1,0 +1,6 @@
+{
+  "name": "position-absolute-002",
+  "description": "CSS Test: Position absolute size and positioning",
+  "component": true,
+  "entry": "index.tsx"
+}

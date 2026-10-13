@@ -1,0 +1,6 @@
+{
+  "name": "margin-top-067",
+  "description": "CSS Test: Margin-top using inches with a nominal value, 1in",
+  "component": true,
+  "entry": "index.tsx"
+}

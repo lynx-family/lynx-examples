@@ -1,0 +1,50 @@
+.table-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.td {
+  border: 1px solid black;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  padding: 1px;
+}
+
+view { width: 10px; height: 10px; }
+		view.up { margin-top: -10px; }
+		view.pos { position: relative; }
+		view.opc { opacity: 0.99; }
+		view.red { background: red; }
+		view.green { background: green; }
+		.z0 { z-index: 0; }
+		.z1 { z-index: 1; }
+		.zm1 { z-index: -1; }
+
+.__ua-p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  width: max-content;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

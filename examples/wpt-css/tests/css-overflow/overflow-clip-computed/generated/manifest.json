@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "overflow-clip-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-overflow/parsing/overflow-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "09272fbc67b0c1d08be069878d2e4012463784c0f8a0f5543070c14a0ca68c21"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "overflow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-overflow-value-clip",
+      "ordinal": 1,
+      "title": "Property overflow value 'clip'",
+      "sectionKey": "property-overflow-value-clip",
+      "cssFile": "cases/property-overflow-value-clip.css",
+      "cssSha256": "2c3e7c1bbaf0f81ac5a28e4399397012e13d1aa403d6c05f376fddfdf390e2df",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "overflow",
+          "expected": "clip"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "clip-path-ellipse-006",
+  "description": "CSS Masking: Test clip-path property and ellipse function with absolute values",
+  "component": true,
+  "entry": "index.tsx"
+}

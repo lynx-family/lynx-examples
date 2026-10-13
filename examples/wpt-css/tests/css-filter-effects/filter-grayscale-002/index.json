@@ -1,0 +1,6 @@
+{
+  "name": "filter-grayscale-002",
+  "description": "CSS Filter Test: apply a filter to a div with background-color",
+  "component": true,
+  "entry": "index.tsx"
+}

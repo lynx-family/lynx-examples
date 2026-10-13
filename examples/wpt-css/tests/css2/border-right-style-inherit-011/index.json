@@ -1,0 +1,6 @@
+{
+  "name": "border-right-style-inherit-011",
+  "description": "CSS Test: Border-right-style set to 'inherit'",
+  "component": true,
+  "entry": "index.tsx"
+}

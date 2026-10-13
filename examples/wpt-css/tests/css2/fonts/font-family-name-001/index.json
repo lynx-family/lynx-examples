@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-001",
+  "description": "CSS Test: font family name with no quotes",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "justify-content_flex-end",
+  "description": "CSS Flexible Box Test: justify-content_flex-end",
+  "component": true,
+  "entry": "index.tsx"
+}

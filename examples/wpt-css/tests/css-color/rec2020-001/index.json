@@ -1,0 +1,6 @@
+{
+  "name": "rec2020-001",
+  "description": "CSS Color 4: rec2020",
+  "component": true,
+  "entry": "index.tsx"
+}

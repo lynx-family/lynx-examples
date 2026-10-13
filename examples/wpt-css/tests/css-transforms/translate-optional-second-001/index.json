@@ -1,0 +1,6 @@
+{
+  "name": "translate-optional-second-001",
+  "description": "CSS Transforms Test: transform property with translate function and one parameter",
+  "component": true,
+  "entry": "index.tsx"
+}

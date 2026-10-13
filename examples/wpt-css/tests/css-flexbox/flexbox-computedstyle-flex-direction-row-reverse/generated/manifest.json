@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-direction-row-reverse",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-direction-row-reverse.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "d37f8751b73a71ca92defd21b2df983201440c2f9f220571cc477668b010e0ef"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-direction",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-direction-value-row-reverse",
+      "ordinal": 1,
+      "title": "Property flex-direction value 'row-reverse'",
+      "sectionKey": "property-flex-direction-value-row-reverse",
+      "cssFile": "cases/property-flex-direction-value-row-reverse.css",
+      "cssSha256": "f266accdc3161ed2697982e329dc47d9b7e46660daebfa2785a52c7c24b4991d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-direction",
+          "expected": "row-reverse"
+        }
+      ]
+    }
+  ]
+}

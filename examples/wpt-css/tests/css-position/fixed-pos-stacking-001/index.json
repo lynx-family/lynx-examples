@@ -1,0 +1,6 @@
+{
+  "name": "fixed-pos-stacking-001",
+  "description": "CSS test: fixed positioning makes a stacking context",
+  "component": true,
+  "entry": "index.tsx"
+}

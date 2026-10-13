@@ -1,0 +1,6 @@
+{
+  "name": "margin-top-004",
+  "description": "CSS Test: Margin-top using pixels with a negative zero value, -0px",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "margin-left-applies-to-002",
+  "description": "CSS Test: Margin-left applied to element with display table-header-group",
+  "component": true,
+  "entry": "index.tsx"
+}

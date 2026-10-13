@@ -1,0 +1,6 @@
+{
+  "name": "left-offset-position-fixed-001",
+  "description": "CSS Test: left:auto offset of position:fixed box in a position:relative containing block",
+  "component": true,
+  "entry": "index.tsx"
+}

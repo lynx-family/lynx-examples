@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-vert-rtl-001",
+  "description": "CSS Test: Testing the behavior of 'align-self' property values on flex items that are blocks, in a vertical flex container with 'direction: rtl'",
+  "component": true,
+  "entry": "index.tsx"
+}

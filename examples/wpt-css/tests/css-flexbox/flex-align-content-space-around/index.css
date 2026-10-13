@@ -1,0 +1,40 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  position: relative;
+  height: 14em;
+  width: 20em;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  background-color: red;
+  margin: 1em;
+  border: 1px solid black;
+}
+
+.__html-span {
+  height: 2em;
+  flex: none;
+  background-color: green;
+  color: white;
+  margin: 1em;
+  width: 8em;
+}
+
+.__ua-p {
+  margin: 1em 0 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

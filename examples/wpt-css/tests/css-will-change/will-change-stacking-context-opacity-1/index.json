@@ -1,0 +1,6 @@
+{
+  "name": "will-change-stacking-context-opacity-1",
+  "description": "CSS will-change: 'will-change: opacity' creates a stacking context",
+  "component": true,
+  "entry": "index.tsx"
+}

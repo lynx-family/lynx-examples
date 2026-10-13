@@ -1,0 +1,6 @@
+{
+  "name": "font-family-generic-004",
+  "description": "CSS Test: Font-family set to the keyword 'cursive'",
+  "component": true,
+  "entry": "index.tsx"
+}

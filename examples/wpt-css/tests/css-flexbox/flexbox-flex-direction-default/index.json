@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-direction-default",
+  "description": "CSS Flexbox Test: Flex-direction = row by default",
+  "component": true,
+  "entry": "index.tsx"
+}

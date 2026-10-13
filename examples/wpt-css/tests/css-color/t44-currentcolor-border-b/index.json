@@ -1,0 +1,6 @@
+{
+  "name": "t44-currentcolor-border-b",
+  "description": "CSS Test: currentColor (with 'border-color')",
+  "component": true,
+  "entry": "index.tsx"
+}

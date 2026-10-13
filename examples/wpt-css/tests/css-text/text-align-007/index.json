@@ -1,0 +1,6 @@
+{
+  "name": "text-align-007",
+  "description": "CSS Text Test: text-align - end (basic)",
+  "component": true,
+  "entry": "index.tsx"
+}

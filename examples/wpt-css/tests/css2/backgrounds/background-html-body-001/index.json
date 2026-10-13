@@ -1,0 +1,5 @@
+{
+  "name": "background-html-body-001",
+  "description": "CSS Test: Background on html and body element",
+  "entry": "index.tsx"
+}

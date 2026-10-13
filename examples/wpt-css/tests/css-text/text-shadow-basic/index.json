@@ -1,0 +1,6 @@
+{
+  "name": "text-shadow-basic",
+  "description": "CSS Text Decoration Test: basic text-shadow",
+  "component": true,
+  "entry": "index.tsx"
+}

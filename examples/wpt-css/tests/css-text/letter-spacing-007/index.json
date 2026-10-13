@@ -1,0 +1,6 @@
+{
+  "name": "letter-spacing-007",
+  "description": "CSS Test: Letter-spacing using pixels with a nominal value, 96px",
+  "component": true,
+  "entry": "index.tsx"
+}

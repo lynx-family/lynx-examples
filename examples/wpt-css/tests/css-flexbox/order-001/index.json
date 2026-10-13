@@ -1,0 +1,6 @@
+{
+  "name": "order-001",
+  "description": "CSS Test: The 'order' property on flex items set to a value of '-1'",
+  "component": true,
+  "entry": "index.tsx"
+}

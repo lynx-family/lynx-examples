@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-shorthand-dotted-001",
+  "description": "Test case for text-decoration across direction-run boundaries",
+  "component": true,
+  "entry": "index.tsx"
+}

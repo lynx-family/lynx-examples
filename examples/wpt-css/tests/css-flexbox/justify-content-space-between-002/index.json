@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-space-between-002",
+  "description": "CSS Flexible Box Test: justify-content space-between distributes items evenly with first/last items flush to edges",
+  "component": true,
+  "entry": "index.tsx"
+}

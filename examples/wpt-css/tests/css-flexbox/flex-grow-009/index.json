@@ -1,0 +1,6 @@
+{
+  "name": "flex-grow-009",
+  "description": "flex-grow-009",
+  "component": true,
+  "entry": "index.tsx"
+}

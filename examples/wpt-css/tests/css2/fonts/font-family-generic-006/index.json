@@ -1,0 +1,6 @@
+{
+  "name": "font-family-generic-006",
+  "description": "CSS Test: Font-family set to the keyword 'monospace'",
+  "component": true,
+  "entry": "index.tsx"
+}

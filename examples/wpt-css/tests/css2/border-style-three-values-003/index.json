@@ -1,0 +1,6 @@
+{
+  "name": "border-style-three-values-003",
+  "description": "CSS Test: Border-style shorthand property set using three values",
+  "component": true,
+  "entry": "index.tsx"
+}

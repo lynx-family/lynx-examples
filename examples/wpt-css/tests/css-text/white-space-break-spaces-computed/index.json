@@ -1,0 +1,6 @@
+{
+  "name": "css-text-white-space-break-spaces-computed",
+  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
+  "component": true,
+  "entry": "index.tsx"
+}

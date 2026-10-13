@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-backgrounds-background-clip-text-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-backgrounds/parsing/background-clip-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "2a4b7918e4b73c922fd6a2a362345353355f9ede90daee2fa48fc752673789f4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "background-clip",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-background-clip-value-text",
+      "ordinal": 1,
+      "title": "Property background-clip value 'text'",
+      "sectionKey": "property-background-clip-value-text",
+      "cssFile": "cases/property-background-clip-value-text.css",
+      "cssSha256": "ac37b9920545f4db8185fd19d359f522646d1fbcc090c840148589980e8c74d0",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "background-clip",
+          "expected": "text"
+        }
+      ]
+    }
+  ]
+}

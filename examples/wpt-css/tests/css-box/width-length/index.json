@@ -1,0 +1,6 @@
+{
+  "name": "width-length",
+  "description": "CSS Test: width",
+  "component": true,
+  "entry": "index.tsx"
+}

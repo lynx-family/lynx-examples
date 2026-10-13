@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-order",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_order.html",
+    "revision": "1e91be47ac599571cde8a98b0a11cafc3a9e281c",
+    "sha256": "5a184fea1abe137f8af766d7d34396eff5c8123055d1f11dc255a58516ce9fab"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "order",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-order-value-0",
+      "ordinal": 1,
+      "title": "Property order value '0'",
+      "sectionKey": "property-order-value-0",
+      "cssFile": "cases/property-order-value-0.css",
+      "cssSha256": "69b408f01e59301fb26b742ba402af25ee25bb139e8685e8218eb453a1d58123",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "order",
+          "expected": "0"
+        }
+      ]
+    }
+  ]
+}

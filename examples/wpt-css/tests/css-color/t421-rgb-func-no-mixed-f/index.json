@@ -1,0 +1,6 @@
+{
+  "name": "t421-rgb-func-no-mixed-f",
+  "description": "CSS Test: no mixed rgb() values",
+  "component": true,
+  "entry": "index.tsx"
+}

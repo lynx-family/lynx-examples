@@ -1,0 +1,6 @@
+{
+  "name": "flex-minimum-width-flex-items-013",
+  "description": "Flex transferred minimum width",
+  "component": true,
+  "entry": "index.tsx"
+}

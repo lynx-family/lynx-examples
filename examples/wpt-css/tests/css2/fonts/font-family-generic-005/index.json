@@ -1,0 +1,6 @@
+{
+  "name": "font-family-generic-005",
+  "description": "CSS Test: Font-family set to the keyword 'fantasy'",
+  "component": true,
+  "entry": "index.tsx"
+}

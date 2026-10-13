@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-wrap-nowrap",
+  "description": "CSS Flexbox Test: Flex-wrap = nowrap",
+  "component": true,
+  "entry": "index.tsx"
+}

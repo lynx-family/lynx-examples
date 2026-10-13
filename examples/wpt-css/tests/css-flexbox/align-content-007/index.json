@@ -1,0 +1,6 @@
+{
+  "name": "align-content-007",
+  "description": "CSS Test: Fallback alignment of 'align-content: stretch'",
+  "component": true,
+  "entry": "index.tsx"
+}

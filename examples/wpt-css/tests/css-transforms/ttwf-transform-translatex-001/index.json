@@ -1,0 +1,6 @@
+{
+  "name": "ttwf-transform-translatex-001",
+  "description": "CSS Transform Using translateX() function",
+  "component": true,
+  "entry": "index.tsx"
+}

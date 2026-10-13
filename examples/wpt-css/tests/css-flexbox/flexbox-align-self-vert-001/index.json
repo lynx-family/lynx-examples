@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-vert-001",
+  "description": "CSS Test: Testing the behavior of 'align-self' property values on flex items that are blocks, in a vertical flex container",
+  "component": true,
+  "entry": "index.tsx"
+}

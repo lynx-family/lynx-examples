@@ -1,0 +1,6 @@
+{
+  "name": "filters-grayscale-001-test",
+  "description": "CSS Filter Test: grayscale(1) turns red to gray",
+  "component": true,
+  "entry": "index.tsx"
+}

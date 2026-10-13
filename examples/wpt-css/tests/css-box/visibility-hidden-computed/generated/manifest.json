@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "visibility-hidden-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-box/parsing/visibility-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "da02c8de1ea51bc14bf751e1aab8664caab3e23983c40551499cd7f882455b1c"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "visibility",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-visibility-value-hidden",
+      "ordinal": 1,
+      "title": "Property visibility value 'hidden'",
+      "sectionKey": "property-visibility-value-hidden",
+      "cssFile": "cases/property-visibility-value-hidden.css",
+      "cssSha256": "43ac0530b0e7f1a884674ab67771fc4f0dc39f4116a5cf102f8b30c1240d7838",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "visibility",
+          "expected": "hidden"
+        }
+      ]
+    }
+  ]
+}

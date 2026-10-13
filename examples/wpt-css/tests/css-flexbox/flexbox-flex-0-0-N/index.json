@@ -1,0 +1,6 @@
+{
+  "name": "flexbox_flex-0-0-n",
+  "description": "flexbox | flex: 0 0 N",
+  "component": true,
+  "entry": "index.tsx"
+}

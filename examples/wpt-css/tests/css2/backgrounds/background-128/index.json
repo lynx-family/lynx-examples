@@ -1,0 +1,6 @@
+{
+  "name": "background-128",
+  "description": "CSS Test: Background with (image position color repeat)",
+  "component": true,
+  "entry": "index.tsx"
+}

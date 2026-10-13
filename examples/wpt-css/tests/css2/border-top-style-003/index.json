@@ -1,0 +1,6 @@
+{
+  "name": "border-top-style-003",
+  "description": "CSS Test: Border-top-style set to 'dotted'",
+  "component": true,
+  "entry": "index.tsx"
+}

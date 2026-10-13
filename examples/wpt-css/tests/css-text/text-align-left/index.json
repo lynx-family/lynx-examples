@@ -1,0 +1,5 @@
+{
+  "name": "text-align-left",
+  "bundle": "dist/text-align-left/template.js",
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "margin-right-applies-to-002",
+  "description": "CSS Test: Margin-right applied to element with display table-header-group (SKIPPED)",
+  "component": true,
+  "entry": "index.tsx"
+}

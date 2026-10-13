@@ -1,0 +1,6 @@
+{
+  "name": "flex-basis-012",
+  "description": "flex-basis-012",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "rotate-180-degrees-001",
+  "description": "CCSS Test: transform - rotate 180 deg",
+  "component": true,
+  "entry": "index.tsx"
+}

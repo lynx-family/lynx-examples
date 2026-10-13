@@ -1,0 +1,6 @@
+{
+  "name": "flex-basis-005",
+  "description": "CSS Flexbox Test: flex-basis - 0 overrides width",
+  "component": true,
+  "entry": "index.tsx"
+}

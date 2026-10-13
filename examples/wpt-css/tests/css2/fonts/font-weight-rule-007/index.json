@@ -1,0 +1,6 @@
+{
+  "name": "font-weight-rule-007",
+  "description": "CSS Test: Font-weight set to 'lighter' decreasing value below '100'",
+  "component": true,
+  "entry": "index.tsx"
+}

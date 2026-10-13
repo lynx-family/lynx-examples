@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-style-wavy-visual",
+  "description": "WPT visual oracle for text-decoration-style: wavy",
+  "component": true,
+  "entry": "index.tsx"
+}

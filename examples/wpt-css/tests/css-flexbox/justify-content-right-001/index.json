@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-right-001",
+  "description": "flexbox | justify-content: right in rows",
+  "component": true,
+  "entry": "index.tsx"
+}

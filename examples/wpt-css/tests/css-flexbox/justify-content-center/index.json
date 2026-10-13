@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-center",
+  "description": "CSS Test: A flex container with the 'justify-content' property set to 'center'",
+  "component": true,
+  "entry": "index.tsx"
+}

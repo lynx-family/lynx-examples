@@ -1,0 +1,6 @@
+{
+  "name": "box-sizing-content-box-001",
+  "description": "CSS Test: Box Sizing - Content-Box with specified width/height",
+  "component": true,
+  "entry": "index.tsx"
+}

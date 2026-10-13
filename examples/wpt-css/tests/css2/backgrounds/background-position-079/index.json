@@ -1,0 +1,6 @@
+{
+  "name": "background-position-079",
+  "description": "CSS Test: Background-position using 'em' units with a nominal value, 6em",
+  "component": true,
+  "entry": "index.tsx"
+}

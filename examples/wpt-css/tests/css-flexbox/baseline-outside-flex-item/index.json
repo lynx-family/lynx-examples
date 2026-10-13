@@ -1,0 +1,6 @@
+{
+  "name": "baseline-outside-flex-item",
+  "description": "A baseline outside a single flex-item shouldn't affect the size of the flex-line.",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "box-sizing-border-box-003",
+  "description": "CSS Test: Box Sizing - Border-Box with specified width/height",
+  "component": true,
+  "entry": "index.tsx"
+}

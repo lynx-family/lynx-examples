@@ -1,0 +1,39 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source inline styles, extracted verbatim. Declaration under test:
+   filter: blur(10px). */
+#filtered {
+  filter: blur(10px);
+}
+
+#clipper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  overflow: hidden;
+}
+
+#inner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  background: green;
+}
+
+/* No instruction paragraph in the source; keep the browser-default 8px
+   body margin on all sides. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "background-position-117",
+  "description": "CSS Test: Background-position using two percentage values, 100% 100%",
+  "component": true,
+  "entry": "index.tsx"
+}

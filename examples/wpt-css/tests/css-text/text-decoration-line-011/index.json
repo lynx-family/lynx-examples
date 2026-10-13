@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-line-011",
+  "description": "CSS Text Decoration Test: text-decoration-line - underline",
+  "component": true,
+  "entry": "index.tsx"
+}

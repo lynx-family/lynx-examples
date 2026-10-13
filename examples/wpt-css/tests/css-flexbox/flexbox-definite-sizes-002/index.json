@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-definite-sizes-002",
+  "description": "CSS Test: nested flex containers with height established by 'min-height'",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-flex-wrap-wrap",
+  "description": "CSS Flexbox Test: Flex-wrap = wrap",
+  "component": true,
+  "entry": "index.tsx"
+}

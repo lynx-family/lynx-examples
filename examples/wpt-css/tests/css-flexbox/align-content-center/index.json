@@ -1,0 +1,5 @@
+{
+  "name": "align-content-center",
+  "bundle": "dist/align-content-center/template.js",
+  "entry": "index.tsx"
+}

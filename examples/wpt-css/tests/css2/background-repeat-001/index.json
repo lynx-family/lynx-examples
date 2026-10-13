@@ -1,0 +1,6 @@
+{
+  "name": "background-repeat-001",
+  "description": "CSS Test: Background-repeat set to 'repeat'",
+  "component": true,
+  "entry": "index.tsx"
+}

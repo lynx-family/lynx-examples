@@ -1,0 +1,6 @@
+{
+  "name": "background-attachment-009",
+  "description": "CSS Test: Background Positioning Test",
+  "component": true,
+  "entry": "index.tsx"
+}

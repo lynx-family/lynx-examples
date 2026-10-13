@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-ui-resize-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-ui/parsing/resize-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "29e50ae9345f6f5d8cb26f0844b865a825d4fcaa1c5337ee96aea4c4f75a6e08"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "resize",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-resize-value-none",
+      "ordinal": 1,
+      "title": "Property resize value 'none'",
+      "sectionKey": "property-resize-value-none",
+      "cssFile": "cases/property-resize-value-none.css",
+      "cssSha256": "25163a94698a948d259928969e0b133cb56cb9f58cd276c9ab3caea83d8ae0e5",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "resize",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

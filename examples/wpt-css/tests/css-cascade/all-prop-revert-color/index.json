@@ -1,0 +1,6 @@
+{
+  "name": "all-prop-revert-color",
+  "description": "CSS Cascade: \"color\" property preceded by \"all: revert\"",
+  "component": true,
+  "entry": "index.tsx"
+}

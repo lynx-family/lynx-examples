@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-horiz-004",
+  "description": "CSS Test: Testing the behavior of 'align-self' with a horizontal flex container that's shorter than its items, with margin/padding/border on the items",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "border-right-style-001",
+  "description": "CSS Test: Border-right-style set to 'none'",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "flex-basis-002",
+  "description": "CSS Flexbox Test: flex-basis - positive number",
+  "component": true,
+  "entry": "index.tsx"
+}

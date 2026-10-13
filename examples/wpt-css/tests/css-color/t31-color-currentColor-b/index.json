@@ -1,0 +1,6 @@
+{
+  "name": "t31-color-currentcolor-b",
+  "description": "CSS Test: color",
+  "component": true,
+  "entry": "index.tsx"
+}

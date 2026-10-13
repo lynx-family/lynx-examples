@@ -1,0 +1,6 @@
+{
+  "name": "transform-origin-010",
+  "description": "CSS Transforms Test: transform-origin - left 0%",
+  "component": true,
+  "entry": "index.tsx"
+}

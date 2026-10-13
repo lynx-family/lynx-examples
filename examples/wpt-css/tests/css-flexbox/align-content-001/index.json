@@ -1,0 +1,6 @@
+{
+  "name": "align-content-001",
+  "description": "CSS Test: A multi-line flex container with the 'align-content' property set to 'center'",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "t32-opacity-basic-0-6-a",
+  "description": "CSS Test: opacity",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "background-018",
+  "description": "CSS Test: Background with (attachment color)",
+  "component": true,
+  "entry": "index.tsx"
+}

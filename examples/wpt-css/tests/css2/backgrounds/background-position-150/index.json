@@ -1,0 +1,6 @@
+{
+  "name": "background-position-150",
+  "description": "CSS Test: Background-position using 'inherit', inheriting one value",
+  "component": true,
+  "entry": "index.tsx"
+}

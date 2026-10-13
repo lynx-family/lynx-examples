@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-horiz-005",
+  "description": "CSS Test: Testing the behavior of 'align-self' with auto margins in play, in a horizontal flex container",
+  "component": true,
+  "entry": "index.tsx"
+}

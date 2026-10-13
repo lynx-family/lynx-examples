@@ -1,0 +1,6 @@
+{
+  "name": "out-of-gamut-legacy-rgb",
+  "description": "CSS Color 4: Out Of Gamut Legacy SRGB Color with Transparency",
+  "component": true,
+  "entry": "index.tsx"
+}

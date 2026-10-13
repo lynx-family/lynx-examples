@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-style-dashed-visual",
+  "description": "WPT visual oracle for text-decoration-style: dashed",
+  "component": true,
+  "entry": "index.tsx"
+}

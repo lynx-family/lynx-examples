@@ -1,0 +1,6 @@
+{
+  "name": "all-prop-unset-color",
+  "description": "CSS Cascade: \"color\" property preceded by \"all: unset\"",
+  "component": true,
+  "entry": "index.tsx"
+}

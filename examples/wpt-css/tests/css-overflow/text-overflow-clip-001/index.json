@@ -1,0 +1,6 @@
+{
+  "name": "text-overflow-clip-001",
+  "description": "CSS Basic User Interface Test: text-overflow - clip - the text inline content overflows will be broken",
+  "component": true,
+  "entry": "index.tsx"
+}

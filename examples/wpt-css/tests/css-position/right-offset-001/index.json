@@ -1,0 +1,6 @@
+{
+  "name": "right-offset-001",
+  "description": "CSS Test: 'right' property defines the offset from the right edge of the containing block",
+  "component": true,
+  "entry": "index.tsx"
+}

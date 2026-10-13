@@ -1,0 +1,5 @@
+{
+  "name": "position-relative-015",
+  "bundle": "dist/position-relative-015/template.js",
+  "entry": "index.tsx"
+}

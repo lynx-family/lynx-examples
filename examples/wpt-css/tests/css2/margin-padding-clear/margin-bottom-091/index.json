@@ -1,0 +1,6 @@
+{
+  "name": "margin-bottom-091",
+  "description": "CSS Test: Margin-bottom using 'ex' units with a nominal value, 7.5ex",
+  "component": true,
+  "entry": "index.tsx"
+}

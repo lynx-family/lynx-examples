@@ -1,0 +1,6 @@
+{
+  "name": "display-contents-flex-001",
+  "description": "CSS Test: display: contents inside a flex container",
+  "component": true,
+  "entry": "index.tsx"
+}

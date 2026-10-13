@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-space-between-001",
+  "description": "CSS Flexible Box Test: justify-content_space-between",
+  "component": true,
+  "entry": "index.tsx"
+}

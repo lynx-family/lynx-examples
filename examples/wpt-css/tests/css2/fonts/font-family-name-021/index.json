@@ -1,0 +1,6 @@
+{
+  "name": "font-family-name-021",
+  "description": "CSS Test: mixed quoted and unquoted font family syntax is invalid",
+  "component": true,
+  "entry": "index.tsx"
+}

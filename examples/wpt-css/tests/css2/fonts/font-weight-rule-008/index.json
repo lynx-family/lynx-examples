@@ -1,0 +1,6 @@
+{
+  "name": "font-weight-rule-008",
+  "description": "CSS Test: Font-weight compare 'bold' to '700'",
+  "component": true,
+  "entry": "index.tsx"
+}

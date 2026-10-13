@@ -1,0 +1,6 @@
+{
+  "name": "flex-001",
+  "description": "CSS Test: The 'flex' shorthand adjusting the 'flex-grow' sub-property",
+  "component": true,
+  "entry": "index.tsx"
+}

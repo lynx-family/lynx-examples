@@ -1,0 +1,5 @@
+{
+  "name": "max-width-003",
+  "bundle": "dist/max-width-003/template.js",
+  "entry": "index.tsx"
+}

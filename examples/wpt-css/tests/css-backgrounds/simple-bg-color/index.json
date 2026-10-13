@@ -1,0 +1,6 @@
+{
+  "name": "simple-bg-color",
+  "description": "simple-bg-color",
+  "component": true,
+  "entry": "index.tsx"
+}

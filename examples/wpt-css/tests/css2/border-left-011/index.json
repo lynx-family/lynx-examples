@@ -1,0 +1,6 @@
+{
+  "name": "border-left-011",
+  "description": "CSS Test: Border-left set to border-width border-color border-style",
+  "component": true,
+  "entry": "index.tsx"
+}

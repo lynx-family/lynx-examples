@@ -1,0 +1,6 @@
+{
+  "name": "flex-basis-008",
+  "description": "CSS Flexbox Test: flex-basis - 60%",
+  "component": true,
+  "entry": "index.tsx"
+}

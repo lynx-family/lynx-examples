@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-065",
+  "description": "CSS Test: Text-decoration set to 'none'",
+  "component": true,
+  "entry": "index.tsx"
+}

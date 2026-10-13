@@ -1,0 +1,6 @@
+{
+  "name": "padding-top-001",
+  "description": "CSS Test: Padding-top using pixels with a minimum minus one value, -1px",
+  "component": true,
+  "entry": "index.tsx"
+}

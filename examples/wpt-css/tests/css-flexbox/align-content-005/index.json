@@ -1,0 +1,6 @@
+{
+  "name": "align-content-005",
+  "description": "CSS Test: A multi-line flex container with the 'align-content' property set to 'space-around'",
+  "component": true,
+  "entry": "index.tsx"
+}

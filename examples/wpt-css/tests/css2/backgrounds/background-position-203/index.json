@@ -1,0 +1,6 @@
+{
+  "name": "background-position-203",
+  "description": "CSS Test: CSS background position: parsing",
+  "component": true,
+  "entry": "index.tsx"
+}

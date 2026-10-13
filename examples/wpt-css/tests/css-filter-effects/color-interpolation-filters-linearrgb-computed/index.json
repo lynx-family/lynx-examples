@@ -1,0 +1,6 @@
+{
+  "name": "css-filter-effects-color-interpolation-filters-linearrgb-computed",
+  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "filters-opacity-002-test",
+  "description": "CSS Filter Test: opacity(0) makes the box transparent",
+  "component": true,
+  "entry": "index.tsx"
+}

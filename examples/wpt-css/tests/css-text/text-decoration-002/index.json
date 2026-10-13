@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-002",
+  "description": "CSS Test: Text-decoration set to 'overline'",
+  "component": true,
+  "entry": "index.tsx"
+}

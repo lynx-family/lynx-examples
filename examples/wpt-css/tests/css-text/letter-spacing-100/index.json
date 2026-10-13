@@ -1,0 +1,6 @@
+{
+  "name": "letter-spacing-100",
+  "description": "CSS Test: Letter-spacing set to 'normal'",
+  "component": true,
+  "entry": "index.tsx"
+}

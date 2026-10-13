@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-004",
+  "description": "CSS Test: A flex container with the 'justify-content' property set to 'space-between'",
+  "component": true,
+  "entry": "index.tsx"
+}

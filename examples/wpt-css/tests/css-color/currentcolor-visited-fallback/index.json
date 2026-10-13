@@ -1,0 +1,6 @@
+{
+  "name": "currentcolor-visited-fallback",
+  "description": "currentcolor and visited inherited parent color fallback",
+  "component": true,
+  "entry": "index.tsx"
+}

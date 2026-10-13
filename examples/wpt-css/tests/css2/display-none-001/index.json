@@ -1,0 +1,6 @@
+{
+  "name": "display-none-001",
+  "description": "CSS Test: Display set to 'none' does not generate a box even with 'position' set to 'absolute'",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "transform-origin-name-004",
+  "description": "CSS Test (Transforms): transform-origin: top center",
+  "component": true,
+  "entry": "index.tsx"
+}

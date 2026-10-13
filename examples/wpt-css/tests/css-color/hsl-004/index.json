@@ -1,0 +1,6 @@
+{
+  "name": "hsl-004",
+  "description": "CSS Color 4: HSL functions hsl() and hsla()",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "color-001",
+  "description": "CSS Color 4: color property",
+  "component": true,
+  "entry": "index.tsx"
+}

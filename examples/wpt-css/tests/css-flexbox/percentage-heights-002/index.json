@@ -1,0 +1,6 @@
+{
+  "name": "percentage-heights-002",
+  "description": "CSS Test: Percentage sizing in flexboxes",
+  "component": true,
+  "entry": "index.tsx"
+}

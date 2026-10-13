@@ -1,0 +1,6 @@
+{
+  "name": "font-style-001",
+  "description": "CSS Test: Font-style set to 'normal'",
+  "component": true,
+  "entry": "index.tsx"
+}

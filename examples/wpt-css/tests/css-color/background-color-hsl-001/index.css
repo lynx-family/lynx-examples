@@ -1,0 +1,71 @@
+* {
+  box-sizing: content-box;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px 8px;
+  background: white;
+}
+
+.color-row {
+  width: 100%;
+  min-height: 1.1667em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  flex-shrink: 0;
+}
+
+.row-first {
+  margin-top: 1em;
+}
+
+.color-label {
+  color: black;
+}
+
+#p1 {
+  background-color: hsla(120.0, 75%, 50%, 20%);
+}
+
+#p2 {
+  background-color: hsla(120, 75%, 50%, 0.4);
+}
+
+#p3 {
+  background-color: hsla(120 75% 50% / 60%);
+}
+
+#p4 {
+  background-color: hsla(120.0 75% 50% / 1.0);
+}
+
+#p5 {
+  background-color: hsla(120/* comment */75%/* comment */50%/1.0);
+}
+
+#p6 {
+  background-color: hsla(120,/* comment */75%,/* comment */50%,100%);
+}
+
+#p7 {
+  background-color: hsla(120.0, 75%, 50%);
+}
+
+#p8 {
+  background-color: hsla(120 75% 50%);
+}
+
+#p9 {
+  background-color: hsla(120/* comment */75%/* comment */50%);
+}
+
+#p10 {
+  background-color: hsla(120/* comment */,75%,/* comment */50%);
+}

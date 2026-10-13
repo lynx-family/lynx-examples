@@ -1,0 +1,5 @@
+{
+  "name": "align-content-flex-start",
+  "bundle": "dist/align-content-flex-start/template.js",
+  "entry": "index.tsx"
+}

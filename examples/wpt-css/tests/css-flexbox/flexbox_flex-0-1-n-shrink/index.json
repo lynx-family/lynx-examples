@@ -1,0 +1,6 @@
+{
+  "name": "flexbox_flex-0-1-n-shrink",
+  "description": "flexbox | flex: 0 1 N | shrinking",
+  "component": true,
+  "entry": "index.tsx"
+}

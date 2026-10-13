@@ -1,0 +1,6 @@
+{
+  "name": "c5523-width-002",
+  "description": "CSS Test: width",
+  "component": true,
+  "entry": "index.tsx"
+}

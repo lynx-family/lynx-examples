@@ -1,0 +1,6 @@
+{
+  "name": "position-absolute-006",
+  "description": "CSS Test: Absolutely positioned elements establishes a new containing block for absolutely positioned children",
+  "component": true,
+  "entry": "index.tsx"
+}

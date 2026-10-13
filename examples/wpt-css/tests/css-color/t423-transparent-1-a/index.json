@@ -1,0 +1,6 @@
+{
+  "name": "t423-transparent-1-a",
+  "description": "CSS Test: transparent",
+  "component": true,
+  "entry": "index.tsx"
+}

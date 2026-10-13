@@ -1,0 +1,6 @@
+{
+  "name": "background-334",
+  "description": "CSS Backgrounds and Borders Test: background shorthand - background-size '100% auto'",
+  "component": true,
+  "entry": "index.tsx"
+}

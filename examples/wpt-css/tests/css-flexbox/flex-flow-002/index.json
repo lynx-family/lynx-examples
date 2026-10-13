@@ -1,0 +1,6 @@
+{
+  "name": "flex-flow-002",
+  "description": "CSS Flexbox Test: flex-flow - row wrap",
+  "component": true,
+  "entry": "index.tsx"
+}

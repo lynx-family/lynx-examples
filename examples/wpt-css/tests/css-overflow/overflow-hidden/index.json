@@ -1,0 +1,6 @@
+{
+  "name": "overflow-hidden",
+  "description": "WPT overflow:hidden stacking context child final-state visual test",
+  "component": true,
+  "entry": "index.tsx"
+}

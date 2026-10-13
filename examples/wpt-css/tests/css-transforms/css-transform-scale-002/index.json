@@ -1,0 +1,6 @@
+{
+  "name": "css-transform-scale-002",
+  "description": "CSS Transforms Test: transform property with scale function and move its origin",
+  "component": true,
+  "entry": "index.tsx"
+}

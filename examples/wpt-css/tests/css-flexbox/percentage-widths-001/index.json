@@ -1,0 +1,6 @@
+{
+  "name": "percentage-widths-001",
+  "description": "CSS Test: Absolutely positioned children of flexboxes",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "display-p3-001",
+  "description": "CSS Color 4: display-p3",
+  "component": true,
+  "entry": "index.tsx"
+}

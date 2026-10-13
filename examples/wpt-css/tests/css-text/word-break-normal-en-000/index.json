@@ -1,0 +1,6 @@
+{
+  "name": "word-break-normal-en-000",
+  "description": "word-break: normal, latin",
+  "component": true,
+  "entry": "index.tsx"
+}

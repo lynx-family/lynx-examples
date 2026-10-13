@@ -1,0 +1,6 @@
+{
+  "name": "color-invalid-hex-color",
+  "description": "CSS Color 4: invalid hex color notation",
+  "component": true,
+  "entry": "index.tsx"
+}

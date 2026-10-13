@@ -1,0 +1,6 @@
+{
+  "name": "flex-wrap",
+  "description": "Test flex-wrap: wrap behavior in Lynx CSS",
+  "cardType": "test",
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "background-image-002",
+  "description": "CSS Test: Background-image set using the url() function",
+  "component": true,
+  "entry": "index.tsx"
+}

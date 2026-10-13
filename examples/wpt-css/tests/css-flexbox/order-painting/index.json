@@ -1,0 +1,6 @@
+{
+  "name": "order-painting",
+  "description": "CSS Flexbox: painting order.",
+  "component": true,
+  "entry": "index.tsx"
+}

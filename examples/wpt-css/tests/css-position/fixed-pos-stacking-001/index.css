@@ -1,0 +1,43 @@
+* { box-sizing: content-box; }
+
+view {width: 5em; height: 2em}
+
+      /* absolute with 'z-index: auto' does not create a stacking context */
+      #absolute {position: absolute; left: 1em; top: 3em; background: green}
+      #absolute view {position: absolute}
+      #absolute view view {position: absolute; z-index: -1; background: red}
+
+      /* fixed with 'z-index: auto' *does* create a stacking context */
+      #fixed {position: fixed; left: 10em; top: 3em; background: red}
+      #fixed view {position: absolute}
+      #fixed view view {position: absolute; z-index: -1; background: green}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

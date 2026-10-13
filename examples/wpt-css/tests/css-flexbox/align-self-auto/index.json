@@ -1,0 +1,6 @@
+{
+  "name": "align-self-auto",
+  "description": "flexbox | align-self: auto",
+  "component": true,
+  "entry": "index.tsx"
+}

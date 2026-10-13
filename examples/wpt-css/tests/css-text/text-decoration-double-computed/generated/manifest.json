@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-text-text-decoration-double-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-text-decor/parsing/text-decoration-computed.html",
+    "revision": "8e3d3261432a28800a28676d9b7617b3e7bc0f33",
+    "sha256": "0be799cc26734d60616d9a41e9254465e6223ac5379b9445f85aeb5dd40fc53a"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "text-decoration",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-text-decoration-value-double-overline-underline",
+      "ordinal": 1,
+      "title": "Property text-decoration value 'double overline underline'",
+      "sectionKey": "property-text-decoration-value-double-overline-underline",
+      "cssFile": "cases/property-text-decoration-value-double-overline-underline.css",
+      "cssSha256": "961f9c5b05c16c779422f9ff31ed97e3c7a30d00a4910da1774f52b2107abec3",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "text-decoration",
+          "expected": "underline overline double"
+        }
+      ]
+    }
+  ]
+}

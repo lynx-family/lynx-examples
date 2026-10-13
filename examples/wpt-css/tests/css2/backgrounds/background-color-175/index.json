@@ -1,0 +1,5 @@
+{
+  "name": "background-color-175",
+  "description": "CSS Test: Background-color set to inherit",
+  "entry": "index.tsx"
+}

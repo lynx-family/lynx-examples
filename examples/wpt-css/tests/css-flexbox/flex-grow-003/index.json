@@ -1,0 +1,6 @@
+{
+  "name": "flex-grow-003",
+  "description": "CSS Flexbox Test: flex-grow - negative number",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "t422-rgba-func-no-mixed-f",
+  "description": "CSS Test: no mixed rgba() values",
+  "component": true,
+  "entry": "index.tsx"
+}

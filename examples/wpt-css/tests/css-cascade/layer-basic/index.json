@@ -1,0 +1,6 @@
+{
+  "name": "css-cascade-layer-basic",
+  "description": "CSS Cascade Layers basic computed-style testharness adaptation",
+  "component": true,
+  "entry": "index.tsx"
+}

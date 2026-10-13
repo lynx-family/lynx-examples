@@ -1,0 +1,6 @@
+{
+  "name": "background-color-rgb-003",
+  "description": "CSS-Color-4: rgb() and rgba() are aliases of each other - test",
+  "component": true,
+  "entry": "index.tsx"
+}

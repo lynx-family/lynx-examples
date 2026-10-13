@@ -1,0 +1,6 @@
+{
+  "name": "font-weight-rule-002",
+  "description": "CSS Test: Font-weight comparison of 100 to 900",
+  "component": true,
+  "entry": "index.tsx"
+}

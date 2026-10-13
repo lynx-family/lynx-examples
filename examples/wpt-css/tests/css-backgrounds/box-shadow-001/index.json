@@ -1,0 +1,6 @@
+{
+  "name": "box-shadow-001",
+  "description": "CSS Test: Positive value of horizontal offset",
+  "component": true,
+  "entry": "index.tsx"
+}

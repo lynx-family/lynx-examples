@@ -1,0 +1,6 @@
+{
+  "name": "flex-direction",
+  "description": "CSS Test: flex flow direction",
+  "component": true,
+  "entry": "index.tsx"
+}

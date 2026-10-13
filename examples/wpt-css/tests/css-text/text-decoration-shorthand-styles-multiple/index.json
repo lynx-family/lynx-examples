@@ -1,0 +1,6 @@
+{
+  "name": "text-decoration-shorthand-styles-multiple",
+  "description": "text-decoration-style-multiple",
+  "component": true,
+  "entry": "index.tsx"
+}

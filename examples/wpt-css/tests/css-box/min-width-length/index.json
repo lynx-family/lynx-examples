@@ -1,0 +1,6 @@
+{
+  "name": "min-width-length",
+  "description": "CSS Test: Min-width using pixels with a nominal value, 96px",
+  "component": true,
+  "entry": "index.tsx"
+}

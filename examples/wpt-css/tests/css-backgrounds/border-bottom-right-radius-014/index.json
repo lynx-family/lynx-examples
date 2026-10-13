@@ -1,0 +1,6 @@
+{
+  "name": "border-bottom-right-radius-014",
+  "description": "CSS Test: Borders. Border-bottom-right-radius using two length values: 50px -25px",
+  "component": true,
+  "entry": "index.tsx"
+}

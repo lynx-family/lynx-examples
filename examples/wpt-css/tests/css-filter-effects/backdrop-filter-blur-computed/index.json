@@ -1,0 +1,6 @@
+{
+  "name": "css-filter-effects-backdrop-filter-blur-computed",
+  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
+  "component": true,
+  "entry": "index.tsx"
+}

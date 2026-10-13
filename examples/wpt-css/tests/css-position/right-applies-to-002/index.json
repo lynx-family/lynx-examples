@@ -1,0 +1,6 @@
+{
+  "name": "right-applies-to-002",
+  "description": "CSS Test: Right applied to element with 'display' set to 'table-header-group'",
+  "component": true,
+  "entry": "index.tsx"
+}

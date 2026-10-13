@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-stretch",
+  "description": "justify-content:stretch behaves as justify-content:flex-start",
+  "component": true,
+  "entry": "index.tsx"
+}

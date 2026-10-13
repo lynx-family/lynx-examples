@@ -1,0 +1,6 @@
+{
+  "name": "bottom-007",
+  "description": "CSS Test: Bottom using pixels with a nominal value, 96px",
+  "component": true,
+  "entry": "index.tsx"
+}

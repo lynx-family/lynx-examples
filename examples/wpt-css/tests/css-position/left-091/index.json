@@ -1,0 +1,6 @@
+{
+  "name": "left-091",
+  "description": "CSS Test: Left using 'ex' units with a nominal value, 6ex",
+  "component": true,
+  "entry": "index.tsx"
+}

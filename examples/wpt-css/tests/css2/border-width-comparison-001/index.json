@@ -1,0 +1,6 @@
+{
+  "name": "border-width-comparison-001",
+  "description": "CSS Test: Border-width - Relation of thin, medium, and thick",
+  "component": true,
+  "entry": "index.tsx"
+}

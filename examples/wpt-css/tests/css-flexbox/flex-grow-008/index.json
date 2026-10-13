@@ -1,0 +1,6 @@
+{
+  "name": "flex-grow-008",
+  "description": "CSS Flexbox Test: flex-grow - frozen items act as their frozen size",
+  "component": true,
+  "entry": "index.tsx"
+}

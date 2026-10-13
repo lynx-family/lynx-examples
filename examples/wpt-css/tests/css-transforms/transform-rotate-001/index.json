@@ -1,0 +1,6 @@
+{
+  "name": "transform-rotate-001",
+  "description": "CSS Test (Transforms): rotate(45deg) rotate(360deg)",
+  "component": true,
+  "entry": "index.tsx"
+}

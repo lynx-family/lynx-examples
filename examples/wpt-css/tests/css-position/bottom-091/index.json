@@ -1,0 +1,6 @@
+{
+  "name": "bottom-091",
+  "description": "CSS Test: Bottom using 'ex' units with a nominal value, 6ex",
+  "component": true,
+  "entry": "index.tsx"
+}

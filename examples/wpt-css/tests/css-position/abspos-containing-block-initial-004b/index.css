@@ -1,0 +1,18 @@
+* {
+  box-sizing: content-box;
+}
+
+.html-root {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border: 10px solid black;
+}
+
+page {
+  font-size: 16px;
+  background-color: yellow;
+}

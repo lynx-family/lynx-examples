@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-align-self-center",
+  "description": "flexbox | align-self: center",
+  "component": true,
+  "entry": "index.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "margin-left-004",
+  "description": "CSS Test: Margin-left using pixels with a negative zero value, -0px",
+  "component": true,
+  "entry": "index.tsx"
+}

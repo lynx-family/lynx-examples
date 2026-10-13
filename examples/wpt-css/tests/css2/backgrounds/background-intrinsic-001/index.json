@@ -1,0 +1,6 @@
+{
+  "name": "background-intrinsic-001",
+  "description": "CSS Test: Background Intrinsic Sizes: No intrinsic size",
+  "component": true,
+  "entry": "index.tsx"
+}

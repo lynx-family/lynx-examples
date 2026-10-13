@@ -1,0 +1,6 @@
+{
+  "name": "scale-optional-second-001",
+  "description": "CSS Transforms Test: transform property with scale function and one parameter",
+  "component": true,
+  "entry": "index.tsx"
+}

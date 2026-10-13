@@ -1,0 +1,6 @@
+{
+  "name": "border-bottom-style-005",
+  "description": "CSS Test: Border-bottom-style set to 'solid'",
+  "component": true,
+  "entry": "index.tsx"
+}

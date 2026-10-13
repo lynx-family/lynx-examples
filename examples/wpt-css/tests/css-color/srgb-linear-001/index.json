@@ -1,0 +1,6 @@
+{
+  "name": "srgb-linear-001",
+  "description": "CSS Color 4: srgb-linear",
+  "component": true,
+  "entry": "index.tsx"
+}

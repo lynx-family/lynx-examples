@@ -1,0 +1,6 @@
+{
+  "name": "padding-top-applies-to-002",
+  "description": "CSS Test: Padding-top applied to element with display table-header-group",
+  "component": true,
+  "entry": "index.tsx"
+}

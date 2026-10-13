@@ -1,0 +1,6 @@
+{
+  "name": "background-size-cover-001",
+  "description": "CSS Backgrounds and Borders Test: background-size - cover keyword value",
+  "component": true,
+  "entry": "index.tsx"
+}

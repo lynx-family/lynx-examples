@@ -1,0 +1,6 @@
+{
+  "name": "justify-content-003",
+  "description": "CSS Test: A flex container with the 'justify-content' property set to 'flex-end'",
+  "component": true,
+  "entry": "index.tsx"
+}

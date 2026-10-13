@@ -1,0 +1,6 @@
+{
+  "name": "flexbox-definite-sizes-006",
+  "description": "flexbox-definite-sizes-006",
+  "component": true,
+  "entry": "index.tsx"
+}

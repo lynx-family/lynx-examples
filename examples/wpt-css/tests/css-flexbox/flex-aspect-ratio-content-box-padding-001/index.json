@@ -1,0 +1,6 @@
+{
+  "name": "flex-aspect-ratio-content-box-padding-001",
+  "description": "Flex item with aspect-ratio and padding should size correctly in column flex",
+  "component": true,
+  "entry": "index.tsx"
+}

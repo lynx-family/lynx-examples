@@ -1,0 +1,6 @@
+{
+  "name": "auto-margins-002",
+  "description": "css-flexbox: Tests that we correctly align an image with auto margins and max-height",
+  "component": true,
+  "entry": "index.tsx"
+}
