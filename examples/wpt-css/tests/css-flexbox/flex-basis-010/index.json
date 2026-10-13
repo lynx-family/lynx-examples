@@ -1,6 +1,0 @@
-{
-  "name": "flex-basis-010",
-  "description": "CSS Flexbox Test: Indefinite % flex-basis should cause height to be ignored",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-justify-content-horiz-002",
-  "description": "CSS Test: Testing 'justify-content' in a horizontal flex container, with margins/border/padding on flex items",
-  "component": true,
-  "entry": "index.tsx"
-}

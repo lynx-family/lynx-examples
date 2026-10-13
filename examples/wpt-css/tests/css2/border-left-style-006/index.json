@@ -1,6 +1,0 @@
-{
-  "name": "border-left-style-006",
-  "description": "CSS Test: Border-left-style set to 'double'",
-  "component": true,
-  "entry": "index.tsx"
-}

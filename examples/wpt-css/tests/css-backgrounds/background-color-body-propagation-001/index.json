@@ -1,5 +1,0 @@
-{
-  "name": "background-color-body-propagation-001",
-  "description": "CSS Backgrounds and Borders Test: propagate body background to viewport",
-  "entry": "index.tsx"
-}

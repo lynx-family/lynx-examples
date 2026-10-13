@@ -1,6 +1,0 @@
-{
-  "name": "line-height-111",
-  "description": "CSS Test: Line-height with keyword value of 'normal'",
-  "component": true,
-  "entry": "index.tsx"
-}

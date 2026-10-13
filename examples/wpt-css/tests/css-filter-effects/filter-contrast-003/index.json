@@ -1,6 +1,0 @@
-{
-  "name": "filter-contrast-003",
-  "description": "CSS Filter contrast: contrast(200%) clamps dark red to black",
-  "component": true,
-  "entry": "index.tsx"
-}

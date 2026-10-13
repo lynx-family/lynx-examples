@@ -1,5 +1,0 @@
-{
-  "name": "ref-viewer",
-  "description": "WebView expected rendering via x-webview",
-  "entry": "index.tsx"
-}

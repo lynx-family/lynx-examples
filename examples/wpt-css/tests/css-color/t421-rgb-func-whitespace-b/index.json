@@ -1,6 +1,0 @@
-{
-  "name": "t421-rgb-func-whitespace-b",
-  "description": "CSS Test: whitespace in rgb() values",
-  "component": true,
-  "entry": "index.tsx"
-}

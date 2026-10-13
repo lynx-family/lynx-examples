@@ -1,5 +1,0 @@
-{
-  "name": "align-content-space-between",
-  "bundle": "dist/align-content-space-between/template.js",
-  "entry": "index.tsx"
-}

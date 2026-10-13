@@ -1,6 +1,0 @@
-{
-  "name": "t421-rgb-hex-parsing-f",
-  "description": "CSS Color 3: parsing of hexadecimal color values",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-computedstyle-justify-content-flex-start",
-  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
-  "component": true,
-  "entry": "index.tsx"
-}

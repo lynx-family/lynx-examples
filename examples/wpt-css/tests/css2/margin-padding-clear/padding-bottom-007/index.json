@@ -1,6 +1,0 @@
-{
-  "name": "padding-bottom-007",
-  "description": "CSS Test: Padding-bottom using pixels with a nominal value with a plus sign, +96px",
-  "component": true,
-  "entry": "index.tsx"
-}

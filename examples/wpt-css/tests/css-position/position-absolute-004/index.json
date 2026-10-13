@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-004",
-  "description": "CSS Test: Absolutely positioned elements establishes a new containing block for normal flow children",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "background-reset-001",
-  "description": "CSS Test: Background resets all background settings",
-  "entry": "index.tsx"
-}

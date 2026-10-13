@@ -1,6 +1,0 @@
-{
-  "name": "border-right-style-005",
-  "description": "CSS Test: Border-right-style set to 'solid'",
-  "component": true,
-  "entry": "index.tsx"
-}

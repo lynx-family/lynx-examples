@@ -1,6 +1,0 @@
-{
-  "name": "text-decoration-081",
-  "description": "CSS Test: text-decoration underlining and spaces",
-  "component": true,
-  "entry": "index.tsx"
-}

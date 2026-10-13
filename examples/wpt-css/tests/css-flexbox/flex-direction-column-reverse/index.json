@@ -1,6 +1,0 @@
-{
-  "name": "flex-direction-column-reverse",
-  "description": "CSS Flexible Box Test: flex-direction proprety - column-reverse",
-  "component": true,
-  "entry": "index.tsx"
-}

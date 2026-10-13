@@ -1,6 +1,0 @@
-{
-  "name": "all-prop-inherit-color",
-  "description": "CSS Cascade: \"color\" property preceded by \"all: initial\"",
-  "component": true,
-  "entry": "index.tsx"
-}

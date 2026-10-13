@@ -1,6 +1,0 @@
-{
-  "name": "white-space-001",
-  "description": "CSS Test: White-space set to 'normal'",
-  "component": true,
-  "entry": "index.tsx"
-}

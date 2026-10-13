@@ -1,6 +1,0 @@
-{
-  "name": "border-width-shorthand-004",
-  "description": "CSS Test: Border-width set using four values",
-  "component": true,
-  "entry": "index.tsx"
-}

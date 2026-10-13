@@ -1,6 +1,0 @@
-{
-  "name": "padding-top-095",
-  "description": "CSS Test: Padding-top using percentage with a nominal value with a plus sign, +50%",
-  "component": true,
-  "entry": "index.tsx"
-}

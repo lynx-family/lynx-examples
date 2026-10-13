@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-001",
-  "description": "CSS Test: Absolute positions impact on later siblings",
-  "component": true,
-  "entry": "index.tsx"
-}

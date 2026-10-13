@@ -1,6 +1,0 @@
-{
-  "name": "flex-basis-011",
-  "description": "CSS Flexbox Test: % flex-basis should not cause engines to treat items as percentage sized",
-  "component": true,
-  "entry": "index.tsx"
-}

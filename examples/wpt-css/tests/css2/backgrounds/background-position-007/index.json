@@ -1,6 +1,0 @@
-{
-  "name": "background-position-007",
-  "description": "CSS Test: Background-position using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

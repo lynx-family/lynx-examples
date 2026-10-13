@@ -1,6 +1,0 @@
-{
-  "name": "margin-left-007",
-  "description": "CSS Test: Margin-left using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

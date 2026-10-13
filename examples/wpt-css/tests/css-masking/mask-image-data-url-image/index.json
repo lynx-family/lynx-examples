@@ -1,6 +1,0 @@
-{
-  "name": "mask-image-data-url-image",
-  "description": "CSS Test: mask-image: url(data:...)",
-  "component": true,
-  "entry": "index.tsx"
-}

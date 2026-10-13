@@ -1,6 +1,0 @@
-{
-  "name": "t421-rgb-clip-outside-gamut-b",
-  "description": "CSS Test: rgb() clipping outside device gamut",
-  "component": true,
-  "entry": "index.tsx"
-}

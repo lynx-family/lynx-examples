@@ -1,6 +1,0 @@
-{
-  "name": "color-computed-hex-color",
-  "description": "CSS Color 4: computed colors using hex color notation",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "padding-left-applies-to-002",
-  "description": "CSS Test: Padding-left applied to element with display table-header-group",
-  "component": true,
-  "entry": "index.tsx"
-}

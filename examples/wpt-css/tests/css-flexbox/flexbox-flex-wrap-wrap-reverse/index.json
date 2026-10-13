@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-flex-wrap-wrap-reverse",
-  "description": "CSS Flexbox Test: Flex-wrap = wrap-reverse",
-  "component": true,
-  "entry": "index.tsx"
-}

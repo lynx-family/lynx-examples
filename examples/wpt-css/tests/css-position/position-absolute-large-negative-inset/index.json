@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-large-negative-inset",
-  "description": "CSS Position: Large negative box inset properties",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "flex-align-content-space-between",
-  "description": "CSS Flexible Box Test: align-content property - space-between",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "hex-001",
-  "description": "CSS Color 4: The RGB hexadecimal notations: #RRGGBB",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "font-family-name-013",
-  "description": "CSS Test: font family name should not match font fullnames",
-  "component": true,
-  "entry": "index.tsx"
-}

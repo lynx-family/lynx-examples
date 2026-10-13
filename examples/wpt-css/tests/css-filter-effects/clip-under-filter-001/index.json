@@ -1,6 +1,0 @@
-{
-  "name": "clip-under-filter-001",
-  "description": "CSS Filters: Clips on descendants of filter elements are applied",
-  "component": true,
-  "entry": "index.tsx"
-}

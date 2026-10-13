@@ -1,6 +1,0 @@
-{
-  "name": "align-content-wrap-002",
-  "description": "css-flexbox: Tests align-content with flex-wrap: wrap",
-  "component": true,
-  "entry": "index.tsx"
-}

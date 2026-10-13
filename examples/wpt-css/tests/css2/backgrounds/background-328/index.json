@@ -1,6 +1,0 @@
-{
-  "name": "background-328",
-  "description": "CSS Test: Background with inherit inheriting three values",
-  "component": true,
-  "entry": "index.tsx"
-}

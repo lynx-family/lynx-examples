@@ -1,6 +1,0 @@
-{
-  "name": "text-decoration-style-solid-visual",
-  "description": "WPT visual oracle for text-decoration-style: solid",
-  "component": true,
-  "entry": "index.tsx"
-}

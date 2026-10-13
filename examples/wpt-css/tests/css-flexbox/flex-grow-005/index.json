@@ -1,6 +1,0 @@
-{
-  "name": "flex-grow-005",
-  "description": "CSS Flexbox Test: flex-grow - (invalid when applied to flex container)",
-  "component": true,
-  "entry": "index.tsx"
-}

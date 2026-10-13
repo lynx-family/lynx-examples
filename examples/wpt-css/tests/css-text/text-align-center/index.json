@@ -1,6 +1,0 @@
-{
-  "name": "text-align-center",
-  "description": "WPT CSS2 text-align center visual test",
-  "component": true,
-  "entry": "index.tsx"
-}

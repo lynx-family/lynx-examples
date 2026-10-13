@@ -1,6 +1,0 @@
-{
-  "name": "named-001",
-  "description": "CSS Color 4: Named colors",
-  "component": true,
-  "entry": "index.tsx"
-}

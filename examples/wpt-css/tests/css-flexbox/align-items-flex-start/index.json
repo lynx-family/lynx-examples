@@ -1,5 +1,0 @@
-{
-  "name": "align-items-flex-start",
-  "bundle": "dist/align-items-flex-start/template.js",
-  "entry": "index.tsx"
-}

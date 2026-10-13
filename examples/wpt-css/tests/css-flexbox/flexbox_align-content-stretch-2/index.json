@@ -1,6 +1,0 @@
-{
-  "name": "flexbox_align-content-stretch-2",
-  "description": "flexbox | align-content: stretch",
-  "component": true,
-  "entry": "index.tsx"
-}

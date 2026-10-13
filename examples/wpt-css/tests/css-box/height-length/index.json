@@ -1,6 +1,0 @@
-{
-  "name": "height-length",
-  "description": "CSS Test: height",
-  "component": true,
-  "entry": "index.tsx"
-}

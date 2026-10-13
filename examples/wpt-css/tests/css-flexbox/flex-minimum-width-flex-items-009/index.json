@@ -1,6 +1,0 @@
-{
-  "name": "flex-minimum-width-flex-items-009",
-  "description": "CSS Flexible Box Test: Minimum width of flex items",
-  "component": true,
-  "entry": "index.tsx"
-}

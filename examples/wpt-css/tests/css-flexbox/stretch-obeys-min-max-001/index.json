@@ -1,6 +1,0 @@
-{
-  "name": "stretch-obeys-min-max-001",
-  "description": "item's min/max cross sizes",
-  "component": true,
-  "entry": "index.tsx"
-}

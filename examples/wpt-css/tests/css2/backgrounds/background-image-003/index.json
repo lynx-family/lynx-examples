@@ -1,6 +1,0 @@
-{
-  "name": "background-image-003",
-  "description": "CSS Test: Background-image set to 'inherit'",
-  "component": true,
-  "entry": "index.tsx"
-}

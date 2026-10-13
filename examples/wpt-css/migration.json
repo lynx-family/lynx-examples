@@ -1877,6 +1877,7 @@
   },
   "excluded": [
     "tests/**/evidence/**",
+    "tests/**/index.json",
     "Android runner",
     "upstream HTML cache"
   ]

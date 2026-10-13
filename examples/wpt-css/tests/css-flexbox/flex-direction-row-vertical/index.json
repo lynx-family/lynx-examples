@@ -1,6 +1,0 @@
-{
-  "name": "flex-direction-row-vertical",
-  "description": "CSS Test: flex-direction:row has the same orientation as inline axis",
-  "component": true,
-  "entry": "index.tsx"
-}

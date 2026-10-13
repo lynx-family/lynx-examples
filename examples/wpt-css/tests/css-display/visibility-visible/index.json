@@ -1,5 +1,0 @@
-{
-  "name": "visibility-visible",
-  "bundle": "dist/visibility-visible/template.js",
-  "entry": "index.tsx"
-}

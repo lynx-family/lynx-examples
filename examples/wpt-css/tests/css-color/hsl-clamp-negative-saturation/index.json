@@ -1,6 +1,0 @@
-{
-  "name": "hsl-clamp-negative-saturation",
-  "description": "CSS Test: hsl() clamp negative saturation values",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "word-spacing-100",
-  "description": "CSS Test: Word-spacing set to 'normal'",
-  "component": true,
-  "entry": "index.tsx"
-}

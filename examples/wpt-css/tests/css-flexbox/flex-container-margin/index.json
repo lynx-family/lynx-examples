@@ -1,6 +1,0 @@
-{
-  "name": "flex-container-margin",
-  "description": "CSS Test: flex-container-margin-not-collapse-with-content-margin",
-  "component": true,
-  "entry": "index.tsx"
-}

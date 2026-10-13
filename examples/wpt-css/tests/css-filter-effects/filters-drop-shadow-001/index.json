@@ -1,6 +1,0 @@
-{
-  "name": "filters-drop-shadow-001",
-  "description": "CSS Writing Modes Test: drop-shadow offset test",
-  "component": true,
-  "entry": "index.tsx"
-}

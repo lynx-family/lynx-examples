@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-align-self-horiz-001-block",
-  "description": "CSS Test: Testing the behavior of 'align-self' property values on flex items that are blocks, in a horizontal flex container",
-  "component": true,
-  "entry": "index.tsx"
-}

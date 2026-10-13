@@ -1,6 +1,0 @@
-{
-  "name": "border-top-011",
-  "description": "CSS Test: Border-top set to border-width border-color border-style",
-  "component": true,
-  "entry": "index.tsx"
-}

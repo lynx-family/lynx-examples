@@ -1,6 +1,0 @@
-{
-  "name": "padding-overflow",
-  "description": "padding-overflow",
-  "component": true,
-  "entry": "index.tsx"
-}

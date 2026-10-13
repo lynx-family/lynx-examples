@@ -1,6 +1,0 @@
-{
-  "name": "white-space-003",
-  "description": "CSS Test: White-space set to 'nowrap'",
-  "component": true,
-  "entry": "index.tsx"
-}

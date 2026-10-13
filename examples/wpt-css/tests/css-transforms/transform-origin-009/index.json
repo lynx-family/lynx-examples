@@ -1,6 +1,0 @@
-{
-  "name": "transform-origin-009",
-  "description": "CSS Transforms Test: transform-origin - 0% center('center' computes to '50%' in vertical position)",
-  "component": true,
-  "entry": "index.tsx"
-}

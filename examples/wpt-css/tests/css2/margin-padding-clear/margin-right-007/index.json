@@ -1,6 +1,0 @@
-{
-  "name": "margin-right-007",
-  "description": "CSS Test: Margin-right using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "position-fixed-001",
-  "description": "CSS Test: Fixed position elements impact on later siblings",
-  "component": true,
-  "entry": "index.tsx"
-}

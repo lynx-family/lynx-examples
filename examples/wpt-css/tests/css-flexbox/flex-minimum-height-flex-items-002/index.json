@@ -1,6 +1,0 @@
-{
-  "name": "flex-minimum-height-flex-items-002",
-  "description": "CSS Flexible Box Test: Minimum height of flex items",
-  "component": true,
-  "entry": "index.tsx"
-}

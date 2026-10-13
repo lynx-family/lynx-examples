@@ -1,6 +1,0 @@
-{
-  "name": "justify-content-space-between",
-  "description": "flexbox | justify-content: space-between",
-  "component": true,
-  "entry": "index.tsx"
-}

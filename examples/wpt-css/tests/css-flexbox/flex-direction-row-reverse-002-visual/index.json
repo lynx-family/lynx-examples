@@ -1,6 +1,0 @@
-{
-  "name": "flex-direction-row-reverse-002-visual",
-  "description": "CSS Test: flow-direction:row-reverse swaps main start and end directions",
-  "component": true,
-  "entry": "index.tsx"
-}

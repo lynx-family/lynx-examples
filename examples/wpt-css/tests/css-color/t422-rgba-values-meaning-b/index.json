@@ -1,6 +1,0 @@
-{
-  "name": "t422-rgba-values-meaning-b",
-  "description": "CSS Test: rgba values",
-  "component": true,
-  "entry": "index.tsx"
-}

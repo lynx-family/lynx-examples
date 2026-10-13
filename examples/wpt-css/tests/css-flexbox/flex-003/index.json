@@ -1,6 +1,0 @@
-{
-  "name": "flex-003",
-  "description": "CSS Test: Comparing two different elements using different values for the 'flex-grow' sub-property on the 'flex' shorthand",
-  "component": true,
-  "entry": "index.tsx"
-}

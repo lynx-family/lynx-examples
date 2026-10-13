@@ -1,6 +1,0 @@
-{
-  "name": "hwb-002",
-  "description": "CSS Color 4: hwb",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "abspos-containing-block-initial-004b",
-  "description": "CSS Test: Test for containing block for absolutely positioned elements being initial containing block",
-  "component": true,
-  "entry": "index.tsx"
-}

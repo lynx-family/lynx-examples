@@ -1,6 +1,0 @@
-{
-  "name": "border-top-width-006",
-  "description": "CSS Test: Border-top-width using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

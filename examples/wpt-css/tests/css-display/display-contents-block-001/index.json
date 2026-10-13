@@ -1,6 +1,0 @@
-{
-  "name": "display-contents-block-001",
-  "description": "CSS Display: display:contents in block layout",
-  "component": true,
-  "entry": "index.tsx"
-}

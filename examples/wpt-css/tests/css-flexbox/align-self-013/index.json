@@ -1,6 +1,0 @@
-{
-  "name": "align-self-013",
-  "description": "CSS Flexbox Test: align-self - invalid if applied to flex container",
-  "component": true,
-  "entry": "index.tsx"
-}

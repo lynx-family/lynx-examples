@@ -1,6 +1,0 @@
-{
-  "name": "border-top-color",
-  "description": "CSS Test: Border-top-color set to hex with three digits with the maximum plus one value of #1000",
-  "component": true,
-  "entry": "index.tsx"
-}

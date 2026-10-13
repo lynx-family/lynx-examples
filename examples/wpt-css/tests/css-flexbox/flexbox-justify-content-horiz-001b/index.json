@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-justify-content-horiz-001b",
-  "description": "CSS Test: Testing 'justify-content' in a horizontal flex container with \"min-width\"",
-  "component": true,
-  "entry": "index.tsx"
-}

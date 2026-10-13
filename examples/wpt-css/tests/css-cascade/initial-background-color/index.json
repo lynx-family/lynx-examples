@@ -1,6 +1,0 @@
-{
-  "name": "initial-background-color",
-  "description": "CSS Cascading and Inheritance Test:\n    Initial property and background-color",
-  "component": true,
-  "entry": "index.tsx"
-}

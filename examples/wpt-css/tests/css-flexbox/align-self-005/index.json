@@ -1,6 +1,0 @@
-{
-  "name": "align-self-005",
-  "description": "CSS Flexbox Test: align-self - stretch (height: number)",
-  "component": true,
-  "entry": "index.tsx"
-}

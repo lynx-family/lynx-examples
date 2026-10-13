@@ -1,6 +1,0 @@
-{
-  "name": "word-spacing-007",
-  "description": "CSS Test: Word-spacing normal pixel on an element",
-  "component": true,
-  "entry": "index.tsx"
-}

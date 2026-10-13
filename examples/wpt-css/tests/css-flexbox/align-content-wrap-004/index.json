@@ -1,6 +1,0 @@
-{
-  "name": "align-content-wrap-004",
-  "description": "css-flexbox: Tests that we size items in a wrapping column flexbox as fit-content",
-  "component": true,
-  "entry": "index.tsx"
-}

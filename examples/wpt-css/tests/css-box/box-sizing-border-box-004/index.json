@@ -1,6 +1,0 @@
-{
-  "name": "box-sizing-border-box-004",
-  "description": "CSS Test: Box Sizing - Border-Box with min/max width/height",
-  "component": true,
-  "entry": "index.tsx"
-}

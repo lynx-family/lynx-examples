@@ -1,6 +1,0 @@
-{
-  "name": "font-family-name-023",
-  "description": "CSS Test: font family names that look like font shorthand still match",
-  "component": true,
-  "entry": "index.tsx"
-}

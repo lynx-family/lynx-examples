@@ -1,6 +1,0 @@
-{
-  "name": "currentcolor-005",
-  "description": "column-rule-color that depend on currentcolor should be recomputed when currentcolor changes",
-  "component": true,
-  "entry": "index.tsx"
-}

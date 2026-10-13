@@ -1,6 +1,0 @@
-{
-  "name": "margin-top-applies-to-002",
-  "description": "CSS Test: Margin-top applied to element with display table-header-group",
-  "component": true,
-  "entry": "index.tsx"
-}

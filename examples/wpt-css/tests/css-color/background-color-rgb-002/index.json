@@ -1,6 +1,0 @@
-{
-  "name": "background-color-rgb-002",
-  "description": "CSS-Color-4: rgba() syntax accepts non-integer components, comma-less expressions (and comments as separators), percentage alpha and omitting of alpha component - test",
-  "component": true,
-  "entry": "index.tsx"
-}

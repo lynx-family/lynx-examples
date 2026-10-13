@@ -1,6 +1,0 @@
-{
-  "name": "flex-basis-014",
-  "description": "CSS Test: flex base size that depends on cross size, with aspect-ratio",
-  "component": true,
-  "entry": "index.tsx"
-}

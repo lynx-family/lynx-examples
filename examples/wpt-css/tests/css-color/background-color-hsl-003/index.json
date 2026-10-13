@@ -1,6 +1,0 @@
-{
-  "name": "background-color-hsl-003",
-  "description": "CSS-Color-4: support <angle> value for hsl()/hsla() hue component - test",
-  "component": true,
-  "entry": "index.tsx"
-}

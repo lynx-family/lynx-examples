@@ -1,6 +1,0 @@
-{
-  "name": "negative-margins-001",
-  "description": "CSS Flexible Box Test: Negative margins",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "t421-rgb-func-pct-a",
-  "description": "CSS Test: rgb() colors",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "font-weight-rule-004",
-  "description": "CSS Test: Font-weight set to 'bolder'",
-  "component": true,
-  "entry": "index.tsx"
-}

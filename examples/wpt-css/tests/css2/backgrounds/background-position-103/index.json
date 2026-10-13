@@ -1,6 +1,0 @@
-{
-  "name": "background-position-103",
-  "description": "CSS Test: Background-position using percentages with a nominal value, 50%",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "rotate-270-degrees-001",
-  "description": "CCSS Test: transform - rotate 270 deg",
-  "component": true,
-  "entry": "index.tsx"
-}

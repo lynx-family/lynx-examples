@@ -1,6 +1,0 @@
-{
-  "name": "margin-trim-block-002",
-  "description": "margin-trim: block-container-block-002",
-  "component": true,
-  "entry": "index.tsx"
-}

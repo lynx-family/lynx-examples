@@ -1,6 +1,0 @@
-{
-  "name": "background-attachment-applies-to-009",
-  "description": "CSS Test: Background-attachment applied to elements with 'display' set to 'block'",
-  "component": true,
-  "entry": "index.tsx"
-}

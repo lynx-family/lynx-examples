@@ -1,6 +1,0 @@
-{
-  "name": "flex-grow-007",
-  "description": "CSS Flexbox Test: flex-grow - less than one",
-  "component": true,
-  "entry": "index.tsx"
-}

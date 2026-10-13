@@ -1,6 +1,0 @@
-{
-  "name": "gap-014",
-  "description": "Flex gaps",
-  "component": true,
-  "entry": "index.tsx"
-}

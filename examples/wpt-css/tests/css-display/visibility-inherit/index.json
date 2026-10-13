@@ -1,5 +1,0 @@
-{
-  "name": "visibility-inherit",
-  "bundle": "dist/visibility-inherit/template.js",
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "border-left-style-inherit-011",
-  "description": "CSS Test: Border-left-style set to 'inherit'",
-  "component": true,
-  "entry": "index.tsx"
-}

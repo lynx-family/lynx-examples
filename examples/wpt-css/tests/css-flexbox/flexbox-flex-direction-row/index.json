@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-flex-direction-row",
-  "description": "CSS Flexbox Test: Flex-direction = row",
-  "component": true,
-  "entry": "index.tsx"
-}

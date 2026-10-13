@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-justify-content-horiz-006",
-  "description": "CSS Test: Testing 'justify-content' in an auto-sized reversed horizontal flex container",
-  "component": true,
-  "entry": "index.tsx"
-}

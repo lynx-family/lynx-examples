@@ -1,6 +1,0 @@
-{
-  "name": "top-067",
-  "description": "CSS Test: Top using inches with a nominal value, 1in",
-  "component": true,
-  "entry": "index.tsx"
-}

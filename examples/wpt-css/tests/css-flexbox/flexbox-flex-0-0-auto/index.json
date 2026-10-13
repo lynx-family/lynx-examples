@@ -1,6 +1,0 @@
-{
-  "name": "flexbox_flex-0-0-auto",
-  "description": "flexbox | flex: 0 0 auto",
-  "component": true,
-  "entry": "index.tsx"
-}

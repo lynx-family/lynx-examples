@@ -1,6 +1,0 @@
-{
-  "name": "transform-origin-012",
-  "description": "CSS Transforms Test: transform-origin - 0% top('top' computes to '0%' in vertical position)",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "will-change-abspos-cb-001",
-  "description": "CSS Test: will-change: position turns an element in an abspos containing block.",
-  "component": true,
-  "entry": "index.tsx"
-}

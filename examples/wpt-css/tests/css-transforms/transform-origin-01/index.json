@@ -1,6 +1,0 @@
-{
-  "name": "transform-origin-01",
-  "description": "CSS Test: SVG Transform using transform-origin",
-  "component": true,
-  "entry": "index.tsx"
-}

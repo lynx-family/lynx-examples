@@ -1,6 +1,0 @@
-{
-  "name": "padding-bottom-applies-to-002",
-  "description": "CSS Test: Padding-bottom applied to block-level elements",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "right-067",
-  "description": "CSS Test: Right using inches with a nominal value, 1in",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "align-items-stretch",
-  "bundle": "dist/align-items-stretch/template.js",
-  "entry": "index.tsx"
-}

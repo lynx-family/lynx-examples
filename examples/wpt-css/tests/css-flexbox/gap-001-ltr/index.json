@@ -1,6 +1,0 @@
-{
-  "name": "gap-001-ltr",
-  "description": "CSS Flexbox Test: gap - horizontal",
-  "component": true,
-  "entry": "index.tsx"
-}

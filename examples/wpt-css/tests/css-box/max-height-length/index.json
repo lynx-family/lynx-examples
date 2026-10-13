@@ -1,6 +1,0 @@
-{
-  "name": "max-height-length",
-  "description": "CSS Test: Max-height using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

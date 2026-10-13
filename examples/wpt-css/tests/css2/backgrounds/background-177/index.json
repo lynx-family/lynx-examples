@@ -1,6 +1,0 @@
-{
-  "name": "background-177",
-  "description": "CSS Test: Background with (attachment position color repeat)",
-  "component": true,
-  "entry": "index.tsx"
-}

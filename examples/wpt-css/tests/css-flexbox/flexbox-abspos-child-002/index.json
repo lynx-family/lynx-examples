@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-abspos-child-002",
-  "description": "CSS Test: Test that \"flex-basis\" doesn't affect layout of abspos flex child",
-  "component": true,
-  "entry": "index.tsx"
-}

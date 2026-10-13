@@ -1,6 +1,0 @@
-{
-  "name": "t32-opacity-offscreen-multiple-boxes-1-c",
-  "description": "CSS Test: opacity",
-  "component": true,
-  "entry": "index.tsx"
-}

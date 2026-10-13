@@ -1,6 +1,0 @@
-{
-  "name": "zindex-affects-block-in-inline",
-  "description": "zindex-affects-block-in-inline",
-  "component": true,
-  "entry": "index.tsx"
-}

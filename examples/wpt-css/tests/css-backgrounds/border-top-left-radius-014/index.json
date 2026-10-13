@@ -1,6 +1,0 @@
-{
-  "name": "border-top-left-radius-014",
-  "description": "CSS Test: Borders. Border-top-left-radius using two length values: 50px -25px",
-  "component": true,
-  "entry": "index.tsx"
-}

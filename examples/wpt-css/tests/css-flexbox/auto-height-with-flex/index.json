@@ -1,6 +1,0 @@
-{
-  "name": "auto-height-with-flex",
-  "description": "auto-height-with-flex",
-  "component": true,
-  "entry": "index.tsx"
-}

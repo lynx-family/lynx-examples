@@ -1,5 +1,0 @@
-{
-  "name": "max-height-005",
-  "bundle": "dist/max-height-005/template.js",
-  "entry": "index.tsx"
-}

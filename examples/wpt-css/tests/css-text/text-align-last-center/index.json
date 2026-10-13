@@ -1,6 +1,0 @@
-{
-  "name": "text-align-last-center",
-  "description": "text-align-last: center",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,5 +1,0 @@
-{
-  "name": "min-width-003",
-  "bundle": "dist/min-width-003/template.js",
-  "entry": "index.tsx"
-}

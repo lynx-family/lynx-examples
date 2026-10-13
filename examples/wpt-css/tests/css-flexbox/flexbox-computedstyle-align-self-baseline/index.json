@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-computedstyle-align-self-baseline",
-  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
-  "component": true,
-  "entry": "index.tsx"
-}

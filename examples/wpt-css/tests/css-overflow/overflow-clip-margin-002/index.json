@@ -1,6 +1,0 @@
-{
-  "name": "overflow-clip-margin-002",
-  "description": "Verifies overflow-clip-margin impacts layout",
-  "component": true,
-  "entry": "index.tsx"
-}

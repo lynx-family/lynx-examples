@@ -1,6 +1,0 @@
-{
-  "name": "will-change-contents-crash",
-  "description": "CSS will-change contents: Chrome crash with partial cache hit",
-  "component": true,
-  "entry": "index.tsx"
-}

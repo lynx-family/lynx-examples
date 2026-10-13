@@ -1,6 +1,0 @@
-{
-  "name": "font-size-002-pilot",
-  "description": "Font-size using pixels with a minimum value, 0px",
-  "component": true,
-  "entry": "index.tsx"
-}

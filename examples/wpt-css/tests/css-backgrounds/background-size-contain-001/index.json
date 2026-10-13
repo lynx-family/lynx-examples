@@ -1,6 +1,0 @@
-{
-  "name": "background-size-contain-001",
-  "description": "CSS Backgrounds and Borders Test: background-size - contain keyword value",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "justify-content-left-001",
-  "description": "flexbox | justify-content: left in rows",
-  "component": true,
-  "entry": "index.tsx"
-}

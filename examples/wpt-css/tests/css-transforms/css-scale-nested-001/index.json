@@ -1,6 +1,0 @@
-{
-  "name": "css-scale-nested-001",
-  "description": "CSS Transforms Test: scale 0 on a parent with a child",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "align-content-004",
-  "description": "CSS Test: A multi-line flex container with the 'align-content' property set to 'space-between'",
-  "component": true,
-  "entry": "index.tsx"
-}

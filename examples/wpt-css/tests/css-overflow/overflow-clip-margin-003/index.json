@@ -1,6 +1,0 @@
-{
-  "name": "overflow-clip-margin-003",
-  "description": "Verifies overflow-clip-margin doesn't impact paint effects",
-  "component": true,
-  "entry": "index.tsx"
-}

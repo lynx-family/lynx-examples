@@ -1,6 +1,0 @@
-{
-  "name": "font-weight-rule-006",
-  "description": "CSS Test: Font-weight set to 'lighter'",
-  "component": true,
-  "entry": "index.tsx"
-}

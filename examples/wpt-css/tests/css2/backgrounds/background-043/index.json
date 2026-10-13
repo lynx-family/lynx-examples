@@ -1,6 +1,0 @@
-{
-  "name": "background-043",
-  "description": "CSS Test: Background with (image repeat position)",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "oklch-001",
-  "description": "CSS Color 4: OKLab and OKLCH",
-  "component": true,
-  "entry": "index.tsx"
-}

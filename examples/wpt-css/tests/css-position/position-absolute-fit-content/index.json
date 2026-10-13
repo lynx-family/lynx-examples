@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-fit-content",
-  "description": "position-absolute-fit-content",
-  "component": true,
-  "entry": "index.tsx"
-}

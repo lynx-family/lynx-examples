@@ -1,6 +1,0 @@
-{
-  "name": "background-intrinsic-002",
-  "description": "CSS Test: Background Intrinsic Sizes: Intrinsic Width",
-  "component": true,
-  "entry": "index.tsx"
-}

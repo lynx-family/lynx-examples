@@ -1,6 +1,0 @@
-{
-  "name": "font-weight-rule-003",
-  "description": "CSS Test: Font-weight inherits the computed weight",
-  "component": true,
-  "entry": "index.tsx"
-}

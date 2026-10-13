@@ -1,6 +1,0 @@
-{
-  "name": "gap-010-ltr",
-  "description": "CSS Flexbox Test: gap - calc gap",
-  "component": true,
-  "entry": "index.tsx"
-}

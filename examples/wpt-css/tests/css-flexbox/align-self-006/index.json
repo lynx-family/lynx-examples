@@ -1,6 +1,0 @@
-{
-  "name": "align-self-006",
-  "description": "CSS Flexbox Test: align-self - baseline",
-  "component": true,
-  "entry": "index.tsx"
-}

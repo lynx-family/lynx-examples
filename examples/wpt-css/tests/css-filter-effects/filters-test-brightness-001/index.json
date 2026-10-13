@@ -1,6 +1,0 @@
-{
-  "name": "filters-test-brightness-001",
-  "description": "CSS Filter Test: brightness(100%) identity baseline",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "border-style-002",
-  "description": "CSS Test: Border-style shorthand property set using two values",
-  "component": true,
-  "entry": "index.tsx"
-}

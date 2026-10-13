@@ -1,6 +1,0 @@
-{
-  "name": "t422-rgba-func-whitespace-b",
-  "description": "CSS Test: whitespace in rgba() values",
-  "component": true,
-  "entry": "index.tsx"
-}

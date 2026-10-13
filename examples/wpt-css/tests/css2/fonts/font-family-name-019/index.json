@@ -1,6 +1,0 @@
-{
-  "name": "font-family-name-019",
-  "description": "CSS Test: unknown unquoted font family falls back instead of inheriting parent family",
-  "component": true,
-  "entry": "index.tsx"
-}

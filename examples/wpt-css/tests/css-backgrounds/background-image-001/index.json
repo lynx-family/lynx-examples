@@ -1,6 +1,0 @@
-{
-  "name": "background-image-001",
-  "description": "CSS Backgrounds: background-image div",
-  "component": true,
-  "entry": "index.tsx"
-}

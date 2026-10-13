@@ -1,6 +1,0 @@
-{
-  "name": "font-size-023-pilot",
-  "description": "Font-size using picas with a minimum minus one value, -1pc",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "min-height-length",
-  "description": "CSS Test: Min-height using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

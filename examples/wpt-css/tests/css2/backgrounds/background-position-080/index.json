@@ -1,6 +1,0 @@
-{
-  "name": "background-position-080",
-  "description": "CSS Test: Background-position using 'em' units with a nominal value and a plus sign, +6em",
-  "component": true,
-  "entry": "index.tsx"
-}

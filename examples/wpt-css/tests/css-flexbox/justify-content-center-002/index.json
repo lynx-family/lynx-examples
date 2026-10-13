@@ -1,6 +1,0 @@
-{
-  "name": "justify-content-center-002",
-  "description": "CSS Flexible Box Test: justify-content center aligns flex items in the center of the container",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "filter-contrast-001",
-  "description": "CSS Filter contrast: CSS contrast filter shotrhand",
-  "component": true,
-  "entry": "index.tsx"
-}

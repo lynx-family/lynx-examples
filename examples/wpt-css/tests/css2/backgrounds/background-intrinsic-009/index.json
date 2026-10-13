@@ -1,6 +1,0 @@
-{
-  "name": "background-intrinsic-009",
-  "description": "CSS Test: Background Intrinsic Sizes: Intrinsic Width and Height (Vector)",
-  "component": true,
-  "entry": "index.tsx"
-}

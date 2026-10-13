@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-flex-wrap-flexing",
-  "description": "CSS Flexbox Test: flex-wrap flexes widths after line breaking",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "padding-right-applies-to-002",
-  "description": "CSS Test: Padding-right applied to element with display table-header-group",
-  "component": true,
-  "entry": "index.tsx"
-}

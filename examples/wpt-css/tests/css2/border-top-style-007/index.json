@@ -1,6 +1,0 @@
-{
-  "name": "border-top-style-007",
-  "description": "CSS Test: Border-top-style set to 'groove'",
-  "component": true,
-  "entry": "index.tsx"
-}

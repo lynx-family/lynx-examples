@@ -1,6 +1,0 @@
-{
-  "name": "currentcolor-003",
-  "description": "CSS Color 4: currentcolor",
-  "component": true,
-  "entry": "index.tsx"
-}

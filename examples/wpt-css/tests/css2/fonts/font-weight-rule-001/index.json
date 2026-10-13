@@ -1,6 +1,0 @@
-{
-  "name": "font-weight-rule-001",
-  "description": "CSS Test: Font-weight set to 'normal' corresponds to '400'",
-  "component": true,
-  "entry": "index.tsx"
-}

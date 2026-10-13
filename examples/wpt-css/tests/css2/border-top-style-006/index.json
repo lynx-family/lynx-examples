@@ -1,6 +1,0 @@
-{
-  "name": "border-top-style-006",
-  "description": "CSS Test: Border-top-style set to 'double'",
-  "component": true,
-  "entry": "index.tsx"
-}

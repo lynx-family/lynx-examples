@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-min-width-auto-001",
-  "description": "CSS Test: Testing min-width:auto",
-  "component": true,
-  "entry": "index.tsx"
-}

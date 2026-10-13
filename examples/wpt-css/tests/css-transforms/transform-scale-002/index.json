@@ -1,6 +1,0 @@
-{
-  "name": "transform-scale-002",
-  "description": "CSS Test (Transforms): scale(0.5)",
-  "component": true,
-  "entry": "index.tsx"
-}

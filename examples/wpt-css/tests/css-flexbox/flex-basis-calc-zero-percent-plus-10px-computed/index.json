@@ -1,6 +1,0 @@
-{
-  "name": "flex-basis-calc-zero-percent-plus-10px-computed",
-  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
-  "component": true,
-  "entry": "index.tsx"
-}

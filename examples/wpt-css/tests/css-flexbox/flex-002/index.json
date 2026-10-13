@@ -1,6 +1,0 @@
-{
-  "name": "flex-002",
-  "description": "CSS Test: The 'flex' shorthand adjusting the 'flex-shrink' sub-property",
-  "component": true,
-  "entry": "index.tsx"
-}

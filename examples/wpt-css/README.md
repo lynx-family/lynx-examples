@@ -32,7 +32,6 @@ pnpm --filter @lynx-example/wpt-css run type-check
 tests/<module>/<case>/
   index.tsx
   index.css
-  index.json
   support/                 # when required
   processor.ts             # nonvisual cases only
   generated/               # nonvisual manifests and hash-bound stylesheets
@@ -44,6 +43,10 @@ The original relative paths, markup, CSS, manifest contents and WPT metadata
 remain intact. Only internal package imports are redirected to public
 dependencies or the main-thread environment adapter. Support assets are inlined
 so bundles do not depend on a fixed deployment prefix.
+
+Legacy per-card `index.json` files are omitted: ReactLynx builds use the TSX
+entry map in `lynx.config.ts`, not those card descriptors. Nonvisual
+`generated/manifest.json` files are still required and preserved.
 
 `migration.json` records the source revision and complete card inventory.
 To repeat the source import from that checkout:

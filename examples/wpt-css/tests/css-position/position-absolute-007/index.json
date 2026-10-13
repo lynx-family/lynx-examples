@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-007",
-  "description": "CSS Test: Absolutely positioned elements child behavior",
-  "component": true,
-  "entry": "index.tsx"
-}

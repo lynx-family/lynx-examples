@@ -1,6 +1,0 @@
-{
-  "name": "right-offset-002",
-  "description": "CSS Test: Position 'right' property defines the offset from the right of the box itself for relative positioning",
-  "component": true,
-  "entry": "index.tsx"
-}

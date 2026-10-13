@@ -1,6 +1,0 @@
-{
-  "name": "text-decoration-006",
-  "description": "CSS Test: Text-decoration set to 'underline line-through'",
-  "component": true,
-  "entry": "index.tsx"
-}

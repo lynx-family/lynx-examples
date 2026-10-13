@@ -1,6 +1,0 @@
-{
-  "name": "t32-opacity-zorder-c",
-  "description": "CSS Test: opacity",
-  "component": true,
-  "entry": "index.tsx"
-}

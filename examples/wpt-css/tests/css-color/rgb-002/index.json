@@ -1,6 +1,0 @@
-{
-  "name": "rgb-002",
-  "description": "CSS Color 4: RGB functions rgb() and rgba()",
-  "component": true,
-  "entry": "index.tsx"
-}

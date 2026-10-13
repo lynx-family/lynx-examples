@@ -1,6 +1,0 @@
-{
-  "name": "border-bottom-style-001",
-  "description": "CSS Test: Border-bottom-style set to 'none'",
-  "component": true,
-  "entry": "index.tsx"
-}

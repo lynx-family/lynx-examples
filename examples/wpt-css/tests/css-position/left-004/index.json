@@ -1,6 +1,0 @@
-{
-  "name": "left-004",
-  "description": "CSS Test: Left using pixels with a value of negative zero, -0px",
-  "component": true,
-  "entry": "index.tsx"
-}

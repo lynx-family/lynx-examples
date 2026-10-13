@@ -1,5 +1,0 @@
-{
-  "name": "justify-content-space-around",
-  "bundle": "dist/justify-content-space-around/template.js",
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-005",
-  "description": "CSS Test: Absolutely positioned elements do not establish a new containing block for fixed position descendants",
-  "component": true,
-  "entry": "index.tsx"
-}

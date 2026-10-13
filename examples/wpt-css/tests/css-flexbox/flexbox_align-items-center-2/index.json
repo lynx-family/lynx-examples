@@ -1,6 +1,0 @@
-{
-  "name": "flexbox_align-items-center-2",
-  "description": "flexbox | align-items: center",
-  "component": true,
-  "entry": "index.tsx"
-}

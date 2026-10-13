@@ -1,6 +1,0 @@
-{
-  "name": "flex-column-reverse-multiline-item-position",
-  "description": "CSS Flexbox: multi-line column-reverse item positions",
-  "component": true,
-  "entry": "index.tsx"
-}

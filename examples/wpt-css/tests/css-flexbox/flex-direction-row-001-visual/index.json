@@ -1,6 +1,0 @@
-{
-  "name": "flex-direction-row-001-visual",
-  "description": "CSS Flexible Box Test: flex-direction_row",
-  "component": true,
-  "entry": "index.tsx"
-}

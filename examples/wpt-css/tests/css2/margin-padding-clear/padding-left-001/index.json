@@ -1,6 +1,0 @@
-{
-  "name": "padding-left-001",
-  "description": "CSS Test: Padding-left using pixels with a minimum minus one value, -1px",
-  "component": true,
-  "entry": "index.tsx"
-}

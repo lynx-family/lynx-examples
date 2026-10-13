@@ -1,6 +1,0 @@
-{
-  "name": "flex-grow-002",
-  "description": "CSS Flexbox Test: flex-grow - 0(initial value)",
-  "component": true,
-  "entry": "index.tsx"
-}

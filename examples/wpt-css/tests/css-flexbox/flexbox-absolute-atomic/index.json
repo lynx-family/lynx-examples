@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-absolute-atomic",
-  "description": "flexbox | abspos atomic flexitems",
-  "component": true,
-  "entry": "index.tsx"
-}

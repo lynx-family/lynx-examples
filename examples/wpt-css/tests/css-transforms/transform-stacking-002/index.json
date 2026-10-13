@@ -1,6 +1,0 @@
-{
-  "name": "transform-stacking-002",
-  "description": "CSS Test (Transforms): Stacking, transform: none",
-  "component": true,
-  "entry": "index.tsx"
-}

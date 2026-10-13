@@ -1,6 +1,0 @@
-{
-  "name": "filters-opacity-002",
-  "description": "CSS Filter Test: Test opacity shorthand with value 0",
-  "component": true,
-  "entry": "index.tsx"
-}

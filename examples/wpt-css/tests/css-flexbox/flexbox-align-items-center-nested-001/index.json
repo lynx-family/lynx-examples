@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-align-items-center-nested-001",
-  "description": "CSS Test: Flexbox nested containers with align-items: center and flexible items",
-  "component": true,
-  "entry": "index.tsx"
-}

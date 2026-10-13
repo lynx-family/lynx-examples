@@ -1,6 +1,0 @@
-{
-  "name": "position-relative-001",
-  "description": "A percent inset resolves against the available size.",
-  "component": true,
-  "entry": "index.tsx"
-}

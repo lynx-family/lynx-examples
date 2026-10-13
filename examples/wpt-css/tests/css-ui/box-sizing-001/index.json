@@ -1,6 +1,0 @@
-{
-  "name": "box-sizing-001",
-  "description": "CSS Basic User Interface Test: box-sizing:border-box and CSS2.1 10.3.3",
-  "component": true,
-  "entry": "index.tsx"
-}

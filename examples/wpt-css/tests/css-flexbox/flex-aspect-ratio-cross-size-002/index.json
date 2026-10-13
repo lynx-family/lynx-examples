@@ -1,6 +1,0 @@
-{
-  "name": "flex-aspect-ratio-cross-size-002",
-  "description": "Nested flex containers with aspect-ratio do not inflate container height through content min-size feedback",
-  "component": true,
-  "entry": "index.tsx"
-}

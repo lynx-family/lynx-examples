@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-flex-wrap-default",
-  "description": "CSS Flexbox Test: Flex-wrap defaults to nowrap",
-  "component": true,
-  "entry": "index.tsx"
-}

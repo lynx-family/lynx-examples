@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -16,6 +16,12 @@ test("all source cards have a build entry and nonvisual manifests", () => {
     Object.values(entries).map((file) => path.relative(root, file).split(path.sep).join("/")).sort(),
     [...migration.cards].sort(),
   );
+});
+
+test("ReactLynx cards do not carry unused legacy index.json manifests", () => {
+  for (const card of migration.cards) {
+    assert.equal(existsSync(path.join(root, path.dirname(card), "index.json")), false, card);
+  }
 });
 
 test("every registered source visual name retains its original path", () => {

@@ -1,6 +1,0 @@
-{
-  "name": "align-items-center",
-  "description": "CSS Test: A flex container with the 'align-items' property set to 'center'",
-  "component": true,
-  "entry": "index.tsx"
-}

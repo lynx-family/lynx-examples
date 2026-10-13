@@ -1,6 +1,0 @@
-{
-  "name": "ttwf-transform-translatey-001",
-  "description": "CSS Transform Using translateY() function",
-  "component": true,
-  "entry": "index.tsx"
-}

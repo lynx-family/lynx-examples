@@ -1,6 +1,0 @@
-{
-  "name": "border-top-style-010",
-  "description": "CSS Test: Border-top-style set to 'outset'",
-  "component": true,
-  "entry": "index.tsx"
-}

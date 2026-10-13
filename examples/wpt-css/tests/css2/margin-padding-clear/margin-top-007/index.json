@@ -1,6 +1,0 @@
-{
-  "name": "margin-top-007",
-  "description": "CSS Test: Margin-top using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

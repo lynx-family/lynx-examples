@@ -1,6 +1,0 @@
-{
-  "name": "align-self-baseline",
-  "description": "flexbox | align-self: baseline",
-  "component": true,
-  "entry": "index.tsx"
-}

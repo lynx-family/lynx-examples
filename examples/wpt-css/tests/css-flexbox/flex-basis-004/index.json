@@ -1,6 +1,0 @@
-{
-  "name": "flex-basis-004",
-  "description": "CSS Flexbox Test: flex-basis - negative number(width specified)",
-  "component": true,
-  "entry": "index.tsx"
-}

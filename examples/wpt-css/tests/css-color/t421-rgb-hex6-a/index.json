@@ -1,6 +1,0 @@
-{
-  "name": "t421-rgb-hex6-a",
-  "description": "CSS Color 3: #rrggbb colors",
-  "component": true,
-  "entry": "index.tsx"
-}

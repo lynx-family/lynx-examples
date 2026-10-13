@@ -1,6 +1,0 @@
-{
-  "name": "text-overflow-ellipsis",
-  "description": "CSS Overflow: text-overflow ellipsis after scroll changes",
-  "component": true,
-  "entry": "index.tsx"
-}

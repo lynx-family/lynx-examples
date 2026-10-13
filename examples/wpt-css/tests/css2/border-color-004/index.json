@@ -1,6 +1,0 @@
-{
-  "name": "border-color-004",
-  "description": "CSS Test: Border-color with four color values",
-  "component": true,
-  "entry": "index.tsx"
-}

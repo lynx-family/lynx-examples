@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-003",
-  "description": "CSS Test: Absolute position element taken out of flow",
-  "component": true,
-  "entry": "index.tsx"
-}

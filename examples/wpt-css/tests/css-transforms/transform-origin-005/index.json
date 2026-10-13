@@ -1,6 +1,0 @@
-{
-  "name": "transform-origin-005",
-  "description": "CSS Test (Transforms): transform-origin percentages 3",
-  "component": true,
-  "entry": "index.tsx"
-}

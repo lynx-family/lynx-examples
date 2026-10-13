@@ -1,6 +1,0 @@
-{
-  "name": "position-absolute-008",
-  "description": "CSS Test: Float is computed to 'none' when element is absolutely positioned",
-  "component": true,
-  "entry": "index.tsx"
-}

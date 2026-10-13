@@ -1,6 +1,0 @@
-{
-  "name": "t422-rgba-clip-outside-device-gamut-b",
-  "description": "CSS Test: rgba() clipping outside device gamut",
-  "component": true,
-  "entry": "index.tsx"
-}

@@ -1,6 +1,0 @@
-{
-  "name": "t44-currentcolor-inherited-c",
-  "description": "CSS Test: currentColor (with 'background-color')",
-  "component": true,
-  "entry": "index.tsx"
-}

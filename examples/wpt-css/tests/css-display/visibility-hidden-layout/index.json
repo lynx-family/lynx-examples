@@ -1,6 +1,0 @@
-{
-  "name": "visibility-hidden-layout",
-  "description": "CSS Test: Hidden elements still affect layout",
-  "component": true,
-  "entry": "index.tsx"
-}

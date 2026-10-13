@@ -1,6 +1,0 @@
-{
-  "name": "font-size-rule-001-pilot",
-  "description": "Font-size, negative values",
-  "component": true,
-  "entry": "index.tsx"
-}

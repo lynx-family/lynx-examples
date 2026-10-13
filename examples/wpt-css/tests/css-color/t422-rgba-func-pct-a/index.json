@@ -1,6 +1,0 @@
-{
-  "name": "t422-rgba-func-pct-a",
-  "description": "CSS Test: rgba() colors",
-  "component": true,
-  "entry": "index.tsx"
-}

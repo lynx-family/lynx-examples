@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-abspos-child-001b",
-  "description": "CSS Test: Testing that \"min-width\", \"max-width\", \"min-height\", and \"max-height\" are applied on absolutely positioned children of a vertical flex container",
-  "component": true,
-  "entry": "index.tsx"
-}

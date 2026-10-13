@@ -1,6 +1,0 @@
-{
-  "name": "max-width-length",
-  "description": "CSS Test: Max-width using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

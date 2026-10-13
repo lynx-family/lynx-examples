@@ -1,6 +1,0 @@
-{
-  "name": "align-self-004",
-  "description": "CSS Flexbox Test: align-self - stretch overriding align-items: center",
-  "component": true,
-  "entry": "index.tsx"
-}

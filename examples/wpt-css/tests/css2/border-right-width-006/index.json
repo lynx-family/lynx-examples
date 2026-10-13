@@ -1,6 +1,0 @@
-{
-  "name": "border-right-width-006",
-  "description": "CSS Test: Border-right-width using pixels with a nominal value, 96px",
-  "component": true,
-  "entry": "index.tsx"
-}

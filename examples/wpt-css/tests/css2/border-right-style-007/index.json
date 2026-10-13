@@ -1,6 +1,0 @@
-{
-  "name": "border-right-style-007",
-  "description": "CSS Test: Border-right-style set to 'groove'",
-  "component": true,
-  "entry": "index.tsx"
-}

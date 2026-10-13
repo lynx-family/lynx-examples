@@ -1,5 +1,0 @@
-{
-  "name": "background-color-body-propagation-002",
-  "description": "CSS Backgrounds and Borders Test: body background not propagating when html does",
-  "entry": "index.tsx"
-}

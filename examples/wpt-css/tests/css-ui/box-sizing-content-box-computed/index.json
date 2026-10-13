@@ -1,6 +1,0 @@
-{
-  "name": "box-sizing-content-box-computed",
-  "description": "Nonvisual dynamic-stylesheet-computed-style-v1 card",
-  "component": true,
-  "entry": "index.tsx"
-}

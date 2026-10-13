@@ -1,6 +1,0 @@
-{
-  "name": "flexbox-flex-none",
-  "description": "flexbox | flex: none",
-  "component": true,
-  "entry": "index.tsx"
-}

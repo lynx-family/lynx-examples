@@ -1,6 +1,0 @@
-{
-  "name": "border-radius-greater-than-width",
-  "description": "CSS Test: Property of 'border-[*]-radius'.",
-  "component": true,
-  "entry": "index.tsx"
-}
