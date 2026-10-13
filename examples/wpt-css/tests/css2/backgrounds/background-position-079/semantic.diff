@@ -1,0 +1,13 @@
+# Source-derived semantics
+
+- Both source divs have `font: 20px/1 Ahem` and a 1in (96px) height. The inner background positioning area is deliberately 140px wide inside a bordered 135px outer content box.
+- `background-position: 6em` therefore resolves its horizontal offset from the inner box's 20px font size to 120px. The 15px black image ends exactly at the outer orange box's right inner edge.
+- The omitted vertical component remains the CSS default center, so the black square is centered within the 96px height rather than being placed with a hard-coded top offset.
+
+# Compatibility adjustments
+
+- The source setup-only `1in` height is normalized to 96px; the tested `6em` token remains verbatim. The setup-only font shorthand is expanded to `font-size: 20px`, `line-height: 1`, and `font-family: Ahem` on both original divs.
+- The pinned `fonts/Ahem.ttf` bytes are embedded unchanged in a base64 data URL, avoiding runtime URL transport while retaining an explicit authenticated font dependency.
+- An invisible, zero-size, absolute-positioned Ahem text probe triggers the runtime font loader without changing source layout or visible pixels.
+- Broad `div` / `div div` selectors map to explicit `.em-box` / `.test-image` classes. Web content-box sizing, deliberate 5px overflow, body/paragraph geometry, normal text wrapping, and source child order remain explicit.
+- The card-local black PNG is byte-identical to the pinned source asset.

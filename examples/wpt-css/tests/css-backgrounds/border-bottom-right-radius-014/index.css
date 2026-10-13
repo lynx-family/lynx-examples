@@ -1,0 +1,56 @@
+* {
+  box-sizing: content-box;
+}
+
+#test, #reference {
+  border: 2px solid #a1a1a1;
+  background: #dddddd;
+  width: 200px;
+  height: 100px;
+}
+
+#test {
+  border-bottom-right-radius: 50px -25px;
+}
+
+/* Browser-default block spacing for the instruction paragraph; the top
+   margin reproduces Web body/first-paragraph margin collapsing. */
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+/* <ul> -> <view>: asymmetric margins avoid Lynx margin doubling. */
+.__ua-ul {
+  display: linear;
+  linear-direction: column;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 40px;
+}
+
+.__ua-li {
+  display: block;
+}
+
+/* Replaces the source <p><br/></p> between #test and #reference:
+   1em collapsed margins plus one empty line. The empty line is 19px
+   (not 1.2em = 19.2px) so both engines round the spacer height to the
+   same device pixel and #reference stays row-aligned with the WebView
+   oracle. */
+.spacer {
+  height: 19px;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

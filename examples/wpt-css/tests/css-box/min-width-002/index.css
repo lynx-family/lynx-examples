@@ -1,0 +1,20 @@
+#div1 {
+  background: red;
+  height: 96px;
+  min-width: 0px;
+  width: 0;
+  box-sizing: content-box;
+}
+
+.test-description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

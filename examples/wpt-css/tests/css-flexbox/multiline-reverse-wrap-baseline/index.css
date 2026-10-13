@@ -1,0 +1,95 @@
+.flexbox {
+  width: 200px;
+  display: flex;
+  background-color: #aaa;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.flexbox > view {
+  border: 0;
+}
+
+.flexbox .first {
+  background-color: lightblue;
+}
+.flexbox .second {
+  background-color: lightgreen;
+}
+.flexbox .third {
+  background-color: pink;
+}
+.flexbox .fourth {
+  background-color: yellow;
+}
+
+.__inline-001 {
+  flex: 1 0 100px;
+}
+
+.__inline-002 {
+  flex: 1 0 100px;
+}
+
+.__inline-003 {
+  flex: 1 0 100px; margin-top: 5px;
+}
+
+.__inline-004 {
+  flex: 1 0 100px;
+}
+
+.__inline-005 {
+  flex: 1 0 100px;
+}
+
+.__inline-006 {
+  flex: 1 0 100px;
+}
+
+.__inline-007 {
+  flex: 1 0 100px;
+}
+
+.__inline-008 {
+  flex: 1 0 100px; margin-bottom: 5px;
+}
+
+.__inline-009 {
+  width: 300px;
+}
+
+.__inline-010 {
+  flex: 1 0 100px; align-self: flex-start; height: 100px;
+}
+
+.__inline-011 {
+  flex: 1 0 100px;
+}
+
+.__inline-012 {
+  flex: 1 0 100px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

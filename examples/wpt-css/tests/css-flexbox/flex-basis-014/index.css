@@ -1,0 +1,103 @@
+* {
+  box-sizing: content-box;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+}
+.item {
+  min-width: 0;
+}
+.ar {
+  height: 100%;
+  aspect-ratio: 2 / 1;
+  background: green;
+}
+
+.__inline-001 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.__inline-002 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.__inline-003 {
+  display: block;
+}
+
+.__inline-004 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.__inline-005 {
+  height: auto;
+}
+
+.__inline-006 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.__inline-007 {
+  flex-wrap: wrap;
+}
+
+.__inline-008 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.__inline-009 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+.__inline-010 {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: red;
+}
+
+.__inline-011 {
+  flex: 1 1 0%;
+  aspect-ratio: 1 / 1;
+  background: red;
+  position: relative;
+}
+
+.__inline-012 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: green;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

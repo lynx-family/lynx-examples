@@ -1,0 +1,35 @@
+.__html-div {
+  background: green;
+  width: 50px;
+  height: 50px;
+}
+
+.__html-span {
+  position: absolute;
+  left: -99999999999px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* NOTE: Lynx does not support will-change property.
+   The original test used will-change: transform on html element.
+   This property is ignored in Lynx but does not affect the test intent. */
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

@@ -1,0 +1,38 @@
+page {
+  background-color: white;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.hint {
+  display: block;
+  margin: 1em 0;
+}
+
+.container {
+  width: 300px;
+  height: 110px;
+  border: 2px solid black;
+  background-color: red;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+.box-sized {
+  box-sizing: content-box;
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: blue;
+}

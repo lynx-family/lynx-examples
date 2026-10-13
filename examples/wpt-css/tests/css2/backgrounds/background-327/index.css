@@ -1,0 +1,37 @@
+* {
+  box-sizing: content-box;
+}
+
+.wrapper {
+  background: black url('support/green15x15.png');
+}
+
+.test-box {
+  background: red;
+  background: inherit;
+  height: 96px;
+}
+
+.instruction {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,52 @@
+.square {
+  width: 100px;
+  height: 100px;
+}
+.under {
+  background-color: green;
+  margin-bottom: -100px;
+}
+.outer {
+  color: green;
+  background: red;
+}
+.inner {
+  color: red;
+  background-color: red;
+  font-size: 40px;
+  text-align: center;
+}
+.inner {
+  color: unset;/* inherit from .outer */
+  background-color: unset;/* initial, transparent, .under shows thru */
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

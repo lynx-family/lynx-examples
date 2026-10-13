@@ -1,0 +1,28 @@
+#div1 {
+  background: blue;
+  height: 192px;
+  position: relative;
+  width: 192px;
+}
+
+#div2 {
+  background: orange;
+  bottom: 0;
+  left: 96px;
+  position: absolute;
+  right: 0;
+  top: 96px;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

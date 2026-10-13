@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-position-position-absolute-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-position/parsing/position-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "9905b1db2bd66773fdfbdc6f963e0fa6c91304fcf602e3a13d7d4f3090df83c9"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "position",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-position-value-absolute",
+      "ordinal": 1,
+      "title": "Property position value 'absolute'",
+      "sectionKey": "property-position-value-absolute",
+      "cssFile": "cases/property-position-value-absolute.css",
+      "cssSha256": "41aca7f97856fcc6a0d43efbd99fd329f2223ea631aed9cbbf3a8f17c578a279",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "position",
+          "expected": "absolute"
+        }
+      ]
+    }
+  ]
+}

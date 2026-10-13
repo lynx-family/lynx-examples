@@ -1,0 +1,52 @@
+* {
+  box-sizing: content-box;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+.sample {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  color: green;
+}
+
+.sample {
+  color: #f;
+}
+
+.sample {
+  color: #ff;
+}
+
+.sample {
+  color: #ff000;
+}
+
+.sample {
+  color: #ff00000;
+}
+
+.sample {
+  color: #ff0000000;
+}
+
+.sample {
+  color: #ff00000000;
+}
+
+.note {
+  display: block;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

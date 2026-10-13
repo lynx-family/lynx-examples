@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-self-center",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-self-center.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "d7257dddccf171514c71c3c5fa241e3a64493741ab82d03f6736815bde05967d"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-self",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-self-value-center",
+      "ordinal": 1,
+      "title": "Property align-self value 'center'",
+      "sectionKey": "property-align-self-value-center",
+      "cssFile": "cases/property-align-self-value-center.css",
+      "cssSha256": "77975733bfbe3b98b5c01cacad3fa7d98a447fcf71bf720f540e4dc779f592d6",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-self",
+          "expected": "center"
+        }
+      ]
+    }
+  ]
+}

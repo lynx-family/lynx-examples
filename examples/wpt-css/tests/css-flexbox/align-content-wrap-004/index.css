@@ -1,0 +1,68 @@
+* {
+  box-sizing: content-box;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100px;
+  line-height: 1;
+}
+
+.flex > view {
+  min-height: 0;
+  background-color: green;
+}
+
+.stretch-item {
+  align-self: stretch;
+}
+
+.intrinsic-item {
+  height: 60px;
+}
+
+.inline-stack {
+  display: linear;
+  linear-direction: column;
+  align-items: flex-start;
+}
+
+.small-block {
+  width: 20px;
+}
+
+.wide-block {
+  width: 100px;
+}
+
+.tall-block {
+  height: 40px;
+}
+
+.short-block {
+  height: 15px;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

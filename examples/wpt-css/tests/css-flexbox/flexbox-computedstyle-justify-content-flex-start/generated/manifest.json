@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-justify-content-flex-start",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_justify-content-flex-start.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "bedb12fa33db0d23c5290fe9d90224088006dcb8a4e17e72bf23c6ce7415572a"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "justify-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-justify-content-value-flex-start",
+      "ordinal": 1,
+      "title": "Property justify-content value 'flex-start'",
+      "sectionKey": "property-justify-content-value-flex-start",
+      "cssFile": "cases/property-justify-content-value-flex-start.css",
+      "cssSha256": "6e660bb49289c07d528edeba77350cb573efc3e14653b65bfa9b4c0a5272c2a7",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "justify-content",
+          "expected": "flex-start"
+        }
+      ]
+    }
+  ]
+}

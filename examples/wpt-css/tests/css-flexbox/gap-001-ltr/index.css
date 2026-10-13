@@ -1,0 +1,37 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source block-size is setup-only geometry in horizontal writing mode. */
+.container {
+  background-color: green;
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.item {
+  background-color: grey;
+  flex: 1 1 auto;
+}
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Content-box, width: 100%, and paragraph margins restore Web block-flow setup. */

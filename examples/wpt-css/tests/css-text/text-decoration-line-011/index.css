@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "mplus-1p-regular";
+  src: url("support/mplus-1p-regular.woff");
+}
+
+* {
+  box-sizing: content-box;
+}
+
+.sample {
+  font-family: "mplus-1p-regular";
+  font-size: 1em;
+  line-height: 1.5;
+  width: fit-content;
+}
+
+#test {
+  text-decoration-line: underline;
+}
+
+#control {
+  text-decoration: underline;
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

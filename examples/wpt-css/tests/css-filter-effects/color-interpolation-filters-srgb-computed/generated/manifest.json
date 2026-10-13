@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "color-interpolation-filters-srgb-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/color-interpolation-filters-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "6804cbba5334ca8b53c6223b8b12ed546046007e1d332d7902e103eaf0cc23eb"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "color-interpolation-filters",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-color-interpolation-filters-value-srgb",
+      "ordinal": 1,
+      "title": "Property color-interpolation-filters value 'srgb'",
+      "sectionKey": "property-color-interpolation-filters-value-srgb",
+      "cssFile": "cases/property-color-interpolation-filters-value-srgb.css",
+      "cssSha256": "3b18857518e7b0f2c28a4386550682401b105e1b33fc16ca6f86bda8fb20e640",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "color-interpolation-filters",
+          "expected": "srgb"
+        }
+      ]
+    }
+  ]
+}

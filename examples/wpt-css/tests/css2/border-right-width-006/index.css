@@ -1,0 +1,35 @@
+* {
+  box-sizing: content-box;
+}
+
+#test {
+  border-right-style: solid;
+  border-right-width: 96px;
+  height: 96px;
+  width: 0;
+}
+
+#reference {
+  background-color: black;
+  height: 96px;
+  margin-top: 5px;
+  width: 96px;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

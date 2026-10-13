@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-order-integer",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_order-integer.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "fd43f16dfbc56d44057d6ed81360d66cef94ce45e398aeb4a24ac200c2418260"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "order",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-order-value-5",
+      "ordinal": 1,
+      "title": "Property order value '5'",
+      "sectionKey": "property-order-value-5",
+      "cssFile": "cases/property-order-value-5.css",
+      "cssSha256": "c69de21ba943f806eeda29409e43233f6ec848d3fa3885bccfcb0cf57a359efa",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "order",
+          "expected": "5"
+        }
+      ]
+    }
+  ]
+}

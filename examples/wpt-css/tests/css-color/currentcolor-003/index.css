@@ -1,0 +1,60 @@
+* {
+  box-sizing: content-box;
+}
+
+.fragment {
+  color: red;
+  display: linear;
+  linear-direction: column;
+}
+
+/* LYNX-UNSUPPORTED: ::first-line is parsed but does not match in Lynx. */
+.fragment::first-line {
+  color: green;
+}
+
+.__html-span {
+  /* LYNX-UNSUPPORTED: box-decoration-break is not a Lynx-supported property. */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  line-height: 50px;
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-color: currentColor;
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  border: 5px solid currentColor;
+  /* LYNX-UNSUPPORTED: outline and filter are not listed as supported Lynx CSS properties. */
+  outline: 5px solid currentColor;
+  box-shadow: 111px 0 5px currentColor;
+  text-shadow: 222px 0 2px currentColor;
+  filter: drop-shadow(333px 0 0 currentColor);
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

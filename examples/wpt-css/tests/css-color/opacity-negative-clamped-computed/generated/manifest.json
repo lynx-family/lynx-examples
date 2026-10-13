@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-color-opacity-negative-clamped-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-color/parsing/opacity-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "28f572ecec41dde036b79b8708b40d1dcefe04ffe000cf7901da35ee8763b663"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "opacity",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-opacity-value-2",
+      "ordinal": 1,
+      "title": "Property opacity value '-2'",
+      "sectionKey": "property-opacity-value-2",
+      "cssFile": "cases/property-opacity-value-2.css",
+      "cssSha256": "6d845486f7c49cffb9134dd653b0485fe44bd802fdcd6419168be4bd51ca5398",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "opacity",
+          "expected": "0"
+        }
+      ]
+    }
+  ]
+}

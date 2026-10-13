@@ -1,0 +1,68 @@
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+}
+
+.instruction {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.table {
+  display: linear;
+  linear-direction: column;
+  width: 128px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+}
+
+.cell {
+  width: 64px;
+  height: 1.2em;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.column-one {
+  background: white;
+  color: black;
+}
+
+.column-two {
+  background: black;
+  color: white;
+}
+
+.hsl-row-one {
+  background: hsl(0, -50%, 40%);
+}
+
+.expected-row-one {
+  background: rgb(102, 102, 102);
+}
+
+.hsl-row-two {
+  background: hsl(30, -50%, 60%);
+}
+
+.expected-row-two {
+  background: rgb(153, 153, 153);
+}

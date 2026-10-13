@@ -1,0 +1,55 @@
+* {
+  box-sizing: content-box;
+}
+
+#container {
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100px;
+  }
+  #container view {
+    height: 100px;
+    width: 100px;
+  }
+  #test1 {
+    background-color: green;
+    flex-shrink: 0;
+  }
+  #test2 {
+    background-color: yellow;
+    flex-shrink: 0.1;
+  }
+  #test3 {
+    background-color: blue;
+    flex-shrink: 2;
+  }
+  #test2 {
+    background-color: black;
+    flex-shrink: 3;
+  }
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* content-box, flex-start, and paragraph margins restore the Web geometry. */

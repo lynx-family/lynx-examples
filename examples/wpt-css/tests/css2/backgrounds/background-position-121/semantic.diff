@@ -1,0 +1,12 @@
+# Source-derived semantics
+
+- The outer and inner boxes are each 3 CSS inches (288 CSS px) with no-repeat backgrounds.
+- The outer PNG contains a 96px red bottom-right oracle; the inner blue 96px image must cover it when `background-position: 100% bottom` is applied.
+- The visible assertion is “no red”; the mixed percentage/keyword pair is the property value under test.
+
+# Compatibility adjustments
+
+- Source setup-only `3in` dimensions use `1in = 96px`, yielding 288px. The tested `100% bottom` pair is preserved verbatim.
+- Broad `div` / `div div` selectors map to `.background-box` / `.test-image` so generated wrappers are not styled.
+- Web content-box sizing, the 8px horizontal body inset, one-em paragraph spacing, normal wrapping, source child order, and bold “no red” emphasis are explicit.
+- Card-local PNGs are byte-identical to the pinned source assets.

@@ -1,0 +1,46 @@
+/* Web setup: content boxes, body margins and text wrapping. */
+* { box-sizing: content-box; }
+view { display: linear; linear-direction: column; }
+text { white-space: normal; }
+page { font-size: 16px; font-family: serif; background-color: white; }
+.body { display: linear; linear-direction: column; align-items: flex-start; margin: 8px; }
+
+.flexbox {
+        border: 1px dashed blue;
+        width: 4px;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 10px;
+        margin-left: 80px;
+      }
+
+      view.big {
+        font-size: 18px;
+        width: 50px;
+      }
+
+      /* Classes for each of the various align-self values */
+      .flex-start {
+        background: lime;
+        align-self: flex-start;
+      }
+      .flex-end {
+        background: orange;
+        align-self: flex-end;
+      }
+      .center {
+        background: lightblue;
+        align-self: center;
+      }
+      .baseline {
+        background: teal;
+        align-self: baseline;
+      }
+      .stretch {
+        background: pink;
+        align-self: stretch;
+      }
+
+/* Original unbreakable inline words keep their intrinsic width. Source flex-item widths remain unchanged. */
+.source-token { width: max-content; }

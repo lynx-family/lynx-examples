@@ -1,0 +1,37 @@
+.body {margin: 0;}
+.body > .flex {
+	background: #ffcc00;
+
+	display: flex;
+	justify-content: space-around;
+}
+.flex > .item {
+	background: #3366cc;
+	margin: 20px;
+}
+#abs {
+	position: absolute;
+	top: -1000px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

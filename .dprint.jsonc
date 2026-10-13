@@ -25,6 +25,9 @@
     "**/*-lock.json",
     "pnpm-lock.yaml",
     "**/routeTree.gen.ts",
+    // Imported WPT fixtures preserve exact CSS/markup, including invalid syntax
+    // and nonvisual stylesheets bound to SHA-256 hashes.
+    "examples/wpt-css/tests/**",
   ],
   "plugins": [
     "npm:dprint-plugin-sort-package-json@0.2.1",
