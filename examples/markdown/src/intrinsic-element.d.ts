@@ -27,7 +27,7 @@ interface MarkdownLineStyle {
 interface MarkdownMarkAttachment {
   startIndex: number;
   endIndex: number;
-  indexType: "source" | "parsed";
+  indexType: "source" | "char";
   id?: string;
   clickable?: boolean;
   style: {

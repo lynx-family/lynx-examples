@@ -21,7 +21,7 @@ this is a **Markdown**!!
   };
 
   return (
-    <view className="plain-surface" style="height:100vh;position:relative;">
+    <view className="plain-surface">
       <markdown
         id="markdown"
         content={content}
@@ -29,7 +29,7 @@ this is a **Markdown**!!
         text-maxline={2}
         style="height:100px;"
       >
-        <view id="truncation" className="truncation-view">
+        <view id="truncation" className="truncation-view" flatten={false}>
           <text className="truncation-text">...expand</text>
         </view>
       </markdown>

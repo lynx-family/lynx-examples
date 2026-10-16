@@ -72,7 +72,8 @@
 }
 
 .selection-area {
-  min-height: 150px;
+  min-height: 190px;
+  padding-top: 48px;
   overflow: visible;
   position: relative;
 }
@@ -80,7 +81,7 @@
 .selection-menu {
   height: 30px;
   position: absolute;
-  width: 116px;
+  width: 144px;
   z-index: 2;
 }
 
