@@ -20,7 +20,7 @@ this is a **Markdown**!!
   };
 
   return (
-    <view className="plain-surface" style="height:100vh;position:relative;">
+    <view className="plain-surface">
       <markdown
         id="markdown"
         content={content}
