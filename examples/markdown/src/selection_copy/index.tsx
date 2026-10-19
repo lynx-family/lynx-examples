@@ -7,6 +7,7 @@ import { useState } from "@lynx-js/react";
 import type * as Lynx from "@lynx-js/types";
 import { renderExample } from "../common.js";
 import type { MarkdownTextBoundingRect } from "../intrinsic-element.js";
+import { positionSelectionMenu } from "../selection.js";
 
 function App() {
   const content = `
@@ -63,14 +64,25 @@ this is a **Markdown**!!
           end,
         },
         success(res: MarkdownTextBoundingRect) {
-          setLeftOffset(res.boundingRect.left + res.boundingRect.width / 2 - 30);
-          setTopOffset(res.boundingRect.top + res.boundingRect.height / 2 - 10);
+          positionSelectionMenu(res.boundingRect, setLeftOffset, setTopOffset);
         },
       })
       .exec();
   };
 
-  const onCopy = () => {
+  const onSelectAll = () => {
+    lynx.createSelectorQuery().select("#markdown").invoke({
+      method: "setTextSelection",
+      params: {
+        startX: 0,
+        startY: 0,
+        endX: Number.MAX_VALUE,
+        endY: Number.MAX_VALUE,
+      },
+    }).exec();
+  };
+
+  const onGetSelectedText = () => {
     lynx
       .createSelectorQuery()
       .select("#markdown")
@@ -87,7 +99,7 @@ this is a **Markdown**!!
   };
 
   return (
-    <view className="plain-surface selection-area">
+    <view id="selection-area" className="plain-surface selection-area">
       <markdown
         id="markdown"
         content={content}
@@ -102,16 +114,15 @@ this is a **Markdown**!!
           visibility: menuVisible,
           left: leftOffset + "px",
           top: topOffset + "px",
-          width: "60px",
         }}
       >
         <view className="menu-inner">
-          <text className="menu-button">Select</text>
+          <text className="menu-button" bindtap={onSelectAll}>Select all</text>
           <view className="menu-divider" />
-          <text className="menu-button" bindtap={onCopy}>Copy</text>
+          <text className="menu-button" bindtap={onGetSelectedText}>Get text</text>
         </view>
       </view>
-      {selectedText ? <text className="copied-text">Copied: {selectedText}</text> : null}
+      {selectedText ? <text className="copied-text">Selected text: {selectedText}</text> : null}
     </view>
   );
 }

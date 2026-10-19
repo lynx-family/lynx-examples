@@ -23,7 +23,7 @@ this is a **Markdown**!!
         animation-type="typewriter"
         animation-velocity={20}
       >
-        <view id="cursor" className="cursor"></view>
+        <view id="cursor" className="cursor" flatten={false}></view>
       </markdown>
     </view>
   );
