@@ -7,6 +7,7 @@ import { useRef, useState } from "@lynx-js/react";
 import type * as Lynx from "@lynx-js/types";
 import { renderExample } from "../common.js";
 import type { MarkdownTextBoundingRect } from "../intrinsic-element.js";
+import { positionSelectionMenu } from "../selection.js";
 
 function App() {
   const content = `
@@ -52,25 +53,25 @@ this is a **Markdown**!!
         success(res: MarkdownTextBoundingRect) {
           console.log(res.boundingRect);
           if (modifySelection) {
-            const x = res.boundingRect.left + res.boundingRect.width / 2;
-            const y = res.boundingRect.top + res.boundingRect.height / 2;
-            lynx
-              .createSelectorQuery()
-              .select("#markdown")
-              .invoke({
-                method: "setTextSelection",
-                params: {
-                  startX: x,
-                  startY: y,
-                  endX: x,
-                  endY: y,
-                  selectionTextType: "paragraph",
-                },
-              })
-              .exec();
+            lynx.createSelectorQuery().select("#markdown").invoke({
+              method: "boundingClientRect",
+              success(markdownRect: MarkdownTextBoundingRect["boundingRect"]) {
+                const x = res.boundingRect.left - markdownRect.left + res.boundingRect.width / 2;
+                const y = res.boundingRect.top - markdownRect.top + res.boundingRect.height / 2;
+                lynx.createSelectorQuery().select("#markdown").invoke({
+                  method: "setTextSelection",
+                  params: {
+                    startX: x,
+                    startY: y,
+                    endX: x,
+                    endY: y,
+                    selectionTextType: "paragraph",
+                  },
+                }).exec();
+              },
+            }).exec();
           } else {
-            setLeftOffset(res.boundingRect.left + res.boundingRect.width / 2 - 30);
-            setTopOffset(res.boundingRect.top + res.boundingRect.height / 2 - 10);
+            positionSelectionMenu(res.boundingRect, setLeftOffset, setTopOffset);
           }
         },
         fail(res) {
@@ -82,7 +83,7 @@ this is a **Markdown**!!
   };
 
   return (
-    <view className="plain-surface selection-area">
+    <view id="selection-area" className="plain-surface selection-area">
       <markdown
         id="markdown"
         content={content}
@@ -97,7 +98,6 @@ this is a **Markdown**!!
           visibility: menuVisible,
           left: leftOffset + "px",
           top: topOffset + "px",
-          width: "60px",
         }}
       >
         <view className="menu-inner">

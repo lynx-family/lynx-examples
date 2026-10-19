@@ -24,7 +24,7 @@ this is a **Markdown**!!
         animation-velocity={20}
         content-complete={false}
       >
-        <view id="cursor" className="cursor"></view>
+        <view id="cursor" className="cursor" flatten={false}></view>
       </markdown>
     </view>
   );
