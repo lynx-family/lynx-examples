@@ -1,5 +1,13 @@
 # @lynx-example/markdown
 
+## 0.2.1
+
+### Patch Changes
+
+- bd1402f: Fix selection menu and paragraph-selection coordinates and make the selected-text
+  example's actions explicit. Simplify text-truncation layouts and keep custom
+  cursor views unflattened.
+
 ## 0.2.0
 
 ### Minor Changes
