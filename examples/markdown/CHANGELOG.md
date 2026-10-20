@@ -1,5 +1,11 @@
 # @lynx-example/markdown
 
+## 0.2.2
+
+### Patch Changes
+
+- b7c845d: Keep the text selection handles visible outside the Markdown text bounds on iOS.
+
 ## 0.2.1
 
 ### Patch Changes
