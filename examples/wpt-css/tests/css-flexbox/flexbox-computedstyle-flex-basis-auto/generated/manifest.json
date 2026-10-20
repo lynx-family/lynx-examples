@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-basis-auto",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-basis-auto.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "532415f0bca8d90dffbf0662f549423c38ec2149945c45a7a27404582ec5c3b7"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-basis",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-basis-value-auto",
+      "ordinal": 1,
+      "title": "Property flex-basis value 'auto'",
+      "sectionKey": "property-flex-basis-value-auto",
+      "cssFile": "cases/property-flex-basis-value-auto.css",
+      "cssSha256": "f09cc8e888b64e5d93e7ca42a86cd93fcea861771a99b90ccc9be230c1fe9a7e",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-basis",
+          "expected": "auto"
+        }
+      ]
+    }
+  ]
+}

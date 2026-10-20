@@ -1,0 +1,37 @@
+* {
+  box-sizing: content-box;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+.description {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ref {
+  background-color: #008000;
+  width: 12em;
+  height: 6em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.test {
+  background-color: #008000;
+  width: 12em;
+  height: 6em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+page {
+  font-size: 16px;
+}

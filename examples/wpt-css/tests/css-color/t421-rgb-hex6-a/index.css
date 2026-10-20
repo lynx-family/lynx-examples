@@ -1,0 +1,47 @@
+* {
+  box-sizing: content-box;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  linear-cross-gravity: stretch;
+  margin: 8px;
+  background: white;
+}
+
+.__ua-p {
+  display: block;
+  linear-layout-gravity: stretch;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#one {
+  color: #000000;
+  background: #ffffff;
+}
+
+#two {
+  color: #ffffff;
+  background: #000000;
+}
+
+#three {
+  color: #ff0000;
+}
+
+#four {
+  color: #00ff00;
+}
+
+#five {
+  color: #0000ff;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "background-repeat-no-repeat-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-backgrounds/parsing/background-repeat-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "66d6d3ea952fbee079b286f84059ef23f2c7dd3e26454a0c09e84f622215656c"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "background-repeat",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-background-repeat-value-no-repeat",
+      "ordinal": 1,
+      "title": "Property background-repeat value 'no-repeat'",
+      "sectionKey": "property-background-repeat-value-no-repeat",
+      "cssFile": "cases/property-background-repeat-value-no-repeat.css",
+      "cssSha256": "249ac0ae2839d24835e5764c9fac59757e8fd03b522e8f266d8836489f9315cb",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "background-repeat",
+          "expected": "no-repeat"
+        }
+      ]
+    }
+  ]
+}

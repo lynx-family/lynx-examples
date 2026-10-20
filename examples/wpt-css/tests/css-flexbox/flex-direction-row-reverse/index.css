@@ -1,0 +1,32 @@
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	background: red;
+  margin: 0 0 1em 0;
+	border: 1px solid black;
+        }
+	.__html-span {
+	display: inline-block;
+	background: green;
+	color: white;
+	margin: 1em;
+	width: 8em;
+	}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+* {
+	box-sizing: content-box;
+}

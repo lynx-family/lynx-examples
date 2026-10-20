@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-box-clear-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-box/parsing/clear-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "88469c77dc934629a7aafa5c47d701fff59875323cbcafe9f5d77da2f1ff7ffd"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "clear",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-clear-value-none",
+      "ordinal": 1,
+      "title": "Property clear value 'none'",
+      "sectionKey": "property-clear-value-none",
+      "cssFile": "cases/property-clear-value-none.css",
+      "cssSha256": "740e5cab4d154071534020a64af8e1ed383da0658bc9b100c60494413039fd86",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "clear",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

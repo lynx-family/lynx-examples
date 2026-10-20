@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-flow-row-reverse-wrap-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-flow-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "eef8e4f0ed41ff2fc876bb63411548075d6cd834406aa155dd87606fa9a5f993"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-flow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-flow-value-row-reverse-wrap",
+      "ordinal": 1,
+      "title": "Property flex-flow value 'row-reverse wrap'",
+      "sectionKey": "property-flex-flow-value-row-reverse-wrap",
+      "cssFile": "cases/property-flex-flow-value-row-reverse-wrap.css",
+      "cssSha256": "0f24f1f2611318afd3d644f070218968c33eade108cef1b4b506d3319923074c",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-flow",
+          "expected": "row-reverse wrap"
+        }
+      ]
+    }
+  ]
+}

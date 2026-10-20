@@ -1,0 +1,34 @@
+* {
+  box-sizing: content-box;
+}
+
+.test {
+  background: black;
+  margin: 1em 0;
+  width: 30em;
+  height: 6em;
+
+  display: flex;
+  align-items: stretch;
+}
+
+.item {
+  width: 8em;
+  flex: none;
+}
+
+.item-one {
+  margin-top: 6em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

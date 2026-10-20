@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1,
+#div2,
+#div3 {
+  width: 96px;
+  height: 96px;
+}
+
+#div1 {
+  background: orange;
+}
+
+#div2 {
+  background: red;
+  visibility: hidden;
+}
+
+#div3 {
+  background: blue;
+}
+
+.hidden-text {
+  color: red;
+  font-size: 16px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

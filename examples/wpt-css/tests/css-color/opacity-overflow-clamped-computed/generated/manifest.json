@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-color-opacity-overflow-clamped-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-color/parsing/opacity-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "28f572ecec41dde036b79b8708b40d1dcefe04ffe000cf7901da35ee8763b663"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "opacity",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-opacity-value-3",
+      "ordinal": 1,
+      "title": "Property opacity value '3'",
+      "sectionKey": "property-opacity-value-3",
+      "cssFile": "cases/property-opacity-value-3.css",
+      "cssSha256": "931d4e53e1897a20e414ae9b76080875ae15c56cbce085887d3b833cf8f7f638",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "opacity",
+          "expected": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+* { box-sizing: content-box; }
+
+.body { overflow: hidden }
+
+.outerFlex {
+  display: flex;
+  width: 100px;
+  /* Implicit "align-items:stretch" */
+}
+
+.innerFlex {
+  display: flex;
+  width: 100px;
+  background: red;
+
+  /* This reveals if we miscalculate the height of our flex item: */
+  align-items: flex-end;
+}
+
+.block {
+  width: 100px;
+  max-height: 100%;
+  background-color: green;
+  /* Preserve the block child's Web auto width, not its tested height. */
+  linear-cross-gravity: stretch;
+}
+
+.__inline-001 {
+  max-height: 100px;
+}
+
+.__inline-002 {
+  height:9999px;
+}
+
+/* Setup-only Web paragraph/body flow, without adding a definite height. */
+.__ua-p {
+  margin: 1em 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

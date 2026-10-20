@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-four-five-six-px-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "b5ab8d2afc28121c493394c8a464a610622dd5d281c6437a562feb0f113747b4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-value-4-5-6px",
+      "ordinal": 1,
+      "title": "Property flex value '4 5 6px'",
+      "sectionKey": "property-flex-value-4-5-6px",
+      "cssFile": "cases/property-flex-value-4-5-6px.css",
+      "cssSha256": "ffc85c34d2315d673d7c6ee830187dd7785c65bf6168e36ede4a88f9a31556b0",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex",
+          "expected": "4 5 6px"
+        }
+      ]
+    }
+  ]
+}

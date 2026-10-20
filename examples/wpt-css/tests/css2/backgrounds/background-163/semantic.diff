@@ -1,0 +1,14 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty 200px by 200px div.
+- The tested declaration is background: scroll green bottom repeat-x; and is preserved verbatim.
+- The no-image case intentionally uses the green fill as a parser oracle while repeat, position, and attachment remain visually inert.
+
+# Compatibility adjustments
+
+- Visible text uses wrapping outer text, nested bold text, and ordinary U+0020; the box selector is class-scoped.
+- Content-box sizing and explicit body/paragraph spacing are setup-only Web compatibility adjustments.
+
+# Current Lynx API-doc basis
+
+- Background attachment is unsupported. The exact shorthand remains pending visual verification without a longhand workaround.

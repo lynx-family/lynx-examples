@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "overflow-hidden-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-overflow/parsing/overflow-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "09272fbc67b0c1d08be069878d2e4012463784c0f8a0f5543070c14a0ca68c21"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "overflow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-overflow-value-hidden",
+      "ordinal": 1,
+      "title": "Property overflow value 'hidden'",
+      "sectionKey": "property-overflow-value-hidden",
+      "cssFile": "cases/property-overflow-value-hidden.css",
+      "cssSha256": "ac293423cea83831b0ff628a29db9c319422aff4e7fa0c6f1921e5e4471e57c8",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "overflow",
+          "expected": "hidden"
+        }
+      ]
+    }
+  ]
+}

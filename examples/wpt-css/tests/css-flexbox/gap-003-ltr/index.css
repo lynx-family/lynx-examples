@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+.flexbox {
+  background-color: green;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  direction: ltr;
+  gap: 20px;
+}
+
+.flexbox > .item {
+  background-color: grey;
+  width: calc(50% - 10px);
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

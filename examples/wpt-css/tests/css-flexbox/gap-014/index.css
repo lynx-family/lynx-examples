@@ -1,0 +1,59 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-scene {
+  position: relative;
+  width: 100px;
+  z-index: 0;
+}
+
+.item {
+  height: 10px;
+  flex: 0 0 auto;
+}
+
+.zero-height {
+  height: 0;
+}
+
+#reference-overlapped-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100px;
+  row-gap: 40px;
+  background-color: green;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

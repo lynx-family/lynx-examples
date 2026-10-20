@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-shrink-invalid",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-shrink-invalid.html",
+    "revision": "1e91be47ac599571cde8a98b0a11cafc3a9e281c",
+    "sha256": "0c3028f9d13b585f8d2ecc8739c24c6cbc3b3b36729a0ba6a43c72a8b6d84a33"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-shrink",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-shrink-value-1",
+      "ordinal": 1,
+      "title": "Property flex-shrink value '-1'",
+      "sectionKey": "property-flex-shrink-value-1",
+      "cssFile": "cases/property-flex-shrink-value-1.css",
+      "cssSha256": "83236778d9f9ddedfd08c58d59b2e7974a2c4d22eea2fdf0450627fef998a84a",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-shrink",
+          "expected": "1"
+        }
+      ]
+    }
+  ]
+}

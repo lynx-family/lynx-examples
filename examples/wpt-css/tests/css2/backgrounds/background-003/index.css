@@ -1,0 +1,33 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1 {
+  /* Shorthand under test (verbatim): sets background-repeat only, all
+     other subproperties reset to initial; the trailing longhand then
+     layers the image back on. */
+  background: repeat-x;
+  background-image: url("support/green15x15.png");
+  /* Source height: 5in normalized to 480px (1in = 96px); setup geometry
+     only. */
+  height: 480px;
+}
+
+/* Browser-default block spacing for the instruction paragraph; the top
+   margin reproduces Web body/first-paragraph margin collapsing. */
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

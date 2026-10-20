@@ -1,0 +1,33 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { background-color: black; background-image: url("support/blue15x15.png"); background-repeat: no-repeat; height: 200px; }
+   width: 100% reproduces the Web block-level full-width div. */
+.test {
+  background-color: black;
+  background-image: url("support/blue15x15.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+/* CSS2 pattern: Web body margin 8px collapses with p margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

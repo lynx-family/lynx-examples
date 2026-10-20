@@ -1,0 +1,24 @@
+* {
+  box-sizing: content-box;
+}
+
+.target {
+  text-decoration: overline;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

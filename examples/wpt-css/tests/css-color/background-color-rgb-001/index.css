@@ -1,0 +1,71 @@
+* {
+  box-sizing: content-box;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px 8px;
+  background: white;
+}
+
+.color-row {
+  width: 100%;
+  min-height: 1.1667em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  flex-shrink: 0;
+}
+
+.row-first {
+  margin-top: 1em;
+}
+
+.color-label {
+  color: black;
+}
+
+#p1 {
+  background-color: rgb(10%, 60%, 10%, 20%);
+}
+
+#p2 {
+  background-color: rgb(10, 175, 10, 0.4);
+}
+
+#p3 {
+  background-color: rgb(10 175 10 / 60%);
+}
+
+#p4 {
+  background-color: rgb(10.0 175.0 10.0 / 0.8);
+}
+
+#p5 {
+  background-color: rgb(10/* comment */175/* comment */10/100%);
+}
+
+#p6 {
+  background-color: rgb(10,/* comment */150,/* comment */50);
+}
+
+#p7 {
+  background-color: rgb(10%, 60%, 10%);
+}
+
+#p8 {
+  background-color: rgb(10.0 100.0 100.0);
+}
+
+#p9 {
+  background-color: rgb(10/* comment */75/* comment */125);
+}
+
+#p10 {
+  background-color: rgb(10.0, 50.0, 150.0);
+}

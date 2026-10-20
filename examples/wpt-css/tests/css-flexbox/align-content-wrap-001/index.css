@@ -1,0 +1,117 @@
+* {
+  box-sizing: content-box;
+}
+
+.default {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    height: 70px;
+    border: 1px solid red;
+    /* Preserve Web's 5px collapsed sibling gap without relying on margin collapsing. */
+    margin: 5px 5px 0;
+}
+
+.default > view {
+  height: 20px;
+}
+
+.verticalWriting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    width: 70px;
+    border: 1px solid red;
+    margin: 5px 5px 0;
+    writing-mode: vertical-lr;
+}
+
+.verticalWriting > view {
+  width: 20px;
+}
+
+.__inline-001 {
+  align-content: flex-start;
+}
+
+.__inline-002 {
+  align-content: flex-end;
+}
+
+.__inline-003 {
+  align-content: center;
+}
+
+.__inline-004 {
+  align-content: space-between;
+}
+
+.__inline-005 {
+  align-content: space-around;
+}
+
+.__inline-006 {
+  align-content: space-evenly;
+}
+
+.__inline-007 {
+  align-content: stretch;
+}
+
+.__inline-008 {
+  align-content: flex-start;
+}
+
+.__inline-009 {
+  align-content: flex-end;
+}
+
+.__inline-010 {
+  align-content: center;
+}
+
+.__inline-011 {
+  align-content: space-between;
+}
+
+.__inline-012 {
+  align-content: space-around;
+}
+
+.__inline-013 {
+  align-content: stretch;
+  margin-bottom: 5px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  /* 11px plus the first container's 5px reproduces Web's collapsed 16px gap. */
+  margin-bottom: 11px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

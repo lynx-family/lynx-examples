@@ -1,0 +1,3 @@
+@layer { text { color: green !important; } }
+            @layer { text.first { color: red !important; } }
+            text { color: red !important; }

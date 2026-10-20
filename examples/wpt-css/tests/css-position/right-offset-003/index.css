@@ -1,0 +1,55 @@
+* {
+  box-sizing: content-box;
+}
+
+#container
+            {
+                height: 100px;
+                padding-right: 25px;
+                position: relative;
+                width: 100px;
+            }
+            #div1
+            {
+                background: white;
+                height: 50px;
+                position: absolute;
+                right: 75px;
+                width: 50px;
+                z-index: 1;
+            }
+            #div2
+            {
+                background: blue;
+                height: 100px;
+                width: 100px;
+            }
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

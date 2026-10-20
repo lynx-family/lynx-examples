@@ -1,0 +1,30 @@
+* {
+  box-sizing: content-box;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-item {
+  flex: 1 0 100%;
+  border: 1px solid blue;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxImportSource": "@lynx-js/react",
+    "types": ["node", "@lynx-js/react", "@lynx-js/types"]
+  },
+  "include": ["native-elements.d.ts", "tests/**/*.tsx", "tests/**/*.ts", "tools/nonvisual-runtime/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

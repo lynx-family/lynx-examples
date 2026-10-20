@@ -1,0 +1,17 @@
+# Source-derived semantics
+
+- The zero-sized parent carries `background-image: url("support/green_box.png")`; the 100px child has a red fallback and `background-image: inherit`.
+- The assertion requires the inherited green image to cover the child, leaving one green square and no red.
+
+# Compatibility adjustments
+
+- Source IDs and tested declarations are preserved on nested Lynx `<view>` elements.
+- Visible text uses a wrapping outer `<text>`, nested bold text, and an explicit ordinary U+0020 before the bold phrase.
+- Content-box sizing and explicit body/paragraph spacing reproduce Web setup without relying on Lynx margin collapse.
+- The card-local `green_box.png` is copied byte-for-byte from the pinned, reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents `background-image`, local URL images, `inherit`, fixed px geometry, and backgrounds on `<view>`.
+- Three final-device runs are byte-stable failures at 3.5807%: WebView paints the inherited green image, while Lynx leaves the red fallback visible.
+- Direct URL loading succeeds in the sibling `background-image-002` case, isolating this failure to inheritance rather than asset loading. The original Web test matches its pinned official reference exactly.

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-direction-column-reverse",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-direction-column-reverse.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "063c31120fc2457e66db2be6fbf6b5022d05ee162aad93693ff954243af39c6f"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-direction",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-direction-value-column-reverse",
+      "ordinal": 1,
+      "title": "Property flex-direction value 'column-reverse'",
+      "sectionKey": "property-flex-direction-value-column-reverse",
+      "cssFile": "cases/property-flex-direction-value-column-reverse.css",
+      "cssSha256": "ab9ffe542ef90c4e430ef94d2efb79249ad2a81738cdcad72d25b60f6c74dc08",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-direction",
+          "expected": "column-reverse"
+        }
+      ]
+    }
+  ]
+}

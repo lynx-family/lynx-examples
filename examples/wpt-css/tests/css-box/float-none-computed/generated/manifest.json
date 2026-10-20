@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-box-float-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-box/parsing/float-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "374a2e9d650e5d87f6e7918c9f01dffc9667fdb6f968928bf3f8c695a754fee3"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "float",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-float-value-none",
+      "ordinal": 1,
+      "title": "Property float value 'none'",
+      "sectionKey": "property-float-value-none",
+      "cssFile": "cases/property-float-value-none.css",
+      "cssSha256": "ff7cec318eb8429c65c22ed636932b3d197a35ff557054b6076d68b7bca423b5",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "float",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}
