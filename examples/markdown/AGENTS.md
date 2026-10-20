@@ -11,6 +11,8 @@
   `setTextSelection`; do not assume the component is at the page origin.
 - `getSelectedText` only reads the selection. Do not claim clipboard success
   without calling a clipboard API supplied by the host.
+- Selection examples need `overflow:visible` on `<markdown>` so handles that
+  extend beyond the text bounds remain visible on iOS.
 - Verify custom truncation placement, typewriter cursor completion, and text
   selection with real interactions. Keep original screenshots or recordings for
   acceptance; do not hide native rendering failures with fixed offsets.
