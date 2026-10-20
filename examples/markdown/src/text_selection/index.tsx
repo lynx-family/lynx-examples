@@ -11,7 +11,11 @@ this is a **Markdown**!!
 
   return (
     <view className="plain-surface">
-      <markdown content={content} text-selection={true} />
+      <markdown
+        content={content}
+        text-selection={true}
+        style="overflow:visible;"
+      />
     </view>
   );
 }
