@@ -1,5 +1,12 @@
 # @lynx-example/lynx-ui-gallery
 
+## 0.3.1
+
+### Patch Changes
+
+- a9e01d0: Upgrade `@lynx-js/lynx-ui` to 3.142.0 so its React type peers accept both React 18 and React 19.
+  Fix the gallery's existing FeedList load-more callback by using the supported `onScrollToLower` prop.
+
 ## 0.3.0
 
 ### Minor Changes

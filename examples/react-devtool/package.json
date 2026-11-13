@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/react-devtool",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "lynx-ui-gallery with @lynx-js/preact-devtools enabled",
   "author": "Lynx Authors",
   "repository": {
