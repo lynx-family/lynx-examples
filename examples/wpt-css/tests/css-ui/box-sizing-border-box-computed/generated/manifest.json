@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "box-sizing-border-box-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-ui/parsing/box-sizing-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "6586c1e84cc860d5df6caa828c004ba267e8303275d06b10a4640c6b39da500e"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "box-sizing",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-box-sizing-value-border-box",
+      "ordinal": 1,
+      "title": "Property box-sizing value 'border-box'",
+      "sectionKey": "property-box-sizing-value-border-box",
+      "cssFile": "cases/property-box-sizing-value-border-box.css",
+      "cssSha256": "e8fb3f40433c8bfa422f27b5b5c219686b09a560a3807e7a6090493d036423ec",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "box-sizing",
+          "expected": "border-box"
+        }
+      ]
+    }
+  ]
+}

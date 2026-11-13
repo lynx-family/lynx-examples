@@ -1,0 +1,37 @@
+* {
+	box-sizing: content-box;
+}
+
+.test {
+	background: blue;
+	margin: 1em 0;
+	border: 1px solid black;
+	height: 8em;
+	width: 40em;
+
+	display: flex;
+	align-items: stretch;
+}
+.__html-span {
+	background: white;
+	margin: 1em 0;
+	width: 5em;
+
+	flex: 0 0 auto;
+}
+.__html-span.span-1 {background: yellow;}
+.__html-span.span-2 {background: pink;}
+.__html-span.span-3 {background: lightblue;}
+.__html-span.span-4 {background: grey;}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

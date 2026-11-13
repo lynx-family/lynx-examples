@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "order-negative-45-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/order-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "0b24256b4f4e54da712c614e6f43889152888fcd235c5792969d070d73a36c3f"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "order",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-order-value-45",
+      "ordinal": 1,
+      "title": "Property order value '-45'",
+      "sectionKey": "property-order-value-45",
+      "cssFile": "cases/property-order-value-45.css",
+      "cssSha256": "2c5fc2bda8eefc83fa9b95f459303921c5d0e5158838350599831b5294ec8b1b",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "order",
+          "expected": "-45"
+        }
+      ]
+    }
+  ]
+}

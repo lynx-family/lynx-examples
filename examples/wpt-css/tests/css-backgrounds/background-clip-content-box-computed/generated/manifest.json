@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-backgrounds-background-clip-content-box-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-backgrounds/parsing/background-clip-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "2a4b7918e4b73c922fd6a2a362345353355f9ede90daee2fa48fc752673789f4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "background-clip",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-background-clip-value-content-box",
+      "ordinal": 1,
+      "title": "Property background-clip value 'content-box'",
+      "sectionKey": "property-background-clip-value-content-box",
+      "cssFile": "cases/property-background-clip-value-content-box.css",
+      "cssSha256": "a44cf45609aa0dee2ecaa48201b2d43a1ea338c3d829b6ac1884ffb053812e02",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "background-clip",
+          "expected": "content-box"
+        }
+      ]
+    }
+  ]
+}

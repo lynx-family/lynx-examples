@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-seven-percent-eight-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "b5ab8d2afc28121c493394c8a464a610622dd5d281c6437a562feb0f113747b4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-value-7-8",
+      "ordinal": 1,
+      "title": "Property flex value '7% 8'",
+      "sectionKey": "property-flex-value-7-8",
+      "cssFile": "cases/property-flex-value-7-8.css",
+      "cssSha256": "5ccecadee9fb2debae3f0069f2958959386b4ad7e7caaaef64c15bce96f03b65",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex",
+          "expected": "8 1 7%"
+        }
+      ]
+    }
+  ]
+}

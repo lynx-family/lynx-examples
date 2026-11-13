@@ -1,0 +1,59 @@
+* { box-sizing: content-box; }
+
+.cover,
+.limit,
+.test {
+  position: relative;
+}
+
+.cover,
+.limit {
+  width: 120px;
+  height: 120px;
+  margin: 0 8px 8px;
+  background-color: green;
+}
+
+.control {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 60px;
+}
+
+.cover .control { background-color: red; }
+.limit .control { background-color: green; }
+
+.test {
+  width: 60px;
+  height: 80px;
+  padding: 10px;
+  border: 10px solid transparent;
+}
+
+.cover .test {
+  background: no-repeat url("support/green-intrinsic-width-height.svg");
+}
+
+.limit .test {
+  background: no-repeat url("support/red-intrinsic-width-height.svg");
+}
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+  white-space: normal;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

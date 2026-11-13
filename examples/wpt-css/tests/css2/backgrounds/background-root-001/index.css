@@ -1,0 +1,21 @@
+page {
+  font-size: 16px;
+  background: green;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: green;
+}
+
+.__ua-p {
+  color: white;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  white-space: normal;
+}

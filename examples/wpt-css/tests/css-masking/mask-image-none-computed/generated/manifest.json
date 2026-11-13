@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-masking-mask-image-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-masking/parsing/mask-image-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "385efbc2713641635a9a69853709228cf6d164ea70c512f5c8e645fcca5e5a00"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "mask-image",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-mask-image-value-none",
+      "ordinal": 1,
+      "title": "Property mask-image value 'none'",
+      "sectionKey": "property-mask-image-value-none",
+      "cssFile": "cases/property-mask-image-value-none.css",
+      "cssSha256": "5066450a335ac540c7a44cccd9038e432f4dbc5ce4aea0e8b4f573f0fdc7a249",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "mask-image",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

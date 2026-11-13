@@ -1,0 +1,44 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Positioned container allows for the self-describing statement to still
+   be visible in the case of failure. */
+.container {
+  position: absolute;
+  top: 51px;
+  left: 8px;
+}
+
+.greenSquare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transform: translateX(50px);
+}
+
+.redSquare {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  top: 0px;
+  left: 50px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

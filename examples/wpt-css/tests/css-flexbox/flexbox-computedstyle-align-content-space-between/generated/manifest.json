@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-content-space-between",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-content-space-between.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "1f2c9e4708eebe5fc8bf3b07b9ac90250f6bf0645ec2db26022038483ccc47d8"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-content-value-space-between",
+      "ordinal": 1,
+      "title": "Property align-content value 'space-between'",
+      "sectionKey": "property-align-content-value-space-between",
+      "cssFile": "cases/property-align-content-value-space-between.css",
+      "cssSha256": "5f8f30aaa561dc1d8e1ce936d34f2b9caf83e6e40b2f5babdb807e966c6ac725",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-content",
+          "expected": "space-between"
+        }
+      ]
+    }
+  ]
+}

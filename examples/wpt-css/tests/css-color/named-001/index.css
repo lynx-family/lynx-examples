@@ -1,0 +1,34 @@
+* {
+  box-sizing: content-box;
+}
+
+.outer {
+  background: red;
+  width: 10em;
+  height: 10em;
+}
+
+.inner {
+  /* LYNX-LIMITATION: rebeccapurple is not recognized by the named color parser. */
+  background: rebeccapurple;
+  width: 10em;
+  height: 10em;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

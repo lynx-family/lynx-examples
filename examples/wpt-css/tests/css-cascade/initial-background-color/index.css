@@ -1,0 +1,41 @@
+.body { margin: 0px; padding: 0px; }
+
+      html { background: green; overflow: hidden; }
+      #outer { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+      #outer { background: red; background-color: initial; }
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */
+
+/* Web html is the canvas for this assertion; Lynx paints that canvas on page. */
+page {
+  background-color: green;
+  overflow: hidden;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}

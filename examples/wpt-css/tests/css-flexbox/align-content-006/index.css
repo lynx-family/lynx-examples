@@ -1,0 +1,32 @@
+* { box-sizing: content-box; }
+
+#flexbox {
+  background: red;
+  align-content: center;
+  align-content: stretch;
+  display: flex;
+  flex-flow: wrap;
+  height: 100px;
+  width: 300px;
+}
+
+#flexbox > view {
+  background-color: green;
+  width: 150px;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

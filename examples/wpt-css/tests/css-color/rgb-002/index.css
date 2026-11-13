@@ -1,0 +1,36 @@
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+.instruction {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.swatch {
+  width: 12em;
+  height: 6em;
+  flex-shrink: 0;
+}
+
+.ref {
+  background-color: #008000;
+  margin-bottom: 0;
+}
+
+.test {
+  background-color: red;
+  margin-top: 0;
+}
+
+.test {
+  background-color: rgb(0 128.0 0);
+}

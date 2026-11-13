@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "display-flex-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-display/parsing/display-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "5f9305cd116163dd9dc7c81063618ac3491f024e1d16e0373f039ce076555cf4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "display",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-display-value-flex",
+      "ordinal": 1,
+      "title": "Property display value 'flex'",
+      "sectionKey": "property-display-value-flex",
+      "cssFile": "cases/property-display-value-flex.css",
+      "cssSha256": "88e681d1b2569e770a446e50d9f5311ceb35a2ac1cf6d531e8e3a7a96666013a",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "display",
+          "expected": "flex"
+        }
+      ]
+    }
+  ]
+}

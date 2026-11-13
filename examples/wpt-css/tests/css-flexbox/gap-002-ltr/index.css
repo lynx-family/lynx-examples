@@ -1,0 +1,40 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: section { background-color: green; block-size: 200px; display: flex; flex-direction: column; gap: 20px; }
+   block-size -> height (horizontal writing mode); width: 100% because Lynx linear
+   layout does not stretch block-level children to the parent width like Web block flow. */
+.container {
+  background-color: green;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Source: section > div { background-color: grey; flex: 1 1 auto; } */
+.item {
+  background-color: grey;
+  flex: 1 1 auto;
+}
+
+/* Web: body margin 8px collapses with p margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

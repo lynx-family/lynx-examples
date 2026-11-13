@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-grow-number",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-grow-number.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "2a73526b8e2dafc0be9ee62468a88026c78206dba10d279daf812fbcb49eabc4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-grow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-grow-value-666",
+      "ordinal": 1,
+      "title": "Property flex-grow value '666'",
+      "sectionKey": "property-flex-grow-value-666",
+      "cssFile": "cases/property-flex-grow-value-666.css",
+      "cssSha256": "7380fca994d2ce03e0049d608eca4e6ae21b66ac35cf8ad6fe3c15cd4c214d22",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-grow",
+          "expected": "666"
+        }
+      ]
+    }
+  ]
+}

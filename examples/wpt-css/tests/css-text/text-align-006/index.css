@@ -1,0 +1,25 @@
+.container {
+  border: 1px solid blue;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.aligned-text {
+  text-align: start;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.test-description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+  background: white;
+}

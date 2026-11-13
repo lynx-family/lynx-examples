@@ -1,0 +1,31 @@
+#div1,
+#div2 {
+  height: 96px;
+  width: 96px;
+  box-sizing: content-box;
+}
+
+#div1 {
+  background: blue;
+  position: relative;
+  top: 96px;
+}
+
+#div2 {
+  background: orange;
+  bottom: 96px;
+  position: relative;
+}
+
+.test-description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

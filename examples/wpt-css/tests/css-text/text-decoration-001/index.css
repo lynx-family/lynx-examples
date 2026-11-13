@@ -1,0 +1,36 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { text-decoration: underline; }. Applied to the converted text
+   node so Lynx paints the decoration on the text element. */
+.target {
+  text-decoration: underline;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

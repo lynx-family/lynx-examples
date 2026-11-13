@@ -1,0 +1,43 @@
+* {
+  box-sizing: content-box;
+}
+
+#test {
+  height: 288px;
+  width: 384px;
+  border: 2px solid;
+  border-top-left-radius: 50px 80px;
+}
+
+/* Blue radius ruler overlay. The source uses left/top 10px against the
+   viewport, which equals the body content origin (body margin: 10px);
+   anchored at 0 inside the positioned .body wrapper instead. */
+#reference {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border: 2px solid blue;
+  border-left: none;
+  border-top: none;
+  width: 50px;
+  height: 80px;
+}
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  position: relative;
+  margin: 10px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

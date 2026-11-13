@@ -1,0 +1,6 @@
+@layer A {
+                text { color: green; }
+                @layer A {
+                    text { color: red; }
+                }
+            }

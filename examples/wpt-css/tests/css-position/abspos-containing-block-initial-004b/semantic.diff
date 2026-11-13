@@ -1,0 +1,20 @@
+Source assertion: a fixed-position root-level box with left: 100px and
+top: 100px is positioned against the initial containing block.
+
+Host adaptation:
+- Represent the CSS-sized Web html box as .html-root beneath Lynx's host-owned page.
+- Represent the empty Web body as .body-root so the source hierarchy remains explicit.
+- Preserve position: fixed, both tested insets, dimensions, border, and the root box's yellow background.
+- Map the Web root background's canvas propagation to the Lynx page background.
+- Restore the Web default with * { box-sizing: content-box; }.
+
+Compatibility gap: Lynx page is the host surface and its size cannot be
+controlled with CSS, so a child view represents the styled Web html box while
+page carries only the source-derived full-canvas background. The tested fixed
+positioning and geometry remain active; no reference markup, CSS, coordinates,
+or pixels were copied.
+
+Documentation:
+- lynx/ai/skills/lynx-api-docs/skills/using-lynx-api-docs/css/supported-properties.md
+- lynx/ai/skills/lynx-api-docs/skills/using-lynx-api-docs/elements/page.md
+- lynx/ai/skills/lynx-api-docs/skills/using-lynx-api-docs/lynx-vs-web/css-differences.md

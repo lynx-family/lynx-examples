@@ -41,6 +41,7 @@ This repository is intended to showcase examples of Lynx.
   - [`motion`]: Examples for `@lynx-js/motion` and `@lynx-js/motion/mini`
   - [`css`]: Examples for using different CSS
   - [`layout`]: Examples of the layout related styling
+  - [`wpt-css`]: WPT CSS test cards built with the public ReactLynx toolchain
   - [`media-query`]: A responsive layout adapting from phones to tablets and large screens with CSS media queries
   - [`css-global`]: An example shows how to use global CSS in Lynx
   - [`css-modules`]: An example shows how to use CSS Modules in Lynx
@@ -150,6 +151,7 @@ This repository is intended to showcase examples of Lynx.
 [`viewpager`]: ./examples/viewpager
 [`basic-usage`]: ./examples/web-platform
 [`with-rspeedy`]: ./examples/with-rspeedy
+[`wpt-css`]: ./examples/wpt-css
 [`with-solidjs`]: ./examples/with-solidjs
 [`zustand`]: ./examples/zustand
 [`accessibility`]: ./examples/accessibility

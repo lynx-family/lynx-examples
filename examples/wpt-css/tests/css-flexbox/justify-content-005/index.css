@@ -1,0 +1,34 @@
+* { box-sizing: content-box; }
+
+#flexbox {
+  background: linear-gradient(to right, blue 0%, blue 12.666666667%, red 12.666666667%, red 37.333333333%, blue 37.333333333%, blue 50%, orange 50%, orange 62.666666667%, red 62.666666667%, red 87.333333333%, orange 87.333333333%, orange 100%);
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 300px;
+}
+
+#flexbox > view {
+  background-color: orange;
+  width: 76px;
+}
+
+#flexbox > #blue {
+  background-color: blue;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

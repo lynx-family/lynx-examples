@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-cascade-layer-important",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-cascade/layer-important.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "10bf97f54563b7db36c600c3ad6e18243dba0a9204b60b4a10fda5e9de2b0096"
+  },
+  "target": {
+    "selector": "text",
+    "property": "color",
+    "count": 2
+  },
+  "cases": [
+    {
+      "id": "a1-unlayered-important-style",
+      "ordinal": 1,
+      "title": "A1 Unlayered !important style",
+      "sectionKey": "A1",
+      "cssFile": "cases/a1-unlayered-important-style.css",
+      "cssSha256": "65f2ebb7c4ad6619ffe23592ec3f3f3572a4fd27edb87066667255e9daf6368d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b1-same-specificity-layered-important-first",
+      "ordinal": 2,
+      "title": "B1 Same specificity, layered !important first",
+      "sectionKey": "B1",
+      "cssFile": "cases/b1-same-specificity-layered-important-first.css",
+      "cssSha256": "0c606ea8d3e2c5b8b14a2d3e2e846d2524f464241104792ad41ddcad7fb03681",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c1-same-specificity-layered-important-second",
+      "ordinal": 3,
+      "title": "C1 Same specificity, layered !important second",
+      "sectionKey": "C1",
+      "cssFile": "cases/c1-same-specificity-layered-important-second.css",
+      "cssSha256": "354d9509a147ca1dfc7b0e5ee58edb55d3dae3756d88aa5ac3d48b10d9ae8b92",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d1-same-specificity-all-important",
+      "ordinal": 4,
+      "title": "D1 Same specificity, all !important",
+      "sectionKey": "D1",
+      "cssFile": "cases/d1-same-specificity-all-important.css",
+      "cssSha256": "772a8e2e066de69cbe3f2567d8a290ad6b22dd0e3bcce39e09389fdcf681ca49",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d2-same-specificity-all-important",
+      "ordinal": 5,
+      "title": "D2 Same specificity, all !important",
+      "sectionKey": "D2",
+      "cssFile": "cases/d2-same-specificity-all-important.css",
+      "cssSha256": "b702bda677e88eed94a9491373d1c9cff14775ad573fe9b7645ddf416611c615",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d3-same-specificity-all-important",
+      "ordinal": 6,
+      "title": "D3 Same specificity, all !important",
+      "sectionKey": "D3",
+      "cssFile": "cases/d3-same-specificity-all-important.css",
+      "cssSha256": "3b5f587bbbe6ffaa62e4d9a5564ebb4bf5423d0e173a9ad8e6170a4209cb206b",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d4-same-specificity-all-important",
+      "ordinal": 7,
+      "title": "D4 Same specificity, all !important",
+      "sectionKey": "D4",
+      "cssFile": "cases/d4-same-specificity-all-important.css",
+      "cssSha256": "bd120cc936b4ee9fe03814b43c7b8a730a69445134faa09950c5becf2421608d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e1-different-specificity-all-important",
+      "ordinal": 8,
+      "title": "E1 Different specificity, all !important",
+      "sectionKey": "E1",
+      "cssFile": "cases/e1-different-specificity-all-important.css",
+      "cssSha256": "8d91826d3d302d742dd0e589499d2618c32085c04692ec0821a14c8662b0d550",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e2-different-specificity-all-important",
+      "ordinal": 9,
+      "title": "E2 Different specificity, all !important",
+      "sectionKey": "E2",
+      "cssFile": "cases/e2-different-specificity-all-important.css",
+      "cssSha256": "59941ca8c5fe34ad0a07328a2f03db57430ed74011955e7b8aa868c5ab329e59",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    }
+  ]
+}

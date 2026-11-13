@@ -1,0 +1,31 @@
+.test {
+      display: flex;
+      width: 3em;
+      flex-direction :row;
+    }
+
+    .test > .__html-span {
+      width: 1em;
+      direction: ltr;
+    }
+
+    #row-ltr {
+      direction: ltr;
+    }
+
+    #row-rtl {
+      direction: rtl;
+    }
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}

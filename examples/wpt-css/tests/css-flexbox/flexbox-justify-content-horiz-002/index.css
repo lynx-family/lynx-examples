@@ -1,0 +1,150 @@
+view.flexbox {
+        width: 200px;
+        display: flex;
+        margin-bottom: 4px;
+        border: 1px dotted black;
+      }
+      view.a {
+        height: 10px;
+        flex: 0 10px;
+        background: lightgreen;
+        border-style: solid;
+        border-color:     purple;
+        border-top-width:    1px;
+        border-right-width:  2px;
+        border-bottom-width: 3px;
+        border-left-width:   4px;
+        padding: 2px;
+      }
+      view.b {
+        height: 10px;
+        flex: 0 50px;
+        background: pink;
+        padding: 4px 3px 2px 1px;
+        margin: 2px 3px 4px 5px;
+      }
+      view.c {
+        height: 10px;
+        flex: 0 100px;
+        background: orange;
+        margin: 3px;
+        border: 2px dashed teal;
+      }
+
+.__inline-001 {
+  justify-content: flex-start;
+}
+
+.__inline-002 {
+  justify-content: flex-start;
+}
+
+.__inline-003 {
+  justify-content: flex-start;
+}
+
+.__inline-004 {
+  justify-content: flex-end;
+}
+
+.__inline-005 {
+  justify-content: flex-end;
+}
+
+.__inline-006 {
+  justify-content: flex-end;
+}
+
+.__inline-007 {
+  justify-content: center;
+}
+
+.__inline-008 {
+  justify-content: center;
+}
+
+.__inline-009 {
+  justify-content: center;
+}
+
+.__inline-010 {
+  justify-content: space-between;
+}
+
+.__inline-011 {
+  justify-content: space-between;
+}
+
+.__inline-012 {
+  justify-content: space-between;
+}
+
+.__inline-013 {
+  justify-content: space-around;
+}
+
+.__inline-014 {
+  justify-content: space-around;
+}
+
+.__inline-015 {
+  justify-content: space-around;
+}
+
+.__inline-016 {
+  justify-content: space-evenly;
+}
+
+.__inline-017 {
+  justify-content: space-evenly;
+}
+
+.__inline-018 {
+  justify-content: space-evenly;
+}
+
+.__inline-019 {
+  justify-content: left;
+}
+
+.__inline-020 {
+  justify-content: left;
+}
+
+.__inline-021 {
+  justify-content: left;
+}
+
+.__inline-022 {
+  justify-content: right;
+}
+
+.__inline-023 {
+  justify-content: right;
+}
+
+.__inline-024 {
+  justify-content: right;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

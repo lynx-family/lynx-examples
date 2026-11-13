@@ -1,0 +1,33 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source selectors: .box1 / .box2. Declaration under test verbatim. */
+#box1 {
+  width: 200px;
+  height: 200px;
+  background: green;
+}
+
+#box2 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  filter: opacity(0);
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

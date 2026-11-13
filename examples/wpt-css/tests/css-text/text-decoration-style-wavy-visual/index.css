@@ -1,0 +1,44 @@
+* {
+  box-sizing: content-box;
+}
+
+.scene {
+  color: #aaa;
+  font-size: 50px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 50px;
+}
+
+.underline-solid-coral {
+  text-decoration: underline solid coral;
+}
+
+.overline-dashed-skyblue {
+  text-decoration: overline dashed skyblue;
+}
+
+.throughline-wavy-green {
+  text-decoration: line-through solid green;
+  text-decoration-style: wavy;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

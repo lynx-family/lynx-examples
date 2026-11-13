@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+#greenBottomDiv {
+  background: green;
+  border-bottom-color: black;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  height: 100px;
+  position: absolute;
+  top: 69px;
+  left: 8px;
+  transform: rotate(270deg);
+  width: 100px;
+}
+
+#redDiv {
+  position: absolute;
+  top: 69px;
+  left: 8px;
+  background: red;
+  height: 110px;
+  width: 110px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "display-grid-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-display/parsing/display-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "5f9305cd116163dd9dc7c81063618ac3491f024e1d16e0373f039ce076555cf4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "display",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-display-value-grid",
+      "ordinal": 1,
+      "title": "Property display value 'grid'",
+      "sectionKey": "property-display-value-grid",
+      "cssFile": "cases/property-display-value-grid.css",
+      "cssSha256": "b0425021228961c24c31b1b48f4ccabd5ca01a003c6fcc619d5f60dd669dd0b9",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "display",
+          "expected": "grid"
+        }
+      ]
+    }
+  ]
+}

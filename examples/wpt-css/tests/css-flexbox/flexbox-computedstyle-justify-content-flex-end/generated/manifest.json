@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-justify-content-flex-end",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_justify-content-flex-end.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "19085c788ee598123c6a6775ab11cbb628e93b9e620ddfb67584cd05eaed6a2c"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "justify-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-justify-content-value-flex-end",
+      "ordinal": 1,
+      "title": "Property justify-content value 'flex-end'",
+      "sectionKey": "property-justify-content-value-flex-end",
+      "cssFile": "cases/property-justify-content-value-flex-end.css",
+      "cssSha256": "5897c8cb1ce98dc2ded3f1119dca410508bd51d9d0119f9afa0c9f16f84364e7",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "justify-content",
+          "expected": "flex-end"
+        }
+      ]
+    }
+  ]
+}

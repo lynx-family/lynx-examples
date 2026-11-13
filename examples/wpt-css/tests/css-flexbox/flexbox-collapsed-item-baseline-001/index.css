@@ -1,0 +1,47 @@
+.flexContainer {
+      display: flex;
+      width: 50px;
+      background: yellow;
+      border: 1px dotted black;
+      margin: 5px;
+      align-items: baseline;
+    }
+    .collapse {
+      visibility: collapse;
+    }
+    .largeFont {
+      font-size: 20px;
+      background: lightblue;
+      /* Our flex items get padding on opposite sides (top/bottom) so that they
+         produce a large combined height when baseline-aligned: */
+      padding-top: 5px;
+    }
+    .smallFont {
+      font-size: 10px;
+      background: pink;
+      /* Our flex items get padding on opposite sides (top/bottom) so that they
+         produce a large combined height when baseline-aligned: */
+      padding-bottom: 20px;
+    }
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

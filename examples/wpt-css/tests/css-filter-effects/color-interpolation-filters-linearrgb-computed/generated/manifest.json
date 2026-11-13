@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-filter-effects-color-interpolation-filters-linearrgb-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/color-interpolation-filters-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "6804cbba5334ca8b53c6223b8b12ed546046007e1d332d7902e103eaf0cc23eb"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "color-interpolation-filters",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-color-interpolation-filters-value-linearrgb",
+      "ordinal": 1,
+      "title": "Property color-interpolation-filters value 'linearrgb'",
+      "sectionKey": "property-color-interpolation-filters-value-linearrgb",
+      "cssFile": "cases/property-color-interpolation-filters-value-linearrgb.css",
+      "cssSha256": "102c631315d0a02286a1592812d2af37b9d9abf9983e07650aef128932e715a3",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "color-interpolation-filters",
+          "expected": "linearrgb"
+        }
+      ]
+    }
+  ]
+}

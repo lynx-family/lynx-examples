@@ -1,0 +1,34 @@
+* {
+  box-sizing: content-box;
+}
+
+#flexbox {
+  background: linear-gradient(to bottom, red 0%, red 20%, green 20%, green 40%, red 40%, red 60%, green 60%, green 80%, red 80%, red 100%);
+  align-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  width: 300px;
+}
+
+#flexbox > .flex-item {
+  background-color: green;
+  height: 21px;
+  width: 150px;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

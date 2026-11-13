@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-color-opacity-one-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-color/parsing/opacity-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "28f572ecec41dde036b79b8708b40d1dcefe04ffe000cf7901da35ee8763b663"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "opacity",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-opacity-value-1",
+      "ordinal": 1,
+      "title": "Property opacity value '1'",
+      "sectionKey": "property-opacity-value-1",
+      "cssFile": "cases/property-opacity-value-1.css",
+      "cssSha256": "7c5ed3f030bb6195edb8811873a7667cc82b275d7db5d581a87795699d16d39f",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "opacity",
+          "expected": "1"
+        }
+      ]
+    }
+  ]
+}

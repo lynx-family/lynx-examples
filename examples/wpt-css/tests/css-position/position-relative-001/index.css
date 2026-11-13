@@ -1,0 +1,40 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.percent-offset {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 100%;
+  left: 100%;
+}
+
+.green {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+  top: -100px;
+  left: -100px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

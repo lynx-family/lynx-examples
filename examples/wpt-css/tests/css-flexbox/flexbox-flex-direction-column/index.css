@@ -1,0 +1,46 @@
+* {
+  box-sizing: content-box;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* The paragraph supplies the collapsed Web vertical body margin. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+.__ua-p {
+  margin: 1em 0;
+  white-space: normal;
+}
+
+/* Default horizontal LTR setup; unsupported writing-mode/direction omitted. */
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 120px;
+  height: 120px;
+  /* Should only display on error. */
+  background: red;
+}
+
+.flex-wrapper > .flex-item {
+  width: 38px;
+  height: 38px;
+  background: green;
+  border: 1px solid limegreen;
+}
+
+.flex-item > .item-text {
+  width: 100%;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+* { box-sizing: content-box; }
+.body { display: linear; linear-direction: column; width: 100%; height: 100%; margin: 0; border: 0; padding: 0; }
+.instruction { display: block; margin: 2em; white-space: normal; }
+page {
+  /* Root-canvas shorthand under test, including fixed, preserved verbatim. */
+  background: bottom right url("support/diamond.png") fixed white no-repeat;
+  color: black; width: 100%; height: 100%; margin: 0; border: 0; padding: 0; font-size: 16px;
+}

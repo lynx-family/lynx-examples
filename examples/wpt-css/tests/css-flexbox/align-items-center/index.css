@@ -1,0 +1,35 @@
+.flexbox {
+  background-color: green;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  position: relative;
+  width: 300px;
+}
+
+.red-band {
+  background-color: red;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 300px;
+}
+
+.flex-item {
+  background-color: green;
+  height: 52px;
+  width: 150px;
+}
+
+.test-description {
+  margin-top: 8px;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}

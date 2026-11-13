@@ -1,0 +1,14 @@
+# Source-derived semantics
+
+- The tested block preserves the exact longhands `background-color: orange`, `background-image: url('support/blue96x96.png')`, `background-attachment: fixed`, and `background-repeat: repeat-x`, plus `display: block`.
+- The visual oracle is a short blue stripe above a tall orange rectangle; unsupported fixed attachment remains under test and may produce an honest failure.
+
+# Compatibility adjustments
+
+- Setup-only `1in` width and `2in` height are normalized by the CSS absolute-length rule to `96px` and `192px`; no tested background property or value is altered.
+- The source line break is represented by adjacent text elements, selectors are class-scoped, and Web content-box/body/paragraph behavior is explicit. The second line keeps the source browser paragraph's 1em bottom margin before the following test box; this is setup spacing, not a declaration under test.
+- The card-local `blue96x96.png` is copied byte-for-byte from the reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx supports the color, image, repeat, and block compatibility values but not `background-attachment`; `fixed` is intentionally retained for conformance evidence.

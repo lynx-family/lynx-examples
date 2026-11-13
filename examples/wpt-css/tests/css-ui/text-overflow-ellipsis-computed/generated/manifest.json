@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-ui-text-overflow-ellipsis-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-ui/parsing/text-overflow-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "90e61f617985eea9491aaf91399ec9a429c6a44789cebc8f0635deb359158331"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "text-overflow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-text-overflow-value-ellipsis",
+      "ordinal": 1,
+      "title": "Property text-overflow value 'ellipsis'",
+      "sectionKey": "property-text-overflow-value-ellipsis",
+      "cssFile": "cases/property-text-overflow-value-ellipsis.css",
+      "cssSha256": "13b2f91ae73ab6bd482d5518356ef1c599c84ee98d141394cd2120a115a716ee",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "text-overflow",
+          "expected": "ellipsis"
+        }
+      ]
+    }
+  ]
+}

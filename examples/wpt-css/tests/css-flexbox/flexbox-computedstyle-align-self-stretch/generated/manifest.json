@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-self-stretch",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-self-stretch.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "ef0c1a922f8951099f9a6064e9f2f7a309d2e1103451bc899eb20358c13e913b"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-self",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-self-value-stretch",
+      "ordinal": 1,
+      "title": "Property align-self value 'stretch'",
+      "sectionKey": "property-align-self-value-stretch",
+      "cssFile": "cases/property-align-self-value-stretch.css",
+      "cssSha256": "b48665e521ed2fcf902743806e504e29db43b025cb975865a17c823f3dd998b4",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-self",
+          "expected": "stretch"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-items-baseline",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-items-baseline.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "eb9d0a54e92bda293f9f8aec8967ecaf6487ef3d7850c9be03fdda10baa0fa1d"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-items",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-items-value-baseline",
+      "ordinal": 1,
+      "title": "Property align-items value 'baseline'",
+      "sectionKey": "property-align-items-value-baseline",
+      "cssFile": "cases/property-align-items-value-baseline.css",
+      "cssSha256": "efe3c2fcb298abbc732aac8b4248817a30d10715ebecd0037070d79efcfe856a",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-items",
+          "expected": "baseline"
+        }
+      ]
+    }
+  ]
+}

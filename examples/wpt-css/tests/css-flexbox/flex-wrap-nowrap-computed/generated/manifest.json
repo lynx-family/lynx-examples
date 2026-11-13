@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-flexbox-flex-wrap-nowrap-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-wrap-computed.html",
+    "revision": "9bc42055a930f29289ba627ed42bfa7cd0fb7a58",
+    "sha256": "2f92dc697522a01addb317509375b7cd2c0f9dbad48ff7481e6569e81ac39a40"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-wrap",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-wrap-value-nowrap",
+      "ordinal": 1,
+      "title": "Property flex-wrap value 'nowrap'",
+      "sectionKey": "property-flex-wrap-value-nowrap",
+      "cssFile": "cases/property-flex-wrap-value-nowrap.css",
+      "cssSha256": "1096367e2bd72c0c561e83fdb7e13fa1ee21028f7e44497fa144fff265d69c46",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-wrap",
+          "expected": "nowrap"
+        }
+      ]
+    }
+  ]
+}

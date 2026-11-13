@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-filter-effects-filter-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/filter-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "cc741283fc3711605a8011f67c792cf770ae88dd9002549379edc99bbc00853b"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "filter",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-filter-value-none",
+      "ordinal": 1,
+      "title": "Property filter value 'none'",
+      "sectionKey": "property-filter-value-none",
+      "cssFile": "cases/property-filter-value-none.css",
+      "cssSha256": "490147b2b5b9cdcb36129c7ff202ccf4942ffed3427d8aa6f28fbe18e2bbee52",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "filter",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

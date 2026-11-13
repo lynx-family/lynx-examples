@@ -1,0 +1,53 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { background: blue; margin: 1em 0; border: 1px solid black; height: 6em; width: 30em; display: flex; align-items: flex-end; }
+   Scoped to .container so the .body wrapper is not styled. */
+.container {
+  background: blue;
+  margin-top: 1em;
+  border: 1px solid black;
+  height: 6em;
+  width: 30em;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Source: span { background: white; margin: 0 1em; width: 8em; display: inline-block; flex: none; }
+   display: inline-block is unsupported in Lynx; the items are flex items sized by content.
+   span:nth-child(N) converted to explicit classes. */
+.item {
+  background: white;
+  margin: 0 1em;
+  width: 8em;
+  flex: none;
+}
+
+.item-1 {
+  background: yellow;
+}
+
+.item-2 {
+  background: pink;
+}
+
+/* Source: span:nth-child(3) { background: lightblue; align-self: auto; } */
+.item-3 {
+  background: lightblue;
+  align-self: auto;
+}
+
+/* Web: body margin 8px collapses with container margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

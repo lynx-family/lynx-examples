@@ -1,0 +1,43 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { background: blue; margin: 1em 0; border: 1px solid black; height: 8em; width: 32em; display: flex; }
+   Scoped to .container so the .body wrapper is not styled.
+   margin-bottom dropped: Web collapses the two containers' 1em margins to 1em; Lynx adds them. */
+.container {
+  background: blue;
+  margin-top: 1em;
+  border: 1px solid black;
+  height: 8em;
+  width: 32em;
+  display: flex;
+}
+
+/* Source: span { background: white; margin: 1em; width: 5em; display: inline-block; flex: none; }
+   display: inline-block is unsupported in Lynx; the items are flex items with explicit width. */
+.item {
+  background: white;
+  margin: 1em;
+  width: 5em;
+  flex: none;
+}
+
+/* Source: #flex span { flex: 0 0 auto; } */
+.item-flex {
+  flex: 0 0 auto;
+}
+
+/* Web: body margin 8px collapses with container margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

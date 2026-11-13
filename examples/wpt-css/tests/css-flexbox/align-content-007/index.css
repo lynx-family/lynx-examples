@@ -1,0 +1,41 @@
+* {
+  box-sizing: content-box;
+}
+
+#flex {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-wrap: wrap-reverse;
+  align-content: stretch;
+}
+
+#item {
+  width: 200px;
+  height: 400px;
+  background: linear-gradient(to bottom, red 50%, green 50%);
+}
+
+.clip {
+  overflow: hidden;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background-color: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

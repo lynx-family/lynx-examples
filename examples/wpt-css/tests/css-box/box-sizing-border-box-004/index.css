@@ -1,0 +1,47 @@
+page {
+  background-color: white;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.hint {
+  display: block;
+  margin: 1em 0;
+}
+
+.container {
+  width: 500px;
+  height: 90px;
+  min-width: 500px;
+  max-width: 700px;
+  min-height: 70px;
+  max-height: 90px;
+  border: 2px solid black;
+  background-color: red;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+.box-sized {
+  box-sizing: border-box;
+  width: 250px;
+  height: 90px;
+  min-width: 250px;
+  max-width: 350px;
+  min-height: 70px;
+  max-height: 90px;
+  border: 5px solid black;
+  flex-shrink: 0;
+}
+
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: blue;
+}

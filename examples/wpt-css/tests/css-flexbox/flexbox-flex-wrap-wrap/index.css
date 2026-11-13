@@ -1,0 +1,43 @@
+* {
+  box-sizing: content-box;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+  height: 120px;
+  background: red;
+}
+
+.flex-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: green;
+  border: 1px solid limegreen;
+}
+
+.item-label {
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "mask-repeat-repeat-x-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-masking/parsing/mask-repeat-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "876cc90bcc50fa562bc38804bfcd44c75fd0ebf4a8038e67777bcfe635fda9b0"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "mask-repeat",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-mask-repeat-value-repeat-x",
+      "ordinal": 1,
+      "title": "Property mask-repeat value 'repeat-x'",
+      "sectionKey": "property-mask-repeat-value-repeat-x",
+      "cssFile": "cases/property-mask-repeat-value-repeat-x.css",
+      "cssSha256": "730997333982f3309239ff48565bab3fbb3f45e2ffa23674c1716c1b17aa31bd",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "mask-repeat",
+          "expected": "repeat-x"
+        }
+      ]
+    }
+  ]
+}

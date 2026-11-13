@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-filter-effects-backdrop-filter-blur-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/backdrop-filter-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "b1d608d5d62b412f072250078d2952c0213096b26f5b974d24220ac1c5d51007"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "backdrop-filter",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-backdrop-filter-value-blur-100px",
+      "ordinal": 1,
+      "title": "Property backdrop-filter value 'blur(100px)'",
+      "sectionKey": "property-backdrop-filter-value-blur-100px",
+      "cssFile": "cases/property-backdrop-filter-value-blur-100px.css",
+      "cssSha256": "02b2857bf0e2ec0e9e56a1a44a100543f79b32c262dbb4c555ee74b2eeaf5328",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "backdrop-filter",
+          "expected": "blur(100px)"
+        }
+      ]
+    }
+  ]
+}

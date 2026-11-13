@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-cascade-layer-basic",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-cascade/layer-basic.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "03af0e7afcc5b1b7a39657f61e49fd9f898b3e60bfd8760bec22a7bf50cb1b75"
+  },
+  "target": {
+    "selector": "text",
+    "property": "color",
+    "count": 2
+  },
+  "cases": [
+    {
+      "id": "a1-anonymous-layers",
+      "ordinal": 1,
+      "title": "A1 Anonymous layers",
+      "sectionKey": "A1",
+      "cssFile": "cases/a1-anonymous-layers.css",
+      "cssSha256": "ef8f38247fd47fa265a7aff68a8c676ac5a1ad17fde653355738aad9f8202019",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a2-anonymous-layers",
+      "ordinal": 2,
+      "title": "A2 Anonymous layers",
+      "sectionKey": "A2",
+      "cssFile": "cases/a2-anonymous-layers.css",
+      "cssSha256": "728f770507ae0a7a42f421ff92bc6f8a9ace5ba8704b3770988f76433a2a8ce4",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a3-anonymous-layers",
+      "ordinal": 3,
+      "title": "A3 Anonymous layers",
+      "sectionKey": "A3",
+      "cssFile": "cases/a3-anonymous-layers.css",
+      "cssSha256": "1853293d55ef6e5dbc3f25ada218c3a407a95fd60fe30c1670031c19022532d6",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a4-anonymous-layers",
+      "ordinal": 4,
+      "title": "A4 Anonymous layers",
+      "sectionKey": "A4",
+      "cssFile": "cases/a4-anonymous-layers.css",
+      "cssSha256": "b394734ae0fa73f49483c40fc7de72962260024b0adbfe5de58d0a1395105642",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a5-anonymous-layers",
+      "ordinal": 5,
+      "title": "A5 Anonymous layers",
+      "sectionKey": "A5",
+      "cssFile": "cases/a5-anonymous-layers.css",
+      "cssSha256": "11adf28fec8404f8df69add6f31f3de52a4d589438c262deb437648a71e6c43d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a6-anonymous-layers",
+      "ordinal": 6,
+      "title": "A6 Anonymous layers",
+      "sectionKey": "A6",
+      "cssFile": "cases/a6-anonymous-layers.css",
+      "cssSha256": "7ced7ab030230dc4c68f23d7825192b32ffbfb16d629f635f9a16b69f893e75e",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a7-anonymous-layers",
+      "ordinal": 7,
+      "title": "A7 Anonymous layers",
+      "sectionKey": "A7",
+      "cssFile": "cases/a7-anonymous-layers.css",
+      "cssSha256": "366acb88c71c26788440d0b3f43378b80138b142ee755e61ef326564b51d39b5",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a8-anonymous-layers",
+      "ordinal": 8,
+      "title": "A8 Anonymous layers",
+      "sectionKey": "A8",
+      "cssFile": "cases/a8-anonymous-layers.css",
+      "cssSha256": "5bb2da26fb400480debe5f78870faf24d90719d96bd3d9dd47784c18c0fd9776",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "a9-anonymous-layers",
+      "ordinal": 9,
+      "title": "A9 Anonymous layers",
+      "sectionKey": "A9",
+      "cssFile": "cases/a9-anonymous-layers.css",
+      "cssSha256": "22d35efe820c9b15a47188fdf21ef9ce809f02fb49d9d3c4ebd7a2a4a6eadc46",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b1-named-layers",
+      "ordinal": 10,
+      "title": "B1 Named layers",
+      "sectionKey": "B1",
+      "cssFile": "cases/b1-named-layers.css",
+      "cssSha256": "7e01bbb54fc6be2329fdf03d6e53b1b0f5b4bcd120cc363782f27a1f4f110a8c",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b2-named-layers",
+      "ordinal": 11,
+      "title": "B2 Named layers",
+      "sectionKey": "B2",
+      "cssFile": "cases/b2-named-layers.css",
+      "cssSha256": "4ac2a389f642671c5ba92f2ff01ceab675d8ea3d3720667aa81eca3b671ff291",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b3-named-layers",
+      "ordinal": 12,
+      "title": "B3 Named layers",
+      "sectionKey": "B3",
+      "cssFile": "cases/b3-named-layers.css",
+      "cssSha256": "32227dd95684de6d0775271b428f4dfb29866d478e7d3fa44ba2748587a8e523",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b4-named-layers",
+      "ordinal": 13,
+      "title": "B4 Named layers",
+      "sectionKey": "B4",
+      "cssFile": "cases/b4-named-layers.css",
+      "cssSha256": "37355ade6ad5ef49b6050f84992de641e7ef63af7af3ebe246b22c44bce7557f",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b5-named-layers",
+      "ordinal": 14,
+      "title": "B5 Named layers",
+      "sectionKey": "B5",
+      "cssFile": "cases/b5-named-layers.css",
+      "cssSha256": "3a7b365836ef3d1d4ad9d13dadf09d70835e157eb883026daeca49347f087d5f",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b6-named-layers",
+      "ordinal": 15,
+      "title": "B6 Named layers",
+      "sectionKey": "B6",
+      "cssFile": "cases/b6-named-layers.css",
+      "cssSha256": "bcda590e79b75209c81fd691c40b2a2b637f1a3bc227c4e050f3284bde4e1a59",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b7-named-layers",
+      "ordinal": 16,
+      "title": "B7 Named layers",
+      "sectionKey": "B7",
+      "cssFile": "cases/b7-named-layers.css",
+      "cssSha256": "a0d14500ec5c4fd7ac4123b151df7e188125a5b29b767af5d72dbdb8e4c44665",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b8-named-layers",
+      "ordinal": 17,
+      "title": "B8 Named layers",
+      "sectionKey": "B8",
+      "cssFile": "cases/b8-named-layers.css",
+      "cssSha256": "0c6d47df3fc0a99ebc687ff7bbf12fbb906f927531143534c11bf196cc9bb403",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b9-named-layers",
+      "ordinal": 18,
+      "title": "B9 Named layers",
+      "sectionKey": "B9",
+      "cssFile": "cases/b9-named-layers.css",
+      "cssSha256": "d46a2a75a345c05206e858f2af6594b405ce32f282c953aa1cd3df8ad425dfb9",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "b10-named-layers",
+      "ordinal": 19,
+      "title": "B10 Named layers",
+      "sectionKey": "B10",
+      "cssFile": "cases/b10-named-layers.css",
+      "cssSha256": "8b86b98fdb737d37a6ed176f99c705a8c9ec1fad8b85bda749ef4e04ebaef757",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c1-named-layers-shorthand",
+      "ordinal": 20,
+      "title": "C1 Named layers shorthand",
+      "sectionKey": "C1",
+      "cssFile": "cases/c1-named-layers-shorthand.css",
+      "cssSha256": "fe85370ee74cd2d1f0f9770566e742784118f3f080c54eeeaee8d87c376d73b9",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c2-named-layers-shorthand",
+      "ordinal": 21,
+      "title": "C2 Named layers shorthand",
+      "sectionKey": "C2",
+      "cssFile": "cases/c2-named-layers-shorthand.css",
+      "cssSha256": "55c86b8e777478a30af294c464d2dc3420b3f77e4a0a0b439309582064e62db8",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c3-named-layers-shorthand",
+      "ordinal": 22,
+      "title": "C3 Named layers shorthand",
+      "sectionKey": "C3",
+      "cssFile": "cases/c3-named-layers-shorthand.css",
+      "cssSha256": "29fdafe8edbd2cbbe817ea86e20d04759ed284a1e5629b518cfd1f84281814e1",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c4-named-layers-shorthand",
+      "ordinal": 23,
+      "title": "C4 Named layers shorthand",
+      "sectionKey": "C4",
+      "cssFile": "cases/c4-named-layers-shorthand.css",
+      "cssSha256": "15ea4fdc3749aaf75609fadd6b41f84632f1eaf61898605aec9d2d8bba30106b",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "c5-named-layers-shorthand",
+      "ordinal": 24,
+      "title": "C5 Named layers shorthand",
+      "sectionKey": "C5",
+      "cssFile": "cases/c5-named-layers-shorthand.css",
+      "cssSha256": "a98dd84610cb7e4630a4f25ddb4a5d58a6a63157451f01d4bc0afec9cd0fd1f3",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d1-mixed-named-and-anonymous-layers",
+      "ordinal": 25,
+      "title": "D1 Mixed named and anonymous layers",
+      "sectionKey": "D1",
+      "cssFile": "cases/d1-mixed-named-and-anonymous-layers.css",
+      "cssSha256": "50a0c2c7991f395b92bc7dc1ed970508538fa35d451e06f6572beccbfdb341f3",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d2-mixed-named-and-anonymous-layers",
+      "ordinal": 26,
+      "title": "D2 Mixed named and anonymous layers",
+      "sectionKey": "D2",
+      "cssFile": "cases/d2-mixed-named-and-anonymous-layers.css",
+      "cssSha256": "388b25fc010e01c39f4ac89dff01ed329f4c9060afe07e6e3feaca327b3dd2f0",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d3-mixed-named-and-anonymous-layers",
+      "ordinal": 27,
+      "title": "D3 Mixed named and anonymous layers",
+      "sectionKey": "D3",
+      "cssFile": "cases/d3-mixed-named-and-anonymous-layers.css",
+      "cssSha256": "1ff0adb59225a8a066d99e075be6fbb0b36579b64f186c1d0659f6fab63512e6",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d4-mixed-named-and-anonymous-layers",
+      "ordinal": 28,
+      "title": "D4 Mixed named and anonymous layers",
+      "sectionKey": "D4",
+      "cssFile": "cases/d4-mixed-named-and-anonymous-layers.css",
+      "cssSha256": "b91b4dd6353545e18cc24d0af3df40c78c27698b7bb78cda626a5ad3961a14da",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "d5-mixed-named-and-anonymous-layers",
+      "ordinal": 29,
+      "title": "D5 Mixed named and anonymous layers",
+      "sectionKey": "D5",
+      "cssFile": "cases/d5-mixed-named-and-anonymous-layers.css",
+      "cssSha256": "cd985adb505cd2752c44eed7d0fff0a50db7783c769b6541a21c90dc448ad6bd",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e1-statement-syntax",
+      "ordinal": 30,
+      "title": "E1 Statement syntax",
+      "sectionKey": "E1",
+      "cssFile": "cases/e1-statement-syntax.css",
+      "cssSha256": "72d6fbbc1f6cb94e3b5783e4ed452525e14b49a8b872d4b3dda24b2d2d1ad780",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e2-statement-syntax",
+      "ordinal": 31,
+      "title": "E2 Statement syntax",
+      "sectionKey": "E2",
+      "cssFile": "cases/e2-statement-syntax.css",
+      "cssSha256": "6b8677f3f91681b1f402cf43a729cea579b16ec661a33a3f07da3811c7b8e1be",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e3-statement-syntax",
+      "ordinal": 32,
+      "title": "E3 Statement syntax",
+      "sectionKey": "E3",
+      "cssFile": "cases/e3-statement-syntax.css",
+      "cssSha256": "f963c15284b3779551bd684762a94f684954a35081d90aaa3dde7b1febbe97e5",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e4-statement-syntax",
+      "ordinal": 33,
+      "title": "E4 Statement syntax",
+      "sectionKey": "E4",
+      "cssFile": "cases/e4-statement-syntax.css",
+      "cssSha256": "6bc93fa1b3bf15ee1d91fd3de33a5badfabd3da4d64af625d64fe66a2f6bc0dd",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    },
+    {
+      "id": "e5-statement-syntax",
+      "ordinal": 34,
+      "title": "E5 Statement syntax",
+      "sectionKey": "E5",
+      "cssFile": "cases/e5-statement-syntax.css",
+      "cssSha256": "e328f74171e3f6a726ae993487061cceb214b5e96acf4b14cf16e14b68656d0a",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.first",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        },
+        {
+          "targetIndex": 1,
+          "selector": "text.second",
+          "property": "color",
+          "expected": "rgb(0, 128, 0)"
+        }
+      ]
+    }
+  ]
+}

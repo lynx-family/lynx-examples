@@ -1,0 +1,27 @@
+* {
+  box-sizing: content-box;
+}
+
+.test {
+  background: url("support/blue15x15.png") repeat;
+  border: 5px solid black;
+  height: 200px;
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+.body {
+  display: flex;
+  linear-direction: column;
+  flex-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

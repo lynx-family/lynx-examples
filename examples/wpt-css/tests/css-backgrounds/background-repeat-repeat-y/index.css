@@ -1,0 +1,41 @@
+* {
+  box-sizing: content-box;
+}
+
+/* The source's first p contains a 96px by 60px inline image. The 64px preview
+   block includes Web inline-image baseline space without nesting image in text. */
+.preview {
+  height: 64px;
+  margin-top: 1em;
+}
+
+.preview-image {
+  width: 96px;
+  height: 60px;
+}
+
+.instructions {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.test {
+  background-color: grey;
+  background-image: url("support/rectangle-96x60.png");
+  background-repeat: repeat-y;
+  height: 150px;
+  width: 240px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

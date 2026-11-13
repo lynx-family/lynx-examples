@@ -1,0 +1,16 @@
+# Source-derived semantics
+
+- The source applies `background-image: url("support/green_box.png")` to one empty 100px by 100px element.
+- The assertion is that the URL image renders as the box background, producing one filled green square.
+
+# Compatibility adjustments
+
+- The source `div` selector is scoped to `.test-box` so the generated body wrapper is not styled as test content.
+- The source empty element remains an empty Lynx `<view>`; visible instruction text uses a wrapping outer `<text>` with nested bold text and an explicit ordinary U+0020.
+- Content-box sizing and explicit body/paragraph spacing reproduce the Web setup without relying on Lynx margin collapse.
+- The card-local `green_box.png` is copied byte-for-byte from the pinned, reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents `background-image`, local URL images, 100px geometry, `<view>` backgrounds, and `<text>` for visible text.
+- Two final-device runs are byte-stable native passes at 0.0344%; the URL image paints the required filled green square, and the original Web test matches its pinned official reference exactly.

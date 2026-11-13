@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-overflow-overflow-auto-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-overflow/parsing/overflow-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "09272fbc67b0c1d08be069878d2e4012463784c0f8a0f5543070c14a0ca68c21"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "overflow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-overflow-value-auto",
+      "ordinal": 1,
+      "title": "Property overflow value 'auto'",
+      "sectionKey": "property-overflow-value-auto",
+      "cssFile": "cases/property-overflow-value-auto.css",
+      "cssSha256": "06b22bde37a47fce507cdf7b8b6dc68e09c554035fc82438c5a1b2bab9e8405f",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "overflow",
+          "expected": "auto"
+        }
+      ]
+    }
+  ]
+}

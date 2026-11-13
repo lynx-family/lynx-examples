@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "color-interpolation-filters-auto-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/color-interpolation-filters-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "6804cbba5334ca8b53c6223b8b12ed546046007e1d332d7902e103eaf0cc23eb"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "color-interpolation-filters",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-color-interpolation-filters-value-auto",
+      "ordinal": 1,
+      "title": "Property color-interpolation-filters value 'auto'",
+      "sectionKey": "property-color-interpolation-filters-value-auto",
+      "cssFile": "cases/property-color-interpolation-filters-value-auto.css",
+      "cssSha256": "5758f027ce8477e4e106907c542712d5e8fd3551f231a96f5ca098c4903e4c35",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "color-interpolation-filters",
+          "expected": "auto"
+        }
+      ]
+    }
+  ]
+}

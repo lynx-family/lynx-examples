@@ -1,0 +1,14 @@
+# Source-derived semantics
+
+- The wrapper sets `background: black url('support/green15x15.png')`; the child first sets red, then replaces the complete shorthand with `background: inherit`.
+- The assertion is that inheriting two background values removes the red sentinel and paints the inherited black color plus green image.
+
+# Compatibility adjustments
+
+- The unsupported setup height `1in` is normalized by the CSS absolute-length rule to `96px`; the background declarations under test remain verbatim.
+- Visible text uses a wrapping text element with nested bold text, selectors are class-scoped, and Web content-box/body/paragraph behavior is explicit. The adapter's `__ua-p` class is card-local rather than a shared stylesheet; its generated 0.5em bottom margin is not geometry-equivalent here. The intentional `.instruction` override keeps 0.5em top and 1em bottom margins so the source paragraph-to-following-box spacing remains aligned; replacing it with bare generated `__ua-p` would move the assertion box by 8 CSS px.
+- The card-local `green15x15.png` is copied byte-for-byte from the reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents `background`, image URLs, named colors, and the global `inherit` value; canonical Android evidence verifies the exact shorthand inheritance with no exposed red.

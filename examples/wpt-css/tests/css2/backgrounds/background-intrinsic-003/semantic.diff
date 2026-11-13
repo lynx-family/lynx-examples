@@ -1,0 +1,16 @@
+# Source-derived semantics
+
+- Both 120px by 120px containers use an 80px by 100px background positioning area formed by a 60px by 80px content box plus 10px padding.
+- The tested `background: no-repeat url(...)` values use SVG images with only intrinsic height 60px; the missing width resolves to the 80px positioning-area width.
+- The 60px-high absolute control and source order expose red if either derived image dimension is wrong; the assertion is two green boxes and no red.
+
+# Compatibility adjustments
+
+- Source `div { position: relative; }` is scoped to `.cover`, `.limit`, and `.test`, so the generated `.body` wrapper is not accidentally positioned. The source's over-constrained/inset-derived absolute control is normalized to its Web used geometry (`top: 10px; left: 10px; width: 80px; height: 60px`), avoiding Lynx-specific inset resolution in the image-size oracle.
+- Web content-box sizing is explicit. The body keeps only the browser's horizontal 8px inset; the paragraph keeps its 1em vertical spacing, while each box keeps horizontal/bottom 8px margins to reproduce collapsed Web gaps without double-counting them in Lynx.
+- Setup-only green/red backgrounds use `background-color`; the tested image shorthand remains unchanged.
+- Visible instruction text uses `<text>`, and the two card-local SVG files are byte-identical to the pinned source assets.
+
+# Current Lynx API-doc basis
+
+- Lynx documents the surrounding background/layout primitives but does not explicitly guarantee SVG CSS-background decoding or one-axis intrinsic fallback. Validation must remain fail-closed and follows the explicit-size SVG pilot.

@@ -1,0 +1,19 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty `div`.
+- The `div` is 200px tall and uses `background: green url("support/blue15x15.png") repeat-x ;`; the shorthand is preserved verbatim because its color-image-repeat order is the assertion under test.
+- The 15px blue image starts at the initial top-left position and repeats only across the x-axis; the named green color fills the remainder of the box.
+
+# Compatibility adjustments
+
+- The paragraph is a Lynx `<text>` and the empty `div` is a `.test-box` `<view>`; the class-scoped selector avoids styling the generated `.body` wrapper.
+- The block-level source box receives `width: 100%` because Lynx Linear children do not inherit Web block stretching.
+- The card-local `support/blue15x15.png` is copied byte-for-byte from the reference-clean source cache.
+- `* { box-sizing: content-box; }` restores the Web sizing default.
+- `.body { margin: 0 8px; }` and `.__ua-p { margin: 1em 0; }` reproduce Web body and paragraph spacing without relying on margin collapse. The page and content surface are explicitly white.
+
+# Current Lynx API-doc basis
+
+- `view` supports decorative backgrounds and is the container for the test box; visible text must use `text`.
+- The `background` shorthand, named colors, URL images, and repeat behavior are documented. The shorthand under test is unchanged; no workaround replaces or reorders it.
+- Lynx defaults to `border-box`, uses vertical Linear layout here, and does not collapse vertical margins, so those migration differences are handled only in setup styles.

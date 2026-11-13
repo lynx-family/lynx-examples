@@ -1,0 +1,29 @@
+* {
+  box-sizing: content-box;
+}
+
+.red-layer {
+  position: relative;
+  z-index: 1;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.green-layer-wrapper {
+  position: relative;
+  z-index: 2;
+  top: -100px;
+}
+
+.green-layer {
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

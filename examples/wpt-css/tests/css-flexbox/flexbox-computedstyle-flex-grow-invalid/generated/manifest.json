@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-grow-invalid",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-grow-invalid.html",
+    "revision": "1e91be47ac599571cde8a98b0a11cafc3a9e281c",
+    "sha256": "0df4a28f6c0f4cf13070ad6ef37f70c604cdd097224184e4628b0a4cec95f0f0"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-grow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-grow-value-1",
+      "ordinal": 1,
+      "title": "Property flex-grow value '-1'",
+      "sectionKey": "property-flex-grow-value-1",
+      "cssFile": "cases/property-flex-grow-value-1.css",
+      "cssSha256": "d227444354bbb80ed3d56e5de436873d1767f7f725a4deaefe11534a239f33eb",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-grow",
+          "expected": "0"
+        }
+      ]
+    }
+  ]
+}

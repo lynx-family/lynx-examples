@@ -1,0 +1,55 @@
+.container {
+            position: absolute;
+        }
+        .greenSquare {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transform-origin: 0 0;
+            transform: scale(2);
+         }
+
+
+         /* This view should only be visible if the test fails */
+        .redSquare {
+            position: absolute;
+            /* It is approximately the same size as the test div, but with a 1px margin */
+            width: 98px;
+            height: 98px;
+            background-color: red;
+            left: 100px;
+            top :100px;
+        }
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

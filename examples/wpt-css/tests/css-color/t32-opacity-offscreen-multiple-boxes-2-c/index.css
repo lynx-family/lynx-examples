@@ -1,0 +1,36 @@
+.body { background: white; }
+
+		view.test { margin: 0.5em; font-family: monospace; height: 1em; }
+		view.test .__html-span { opacity: 0.4; }
+		view.test .__html-span.__html-a { background: blue; color: blue; }
+
+		view.ref { height: 1em; width: 5em; background: rgb(153, 153, 255); }
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

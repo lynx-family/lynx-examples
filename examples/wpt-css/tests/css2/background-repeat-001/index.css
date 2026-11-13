@@ -1,0 +1,34 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { background-image: url("support/blue15x15.png");
+   background-repeat: repeat; border: 5px solid black; height: 200px; }
+   A column flex wrapper reproduces Web block cross-axis stretching while
+   keeping the source's content-box height and border geometry. */
+.test {
+  background-image: url("support/blue15x15.png");
+  background-repeat: repeat;
+  border: 5px solid black;
+  height: 200px;
+}
+
+/* CSS2 pattern: Web body margin 8px collapses with p margin-top 1em -> 16px top.
+   Lynx margins add, so the body keeps only the horizontal margin. */
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

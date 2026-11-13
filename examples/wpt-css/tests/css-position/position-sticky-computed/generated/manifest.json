@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-position-position-sticky-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-position/parsing/position-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "9905b1db2bd66773fdfbdc6f963e0fa6c91304fcf602e3a13d7d4f3090df83c9"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "position",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-position-value-sticky",
+      "ordinal": 1,
+      "title": "Property position value 'sticky'",
+      "sectionKey": "property-position-value-sticky",
+      "cssFile": "cases/property-position-value-sticky.css",
+      "cssSha256": "7654115a431af9bcf9cc971530d7f7b1cfd5604f667cd8efe7bd87f33c80011e",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "position",
+          "expected": "sticky"
+        }
+      ]
+    }
+  ]
+}

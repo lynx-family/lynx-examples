@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-direction-row",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-direction-row.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "b3710eedaaf4cc68811e72870e64b4f55f5b7ad8e4b2542522bd7bffd2c88051"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-direction",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-direction-value-row",
+      "ordinal": 1,
+      "title": "Property flex-direction value 'row'",
+      "sectionKey": "property-flex-direction-value-row",
+      "cssFile": "cases/property-flex-direction-value-row.css",
+      "cssSha256": "928c71dea4ffef4c2dfac8ff2daf3a6ce91cae8f3a27a765b7e1990b6bb9026f",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-direction",
+          "expected": "row"
+        }
+      ]
+    }
+  ]
+}

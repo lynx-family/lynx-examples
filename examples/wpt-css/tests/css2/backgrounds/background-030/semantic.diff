@@ -1,0 +1,18 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph with a bold `strong` run, followed by one empty `div`.
+- The `div` is 200px square and uses `background: green repeat-x fixed;`; the shorthand is preserved verbatim because its color-repeat-attachment order is the assertion under test.
+- With no background image, Web treats both `repeat-x` and `fixed` as inert and the named green color fills the square.
+
+# Compatibility adjustments
+
+- The source paragraph becomes one wrapping outer `<text>` with a nested bold `<text>` run. The boundary after `a` uses the character reference `&#32;` because Lynx trims literal whitespace around nested text; this preserves the visible source space without an NBSP or a pixel-tuned margin.
+- The empty source `div` is a `.test-box` `<view>`; the class-scoped selector avoids styling the generated `.body` wrapper.
+- `* { box-sizing: content-box; }` restores the Web sizing default.
+- `.body { margin: 0 8px; }` and `.__ua-p { margin: 1em 0; }` reproduce Web body and paragraph spacing without relying on margin collapse. The page and content surface are explicitly white.
+
+# Current Lynx API-doc basis
+
+- `view` provides structure/backgrounds, while all visible text is carried by one outer `text`; Lynx's documented nested-text composition preserves the inline bold phrase and natural wrapping, with `white-space: normal` set explicitly.
+- The installed background-property list documents the `background` shorthand and repeat behavior but does not list `background-attachment`. `fixed` remains under test exactly as sourced; no workaround removes, replaces, or reorders it, so Android validation may produce a stable visual failure.
+- Lynx defaults to `border-box`, uses vertical Linear layout for the page content, and does not collapse vertical margins, so those migration differences are handled only in setup styles.

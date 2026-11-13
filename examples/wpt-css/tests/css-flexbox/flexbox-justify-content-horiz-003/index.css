@@ -1,0 +1,77 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div.flexbox { width: 30px; display: flex; margin-bottom: 2px; } */
+.flexbox {
+  width: 30px;
+  display: flex;
+  margin-bottom: 2px;
+}
+
+/* Source: div.a { height: 20px; flex: 0 0 35px; background: lightgreen; } */
+.a {
+  height: 20px;
+  flex: 0 0 35px;
+  background: lightgreen;
+}
+
+/* Source: div.b { height: 20px; flex: 0 0 40px; background: pink; } */
+.b {
+  height: 20px;
+  flex: 0 0 40px;
+  background: pink;
+}
+
+/* Source: div.c { height: 20px; flex: 0 0 45px; background: orange; } */
+.c {
+  height: 20px;
+  flex: 0 0 45px;
+  background: orange;
+}
+
+/* Per-value justify-content classes (inline styles in the source). */
+.jc-flex-start {
+  justify-content: flex-start;
+}
+
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+.jc-left {
+  justify-content: left;
+}
+
+.jc-right {
+  justify-content: right;
+}
+
+/* Source: body { margin-left: 100px; } — other sides keep the 8px UA default. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px 8px 8px 100px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

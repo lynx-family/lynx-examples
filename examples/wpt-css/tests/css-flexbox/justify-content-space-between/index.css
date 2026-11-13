@@ -1,0 +1,44 @@
+.test-box {
+  background: blue;
+  border: 1px solid black;
+  height: 128px;
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.item {
+  width: 96px;
+  max-width: 96px;
+  height: 96px;
+  box-sizing: content-box;
+  margin: 16px;
+  padding: 0;
+}
+
+.item-1 {
+  background: #ffff00;
+}
+
+.item-2 {
+  background: #ffc0cb;
+}
+
+.item-3 {
+  background: #add8e6;
+}
+
+.item-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

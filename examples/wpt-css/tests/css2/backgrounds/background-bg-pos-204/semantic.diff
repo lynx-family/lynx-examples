@@ -1,0 +1,18 @@
+# Source-derived semantics
+
+- The Web document root sets `background: bottom right url("support/diamond.png") scroll white no-repeat`, black text, and 100% height.
+- The assertion is that the full-height root canvas paints exactly one fuchsia diamond at the bottom-right viewport edge.
+
+# Compatibility adjustments
+
+- Web root-canvas ownership maps to Lynx `page`; both `page` and the generated `.body` retain explicit 100% viewport sizing with zero margin, border, and padding.
+- The source's explicit `scroll` is the Web default attachment and is not the named static `bottom right` positioning assertion. Lynx does not support `background-attachment`, and a strict baseline proved that keeping `scroll` in the shorthand drops the image layer.
+- The supported color, image, bottom-right position, and no-repeat components are therefore expressed as longhands on the same full-height `page` positioning box. This preserves the complete visual assertion without inventing coordinates or using reference content.
+- The paragraph retains its source 2em padding, visible text uses a wrapping `<text>` element, and Web content-box sizing is explicit.
+- The card-local `diamond.png` is copied byte-for-byte from the reference-clean source cache.
+
+# Validation history
+
+- The historical 0.5% whole-screen threshold mislabeled the missing diamond as a pass. A strict same-card baseline at 0.03% returned a real visual-fail exit with a meaningful WebView reference and complete device-local cleanup.
+- Two repaired same-device runs are byte-stable passes at 0.0634%. WebView and Lynx place the diamond against the same right and bottom viewport edges; the remaining difference is text and one-device-pixel image-edge rasterization.
+- The original Web test matches its pinned official reference at zero pixelmatch pixels. The final result is a documented workaround pass, not evidence that Lynx accepts the original shorthand with its unsupported `scroll` token.

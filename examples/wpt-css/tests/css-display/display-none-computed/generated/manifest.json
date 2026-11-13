@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-display-display-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-display/parsing/display-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "5f9305cd116163dd9dc7c81063618ac3491f024e1d16e0373f039ce076555cf4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "display",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-display-value-none",
+      "ordinal": 1,
+      "title": "Property display value 'none'",
+      "sectionKey": "property-display-value-none",
+      "cssFile": "cases/property-display-value-none.css",
+      "cssSha256": "f25b652b54088a53a00b3ba0882a199cd472fed458a1061dda75bc637c937baf",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "display",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}
