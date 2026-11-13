@@ -44,7 +44,7 @@ export function FeedListSection() {
           bounces={false}
           upperThresholdItemCount={2}
           lowerThresholdItemCount={2}
-          onLowerThresholdMeet={handleLoadMore}
+          onScrollToLower={handleLoadMore}
           loadMoreFooter={
             <list-item key="footer" item-key="footer" full-span>
               <view className="feed-footer">
