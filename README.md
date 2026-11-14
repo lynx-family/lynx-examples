@@ -17,6 +17,7 @@ This repository is intended to showcase examples of Lynx.
   - [`event`]: An example shows how touch events work
   - [`image`]: An example shows how to use images
   - [`list`]: An example shows how to use reusable and scrollable container
+  - [`max-snap-count`]: Compare native list flings capped at one or three items
   - [`scroll-view`]: An example shows how to use scrollable container
   - [`text`]: An example shows how to use text and inline-text
   - [`text-composition`]: An example shows how to compose naturally wrapping text with inline text, images, views, and truncation
@@ -111,6 +112,7 @@ This repository is intended to showcase examples of Lynx.
 [`layout`]: ./examples/layout
 [`lazy-bundle`]: ./examples/lazy-bundle
 [`list`]: ./examples/list
+[`max-snap-count`]: ./examples/list/src/max-snap-count
 [`local-storage`]: ./examples/local-storage
 [`lynx-api`]: ./examples/lynx-api
 [`lynx-ui-gallery`]: ./examples/lynx-ui-gallery
