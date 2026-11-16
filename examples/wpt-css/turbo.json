@@ -1,0 +1,12 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "inputs": ["$TURBO_DEFAULT$"],
+      "env": ["LYNX_WPT_TESTS"]
+    },
+    "test": {
+      "inputs": ["$TURBO_DEFAULT$"]
+    }
+  }
+}

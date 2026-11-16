@@ -1,0 +1,15 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty div with a 200px by 200px content box.
+- The tested declaration is background: repeat-x bottom url("support/blue15x15.png") green; and is preserved verbatim.
+- The green field and horizontally repeated blue image at the bottom make image, repeat, position, color, and token ordering visually observable.
+
+# Compatibility adjustments
+
+- Visible text uses text and the test box uses a class-scoped view.
+- Content-box sizing and explicit body/paragraph spacing reproduce Web setup without relying on margin collapse.
+- The card-local blue15x15.png is copied byte-for-byte from the reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents background, URL images, named colors, repeat-x, and position, but this exact combination remains pending visual verification.

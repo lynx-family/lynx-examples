@@ -1,0 +1,14 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty 200px by 200px div.
+- The tested declaration is background: repeat-x bottom scroll green; and is preserved verbatim.
+- Without an image, the required green fill proves whether the complete valid shorthand parsed; inert repeat/position/attachment tokens are intentionally retained.
+
+# Compatibility adjustments
+
+- Visible text uses wrapping outer text, nested bold text, and ordinary U+0020; the box selector is class-scoped.
+- Content-box sizing and explicit body/paragraph spacing are setup-only Web compatibility adjustments.
+
+# Current Lynx API-doc basis
+
+- Background attachment is unsupported, so a stable missing green fill is an engine failure rather than grounds to rewrite or skip the assertion.

@@ -1,0 +1,27 @@
+.__inline-001 {
+  color: blue;
+}
+
+.__inline-002 {
+  will-change: contents;
+}
+
+.__inline-003 {
+  color: fuchsia;
+}
+
+.__inline-004 {
+  will-change: contents;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

@@ -1,0 +1,12 @@
+# Source-derived semantics
+
+- The outer and inner boxes are each 3 CSS inches (288 CSS px) with no-repeat backgrounds.
+- The outer PNG contains a 96px red center-left position oracle; the inner 96px blue image must cover it when `background-position: +0em` is parsed as zero.
+- The visible assertion is “no red”; the explicit plus-signed em zero is the property value under test.
+
+# Compatibility adjustments
+
+- Source setup-only `3in` dimensions use the CSS absolute-length conversion `1in = 96px`, yielding 288px. The tested `+0em` token is preserved verbatim.
+- Broad `div` / `div div` selectors map to explicit `.background-box` / `.test-image` classes so generated wrappers are not styled.
+- Web content-box sizing, the 8px horizontal body inset, one-em paragraph spacing, normal text wrapping, source child order, and bold “no red” emphasis are explicit for Lynx parity.
+- Card-local PNG files are byte-identical to the pinned source assets.

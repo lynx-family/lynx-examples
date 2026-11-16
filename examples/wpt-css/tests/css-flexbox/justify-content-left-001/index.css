@@ -1,0 +1,61 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source: div { background: blue; margin: 1em 0; display: flex; height: 4em; width: 40em; flex-direction: row; justify-content: left; }
+   Scoped to #row/#row-reverse so the .body wrapper is not styled.
+   margin-bottom dropped: Web collapses div/div and p/div 1em margins to 1em; Lynx adds them. */
+#row,
+#row-reverse {
+  background: blue;
+  margin-top: 1em;
+  display: flex;
+  height: 4em;
+  width: 40em;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Source: span { background: white; padding: 0 2em; width: 4em; height: 2em; }
+   span:nth-child(N) colors converted to explicit classes. */
+.item {
+  background: white;
+  padding: 0 2em;
+  width: 4em;
+  height: 2em;
+}
+
+.item-1 {
+  background: yellow;
+}
+
+.item-2 {
+  background: pink;
+}
+
+.item-3 {
+  background: lightblue;
+}
+
+/* Web: body margin 8px collapses with p margin-top 1em -> 16px top offset.
+   Lynx: margins add, so .body keeps only the horizontal margin. */
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

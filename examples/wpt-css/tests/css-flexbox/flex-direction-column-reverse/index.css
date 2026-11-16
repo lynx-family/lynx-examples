@@ -1,0 +1,43 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Positioned container allows for the self-describing statement to still
+   be visible in the case of failure */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  background: red;
+  margin: 1em 0;
+  border: 1px solid black;
+}
+
+.cell {
+  background: green;
+  color: white;
+  margin: 1em;
+  width: 8em;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  white-space: normal;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

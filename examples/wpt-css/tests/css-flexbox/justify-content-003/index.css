@@ -1,0 +1,30 @@
+* { box-sizing: content-box; }
+
+#flexbox {
+  background: linear-gradient(to right, blue 0%, blue 50%, red 50%, red 100%);
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  width: 300px;
+}
+
+#flexbox > view {
+  background-color: orange;
+  width: 75px;
+}
+
+.__ua-p {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

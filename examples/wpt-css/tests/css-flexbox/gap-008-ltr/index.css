@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  background-color: green;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  direction: ltr;
+  gap: 40px 20px;
+}
+
+.item {
+  background-color: grey;
+  width: calc(50% - 10px);
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

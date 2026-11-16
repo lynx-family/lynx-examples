@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-transforms-scale-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-transforms/parsing/scale-parsing-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "1eafc24219cd14f4ff527f76129f06f0a7361ef8a3e192cd13559015c8b02829"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "scale",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-scale-value-none",
+      "ordinal": 1,
+      "title": "Property scale value 'none'",
+      "sectionKey": "property-scale-value-none",
+      "cssFile": "cases/property-scale-value-none.css",
+      "cssSha256": "c1bf567428408198891d94a6db8e5d43a85d753ae7521824d88834d6c28512b0",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "scale",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

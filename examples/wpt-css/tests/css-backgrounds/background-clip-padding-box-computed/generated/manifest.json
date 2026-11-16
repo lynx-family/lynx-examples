@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-backgrounds-background-clip-padding-box-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-backgrounds/parsing/background-clip-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "2a4b7918e4b73c922fd6a2a362345353355f9ede90daee2fa48fc752673789f4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "background-clip",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-background-clip-value-padding-box",
+      "ordinal": 1,
+      "title": "Property background-clip value 'padding-box'",
+      "sectionKey": "property-background-clip-value-padding-box",
+      "cssFile": "cases/property-background-clip-value-padding-box.css",
+      "cssSha256": "c981eaa59f67eaae5ab33b3e7c50339982d1a8bbbcee38e2ceea3358760e8bba",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "background-clip",
+          "expected": "padding-box"
+        }
+      ]
+    }
+  ]
+}

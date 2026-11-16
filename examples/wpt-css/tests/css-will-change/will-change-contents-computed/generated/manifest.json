@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "will-change-contents-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-will-change/parsing/will-change-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "4c3914dd379ca72f2a526322f968e7e66991fbc94be3783ea3b8fc39aebc3aab"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "will-change",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-will-change-value-contents",
+      "ordinal": 1,
+      "title": "Property will-change value 'contents'",
+      "sectionKey": "property-will-change-value-contents",
+      "cssFile": "cases/property-will-change-value-contents.css",
+      "cssSha256": "895e26aafa6082a8d49f03b1340528261123a2d8b3d59f0716acc921a082c2b4",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "will-change",
+          "expected": "contents"
+        }
+      ]
+    }
+  ]
+}

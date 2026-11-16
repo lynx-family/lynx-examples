@@ -1,0 +1,39 @@
+* {
+  box-sizing: content-box;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* The paragraph supplies the collapsed Web vertical body margin. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+.__ua-p {
+  margin: 1em 0;
+  white-space: normal;
+}
+
+/* Leave flex-wrap unset: its default is the behavior under test. */
+.flex-wrapper {
+  display: flex;
+  background: green;
+  border-right: 60px solid red;
+  width: 60px;
+  height: 120px;
+}
+
+.flex-wrapper > .flex-item {
+  width: 60px;
+  flex: none;
+}
+
+.flex-wrapper > .green {
+  background: green;
+}

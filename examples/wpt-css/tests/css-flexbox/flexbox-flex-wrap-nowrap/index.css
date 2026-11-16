@@ -1,0 +1,36 @@
+* {
+  box-sizing: content-box;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background: green;
+  border-right: 60px solid red;
+  width: 60px;
+  height: 120px;
+}
+
+.flex-item {
+  width: 60px;
+  flex: none;
+}
+
+.green {
+  background: green;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

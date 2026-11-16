@@ -1,0 +1,28 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source selector: div. Declaration under test and geometry verbatim. */
+#test {
+  margin: 300px 0 0 300px;
+  width: 100px;
+  height: 200px;
+  background: #202040;
+  transform: rotate(45deg);
+  transform-origin: top;
+}
+
+/* Horizontal-only body margin: Web collapses the default 8px body margin
+   into the div's 300px top margin (max = 300px), so a 0 vertical body
+   margin reproduces the oracle offset. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

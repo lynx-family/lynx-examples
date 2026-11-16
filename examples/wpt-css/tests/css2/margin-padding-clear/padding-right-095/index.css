@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+#wrapper {
+  width: 192px;
+}
+
+#div1 {
+  border-right: 96px solid red;
+  padding-right: 50%;
+  height: 96px;
+}
+
+#div2 {
+  border-right: 96px solid black;
+  margin-right: -192px;
+  height: 96px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+.__html-span, .__html-a {
+  width: fit-content;
+}

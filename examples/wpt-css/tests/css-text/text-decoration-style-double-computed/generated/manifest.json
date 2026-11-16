@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-text-text-decoration-style-double-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-text-decor/parsing/text-decoration-style-computed.html",
+    "revision": "8e3d3261432a28800a28676d9b7617b3e7bc0f33",
+    "sha256": "48c369ae869b9b1858c5e1e9a036af16fb2c4498e194bc57a501a265b4b91257"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "text-decoration-style",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-text-decoration-style-value-double",
+      "ordinal": 1,
+      "title": "Property text-decoration-style value 'double'",
+      "sectionKey": "property-text-decoration-style-value-double",
+      "cssFile": "cases/property-text-decoration-style-value-double.css",
+      "cssSha256": "9c5f6d0f3e4162049fa66e904866a3389500aab0da564b903ce77c33a43ecbba",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "text-decoration-style",
+          "expected": "double"
+        }
+      ]
+    }
+  ]
+}

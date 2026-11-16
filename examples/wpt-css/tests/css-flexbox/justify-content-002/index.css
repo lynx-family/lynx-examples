@@ -1,0 +1,49 @@
+* {
+  box-sizing: content-box;
+}
+
+/* The source gradient is setup-only. Real views make the same 150px red / 150px
+   orange guide without relying on unsupported gradient rendering. */
+#flexbox {
+  background-color: orange;
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
+  position: relative;
+  width: 300px;
+}
+
+.red-guide {
+  background-color: red;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+#flexbox > .flex-item {
+  background-color: blue;
+  position: relative;
+  width: 75px;
+  z-index: 1;
+}
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Content-box and paragraph margins restore Web defaults; z-index requires position in Lynx. */

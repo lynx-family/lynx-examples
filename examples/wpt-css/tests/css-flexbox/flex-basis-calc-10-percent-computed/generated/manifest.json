@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-basis-calc-10-percent-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-basis-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "5fef40aedb193048807ae54cb6022d1421e4595803af6f935eccf9236f670935"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-basis",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-basis-value-calc-10",
+      "ordinal": 1,
+      "title": "Property flex-basis value 'calc(10%)'",
+      "sectionKey": "property-flex-basis-value-calc-10",
+      "cssFile": "cases/property-flex-basis-value-calc-10.css",
+      "cssSha256": "c5145a0604b181b66a9124e21de5722a2e218cbae0959f4fbe0db3e0a2e5a146",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-basis",
+          "expected": "10%"
+        }
+      ]
+    }
+  ]
+}

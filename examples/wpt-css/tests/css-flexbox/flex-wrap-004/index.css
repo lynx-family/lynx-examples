@@ -1,0 +1,62 @@
+* {
+  box-sizing: content-box;
+}
+
+.green-reference {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.wrapping-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  width: 125px;
+  height: 100px;
+  line-height: 20px;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: red;
+  height: 100px;
+  margin-right: 25px;
+}
+
+.intrinsic-fragment {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 0;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

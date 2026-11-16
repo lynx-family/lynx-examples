@@ -1,0 +1,44 @@
+view.flexbox {
+      justify-content: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px dashed black;
+      min-width: 100px;
+      height: 12px;
+      /* In this roomy scene float shrink-to-fit is preferred width clamped
+         by the original min/max constraints; the wrapper implements clear. */
+      width: max-content;
+      margin-bottom: 2px;
+    }
+    view.smallItem {
+      width: 30px;
+      border: 1px solid blue;
+      background: lightblue;
+    }
+
+.__inline-001 {
+  max-width: 120px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */
+* { box-sizing: content-box; }

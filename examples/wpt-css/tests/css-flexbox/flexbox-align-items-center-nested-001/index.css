@@ -1,0 +1,41 @@
+* { box-sizing: content-box; }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  position: relative;
+  background: white;
+}
+
+.container-0 {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  flex-direction: column;
+}
+
+.container-1 {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container-2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

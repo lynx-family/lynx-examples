@@ -1,0 +1,37 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1 {
+  position: relative;
+}
+
+#div2 {
+  position: absolute;
+  height: 96px;
+  left: 288px;
+  top: 288px;
+  width: 96px;
+}
+
+#div3 {
+  background: black;
+  height: 96px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 96px;
+}
+
+.__ua-p {
+  margin-top: 96px;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

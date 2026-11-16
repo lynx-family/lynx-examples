@@ -1,0 +1,39 @@
+* {
+  box-sizing: content-box;
+}
+
+#wrapper {
+  width: 96px;
+}
+
+#div1 {
+  border-top: 5px solid blue;
+  padding-bottom: 0;
+}
+
+#div2 {
+  border-bottom: 5px solid orange;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+.__html-span, .__html-a {
+  width: fit-content;
+}

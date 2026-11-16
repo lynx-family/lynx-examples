@@ -1,0 +1,35 @@
+/* Web setup: content boxes, body flow, default serif text, and wrapping. */
+* { box-sizing: content-box; }
+view { display: linear; linear-direction: column; }
+text { white-space: normal; }
+page { font-size: 16px; font-family: serif; background-color: white; }
+.body { display: linear; linear-direction: column; align-items: flex-start; margin: 8px; }
+
+.scene {
+	background: blue;
+	margin: 1em 0;
+	border: 1px solid black;
+	height: 6em;
+	width: 30em;
+
+	display: flex;
+	align-items: flex-start;
+}
+.__html-span {
+	background: white;
+	margin: 0 1em;
+	width: 8em;
+	/* The source span is blockified as a flex item. */
+
+	flex: none;
+}
+.__html-span.source-child-1 {background: yellow;}
+.__html-span.source-child-2 {background: pink;}
+.__html-span.source-child-3 {
+	background: lightblue;
+	height: 4em;
+	align-self: center;
+}
+
+/* The block scene margin collapses with the Web body margin. */
+.body { margin: 0 8px; }

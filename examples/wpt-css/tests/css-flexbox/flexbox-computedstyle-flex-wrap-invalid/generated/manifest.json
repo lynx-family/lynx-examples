@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-flex-wrap-invalid",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_flex-wrap-invalid.html",
+    "revision": "1e91be47ac599571cde8a98b0a11cafc3a9e281c",
+    "sha256": "ca9f897ff61f1956ed0e50375aef11e25ee664e86e5780165ab60d4cf5005748"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-wrap",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-wrap-value-filler",
+      "ordinal": 1,
+      "title": "Property flex-wrap value 'filler'",
+      "sectionKey": "property-flex-wrap-value-filler",
+      "cssFile": "cases/property-flex-wrap-value-filler.css",
+      "cssSha256": "e443c264dc555ea6cf0a616de897a87f1ef5722b0ac4008a6cf3d4fd106041e9",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-wrap",
+          "expected": "nowrap"
+        }
+      ]
+    }
+  ]
+}

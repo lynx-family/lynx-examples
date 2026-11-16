@@ -1,0 +1,16 @@
+* {
+  box-sizing: content-box;
+}
+
+.outer {
+  color: green;
+}
+
+.inner {
+  color: currentcolor;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}

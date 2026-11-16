@@ -1,0 +1,53 @@
+* {
+  box-sizing: content-box;
+}
+
+.box {
+	margin:0 auto;
+	background:#CCC;
+	border-radius:5px;
+	width:600px;
+	display:flex;
+	flex-flow:row;
+	justify-content:flex-start;
+}
+
+.order-item {
+	text-align:center;
+}
+
+.box .red {
+	order:-2;
+	flex:0 1 auto;
+	width:200px;
+	background:#F00;
+}
+.box .blue {
+	order:-4;
+	flex:0 1 auto;
+	width:200px;
+	background:#00F;
+}
+.box .black {
+	order:-1;
+	flex:0 1 auto;
+	width:200px;
+	background:#000;
+	color:#FFF;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  width: calc(100% - 16px);
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Adaptation checklist: explicit content-box and flex-start restore Web defaults;
+   the body width resolves auto horizontal margins against Web's viewport content box. */

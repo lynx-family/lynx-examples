@@ -1,0 +1,15 @@
+# Source-derived semantics
+
+- The tested box preserves `background: url('support/swatch-red.png') 1em repeat-y`.
+- A 4em lime image offset by 1em overlays the red strip; the required result is one lime square and no red.
+- Despite the historical filename, the pinned source is titled "Background Positioning Test" and contains no `background-attachment`, `scroll`, or `fixed` declaration and no scrolling action. This card therefore makes no attachment or scrolling claim. The separately adapted `background-attachment-applies-to-009` card retains `background-attachment: fixed` for that coverage.
+
+# Compatibility adjustments
+
+- Broad source selectors are replaced with explicit test-box and lime-swatch classes so the generated body wrapper is not painted accidentally.
+- Visible text uses a wrapping text element and Web content-box/body/paragraph behavior is explicit.
+- `swatch-red.png` and `swatch-lime.png` are copied byte-for-byte from the reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents background images, position, repeat, em lengths, and explicitly sized image elements; the source shorthand remains verbatim.

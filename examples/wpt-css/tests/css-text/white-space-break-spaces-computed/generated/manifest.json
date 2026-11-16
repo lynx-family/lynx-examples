@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-text-white-space-break-spaces-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-text/parsing/white-space-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "329926c86dcd4ed962c46cff0205afde0c6f41393f9dde482513434ae38162b5"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "white-space",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-white-space-value-break-spaces",
+      "ordinal": 1,
+      "title": "Property white-space value 'break-spaces'",
+      "sectionKey": "property-white-space-value-break-spaces",
+      "cssFile": "cases/property-white-space-value-break-spaces.css",
+      "cssSha256": "6b7e4887f2bf7cd8888c45a51955516ffbaf729396e0c7d1a51646b448290d6c",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "white-space",
+          "expected": "break-spaces"
+        }
+      ]
+    }
+  ]
+}

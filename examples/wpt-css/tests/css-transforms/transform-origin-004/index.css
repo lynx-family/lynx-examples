@@ -1,0 +1,26 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source selector: div. Declaration under test is verbatim. */
+#test {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+  transform-origin: 101px 50%;
+}
+
+/* Browser-default 8px body margin on all sides; there is no paragraph or
+   child margin, so no collapsing to reproduce. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

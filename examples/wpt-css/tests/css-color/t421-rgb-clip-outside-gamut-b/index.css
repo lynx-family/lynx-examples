@@ -1,0 +1,127 @@
+.matrix-table {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 0;
+  border-width: 0;
+}
+
+.matrix-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+}
+
+.matrix-cell {
+  width: 7em;
+  height: 1.2em;
+  padding: 0;
+  border-width: 0;
+}
+
+.matrix-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.__inline-001 {
+  background:white; color: black;
+}
+
+.__inline-002 {
+  background:black; color: white;
+}
+
+.__inline-003 {
+  background: rgb(-30, 500, -1);
+}
+
+.__inline-004 {
+  background: rgb(0, 255, 0);
+}
+
+.__inline-005 {
+  background: rgb(-260, -254, 300);
+}
+
+.__inline-006 {
+  background: rgb(0, 0, 255);
+}
+
+.__inline-007 {
+  background: rgb(-254, 256, 0);
+}
+
+.__inline-008 {
+  background: rgb(0, 255, 0);
+}
+
+.__inline-009 {
+  background: rgb(-10%, 200%, -1%);
+}
+
+.__inline-010 {
+  background: rgb(0, 255, 0);
+}
+
+.__inline-011 {
+  background: rgb(-110%, 130%, -99%);
+}
+
+.__inline-012 {
+  background: rgb(0, 255, 0);
+}
+
+.__inline-013 {
+  background: rgb(-99%, 101%, 0%);
+}
+
+.__inline-014 {
+  background: rgb(0, 255, 0);
+}
+
+.__inline-015 {
+  background: rgb(50, -30, 255);
+}
+
+.__inline-016 {
+  background: rgb(50, 0, 255);
+}
+
+.__inline-017 {
+  background: rgb(0, 50, 350);
+}
+
+.__inline-018 {
+  background: rgb(0, 50, 255);
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

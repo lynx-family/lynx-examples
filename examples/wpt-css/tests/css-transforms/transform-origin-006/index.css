@@ -1,0 +1,38 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source selector: body > div. The declarations under test (nonzero
+   margin/border/padding, transform-origin 50% 50%, relative shift) are
+   verbatim except the vertical margins, zeroed to reproduce Web's
+   body/div margin collapsing (see the TTML Note). */
+#outer {
+  width: 190px;
+  height: 90px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0 5px;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  position: relative;
+  right: 5px;
+}
+
+/* Source selector: body > div > div. */
+#inner {
+  margin: -5px;
+}
+
+/* Browser-default 8px body margin; vertical sides supply the collapsed
+   8px that Web computes for the body/first-child margin pair. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

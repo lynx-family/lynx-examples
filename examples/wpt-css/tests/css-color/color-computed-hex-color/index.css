@@ -1,0 +1,77 @@
+* {
+  box-sizing: content-box;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+.description {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.swatch {
+  width: 32px;
+  height: 24px;
+  border: 1px solid #444;
+  margin-right: 4px;
+}
+
+.label {
+  color: #000;
+}
+
+.hex-fff {
+  background: #fff;
+}
+
+.hex-ffff {
+  background: #ffff;
+}
+
+.hex-ffffff {
+  background: #ffffff;
+}
+
+.hex-ffffffff {
+  background: #ffffffff;
+}
+
+.hex-ffcc99 {
+  background: #FFCc99;
+}
+
+.hex-369 {
+  background: #369;
+}
+
+.rgb-white {
+  background: rgb(255, 255, 255);
+}
+
+.rgb-ffcc99 {
+  background: rgb(255, 204, 153);
+}
+
+.rgb-336699 {
+  background: rgb(51, 102, 153);
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

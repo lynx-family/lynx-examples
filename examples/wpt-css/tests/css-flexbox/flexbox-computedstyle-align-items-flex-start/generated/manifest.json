@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-items-flex-start",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-items-flex-start.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "7270bbf2e621060c36fb9da8d2c7180d635fda2e9c6681dabafeb60374a2b051"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-items",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-items-value-flex-start",
+      "ordinal": 1,
+      "title": "Property align-items value 'flex-start'",
+      "sectionKey": "property-align-items-value-flex-start",
+      "cssFile": "cases/property-align-items-value-flex-start.css",
+      "cssSha256": "a1f11285d8bd86d997be401970e6a209f09ef0ba766b401be5661e27e59ce000",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-items",
+          "expected": "flex-start"
+        }
+      ]
+    }
+  ]
+}

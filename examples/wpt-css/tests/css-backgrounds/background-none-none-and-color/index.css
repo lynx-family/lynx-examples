@@ -1,0 +1,39 @@
+* {
+  box-sizing: content-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.box-blue-after {
+  background: none, none;
+  background-color: blue;
+}
+
+.box-reset-after {
+  background-color: blue;
+  background: none, none;
+}
+
+.scroll-box {
+  overflow: scroll;
+}
+
+.tall-child {
+  height: 200px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

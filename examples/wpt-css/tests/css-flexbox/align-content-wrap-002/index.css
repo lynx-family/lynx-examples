@@ -1,0 +1,111 @@
+* {
+  box-sizing: content-box;
+}
+
+.flex-horizontal {
+    width:600px;
+    display:flex;
+    justify-content:flex-start;
+    height:100px;
+    background:gray;
+    margin-bottom:100px;
+}
+.flex-vertical {
+    width:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height:600px;
+    background:gray;
+    /* Lynx adds adjacent margins; 100px + the prior 100px reproduces Web's collapsed 200px gap. */
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.item-horizontal {
+    width:150px;
+    background:yellow;
+    margin:10px;
+    flex:none;
+}
+.item-vertical {
+    height:150px;
+    background:yellow;
+    margin:10px;
+    flex:none;
+}
+.content1-horizontal {
+    width:100px;
+    height:150px;
+    background:red;
+}
+.content2-horizontal {
+    width:100px;
+    height:100px;
+    background:red;
+}
+.content3-horizontal {
+    width:100px;
+    height:50px;
+    background:red;
+}
+.content1-vertical {
+    width:150px;
+    height:100px;
+    background:red;
+}
+.content2-vertical {
+    width:100px;
+    height:100px;
+    background:red;
+}
+.content3-vertical {
+    width:50px;
+    height:100px;
+    background:red;
+}
+
+.__inline-001 {
+  flex-wrap:wrap;
+}
+
+.__inline-002 {
+  flex-wrap:wrap;
+}
+
+.__inline-003 {
+  flex-wrap:wrap;
+}
+
+.__inline-004 {
+  flex-wrap:wrap;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

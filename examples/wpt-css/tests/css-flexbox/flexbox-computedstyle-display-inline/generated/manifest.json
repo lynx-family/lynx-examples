@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-display-inline",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_display-inline.html",
+    "revision": "1e91be47ac599571cde8a98b0a11cafc3a9e281c",
+    "sha256": "2667d54f1750ee7ba3cadd0ca7562b1fbab16e8ed7f2a45b686f9d339a41bfc9"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "display",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-display-value-inline-flex",
+      "ordinal": 1,
+      "title": "Property display value 'inline-flex'",
+      "sectionKey": "property-display-value-inline-flex",
+      "cssFile": "cases/property-display-value-inline-flex.css",
+      "cssSha256": "a1be89d10811aec4f984b8a3de95c4235e10ef447117fa9f2c453a8e34ff0b42",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "display",
+          "expected": "inline-flex"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-justify-content-space-between",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_justify-content-space-between.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "3b8a0a09864eceab65ef5d9bdd386441c99888970cc23bf82c6ac23e31b523b0"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "justify-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-justify-content-value-space-between",
+      "ordinal": 1,
+      "title": "Property justify-content value 'space-between'",
+      "sectionKey": "property-justify-content-value-space-between",
+      "cssFile": "cases/property-justify-content-value-space-between.css",
+      "cssSha256": "4478e754aba2e392fa7ac9c3253f933ad1b82cb34b34cc4af55b8ce86f061192",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "justify-content",
+          "expected": "space-between"
+        }
+      ]
+    }
+  ]
+}

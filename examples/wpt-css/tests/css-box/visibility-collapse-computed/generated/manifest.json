@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-box-visibility-collapse-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-box/parsing/visibility-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "da02c8de1ea51bc14bf751e1aab8664caab3e23983c40551499cd7f882455b1c"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "visibility",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-visibility-value-collapse",
+      "ordinal": 1,
+      "title": "Property visibility value 'collapse'",
+      "sectionKey": "property-visibility-value-collapse",
+      "cssFile": "cases/property-visibility-value-collapse.css",
+      "cssSha256": "3bc9b4886359285377364cd644b58980c97aee1ea6ddae025ec0068672aea6d1",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "visibility",
+          "expected": "collapse"
+        }
+      ]
+    }
+  ]
+}

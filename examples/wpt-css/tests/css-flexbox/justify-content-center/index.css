@@ -1,0 +1,70 @@
+/*
+ * Adapted from WPT: justify-content-001.htm
+ * Matches the visual output using Lynx-compatible elements
+ */
+
+.container {
+  width: 300px;
+  height: 100px;
+  position: relative;
+}
+
+/* Background layers simulating linear-gradient(to right, blue 0, blue 75px, red 75px, red 225px, orange 225px, orange 300px) */
+.bg-blue {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75px;
+  height: 100px;
+  background-color: blue;
+}
+
+.bg-red {
+  position: absolute;
+  left: 75px;
+  top: 0;
+  width: 150px;
+  height: 100px;
+  background-color: red;
+}
+
+.bg-orange {
+  position: absolute;
+  left: 225px;
+  top: 0;
+  width: 75px;
+  height: 100px;
+  background-color: orange;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  position: relative;
+}
+
+.flex-item-blue {
+  width: 76px;
+  height: 100px;
+  background-color: blue;
+}
+
+.flex-item-orange {
+  width: 76px;
+  height: 100px;
+  background-color: orange;
+}
+
+.test-description {
+  margin-top: 8px;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}

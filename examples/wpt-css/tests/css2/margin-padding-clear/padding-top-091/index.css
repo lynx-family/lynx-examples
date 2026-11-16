@@ -1,0 +1,40 @@
+* {
+  box-sizing: content-box;
+}
+
+#wrapper {
+  width: 200px;
+}
+
+#div1 {
+  border-top: 10px solid red;
+  padding-top: 1%;
+}
+
+#div2 {
+  border-bottom: 10px solid black;
+  margin-top: -12px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+.__html-span, .__html-a {
+  width: fit-content;
+}

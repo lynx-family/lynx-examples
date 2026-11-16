@@ -1,0 +1,90 @@
+.flex {
+      display: flex;
+      height: 10px;
+      width: 10px;
+      background: purple;
+      margin-bottom: 5px;
+      position: relative;
+    }
+    .flex > * {
+      position: absolute;
+      background: teal;
+      height: 10px;
+    }
+    .sized {
+      width: 10px;
+    }
+    .implied {
+      left: 0;
+      right: 0;
+    }
+
+.__inline-001 {
+  flex-basis: 2px;
+}
+
+.__inline-002 {
+  flex-basis: 100px;
+}
+
+.__inline-003 {
+  flex-basis: 80%;
+}
+
+.__inline-004 {
+  flex-basis: content;
+}
+
+.__inline-005 {
+  flex-basis: 2px;
+}
+
+.__inline-006 {
+  flex-basis: 100px;
+}
+
+.__inline-007 {
+  flex-basis: 80%;
+}
+
+.__inline-008 {
+  flex-basis: content;
+}
+
+.__inline-009 {
+  flex-basis: 2px;
+}
+
+.__inline-010 {
+  flex-basis: 100px;
+}
+
+.__inline-011 {
+  flex-basis: 80%;
+}
+
+.__inline-012 {
+  flex-basis: content;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

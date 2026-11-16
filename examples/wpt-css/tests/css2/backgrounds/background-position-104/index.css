@@ -1,0 +1,35 @@
+* { box-sizing: content-box; }
+
+.position-box {
+  height: 96px;
+}
+
+.frame {
+  border: 3px solid orange;
+  width: 116px;
+}
+
+.test-image {
+  background-image: url("support/black20x20.png");
+  background-position: +50%;
+  background-repeat: no-repeat;
+  width: 212px;
+}
+
+.instructions {
+  margin: 1em 0;
+  white-space: normal;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

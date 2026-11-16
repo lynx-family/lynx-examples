@@ -1,0 +1,46 @@
+.container {
+  display: linear;
+  linear-orientation: vertical;
+}
+
+.clip-box {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.stacking-context {
+  position: relative;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.content {
+  width: 100px;
+  height: 20px;
+  background-color: green;
+}
+
+.test-description {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fail {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: relative;
+  top: -60px;
+  left: 40px;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

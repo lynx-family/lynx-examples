@@ -1,0 +1,55 @@
+#cb {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+#red {
+	position:absolute;
+	top: 25px;
+	right:5px;
+	width: 70px;
+	height: 70px;
+	background:red;
+	z-index: -1;
+}
+#test {
+	box-sizing: border-box;
+	margin-top: 25px;
+	margin-right: 5px;
+	margin-left: auto; /* should resolve to 25px, but would resolve to 0 if the wrong interpretation of width is used in CSS2.1 10.3.3 */
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 70px;
+	height: 70px;
+	background:green;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

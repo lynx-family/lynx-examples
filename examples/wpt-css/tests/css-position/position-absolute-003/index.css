@@ -1,0 +1,43 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1 {
+  height: 100px;
+  position: relative;
+  width: 200px;
+}
+
+#div2,
+#div3 {
+  height: 100px;
+  width: 100px;
+}
+
+#div2 {
+  background: red;
+}
+
+#div3 {
+  background: green;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

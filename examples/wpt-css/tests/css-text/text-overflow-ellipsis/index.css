@@ -1,0 +1,18 @@
+.overflow-text {
+  width: 100px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: normal;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 8px;
+}

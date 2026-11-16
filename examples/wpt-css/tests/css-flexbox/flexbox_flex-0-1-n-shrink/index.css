@@ -1,0 +1,47 @@
+* {
+  box-sizing: content-box;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  /* The first 1em margin collapses with the Web body's 8px top margin. */
+  margin: 0 8px;
+  background: white;
+}
+
+.flex-container {
+  background: blue;
+  margin: 1em 0;
+  border: 1px solid black;
+  height: 8em;
+  width: 12em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Web inline-block flex items are blockified; keep sizing on views,
+   not on text components or generated inline-like fit-content rules. */
+.flex-item {
+  background: white;
+  margin: 1em 0;
+  width: 5em;
+  flex: 0 1 4em;
+}
+
+/* Static equivalents of the source span:nth-child(1..4) selectors. */
+.item-1 { background: yellow; }
+.item-2 { background: pink; }
+.item-3 { background: lightblue; }
+.item-4 { background: grey; }
+
+.item-text {
+  font-size: 16px;
+  color: black;
+  white-space: normal;
+}

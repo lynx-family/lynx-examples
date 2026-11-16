@@ -1,0 +1,14 @@
+# Source-derived semantics
+
+- The wrapper sets `background: black url('support/green15x15.png') repeat-x`; the child first sets red, then replaces the complete shorthand with `background: inherit`.
+- The assertion is that inheriting three background values removes the red sentinel and paints inherited black, the green image, and repeat-x.
+
+# Compatibility adjustments
+
+- The unsupported setup height `1in` is normalized by the CSS absolute-length rule to `96px`; the background declarations under test remain verbatim.
+- Visible text uses a wrapping text element with nested bold text, selectors are class-scoped, and Web content-box/body/paragraph behavior is explicit. The 0.5em top and 1em bottom paragraph margins preserve the source paragraph-to-following-box spacing; these margins do not form a collapsing pair.
+- The card-local `green15x15.png` is copied byte-for-byte from the reference-clean source cache.
+
+# Current Lynx API-doc basis
+
+- Lynx documents `background`, image URLs, repeat-x, named colors, and the global `inherit` value; the exact shorthand inheritance remains pending visual verification.

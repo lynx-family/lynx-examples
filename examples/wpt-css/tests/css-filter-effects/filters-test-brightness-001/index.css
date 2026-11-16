@@ -1,0 +1,27 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source selector: div.brightness_hundred. Declaration under test verbatim. */
+#test {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 255, 0);
+  filter: brightness(100%);
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

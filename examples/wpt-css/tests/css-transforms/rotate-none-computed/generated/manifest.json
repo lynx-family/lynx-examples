@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-transforms-rotate-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-transforms/parsing/rotate-parsing-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "fb1de105a9cce2ed92ce80baee507ad6154de8ecbe1fa41eb1c03423c2f17f99"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "rotate",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-rotate-value-none",
+      "ordinal": 1,
+      "title": "Property rotate value 'none'",
+      "sectionKey": "property-rotate-value-none",
+      "cssFile": "cases/property-rotate-value-none.css",
+      "cssSha256": "1cbea7872a8316c97635009138653e5ece5288a3ecde294a72d14fbbf14c430a",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "rotate",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

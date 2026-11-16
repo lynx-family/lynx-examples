@@ -1,0 +1,36 @@
+* {
+  box-sizing: content-box;
+}
+
+view.test {
+  border-top-style: solid;
+  border-top-width: 3px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  white-space: normal;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span,
+.__html-a {
+  width: fit-content;
+}

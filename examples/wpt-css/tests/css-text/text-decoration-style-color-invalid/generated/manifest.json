@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-text-text-decoration-style-color-invalid",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-text-decor/parsing/text-decoration-style-invalid.html",
+    "revision": "8e3d3261432a28800a28676d9b7617b3e7bc0f33",
+    "sha256": "9f3583e88f83a98ee283f7ed466d95e0ea9b5c7b5432289621ee80af39c6625b"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "text-decoration-style",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-text-decoration-style-value-red-is-rejected-by-the-source-grammar",
+      "ordinal": 1,
+      "title": "Property text-decoration-style value 'red' is rejected by the source grammar",
+      "sectionKey": "property-text-decoration-style-value-red-is-rejected-by-the-source-grammar",
+      "cssFile": "cases/property-text-decoration-style-value-red-is-rejected-by-the-source-grammar.css",
+      "cssSha256": "cf700cf8408ce9589ded7e0882765e15a35f73563ecaf78ed6c0372e0590a66d",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "text-decoration-style",
+          "expected": "dashed"
+        }
+      ]
+    }
+  ]
+}

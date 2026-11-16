@@ -1,0 +1,24 @@
+* {
+  box-sizing: content-box;
+}
+
+.test {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: green;
+  text-shadow: grey 3px 3px;
+  width: fit-content;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

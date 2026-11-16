@@ -1,0 +1,52 @@
+.case-box {
+    border-width: 5px;
+    border-color: currentColor;
+    color: green;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.__inline-001 {
+  border-style: inset;
+}
+
+.__inline-002 {
+  border-style: outset;
+}
+
+.__inline-003 {
+  border-style: ridge;
+}
+
+.__inline-004 {
+  border-style: groove;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

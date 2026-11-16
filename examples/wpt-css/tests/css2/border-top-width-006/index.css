@@ -1,0 +1,41 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Web inline-block setup is represented as a row flex scene in Lynx. */
+.scene {
+  display: flex;
+  flex-direction: row;
+}
+
+#test {
+  border-top-style: solid;
+  border-top-width: 96px;
+  height: 0;
+  width: 96px;
+}
+
+#reference {
+  background-color: black;
+  height: 96px;
+  margin-left: 5px;
+  width: 96px;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

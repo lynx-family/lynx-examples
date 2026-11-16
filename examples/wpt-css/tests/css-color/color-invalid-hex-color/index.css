@@ -1,0 +1,69 @@
+* {
+  box-sizing: content-box;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+.description {
+  color: #000;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.case {
+  color: green;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.invalid-hash {
+  color: #;
+}
+
+.invalid-f {
+  color: #f;
+}
+
+.invalid-ff {
+  color: #ff;
+}
+
+.invalid-ffg {
+  color: #ffg;
+}
+
+.invalid-fffg {
+  color: #fffg;
+}
+
+.invalid-fffff {
+  color: #fffff;
+}
+
+.invalid-fffffg {
+  color: #fffffg;
+}
+
+.invalid-fffffff {
+  color: #fffffff;
+}
+
+.invalid-fffffffg {
+  color: #fffffffg;
+}
+
+.invalid-fffffffff {
+  color: #fffffffff;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

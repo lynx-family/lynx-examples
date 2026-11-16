@@ -1,0 +1,31 @@
+* {
+  box-sizing: content-box;
+}
+
+.instructions {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 100px;
+  color: navy;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 32px;
+  padding: 32px;
+  min-height: 320px;
+}
+
+page {
+  background: url("support/cat.png") repeat-y;
+  background-color: white;
+  background-position: 16px 16px;
+  padding: 32px;
+  font-size: 16px;
+  color: navy;
+}

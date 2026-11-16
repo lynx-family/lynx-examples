@@ -1,0 +1,45 @@
+.test-box {
+  background: blue;
+  border: 1px solid black;
+  height: 96px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  box-sizing: content-box;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.item {
+  width: 128px;
+  height: 32px;
+  box-sizing: content-box;
+  margin: 0 16px;
+  padding: 0;
+  flex: none;
+}
+
+.item-1 {
+  background: yellow;
+}
+
+.item-2 {
+  background: pink;
+}
+
+.item-3 {
+  background: lightblue;
+}
+
+.item-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

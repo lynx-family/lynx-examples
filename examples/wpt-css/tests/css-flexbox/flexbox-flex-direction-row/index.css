@@ -1,0 +1,52 @@
+/* Test specific Styles */
+
+			.flex-wrapper {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+		/* Test-series styles */
+
+			.flex-wrapper {
+				width:  120px;
+				height: 120px;
+
+				/* should only display on error */
+				background: red;
+
+				/* Enforce writing mode */
+				direction: ltr;
+				writing-mode: horizontal-tb;
+			}
+
+			.flex-wrapper view {
+				width:  38px;
+				height: 38px;
+
+				background: green;
+				border: 1px solid limegreen;
+
+				color: white;
+				line-height: 40px;
+				text-align: center;
+				vertical-align: middle;
+			}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+* {
+	box-sizing: content-box;
+}
+

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-filter-effects-backdrop-filter-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/filter-effects/parsing/backdrop-filter-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "b1d608d5d62b412f072250078d2952c0213096b26f5b974d24220ac1c5d51007"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "backdrop-filter",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-backdrop-filter-value-none",
+      "ordinal": 1,
+      "title": "Property backdrop-filter value 'none'",
+      "sectionKey": "property-backdrop-filter-value-none",
+      "cssFile": "cases/property-backdrop-filter-value-none.css",
+      "cssSha256": "94422a78aa036151013096020e25449de72d142dd574f64a110d7229f3a1f4c1",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "backdrop-filter",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

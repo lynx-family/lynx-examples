@@ -1,0 +1,47 @@
+* {
+  box-sizing: content-box;
+}
+
+.test {
+  background: blue;
+  margin: 1em 0;
+  border: 1px solid black;
+  height: 6em;
+  width: 30em;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.item {
+  background: white;
+  margin: 0 1em;
+  width: 8em;
+  flex: none;
+}
+
+.item-one {
+  background: yellow;
+}
+
+.item-two {
+  background: pink;
+  height: 3em;
+}
+
+.item-three {
+  background: lightblue;
+  height: 4em;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

@@ -1,0 +1,32 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  border-right-style: none;
+  border-right-width: 3px;
+  height: 96px;
+  width: 96px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  white-space: normal;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+  color: black;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

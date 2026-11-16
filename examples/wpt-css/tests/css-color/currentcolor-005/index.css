@@ -1,0 +1,50 @@
+* {
+  box-sizing: content-box;
+}
+
+#column-rule-color-currentcolor {
+  color: green;
+  /* LYNX-UNSUPPORTED: multicolumn layout and column-rule-* are not supported by Lynx. */
+  columns: 2;
+  column-rule-style: solid;
+  column-rule-width: 10px;
+  height: 1em;
+  column-rule-color: currentcolor;
+}
+
+#column-rule-color-color-mix-currentcolor {
+  color: green;
+  /* LYNX-UNSUPPORTED: multicolumn layout, column-rule-*, and color-mix() are not supported by Lynx. */
+  columns: 2;
+  column-rule-style: solid;
+  column-rule-width: 10px;
+  height: 1em;
+  column-rule-color: color-mix(in hsl, currentcolor 50%, white);
+}
+
+.column-case {
+  display: linear;
+  linear-direction: row;
+  font-size: 16px;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+}
+
+/* Inline-like elements should not stretch to fill cross-axis in linear layout */
+.__html-span, .__html-a {
+  width: fit-content;
+}
+
+/* WARNING: Lynx does NOT support margin collapsing.
+   If this test has multiple block elements with margins,
+   spacing may double compared to Web rendering.
+   See docs/css-support-matrix.md#margin-collapsing */

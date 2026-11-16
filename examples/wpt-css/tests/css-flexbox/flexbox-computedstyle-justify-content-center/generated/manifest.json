@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-justify-content-center",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_justify-content-center.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "fbbdebbf2fb3ddf7e0b05b6c35d79d22bf05cc2ac1a55461997b4f50f5ead369"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "justify-content",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-justify-content-value-center",
+      "ordinal": 1,
+      "title": "Property justify-content value 'center'",
+      "sectionKey": "property-justify-content-value-center",
+      "cssFile": "cases/property-justify-content-value-center.css",
+      "cssSha256": "6a4bb973874ea279152e3e2b681d3fa65b034c83e94f2ccbf45dcb4c096be335",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "justify-content",
+          "expected": "center"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Source-derived semantics
+
+- The Web document root sets `background: bottom right url("support/diamond.png") scroll white no-repeat` with black text.
+- The assertion is that exactly one fuchsia diamond paints at the right viewport edge at the end of the instruction line.
+
+# Compatibility adjustments
+
+- The explicit `scroll` token is Web's default attachment and is setup-only for this static background-position assertion. Lynx does not support `background-attachment`, so the declaration is expanded into supported image/position/repeat/color longhands while retaining the tested `bottom right` value.
+- Web positions the scrolling root image against its natural content root box before propagating the background to the canvas. The generated natural-height `.body` therefore owns image/position/repeat, while full-height `page` supplies the propagated white canvas; no pixel coordinates are copied.
+- `page` and the generated body wrapper keep zero margin, border, and padding, with the body filling the available width.
+- The instruction keeps its authored `2em 0 0 0` margin, uses a wrapping text element, and the card declares Web-compatible content-box sizing.
+- The card-local `diamond.png` is copied byte-for-byte from the approved reference-clean source cache.
+
+# Validated result
+
+- The original shorthand was a threshold false pass: Lynx omitted the line-ending diamond, but the 0.0473% full-screen mismatch was below the generic limit.
+- The documented longhand/root-box adaptation restores the visible oracle without hard-coded pixel placement. Two final-device runs are byte-stable visual workaround passes at 0.0297%, with the expected and actual diamond occupying the identical right-edge bounds.
+- This workaround does not exercise the source's root-to-canvas background propagation: the image is painted by natural-height `.body`, while `page` supplies only the white canvas color. The card therefore remains `partial` even though its retained screenshot evidence row is correctly `pass`.
+- The original Web test matches its pinned official reference exactly.

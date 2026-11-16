@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "translate-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-transforms/parsing/translate-parsing-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "51766724b5d322ce95c7a44c14b57a77ad377adaa19e799de729f587a0827ef0"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "translate",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-translate-value-none",
+      "ordinal": 1,
+      "title": "Property translate value 'none'",
+      "sectionKey": "property-translate-value-none",
+      "cssFile": "cases/property-translate-value-none.css",
+      "cssSha256": "5934b44c2192715a8fb7b05dafc59028284a60b1386dc3563be23687ea4579b7",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "translate",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

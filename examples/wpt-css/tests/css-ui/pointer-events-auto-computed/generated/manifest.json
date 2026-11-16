@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-ui-pointer-events-auto-computed",
+  "source": {
+    "path": "imported/wpt-upstream/svg/interact/parsing/pointer-events-computed.svg",
+    "revision": "8e3d3261432a28800a28676d9b7617b3e7bc0f33",
+    "sha256": "ac1884ff8d4d58e7db27fb9b04c34dd695987a1bebd624b73e38ff43ba51fe80"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "pointer-events",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-pointer-events-value-auto",
+      "ordinal": 1,
+      "title": "Property pointer-events value 'auto'",
+      "sectionKey": "property-pointer-events-value-auto",
+      "cssFile": "cases/property-pointer-events-value-auto.css",
+      "cssSha256": "139332271aae50e39065dfa25c5b2d6e82a736b14a9d7da6eab41023c4191c13",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "pointer-events",
+          "expected": "auto"
+        }
+      ]
+    }
+  ]
+}

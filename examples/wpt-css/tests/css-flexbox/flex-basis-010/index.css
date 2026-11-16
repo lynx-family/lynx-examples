@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+#container {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+#item {
+  flex: 0 0 0%;
+  height: 500px;
+  background-color: red;
+}
+
+#child {
+  height: 100px;
+  background-color: green;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

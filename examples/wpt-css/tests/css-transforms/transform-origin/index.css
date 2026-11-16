@@ -1,0 +1,47 @@
+* {
+  box-sizing: content-box;
+}
+
+/* Source body { margin: 0 } is verbatim; the instruction paragraph keeps
+   its browser-default margins, which is also what Web computes after
+   collapsing with the zero body margin. */
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0;
+  background: white;
+}
+
+.instructions {
+  margin: 1em 0;
+}
+
+#relativeContainer {
+  position: relative;
+}
+
+#redSquare {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/* Declarations under test are verbatim. */
+#greenSquare {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: green;
+  transform-origin: right bottom;
+  transform: rotate(90deg);
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}

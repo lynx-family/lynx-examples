@@ -1,0 +1,66 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  background: blue;
+  margin: 1em 0;
+  border: 1px solid black;
+  width: 20em;
+  height: 8em;
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.item {
+  background: white;
+  margin: 1em;
+  width: 8em;
+  height: 1.5em;
+}
+
+.one {
+  background: pink;
+  order: 4;
+}
+
+.two {
+  background: yellow;
+  order: 3;
+}
+
+.three {
+  background: black;
+  color: white;
+  order: 2;
+}
+
+.four {
+  background: fuchsia;
+  color: white;
+  order: 1;
+}
+
+.item-text {
+  font-size: 16px;
+  color: black;
+}
+
+.light-text {
+  color: white;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

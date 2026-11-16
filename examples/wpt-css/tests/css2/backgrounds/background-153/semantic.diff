@@ -1,0 +1,16 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty div with a 200px by 200px content box.
+- The tested declaration is background: repeat-x bottom green scroll; and is preserved verbatim because its token order and valid shorthand parsing are the assertion.
+- With no image, repeat, position, and attachment are visually inert; the required green fill is an observable all-or-nothing parser oracle.
+
+# Compatibility adjustments
+
+- Visible text uses one wrapping outer text with nested bold text and ordinary U+0020; the test box uses a class-scoped view.
+- Content-box sizing and explicit body/paragraph spacing reproduce Web setup without relying on Lynx margin collapse.
+- No tested background component is split, removed, or replaced.
+
+# Current Lynx API-doc basis
+
+- Lynx documents background and the color/repeat/position components, while background-attachment is unsupported.
+- This card keeps scroll under test and remains pending; a missing green square is a valid engine failure, not an adapter skip.

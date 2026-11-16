@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-flow-column-wrap-reverse-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-flow-computed.html",
+    "revision": "9bc42055a930f29289ba627ed42bfa7cd0fb7a58",
+    "sha256": "eef8e4f0ed41ff2fc876bb63411548075d6cd834406aa155dd87606fa9a5f993"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex-flow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-flow-value-column-wrap-reverse",
+      "ordinal": 1,
+      "title": "Property flex-flow value 'column wrap-reverse'",
+      "sectionKey": "property-flex-flow-value-column-wrap-reverse",
+      "cssFile": "cases/property-flex-flow-value-column-wrap-reverse.css",
+      "cssSha256": "a50acf5a1bf1a26ffb910f7f42939e550cb56e0259f53cef97839e64ee2271de",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex-flow",
+          "expected": "column wrap-reverse"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  background: green;
+  width: 100px;
+  height: 100px;
+  transform: scale(0.5, 0.5);
+}
+
+page {
+  padding: 0;
+  font-size: 16px;
+  background-color: white;
+}

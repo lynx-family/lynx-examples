@@ -1,0 +1,48 @@
+* {
+  box-sizing: content-box;
+}
+
+.test-box {
+  background-color: orange;
+  background-image: url('support/blue96x96.png');
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  display: block;
+  height: 192px;
+  width: 96px;
+}
+
+.instruction {
+  display: block;
+  font-size: 1em;
+  line-height: 1.25;
+  font-family: serif;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  white-space: normal;
+}
+
+.instruction-line {
+  display: block;
+  font-size: 1em;
+  line-height: 1.25;
+  font-family: serif;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

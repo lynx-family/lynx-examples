@@ -1,0 +1,18 @@
+# Source-derived semantics
+
+- Both 120px by 120px containers use an 80px by 100px background positioning area formed by a 60px by 80px content box plus 10px padding.
+- The tested `background: no-repeat url(...)` values use SVG images with explicit intrinsic width 40px and height 60px.
+- Source order plus the red/green absolute controls makes any wrong background image size expose red; the assertion is two green boxes and no red.
+
+# Compatibility adjustments
+
+- Source `div { position: relative; }` is scoped to `.cover`, `.limit`, and `.test`, so the generated `.body` wrapper is not accidentally positioned. The source's over-constrained absolute control is normalized to its Web used geometry (`top: 10px; left: 10px; width: 40px; height: 60px`), removing the ignored right/bottom insets so Lynx layout cannot confound the image-size oracle.
+- Web content-box sizing is explicit. The body keeps only the browser's horizontal 8px inset; the paragraph keeps its 1em vertical spacing, while each box keeps horizontal/bottom 8px margins to reproduce collapsed Web gaps without double-counting them in Lynx.
+- Setup-only green/red backgrounds use `background-color`; the tested image shorthand remains unchanged.
+- Visible instruction text uses `<text>`, and the two card-local SVG files are byte-identical to the pinned source assets.
+
+# Current Lynx API-doc basis
+
+- Lynx documents URL background images, background shorthand, px geometry, transparent borders, absolute inset positioning, content-box, and backgrounds on `<view>`, but does not document CSS background-image SVG load/decode/paint support.
+- This is the explicit-dimension SVG capability pilot. After both setup-only controls are normalized to the same Web used 40px by 60px rectangle, comparison with raster case 010 isolates explicit-size background-image loading/painting. The raster case passes, while three byte-stable SVG runs expose the full red 40px by 60px control, so this is a stable CSS-background SVG prerequisite failure rather than an intrinsic-sizing result.
+- This failure does not establish the no-dimension or one-dimension fallback behavior in 001-003; those selected cards remain unexecuted and prerequisite-blocked while the shared SVG prerequisite is absent.

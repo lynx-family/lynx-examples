@@ -1,0 +1,18 @@
+# Source-derived semantics
+
+- The source contains one instruction paragraph followed by one empty `div`.
+- The `div` is 50px tall and uses `background: fixed green;`; the shorthand is preserved verbatim because its attachment-before-color order is the assertion under test.
+- With no background image, Web treats `fixed` as inert and the named green color fills the test box.
+
+# Compatibility adjustments
+
+- The paragraph is a Lynx `<text>` and the empty `div` is a `.test-box` `<view>`; the class-scoped selector avoids styling the generated `.body` wrapper.
+- The block-level source box receives `width: 100%` because Lynx Linear children do not inherit Web block stretching.
+- `* { box-sizing: content-box; }` restores the Web sizing default.
+- `.body { margin: 0 8px; }` and `.__ua-p { margin: 1em 0; }` reproduce Web body and paragraph spacing without relying on margin collapse. The page and content surface are explicitly white.
+
+# Current Lynx API-doc basis
+
+- `view` supports backgrounds and is the container for the test box; visible text must use `text`.
+- The installed background-property list documents the `background` shorthand but does not list `background-attachment`. `fixed` remains under test exactly as sourced; no workaround removes, replaces, or reorders it, so Android validation may produce a stable visual failure.
+- Lynx defaults to `border-box`, uses vertical Linear layout here, and does not collapse vertical margins, so those migration differences are handled only in setup styles.

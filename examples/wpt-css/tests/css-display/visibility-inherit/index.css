@@ -1,0 +1,45 @@
+* {
+  box-sizing: content-box;
+}
+
+.box {
+  width: 96px;
+  height: 96px;
+}
+
+#div1 {
+  background: orange;
+}
+
+#div2 {
+  visibility: hidden;
+}
+
+.inner-box {
+  background: red;
+  visibility: inherit;
+  width: 96px;
+  height: 96px;
+}
+
+#div3 {
+  background: blue;
+}
+
+.hidden-text {
+  color: red;
+  font-size: 16px;
+}
+
+.test-description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  font-size: 16px;
+  box-sizing: content-box;
+  padding: 0 8px;
+}

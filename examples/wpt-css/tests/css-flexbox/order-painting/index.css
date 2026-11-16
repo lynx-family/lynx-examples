@@ -1,0 +1,45 @@
+* {
+  box-sizing: content-box;
+}
+
+#test {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+.later-green-item {
+  order: 2;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+}
+
+.earlier-red-item {
+  order: 1;
+  background-color: red;
+  width: 50px;
+  height: 100px;
+}
+
+.__ua-p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background-color: white;
+}

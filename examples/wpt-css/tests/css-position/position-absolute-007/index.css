@@ -1,0 +1,42 @@
+* {
+  box-sizing: content-box;
+}
+
+#div1 {
+  position: relative;
+}
+
+#div2 {
+  background: orange;
+  position: absolute;
+  z-index: 1;
+  height: 96px;
+  top: 48px;
+  width: 96px;
+}
+
+#div3 {
+  background: blue;
+  height: 192px;
+  width: 48px;
+}
+
+.filler-text {
+  color: black;
+  font-size: 16px;
+  line-height: normal;
+  width: 96px;
+}
+
+.__ua-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+page {
+  padding: 0 8px;
+  font-size: 16px;
+  background-color: white;
+}

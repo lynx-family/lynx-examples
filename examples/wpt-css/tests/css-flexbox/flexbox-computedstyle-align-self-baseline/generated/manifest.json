@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flexbox-computedstyle-align-self-baseline",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/getcomputedstyle/flexbox_computedstyle_align-self-baseline.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "39996855045f0aa06dba1e0bdaffc9368ac61a43b82393782b1d8cf07808bccd"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "align-self",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-align-self-value-baseline",
+      "ordinal": 1,
+      "title": "Property align-self value 'baseline'",
+      "sectionKey": "property-align-self-value-baseline",
+      "cssFile": "cases/property-align-self-value-baseline.css",
+      "cssSha256": "11563896814533ee901e86a8c478f0ae424ca6049cf0542b7392659a7a8510da",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "align-self",
+          "expected": "baseline"
+        }
+      ]
+    }
+  ]
+}

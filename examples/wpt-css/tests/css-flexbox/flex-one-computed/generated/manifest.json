@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "flex-one-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-flexbox/parsing/flex-computed.html",
+    "revision": "719d5e38fdd0903a18ed9007aba816c98cc491e0",
+    "sha256": "b5ab8d2afc28121c493394c8a464a610622dd5d281c6437a562feb0f113747b4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "flex",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-flex-value-1",
+      "ordinal": 1,
+      "title": "Property flex value '1'",
+      "sectionKey": "property-flex-value-1",
+      "cssFile": "cases/property-flex-value-1.css",
+      "cssSha256": "e20b6b49048e5f1ec8d7fef2454ae618258d25147eb03fd3576c0ec697dbf1e2",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "flex",
+          "expected": "1 1 0%"
+        }
+      ]
+    }
+  ]
+}

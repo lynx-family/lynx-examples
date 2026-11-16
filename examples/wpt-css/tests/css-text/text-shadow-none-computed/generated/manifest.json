@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-text-text-shadow-none-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-text-decor/text-shadow/parsing/text-shadow-computed.html",
+    "revision": "8e3d3261432a28800a28676d9b7617b3e7bc0f33",
+    "sha256": "7846dae4b1208ab01afb5a147307dafae45164beef98f0d34bb5ba6672fc33e7"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "text-shadow",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-text-shadow-value-none",
+      "ordinal": 1,
+      "title": "Property text-shadow value 'none'",
+      "sectionKey": "property-text-shadow-value-none",
+      "cssFile": "cases/property-text-shadow-value-none.css",
+      "cssSha256": "9d7efb8a6f988fba9079e96c451ae7efa438008bd3f8a64e71a28399a18d9116",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "text-shadow",
+          "expected": "none"
+        }
+      ]
+    }
+  ]
+}

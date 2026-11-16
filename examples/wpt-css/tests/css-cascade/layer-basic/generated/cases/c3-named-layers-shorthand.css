@@ -1,0 +1,10 @@
+@layer A.A {
+                text { color: red; }
+            }
+            @layer B.A {
+                text.first { color: green; }
+            }
+            @layer A.B {
+                text.first { color: red; }
+                text.second { color: green; }
+            }

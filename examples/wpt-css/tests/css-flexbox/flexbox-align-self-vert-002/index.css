@@ -1,0 +1,65 @@
+/* Web setup: content boxes, body margins and text wrapping. */
+* { box-sizing: content-box; }
+view { display: linear; linear-direction: column; }
+text { white-space: normal; }
+page { font-size: 16px; font-family: serif; background-color: white; }
+.body { display: linear; linear-direction: column; align-items: flex-start; margin: 8px; }
+
+.flexbox {
+        border: 1px dashed blue;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        /* Original float placement is supplied by the setup row. */
+        font-size: 10px;
+      }
+
+      .flexbox > view {
+        margin:       1px 2px 3px 4px;
+        border-width: 2px 3px 4px 5px;
+        padding:      3px 4px 5px 6px;
+
+        border-style: dotted;
+      }
+
+      view.big {
+        font-size: 20px;
+        width: 50px;
+      }
+
+      /* Classes for each of the various align-self values */
+      .flex-start {
+        background: lime;
+        align-self: flex-start;
+      }
+      .flex-end {
+        background: orange;
+        align-self: flex-end;
+      }
+      .center {
+        background: lightblue;
+        align-self: center;
+      }
+      .baseline {
+        background: teal;
+        align-self: baseline;
+      }
+      .stretch {
+        background: pink;
+        align-self: stretch;
+      }
+      .self-start {
+        background: yellow;
+        align-self: self-start;
+      }
+      .self-end {
+        background: purple;
+        align-self: self-end;
+      }
+      .dirrtl {
+        direction: rtl;
+      }
+
+/* All source floats fit on one row at the800px CSS validation viewport. */
+.body { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+.body > .flexbox { flex-shrink: 0; }

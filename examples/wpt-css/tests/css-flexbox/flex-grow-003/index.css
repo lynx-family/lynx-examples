@@ -1,0 +1,54 @@
+* {
+  box-sizing: content-box;
+}
+
+#container {
+  background-color: green;
+  display: flex;
+  justify-content: flex-start;
+  height: 100px;
+  width: 100px;
+}
+
+.grow-item {
+  background-color: red;
+  height: 100px;
+}
+
+#test1 {
+  flex-grow: -2;
+  width: 25px;
+}
+
+#test2 {
+  flex-grow: -3;
+  width: 25px;
+}
+
+#cover {
+  background-color: green;
+  height: 100px;
+  position: relative;
+  top: -100px;
+  width: 50px;
+}
+
+.__ua-p {
+  display: block;
+  margin: 1em 0;
+}
+
+.body {
+  display: linear;
+  linear-direction: column;
+  margin: 0 8px;
+  background: white;
+}
+
+page {
+  font-size: 16px;
+  background: white;
+}
+
+/* Adaptation checklist: content-box and flex-start restore Web defaults;
+   body vertical margin moves to the paragraph because Lynx does not collapse it. */

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-ui-cursor-auto-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-ui/parsing/cursor-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "3d0a02c539151c604db79ec0552102a0587f25cc05780179fe3fd94094746fdd"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "cursor",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-cursor-value-auto",
+      "ordinal": 1,
+      "title": "Property cursor value 'auto'",
+      "sectionKey": "property-cursor-value-auto",
+      "cssFile": "cases/property-cursor-value-auto.css",
+      "cssSha256": "d24ea112fae7984aa5acfb79d97a6bc62b8559cbc7b4dc79a8d16ccf089044ae",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "cursor",
+          "expected": "auto"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "profile": "dynamic-stylesheet-computed-style-v1",
+  "entry": "css-display-display-block-computed",
+  "source": {
+    "path": "imported/wpt-upstream/css/css-display/parsing/display-computed.html",
+    "revision": "e76551e297725c137eb696a5f6258a59adee5999",
+    "sha256": "5f9305cd116163dd9dc7c81063618ac3491f024e1d16e0373f039ce076555cf4"
+  },
+  "target": {
+    "selector": "text.target",
+    "property": "display",
+    "count": 1
+  },
+  "cases": [
+    {
+      "id": "property-display-value-block",
+      "ordinal": 1,
+      "title": "Property display value 'block'",
+      "sectionKey": "property-display-value-block",
+      "cssFile": "cases/property-display-value-block.css",
+      "cssSha256": "ee3c57f3eea91eaacb3318d1d825bfb575243ef3e6680ad50cbeea7a2a9b54be",
+      "assertions": [
+        {
+          "targetIndex": 0,
+          "selector": "text.target",
+          "property": "display",
+          "expected": "block"
+        }
+      ]
+    }
+  ]
+}
