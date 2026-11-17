@@ -16,7 +16,7 @@
     "test": "node --test tools/*/*.test.mjs .github/scripts/*.test.mjs"
   },
   "devDependencies": {
-    "@changesets/cli": "^3.0.0",
+    "@changesets/cli": "^3.0.3",
     "@pnpm/meta-updater": "^2.0.6",
     "@rsbuild/plugin-type-check": "1.5.0",
     "dprint": "^0.57.1",
