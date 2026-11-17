@@ -1,5 +1,11 @@
 # @lynx-example/react-devtool
 
+## 0.3.2
+
+### Patch Changes
+
+- 1899153: Upgrade `@lynx-js/preact-devtools` to `5.0.1-20261117053910-9766f38`.
+
 ## 0.3.1
 
 ### Patch Changes
