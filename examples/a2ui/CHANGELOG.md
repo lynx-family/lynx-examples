@@ -1,5 +1,14 @@
 # @lynx-example/a2ui
 
+## 0.3.1
+
+### Patch Changes
+
+- 8b8f5f0: Fix the Gallery preview's main-thread first render by passing a null message store until background initialization completes. Give each Trip day its own template component IDs so rendering one day cannot overwrite the other day's data context.
+- 8b8f5f0: Upgrade the shared ReactLynx runtime and React UMD bundle to 0.129.4, the React build plugin to 0.22.4, and the Lynx build plugin to 0.2.0.
+
+  Manage A2UI and OpenUI's genui dependency through the workspace catalog at 0.8.1, and align A2UI's config plugin and Rsbuild core with the shared versions.
+
 ## 0.3.0
 
 ### Minor Changes

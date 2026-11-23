@@ -1,6 +1,6 @@
 {
   "name": "@lynx-example/webassembly",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "An example shows how to run WebAssembly in Lynx",
   "author": "Lynx Authors",
   "repository": {
