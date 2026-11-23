@@ -153,7 +153,7 @@ export function Gallery() {
         <scroll-view scroll-y style={{ flex: 1, minHeight: "0" }}>
           <A2UI
             key={`${datasetIndex}-${sessionId}`}
-            messageStore={store}
+            messageStore={store ?? null}
             catalogs={ALL_BUILTINS}
             catalogId={EXAMPLE_CATALOG_ID}
             onMessage={(message) => {
