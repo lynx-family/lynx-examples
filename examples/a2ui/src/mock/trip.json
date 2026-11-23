@@ -276,7 +276,7 @@
           "component": "Column",
           "children": {
             "path": "/trip/day1Stops",
-            "componentId": "stop-row"
+            "componentId": "day1-stop-row"
           }
         },
         {
@@ -284,20 +284,20 @@
           "component": "Column",
           "children": {
             "path": "/trip/day2Stops",
-            "componentId": "stop-row"
+            "componentId": "day2-stop-row"
           }
         },
         {
-          "id": "stop-row",
+          "id": "day1-stop-row",
           "component": "Row",
           "children": [
-            "stop-time",
-            "stop-copy"
+            "day1-stop-time",
+            "day1-stop-copy"
           ],
           "align": "start"
         },
         {
-          "id": "stop-time",
+          "id": "day1-stop-time",
           "component": "Text",
           "text": {
             "@path": "time"
@@ -306,15 +306,15 @@
           "emphasis": "strong"
         },
         {
-          "id": "stop-copy",
+          "id": "day1-stop-copy",
           "component": "Column",
           "children": [
-            "stop-title",
-            "stop-detail"
+            "day1-stop-title",
+            "day1-stop-detail"
           ]
         },
         {
-          "id": "stop-title",
+          "id": "day1-stop-title",
           "component": "Text",
           "text": {
             "@path": "title"
@@ -322,7 +322,49 @@
           "variant": "h4"
         },
         {
-          "id": "stop-detail",
+          "id": "day1-stop-detail",
+          "component": "Text",
+          "text": {
+            "@path": "detail"
+          },
+          "variant": "body"
+        },
+        {
+          "id": "day2-stop-row",
+          "component": "Row",
+          "children": [
+            "day2-stop-time",
+            "day2-stop-copy"
+          ],
+          "align": "start"
+        },
+        {
+          "id": "day2-stop-time",
+          "component": "Text",
+          "text": {
+            "@path": "time"
+          },
+          "variant": "h4",
+          "emphasis": "strong"
+        },
+        {
+          "id": "day2-stop-copy",
+          "component": "Column",
+          "children": [
+            "day2-stop-title",
+            "day2-stop-detail"
+          ]
+        },
+        {
+          "id": "day2-stop-title",
+          "component": "Text",
+          "text": {
+            "@path": "title"
+          },
+          "variant": "h4"
+        },
+        {
+          "id": "day2-stop-detail",
           "component": "Text",
           "text": {
             "@path": "detail"
