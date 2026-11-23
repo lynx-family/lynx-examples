@@ -1,7 +1,16 @@
 import { A2UI, Button, Card, Column, createMessageStore, defineCatalog, Image, Row, Text } from "@lynx-js/genui/a2ui";
-import type { CatalogComponent, CatalogManifest, MessageStore, ServerToClientMessage } from "@lynx-js/genui/a2ui";
+import type {
+  CatalogComponent,
+  CatalogManifest,
+  MessageStore,
+  RendererToAgentMessage,
+  ServerToClientMessage,
+  UserActionPayload,
+} from "@lynx-js/genui/a2ui";
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useMemo, useRef, useState } from "@lynx-js/react";
+
+import { EXAMPLE_CATALOG_ID } from "../catalogId.js";
 
 import generatedLoadingManifest from "../catalog/Loading/catalog.json";
 import { Loading } from "../catalog/Loading/Loading.js";
@@ -12,7 +21,7 @@ import "./Actions.css";
 
 const AGENT_STREAM_DELAY_MS = 600;
 const TOAST_DURATION_MS = 1500;
-const loadingManifest = generatedLoadingManifest as CatalogManifest;
+const loadingManifest = generatedLoadingManifest satisfies CatalogManifest;
 
 const ALL_BUILTINS = defineCatalog([
   [Text as CatalogComponent, catalogManifests.Text],
@@ -72,7 +81,7 @@ export function Actions() {
     }
   }, []);
 
-  const handleAction = useCallback((action: { name: string; context?: Record<string, unknown> }) => {
+  const handleAction = useCallback((action: UserActionPayload) => {
     if (action.name === "select_answer") {
       const answer = action.context?.answer as string;
       if (answer && phaseRef.current !== "submitted") {
@@ -103,7 +112,11 @@ export function Actions() {
             <A2UI
               messageStore={store}
               catalogs={ALL_BUILTINS}
-              onAction={handleAction}
+              catalogId={EXAMPLE_CATALOG_ID}
+              onMessage={(message: RendererToAgentMessage) => {
+                if ("action" in message) handleAction(message.action);
+                else if ("error" in message) console.error(message.error);
+              }}
               wrapSurface={(children) => <view className="a2ui-light">{children}</view>}
               className="a2ui-container"
             />

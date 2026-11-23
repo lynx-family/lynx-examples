@@ -1,15 +1,16 @@
 import type { ServerToClientMessage } from "@lynx-js/genui/a2ui";
+import { EXAMPLE_CATALOG_ID } from "../catalogId.js";
 
 export const initialMessages = [
   {
-    "version": "v0.9",
+    "version": "1.0",
     "createSurface": {
       "surfaceId": "main",
-      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json",
+      "catalogId": EXAMPLE_CATALOG_ID,
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -87,7 +88,7 @@ export const initialMessages = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateDataModel": {
       "surfaceId": "main",
       "value": {
@@ -104,7 +105,7 @@ export const initialMessages = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -112,7 +113,7 @@ export const initialMessages = [
           "id": "sunny-icon",
           "component": "Image",
           "url": {
-            "path": "/weather/iconUrl",
+            "@path": "/weather/iconUrl",
           },
           "variant": "icon",
           "fit": "contain",
@@ -121,7 +122,7 @@ export const initialMessages = [
           "id": "city-text",
           "component": "Text",
           "text": {
-            "path": "/weather/city",
+            "@path": "/weather/city",
           },
           "variant": "h2",
         },
@@ -129,7 +130,7 @@ export const initialMessages = [
           "id": "condition-text",
           "component": "Text",
           "text": {
-            "path": "/weather/condition",
+            "@path": "/weather/condition",
           },
           "variant": "body",
         },
@@ -137,7 +138,7 @@ export const initialMessages = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -145,7 +146,7 @@ export const initialMessages = [
           "id": "temperature-text",
           "component": "Text",
           "text": {
-            "path": "/weather/temperature",
+            "@path": "/weather/temperature",
           },
           "variant": "h1",
         },
@@ -153,7 +154,7 @@ export const initialMessages = [
           "id": "humidity-text",
           "component": "Text",
           "text": {
-            "path": "/weather/humidity",
+            "@path": "/weather/humidity",
           },
           "variant": "body",
         },
@@ -161,7 +162,7 @@ export const initialMessages = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -169,7 +170,7 @@ export const initialMessages = [
           "id": "weather-photo",
           "component": "Image",
           "url": {
-            "path": "/weather/photo",
+            "@path": "/weather/photo",
           },
           "variant": "header",
           "fit": "cover",
@@ -178,7 +179,7 @@ export const initialMessages = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -204,12 +205,12 @@ export const initialMessages = [
       ],
     },
   },
-] as ServerToClientMessage[];
+] satisfies ServerToClientMessage[];
 
 export const actionMessages: Record<string, readonly ServerToClientMessage[]> = {
   switch_city_to_paris: [
     {
-      "version": "v0.9",
+      "version": "1.0",
       "updateDataModel": {
         "surfaceId": "main",
         "path": "/weather",
@@ -225,7 +226,7 @@ export const actionMessages: Record<string, readonly ServerToClientMessage[]> = 
       },
     },
     {
-      "version": "v0.9",
+      "version": "1.0",
       "updateComponents": {
         "surfaceId": "main",
         "components": [
@@ -254,7 +255,7 @@ export const actionMessages: Record<string, readonly ServerToClientMessage[]> = 
   ],
   switch_city_to_san_francisco: [
     {
-      "version": "v0.9",
+      "version": "1.0",
       "updateDataModel": {
         "surfaceId": "main",
         "path": "/weather",
@@ -270,7 +271,7 @@ export const actionMessages: Record<string, readonly ServerToClientMessage[]> = 
       },
     },
     {
-      "version": "v0.9",
+      "version": "1.0",
       "updateComponents": {
         "surfaceId": "main",
         "components": [

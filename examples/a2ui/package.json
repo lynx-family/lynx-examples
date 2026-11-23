@@ -20,23 +20,25 @@
   },
   "scripts": {
     "build": "npm run catalog && rsbuild build",
-    "catalog": "genui-cli a2ui generate catalog --source src/catalog --out-dir src/catalog",
+    "catalog": "genui a2ui generate catalog --source src/catalog --out-dir src --catalog-id https://lynxjs.org/lynx-examples/a2ui/catalog.json",
     "dev": "rsbuild dev",
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@lynx-js/genui": "0.4.0",
+    "@lynx-js/genui": "0.8.1",
     "@lynx-js/luna-styles": "0.2.2",
     "@lynx-js/lynx-ui": "3.142.0",
-    "@lynx-js/react": "catalog:"
+    "@lynx-js/react": "0.129.4"
   },
   "devDependencies": {
-    "@lynx-js/config-rsbuild-plugin": "catalog:",
+    "@emnapi/core": "1.11.3",
+    "@emnapi/runtime": "1.11.3",
+    "@lynx-js/config-rsbuild-plugin": "0.3.0",
     "@lynx-js/qrcode-rsbuild-plugin": "catalog:",
-    "@lynx-js/react-rsbuild-plugin": "catalog:",
-    "@lynx-js/rsbuild-plugin": "catalog:",
+    "@lynx-js/react-rsbuild-plugin": "0.22.4",
+    "@lynx-js/rsbuild-plugin": "0.2.0",
     "@lynx-js/types": "catalog:",
-    "@rsbuild/core": "catalog:",
+    "@rsbuild/core": "2.3.3",
     "@types/react": "^18.3.28",
     "typescript": "~5.9.3"
   },

@@ -1,4 +1,4 @@
-import type { MessageStore, ServerToClientMessage, UserActionPayload } from "@lynx-js/genui/a2ui";
+import type { MessageStore, RendererToAgentMessage, ServerToClientMessage } from "@lynx-js/genui/a2ui";
 
 export interface MockAgentProgress {
   deliveredCount: number;
@@ -15,7 +15,7 @@ export interface MockAgentOptions {
 
 export interface MockAgent {
   start(): Promise<void>;
-  onAction(action: UserActionPayload): Promise<void>;
+  onMessage(message: RendererToAgentMessage): Promise<void>;
   stop(): void;
 }
 
@@ -77,11 +77,14 @@ export function createMockAgent(
       started ??= streamInto(options.initialMessages, activeSessionId);
       return started;
     },
-    async onAction(action) {
-      if (stopped) {
+    async onMessage(message) {
+      if (stopped) return;
+      if ("error" in message) {
+        console.error(message.error);
         return;
       }
-      const messages = actionMocks[action.name];
+      if (!("action" in message)) return;
+      const messages = actionMocks[message.action.name];
       if (!messages) {
         return;
       }

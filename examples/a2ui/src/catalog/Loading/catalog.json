@@ -1,16 +1,22 @@
 {
   "Loading": {
+    "type": "object",
     "properties": {
+      "component": {
+        "const": "Loading"
+      },
       "variant": {
         "type": "string",
         "enum": [
-          "inline",
-          "block"
+          "block",
+          "inline"
         ],
         "description": "Visual layout variant for the loading placeholder."
       }
     },
-    "required": [],
+    "required": [
+      "component"
+    ],
     "description": "Loading placeholder shown while generated UI is streaming."
   }
 }

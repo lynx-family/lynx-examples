@@ -1,15 +1,16 @@
-import type { ServerToClientMessage } from "@lynx-js/genui/a2ui";
+import type { ComponentInstance, ServerToClientMessage } from "@lynx-js/genui/a2ui";
+import { EXAMPLE_CATALOG_ID } from "../catalogId.js";
 
 export const initialMessages: ServerToClientMessage[] = [
   {
-    "version": "v0.9",
+    "version": "1.0",
     "createSurface": {
       "surfaceId": "main",
-      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json",
+      "catalogId": EXAMPLE_CATALOG_ID,
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -24,7 +25,6 @@ export const initialMessages: ServerToClientMessage[] = [
           "component": "Column",
           "children": ["q-label", "q-text", "options-col", "submit-row", "result-area"],
           "align": "stretch",
-          "gap": "compact",
         },
         { "id": "q-label", "component": "Text", "text": "Trivia Quiz", "variant": "caption", "emphasis": "medium" },
         {
@@ -39,12 +39,11 @@ export const initialMessages: ServerToClientMessage[] = [
           "component": "Column",
           "children": ["opt-a", "opt-b", "opt-c", "opt-d"],
           "align": "stretch",
-          "gap": "compact",
         },
         {
           "id": "opt-a",
           "component": "Button",
-          "variant": "secondary",
+          "variant": "borderless",
           "child": "opt-a-label",
           "action": { "event": { "name": "select_answer", "context": { "answer": "Triangle" } } },
         },
@@ -52,7 +51,7 @@ export const initialMessages: ServerToClientMessage[] = [
         {
           "id": "opt-b",
           "component": "Button",
-          "variant": "secondary",
+          "variant": "borderless",
           "child": "opt-b-label",
           "action": { "event": { "name": "select_answer", "context": { "answer": "Square" } } },
         },
@@ -60,7 +59,7 @@ export const initialMessages: ServerToClientMessage[] = [
         {
           "id": "opt-c",
           "component": "Button",
-          "variant": "secondary",
+          "variant": "borderless",
           "child": "opt-c-label",
           "action": { "event": { "name": "select_answer", "context": { "answer": "Circle" } } },
         },
@@ -68,7 +67,7 @@ export const initialMessages: ServerToClientMessage[] = [
         {
           "id": "opt-d",
           "component": "Button",
-          "variant": "secondary",
+          "variant": "borderless",
           "child": "opt-d-label",
           "action": { "event": { "name": "select_answer", "context": { "answer": "Hexagon" } } },
         },
@@ -97,7 +96,7 @@ export const initialMessages: ServerToClientMessage[] = [
       ],
     },
   },
-] as ServerToClientMessage[];
+] satisfies ServerToClientMessage[];
 
 // Client Action: highlight selected option via store message (immediate, no delay)
 const OPTION_IDS: Record<string, string> = {
@@ -109,13 +108,13 @@ const OPTION_IDS: Record<string, string> = {
 const ALL_OPTIONS = ["Triangle", "Square", "Circle", "Hexagon"];
 
 export function buildSelectMessage(selected: string): ServerToClientMessage {
-  const components: Record<string, unknown>[] = [];
+  const components: ComponentInstance[] = [];
   for (const opt of ALL_OPTIONS) {
     const id = OPTION_IDS[opt];
     components.push({
       "id": id,
       "component": "Button",
-      "variant": opt === selected ? "primary" : "secondary",
+      "variant": opt === selected ? "primary" : "borderless",
       "child": `${id}-label`,
       "action": { "event": { "name": "select_answer", "context": { "answer": opt } } },
     });
@@ -135,15 +134,15 @@ export function buildSelectMessage(selected: string): ServerToClientMessage {
     "action": { "event": { "name": "submit_answer", "context": { "answer": selected } } },
   });
   return {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": { "surfaceId": "main", "components": components },
-  } as ServerToClientMessage;
+  } satisfies ServerToClientMessage;
 }
 
 // Agent validates and streams result
 const correctResponse: ServerToClientMessage[] = [
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -154,7 +153,7 @@ const correctResponse: ServerToClientMessage[] = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -180,11 +179,11 @@ const correctResponse: ServerToClientMessage[] = [
       ],
     },
   },
-] as ServerToClientMessage[];
+] satisfies ServerToClientMessage[];
 
 const wrongResponse: ServerToClientMessage[] = [
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -195,7 +194,7 @@ const wrongResponse: ServerToClientMessage[] = [
     },
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -221,39 +220,39 @@ const wrongResponse: ServerToClientMessage[] = [
       ],
     },
   },
-] as ServerToClientMessage[];
+] satisfies ServerToClientMessage[];
 
 // Reset to initial state
 export const resetMessage: ServerToClientMessage = {
-  "version": "v0.9",
+  "version": "1.0",
   "updateComponents": {
     "surfaceId": "main",
     "components": [
       {
         "id": "opt-a",
         "component": "Button",
-        "variant": "secondary",
+        "variant": "borderless",
         "child": "opt-a-label",
         "action": { "event": { "name": "select_answer", "context": { "answer": "Triangle" } } },
       },
       {
         "id": "opt-b",
         "component": "Button",
-        "variant": "secondary",
+        "variant": "borderless",
         "child": "opt-b-label",
         "action": { "event": { "name": "select_answer", "context": { "answer": "Square" } } },
       },
       {
         "id": "opt-c",
         "component": "Button",
-        "variant": "secondary",
+        "variant": "borderless",
         "child": "opt-c-label",
         "action": { "event": { "name": "select_answer", "context": { "answer": "Circle" } } },
       },
       {
         "id": "opt-d",
         "component": "Button",
-        "variant": "secondary",
+        "variant": "borderless",
         "child": "opt-d-label",
         "action": { "event": { "name": "select_answer", "context": { "answer": "Hexagon" } } },
       },
@@ -262,7 +261,7 @@ export const resetMessage: ServerToClientMessage = {
       { "id": "result-area", "component": "Column", "children": [], "align": "stretch" },
     ],
   },
-} as ServerToClientMessage;
+} satisfies ServerToClientMessage;
 
 export function getAgentResponse(selectedAnswer: string): ServerToClientMessage[] | null {
   return selectedAnswer === "Triangle" ? correctResponse : wrongResponse;

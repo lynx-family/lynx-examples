@@ -18,9 +18,11 @@ import {
   Text,
   TextField,
 } from "@lynx-js/genui/a2ui";
-import type { CatalogComponent, CatalogManifest, MessageStore, ServerToClientMessage } from "@lynx-js/genui/a2ui";
+import type { CatalogComponent, CatalogManifest, ServerToClientMessage } from "@lynx-js/genui/a2ui";
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
-import { useCallback, useEffect, useRef, useState } from "@lynx-js/react";
+import { useCallback, useEffect, useMemo, useState } from "@lynx-js/react";
+
+import { EXAMPLE_CATALOG_ID } from "../catalogId.js";
 
 import generatedLoadingManifest from "../catalog/Loading/catalog.json";
 import { Loading } from "../catalog/Loading/Loading.jsx";
@@ -34,7 +36,7 @@ import "./Gallery.css";
 
 const STREAM_DELAY_MS = 320;
 
-const loadingManifest = generatedLoadingManifest as CatalogManifest;
+const loadingManifest = generatedLoadingManifest satisfies CatalogManifest;
 
 const ALL_BUILTINS = defineCatalog([
   [Text as CatalogComponent, catalogManifests.Text],
@@ -81,13 +83,14 @@ export function Gallery() {
     totalCount: DATASETS[0].messages.length,
     status: "streaming",
   });
-  const cancelledRef = useRef(false);
-  const storeRef = useRef<MessageStore>(createMessageStore());
+  const store = useMemo(() => {
+    "background only";
+    return createMessageStore();
+  }, [datasetIndex, sessionId]);
 
   useEffect(() => {
-    cancelledRef.current = false;
-    const store = createMessageStore();
-    storeRef.current = store;
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
     const messages = DATASETS[datasetIndex].messages;
     let index = 0;
     const total = messages.length;
@@ -95,7 +98,7 @@ export function Gallery() {
     setProgress({ deliveredCount: 0, totalCount: total, status: "streaming" });
 
     const tick = () => {
-      if (cancelledRef.current) {
+      if (cancelled) {
         return;
       }
       if (index >= total) {
@@ -106,19 +109,19 @@ export function Gallery() {
       index += 1;
       setProgress({ deliveredCount: index, totalCount: total, status: index >= total ? "done" : "streaming" });
       if (index < total) {
-        setTimeout(tick, STREAM_DELAY_MS);
+        timer = setTimeout(tick, STREAM_DELAY_MS);
       }
     };
 
     tick();
 
     return () => {
-      cancelledRef.current = true;
+      cancelled = true;
+      if (timer !== undefined) clearTimeout(timer);
     };
-  }, [datasetIndex, sessionId]);
+  }, [datasetIndex, store]);
 
   const switchTo = useCallback((index: number) => {
-    cancelledRef.current = true;
     setDatasetIndex(index);
     setSessionId((v) => v + 1);
   }, []);
@@ -150,9 +153,12 @@ export function Gallery() {
         <scroll-view scroll-y style={{ flex: 1, minHeight: "0" }}>
           <A2UI
             key={`${datasetIndex}-${sessionId}`}
-            messageStore={storeRef.current}
+            messageStore={store}
             catalogs={ALL_BUILTINS}
-            onAction={() => {}}
+            catalogId={EXAMPLE_CATALOG_ID}
+            onMessage={(message) => {
+              if ("error" in message) console.error(message.error);
+            }}
             wrapSurface={(children) => <view className="a2ui-light">{children}</view>}
             className="a2ui-container"
           />

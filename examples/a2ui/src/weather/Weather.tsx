@@ -3,6 +3,8 @@ import type { CatalogComponent, CatalogManifest, MessageStore } from "@lynx-js/g
 import { catalogManifests } from "@lynx-js/genui/a2ui/catalog";
 import { useCallback, useEffect, useMemo, useRef, useState } from "@lynx-js/react";
 
+import { EXAMPLE_CATALOG_ID } from "../catalogId.js";
+
 import generatedLoadingManifest from "../catalog/Loading/catalog.json";
 import { Loading } from "../catalog/Loading/Loading.jsx";
 import { createMockAgent } from "../mockAgent.js";
@@ -96,8 +98,9 @@ export function Weather() {
               key={sessionId}
               messageStore={session.store}
               catalogs={ALL_BUILTINS}
-              onAction={(action) => {
-                void agentRef.current?.onAction(action);
+              catalogId={EXAMPLE_CATALOG_ID}
+              onMessage={(message) => {
+                void agentRef.current?.onMessage(message);
               }}
               wrapSurface={(children) => <view className="a2ui-surface">{children}</view>}
               renderEmpty={() => (

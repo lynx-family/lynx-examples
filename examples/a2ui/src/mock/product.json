@@ -1,13 +1,13 @@
 [
   {
-    "version": "v0.9",
+    "version": "1.0",
     "createSurface": {
       "surfaceId": "main",
-      "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+      "catalogId": "https://lynxjs.org/lynx-examples/a2ui/catalog.json"
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -20,7 +20,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateDataModel": {
       "surfaceId": "main",
       "path": "/product",
@@ -50,7 +50,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -69,7 +69,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -144,7 +144,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -173,7 +173,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -208,7 +208,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -222,7 +222,7 @@
           "id": "discount-text",
           "component": "Text",
           "text": {
-            "path": "/product/discountBadge"
+            "@path": "/product/discountBadge"
           },
           "variant": "caption",
           "emphasis": "strong"
@@ -231,7 +231,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -255,7 +255,7 @@
           "id": "product-title",
           "component": "Text",
           "text": {
-            "path": "/product/title"
+            "@path": "/product/title"
           },
           "variant": "h3",
           "emphasis": "strong"
@@ -264,7 +264,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -313,7 +313,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -337,7 +337,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -355,7 +355,7 @@
           "id": "rating-value",
           "component": "Text",
           "text": {
-            "path": "/product/rating"
+            "@path": "/product/rating"
           },
           "variant": "caption",
           "emphasis": "medium"
@@ -364,7 +364,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -382,7 +382,7 @@
           "id": "review-count",
           "component": "Text",
           "text": {
-            "path": "/product/reviewCount"
+            "@path": "/product/reviewCount"
           },
           "variant": "caption"
         }
@@ -390,7 +390,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -433,7 +433,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -450,7 +450,7 @@
           "id": "current-price",
           "component": "Text",
           "text": {
-            "path": "/product/price"
+            "@path": "/product/price"
           },
           "variant": "h2",
           "emphasis": "strong"
@@ -459,7 +459,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -476,7 +476,7 @@
           "id": "original-price",
           "component": "Text",
           "text": {
-            "path": "/product/originalPrice"
+            "@path": "/product/originalPrice"
           },
           "variant": "body"
         }
@@ -484,7 +484,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -522,7 +522,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -550,7 +550,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -564,7 +564,7 @@
           "id": "tag-label",
           "component": "Text",
           "text": {
-            "path": "label"
+            "@path": "label"
           },
           "variant": "caption"
         }
@@ -572,7 +572,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -596,7 +596,7 @@
           "id": "variant-info",
           "component": "Text",
           "text": {
-            "path": "/product/variantInfo"
+            "@path": "/product/variantInfo"
           },
           "variant": "caption"
         }
@@ -604,7 +604,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -647,7 +647,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -670,7 +670,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -687,7 +687,7 @@
           "id": "stock-text",
           "component": "Text",
           "text": {
-            "path": "/product/stockStatus"
+            "@path": "/product/stockStatus"
           },
           "variant": "caption",
           "emphasis": "medium"
@@ -696,7 +696,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -726,7 +726,7 @@
               "name": "add_to_cart",
               "context": {
                 "productId": {
-                  "path": "/product/id"
+                  "@path": "/product/id"
                 }
               }
             }
@@ -741,7 +741,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -755,7 +755,7 @@
               "name": "add_to_cart",
               "context": {
                 "productId": {
-                  "path": "/product/id"
+                  "@path": "/product/id"
                 }
               }
             }
@@ -770,7 +770,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateDataModel": {
       "surfaceId": "main",
       "path": "/product/imageQuery",
@@ -778,7 +778,7 @@
     }
   },
   {
-    "version": "v0.9",
+    "version": "1.0",
     "updateComponents": {
       "surfaceId": "main",
       "components": [
@@ -786,7 +786,7 @@
           "id": "product-image",
           "component": "Image",
           "url": {
-            "path": "/product/imageQuery"
+            "@path": "/product/imageQuery"
           },
           "variant": "mediumFeature",
           "fit": "cover"
