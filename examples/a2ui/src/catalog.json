@@ -1,0 +1,40 @@
+{
+  "$id": "https://lynxjs.org/lynx-examples/a2ui/catalog.json",
+  "catalogId": "https://lynxjs.org/lynx-examples/a2ui/catalog.json",
+  "$defs": {
+    "anyComponent": {
+      "oneOf": [
+        {
+          "$ref": "#/components/Loading"
+        }
+      ]
+    },
+    "anyFunction": {
+      "not": {}
+    }
+  },
+  "protocolVersion": "1.0",
+  "components": {
+    "Loading": {
+      "type": "object",
+      "properties": {
+        "component": {
+          "const": "Loading"
+        },
+        "variant": {
+          "type": "string",
+          "enum": [
+            "block",
+            "inline"
+          ],
+          "description": "Visual layout variant for the loading placeholder."
+        }
+      },
+      "required": [
+        "component"
+      ],
+      "description": "Loading placeholder shown while generated UI is streaming."
+    }
+  },
+  "functions": {}
+}
