@@ -26,6 +26,7 @@ allowBuilds:
 
 catalog:
   "@lynx-js/genui": "0.8.1"
+  "@lynx-js/lynx-ui": "3.142.0"
   "@lynx-js/external-bundle-rsbuild-plugin": "0.4.2"
   "@lynx-js/lynx-bundle-rslib-config": "0.8.1"
   "@lynx-js/rsbuild-plugin": "0.2.0"
