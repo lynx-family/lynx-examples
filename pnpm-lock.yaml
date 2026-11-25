@@ -231,8 +231,6 @@ catalogs:
       specifier: 2.0.1
       version: 2.0.1
 
-packageExtensionsChecksum: sha256-DNSaXdJazJijB/5i5y96MJo5pRLmboLUZjoYDsSM/pE=
-
 importers:
 
   .:
@@ -384,7 +382,7 @@ importers:
     dependencies:
       '@lynx-js/genui':
         specifier: 'catalog:'
-        version: 0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.24))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@types/react@18.3.28)(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
+        version: 0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.24))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
       '@lynx-js/luna-styles':
         specifier: 0.2.2
         version: 0.2.2
@@ -1463,7 +1461,7 @@ importers:
     dependencies:
       '@lynx-js/genui':
         specifier: 'catalog:'
-        version: 0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.23))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@types/react@18.3.28)(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
+        version: 0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.23))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
       '@lynx-js/lynx-ui':
         specifier: 'catalog:'
         version: 3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -3433,7 +3431,6 @@ packages:
     peerDependencies:
       '@lynx-js/lynx-ui': '>=3.133.0'
       '@lynx-js/react': '>=0.121.0'
-      '@types/react': ^18 || ^19.0.0
     peerDependenciesMeta:
       '@lynx-js/lynx-ui':
         optional: true
@@ -10189,7 +10186,7 @@ snapshots:
 
   '@lynx-js/externals-loading-webpack-plugin@0.2.1': {}
 
-  '@lynx-js/genui@0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.23))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@types/react@18.3.28)(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))':
+  '@lynx-js/genui@0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.23))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))':
     dependencies:
       '@lynx-js/config-rsbuild-plugin': 0.3.0(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.23))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@rsbuild/core@2.3.3(core-js@3.47.0))
       '@lynx-js/react': 0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28)
@@ -10198,7 +10195,6 @@ snapshots:
       '@lynx-js/rsbuild-plugin': 0.2.0(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.3.3(core-js@3.47.0))(csso@5.0.5)(esbuild@0.25.9)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
       '@openuidev/lang-core': 0.3.2(zod@3.25.76)
       '@rsbuild/core': 2.3.3(core-js@3.47.0)
-      '@types/react': 18.3.28
       eslint-scope: 8.4.0
       marked: 14.1.4
       typedoc: 0.28.20(typescript@6.0.3)
@@ -10223,7 +10219,7 @@ snapshots:
       - tslib
       - webpack
 
-  '@lynx-js/genui@0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.24))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@types/react@18.3.28)(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))':
+  '@lynx-js/genui@0.8.1(@lynx-js/lynx-core@0.1.4)(@lynx-js/lynx-ui@3.142.0(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/types@4.2.1)(@types/react@18.3.28)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@lynx-js/react@0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28))(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.24))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(preact@10.29.2)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))':
     dependencies:
       '@lynx-js/config-rsbuild-plugin': 0.3.0(@lynx-js/rspeedy@0.17.2(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(@lynx-js/lynx-core@0.1.4)(@rspack/core@2.2.3(@swc/helpers@0.5.24))(core-js@3.47.0)(csso@5.0.5)(esbuild@0.25.9)(supports-color@8.1.1)(tslib@2.8.1)(typescript@5.9.3)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19)))(@rsbuild/core@2.3.3(core-js@3.47.0))
       '@lynx-js/react': 0.129.4(@lynx-js/types@4.2.1)(@types/react@18.3.28)
@@ -10232,7 +10228,6 @@ snapshots:
       '@lynx-js/rsbuild-plugin': 0.2.0(@lynx-js/lynx-core@0.1.4)(@rsbuild/core@2.3.3(core-js@3.47.0))(csso@5.0.5)(esbuild@0.25.9)(tslib@2.8.1)(webpack@5.101.3(cssnano@7.1.2(postcss@8.5.19))(csso@5.0.5)(esbuild@0.25.9)(postcss@8.5.19))
       '@openuidev/lang-core': 0.3.2(zod@3.25.76)
       '@rsbuild/core': 2.3.3(core-js@3.47.0)
-      '@types/react': 18.3.28
       eslint-scope: 8.4.0
       marked: 14.1.4
       typedoc: 0.28.20(typescript@6.0.3)
