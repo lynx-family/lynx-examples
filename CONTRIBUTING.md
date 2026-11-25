@@ -67,6 +67,19 @@ To build a specific example:
 pnpm --filter <example-name> build
 ```
 
+Dependencies listed in the default `catalog` in `pnpm-workspace.yaml` use
+`"catalog:"` in workspace package manifests. Update shared versions in that
+catalog instead of pinning a version in an individual example. Downstream
+package replacement relies on these references to synchronize dependencies.
+Local `"workspace:*"` links are also supported. Unrestricted `"*"`
+declarations are only supported in `peerDependencies`.
+
+CI checks all workspace packages, including private and nested packages, with:
+
+```sh
+node .github/scripts/check-catalog-dependencies.mjs
+```
+
 ### Running Examples
 
 To run a specific example in development mode:

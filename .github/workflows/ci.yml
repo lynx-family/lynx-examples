@@ -30,6 +30,8 @@ jobs:
           npm i -g corepack@latest
           corepack enable
           pnpm install
+      - name: Check Catalog Dependencies
+        run: node .github/scripts/check-catalog-dependencies.mjs
       - name: Lint
         env:
           CHANGESET_BASE_SHA: ${{ github.event.pull_request.base.sha }}
